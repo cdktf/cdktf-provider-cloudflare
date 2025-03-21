@@ -4,7 +4,7 @@
 
 ### Web3Hostname <a name="Web3Hostname" id="@cdktf/provider-cloudflare.web3Hostname.Web3Hostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer"></a>
 
@@ -41,7 +41,7 @@ web3Hostname.Web3Hostname(
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.name">name</a></code> | <code>str</code> | The hostname that will point to the target gateway via CNAME. |
-| <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.target">target</a></code> | <code>str</code> | Target gateway of the hostname. |
+| <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.target">target</a></code> | <code>str</code> | Target gateway of the hostname. Available values: "ethereum", "ipfs", "ipfs_universal_path". |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of the hostname. |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3Hostname.Initializer.parameter.dnslink">dnslink</a></code> | <code>str</code> | DNSLink value used if the target is ipfs. |
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The hostname that will point to the target gateway via CNAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#name Web3Hostname#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#name Web3Hostname#name}
 
 ---
 
@@ -122,9 +122,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Target gateway of the hostname.
+Target gateway of the hostname. Available values: "ethereum", "ipfs", "ipfs_universal_path".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#target Web3Hostname#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#target Web3Hostname#target}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An optional description of the hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#description Web3Hostname#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#description Web3Hostname#description}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 DNSLink value used if the target is ipfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the Web3Hostname to import.
 
 The id of the existing Web3Hostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1025,7 +1025,7 @@ web3Hostname.Web3HostnameConfig(
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.name">name</a></code> | <code>str</code> | The hostname that will point to the target gateway via CNAME. |
-| <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.target">target</a></code> | <code>str</code> | Target gateway of the hostname. |
+| <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.target">target</a></code> | <code>str</code> | Target gateway of the hostname. Available values: "ethereum", "ipfs", "ipfs_universal_path". |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.description">description</a></code> | <code>str</code> | An optional description of the hostname. |
 | <code><a href="#@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.dnslink">dnslink</a></code> | <code>str</code> | DNSLink value used if the target is ipfs. |
@@ -1112,7 +1112,7 @@ name: str
 
 The hostname that will point to the target gateway via CNAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#name Web3Hostname#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#name Web3Hostname#name}
 
 ---
 
@@ -1124,9 +1124,9 @@ target: str
 
 - *Type:* str
 
-Target gateway of the hostname.
+Target gateway of the hostname. Available values: "ethereum", "ipfs", "ipfs_universal_path".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#target Web3Hostname#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#target Web3Hostname#target}
 
 ---
 
@@ -1140,7 +1140,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
 
 ---
 
@@ -1154,7 +1154,7 @@ description: str
 
 An optional description of the hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#description Web3Hostname#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#description Web3Hostname#description}
 
 ---
 
@@ -1168,7 +1168,7 @@ dnslink: str
 
 DNSLink value used if the target is ipfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
 
 ---
 

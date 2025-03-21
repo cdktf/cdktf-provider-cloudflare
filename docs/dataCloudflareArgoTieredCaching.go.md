@@ -4,12 +4,12 @@
 
 ### DataCloudflareArgoTieredCaching <a name="DataCloudflareArgoTieredCaching" id="@cdktf/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargotieredcaching"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargotieredcaching"
 
 datacloudflareargotieredcaching.NewDataCloudflareArgoTieredCaching(scope Construct, id *string, config DataCloudflareArgoTieredCachingConfig) DataCloudflareArgoTieredCaching
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargotieredcaching"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargotieredcaching"
 
 datacloudflareargotieredcaching.DataCloudflareArgoTieredCaching_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargotieredcaching"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargotieredcaching"
 
 datacloudflareargotieredcaching.DataCloudflareArgoTieredCaching_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareargotieredcaching.DataCloudflareArgoTieredCaching_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargotieredcaching"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargotieredcaching"
 
 datacloudflareargotieredcaching.DataCloudflareArgoTieredCaching_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareargotieredcaching.DataCloudflareArgoTieredCaching_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargotieredcaching"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargotieredcaching"
 
 datacloudflareargotieredcaching.DataCloudflareArgoTieredCaching_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareArgoTieredCa
 
 The id of the existing DataCloudflareArgoTieredCaching that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCachingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareargotieredcaching"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareargotieredcaching"
 
 &datacloudflareargotieredcaching.DataCloudflareArgoTieredCachingConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/argo_tiered_caching#zone_id DataCloudflareArgoTieredCaching#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/argo_tiered_caching#zone_id DataCloudflareArgoTieredCaching#zone_id}
 
 ---
 

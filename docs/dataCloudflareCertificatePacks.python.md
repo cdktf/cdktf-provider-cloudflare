@@ -4,7 +4,7 @@
 
 ### DataCloudflareCertificatePacks <a name="DataCloudflareCertificatePacks" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataCloudflareCertificatePacks.DataCloudflareCertificatePacks(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer.parameter.status">status</a></code> | <code>str</code> | Include Certificate Packs of all statuses, not just active ones. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer.parameter.status">status</a></code> | <code>str</code> | Include Certificate Packs of all statuses, not just active ones. Available values: "all". |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 
 ---
 
@@ -128,9 +128,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Include Certificate Packs of all statuses, not just active ones.
+Include Certificate Packs of all statuses, not just active ones. Available values: "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 
 ---
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DataCloudflareCertificateP
 
 The id of the existing DataCloudflareCertificatePacks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,7 +787,7 @@ dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.status">status</a></code> | <code>str</code> | Include Certificate Packs of all statuses, not just active ones. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.status">status</a></code> | <code>str</code> | Include Certificate Packs of all statuses, not just active ones. Available values: "all". |
 
 ---
 
@@ -871,7 +871,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
 
 ---
 
@@ -885,7 +885,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 
 ---
 
@@ -897,9 +897,9 @@ status: str
 
 - *Type:* str
 
-Include Certificate Packs of all statuses, not just active ones.
+Include Certificate Packs of all statuses, not just active ones. Available values: "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 
 ---
 

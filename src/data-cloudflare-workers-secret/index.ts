@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface DataCloudflareWorkersSecretConfig extends cdktf.TerraformMetaAr
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret#account_id DataCloudflareWorkersSecret#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret#account_id DataCloudflareWorkersSecret#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the Workers for Platforms dispatch namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret#dispatch_namespace DataCloudflareWorkersSecret#dispatch_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret#dispatch_namespace DataCloudflareWorkersSecret#dispatch_namespace}
   */
   readonly dispatchNamespace: string;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret#script_name DataCloudflareWorkersSecret#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret#script_name DataCloudflareWorkersSecret#script_name}
   */
   readonly scriptName: string;
   /**
   * A JavaScript variable name for the secret binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret#secret_name DataCloudflareWorkersSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret#secret_name DataCloudflareWorkersSecret#secret_name}
   */
   readonly secretName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret cloudflare_workers_secret}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret cloudflare_workers_secret}
 */
 export class DataCloudflareWorkersSecret extends cdktf.TerraformDataSource {
 
@@ -55,7 +50,7 @@ export class DataCloudflareWorkersSecret extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWorkersSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWorkersSecret to import
-  * @param importFromId The id of the existing DataCloudflareWorkersSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWorkersSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWorkersSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class DataCloudflareWorkersSecret extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret cloudflare_workers_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secret cloudflare_workers_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class DataCloudflareWorkersSecret extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_workers_secret',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

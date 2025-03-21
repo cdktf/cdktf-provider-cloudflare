@@ -4,12 +4,12 @@
 
 ### DataCloudflareSpectrumApplication <a name="DataCloudflareSpectrumApplication" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.NewDataCloudflareSpectrumApplication(scope Construct, id *string, config DataCloudflareSpectrumApplicationConfig) DataCloudflareSpectrumApplication
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.DataCloudflareSpectrumApplication_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.DataCloudflareSpectrumApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarespectrumapplication.DataCloudflareSpectrumApplication_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.DataCloudflareSpectrumApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarespectrumapplication.DataCloudflareSpectrumApplication_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.DataCloudflareSpectrumApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareSpectrumAppl
 
 The id of the existing DataCloudflareSpectrumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -741,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 &datacloudflarespectrumapplication.DataCloudflareSpectrumApplicationConfig {
 	Connection: interface{},
@@ -852,7 +852,7 @@ AppId *string
 
 App identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
 
 ---
 
@@ -866,7 +866,7 @@ ZoneId *string
 
 Zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 &datacloudflarespectrumapplication.DataCloudflareSpectrumApplicationDns {
 
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationEdgeIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 &datacloudflarespectrumapplication.DataCloudflareSpectrumApplicationEdgeIps {
 
@@ -901,7 +901,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationOriginDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 &datacloudflarespectrumapplication.DataCloudflareSpectrumApplicationOriginDns {
 
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.NewDataCloudflareSpectrumApplicationDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareSpectrumApplicationDnsOutputReference
 ```
@@ -1187,7 +1187,7 @@ func InternalValue() DataCloudflareSpectrumApplicationDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationEdgeIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.NewDataCloudflareSpectrumApplicationEdgeIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareSpectrumApplicationEdgeIpsOutputReference
 ```
@@ -1469,7 +1469,7 @@ func InternalValue() DataCloudflareSpectrumApplicationEdgeIps
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationOriginDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarespectrumapplication"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarespectrumapplication"
 
 datacloudflarespectrumapplication.NewDataCloudflareSpectrumApplicationOriginDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareSpectrumApplicationOriginDnsOutputReference
 ```

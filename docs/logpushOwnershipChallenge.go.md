@@ -4,12 +4,12 @@
 
 ### LogpushOwnershipChallenge <a name="LogpushOwnershipChallenge" id="@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushownershipchallenge"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushownershipchallenge"
 
 logpushownershipchallenge.NewLogpushOwnershipChallenge(scope Construct, id *string, config LogpushOwnershipChallengeConfig) LogpushOwnershipChallenge
 ```
@@ -392,7 +392,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushownershipchallenge"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushownershipchallenge"
 
 logpushownershipchallenge.LogpushOwnershipChallenge_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushownershipchallenge"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushownershipchallenge"
 
 logpushownershipchallenge.LogpushOwnershipChallenge_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ logpushownershipchallenge.LogpushOwnershipChallenge_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushownershipchallenge"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushownershipchallenge"
 
 logpushownershipchallenge.LogpushOwnershipChallenge_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ logpushownershipchallenge.LogpushOwnershipChallenge_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushownershipchallenge"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushownershipchallenge"
 
 logpushownershipchallenge.LogpushOwnershipChallenge_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the LogpushOwnershipChallenge 
 
 The id of the existing LogpushOwnershipChallenge that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallengeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushownershipchallenge"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushownershipchallenge"
 
 &logpushownershipchallenge.LogpushOwnershipChallengeConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
 
 Additional configuration parameters supported by the destination may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge#destination_conf LogpushOwnershipChallenge#destination_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge#destination_conf LogpushOwnershipChallenge#destination_conf}
 
 ---
 
@@ -909,7 +909,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge#account_id LogpushOwnershipChallenge#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge#account_id LogpushOwnershipChallenge#account_id}
 
 ---
 
@@ -923,7 +923,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge#zone_id LogpushOwnershipChallenge#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge#zone_id LogpushOwnershipChallenge#zone_id}
 
 ---
 

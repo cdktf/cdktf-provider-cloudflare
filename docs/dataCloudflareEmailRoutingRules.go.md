@@ -4,12 +4,12 @@
 
 ### DataCloudflareEmailRoutingRules <a name="DataCloudflareEmailRoutingRules" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.NewDataCloudflareEmailRoutingRules(scope Construct, id *string, config DataCloudflareEmailRoutingRulesConfig) DataCloudflareEmailRoutingRules
 ```
@@ -290,7 +290,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.DataCloudflareEmailRoutingRules_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.DataCloudflareEmailRoutingRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareemailroutingrules.DataCloudflareEmailRoutingRules_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.DataCloudflareEmailRoutingRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datacloudflareemailroutingrules.DataCloudflareEmailRoutingRules_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.DataCloudflareEmailRoutingRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareEmailRouting
 
 The id of the existing DataCloudflareEmailRoutingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 &datacloudflareemailroutingrules.DataCloudflareEmailRoutingRulesConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules#zone_id DataCloudflareEmailRoutingRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules#zone_id DataCloudflareEmailRoutingRules#zone_id}
 
 ---
 
@@ -761,7 +761,7 @@ Enabled interface{}
 
 Filter by enabled routing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules#enabled DataCloudflareEmailRoutingRules#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules#enabled DataCloudflareEmailRoutingRules#enabled}
 
 ---
 
@@ -775,7 +775,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules#max_items DataCloudflareEmailRoutingRules#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules#max_items DataCloudflareEmailRoutingRules#max_items}
 
 ---
 
@@ -784,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 &datacloudflareemailroutingrules.DataCloudflareEmailRoutingRulesResult {
 
@@ -797,7 +797,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 &datacloudflareemailroutingrules.DataCloudflareEmailRoutingRulesResultActions {
 
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultMatchers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 &datacloudflareemailroutingrules.DataCloudflareEmailRoutingRulesResultMatchers {
 
@@ -825,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.NewDataCloudflareEmailRoutingRulesResultActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingRulesResultActionsList
 ```
@@ -974,7 +974,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.NewDataCloudflareEmailRoutingRulesResultActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingRulesResultActionsOutputReference
 ```
@@ -1263,7 +1263,7 @@ func InternalValue() DataCloudflareEmailRoutingRulesResultActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.NewDataCloudflareEmailRoutingRulesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingRulesResultList
 ```
@@ -1412,7 +1412,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultMatchersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.NewDataCloudflareEmailRoutingRulesResultMatchersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingRulesResultMatchersList
 ```
@@ -1561,7 +1561,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultMatchersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.NewDataCloudflareEmailRoutingRulesResultMatchersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingRulesResultMatchersOutputReference
 ```
@@ -1861,7 +1861,7 @@ func InternalValue() DataCloudflareEmailRoutingRulesResultMatchers
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRulesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrules"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrules"
 
 datacloudflareemailroutingrules.NewDataCloudflareEmailRoutingRulesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingRulesResultOutputReference
 ```

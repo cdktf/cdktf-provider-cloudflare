@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountMembers <a name="DataCloudflareAccountMembers" id="@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_members cloudflare_account_members}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_members cloudflare_account_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataCloudflareAccountMembe
 
 The id of the existing DataCloudflareAccountMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,10 +709,10 @@ const dataCloudflareAccountMembersConfig: dataCloudflareAccountMembers.DataCloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.direction">direction</a></code> | <code>string</code> | Direction to order results. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.direction">direction</a></code> | <code>string</code> | Direction to order results. Available values: "asc", "desc". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.order">order</a></code> | <code>string</code> | Field to order results by. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.status">status</a></code> | <code>string</code> | A member's status in the account. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.order">order</a></code> | <code>string</code> | Field to order results by. Available values: "user.first_name", "user.last_name", "user.email", "status". |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.status">status</a></code> | <code>string</code> | A member's status in the account. Available values: "accepted", "pending", "rejected". |
 
 ---
 
@@ -796,7 +796,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_members#account_id DataCloudflareAccountMembers#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_members#account_id DataCloudflareAccountMembers#account_id}
 
 ---
 
@@ -808,9 +808,9 @@ public readonly direction: string;
 
 - *Type:* string
 
-Direction to order results.
+Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_members#direction DataCloudflareAccountMembers#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_members#direction DataCloudflareAccountMembers#direction}
 
 ---
 
@@ -824,7 +824,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_members#max_items DataCloudflareAccountMembers#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_members#max_items DataCloudflareAccountMembers#max_items}
 
 ---
 
@@ -836,9 +836,9 @@ public readonly order: string;
 
 - *Type:* string
 
-Field to order results by.
+Field to order results by. Available values: "user.first_name", "user.last_name", "user.email", "status".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_members#order DataCloudflareAccountMembers#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_members#order DataCloudflareAccountMembers#order}
 
 ---
 
@@ -850,9 +850,9 @@ public readonly status: string;
 
 - *Type:* string
 
-A member's status in the account.
+A member's status in the account. Available values: "accepted", "pending", "rejected".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_members#status DataCloudflareAccountMembers#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_members#status DataCloudflareAccountMembers#status}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### WebAnalyticsSite <a name="WebAnalyticsSite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSite(scope Construct, id *string, config WebAnalyticsSiteConfig) WebAnalyticsSite
 ```
@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetAutoInstall">ResetAutoInstall</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetHost">ResetHost</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetLite">ResetLite</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetZoneTag">ResetZoneTag</a></code> | *No description.* |
 
 ---
@@ -373,10 +375,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetAutoInstall()
 ```
 
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetEnabled"></a>
+
+```go
+func ResetEnabled()
+```
+
 ##### `ResetHost` <a name="ResetHost" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetHost"></a>
 
 ```go
 func ResetHost()
+```
+
+##### `ResetLite` <a name="ResetLite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetLite"></a>
+
+```go
+func ResetLite()
 ```
 
 ##### `ResetZoneTag` <a name="ResetZoneTag" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetZoneTag"></a>
@@ -399,7 +413,7 @@ func ResetZoneTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +459,7 @@ webanalyticssite.WebAnalyticsSite_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +473,7 @@ webanalyticssite.WebAnalyticsSite_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.WebAnalyticsSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +502,7 @@ The construct id used in the generated config for the WebAnalyticsSite to import
 
 The id of the existing WebAnalyticsSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -527,11 +541,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.snippet">Snippet</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.autoInstallInput">AutoInstallInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.hostInput">HostInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.liteInput">LiteInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.zoneTagInput">ZoneTagInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.autoInstall">AutoInstall</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.host">Host</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.lite">Lite</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.zoneTag">ZoneTag</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -768,6 +786,16 @@ func AutoInstallInput() interface{}
 
 ---
 
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabledInput"></a>
+
+```go
+func EnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `HostInput`<sup>Optional</sup> <a name="HostInput" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.hostInput"></a>
 
 ```go
@@ -775,6 +803,16 @@ func HostInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `LiteInput`<sup>Optional</sup> <a name="LiteInput" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.liteInput"></a>
+
+```go
+func LiteInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -808,6 +846,16 @@ func AutoInstall() interface{}
 
 ---
 
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabled"></a>
+
+```go
+func Enabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Host`<sup>Required</sup> <a name="Host" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.host"></a>
 
 ```go
@@ -815,6 +863,16 @@ func Host() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Lite`<sup>Required</sup> <a name="Lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.lite"></a>
+
+```go
+func Lite() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -853,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 &webanalyticssite.WebAnalyticsSiteConfig {
 	Connection: interface{},
@@ -865,7 +923,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalytic
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	AutoInstall: interface{},
+	Enabled: interface{},
 	Host: *string,
+	Lite: interface{},
 	ZoneTag: *string,
 }
 ```
@@ -883,7 +943,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalytic
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.autoInstall">AutoInstall</a></code> | <code>interface{}</code> | If enabled, the JavaScript snippet is automatically injected for orange-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Enables or disables RUM. This option can be used only when auto_install is set to true. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.host">Host</a></code> | <code>*string</code> | The hostname to use for gray-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.lite">Lite</a></code> | <code>interface{}</code> | If enabled, the JavaScript snippet will not be injected for visitors from the EU. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.zoneTag">ZoneTag</a></code> | <code>*string</code> | The zone identifier. |
 
 ---
@@ -968,7 +1030,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 
 ---
 
@@ -982,7 +1044,21 @@ AutoInstall interface{}
 
 If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+
+---
+
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.enabled"></a>
+
+```go
+Enabled interface{}
+```
+
+- *Type:* interface{}
+
+Enables or disables RUM. This option can be used only when auto_install is set to true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
 
 ---
 
@@ -996,7 +1072,21 @@ Host *string
 
 The hostname to use for gray-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+
+---
+
+##### `Lite`<sup>Optional</sup> <a name="Lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.lite"></a>
+
+```go
+Lite interface{}
+```
+
+- *Type:* interface{}
+
+If enabled, the JavaScript snippet will not be injected for visitors from the EU.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
 
 ---
 
@@ -1010,7 +1100,7 @@ ZoneTag *string
 
 The zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 
 ---
 
@@ -1019,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 &webanalyticssite.WebAnalyticsSiteRules {
 
@@ -1032,7 +1122,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalytic
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRuleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 &webanalyticssite.WebAnalyticsSiteRuleset {
 
@@ -1047,7 +1137,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalytic
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSiteRulesetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebAnalyticsSiteRulesetOutputReference
 ```
@@ -1340,7 +1430,7 @@ func InternalValue() WebAnalyticsSiteRuleset
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSiteRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebAnalyticsSiteRulesList
 ```
@@ -1489,7 +1579,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/webanalyticssite"
 
 webanalyticssite.NewWebAnalyticsSiteRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebAnalyticsSiteRulesOutputReference
 ```

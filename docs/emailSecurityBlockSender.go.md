@@ -4,12 +4,12 @@
 
 ### EmailSecurityBlockSender <a name="EmailSecurityBlockSender" id="@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecurityblocksender"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityblocksender"
 
 emailsecurityblocksender.NewEmailSecurityBlockSender(scope Construct, id *string, config EmailSecurityBlockSenderConfig) EmailSecurityBlockSender
 ```
@@ -385,7 +385,7 @@ func ResetComments()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecurityblocksender"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityblocksender"
 
 emailsecurityblocksender.EmailSecurityBlockSender_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecurityblocksender"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityblocksender"
 
 emailsecurityblocksender.EmailSecurityBlockSender_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ emailsecurityblocksender.EmailSecurityBlockSender_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecurityblocksender"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityblocksender"
 
 emailsecurityblocksender.EmailSecurityBlockSender_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ emailsecurityblocksender.EmailSecurityBlockSender_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecurityblocksender"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityblocksender"
 
 emailsecurityblocksender.EmailSecurityBlockSender_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the EmailSecurityBlockSender t
 
 The id of the existing EmailSecurityBlockSender that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecurityblocksender"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityblocksender"
 
 &emailsecurityblocksender.EmailSecurityBlockSenderConfig {
 	Connection: interface{},
@@ -847,10 +847,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuri
 | <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.isRegex">IsRegex</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}. |
-| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}. |
-| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.patternType">PatternType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}. |
-| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.comments">Comments</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
+| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.isRegex">IsRegex</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}. |
+| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}. |
+| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.patternType">PatternType</a></code> | <code>*string</code> | Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN". |
+| <code><a href="#@cdktf/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.comments">Comments</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
 
 ---
 
@@ -934,7 +934,7 @@ AccountId *string
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
 
 ---
 
@@ -946,7 +946,7 @@ IsRegex interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}.
 
 ---
 
@@ -958,7 +958,7 @@ Pattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}.
 
 ---
 
@@ -970,7 +970,9 @@ PatternType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}.
+Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
 
 ---
 
@@ -982,7 +984,7 @@ Comments *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
 
 ---
 

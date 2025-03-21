@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareWaitingRoomsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#account_id DataCloudflareWaitingRooms#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
   */
   readonly maxItems?: number;
   /**
-  * Identifier
+  * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
   */
-  readonly zoneId: string;
+  readonly zoneId?: string;
 }
 export interface DataCloudflareWaitingRoomsResultAdditionalRoutes {
 }
@@ -368,7 +369,7 @@ export class DataCloudflareWaitingRoomsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}
 */
 export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
 
@@ -384,7 +385,7 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWaitingRooms resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWaitingRooms to import
-  * @param importFromId The id of the existing DataCloudflareWaitingRooms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWaitingRooms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWaitingRooms to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -396,18 +397,18 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareWaitingRoomsConfig
+  * @param options DataCloudflareWaitingRoomsConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareWaitingRoomsConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareWaitingRoomsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_waiting_rooms',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -418,6 +419,7 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._maxItems = config.maxItems;
     this._zoneId = config.zoneId;
   }
@@ -425,6 +427,22 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // max_items - computed: false, optional: true, required: false
   private _maxItems?: number; 
@@ -448,13 +466,16 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
     return this._result;
   }
 
-  // zone_id - computed: false, optional: false, required: true
+  // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
   public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {
@@ -467,6 +488,7 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       max_items: cdktf.numberToTerraform(this._maxItems),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
@@ -474,6 +496,12 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       max_items: {
         value: cdktf.numberToHclTerraform(this._maxItems),
         isBlock: false,

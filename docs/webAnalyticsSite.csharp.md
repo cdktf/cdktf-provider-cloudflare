@@ -4,7 +4,7 @@
 
 ### WebAnalyticsSite <a name="WebAnalyticsSite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer"></a>
 
@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetAutoInstall">ResetAutoInstall</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetHost">ResetHost</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetLite">ResetLite</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetZoneTag">ResetZoneTag</a></code> | *No description.* |
 
 ---
@@ -373,10 +375,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetAutoInstall()
 ```
 
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetEnabled"></a>
+
+```csharp
+private void ResetEnabled()
+```
+
 ##### `ResetHost` <a name="ResetHost" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetHost"></a>
 
 ```csharp
 private void ResetHost()
+```
+
+##### `ResetLite` <a name="ResetLite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetLite"></a>
+
+```csharp
+private void ResetLite()
 ```
 
 ##### `ResetZoneTag` <a name="ResetZoneTag" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetZoneTag"></a>
@@ -488,7 +502,7 @@ The construct id used in the generated config for the WebAnalyticsSite to import
 
 The id of the existing WebAnalyticsSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -527,11 +541,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.snippet">Snippet</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.autoInstallInput">AutoInstallInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.hostInput">HostInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.liteInput">LiteInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.zoneTagInput">ZoneTagInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.autoInstall">AutoInstall</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.host">Host</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.lite">Lite</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.zoneTag">ZoneTag</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -768,6 +786,16 @@ public object AutoInstallInput { get; }
 
 ---
 
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabledInput"></a>
+
+```csharp
+public object EnabledInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `HostInput`<sup>Optional</sup> <a name="HostInput" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.hostInput"></a>
 
 ```csharp
@@ -775,6 +803,16 @@ public string HostInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `LiteInput`<sup>Optional</sup> <a name="LiteInput" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.liteInput"></a>
+
+```csharp
+public object LiteInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -808,6 +846,16 @@ public object AutoInstall { get; }
 
 ---
 
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabled"></a>
+
+```csharp
+public object Enabled { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `Host`<sup>Required</sup> <a name="Host" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.host"></a>
 
 ```csharp
@@ -815,6 +863,16 @@ public string Host { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Lite`<sup>Required</sup> <a name="Lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.lite"></a>
+
+```csharp
+public object Lite { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -865,7 +923,9 @@ new WebAnalyticsSiteConfig {
     object[] Provisioners = null,
     string AccountId,
     object AutoInstall = null,
+    object Enabled = null,
     string Host = null,
+    object Lite = null,
     string ZoneTag = null
 };
 ```
@@ -883,7 +943,9 @@ new WebAnalyticsSiteConfig {
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.autoInstall">AutoInstall</a></code> | <code>object</code> | If enabled, the JavaScript snippet is automatically injected for orange-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.enabled">Enabled</a></code> | <code>object</code> | Enables or disables RUM. This option can be used only when auto_install is set to true. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.host">Host</a></code> | <code>string</code> | The hostname to use for gray-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.lite">Lite</a></code> | <code>object</code> | If enabled, the JavaScript snippet will not be injected for visitors from the EU. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.zoneTag">ZoneTag</a></code> | <code>string</code> | The zone identifier. |
 
 ---
@@ -968,7 +1030,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 
 ---
 
@@ -982,7 +1044,21 @@ public object AutoInstall { get; set; }
 
 If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+
+---
+
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.enabled"></a>
+
+```csharp
+public object Enabled { get; set; }
+```
+
+- *Type:* object
+
+Enables or disables RUM. This option can be used only when auto_install is set to true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
 
 ---
 
@@ -996,7 +1072,21 @@ public string Host { get; set; }
 
 The hostname to use for gray-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+
+---
+
+##### `Lite`<sup>Optional</sup> <a name="Lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.lite"></a>
+
+```csharp
+public object Lite { get; set; }
+```
+
+- *Type:* object
+
+If enabled, the JavaScript snippet will not be injected for visitors from the EU.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
 
 ---
 
@@ -1010,7 +1100,7 @@ public string ZoneTag { get; set; }
 
 The zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 
 ---
 

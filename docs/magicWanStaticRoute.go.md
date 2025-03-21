@@ -4,12 +4,12 @@
 
 ### MagicWanStaticRoute <a name="MagicWanStaticRoute" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRoute(scope Construct, id *string, config MagicWanStaticRouteConfig) MagicWanStaticRoute
 ```
@@ -480,7 +480,7 @@ func ResetWeight()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ magicwanstaticroute.MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ magicwanstaticroute.MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -569,7 +569,7 @@ The construct id used in the generated config for the MagicWanStaticRoute to imp
 
 The id of the existing MagicWanStaticRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteConfig {
 	Connection: interface{},
@@ -1026,10 +1026,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 	Nexthop: *string,
 	Prefix: *string,
 	Priority: *f64,
-	Route: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.magicWanStaticRoute.MagicWanStaticRouteRoute,
+	Route: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute,
 	RouteId: *string,
 	Routes: interface{},
-	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.magicWanStaticRoute.MagicWanStaticRouteScope,
+	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope,
 	Weight: *f64,
 }
 ```
@@ -1050,9 +1050,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.nexthop">Nexthop</a></code> | <code>*string</code> | The next-hop IP Address for the static route. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.prefix">Prefix</a></code> | <code>*string</code> | IP Prefix in Classless Inter-Domain Routing format. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.priority">Priority</a></code> | <code>*f64</code> | Priority of the static route. |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.route">Route</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#route MagicWanStaticRoute#route}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.route">Route</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#route MagicWanStaticRoute#route}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.routeId">RouteId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.routes">Routes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#routes MagicWanStaticRoute#routes}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.routes">Routes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#routes MagicWanStaticRoute#routes}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope">MagicWanStaticRouteScope</a></code> | Used only for ECMP routes. |
 | <code><a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.property.weight">Weight</a></code> | <code>*f64</code> | Optional weight of the ECMP scope - if provided. |
 
@@ -1138,7 +1138,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
 
 ---
 
@@ -1152,7 +1152,7 @@ Description *string
 
 An optional human provided description of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
 
 ---
 
@@ -1166,7 +1166,7 @@ Nexthop *string
 
 The next-hop IP Address for the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
 
 ---
 
@@ -1180,7 +1180,7 @@ Prefix *string
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
 
 ---
 
@@ -1194,7 +1194,7 @@ Priority *f64
 
 Priority of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
 
 ---
 
@@ -1206,7 +1206,7 @@ Route MagicWanStaticRouteRoute
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute">MagicWanStaticRouteRoute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#route MagicWanStaticRoute#route}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#route MagicWanStaticRoute#route}.
 
 ---
 
@@ -1220,7 +1220,7 @@ RouteId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#route_id MagicWanStaticRoute#route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#route_id MagicWanStaticRoute#route_id}
 
 ---
 
@@ -1232,7 +1232,7 @@ Routes interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#routes MagicWanStaticRoute#routes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#routes MagicWanStaticRoute#routes}.
 
 ---
 
@@ -1246,7 +1246,7 @@ Scope MagicWanStaticRouteScope
 
 Used only for ECMP routes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
 
 ---
 
@@ -1260,7 +1260,7 @@ Weight *f64
 
 Optional weight of the ECMP scope - if provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
 
 ---
 
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteModifiedRoute {
 
@@ -1282,7 +1282,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteModifiedRouteScope {
 
@@ -1295,14 +1295,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwansta
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRoute {
 	Description: *string,
 	Nexthop: *string,
 	Prefix: *string,
 	Priority: *f64,
-	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.magicWanStaticRoute.MagicWanStaticRouteRouteScope,
+	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope,
 	Weight: *f64,
 }
 ```
@@ -1330,7 +1330,7 @@ Description *string
 
 An optional human provided description of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
 
 ---
 
@@ -1344,7 +1344,7 @@ Nexthop *string
 
 The next-hop IP Address for the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
 
 ---
 
@@ -1358,7 +1358,7 @@ Prefix *string
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
 
 ---
 
@@ -1372,7 +1372,7 @@ Priority *f64
 
 Priority of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
 
 ---
 
@@ -1386,7 +1386,7 @@ Scope MagicWanStaticRouteRouteScope
 
 Used only for ECMP routes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
 
 ---
 
@@ -1400,7 +1400,7 @@ Weight *f64
 
 Optional weight of the ECMP scope - if provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
 
 ---
 
@@ -1409,14 +1409,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRoutes {
 	Description: *string,
 	Nexthop: *string,
 	Prefix: *string,
 	Priority: *f64,
-	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.magicWanStaticRoute.MagicWanStaticRouteRoutesScope,
+	Scope: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope,
 	Weight: *f64,
 }
 ```
@@ -1444,7 +1444,7 @@ Description *string
 
 An optional human provided description of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
 
 ---
 
@@ -1458,7 +1458,7 @@ Nexthop *string
 
 The next-hop IP Address for the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
 
 ---
 
@@ -1472,7 +1472,7 @@ Prefix *string
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
 
 ---
 
@@ -1486,7 +1486,7 @@ Priority *f64
 
 Priority of the static route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
 
 ---
 
@@ -1500,7 +1500,7 @@ Scope MagicWanStaticRouteRoutesScope
 
 Used only for ECMP routes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
 
 ---
 
@@ -1514,7 +1514,7 @@ Weight *f64
 
 Optional weight of the ECMP scope - if provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
 
 ---
 
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRouteScope {
 	ColoNames: *[]*string,
@@ -1550,7 +1550,7 @@ ColoNames *[]*string
 
 List of colo names for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
 
 ---
 
@@ -1564,7 +1564,7 @@ ColoRegions *[]*string
 
 List of colo regions for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
 
 ---
 
@@ -1573,7 +1573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteRoutesScope {
 	ColoNames: *[]*string,
@@ -1600,7 +1600,7 @@ ColoNames *[]*string
 
 List of colo names for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
 
 ---
 
@@ -1614,7 +1614,7 @@ ColoRegions *[]*string
 
 List of colo regions for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
 
 ---
 
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteScope {
 	ColoNames: *[]*string,
@@ -1650,7 +1650,7 @@ ColoNames *[]*string
 
 List of colo names for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
 
 ---
 
@@ -1664,7 +1664,7 @@ ColoRegions *[]*string
 
 List of colo regions for the ECMP scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
 
 ---
 
@@ -1675,7 +1675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteModifiedRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteModifiedRouteOutputReference
 ```
@@ -2023,7 +2023,7 @@ func InternalValue() MagicWanStaticRouteModifiedRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteModifiedRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteModifiedRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteModifiedRouteScopeOutputReference
 ```
@@ -2294,7 +2294,7 @@ func InternalValue() MagicWanStaticRouteModifiedRouteScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteRouteOutputReference
 ```
@@ -2763,7 +2763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteRouteScopeOutputReference
 ```
@@ -3070,7 +3070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MagicWanStaticRouteRoutesList
 ```
@@ -3230,7 +3230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MagicWanStaticRouteRoutesOutputReference
 ```
@@ -3717,7 +3717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteRoutesScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteRoutesScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteRoutesScopeOutputReference
 ```
@@ -4024,7 +4024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteScopeOutputReference
 ```

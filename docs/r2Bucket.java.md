@@ -4,7 +4,7 @@
 
 ### R2Bucket <a name="R2Bucket" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer"></a>
 
@@ -45,8 +45,8 @@ R2Bucket.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the bucket. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Location of the bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.storageClass">storageClass</a></code> | <code>java.lang.String</code> | Storage class for newly uploaded objects, unless specified otherwise. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Location of the bucket Available values: "apac", "eeur", "enam", "weur", "wnam", "oc". |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2Bucket.Initializer.parameter.storageClass">storageClass</a></code> | <code>java.lang.String</code> | Storage class for newly uploaded objects, unless specified otherwise. Available values: "Standard", "InfrequentAccess". |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#name R2Bucket#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
 
 ---
 
@@ -144,9 +144,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Location of the bucket.
+Location of the bucket Available values: "apac", "eeur", "enam", "weur", "wnam", "oc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#location R2Bucket#location}
 
 ---
 
@@ -154,9 +154,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Storage class for newly uploaded objects, unless specified otherwise.
+Storage class for newly uploaded objects, unless specified otherwise. Available values: "Standard", "InfrequentAccess".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
 
 ---
 
@@ -604,7 +604,7 @@ The construct id used in the generated config for the R2Bucket to import.
 
 The id of the existing R2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -972,8 +972,8 @@ R2BucketConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the bucket. |
 | <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">location</a></code> | <code>java.lang.String</code> | Location of the bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.storageClass">storageClass</a></code> | <code>java.lang.String</code> | Storage class for newly uploaded objects, unless specified otherwise. |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">location</a></code> | <code>java.lang.String</code> | Location of the bucket Available values: "apac", "eeur", "enam", "weur", "wnam", "oc". |
+| <code><a href="#@cdktf/provider-cloudflare.r2Bucket.R2BucketConfig.property.storageClass">storageClass</a></code> | <code>java.lang.String</code> | Storage class for newly uploaded objects, unless specified otherwise. Available values: "Standard", "InfrequentAccess". |
 
 ---
 
@@ -1057,7 +1057,7 @@ public java.lang.String getAccountId();
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 
 ---
 
@@ -1071,7 +1071,7 @@ public java.lang.String getName();
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#name R2Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#name R2Bucket#name}
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.lang.String getJurisdiction();
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
 
 ---
 
@@ -1097,9 +1097,9 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Location of the bucket.
+Location of the bucket Available values: "apac", "eeur", "enam", "weur", "wnam", "oc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#location R2Bucket#location}
 
 ---
 
@@ -1111,9 +1111,9 @@ public java.lang.String getStorageClass();
 
 - *Type:* java.lang.String
 
-Storage class for newly uploaded objects, unless specified otherwise.
+Storage class for newly uploaded objects, unless specified otherwise. Available values: "Standard", "InfrequentAccess".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
 
 ---
 

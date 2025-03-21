@@ -4,12 +4,12 @@
 
 ### KeylessCertificate <a name="KeylessCertificate" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 keylesscertificate.NewKeylessCertificate(scope Construct, id *string, config KeylessCertificateConfig) KeylessCertificate
 ```
@@ -426,7 +426,7 @@ func ResetTunnel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ keylesscertificate.KeylessCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ keylesscertificate.KeylessCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 keylesscertificate.KeylessCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the KeylessCertificate to impo
 
 The id of the existing KeylessCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 &keylesscertificate.KeylessCertificateConfig {
 	Connection: interface{},
@@ -963,7 +963,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscert
 	Enabled: interface{},
 	Name: *string,
 	Port: *f64,
-	Tunnel: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.keylessCertificate.KeylessCertificateTunnel,
+	Tunnel: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.keylessCertificate.KeylessCertificateTunnel,
 }
 ```
 
@@ -1069,7 +1069,7 @@ Certificate *string
 
 The zone's SSL certificate or SSL certificate and intermediate(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
 
 ---
 
@@ -1083,7 +1083,7 @@ Host *string
 
 The keyless SSL name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
 
 ---
 
@@ -1097,7 +1097,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
 
 ---
 
@@ -1112,8 +1112,9 @@ BundleMethod *string
 A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores.
 
 An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
+Available values: "ubiquitous", "optimal", "force".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
 
 ---
 
@@ -1127,7 +1128,7 @@ Enabled interface{}
 
 Whether or not the Keyless SSL is on or off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
 
 ---
 
@@ -1141,7 +1142,7 @@ Name *string
 
 The keyless SSL name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
 
 ---
 
@@ -1155,7 +1156,7 @@ Port *f64
 
 The keyless SSL port used to communicate between Cloudflare and the client's Keyless SSL server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
 
 ---
 
@@ -1169,7 +1170,7 @@ Tunnel KeylessCertificateTunnel
 
 Configuration for using Keyless SSL through a Cloudflare Tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
 
 ---
 
@@ -1178,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 &keylesscertificate.KeylessCertificateTunnel {
 	PrivateIp: *string,
@@ -1205,7 +1206,7 @@ PrivateIp *string
 
 Private IP of the Key Server Host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
 
 ---
 
@@ -1219,7 +1220,7 @@ VnetId *string
 
 Cloudflare Tunnel Virtual Network ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
 
 ---
 
@@ -1230,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateTunnelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/keylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/keylesscertificate"
 
 keylesscertificate.NewKeylessCertificateTunnelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeylessCertificateTunnelOutputReference
 ```

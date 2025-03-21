@@ -4,7 +4,7 @@
 
 ### ZoneSubscription <a name="ZoneSubscription" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ZoneSubscription to import
 
 The id of the existing ZoneSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,7 +788,7 @@ new ZoneSubscriptionConfig {
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.identifier">Identifier</a></code> | <code>string</code> | Subscription identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.frequency">Frequency</a></code> | <code>string</code> | How often the subscription is renewed automatically. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.frequency">Frequency</a></code> | <code>string</code> | How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.ratePlan">RatePlan</a></code> | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan">ZoneSubscriptionRatePlan</a></code> | The rate plan applied to the subscription. |
 
 ---
@@ -873,7 +873,7 @@ public string Identifier { get; set; }
 
 Subscription identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#identifier ZoneSubscription#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#identifier ZoneSubscription#identifier}
 
 ---
 
@@ -885,9 +885,9 @@ public string Frequency { get; set; }
 
 - *Type:* string
 
-How often the subscription is renewed automatically.
+How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
 
 ---
 
@@ -901,7 +901,7 @@ public ZoneSubscriptionRatePlan RatePlan { get; set; }
 
 The rate plan applied to the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
 
 ---
 
@@ -929,7 +929,7 @@ new ZoneSubscriptionRatePlan {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.currency">Currency</a></code> | <code>string</code> | The currency applied to the rate plan subscription. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.externallyManaged">ExternallyManaged</a></code> | <code>object</code> | Whether this rate plan is managed externally from Cloudflare. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.id">Id</a></code> | <code>string</code> | The ID of the rate plan. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.id">Id</a></code> | <code>string</code> | The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.isContract">IsContract</a></code> | <code>object</code> | Whether a rate plan is enterprise-based (or newly adopted term contract). |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.publicName">PublicName</a></code> | <code>string</code> | The full name of the rate plan. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.scope">Scope</a></code> | <code>string</code> | The scope that this rate plan applies to. |
@@ -947,7 +947,7 @@ public string Currency { get; set; }
 
 The currency applied to the rate plan subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#currency ZoneSubscription#currency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#currency ZoneSubscription#currency}
 
 ---
 
@@ -961,7 +961,7 @@ public object ExternallyManaged { get; set; }
 
 Whether this rate plan is managed externally from Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#externally_managed ZoneSubscription#externally_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#externally_managed ZoneSubscription#externally_managed}
 
 ---
 
@@ -973,9 +973,9 @@ public string Id { get; set; }
 
 - *Type:* string
 
-The ID of the rate plan.
+The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#id ZoneSubscription#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#id ZoneSubscription#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ public object IsContract { get; set; }
 
 Whether a rate plan is enterprise-based (or newly adopted term contract).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#is_contract ZoneSubscription#is_contract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#is_contract ZoneSubscription#is_contract}
 
 ---
 
@@ -1006,7 +1006,7 @@ public string PublicName { get; set; }
 
 The full name of the rate plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#public_name ZoneSubscription#public_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#public_name ZoneSubscription#public_name}
 
 ---
 
@@ -1020,7 +1020,7 @@ public string Scope { get; set; }
 
 The scope that this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
 
 ---
 
@@ -1034,7 +1034,7 @@ public string[] Sets { get; set; }
 
 The list of sets this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#sets ZoneSubscription#sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#sets ZoneSubscription#sets}
 
 ---
 

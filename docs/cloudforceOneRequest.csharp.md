@@ -4,7 +4,7 @@
 
 ### CloudforceOneRequest <a name="CloudforceOneRequest" id="@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the CloudforceOneRequest to im
 
 The id of the existing CloudforceOneRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,7 +968,7 @@ new CloudforceOneRequestConfig {
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.property.priority">Priority</a></code> | <code>string</code> | Priority for analyzing the request. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.property.requestType">RequestType</a></code> | <code>string</code> | Requested information from request. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.property.summary">Summary</a></code> | <code>string</code> | Brief description of the request. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.property.tlp">Tlp</a></code> | <code>string</code> | The CISA defined Traffic Light Protocol (TLP). |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.property.tlp">Tlp</a></code> | <code>string</code> | The CISA defined Traffic Light Protocol (TLP) Available values: "clear", "amber", "amber-strict", "green", "red". |
 
 ---
 
@@ -1052,7 +1052,7 @@ public string AccountIdentifier { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request#account_identifier CloudforceOneRequest#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#account_identifier CloudforceOneRequest#account_identifier}
 
 ---
 
@@ -1066,7 +1066,7 @@ public string Content { get; set; }
 
 Request content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
 
 ---
 
@@ -1080,7 +1080,7 @@ public string Priority { get; set; }
 
 Priority for analyzing the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
 
 ---
 
@@ -1094,7 +1094,7 @@ public string RequestType { get; set; }
 
 Requested information from request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
 
 ---
 
@@ -1108,7 +1108,7 @@ public string Summary { get; set; }
 
 Brief description of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
 
 ---
 
@@ -1120,9 +1120,9 @@ public string Tlp { get; set; }
 
 - *Type:* string
 
-The CISA defined Traffic Light Protocol (TLP).
+The CISA defined Traffic Light Protocol (TLP) Available values: "clear", "amber", "amber-strict", "green", "red".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
 
 ---
 

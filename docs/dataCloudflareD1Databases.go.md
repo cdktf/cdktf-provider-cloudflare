@@ -4,12 +4,12 @@
 
 ### DataCloudflareD1Databases <a name="DataCloudflareD1Databases" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_databases cloudflare_d1_databases}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_databases cloudflare_d1_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 datacloudflared1databases.NewDataCloudflareD1Databases(scope Construct, id *string, config DataCloudflareD1DatabasesConfig) DataCloudflareD1Databases
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 datacloudflared1databases.DataCloudflareD1Databases_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 datacloudflared1databases.DataCloudflareD1Databases_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflared1databases.DataCloudflareD1Databases_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 datacloudflared1databases.DataCloudflareD1Databases_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datacloudflared1databases.DataCloudflareD1Databases_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 datacloudflared1databases.DataCloudflareD1Databases_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareD1Databases 
 
 The id of the existing DataCloudflareD1Databases that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_databases#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_databases#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 &datacloudflared1databases.DataCloudflareD1DatabasesConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_databases#account_id DataCloudflareD1Databases#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_databases#account_id DataCloudflareD1Databases#account_id}
 
 ---
 
@@ -761,7 +761,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_databases#max_items DataCloudflareD1Databases#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_databases#max_items DataCloudflareD1Databases#max_items}
 
 ---
 
@@ -775,7 +775,7 @@ Name *string
 
 a database name to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_databases#name DataCloudflareD1Databases#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_databases#name DataCloudflareD1Databases#name}
 
 ---
 
@@ -784,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 &datacloudflared1databases.DataCloudflareD1DatabasesResult {
 
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 datacloudflared1databases.NewDataCloudflareD1DatabasesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareD1DatabasesResultList
 ```
@@ -948,7 +948,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1databases"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1databases"
 
 datacloudflared1databases.NewDataCloudflareD1DatabasesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareD1DatabasesResultOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataCloudflareWorkersScripts <a name="DataCloudflareWorkersScripts" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.NewDataCloudflareWorkersScripts(scope Construct, id *string, config DataCloudflareWorkersScriptsConfig) DataCloudflareWorkersScripts
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.DataCloudflareWorkersScripts_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.DataCloudflareWorkersScripts_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareworkersscripts.DataCloudflareWorkersScripts_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.DataCloudflareWorkersScripts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareworkersscripts.DataCloudflareWorkersScripts_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScripts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.DataCloudflareWorkersScripts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareWorkersScrip
 
 The id of the existing DataCloudflareWorkersScripts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 &datacloudflareworkersscripts.DataCloudflareWorkersScriptsConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 &datacloudflareworkersscripts.DataCloudflareWorkersScriptsResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 &datacloudflareworkersscripts.DataCloudflareWorkersScriptsResultPlacement {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultTailConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 &datacloudflareworkersscripts.DataCloudflareWorkersScriptsResultTailConsumers {
 
@@ -780,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.NewDataCloudflareWorkersScriptsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersScriptsResultList
 ```
@@ -929,7 +929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.NewDataCloudflareWorkersScriptsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersScriptsResultOutputReference
 ```
@@ -1328,7 +1328,7 @@ func InternalValue() DataCloudflareWorkersScriptsResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.NewDataCloudflareWorkersScriptsResultPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkersScriptsResultPlacementOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() DataCloudflareWorkersScriptsResultPlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultTailConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.NewDataCloudflareWorkersScriptsResultTailConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkersScriptsResultTailConsumersList
 ```
@@ -1748,7 +1748,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultTailConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareworkersscripts"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkersscripts"
 
 datacloudflareworkersscripts.NewDataCloudflareWorkersScriptsResultTailConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkersScriptsResultTailConsumersOutputReference
 ```

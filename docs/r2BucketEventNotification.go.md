@@ -4,12 +4,12 @@
 
 ### R2BucketEventNotification <a name="R2BucketEventNotification" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotification(scope Construct, id *string, config R2BucketEventNotificationConfig) R2BucketEventNotification
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.putRules">PutRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetJurisdiction">ResetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetQueueId">ResetQueueId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetRules">ResetRules</a></code> | *No description.* |
 
@@ -379,6 +380,12 @@ func PutRules(value interface{})
 
 ---
 
+##### `ResetJurisdiction` <a name="ResetJurisdiction" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetJurisdiction"></a>
+
+```go
+func ResetJurisdiction()
+```
+
 ##### `ResetQueueId` <a name="ResetQueueId" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetQueueId"></a>
 
 ```go
@@ -405,7 +412,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ r2bucketeventnotification.R2BucketEventNotification_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ r2bucketeventnotification.R2BucketEventNotification_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.R2BucketEventNotification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +501,7 @@ The construct id used in the generated config for the R2BucketEventNotification 
 
 The id of the existing R2BucketEventNotification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -528,10 +535,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.rules">Rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesList">R2BucketEventNotificationRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.bucketNameInput">BucketNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdictionInput">JurisdictionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.queueIdInput">QueueIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.bucketName">BucketName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.queueId">QueueId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -718,6 +727,16 @@ func BucketNameInput() *string
 
 ---
 
+##### `JurisdictionInput`<sup>Optional</sup> <a name="JurisdictionInput" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdictionInput"></a>
+
+```go
+func JurisdictionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `QueueIdInput`<sup>Optional</sup> <a name="QueueIdInput" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.queueIdInput"></a>
 
 ```go
@@ -752,6 +771,16 @@ func AccountId() *string
 
 ```go
 func BucketName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Jurisdiction`<sup>Required</sup> <a name="Jurisdiction" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdiction"></a>
+
+```go
+func Jurisdiction() *string
 ```
 
 - *Type:* *string
@@ -793,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 &r2bucketeventnotification.R2BucketEventNotificationConfig {
 	Connection: interface{},
@@ -805,6 +834,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeve
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	BucketName: *string,
+	Jurisdiction: *string,
 	QueueId: *string,
 	Rules: interface{},
 }
@@ -823,6 +853,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeve
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | Name of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | Jurisdiction of the bucket. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.queueId">QueueId</a></code> | <code>*string</code> | Queue ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.rules">Rules</a></code> | <code>interface{}</code> | Array of rules to drive notifications. |
 
@@ -908,7 +939,7 @@ AccountId *string
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
 
 ---
 
@@ -922,7 +953,21 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+
+---
+
+##### `Jurisdiction`<sup>Optional</sup> <a name="Jurisdiction" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.jurisdiction"></a>
+
+```go
+Jurisdiction *string
+```
+
+- *Type:* *string
+
+Jurisdiction of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
 
 ---
 
@@ -936,7 +981,7 @@ QueueId *string
 
 Queue ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
 
 ---
 
@@ -950,7 +995,7 @@ Rules interface{}
 
 Array of rules to drive notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
 
 ---
 
@@ -959,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationQueues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 &r2bucketeventnotification.R2BucketEventNotificationQueues {
 
@@ -972,7 +1017,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeve
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationQueuesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 &r2bucketeventnotification.R2BucketEventNotificationQueuesRules {
 
@@ -985,7 +1030,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeve
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 &r2bucketeventnotification.R2BucketEventNotificationRules {
 	Actions: *[]*string,
@@ -1016,7 +1061,7 @@ Actions *[]*string
 
 Array of R2 object actions that will trigger notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
 
 ---
 
@@ -1030,7 +1075,7 @@ Description *string
 
 A description that can be used to identify the event notification rule after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
 
 ---
 
@@ -1044,7 +1089,7 @@ Prefix *string
 
 Notifications will be sent only for objects with this prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
 
 ---
 
@@ -1058,7 +1103,7 @@ Suffix *string
 
 Notifications will be sent only for objects with this suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
 
 ---
 
@@ -1069,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationQueuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationQueuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketEventNotificationQueuesList
 ```
@@ -1218,7 +1263,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationQueuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationQueuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketEventNotificationQueuesOutputReference
 ```
@@ -1518,7 +1563,7 @@ func InternalValue() R2BucketEventNotificationQueues
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationQueuesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationQueuesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketEventNotificationQueuesRulesList
 ```
@@ -1667,7 +1712,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationQueuesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationQueuesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketEventNotificationQueuesRulesOutputReference
 ```
@@ -2000,7 +2045,7 @@ func InternalValue() R2BucketEventNotificationQueuesRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketEventNotificationRulesList
 ```
@@ -2160,7 +2205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketeventnotification"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketeventnotification"
 
 r2bucketeventnotification.NewR2BucketEventNotificationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketEventNotificationRulesOutputReference
 ```

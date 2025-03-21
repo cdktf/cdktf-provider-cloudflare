@@ -4,12 +4,12 @@
 
 ### DataCloudflareResourceGroups <a name="DataCloudflareResourceGroups" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/resource_groups cloudflare_resource_groups}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/resource_groups cloudflare_resource_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroups(scope Construct, id *string, config DataCloudflareResourceGroupsConfig) DataCloudflareResourceGroups
 ```
@@ -297,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.DataCloudflareResourceGroups_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.DataCloudflareResourceGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareresourcegroups.DataCloudflareResourceGroups_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.DataCloudflareResourceGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareresourcegroups.DataCloudflareResourceGroups_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.DataCloudflareResourceGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareResourceGrou
 
 The id of the existing DataCloudflareResourceGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/resource_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/resource_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 &datacloudflareresourcegroups.DataCloudflareResourceGroupsConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/resource_groups#account_id DataCloudflareResourceGroups#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/resource_groups#account_id DataCloudflareResourceGroups#account_id}
 
 ---
 
@@ -792,7 +792,7 @@ Id *string
 
 ID of the resource group to be fetched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/resource_groups#id DataCloudflareResourceGroups#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/resource_groups#id DataCloudflareResourceGroups#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +809,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/resource_groups#max_items DataCloudflareResourceGroups#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/resource_groups#max_items DataCloudflareResourceGroups#max_items}
 
 ---
 
@@ -823,7 +823,7 @@ Name *string
 
 Name of the resource group to be fetched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/resource_groups#name DataCloudflareResourceGroups#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/resource_groups#name DataCloudflareResourceGroups#name}
 
 ---
 
@@ -832,7 +832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 &datacloudflareresourcegroups.DataCloudflareResourceGroupsResult {
 
@@ -845,7 +845,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 &datacloudflareresourcegroups.DataCloudflareResourceGroupsResultMeta {
 
@@ -858,7 +858,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 &datacloudflareresourcegroups.DataCloudflareResourceGroupsResultScope {
 
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultScopeObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 &datacloudflareresourcegroups.DataCloudflareResourceGroupsResultScopeObjects {
 
@@ -886,7 +886,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroupsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareResourceGroupsResultList
 ```
@@ -1035,7 +1035,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroupsResultMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareResourceGroupsResultMetaOutputReference
 ```
@@ -1306,7 +1306,7 @@ func InternalValue() DataCloudflareResourceGroupsResultMeta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroupsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareResourceGroupsResultOutputReference
 ```
@@ -1617,7 +1617,7 @@ func InternalValue() DataCloudflareResourceGroupsResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroupsResultScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareResourceGroupsResultScopeList
 ```
@@ -1766,7 +1766,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultScopeObjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroupsResultScopeObjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareResourceGroupsResultScopeObjectsList
 ```
@@ -1915,7 +1915,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultScopeObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroupsResultScopeObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareResourceGroupsResultScopeObjectsOutputReference
 ```
@@ -2193,7 +2193,7 @@ func InternalValue() DataCloudflareResourceGroupsResultScopeObjects
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareResourceGroups.DataCloudflareResourceGroupsResultScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareresourcegroups"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareresourcegroups"
 
 datacloudflareresourcegroups.NewDataCloudflareResourceGroupsResultScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareResourceGroupsResultScopeOutputReference
 ```

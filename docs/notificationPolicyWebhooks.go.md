@@ -4,12 +4,12 @@
 
 ### NotificationPolicyWebhooks <a name="NotificationPolicyWebhooks" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NewNotificationPolicyWebhooks(scope Construct, id *string, config NotificationPolicyWebhooksConfig) NotificationPolicyWebhooks
 ```
@@ -385,7 +385,7 @@ func ResetSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NotificationPolicyWebhooks_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NotificationPolicyWebhooks_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ notificationpolicywebhooks.NotificationPolicyWebhooks_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NotificationPolicyWebhooks_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ notificationpolicywebhooks.NotificationPolicyWebhooks_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 notificationpolicywebhooks.NotificationPolicyWebhooks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the NotificationPolicyWebhooks
 
 The id of the existing NotificationPolicyWebhooks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/notification_policy_webhooks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/notification_policy_webhooks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/notificationpolicywebhooks"
 
 &notificationpolicywebhooks.NotificationPolicyWebhooksConfig {
 	Connection: interface{},
@@ -932,7 +932,7 @@ AccountId *string
 
 The account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
 
 ---
 
@@ -948,7 +948,7 @@ The name of the webhook destination.
 
 This will be included in the request body when you receive a webhook notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
 
 ---
 
@@ -962,7 +962,7 @@ Url *string
 
 The POST endpoint to call when dispatching a notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
 
 ---
 
@@ -978,7 +978,7 @@ Optional secret that will be passed in the `cf-webhook-auth` header when dispatc
 
 Secrets are not returned in any API response body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
 
 ---
 

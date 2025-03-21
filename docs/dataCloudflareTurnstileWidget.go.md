@@ -4,12 +4,12 @@
 
 ### DataCloudflareTurnstileWidget <a name="DataCloudflareTurnstileWidget" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 datacloudflareturnstilewidget.NewDataCloudflareTurnstileWidget(scope Construct, id *string, config DataCloudflareTurnstileWidgetConfig) DataCloudflareTurnstileWidget
 ```
@@ -303,7 +303,7 @@ func ResetSitekey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 datacloudflareturnstilewidget.DataCloudflareTurnstileWidget_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 datacloudflareturnstilewidget.DataCloudflareTurnstileWidget_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareturnstilewidget.DataCloudflareTurnstileWidget_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 datacloudflareturnstilewidget.DataCloudflareTurnstileWidget_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareturnstilewidget.DataCloudflareTurnstileWidget_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 datacloudflareturnstilewidget.DataCloudflareTurnstileWidget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataCloudflareTurnstileWid
 
 The id of the existing DataCloudflareTurnstileWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 &datacloudflareturnstilewidget.DataCloudflareTurnstileWidgetConfig {
 	Connection: interface{},
@@ -779,7 +779,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter,
 	Sitekey: *string,
 }
 ```
@@ -796,7 +796,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter">DataCloudflareTurnstileWidgetFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter">DataCloudflareTurnstileWidgetFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetConfig.property.sitekey">Sitekey</a></code> | <code>*string</code> | Widget item identifier tag. |
 
 ---
@@ -881,7 +881,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
 
 ---
 
@@ -893,7 +893,7 @@ Filter DataCloudflareTurnstileWidgetFilter
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter">DataCloudflareTurnstileWidgetFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}.
 
 ---
 
@@ -907,7 +907,7 @@ Sitekey *string
 
 Widget item identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
 
 ---
 
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 &datacloudflareturnstilewidget.DataCloudflareTurnstileWidgetFilter {
 	Direction: *string,
@@ -928,8 +928,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.direction">Direction</a></code> | <code>*string</code> | Direction to order widgets. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.order">Order</a></code> | <code>*string</code> | Field to order widgets by. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.direction">Direction</a></code> | <code>*string</code> | Direction to order widgets. Available values: "asc", "desc". |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilter.property.order">Order</a></code> | <code>*string</code> | Field to order widgets by. Available values: "id", "sitekey", "name", "created_on", "modified_on". |
 
 ---
 
@@ -941,9 +941,9 @@ Direction *string
 
 - *Type:* *string
 
-Direction to order widgets.
+Direction to order widgets. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget#direction DataCloudflareTurnstileWidget#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget#direction DataCloudflareTurnstileWidget#direction}
 
 ---
 
@@ -955,9 +955,9 @@ Order *string
 
 - *Type:* *string
 
-Field to order widgets by.
+Field to order widgets by. Available values: "id", "sitekey", "name", "created_on", "modified_on".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/turnstile_widget#order DataCloudflareTurnstileWidget#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/turnstile_widget#order DataCloudflareTurnstileWidget#order}
 
 ---
 
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTurnstileWidget.DataCloudflareTurnstileWidgetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareturnstilewidget"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareturnstilewidget"
 
 datacloudflareturnstilewidget.NewDataCloudflareTurnstileWidgetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareTurnstileWidgetFilterOutputReference
 ```

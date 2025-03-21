@@ -4,12 +4,12 @@
 
 ### DataCloudflareEmailSecurityBlockSenders <a name="DataCloudflareEmailSecurityBlockSenders" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders cloudflare_email_security_block_senders}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 datacloudflareemailsecurityblocksenders.NewDataCloudflareEmailSecurityBlockSenders(scope Construct, id *string, config DataCloudflareEmailSecurityBlockSendersConfig) DataCloudflareEmailSecurityBlockSenders
 ```
@@ -311,7 +311,7 @@ func ResetSearch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSenders_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSenders_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSenders_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSenders_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSenders_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSenders.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSenders_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataCloudflareEmailSecurit
 
 The id of the existing DataCloudflareEmailSecurityBlockSenders that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 &datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSendersConfig {
 	Connection: interface{},
@@ -752,10 +752,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.direction">Direction</a></code> | <code>*string</code> | The sorting direction. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.direction">Direction</a></code> | <code>*string</code> | The sorting direction. Available values: "asc", "desc". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.order">Order</a></code> | <code>*string</code> | The field to sort by. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.patternType">PatternType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#pattern_type DataCloudflareEmailSecurityBlockSenders#pattern_type}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.order">Order</a></code> | <code>*string</code> | The field to sort by. Available values: "pattern", "created_at". |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.patternType">PatternType</a></code> | <code>*string</code> | Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersConfig.property.search">Search</a></code> | <code>*string</code> | Allows searching in multiple properties of a record simultaneously. |
 
 ---
@@ -840,7 +840,7 @@ AccountId *string
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#account_id DataCloudflareEmailSecurityBlockSenders#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders#account_id DataCloudflareEmailSecurityBlockSenders#account_id}
 
 ---
 
@@ -852,9 +852,9 @@ Direction *string
 
 - *Type:* *string
 
-The sorting direction.
+The sorting direction. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#direction DataCloudflareEmailSecurityBlockSenders#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders#direction DataCloudflareEmailSecurityBlockSenders#direction}
 
 ---
 
@@ -868,7 +868,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#max_items DataCloudflareEmailSecurityBlockSenders#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders#max_items DataCloudflareEmailSecurityBlockSenders#max_items}
 
 ---
 
@@ -880,9 +880,9 @@ Order *string
 
 - *Type:* *string
 
-The field to sort by.
+The field to sort by. Available values: "pattern", "created_at".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#order DataCloudflareEmailSecurityBlockSenders#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders#order DataCloudflareEmailSecurityBlockSenders#order}
 
 ---
 
@@ -894,7 +894,9 @@ PatternType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#pattern_type DataCloudflareEmailSecurityBlockSenders#pattern_type}.
+Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders#pattern_type DataCloudflareEmailSecurityBlockSenders#pattern_type}
 
 ---
 
@@ -912,7 +914,7 @@ This parameter is intended for human users, not automation. Its exact
 behavior is intentionally left unspecified and is subject to change
 in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_security_block_senders#search DataCloudflareEmailSecurityBlockSenders#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_block_senders#search DataCloudflareEmailSecurityBlockSenders#search}
 
 ---
 
@@ -921,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 &datacloudflareemailsecurityblocksenders.DataCloudflareEmailSecurityBlockSendersResult {
 
@@ -936,7 +938,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 datacloudflareemailsecurityblocksenders.NewDataCloudflareEmailSecurityBlockSendersResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailSecurityBlockSendersResultList
 ```
@@ -1085,7 +1087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSenders.DataCloudflareEmailSecurityBlockSendersResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityblocksenders"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityblocksenders"
 
 datacloudflareemailsecurityblocksenders.NewDataCloudflareEmailSecurityBlockSendersResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailSecurityBlockSendersResultOutputReference
 ```

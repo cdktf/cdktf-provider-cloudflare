@@ -4,12 +4,12 @@
 
 ### DataCloudflareBotnetFeedConfigAsn <a name="DataCloudflareBotnetFeedConfigAsn" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarebotnetfeedconfigasn"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarebotnetfeedconfigasn"
 
 datacloudflarebotnetfeedconfigasn.NewDataCloudflareBotnetFeedConfigAsn(scope Construct, id *string, config DataCloudflareBotnetFeedConfigAsnConfig) DataCloudflareBotnetFeedConfigAsn
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarebotnetfeedconfigasn"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarebotnetfeedconfigasn"
 
 datacloudflarebotnetfeedconfigasn.DataCloudflareBotnetFeedConfigAsn_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarebotnetfeedconfigasn"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarebotnetfeedconfigasn"
 
 datacloudflarebotnetfeedconfigasn.DataCloudflareBotnetFeedConfigAsn_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarebotnetfeedconfigasn.DataCloudflareBotnetFeedConfigAsn_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarebotnetfeedconfigasn"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarebotnetfeedconfigasn"
 
 datacloudflarebotnetfeedconfigasn.DataCloudflareBotnetFeedConfigAsn_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarebotnetfeedconfigasn.DataCloudflareBotnetFeedConfigAsn_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarebotnetfeedconfigasn"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarebotnetfeedconfigasn"
 
 datacloudflarebotnetfeedconfigasn.DataCloudflareBotnetFeedConfigAsn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareBotnetFeedCo
 
 The id of the existing DataCloudflareBotnetFeedConfigAsn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/botnet_feed_config_asn#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/botnet_feed_config_asn#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarebotnetfeedconfigasn"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarebotnetfeedconfigasn"
 
 &datacloudflarebotnetfeedconfigasn.DataCloudflareBotnetFeedConfigAsnConfig {
 	Connection: interface{},
@@ -685,7 +685,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
 
 ---
 

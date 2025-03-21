@@ -4,12 +4,12 @@
 
 ### ContentScanningExpression <a name="ContentScanningExpression" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 contentscanningexpression.NewContentScanningExpression(scope Construct, id *string, config ContentScanningExpressionConfig) ContentScanningExpression
 ```
@@ -391,7 +391,7 @@ func PutBody(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 contentscanningexpression.ContentScanningExpression_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 contentscanningexpression.ContentScanningExpression_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ contentscanningexpression.ContentScanningExpression_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 contentscanningexpression.ContentScanningExpression_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ contentscanningexpression.ContentScanningExpression_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 contentscanningexpression.ContentScanningExpression_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -480,7 +480,7 @@ The construct id used in the generated config for the ContentScanningExpression 
 
 The id of the existing ContentScanningExpression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 &contentscanningexpression.ContentScanningExpressionBody {
 	Payload: *string,
@@ -771,7 +771,7 @@ Payload *string
 
 Ruleset expression to use in matching content objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
 
 ---
 
@@ -780,7 +780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 &contentscanningexpression.ContentScanningExpressionConfig {
 	Connection: interface{},
@@ -806,7 +806,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscan
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">Body</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
+| <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">Body</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
 | <code><a href="#@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 
 ---
@@ -889,7 +889,7 @@ Body interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
 
 ---
 
@@ -903,7 +903,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
 
 ---
 
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 contentscanningexpression.NewContentScanningExpressionBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContentScanningExpressionBodyList
 ```
@@ -1074,7 +1074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/contentscanningexpression"
 
 contentscanningexpression.NewContentScanningExpressionBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContentScanningExpressionBodyOutputReference
 ```

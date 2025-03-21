@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiTokens <a name="DataCloudflareApiTokens" id="@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokens.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareApiTokens to
 
 The id of the existing DataCloudflareApiTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ new DataCloudflareApiTokensConfig {
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.direction">Direction</a></code> | <code>string</code> | Direction to order results. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.direction">Direction</a></code> | <code>string</code> | Direction to order results. Available values: "asc", "desc". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokens.DataCloudflareApiTokensConfig.property.maxItems">MaxItems</a></code> | <code>double</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -721,9 +721,9 @@ public string Direction { get; set; }
 
 - *Type:* string
 
-Direction to order results.
+Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
 
 ---
 
@@ -737,7 +737,7 @@ public double MaxItems { get; set; }
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
 
 ---
 

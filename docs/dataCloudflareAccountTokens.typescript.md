@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountTokens <a name="DataCloudflareAccountTokens" id="@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,7 +651,7 @@ const dataCloudflareAccountTokensConfig: dataCloudflareAccountTokens.DataCloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.direction">direction</a></code> | <code>string</code> | Direction to order results. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.direction">direction</a></code> | <code>string</code> | Direction to order results. Available values: "asc", "desc". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -736,7 +736,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -748,9 +748,9 @@ public readonly direction: string;
 
 - *Type:* string
 
-Direction to order results.
+Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataCloudflareR2BucketLock <a name="DataCloudflareR2BucketLock" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.NewDataCloudflareR2BucketLock(scope Construct, id *string, config DataCloudflareR2BucketLockConfig) DataCloudflareR2BucketLock
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.DataCloudflareR2BucketLock_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.DataCloudflareR2BucketLock_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarer2bucketlock.DataCloudflareR2BucketLock_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.DataCloudflareR2BucketLock_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarer2bucketlock.DataCloudflareR2BucketLock_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.DataCloudflareR2BucketLock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareR2BucketLock
 
 The id of the existing DataCloudflareR2BucketLock that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 &datacloudflarer2bucketlock.DataCloudflareR2BucketLockConfig {
 	Connection: interface{},
@@ -709,7 +709,7 @@ AccountId *string
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_bucket_lock#account_id DataCloudflareR2BucketLock#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_bucket_lock#account_id DataCloudflareR2BucketLock#account_id}
 
 ---
 
@@ -723,7 +723,7 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_bucket_lock#bucket_name DataCloudflareR2BucketLock#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_bucket_lock#bucket_name DataCloudflareR2BucketLock#bucket_name}
 
 ---
 
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 &datacloudflarer2bucketlock.DataCloudflareR2BucketLockRules {
 
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 &datacloudflarer2bucketlock.DataCloudflareR2BucketLockRulesCondition {
 
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.NewDataCloudflareR2BucketLockRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareR2BucketLockRulesConditionOutputReference
 ```
@@ -1042,7 +1042,7 @@ func InternalValue() DataCloudflareR2BucketLockRulesCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.NewDataCloudflareR2BucketLockRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareR2BucketLockRulesList
 ```
@@ -1191,7 +1191,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLock.DataCloudflareR2BucketLockRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarer2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlock"
 
 datacloudflarer2bucketlock.NewDataCloudflareR2BucketLockRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareR2BucketLockRulesOutputReference
 ```

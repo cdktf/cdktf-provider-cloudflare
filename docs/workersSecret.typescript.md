@@ -4,7 +4,7 @@
 
 ### WorkersSecret <a name="WorkersSecret" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret cloudflare_workers_secret}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret cloudflare_workers_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersSecret.WorkersSecret.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the WorkersSecret to import.
 
 The id of the existing WorkersSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +845,7 @@ const workersSecretConfig: workersSecret.WorkersSecretConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.name">name</a></code> | <code>string</code> | The name of this secret, this is what will be used to access it inside the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.text">text</a></code> | <code>string</code> | The value of the secret. |
-| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.type">type</a></code> | <code>string</code> | The type of secret to put. |
+| <code><a href="#@cdktf/provider-cloudflare.workersSecret.WorkersSecretConfig.property.type">type</a></code> | <code>string</code> | The type of secret to put. Available values: "secret_text". |
 
 ---
 
@@ -929,7 +929,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret#account_id WorkersSecret#account_id}
 
 ---
 
@@ -943,7 +943,7 @@ public readonly dispatchNamespace: string;
 
 Name of the Workers for Platforms dispatch namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret#dispatch_namespace WorkersSecret#dispatch_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret#dispatch_namespace WorkersSecret#dispatch_namespace}
 
 ---
 
@@ -957,7 +957,7 @@ public readonly name: string;
 
 The name of this secret, this is what will be used to access it inside the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret#name WorkersSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret#name WorkersSecret#name}
 
 ---
 
@@ -971,7 +971,7 @@ public readonly scriptName: string;
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret#script_name WorkersSecret#script_name}
 
 ---
 
@@ -985,7 +985,7 @@ public readonly text: string;
 
 The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret#text WorkersSecret#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret#text WorkersSecret#text}
 
 ---
 
@@ -997,9 +997,9 @@ public readonly type: string;
 
 - *Type:* string
 
-The type of secret to put.
+The type of secret to put. Available values: "secret_text".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_secret#type WorkersSecret#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_secret#type WorkersSecret#type}
 
 ---
 

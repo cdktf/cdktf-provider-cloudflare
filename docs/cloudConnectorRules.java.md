@@ -4,7 +4,7 @@
 
 ### CloudConnectorRules <a name="CloudConnectorRules" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer"></a>
 
@@ -23,9 +23,9 @@ CloudConnectorRules.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .rules(IResolvable)
-    .rules(java.util.List<CloudConnectorRulesRules>)
     .zoneId(java.lang.String)
+//  .rules(IResolvable)
+//  .rules(java.util.List<CloudConnectorRulesRules>)
     .build();
 ```
 
@@ -40,8 +40,8 @@ CloudConnectorRules.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>></code> | List of Cloud Connector rules. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>></code> | List of Cloud Connector rules. |
 
 ---
 
@@ -105,23 +105,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `rules`<sup>Required</sup> <a name="rules" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>>
-
-List of Cloud Connector rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
-
----
-
 ##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.zoneId"></a>
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+
+---
+
+##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer.parameter.rules"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>>
+
+List of Cloud Connector rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
 
 ---
 
@@ -153,6 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.putRules">putRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.resetRules">resetRules</a></code> | *No description.* |
 
 ---
 
@@ -458,6 +459,12 @@ public void putRules(IResolvable OR java.util.List<CloudConnectorRulesRules> val
 
 ---
 
+##### `resetRules` <a name="resetRules" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.resetRules"></a>
+
+```java
+public void resetRules()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -561,7 +568,7 @@ The construct id used in the generated config for the CloudConnectorRules to imp
 
 The id of the existing CloudConnectorRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,9 +892,9 @@ CloudConnectorRulesConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .rules(IResolvable)
-    .rules(java.util.List<CloudConnectorRulesRules>)
     .zoneId(java.lang.String)
+//  .rules(IResolvable)
+//  .rules(java.util.List<CloudConnectorRulesRules>)
     .build();
 ```
 
@@ -902,8 +909,8 @@ CloudConnectorRulesConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>></code> | List of Cloud Connector rules. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>></code> | List of Cloud Connector rules. |
 
 ---
 
@@ -977,20 +984,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `rules`<sup>Required</sup> <a name="rules" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules"></a>
-
-```java
-public java.lang.Object getRules();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>>
-
-List of Cloud Connector rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
-
----
-
 ##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.zoneId"></a>
 
 ```java
@@ -1001,7 +994,21 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+
+---
+
+##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.property.rules"></a>
+
+```java
+public java.lang.Object getRules();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules">CloudConnectorRulesRules</a>>
+
+List of Cloud Connector rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
 
 ---
 
@@ -1039,11 +1046,11 @@ CloudConnectorRulesRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.cloudProvider">cloudProvider</a></code> | <code>java.lang.String</code> | Cloud Provider type. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#id CloudConnectorRules#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.cloudProvider">cloudProvider</a></code> | <code>java.lang.String</code> | Cloud Provider type Available values: "aws_s3", "r2", "gcp_storage", "azure_storage". |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#id CloudConnectorRules#id}. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.property.parameters">parameters</a></code> | <code><a href="#@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParameters">CloudConnectorRulesRulesParameters</a></code> | Parameters of Cloud Connector Rule. |
 
 ---
@@ -1056,9 +1063,9 @@ public java.lang.String getCloudProvider();
 
 - *Type:* java.lang.String
 
-Cloud Provider type.
+Cloud Provider type Available values: "aws_s3", "r2", "gcp_storage", "azure_storage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#cloud_provider CloudConnectorRules#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#cloud_provider CloudConnectorRules#cloud_provider}
 
 ---
 
@@ -1070,7 +1077,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}.
 
 ---
 
@@ -1082,7 +1089,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}.
 
 ---
 
@@ -1094,7 +1101,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}.
 
 ---
 
@@ -1106,7 +1113,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#id CloudConnectorRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#id CloudConnectorRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1123,7 +1130,7 @@ public CloudConnectorRulesRulesParameters getParameters();
 
 Parameters of Cloud Connector Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
 
 ---
 
@@ -1157,7 +1164,7 @@ public java.lang.String getHost();
 
 Host to perform Cloud Connection to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
 
 ---
 

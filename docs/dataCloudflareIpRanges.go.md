@@ -4,12 +4,12 @@
 
 ### DataCloudflareIpRanges <a name="DataCloudflareIpRanges" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.NewDataCloudflareIpRanges(scope Construct, id *string, config DataCloudflareIpRangesConfig) DataCloudflareIpRanges
 ```
@@ -283,7 +283,7 @@ func ResetNetworks()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareipranges.DataCloudflareIpRanges_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareipranges.DataCloudflareIpRanges_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 datacloudflareipranges.DataCloudflareIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareIpRanges to 
 
 The id of the existing DataCloudflareIpRanges that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareipranges"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareipranges"
 
 &datacloudflareipranges.DataCloudflareIpRangesConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ Networks *string
 
 Specified as `jdcloud` to list IPs used by JD Cloud data centers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/ip_ranges#networks DataCloudflareIpRanges#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/ip_ranges#networks DataCloudflareIpRanges#networks}
 
 ---
 

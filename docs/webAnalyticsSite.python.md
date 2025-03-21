@@ -4,7 +4,7 @@
 
 ### WebAnalyticsSite <a name="WebAnalyticsSite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer"></a>
 
@@ -23,7 +23,9 @@ webAnalyticsSite.WebAnalyticsSite(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
   auto_install: typing.Union[bool, IResolvable] = None,
+  enabled: typing.Union[bool, IResolvable] = None,
   host: str = None,
+  lite: typing.Union[bool, IResolvable] = None,
   zone_tag: str = None
 )
 ```
@@ -41,7 +43,9 @@ webAnalyticsSite.WebAnalyticsSite(
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.autoInstall">auto_install</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, the JavaScript snippet is automatically injected for orange-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables or disables RUM. This option can be used only when auto_install is set to true. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.host">host</a></code> | <code>str</code> | The hostname to use for gray-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.lite">lite</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, the JavaScript snippet will not be injected for visitors from the EU. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.zoneTag">zone_tag</a></code> | <code>str</code> | The zone identifier. |
 
 ---
@@ -112,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 
 ---
 
@@ -122,7 +126,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.enabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables or disables RUM. This option can be used only when auto_install is set to true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
 
 ---
 
@@ -132,7 +146,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The hostname to use for gray-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+
+---
+
+##### `lite`<sup>Optional</sup> <a name="lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.lite"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If enabled, the JavaScript snippet will not be injected for visitors from the EU.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
 
 ---
 
@@ -142,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 
 ---
 
@@ -174,7 +198,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetAutoInstall">reset_auto_install</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetHost">reset_host</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetLite">reset_lite</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetZoneTag">reset_zone_tag</a></code> | *No description.* |
 
 ---
@@ -510,10 +536,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_auto_install() -> None
 ```
 
+##### `reset_enabled` <a name="reset_enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetEnabled"></a>
+
+```python
+def reset_enabled() -> None
+```
+
 ##### `reset_host` <a name="reset_host" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetHost"></a>
 
 ```python
 def reset_host() -> None
+```
+
+##### `reset_lite` <a name="reset_lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetLite"></a>
+
+```python
+def reset_lite() -> None
 ```
 
 ##### `reset_zone_tag` <a name="reset_zone_tag" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetZoneTag"></a>
@@ -636,7 +674,7 @@ The construct id used in the generated config for the WebAnalyticsSite to import
 
 The id of the existing WebAnalyticsSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,11 +713,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.snippet">snippet</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.autoInstallInput">auto_install_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.liteInput">lite_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.zoneTagInput">zone_tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.autoInstall">auto_install</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.host">host</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.lite">lite</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.zoneTag">zone_tag</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -916,6 +958,16 @@ auto_install_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabledInput"></a>
+
+```python
+enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.hostInput"></a>
 
 ```python
@@ -923,6 +975,16 @@ host_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `lite_input`<sup>Optional</sup> <a name="lite_input" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.liteInput"></a>
+
+```python
+lite_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -956,6 +1018,16 @@ auto_install: typing.Union[bool, IResolvable]
 
 ---
 
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.enabled"></a>
+
+```python
+enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `host`<sup>Required</sup> <a name="host" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.host"></a>
 
 ```python
@@ -963,6 +1035,16 @@ host: str
 ```
 
 - *Type:* str
+
+---
+
+##### `lite`<sup>Required</sup> <a name="lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.property.lite"></a>
+
+```python
+lite: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1013,7 +1095,9 @@ webAnalyticsSite.WebAnalyticsSiteConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
   auto_install: typing.Union[bool, IResolvable] = None,
+  enabled: typing.Union[bool, IResolvable] = None,
   host: str = None,
+  lite: typing.Union[bool, IResolvable] = None,
   zone_tag: str = None
 )
 ```
@@ -1031,7 +1115,9 @@ webAnalyticsSite.WebAnalyticsSiteConfig(
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.autoInstall">auto_install</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, the JavaScript snippet is automatically injected for orange-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables or disables RUM. This option can be used only when auto_install is set to true. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.host">host</a></code> | <code>str</code> | The hostname to use for gray-clouded sites. |
+| <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.lite">lite</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, the JavaScript snippet will not be injected for visitors from the EU. |
 | <code><a href="#@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.zoneTag">zone_tag</a></code> | <code>str</code> | The zone identifier. |
 
 ---
@@ -1116,7 +1202,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 
 ---
 
@@ -1130,7 +1216,21 @@ auto_install: typing.Union[bool, IResolvable]
 
 If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.enabled"></a>
+
+```python
+enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables or disables RUM. This option can be used only when auto_install is set to true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
 
 ---
 
@@ -1144,7 +1244,21 @@ host: str
 
 The hostname to use for gray-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+
+---
+
+##### `lite`<sup>Optional</sup> <a name="lite" id="@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.lite"></a>
+
+```python
+lite: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If enabled, the JavaScript snippet will not be injected for visitors from the EU.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
 
 ---
 
@@ -1158,7 +1272,7 @@ zone_tag: str
 
 The zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 
 ---
 

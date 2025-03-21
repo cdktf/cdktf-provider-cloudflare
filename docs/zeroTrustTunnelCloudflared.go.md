@@ -4,12 +4,12 @@
 
 ### ZeroTrustTunnelCloudflared <a name="ZeroTrustTunnelCloudflared" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflared"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflared.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 zerotrusttunnelcloudflared.NewZeroTrustTunnelCloudflared(scope Construct, id *string, config ZeroTrustTunnelCloudflaredConfig) ZeroTrustTunnelCloudflared
 ```
@@ -392,7 +392,7 @@ func ResetTunnelSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflared.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflared_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflared.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflared_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflared_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflared.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflared_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflared_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflared.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflared_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ZeroTrustTunnelCloudflared
 
 The id of the existing ZeroTrustTunnelCloudflared that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_tunnel_cloudflared#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_tunnel_cloudflared#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 &zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflaredConfig {
 	Connection: interface{},
@@ -1005,7 +1005,7 @@ AccountId *string
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_tunnel_cloudflared#account_id ZeroTrustTunnelCloudflared#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_tunnel_cloudflared#account_id ZeroTrustTunnelCloudflared#account_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ Name *string
 
 A user-friendly name for a tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_tunnel_cloudflared#name ZeroTrustTunnelCloudflared#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_tunnel_cloudflared#name ZeroTrustTunnelCloudflared#name}
 
 ---
 
@@ -1034,8 +1034,9 @@ ConfigSrc *string
 Indicates if this is a locally or remotely configured tunnel.
 
 If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel on the Zero Trust dashboard.
+Available values: "local", "cloudflare".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_tunnel_cloudflared#config_src ZeroTrustTunnelCloudflared#config_src}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_tunnel_cloudflared#config_src ZeroTrustTunnelCloudflared#config_src}
 
 ---
 
@@ -1051,7 +1052,7 @@ Sets the password required to run a locally-managed tunnel.
 
 Must be at least 32 bytes and encoded as a base64 string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_tunnel_cloudflared#tunnel_secret ZeroTrustTunnelCloudflared#tunnel_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_tunnel_cloudflared#tunnel_secret ZeroTrustTunnelCloudflared#tunnel_secret}
 
 ---
 
@@ -1060,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 &zerotrusttunnelcloudflared.ZeroTrustTunnelCloudflaredConnections {
 
@@ -1075,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttu
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 zerotrusttunnelcloudflared.NewZeroTrustTunnelCloudflaredConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustTunnelCloudflaredConnectionsList
 ```
@@ -1224,7 +1225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflared"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrusttunnelcloudflared"
 
 zerotrusttunnelcloudflared.NewZeroTrustTunnelCloudflaredConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustTunnelCloudflaredConnectionsOutputReference
 ```

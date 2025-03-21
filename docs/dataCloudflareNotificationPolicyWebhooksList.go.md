@@ -4,12 +4,12 @@
 
 ### DataCloudflareNotificationPolicyWebhooksList <a name="DataCloudflareNotificationPolicyWebhooksList" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 datacloudflarenotificationpolicywebhookslist.NewDataCloudflareNotificationPolicyWebhooksList(scope Construct, id *string, config DataCloudflareNotificationPolicyWebhooksListConfig) DataCloudflareNotificationPolicyWebhooksList
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWebhooksList_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWebhooksList_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWeb
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWebhooksList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWeb
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWebhooksList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareNotification
 
 The id of the existing DataCloudflareNotificationPolicyWebhooksList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/notification_policy_webhooks_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/notification_policy_webhooks_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 &datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWebhooksListConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ AccountId *string
 
 The account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/notification_policy_webhooks_list#account_id DataCloudflareNotificationPolicyWebhooksList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/notification_policy_webhooks_list#account_id DataCloudflareNotificationPolicyWebhooksList#account_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/notification_policy_webhooks_list#max_items DataCloudflareNotificationPolicyWebhooksList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/notification_policy_webhooks_list#max_items DataCloudflareNotificationPolicyWebhooksList#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 &datacloudflarenotificationpolicywebhookslist.DataCloudflareNotificationPolicyWebhooksListResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 datacloudflarenotificationpolicywebhookslist.NewDataCloudflareNotificationPolicyWebhooksListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareNotificationPolicyWebhooksListResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarenotificationpolicywebhookslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhookslist"
 
 datacloudflarenotificationpolicywebhookslist.NewDataCloudflareNotificationPolicyWebhooksListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareNotificationPolicyWebhooksListResultOutputReference
 ```

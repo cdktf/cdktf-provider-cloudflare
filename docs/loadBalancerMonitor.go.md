@@ -4,12 +4,12 @@
 
 ### LoadBalancerMonitor <a name="LoadBalancerMonitor" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancermonitor"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancermonitor"
 
 loadbalancermonitor.NewLoadBalancerMonitor(scope Construct, id *string, config LoadBalancerMonitorConfig) LoadBalancerMonitor
 ```
@@ -490,7 +490,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancermonitor"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancermonitor"
 
 loadbalancermonitor.LoadBalancerMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancermonitor"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancermonitor"
 
 loadbalancermonitor.LoadBalancerMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ loadbalancermonitor.LoadBalancerMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancermonitor"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancermonitor"
 
 loadbalancermonitor.LoadBalancerMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ loadbalancermonitor.LoadBalancerMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancermonitor"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancermonitor"
 
 loadbalancermonitor.LoadBalancerMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -579,7 +579,7 @@ The construct id used in the generated config for the LoadBalancerMonitor to imp
 
 The id of the existing LoadBalancerMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1186,7 +1186,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancermonitor"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/loadbalancermonitor"
 
 &loadbalancermonitor.LoadBalancerMonitorConfig {
 	Connection: interface{},
@@ -1243,7 +1243,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalance
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.probeZone">ProbeZone</a></code> | <code>*string</code> | Assign this monitor to emulate the specified zone while probing. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.retries">Retries</a></code> | <code>*f64</code> | The number of retries to attempt in case of a timeout before marking the origin as unhealthy. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | The timeout (in seconds) before marking the health check as failed. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.type">Type</a></code> | <code>*string</code> | The protocol to use for the health check. Currently supported protocols are 'HTTP','HTTPS', 'TCP', 'ICMP-PING', 'UDP-ICMP', and 'SMTP'. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig.property.type">Type</a></code> | <code>*string</code> | The protocol to use for the health check. |
 
 ---
 
@@ -1327,7 +1327,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
 
 ---
 
@@ -1343,7 +1343,7 @@ Do not validate the certificate when monitor use HTTPS.
 
 This parameter is currently only valid for HTTP and HTTPS monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
 
 ---
 
@@ -1357,7 +1357,7 @@ ConsecutiveDown *f64
 
 To be marked unhealthy the monitored origin must fail this healthcheck N consecutive times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#consecutive_down LoadBalancerMonitor#consecutive_down}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#consecutive_down LoadBalancerMonitor#consecutive_down}
 
 ---
 
@@ -1371,7 +1371,7 @@ ConsecutiveUp *f64
 
 To be marked healthy the monitored origin must pass this healthcheck N consecutive times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#consecutive_up LoadBalancerMonitor#consecutive_up}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#consecutive_up LoadBalancerMonitor#consecutive_up}
 
 ---
 
@@ -1385,7 +1385,7 @@ Description *string
 
 Object description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#description LoadBalancerMonitor#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#description LoadBalancerMonitor#description}
 
 ---
 
@@ -1401,7 +1401,7 @@ A case-insensitive sub-string to look for in the response body.
 
 If this string is not found, the origin will be marked as unhealthy. This parameter is only valid for HTTP and HTTPS monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#expected_body LoadBalancerMonitor#expected_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#expected_body LoadBalancerMonitor#expected_body}
 
 ---
 
@@ -1417,7 +1417,7 @@ The expected HTTP response code or code range of the health check.
 
 This parameter is only valid for HTTP and HTTPS monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#expected_codes LoadBalancerMonitor#expected_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#expected_codes LoadBalancerMonitor#expected_codes}
 
 ---
 
@@ -1431,7 +1431,7 @@ FollowRedirects interface{}
 
 Follow redirects if returned by the origin. This parameter is only valid for HTTP and HTTPS monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
 
 ---
 
@@ -1447,7 +1447,7 @@ The HTTP request headers to send in the health check.
 
 It is recommended you set a Host header by default. The User-Agent header cannot be overridden. This parameter is only valid for HTTP and HTTPS monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
 
 ---
 
@@ -1463,7 +1463,7 @@ The interval between each health check.
 
 Shorter intervals may improve failover time, but will increase load on the origins as we check from multiple locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#interval LoadBalancerMonitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#interval LoadBalancerMonitor#interval}
 
 ---
 
@@ -1479,7 +1479,7 @@ The method to use for the health check.
 
 This defaults to 'GET' for HTTP/HTTPS based checks and 'connection_established' for TCP based health checks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#method LoadBalancerMonitor#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#method LoadBalancerMonitor#method}
 
 ---
 
@@ -1495,7 +1495,7 @@ The endpoint path you want to conduct a health check against.
 
 This parameter is only valid for HTTP and HTTPS monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#path LoadBalancerMonitor#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#path LoadBalancerMonitor#path}
 
 ---
 
@@ -1511,7 +1511,7 @@ The port number to connect to for the health check.
 
 Required for TCP, UDP, and SMTP checks. HTTP and HTTPS checks should only define the port when using a non-standard port (HTTP: default 80, HTTPS: default 443).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#port LoadBalancerMonitor#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#port LoadBalancerMonitor#port}
 
 ---
 
@@ -1527,7 +1527,7 @@ Assign this monitor to emulate the specified zone while probing.
 
 This parameter is only valid for HTTP and HTTPS monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#probe_zone LoadBalancerMonitor#probe_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#probe_zone LoadBalancerMonitor#probe_zone}
 
 ---
 
@@ -1543,7 +1543,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 Retries are attempted immediately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#retries LoadBalancerMonitor#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#retries LoadBalancerMonitor#retries}
 
 ---
 
@@ -1557,7 +1557,7 @@ Timeout *f64
 
 The timeout (in seconds) before marking the health check as failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
 
 ---
 
@@ -1569,9 +1569,12 @@ Type *string
 
 - *Type:* *string
 
-The protocol to use for the health check. Currently supported protocols are 'HTTP','HTTPS', 'TCP', 'ICMP-PING', 'UDP-ICMP', and 'SMTP'.
+The protocol to use for the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
+Currently supported protocols are 'HTTP','HTTPS', 'TCP', 'ICMP-PING', 'UDP-ICMP', and 'SMTP'.
+Available values: "http", "https", "tcp", "udp_icmp", "icmp_ping", "smtp".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
 
 ---
 

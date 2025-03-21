@@ -4,12 +4,12 @@
 
 ### DataCloudflareEmailRoutingRule <a name="DataCloudflareEmailRoutingRule" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.NewDataCloudflareEmailRoutingRule(scope Construct, id *string, config DataCloudflareEmailRoutingRuleConfig) DataCloudflareEmailRoutingRule
 ```
@@ -303,7 +303,7 @@ func ResetRuleIdentifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.DataCloudflareEmailRoutingRule_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.DataCloudflareEmailRoutingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareemailroutingrule.DataCloudflareEmailRoutingRule_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.DataCloudflareEmailRoutingRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareemailroutingrule.DataCloudflareEmailRoutingRule_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.DataCloudflareEmailRoutingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataCloudflareEmailRouting
 
 The id of the existing DataCloudflareEmailRoutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 &datacloudflareemailroutingrule.DataCloudflareEmailRoutingRuleActions {
 
@@ -726,7 +726,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 &datacloudflareemailroutingrule.DataCloudflareEmailRoutingRuleConfig {
 	Connection: interface{},
@@ -737,7 +737,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ZoneId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter,
 	RuleIdentifier: *string,
 }
 ```
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter">DataCloudflareEmailRoutingRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter">DataCloudflareEmailRoutingRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.ruleIdentifier">RuleIdentifier</a></code> | <code>*string</code> | Routing rule identifier. |
 
 ---
@@ -839,7 +839,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rule#zone_id DataCloudflareEmailRoutingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rule#zone_id DataCloudflareEmailRoutingRule#zone_id}
 
 ---
 
@@ -851,7 +851,7 @@ Filter DataCloudflareEmailRoutingRuleFilter
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter">DataCloudflareEmailRoutingRuleFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}.
 
 ---
 
@@ -865,7 +865,7 @@ RuleIdentifier *string
 
 Routing rule identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rule#rule_identifier DataCloudflareEmailRoutingRule#rule_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rule#rule_identifier DataCloudflareEmailRoutingRule#rule_identifier}
 
 ---
 
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 &datacloudflareemailroutingrule.DataCloudflareEmailRoutingRuleFilter {
 	Enabled: interface{},
@@ -899,7 +899,7 @@ Enabled interface{}
 
 Filter by enabled routing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rule#enabled DataCloudflareEmailRoutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rule#enabled DataCloudflareEmailRoutingRule#enabled}
 
 ---
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleMatchers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 &datacloudflareemailroutingrule.DataCloudflareEmailRoutingRuleMatchers {
 
@@ -923,7 +923,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.NewDataCloudflareEmailRoutingRuleActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingRuleActionsList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.NewDataCloudflareEmailRoutingRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingRuleActionsOutputReference
 ```
@@ -1361,7 +1361,7 @@ func InternalValue() DataCloudflareEmailRoutingRuleActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.NewDataCloudflareEmailRoutingRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareEmailRoutingRuleFilterOutputReference
 ```
@@ -1639,7 +1639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleMatchersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.NewDataCloudflareEmailRoutingRuleMatchersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingRuleMatchersList
 ```
@@ -1788,7 +1788,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleMatchersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingrule"
 
 datacloudflareemailroutingrule.NewDataCloudflareEmailRoutingRuleMatchersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingRuleMatchersOutputReference
 ```

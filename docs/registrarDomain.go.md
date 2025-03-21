@@ -4,12 +4,12 @@
 
 ### RegistrarDomain <a name="RegistrarDomain" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
 
 registrardomain.NewRegistrarDomain(scope Construct, id *string, config RegistrarDomainConfig) RegistrarDomain
 ```
@@ -399,7 +399,7 @@ func ResetPrivacy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
 
 registrardomain.RegistrarDomain_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
 
 registrardomain.RegistrarDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ registrardomain.RegistrarDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
 
 registrardomain.RegistrarDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ registrardomain.RegistrarDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
 
 registrardomain.RegistrarDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the RegistrarDomain to import.
 
 The id of the existing RegistrarDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
 
 &registrardomain.RegistrarDomainConfig {
 	Connection: interface{},
@@ -915,7 +915,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
 
 ---
 
@@ -929,7 +929,7 @@ DomainName *string
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
 
 ---
 
@@ -943,7 +943,7 @@ AutoRenew interface{}
 
 Auto-renew controls whether subscription is automatically renewed upon domain expiration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
 
 ---
 
@@ -957,7 +957,7 @@ Locked interface{}
 
 Shows whether a registrar lock is in place for a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
 
 ---
 
@@ -971,7 +971,7 @@ Privacy interface{}
 
 Privacy option controls redacting WHOIS information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
 
 ---
 

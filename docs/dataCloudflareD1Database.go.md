@@ -4,12 +4,12 @@
 
 ### DataCloudflareD1Database <a name="DataCloudflareD1Database" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 datacloudflared1database.NewDataCloudflareD1Database(scope Construct, id *string, config DataCloudflareD1DatabaseConfig) DataCloudflareD1Database
 ```
@@ -303,7 +303,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 datacloudflared1database.DataCloudflareD1Database_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 datacloudflared1database.DataCloudflareD1Database_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflared1database.DataCloudflareD1Database_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 datacloudflared1database.DataCloudflareD1Database_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflared1database.DataCloudflareD1Database_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 datacloudflared1database.DataCloudflareD1Database_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataCloudflareD1Database t
 
 The id of the existing DataCloudflareD1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 &datacloudflared1database.DataCloudflareD1DatabaseConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	DatabaseId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter,
 }
 ```
 
@@ -742,7 +742,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.databaseId">DatabaseId</a></code> | <code>*string</code> | D1 database identifier (UUID). |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter">DataCloudflareD1DatabaseFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter">DataCloudflareD1DatabaseFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}. |
 
 ---
 
@@ -826,7 +826,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
 
 ---
 
@@ -840,7 +840,7 @@ DatabaseId *string
 
 D1 database identifier (UUID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
 
 ---
 
@@ -852,7 +852,7 @@ Filter DataCloudflareD1DatabaseFilter
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter">DataCloudflareD1DatabaseFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}.
 
 ---
 
@@ -861,7 +861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 &datacloudflared1database.DataCloudflareD1DatabaseFilter {
 	Name: *string,
@@ -886,7 +886,7 @@ Name *string
 
 a database name to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
 
 ---
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflared1database"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflared1database"
 
 datacloudflared1database.NewDataCloudflareD1DatabaseFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareD1DatabaseFilterOutputReference
 ```

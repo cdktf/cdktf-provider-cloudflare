@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,213 +10,211 @@ export interface ZeroTrustAccessApplicationConfig extends cdktf.TerraformMetaArg
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#account_id ZeroTrustAccessApplication#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#account_id ZeroTrustAccessApplication#account_id}
   */
   readonly accountId?: string;
   /**
   * When set to true, users can authenticate to this application using their WARP session.  When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allow_authenticate_via_warp ZeroTrustAccessApplication#allow_authenticate_via_warp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allow_authenticate_via_warp ZeroTrustAccessApplication#allow_authenticate_via_warp}
   */
   readonly allowAuthenticateViaWarp?: boolean | cdktf.IResolvable;
   /**
   * The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allowed_idps ZeroTrustAccessApplication#allowed_idps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allowed_idps ZeroTrustAccessApplication#allowed_idps}
   */
   readonly allowedIdps?: string[];
   /**
   * The image URL of the logo shown in the App Launcher header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#app_launcher_logo_url ZeroTrustAccessApplication#app_launcher_logo_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#app_launcher_logo_url ZeroTrustAccessApplication#app_launcher_logo_url}
   */
   readonly appLauncherLogoUrl?: string;
   /**
   * Displays the application in the App Launcher.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#app_launcher_visible ZeroTrustAccessApplication#app_launcher_visible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#app_launcher_visible ZeroTrustAccessApplication#app_launcher_visible}
   */
   readonly appLauncherVisible?: boolean | cdktf.IResolvable;
   /**
   * When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auto_redirect_to_identity ZeroTrustAccessApplication#auto_redirect_to_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auto_redirect_to_identity ZeroTrustAccessApplication#auto_redirect_to_identity}
   */
   readonly autoRedirectToIdentity?: boolean | cdktf.IResolvable;
   /**
   * The background color of the App Launcher page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#bg_color ZeroTrustAccessApplication#bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#bg_color ZeroTrustAccessApplication#bg_color}
   */
   readonly bgColor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#cors_headers ZeroTrustAccessApplication#cors_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#cors_headers ZeroTrustAccessApplication#cors_headers}
   */
   readonly corsHeaders?: ZeroTrustAccessApplicationCorsHeaders;
   /**
   * The custom error message shown to a user when they are denied access to the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#custom_deny_message ZeroTrustAccessApplication#custom_deny_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#custom_deny_message ZeroTrustAccessApplication#custom_deny_message}
   */
   readonly customDenyMessage?: string;
   /**
   * The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#custom_deny_url ZeroTrustAccessApplication#custom_deny_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#custom_deny_url ZeroTrustAccessApplication#custom_deny_url}
   */
   readonly customDenyUrl?: string;
   /**
   * The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#custom_non_identity_deny_url ZeroTrustAccessApplication#custom_non_identity_deny_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#custom_non_identity_deny_url ZeroTrustAccessApplication#custom_non_identity_deny_url}
   */
   readonly customNonIdentityDenyUrl?: string;
   /**
   * The custom pages that will be displayed when applicable for this application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#custom_pages ZeroTrustAccessApplication#custom_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#custom_pages ZeroTrustAccessApplication#custom_pages}
   */
   readonly customPages?: string[];
   /**
   * List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
-  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#destinations ZeroTrustAccessApplication#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#destinations ZeroTrustAccessApplication#destinations}
   */
   readonly destinations?: ZeroTrustAccessApplicationDestinations[] | cdktf.IResolvable;
   /**
   * The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
   */
   readonly domain?: string;
   /**
   * Enables the binding cookie, which increases security against compromised authorization tokens and CSRF attacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#enable_binding_cookie ZeroTrustAccessApplication#enable_binding_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#enable_binding_cookie ZeroTrustAccessApplication#enable_binding_cookie}
   */
   readonly enableBindingCookie?: boolean | cdktf.IResolvable;
   /**
   * The links in the App Launcher footer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#footer_links ZeroTrustAccessApplication#footer_links}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#footer_links ZeroTrustAccessApplication#footer_links}
   */
   readonly footerLinks?: ZeroTrustAccessApplicationFooterLinks[] | cdktf.IResolvable;
   /**
   * The background color of the App Launcher header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#header_bg_color ZeroTrustAccessApplication#header_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#header_bg_color ZeroTrustAccessApplication#header_bg_color}
   */
   readonly headerBgColor?: string;
   /**
   * Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#http_only_cookie_attribute ZeroTrustAccessApplication#http_only_cookie_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#http_only_cookie_attribute ZeroTrustAccessApplication#http_only_cookie_attribute}
   */
   readonly httpOnlyCookieAttribute?: boolean | cdktf.IResolvable;
   /**
   * The design of the App Launcher landing page shown to users when they log in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#landing_page_design ZeroTrustAccessApplication#landing_page_design}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#landing_page_design ZeroTrustAccessApplication#landing_page_design}
   */
   readonly landingPageDesign?: ZeroTrustAccessApplicationLandingPageDesign;
   /**
   * The image URL for the logo shown in the App Launcher dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#logo_url ZeroTrustAccessApplication#logo_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#logo_url ZeroTrustAccessApplication#logo_url}
   */
   readonly logoUrl?: string;
   /**
   * The name of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name?: string;
   /**
   * Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors_headers is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#options_preflight_bypass ZeroTrustAccessApplication#options_preflight_bypass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#options_preflight_bypass ZeroTrustAccessApplication#options_preflight_bypass}
   */
   readonly optionsPreflightBypass?: boolean | cdktf.IResolvable;
   /**
   * Enables cookie paths to scope an application's JWT to the application path. If disabled, the JWT will scope to the hostname by default
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#path_cookie_attribute ZeroTrustAccessApplication#path_cookie_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#path_cookie_attribute ZeroTrustAccessApplication#path_cookie_attribute}
   */
   readonly pathCookieAttribute?: boolean | cdktf.IResolvable;
   /**
   * The policies that Access applies to the application, in ascending order of precedence. Items can reference existing policies or create new policies exclusive to the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#policies ZeroTrustAccessApplication#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#policies ZeroTrustAccessApplication#policies}
   */
   readonly policies?: ZeroTrustAccessApplicationPolicies[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#saas_app ZeroTrustAccessApplication#saas_app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#saas_app ZeroTrustAccessApplication#saas_app}
   */
   readonly saasApp?: ZeroTrustAccessApplicationSaasApp;
   /**
   * Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#same_site_cookie_attribute ZeroTrustAccessApplication#same_site_cookie_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#same_site_cookie_attribute ZeroTrustAccessApplication#same_site_cookie_attribute}
   */
   readonly sameSiteCookieAttribute?: string;
   /**
   * Configuration for provisioning to this application via SCIM. This is currently in closed beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#scim_config ZeroTrustAccessApplication#scim_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#scim_config ZeroTrustAccessApplication#scim_config}
   */
   readonly scimConfig?: ZeroTrustAccessApplicationScimConfig;
   /**
   * List of public domains that Access will secure. This field is deprecated in favor of `destinations` and will be supported until **November 21, 2025.** If `destinations` are provided, then `self_hosted_domains` will be ignored.
-  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#self_hosted_domains ZeroTrustAccessApplication#self_hosted_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#self_hosted_domains ZeroTrustAccessApplication#self_hosted_domains}
   */
   readonly selfHostedDomains?: string[];
   /**
   * Returns a 401 status code when the request is blocked by a Service Auth policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#service_auth_401_redirect ZeroTrustAccessApplication#service_auth_401_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#service_auth_401_redirect ZeroTrustAccessApplication#service_auth_401_redirect}
   */
   readonly serviceAuth401Redirect?: boolean | cdktf.IResolvable;
   /**
   * The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#session_duration ZeroTrustAccessApplication#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#session_duration ZeroTrustAccessApplication#session_duration}
   */
   readonly sessionDuration?: string;
   /**
   * Determines when to skip the App Launcher landing page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#skip_app_launcher_login_page ZeroTrustAccessApplication#skip_app_launcher_login_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#skip_app_launcher_login_page ZeroTrustAccessApplication#skip_app_launcher_login_page}
   */
   readonly skipAppLauncherLoginPage?: boolean | cdktf.IResolvable;
   /**
   * Enables automatic authentication through cloudflared.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#skip_interstitial ZeroTrustAccessApplication#skip_interstitial}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#skip_interstitial ZeroTrustAccessApplication#skip_interstitial}
   */
   readonly skipInterstitial?: boolean | cdktf.IResolvable;
   /**
   * The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#tags ZeroTrustAccessApplication#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#tags ZeroTrustAccessApplication#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#target_criteria ZeroTrustAccessApplication#target_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#target_criteria ZeroTrustAccessApplication#target_criteria}
   */
   readonly targetCriteria?: ZeroTrustAccessApplicationTargetCriteria[] | cdktf.IResolvable;
   /**
   * The application type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#type ZeroTrustAccessApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#type ZeroTrustAccessApplication#type}
   */
   readonly type?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#zone_id ZeroTrustAccessApplication#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#zone_id ZeroTrustAccessApplication#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -229,49 +222,49 @@ export interface ZeroTrustAccessApplicationCorsHeaders {
   /**
   * Allows all HTTP request headers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allow_all_headers ZeroTrustAccessApplication#allow_all_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allow_all_headers ZeroTrustAccessApplication#allow_all_headers}
   */
   readonly allowAllHeaders?: boolean | cdktf.IResolvable;
   /**
   * Allows all HTTP request methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allow_all_methods ZeroTrustAccessApplication#allow_all_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allow_all_methods ZeroTrustAccessApplication#allow_all_methods}
   */
   readonly allowAllMethods?: boolean | cdktf.IResolvable;
   /**
   * Allows all origins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allow_all_origins ZeroTrustAccessApplication#allow_all_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allow_all_origins ZeroTrustAccessApplication#allow_all_origins}
   */
   readonly allowAllOrigins?: boolean | cdktf.IResolvable;
   /**
   * When set to `true`, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allow_credentials ZeroTrustAccessApplication#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allow_credentials ZeroTrustAccessApplication#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
   * Allowed HTTP request headers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allowed_headers ZeroTrustAccessApplication#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allowed_headers ZeroTrustAccessApplication#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
   * Allowed HTTP request methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allowed_methods ZeroTrustAccessApplication#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allowed_methods ZeroTrustAccessApplication#allowed_methods}
   */
   readonly allowedMethods?: string[];
   /**
   * Allowed origins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allowed_origins ZeroTrustAccessApplication#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allowed_origins ZeroTrustAccessApplication#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * The maximum number of seconds the results of a preflight request can be cached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#max_age ZeroTrustAccessApplication#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#max_age ZeroTrustAccessApplication#max_age}
   */
   readonly maxAge?: number;
 }
@@ -570,43 +563,44 @@ export interface ZeroTrustAccessApplicationDestinations {
   /**
   * The CIDR range of the destination. Single IPs will be computed as /32.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#cidr ZeroTrustAccessApplication#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#cidr ZeroTrustAccessApplication#cidr}
   */
   readonly cidr?: string;
   /**
   * The hostname of the destination. Matches a valid SNI served by an HTTPS origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#hostname ZeroTrustAccessApplication#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#hostname ZeroTrustAccessApplication#hostname}
   */
   readonly hostname?: string;
   /**
   * The L4 protocol of the destination. When omitted, both UDP and TCP traffic will match.
+  * Available values: "tcp", "udp".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#l4_protocol ZeroTrustAccessApplication#l4_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#l4_protocol ZeroTrustAccessApplication#l4_protocol}
   */
   readonly l4Protocol?: string;
   /**
   * The port range of the destination. Can be a single port or a range of ports. When omitted, all ports will match.
-  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#port_range ZeroTrustAccessApplication#port_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#port_range ZeroTrustAccessApplication#port_range}
   */
   readonly portRange?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#type ZeroTrustAccessApplication#type}
+  * Available values: "public".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#type ZeroTrustAccessApplication#type}
   */
   readonly type?: string;
   /**
   * The URI of the destination. Public destinations' URIs can include a domain and path with [wildcards](https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/).
-  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#uri ZeroTrustAccessApplication#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#uri ZeroTrustAccessApplication#uri}
   */
   readonly uri?: string;
   /**
   * The VNET ID to match the destination. When omitted, all VNETs will match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#vnet_id ZeroTrustAccessApplication#vnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#vnet_id ZeroTrustAccessApplication#vnet_id}
   */
   readonly vnetId?: string;
 }
@@ -898,13 +892,13 @@ export interface ZeroTrustAccessApplicationFooterLinks {
   /**
   * The hypertext in the footer link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name: string;
   /**
   * the hyperlink in the footer link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#url ZeroTrustAccessApplication#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#url ZeroTrustAccessApplication#url}
   */
   readonly url: string;
 }
@@ -1045,31 +1039,31 @@ export interface ZeroTrustAccessApplicationLandingPageDesign {
   /**
   * The background color of the log in button on the landing page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#button_color ZeroTrustAccessApplication#button_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#button_color ZeroTrustAccessApplication#button_color}
   */
   readonly buttonColor?: string;
   /**
   * The color of the text in the log in button on the landing page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#button_text_color ZeroTrustAccessApplication#button_text_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#button_text_color ZeroTrustAccessApplication#button_text_color}
   */
   readonly buttonTextColor?: string;
   /**
   * The URL of the image shown on the landing page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#image_url ZeroTrustAccessApplication#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#image_url ZeroTrustAccessApplication#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The message shown on the landing page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#message ZeroTrustAccessApplication#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#message ZeroTrustAccessApplication#message}
   */
   readonly message?: string;
   /**
   * The title shown on the landing page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#title ZeroTrustAccessApplication#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#title ZeroTrustAccessApplication#title}
   */
   readonly title?: string;
 }
@@ -1281,13 +1275,13 @@ export interface ZeroTrustAccessApplicationPoliciesConnectionRulesSsh {
   /**
   * Enables using Identity Provider email alias as SSH username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allow_email_alias ZeroTrustAccessApplication#allow_email_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allow_email_alias ZeroTrustAccessApplication#allow_email_alias}
   */
   readonly allowEmailAlias?: boolean | cdktf.IResolvable;
   /**
   * Contains the Unix usernames that may be used when connecting over SSH.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#usernames ZeroTrustAccessApplication#usernames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#usernames ZeroTrustAccessApplication#usernames}
   */
   readonly usernames: string[];
 }
@@ -1409,7 +1403,7 @@ export interface ZeroTrustAccessApplicationPoliciesConnectionRules {
   /**
   * The SSH-specific rules that define how users may connect to the targets secured by your application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ssh ZeroTrustAccessApplication#ssh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ssh ZeroTrustAccessApplication#ssh}
   */
   readonly ssh?: ZeroTrustAccessApplicationPoliciesConnectionRulesSsh;
 }
@@ -1564,13 +1558,13 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeAuthContext {
   /**
   * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ac_id ZeroTrustAccessApplication#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ac_id ZeroTrustAccessApplication#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1579,7 +1573,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeAuthContext {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -1724,7 +1718,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeAuthMethod {
   /**
   * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
   */
   readonly authMethod: string;
 }
@@ -1817,7 +1811,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeAzureAd {
   /**
   * The ID of an Azure group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1826,7 +1820,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeAzureAd {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -2004,7 +1998,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeCommonName {
   /**
   * The common name to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
   */
   readonly commonName: string;
 }
@@ -2097,7 +2091,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeDevicePosture {
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#integration_uid ZeroTrustAccessApplication#integration_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#integration_uid ZeroTrustAccessApplication#integration_uid}
   */
   readonly integrationUid: string;
 }
@@ -2190,7 +2184,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeEmail {
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email: string;
 }
@@ -2283,7 +2277,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeEmailDomain {
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
   */
   readonly domain: string;
 }
@@ -2376,7 +2370,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct {
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2531,13 +2525,13 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#evaluate_url ZeroTrustAccessApplication#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#evaluate_url ZeroTrustAccessApplication#evaluate_url}
   */
   readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#keys_url ZeroTrustAccessApplication#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#keys_url ZeroTrustAccessApplication#keys_url}
   */
   readonly keysUrl: string;
 }
@@ -2656,7 +2650,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeGeo {
   /**
   * The country code that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#country_code ZeroTrustAccessApplication#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#country_code ZeroTrustAccessApplication#country_code}
   */
   readonly countryCode: string;
 }
@@ -2749,19 +2743,19 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name: string;
   /**
   * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#team ZeroTrustAccessApplication#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#team ZeroTrustAccessApplication#team}
   */
   readonly team?: string;
 }
@@ -2909,7 +2903,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeGroup {
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3005,13 +2999,13 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -3130,7 +3124,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeIp {
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
   */
   readonly ip: string;
 }
@@ -3223,7 +3217,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeIpListStruct {
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3319,7 +3313,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeLoginMethod {
   /**
   * The ID of an identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3415,13 +3409,13 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name: string;
 }
@@ -3540,19 +3534,19 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
   */
   readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
   */
   readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -3697,7 +3691,7 @@ export interface ZeroTrustAccessApplicationPoliciesExcludeServiceToken {
   /**
   * The ID of a Service Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#token_id ZeroTrustAccessApplication#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#token_id ZeroTrustAccessApplication#token_id}
   */
   readonly tokenId: string;
 }
@@ -3790,93 +3784,93 @@ export interface ZeroTrustAccessApplicationPoliciesExclude {
   /**
   * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#any_valid_service_token ZeroTrustAccessApplication#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#any_valid_service_token ZeroTrustAccessApplication#any_valid_service_token}
   */
   readonly anyValidServiceToken?: ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_context ZeroTrustAccessApplication#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_context ZeroTrustAccessApplication#auth_context}
   */
   readonly authContext?: ZeroTrustAccessApplicationPoliciesExcludeAuthContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
   */
   readonly authMethod?: ZeroTrustAccessApplicationPoliciesExcludeAuthMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#azure_ad ZeroTrustAccessApplication#azure_ad}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#azure_ad ZeroTrustAccessApplication#azure_ad}
   */
   readonly azureAd?: ZeroTrustAccessApplicationPoliciesExcludeAzureAd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#certificate ZeroTrustAccessApplication#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#certificate ZeroTrustAccessApplication#certificate}
   */
   readonly certificate?: ZeroTrustAccessApplicationPoliciesExcludeCertificate;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
   */
   readonly commonName?: ZeroTrustAccessApplicationPoliciesExcludeCommonName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#device_posture ZeroTrustAccessApplication#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#device_posture ZeroTrustAccessApplication#device_posture}
   */
   readonly devicePosture?: ZeroTrustAccessApplicationPoliciesExcludeDevicePosture;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email?: ZeroTrustAccessApplicationPoliciesExcludeEmail;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email_domain ZeroTrustAccessApplication#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email_domain ZeroTrustAccessApplication#email_domain}
   */
   readonly emailDomain?: ZeroTrustAccessApplicationPoliciesExcludeEmailDomain;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email_list ZeroTrustAccessApplication#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email_list ZeroTrustAccessApplication#email_list}
   */
   readonly emailList?: ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct;
   /**
   * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#everyone ZeroTrustAccessApplication#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#everyone ZeroTrustAccessApplication#everyone}
   */
   readonly everyone?: ZeroTrustAccessApplicationPoliciesExcludeEveryone;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#external_evaluation ZeroTrustAccessApplication#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#external_evaluation ZeroTrustAccessApplication#external_evaluation}
   */
   readonly externalEvaluation?: ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#geo ZeroTrustAccessApplication#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#geo ZeroTrustAccessApplication#geo}
   */
   readonly geo?: ZeroTrustAccessApplicationPoliciesExcludeGeo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#github_organization ZeroTrustAccessApplication#github_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#github_organization ZeroTrustAccessApplication#github_organization}
   */
   readonly githubOrganization?: ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#group ZeroTrustAccessApplication#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#group ZeroTrustAccessApplication#group}
   */
   readonly group?: ZeroTrustAccessApplicationPoliciesExcludeGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#gsuite ZeroTrustAccessApplication#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#gsuite ZeroTrustAccessApplication#gsuite}
   */
   readonly gsuite?: ZeroTrustAccessApplicationPoliciesExcludeGsuite;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
   */
   readonly ip?: ZeroTrustAccessApplicationPoliciesExcludeIp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip_list ZeroTrustAccessApplication#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip_list ZeroTrustAccessApplication#ip_list}
   */
   readonly ipList?: ZeroTrustAccessApplicationPoliciesExcludeIpListStruct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#login_method ZeroTrustAccessApplication#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#login_method ZeroTrustAccessApplication#login_method}
   */
   readonly loginMethod?: ZeroTrustAccessApplicationPoliciesExcludeLoginMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#okta ZeroTrustAccessApplication#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#okta ZeroTrustAccessApplication#okta}
   */
   readonly okta?: ZeroTrustAccessApplicationPoliciesExcludeOkta;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#saml ZeroTrustAccessApplication#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#saml ZeroTrustAccessApplication#saml}
   */
   readonly saml?: ZeroTrustAccessApplicationPoliciesExcludeSaml;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#service_token ZeroTrustAccessApplication#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#service_token ZeroTrustAccessApplication#service_token}
   */
   readonly serviceToken?: ZeroTrustAccessApplicationPoliciesExcludeServiceToken;
 }
@@ -4662,13 +4656,13 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeAuthContext {
   /**
   * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ac_id ZeroTrustAccessApplication#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ac_id ZeroTrustAccessApplication#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4677,7 +4671,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeAuthContext {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -4822,7 +4816,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeAuthMethod {
   /**
   * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
   */
   readonly authMethod: string;
 }
@@ -4915,7 +4909,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeAzureAd {
   /**
   * The ID of an Azure group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4924,7 +4918,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeAzureAd {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -5102,7 +5096,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeCommonName {
   /**
   * The common name to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
   */
   readonly commonName: string;
 }
@@ -5195,7 +5189,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeDevicePosture {
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#integration_uid ZeroTrustAccessApplication#integration_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#integration_uid ZeroTrustAccessApplication#integration_uid}
   */
   readonly integrationUid: string;
 }
@@ -5288,7 +5282,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeEmail {
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email: string;
 }
@@ -5381,7 +5375,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeEmailDomain {
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
   */
   readonly domain: string;
 }
@@ -5474,7 +5468,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct {
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5629,13 +5623,13 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#evaluate_url ZeroTrustAccessApplication#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#evaluate_url ZeroTrustAccessApplication#evaluate_url}
   */
   readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#keys_url ZeroTrustAccessApplication#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#keys_url ZeroTrustAccessApplication#keys_url}
   */
   readonly keysUrl: string;
 }
@@ -5754,7 +5748,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeGeo {
   /**
   * The country code that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#country_code ZeroTrustAccessApplication#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#country_code ZeroTrustAccessApplication#country_code}
   */
   readonly countryCode: string;
 }
@@ -5847,19 +5841,19 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name: string;
   /**
   * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#team ZeroTrustAccessApplication#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#team ZeroTrustAccessApplication#team}
   */
   readonly team?: string;
 }
@@ -6007,7 +6001,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeGroup {
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6103,13 +6097,13 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -6228,7 +6222,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeIp {
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
   */
   readonly ip: string;
 }
@@ -6321,7 +6315,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeIpListStruct {
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6417,7 +6411,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeLoginMethod {
   /**
   * The ID of an identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6513,13 +6507,13 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name: string;
 }
@@ -6638,19 +6632,19 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
   */
   readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
   */
   readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -6795,7 +6789,7 @@ export interface ZeroTrustAccessApplicationPoliciesIncludeServiceToken {
   /**
   * The ID of a Service Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#token_id ZeroTrustAccessApplication#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#token_id ZeroTrustAccessApplication#token_id}
   */
   readonly tokenId: string;
 }
@@ -6888,93 +6882,93 @@ export interface ZeroTrustAccessApplicationPoliciesInclude {
   /**
   * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#any_valid_service_token ZeroTrustAccessApplication#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#any_valid_service_token ZeroTrustAccessApplication#any_valid_service_token}
   */
   readonly anyValidServiceToken?: ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_context ZeroTrustAccessApplication#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_context ZeroTrustAccessApplication#auth_context}
   */
   readonly authContext?: ZeroTrustAccessApplicationPoliciesIncludeAuthContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
   */
   readonly authMethod?: ZeroTrustAccessApplicationPoliciesIncludeAuthMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#azure_ad ZeroTrustAccessApplication#azure_ad}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#azure_ad ZeroTrustAccessApplication#azure_ad}
   */
   readonly azureAd?: ZeroTrustAccessApplicationPoliciesIncludeAzureAd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#certificate ZeroTrustAccessApplication#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#certificate ZeroTrustAccessApplication#certificate}
   */
   readonly certificate?: ZeroTrustAccessApplicationPoliciesIncludeCertificate;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
   */
   readonly commonName?: ZeroTrustAccessApplicationPoliciesIncludeCommonName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#device_posture ZeroTrustAccessApplication#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#device_posture ZeroTrustAccessApplication#device_posture}
   */
   readonly devicePosture?: ZeroTrustAccessApplicationPoliciesIncludeDevicePosture;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email?: ZeroTrustAccessApplicationPoliciesIncludeEmail;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email_domain ZeroTrustAccessApplication#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email_domain ZeroTrustAccessApplication#email_domain}
   */
   readonly emailDomain?: ZeroTrustAccessApplicationPoliciesIncludeEmailDomain;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email_list ZeroTrustAccessApplication#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email_list ZeroTrustAccessApplication#email_list}
   */
   readonly emailList?: ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct;
   /**
   * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#everyone ZeroTrustAccessApplication#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#everyone ZeroTrustAccessApplication#everyone}
   */
   readonly everyone?: ZeroTrustAccessApplicationPoliciesIncludeEveryone;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#external_evaluation ZeroTrustAccessApplication#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#external_evaluation ZeroTrustAccessApplication#external_evaluation}
   */
   readonly externalEvaluation?: ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#geo ZeroTrustAccessApplication#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#geo ZeroTrustAccessApplication#geo}
   */
   readonly geo?: ZeroTrustAccessApplicationPoliciesIncludeGeo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#github_organization ZeroTrustAccessApplication#github_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#github_organization ZeroTrustAccessApplication#github_organization}
   */
   readonly githubOrganization?: ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#group ZeroTrustAccessApplication#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#group ZeroTrustAccessApplication#group}
   */
   readonly group?: ZeroTrustAccessApplicationPoliciesIncludeGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#gsuite ZeroTrustAccessApplication#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#gsuite ZeroTrustAccessApplication#gsuite}
   */
   readonly gsuite?: ZeroTrustAccessApplicationPoliciesIncludeGsuite;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
   */
   readonly ip?: ZeroTrustAccessApplicationPoliciesIncludeIp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip_list ZeroTrustAccessApplication#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip_list ZeroTrustAccessApplication#ip_list}
   */
   readonly ipList?: ZeroTrustAccessApplicationPoliciesIncludeIpListStruct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#login_method ZeroTrustAccessApplication#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#login_method ZeroTrustAccessApplication#login_method}
   */
   readonly loginMethod?: ZeroTrustAccessApplicationPoliciesIncludeLoginMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#okta ZeroTrustAccessApplication#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#okta ZeroTrustAccessApplication#okta}
   */
   readonly okta?: ZeroTrustAccessApplicationPoliciesIncludeOkta;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#saml ZeroTrustAccessApplication#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#saml ZeroTrustAccessApplication#saml}
   */
   readonly saml?: ZeroTrustAccessApplicationPoliciesIncludeSaml;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#service_token ZeroTrustAccessApplication#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#service_token ZeroTrustAccessApplication#service_token}
   */
   readonly serviceToken?: ZeroTrustAccessApplicationPoliciesIncludeServiceToken;
 }
@@ -7760,13 +7754,13 @@ export interface ZeroTrustAccessApplicationPoliciesRequireAuthContext {
   /**
   * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ac_id ZeroTrustAccessApplication#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ac_id ZeroTrustAccessApplication#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7775,7 +7769,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireAuthContext {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -7920,7 +7914,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireAuthMethod {
   /**
   * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
   */
   readonly authMethod: string;
 }
@@ -8013,7 +8007,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireAzureAd {
   /**
   * The ID of an Azure group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8022,7 +8016,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireAzureAd {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -8200,7 +8194,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireCommonName {
   /**
   * The common name to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
   */
   readonly commonName: string;
 }
@@ -8293,7 +8287,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireDevicePosture {
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#integration_uid ZeroTrustAccessApplication#integration_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#integration_uid ZeroTrustAccessApplication#integration_uid}
   */
   readonly integrationUid: string;
 }
@@ -8386,7 +8380,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireEmail {
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email: string;
 }
@@ -8479,7 +8473,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireEmailDomain {
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
   */
   readonly domain: string;
 }
@@ -8572,7 +8566,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireEmailListStruct {
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8727,13 +8721,13 @@ export interface ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#evaluate_url ZeroTrustAccessApplication#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#evaluate_url ZeroTrustAccessApplication#evaluate_url}
   */
   readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#keys_url ZeroTrustAccessApplication#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#keys_url ZeroTrustAccessApplication#keys_url}
   */
   readonly keysUrl: string;
 }
@@ -8852,7 +8846,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireGeo {
   /**
   * The country code that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#country_code ZeroTrustAccessApplication#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#country_code ZeroTrustAccessApplication#country_code}
   */
   readonly countryCode: string;
 }
@@ -8945,19 +8939,19 @@ export interface ZeroTrustAccessApplicationPoliciesRequireGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name: string;
   /**
   * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#team ZeroTrustAccessApplication#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#team ZeroTrustAccessApplication#team}
   */
   readonly team?: string;
 }
@@ -9105,7 +9099,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireGroup {
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9201,13 +9195,13 @@ export interface ZeroTrustAccessApplicationPoliciesRequireGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -9326,7 +9320,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireIp {
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
   */
   readonly ip: string;
 }
@@ -9419,7 +9413,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireIpListStruct {
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9515,7 +9509,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireLoginMethod {
   /**
   * The ID of an identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9611,13 +9605,13 @@ export interface ZeroTrustAccessApplicationPoliciesRequireOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name: string;
 }
@@ -9736,19 +9730,19 @@ export interface ZeroTrustAccessApplicationPoliciesRequireSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
   */
   readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
   */
   readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -9893,7 +9887,7 @@ export interface ZeroTrustAccessApplicationPoliciesRequireServiceToken {
   /**
   * The ID of a Service Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#token_id ZeroTrustAccessApplication#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#token_id ZeroTrustAccessApplication#token_id}
   */
   readonly tokenId: string;
 }
@@ -9986,93 +9980,93 @@ export interface ZeroTrustAccessApplicationPoliciesRequire {
   /**
   * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#any_valid_service_token ZeroTrustAccessApplication#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#any_valid_service_token ZeroTrustAccessApplication#any_valid_service_token}
   */
   readonly anyValidServiceToken?: ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_context ZeroTrustAccessApplication#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_context ZeroTrustAccessApplication#auth_context}
   */
   readonly authContext?: ZeroTrustAccessApplicationPoliciesRequireAuthContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_method ZeroTrustAccessApplication#auth_method}
   */
   readonly authMethod?: ZeroTrustAccessApplicationPoliciesRequireAuthMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#azure_ad ZeroTrustAccessApplication#azure_ad}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#azure_ad ZeroTrustAccessApplication#azure_ad}
   */
   readonly azureAd?: ZeroTrustAccessApplicationPoliciesRequireAzureAd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#certificate ZeroTrustAccessApplication#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#certificate ZeroTrustAccessApplication#certificate}
   */
   readonly certificate?: ZeroTrustAccessApplicationPoliciesRequireCertificate;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#common_name ZeroTrustAccessApplication#common_name}
   */
   readonly commonName?: ZeroTrustAccessApplicationPoliciesRequireCommonName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#device_posture ZeroTrustAccessApplication#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#device_posture ZeroTrustAccessApplication#device_posture}
   */
   readonly devicePosture?: ZeroTrustAccessApplicationPoliciesRequireDevicePosture;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email ZeroTrustAccessApplication#email}
   */
   readonly email?: ZeroTrustAccessApplicationPoliciesRequireEmail;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email_domain ZeroTrustAccessApplication#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email_domain ZeroTrustAccessApplication#email_domain}
   */
   readonly emailDomain?: ZeroTrustAccessApplicationPoliciesRequireEmailDomain;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#email_list ZeroTrustAccessApplication#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#email_list ZeroTrustAccessApplication#email_list}
   */
   readonly emailList?: ZeroTrustAccessApplicationPoliciesRequireEmailListStruct;
   /**
   * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#everyone ZeroTrustAccessApplication#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#everyone ZeroTrustAccessApplication#everyone}
   */
   readonly everyone?: ZeroTrustAccessApplicationPoliciesRequireEveryone;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#external_evaluation ZeroTrustAccessApplication#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#external_evaluation ZeroTrustAccessApplication#external_evaluation}
   */
   readonly externalEvaluation?: ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#geo ZeroTrustAccessApplication#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#geo ZeroTrustAccessApplication#geo}
   */
   readonly geo?: ZeroTrustAccessApplicationPoliciesRequireGeo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#github_organization ZeroTrustAccessApplication#github_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#github_organization ZeroTrustAccessApplication#github_organization}
   */
   readonly githubOrganization?: ZeroTrustAccessApplicationPoliciesRequireGithubOrganization;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#group ZeroTrustAccessApplication#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#group ZeroTrustAccessApplication#group}
   */
   readonly group?: ZeroTrustAccessApplicationPoliciesRequireGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#gsuite ZeroTrustAccessApplication#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#gsuite ZeroTrustAccessApplication#gsuite}
   */
   readonly gsuite?: ZeroTrustAccessApplicationPoliciesRequireGsuite;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip ZeroTrustAccessApplication#ip}
   */
   readonly ip?: ZeroTrustAccessApplicationPoliciesRequireIp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#ip_list ZeroTrustAccessApplication#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#ip_list ZeroTrustAccessApplication#ip_list}
   */
   readonly ipList?: ZeroTrustAccessApplicationPoliciesRequireIpListStruct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#login_method ZeroTrustAccessApplication#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#login_method ZeroTrustAccessApplication#login_method}
   */
   readonly loginMethod?: ZeroTrustAccessApplicationPoliciesRequireLoginMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#okta ZeroTrustAccessApplication#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#okta ZeroTrustAccessApplication#okta}
   */
   readonly okta?: ZeroTrustAccessApplicationPoliciesRequireOkta;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#saml ZeroTrustAccessApplication#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#saml ZeroTrustAccessApplication#saml}
   */
   readonly saml?: ZeroTrustAccessApplicationPoliciesRequireSaml;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#service_token ZeroTrustAccessApplication#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#service_token ZeroTrustAccessApplication#service_token}
   */
   readonly serviceToken?: ZeroTrustAccessApplicationPoliciesRequireServiceToken;
 }
@@ -10799,25 +10793,26 @@ export interface ZeroTrustAccessApplicationPolicies {
   /**
   * The rules that define how users may connect to the targets secured by your application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#connection_rules ZeroTrustAccessApplication#connection_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#connection_rules ZeroTrustAccessApplication#connection_rules}
   */
   readonly connectionRules?: ZeroTrustAccessApplicationPoliciesConnectionRules;
   /**
   * The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
+  * Available values: "allow", "deny", "non_identity", "bypass".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#decision ZeroTrustAccessApplication#decision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#decision ZeroTrustAccessApplication#decision}
   */
   readonly decision?: string;
   /**
   * Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#exclude ZeroTrustAccessApplication#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#exclude ZeroTrustAccessApplication#exclude}
   */
   readonly exclude?: ZeroTrustAccessApplicationPoliciesExclude[] | cdktf.IResolvable;
   /**
   * The UUID of the policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10826,25 +10821,25 @@ export interface ZeroTrustAccessApplicationPolicies {
   /**
   * Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#include ZeroTrustAccessApplication#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#include ZeroTrustAccessApplication#include}
   */
   readonly include?: ZeroTrustAccessApplicationPoliciesInclude[] | cdktf.IResolvable;
   /**
   * The name of the Access policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name?: string;
   /**
   * The order of execution for this policy. Must be unique for each policy within an app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#precedence ZeroTrustAccessApplication#precedence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#precedence ZeroTrustAccessApplication#precedence}
   */
   readonly precedence?: number;
   /**
   * Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#require ZeroTrustAccessApplication#require}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#require ZeroTrustAccessApplication#require}
   */
   readonly require?: ZeroTrustAccessApplicationPoliciesRequire[] | cdktf.IResolvable;
 }
@@ -11165,13 +11160,13 @@ export interface ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameById
   /**
   * The UID of the IdP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#idp_id ZeroTrustAccessApplication#idp_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#idp_id ZeroTrustAccessApplication#idp_id}
   */
   readonly idpId?: string;
   /**
   * The name of the IdP provided attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#source_name ZeroTrustAccessApplication#source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#source_name ZeroTrustAccessApplication#source_name}
   */
   readonly sourceName?: string;
 }
@@ -11318,13 +11313,13 @@ export interface ZeroTrustAccessApplicationSaasAppCustomAttributesSource {
   /**
   * The name of the IdP attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name?: string;
   /**
   * A mapping from IdP ID to attribute name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name_by_idp ZeroTrustAccessApplication#name_by_idp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name_by_idp ZeroTrustAccessApplication#name_by_idp}
   */
   readonly nameByIdp?: ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdp[] | cdktf.IResolvable;
 }
@@ -11449,29 +11444,30 @@ export interface ZeroTrustAccessApplicationSaasAppCustomAttributes {
   /**
   * The SAML FriendlyName of the attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#friendly_name ZeroTrustAccessApplication#friendly_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#friendly_name ZeroTrustAccessApplication#friendly_name}
   */
   readonly friendlyName?: string;
   /**
   * The name of the attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name?: string;
   /**
   * A globally unique name for an identity or service provider.
+  * Available values: "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified", "urn:oasis:names:tc:SAML:2.0:attrname-format:basic", "urn:oasis:names:tc:SAML:2.0:attrname-format:uri".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name_format ZeroTrustAccessApplication#name_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name_format ZeroTrustAccessApplication#name_format}
   */
   readonly nameFormat?: string;
   /**
   * If the attribute is required when building a SAML assertion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#required ZeroTrustAccessApplication#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#required ZeroTrustAccessApplication#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#source ZeroTrustAccessApplication#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#source ZeroTrustAccessApplication#source}
   */
   readonly source?: ZeroTrustAccessApplicationSaasAppCustomAttributesSource;
 }
@@ -11705,13 +11701,13 @@ export interface ZeroTrustAccessApplicationSaasAppCustomClaimsSource {
   /**
   * The name of the IdP claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name?: string;
   /**
   * A mapping from IdP ID to claim name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name_by_idp ZeroTrustAccessApplication#name_by_idp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name_by_idp ZeroTrustAccessApplication#name_by_idp}
   */
   readonly nameByIdp?: { [key: string]: string };
 }
@@ -11836,23 +11832,24 @@ export interface ZeroTrustAccessApplicationSaasAppCustomClaims {
   /**
   * The name of the claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
   */
   readonly name?: string;
   /**
   * If the claim is required when building an OIDC token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#required ZeroTrustAccessApplication#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#required ZeroTrustAccessApplication#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
   * The scope of the claim.
+  * Available values: "groups", "profile", "email", "openid".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#scope ZeroTrustAccessApplication#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#scope ZeroTrustAccessApplication#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#source ZeroTrustAccessApplication#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#source ZeroTrustAccessApplication#source}
   */
   readonly source?: ZeroTrustAccessApplicationSaasAppCustomClaimsSource;
 }
@@ -12057,13 +12054,13 @@ export interface ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions {
   /**
   * If an Access Token should be returned from the OIDC Authorization endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#return_access_token_from_authorization_endpoint ZeroTrustAccessApplication#return_access_token_from_authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#return_access_token_from_authorization_endpoint ZeroTrustAccessApplication#return_access_token_from_authorization_endpoint}
   */
   readonly returnAccessTokenFromAuthorizationEndpoint?: boolean | cdktf.IResolvable;
   /**
   * If an ID Token should be returned from the OIDC Authorization endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#return_id_token_from_authorization_endpoint ZeroTrustAccessApplication#return_id_token_from_authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#return_id_token_from_authorization_endpoint ZeroTrustAccessApplication#return_id_token_from_authorization_endpoint}
   */
   readonly returnIdTokenFromAuthorizationEndpoint?: boolean | cdktf.IResolvable;
 }
@@ -12188,7 +12185,7 @@ export interface ZeroTrustAccessApplicationSaasAppRefreshTokenOptions {
   /**
   * How long a refresh token will be valid for after creation. Valid units are m,h,d. Must be longer than 1m.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#lifetime ZeroTrustAccessApplication#lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#lifetime ZeroTrustAccessApplication#lifetime}
   */
   readonly lifetime?: string;
 }
@@ -12284,133 +12281,133 @@ export interface ZeroTrustAccessApplicationSaasApp {
   /**
   * The lifetime of the OIDC Access Token after creation. Valid units are m,h. Must be greater than or equal to 1m and less than or equal to 24h.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#access_token_lifetime ZeroTrustAccessApplication#access_token_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#access_token_lifetime ZeroTrustAccessApplication#access_token_lifetime}
   */
   readonly accessTokenLifetime?: string;
   /**
   * If client secret should be required on the token endpoint when authorization_code_with_pkce grant is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#allow_pkce_without_client_secret ZeroTrustAccessApplication#allow_pkce_without_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#allow_pkce_without_client_secret ZeroTrustAccessApplication#allow_pkce_without_client_secret}
   */
   readonly allowPkceWithoutClientSecret?: boolean | cdktf.IResolvable;
   /**
   * The URL where this applications tile redirects users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#app_launcher_url ZeroTrustAccessApplication#app_launcher_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#app_launcher_url ZeroTrustAccessApplication#app_launcher_url}
   */
   readonly appLauncherUrl?: string;
   /**
   * Optional identifier indicating the authentication protocol used for the saas app. Required for OIDC. Default if unset is "saml"
+  * Available values: "saml", "oidc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#auth_type ZeroTrustAccessApplication#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#auth_type ZeroTrustAccessApplication#auth_type}
   */
   readonly authType?: string;
   /**
   * The application client id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#client_id ZeroTrustAccessApplication#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#client_id ZeroTrustAccessApplication#client_id}
   */
   readonly clientId?: string;
   /**
   * The application client secret, only returned on POST request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#client_secret ZeroTrustAccessApplication#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#client_secret ZeroTrustAccessApplication#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The service provider's endpoint that is responsible for receiving and parsing a SAML assertion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#consumer_service_url ZeroTrustAccessApplication#consumer_service_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#consumer_service_url ZeroTrustAccessApplication#consumer_service_url}
   */
   readonly consumerServiceUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#custom_attributes ZeroTrustAccessApplication#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#custom_attributes ZeroTrustAccessApplication#custom_attributes}
   */
   readonly customAttributes?: ZeroTrustAccessApplicationSaasAppCustomAttributes[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#custom_claims ZeroTrustAccessApplication#custom_claims}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#custom_claims ZeroTrustAccessApplication#custom_claims}
   */
   readonly customClaims?: ZeroTrustAccessApplicationSaasAppCustomClaims[] | cdktf.IResolvable;
   /**
   * The URL that the user will be redirected to after a successful login for IDP initiated logins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#default_relay_state ZeroTrustAccessApplication#default_relay_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#default_relay_state ZeroTrustAccessApplication#default_relay_state}
   */
   readonly defaultRelayState?: string;
   /**
   * The OIDC flows supported by this application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#grant_types ZeroTrustAccessApplication#grant_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#grant_types ZeroTrustAccessApplication#grant_types}
   */
   readonly grantTypes?: string[];
   /**
   * A regex to filter Cloudflare groups returned in ID token and userinfo endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#group_filter_regex ZeroTrustAccessApplication#group_filter_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#group_filter_regex ZeroTrustAccessApplication#group_filter_regex}
   */
   readonly groupFilterRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#hybrid_and_implicit_options ZeroTrustAccessApplication#hybrid_and_implicit_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#hybrid_and_implicit_options ZeroTrustAccessApplication#hybrid_and_implicit_options}
   */
   readonly hybridAndImplicitOptions?: ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions;
   /**
   * The unique identifier for your SaaS application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#idp_entity_id ZeroTrustAccessApplication#idp_entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#idp_entity_id ZeroTrustAccessApplication#idp_entity_id}
   */
   readonly idpEntityId?: string;
   /**
   * The format of the name identifier sent to the SaaS application.
+  * Available values: "id", "email".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name_id_format ZeroTrustAccessApplication#name_id_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name_id_format ZeroTrustAccessApplication#name_id_format}
   */
   readonly nameIdFormat?: string;
   /**
   * A [JSONata](https://jsonata.org/) expression that transforms an application's user identities into a NameID value for its SAML assertion. This expression should evaluate to a singular string. The output of this expression can override the `name_id_format` setting.
-  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#name_id_transform_jsonata ZeroTrustAccessApplication#name_id_transform_jsonata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#name_id_transform_jsonata ZeroTrustAccessApplication#name_id_transform_jsonata}
   */
   readonly nameIdTransformJsonata?: string;
   /**
   * The Access public certificate that will be used to verify your identity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#public_key ZeroTrustAccessApplication#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#public_key ZeroTrustAccessApplication#public_key}
   */
   readonly publicKey?: string;
   /**
   * The permitted URL's for Cloudflare to return Authorization codes and Access/ID tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#redirect_uris ZeroTrustAccessApplication#redirect_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#redirect_uris ZeroTrustAccessApplication#redirect_uris}
   */
   readonly redirectUris?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#refresh_token_options ZeroTrustAccessApplication#refresh_token_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#refresh_token_options ZeroTrustAccessApplication#refresh_token_options}
   */
   readonly refreshTokenOptions?: ZeroTrustAccessApplicationSaasAppRefreshTokenOptions;
   /**
   * A [JSONata] (https://jsonata.org/) expression that transforms an application's user identities into attribute assertions in the SAML response. The expression can transform id, email, name, and groups values. It can also transform fields listed in the saml_attributes or oidc_fields of the identity provider used to authenticate. The output of this expression must be a JSON object.
-  * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#saml_attribute_transform_jsonata ZeroTrustAccessApplication#saml_attribute_transform_jsonata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#saml_attribute_transform_jsonata ZeroTrustAccessApplication#saml_attribute_transform_jsonata}
   */
   readonly samlAttributeTransformJsonata?: string;
   /**
   * Define the user information shared with access, "offline_access" scope will be automatically enabled if refresh tokens are enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#scopes ZeroTrustAccessApplication#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#scopes ZeroTrustAccessApplication#scopes}
   */
   readonly scopes?: string[];
   /**
   * A globally unique name for an identity or service provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#sp_entity_id ZeroTrustAccessApplication#sp_entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#sp_entity_id ZeroTrustAccessApplication#sp_entity_id}
   */
   readonly spEntityId?: string;
   /**
   * The endpoint where your SaaS application will send login requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#sso_endpoint ZeroTrustAccessApplication#sso_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#sso_endpoint ZeroTrustAccessApplication#sso_endpoint}
   */
   readonly ssoEndpoint?: string;
 }
@@ -13154,55 +13151,56 @@ export interface ZeroTrustAccessApplicationScimConfigAuthentication {
   /**
   * URL used to generate the auth code used during token generation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#authorization_url ZeroTrustAccessApplication#authorization_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#authorization_url ZeroTrustAccessApplication#authorization_url}
   */
   readonly authorizationUrl?: string;
   /**
   * Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#client_id ZeroTrustAccessApplication#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#client_id ZeroTrustAccessApplication#client_id}
   */
   readonly clientId?: string;
   /**
   * Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#client_secret ZeroTrustAccessApplication#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#client_secret ZeroTrustAccessApplication#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Password used to authenticate with the remote SCIM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#password ZeroTrustAccessApplication#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#password ZeroTrustAccessApplication#password}
   */
   readonly password?: string;
   /**
   * The authentication scheme to use when making SCIM requests to this application.
+  * Available values: "httpbasic".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#scheme ZeroTrustAccessApplication#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#scheme ZeroTrustAccessApplication#scheme}
   */
   readonly scheme: string;
   /**
   * The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#scopes ZeroTrustAccessApplication#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#scopes ZeroTrustAccessApplication#scopes}
   */
   readonly scopes?: string[];
   /**
   * Token used to authenticate with the remote SCIM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#token ZeroTrustAccessApplication#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#token ZeroTrustAccessApplication#token}
   */
   readonly token?: string;
   /**
   * URL used to generate the token used to authenticate with the remote SCIM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#token_url ZeroTrustAccessApplication#token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#token_url ZeroTrustAccessApplication#token_url}
   */
   readonly tokenUrl?: string;
   /**
   * User name used to authenticate with the remote SCIM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#user ZeroTrustAccessApplication#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#user ZeroTrustAccessApplication#user}
   */
   readonly user?: string;
 }
@@ -13527,19 +13525,19 @@ export interface ZeroTrustAccessApplicationScimConfigMappingsOperations {
   /**
   * Whether or not this mapping applies to create (POST) operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#create ZeroTrustAccessApplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#create ZeroTrustAccessApplication#create}
   */
   readonly create?: boolean | cdktf.IResolvable;
   /**
   * Whether or not this mapping applies to DELETE operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#delete ZeroTrustAccessApplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#delete ZeroTrustAccessApplication#delete}
   */
   readonly delete?: boolean | cdktf.IResolvable;
   /**
   * Whether or not this mapping applies to update (PATCH/PUT) operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#update ZeroTrustAccessApplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#update ZeroTrustAccessApplication#update}
   */
   readonly update?: boolean | cdktf.IResolvable;
 }
@@ -13693,37 +13691,38 @@ export interface ZeroTrustAccessApplicationScimConfigMappings {
   /**
   * Whether or not this mapping is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#enabled ZeroTrustAccessApplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#enabled ZeroTrustAccessApplication#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#filter ZeroTrustAccessApplication#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#filter ZeroTrustAccessApplication#filter}
   */
   readonly filter?: string;
   /**
   * Whether or not this mapping applies to creates, updates, or deletes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#operations ZeroTrustAccessApplication#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#operations ZeroTrustAccessApplication#operations}
   */
   readonly operations?: ZeroTrustAccessApplicationScimConfigMappingsOperations;
   /**
   * Which SCIM resource type this mapping applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#schema ZeroTrustAccessApplication#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#schema ZeroTrustAccessApplication#schema}
   */
   readonly schema: string;
   /**
   * The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
+  * Available values: "strict", "passthrough".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#strictness ZeroTrustAccessApplication#strictness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#strictness ZeroTrustAccessApplication#strictness}
   */
   readonly strictness?: string;
   /**
   * A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#transform_jsonata ZeroTrustAccessApplication#transform_jsonata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#transform_jsonata ZeroTrustAccessApplication#transform_jsonata}
   */
   readonly transformJsonata?: string;
 }
@@ -13983,37 +13982,37 @@ export interface ZeroTrustAccessApplicationScimConfig {
   /**
   * Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#authentication ZeroTrustAccessApplication#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#authentication ZeroTrustAccessApplication#authentication}
   */
   readonly authentication?: ZeroTrustAccessApplicationScimConfigAuthentication;
   /**
   * If false, propagates DELETE requests to the target application for SCIM resources. If true, sets 'active' to false on the SCIM resource. Note: Some targets do not support DELETE operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#deactivate_on_delete ZeroTrustAccessApplication#deactivate_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#deactivate_on_delete ZeroTrustAccessApplication#deactivate_on_delete}
   */
   readonly deactivateOnDelete?: boolean | cdktf.IResolvable;
   /**
   * Whether SCIM provisioning is turned on for this application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#enabled ZeroTrustAccessApplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#enabled ZeroTrustAccessApplication#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The UID of the IdP to use as the source for SCIM resources to provision to this application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#idp_uid ZeroTrustAccessApplication#idp_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#idp_uid ZeroTrustAccessApplication#idp_uid}
   */
   readonly idpUid: string;
   /**
   * A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#mappings ZeroTrustAccessApplication#mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#mappings ZeroTrustAccessApplication#mappings}
   */
   readonly mappings?: ZeroTrustAccessApplicationScimConfigMappings[] | cdktf.IResolvable;
   /**
   * The base URI for the application's SCIM-compatible API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#remote_uri ZeroTrustAccessApplication#remote_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#remote_uri ZeroTrustAccessApplication#remote_uri}
   */
   readonly remoteUri: string;
 }
@@ -14248,19 +14247,20 @@ export interface ZeroTrustAccessApplicationTargetCriteria {
   /**
   * The port that the targets use for the chosen communication protocol. A port cannot be assigned to multiple protocols.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#port ZeroTrustAccessApplication#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#port ZeroTrustAccessApplication#port}
   */
   readonly port: number;
   /**
   * The communication protocol your application secures.
+  * Available values: "ssh".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#protocol ZeroTrustAccessApplication#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#protocol ZeroTrustAccessApplication#protocol}
   */
   readonly protocol: string;
   /**
   * Contains a map of target attribute keys to target attribute values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#target_attributes ZeroTrustAccessApplication#target_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#target_attributes ZeroTrustAccessApplication#target_attributes}
   */
   readonly targetAttributes: { [key: string]: string[] } | cdktf.IResolvable;
 }
@@ -14425,7 +14425,7 @@ export class ZeroTrustAccessApplicationTargetCriteriaList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}
 */
 export class ZeroTrustAccessApplication extends cdktf.TerraformResource {
 
@@ -14441,7 +14441,7 @@ export class ZeroTrustAccessApplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustAccessApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustAccessApplication to import
-  * @param importFromId The id of the existing ZeroTrustAccessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustAccessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustAccessApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -14453,7 +14453,7 @@ export class ZeroTrustAccessApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -14464,7 +14464,7 @@ export class ZeroTrustAccessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_access_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

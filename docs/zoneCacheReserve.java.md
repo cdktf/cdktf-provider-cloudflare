@@ -4,7 +4,7 @@
 
 ### ZoneCacheReserve <a name="ZoneCacheReserve" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer"></a>
 
@@ -40,7 +40,7 @@ ZoneCacheReserve.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Value of the Cache Reserve zone setting. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Value of the Cache Reserve zone setting. Available values: "on", "off". |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 
 ---
 
@@ -118,9 +118,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Value of the Cache Reserve zone setting.
+Value of the Cache Reserve zone setting. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
 
 ---
 
@@ -554,7 +554,7 @@ The construct id used in the generated config for the ZoneCacheReserve to import
 
 The id of the existing ZoneCacheReserve that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ ZoneCacheReserveConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.value">value</a></code> | <code>java.lang.String</code> | Value of the Cache Reserve zone setting. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig.property.value">value</a></code> | <code>java.lang.String</code> | Value of the Cache Reserve zone setting. Available values: "on", "off". |
 
 ---
 
@@ -946,7 +946,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 
 ---
 
@@ -958,9 +958,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Value of the Cache Reserve zone setting.
+Value of the Cache Reserve zone setting. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
 
 ---
 

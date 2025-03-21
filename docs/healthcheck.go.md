@@ -4,12 +4,12 @@
 
 ### Healthcheck <a name="Healthcheck" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck cloudflare_healthcheck}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck cloudflare_healthcheck}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 healthcheck.NewHealthcheck(scope Construct, id *string, config HealthcheckConfig) Healthcheck
 ```
@@ -481,7 +481,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 healthcheck.Healthcheck_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 healthcheck.Healthcheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ healthcheck.Healthcheck_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 healthcheck.Healthcheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ healthcheck.Healthcheck_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.healthcheck.Healthcheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 healthcheck.Healthcheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -570,7 +570,7 @@ The construct id used in the generated config for the Healthcheck to import.
 
 The id of the existing Healthcheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1133,7 +1133,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 &healthcheck.HealthcheckConfig {
 	Connection: interface{},
@@ -1150,11 +1150,11 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck
 	ConsecutiveFails: *f64,
 	ConsecutiveSuccesses: *f64,
 	Description: *string,
-	HttpConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.healthcheck.HealthcheckHttpConfig,
+	HttpConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.healthcheck.HealthcheckHttpConfig,
 	Interval: *f64,
 	Retries: *f64,
 	Suspended: interface{},
-	TcpConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.healthcheck.HealthcheckTcpConfig,
+	TcpConfig: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.healthcheck.HealthcheckTcpConfig,
 	Timeout: *f64,
 	Type: *string,
 }
@@ -1268,7 +1268,7 @@ Address *string
 
 The hostname or IP address of the origin server to run health checks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#address Healthcheck#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#address Healthcheck#address}
 
 ---
 
@@ -1282,7 +1282,7 @@ Name *string
 
 A short name to identify the health check. Only alphanumeric characters, hyphens and underscores are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#name Healthcheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#name Healthcheck#name}
 
 ---
 
@@ -1296,7 +1296,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
 
 ---
 
@@ -1310,7 +1310,7 @@ CheckRegions *[]*string
 
 A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
 
 ---
 
@@ -1324,7 +1324,7 @@ ConsecutiveFails *f64
 
 The number of consecutive fails required from a health check before changing the health to unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
 
 ---
 
@@ -1338,7 +1338,7 @@ ConsecutiveSuccesses *f64
 
 The number of consecutive successes required from a health check before changing the health to healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
 
 ---
 
@@ -1352,7 +1352,7 @@ Description *string
 
 A human-readable description of the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#description Healthcheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#description Healthcheck#description}
 
 ---
 
@@ -1366,7 +1366,7 @@ HttpConfig HealthcheckHttpConfig
 
 Parameters specific to an HTTP or HTTPS health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#http_config Healthcheck#http_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#http_config Healthcheck#http_config}
 
 ---
 
@@ -1382,7 +1382,7 @@ The interval between each health check.
 
 Shorter intervals may give quicker notifications if the origin status changes, but will increase load on the origin as we check from multiple locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#interval Healthcheck#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#interval Healthcheck#interval}
 
 ---
 
@@ -1398,7 +1398,7 @@ The number of retries to attempt in case of a timeout before marking the origin 
 
 Retries are attempted immediately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#retries Healthcheck#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#retries Healthcheck#retries}
 
 ---
 
@@ -1412,7 +1412,7 @@ Suspended interface{}
 
 If suspended, no health checks are sent to the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
 
 ---
 
@@ -1426,7 +1426,7 @@ TcpConfig HealthcheckTcpConfig
 
 Parameters specific to TCP health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#tcp_config Healthcheck#tcp_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#tcp_config Healthcheck#tcp_config}
 
 ---
 
@@ -1440,7 +1440,7 @@ Timeout *f64
 
 The timeout (in seconds) before marking the health check as failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
 
 ---
 
@@ -1454,7 +1454,7 @@ Type *string
 
 The protocol to use for the health check. Currently supported protocols are 'HTTP', 'HTTPS' and 'TCP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#type Healthcheck#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#type Healthcheck#type}
 
 ---
 
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 &healthcheck.HealthcheckHttpConfig {
 	AllowInsecure: interface{},
@@ -1486,7 +1486,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.property.expectedCodes">ExpectedCodes</a></code> | <code>*[]*string</code> | The expected HTTP response codes (e.g. "200") or code ranges (e.g. "2xx" for all codes starting with 2) of the health check. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.property.followRedirects">FollowRedirects</a></code> | <code>interface{}</code> | Follow redirects if the origin returns a 3xx status code. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.property.header">Header</a></code> | <code>interface{}</code> | The HTTP request headers to send in the health check. |
-| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.property.method">Method</a></code> | <code>*string</code> | The HTTP method to use for the health check. |
+| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.property.method">Method</a></code> | <code>*string</code> | The HTTP method to use for the health check. Available values: "GET", "HEAD". |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.property.path">Path</a></code> | <code>*string</code> | The endpoint path to health check against. |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig.property.port">Port</a></code> | <code>*f64</code> | Port number to connect to for the health check. |
 
@@ -1502,7 +1502,7 @@ AllowInsecure interface{}
 
 Do not validate the certificate when the health check uses HTTPS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
 
 ---
 
@@ -1518,7 +1518,7 @@ A case-insensitive sub-string to look for in the response body.
 
 If this string is not found, the origin will be marked as unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
 
 ---
 
@@ -1532,7 +1532,7 @@ ExpectedCodes *[]*string
 
 The expected HTTP response codes (e.g. "200") or code ranges (e.g. "2xx" for all codes starting with 2) of the health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
 
 ---
 
@@ -1546,7 +1546,7 @@ FollowRedirects interface{}
 
 Follow redirects if the origin returns a 3xx status code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
 
 ---
 
@@ -1562,7 +1562,7 @@ The HTTP request headers to send in the health check.
 
 It is recommended you set a Host header by default. The User-Agent header cannot be overridden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#header Healthcheck#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#header Healthcheck#header}
 
 ---
 
@@ -1574,9 +1574,9 @@ Method *string
 
 - *Type:* *string
 
-The HTTP method to use for the health check.
+The HTTP method to use for the health check. Available values: "GET", "HEAD".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#method Healthcheck#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#method Healthcheck#method}
 
 ---
 
@@ -1590,7 +1590,7 @@ Path *string
 
 The endpoint path to health check against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#path Healthcheck#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#path Healthcheck#path}
 
 ---
 
@@ -1606,7 +1606,7 @@ Port number to connect to for the health check.
 
 Defaults to 80 if type is HTTP or 443 if type is HTTPS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#port Healthcheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#port Healthcheck#port}
 
 ---
 
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 &healthcheck.HealthcheckTcpConfig {
 	Method: *string,
@@ -1627,7 +1627,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfig.property.method">Method</a></code> | <code>*string</code> | The TCP connection method to use for the health check. |
+| <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfig.property.method">Method</a></code> | <code>*string</code> | The TCP connection method to use for the health check. Available values: "connection_established". |
 | <code><a href="#@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfig.property.port">Port</a></code> | <code>*f64</code> | Port number to connect to for the health check. Defaults to 80. |
 
 ---
@@ -1640,9 +1640,9 @@ Method *string
 
 - *Type:* *string
 
-The TCP connection method to use for the health check.
+The TCP connection method to use for the health check. Available values: "connection_established".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#method Healthcheck#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#method Healthcheck#method}
 
 ---
 
@@ -1656,7 +1656,7 @@ Port *f64
 
 Port number to connect to for the health check. Defaults to 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/healthcheck#port Healthcheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/healthcheck#port Healthcheck#port}
 
 ---
 
@@ -1667,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 healthcheck.NewHealthcheckHttpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcheckHttpConfigOutputReference
 ```
@@ -2148,7 +2148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/healthcheck"
 
 healthcheck.NewHealthcheckTcpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcheckTcpConfigOutputReference
 ```

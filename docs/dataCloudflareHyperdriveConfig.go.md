@@ -4,12 +4,12 @@
 
 ### DataCloudflareHyperdriveConfig <a name="DataCloudflareHyperdriveConfig" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 datacloudflarehyperdriveconfig.NewDataCloudflareHyperdriveConfig(scope Construct, id *string, config DataCloudflareHyperdriveConfigConfig) DataCloudflareHyperdriveConfig
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.resetHyperdriveId">ResetHyperdriveId</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetHyperdriveId` <a name="ResetHyperdriveId" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.resetHyperdriveId"></a>
+
+```go
+func ResetHyperdriveId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +283,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfig_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfig_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfig_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareHyperdriveCo
 
 The id of the existing DataCloudflareHyperdriveConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigCaching.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 &datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfigCaching {
 
@@ -666,7 +673,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 &datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfigConfig {
 	Connection: interface{},
@@ -777,11 +784,11 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/hyperdrive_config#account_id DataCloudflareHyperdriveConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/hyperdrive_config#account_id DataCloudflareHyperdriveConfig#account_id}
 
 ---
 
-##### `HyperdriveId`<sup>Required</sup> <a name="HyperdriveId" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigConfig.property.hyperdriveId"></a>
+##### `HyperdriveId`<sup>Optional</sup> <a name="HyperdriveId" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigConfig.property.hyperdriveId"></a>
 
 ```go
 HyperdriveId *string
@@ -791,7 +798,7 @@ HyperdriveId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/hyperdrive_config#hyperdrive_id DataCloudflareHyperdriveConfig#hyperdrive_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/hyperdrive_config#hyperdrive_id DataCloudflareHyperdriveConfig#hyperdrive_id}
 
 ---
 
@@ -800,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 &datacloudflarehyperdriveconfig.DataCloudflareHyperdriveConfigOrigin {
 
@@ -815,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigCachingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 datacloudflarehyperdriveconfig.NewDataCloudflareHyperdriveConfigCachingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareHyperdriveConfigCachingOutputReference
 ```
@@ -1097,7 +1104,7 @@ func InternalValue() DataCloudflareHyperdriveConfigCaching
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfig.DataCloudflareHyperdriveConfigOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarehyperdriveconfig"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarehyperdriveconfig"
 
 datacloudflarehyperdriveconfig.NewDataCloudflareHyperdriveConfigOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareHyperdriveConfigOriginOutputReference
 ```

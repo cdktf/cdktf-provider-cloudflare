@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +10,37 @@ export interface WorkersKvConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
   */
   readonly accountId: string;
   /**
   * A key's name. The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
   */
   readonly keyName: string;
   /**
   * Arbitrary JSON to be associated with a key/value pair.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
   */
   readonly metadata?: string;
   /**
   * Namespace identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
   */
   readonly namespaceId: string;
   /**
   * A byte sequence to be stored, up to 25 MiB in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#value WorkersKv#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv#value WorkersKv#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv cloudflare_workers_kv}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv cloudflare_workers_kv}
 */
 export class WorkersKv extends cdktf.TerraformResource {
 
@@ -61,7 +56,7 @@ export class WorkersKv extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersKv resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersKv to import
-  * @param importFromId The id of the existing WorkersKv that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersKv that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersKv to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +68,7 @@ export class WorkersKv extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_kv cloudflare_workers_kv} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_kv cloudflare_workers_kv} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +79,7 @@ export class WorkersKv extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_kv',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

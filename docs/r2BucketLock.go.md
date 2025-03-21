@@ -4,12 +4,12 @@
 
 ### R2BucketLock <a name="R2BucketLock" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.NewR2BucketLock(scope Construct, id *string, config R2BucketLockConfig) R2BucketLock
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.putRules">PutRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.resetJurisdiction">ResetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.resetRules">ResetRules</a></code> | *No description.* |
 
 ---
@@ -378,6 +379,12 @@ func PutRules(value interface{})
 
 ---
 
+##### `ResetJurisdiction` <a name="ResetJurisdiction" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.resetJurisdiction"></a>
+
+```go
+func ResetJurisdiction()
+```
+
 ##### `ResetRules` <a name="ResetRules" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.resetRules"></a>
 
 ```go
@@ -398,7 +405,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.R2BucketLock_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.R2BucketLock_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ r2bucketlock.R2BucketLock_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.R2BucketLock_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ r2bucketlock.R2BucketLock_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.R2BucketLock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +494,7 @@ The construct id used in the generated config for the R2BucketLock to import.
 
 The id of the existing R2BucketLock that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,9 +527,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.rules">Rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesList">R2BucketLockRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.bucketNameInput">BucketNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.jurisdictionInput">JurisdictionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.bucketName">BucketName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -698,6 +707,16 @@ func BucketNameInput() *string
 
 ---
 
+##### `JurisdictionInput`<sup>Optional</sup> <a name="JurisdictionInput" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.jurisdictionInput"></a>
+
+```go
+func JurisdictionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.rulesInput"></a>
 
 ```go
@@ -722,6 +741,16 @@ func AccountId() *string
 
 ```go
 func BucketName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Jurisdiction`<sup>Required</sup> <a name="Jurisdiction" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock.property.jurisdiction"></a>
+
+```go
+func Jurisdiction() *string
 ```
 
 - *Type:* *string
@@ -753,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 &r2bucketlock.R2BucketLockConfig {
 	Connection: interface{},
@@ -765,6 +794,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketloc
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	BucketName: *string,
+	Jurisdiction: *string,
 	Rules: interface{},
 }
 ```
@@ -782,7 +812,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketloc
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | Name of the bucket. |
-| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.rules">Rules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | Jurisdiction of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.rules">Rules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}. |
 
 ---
 
@@ -866,7 +897,7 @@ AccountId *string
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
 
 ---
 
@@ -880,7 +911,21 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+
+---
+
+##### `Jurisdiction`<sup>Optional</sup> <a name="Jurisdiction" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.jurisdiction"></a>
+
+```go
+Jurisdiction *string
+```
+
+- *Type:* *string
+
+Jurisdiction of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
 
 ---
 
@@ -892,7 +937,7 @@ Rules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
 
 ---
 
@@ -901,10 +946,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 &r2bucketlock.R2BucketLockRules {
-	Condition: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.r2BucketLock.R2BucketLockRulesCondition,
+	Condition: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.r2BucketLock.R2BucketLockRulesCondition,
 	Enabled: interface{},
 	Id: *string,
 	Prefix: *string,
@@ -932,7 +977,7 @@ Condition R2BucketLockRulesCondition
 
 Condition to apply a lock rule to an object for how long in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#condition R2BucketLock#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#condition R2BucketLock#condition}
 
 ---
 
@@ -946,7 +991,7 @@ Enabled interface{}
 
 Whether or not this rule is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#enabled R2BucketLock#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#enabled R2BucketLock#enabled}
 
 ---
 
@@ -960,7 +1005,7 @@ Id *string
 
 Unique identifier for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#id R2BucketLock#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#id R2BucketLock#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -977,7 +1022,7 @@ Prefix *string
 
 Rule will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#prefix R2BucketLock#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#prefix R2BucketLock#prefix}
 
 ---
 
@@ -986,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 &r2bucketlock.R2BucketLockRulesCondition {
 	Type: *string,
@@ -999,9 +1044,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketloc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}. |
-| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.date">Date</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}. |
-| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.maxAgeSeconds">MaxAgeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.type">Type</a></code> | <code>*string</code> | Available values: "Age". |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.date">Date</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.maxAgeSeconds">MaxAgeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}. |
 
 ---
 
@@ -1013,7 +1058,9 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}.
+Available values: "Age".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}
 
 ---
 
@@ -1025,7 +1072,7 @@ Date *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}.
 
 ---
 
@@ -1037,7 +1084,7 @@ MaxAgeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}.
 
 ---
 
@@ -1048,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.NewR2BucketLockRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2BucketLockRulesConditionOutputReference
 ```
@@ -1377,7 +1424,7 @@ func InternalValue() R2BucketLockRulesCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.NewR2BucketLockRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketLockRulesList
 ```
@@ -1537,7 +1584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketlock"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2bucketlock"
 
 r2bucketlock.NewR2BucketLockRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketLockRulesOutputReference
 ```

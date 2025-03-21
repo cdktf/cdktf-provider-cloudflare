@@ -4,12 +4,12 @@
 
 ### MagicTransitSite <a name="MagicTransitSite" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 magictransitsite.NewMagicTransitSite(scope Construct, id *string, config MagicTransitSiteConfig) MagicTransitSite
 ```
@@ -426,7 +426,7 @@ func ResetSecondaryConnectorId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 magictransitsite.MagicTransitSite_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 magictransitsite.MagicTransitSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ magictransitsite.MagicTransitSite_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 magictransitsite.MagicTransitSite_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ magictransitsite.MagicTransitSite_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 magictransitsite.MagicTransitSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the MagicTransitSite to import
 
 The id of the existing MagicTransitSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 &magictransitsite.MagicTransitSiteConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransi
 	ConnectorId: *string,
 	Description: *string,
 	HaMode: interface{},
-	Location: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.magicTransitSite.MagicTransitSiteLocation,
+	Location: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicTransitSite.MagicTransitSiteLocation,
 	SecondaryConnectorId: *string,
 }
 ```
@@ -914,7 +914,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransi
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.name">Name</a></code> | <code>*string</code> | The name of the site. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.connectorId">ConnectorId</a></code> | <code>*string</code> | Magic Connector identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#description MagicTransitSite#description}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#description MagicTransitSite#description}. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.haMode">HaMode</a></code> | <code>interface{}</code> | Site high availability mode. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.location">Location</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteLocation">MagicTransitSiteLocation</a></code> | Location of site in latitude and longitude. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.secondaryConnectorId">SecondaryConnectorId</a></code> | <code>*string</code> | Magic Connector identifier tag. Used when high availability mode is on. |
@@ -1001,7 +1001,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
 
 ---
 
@@ -1015,7 +1015,7 @@ Name *string
 
 The name of the site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
 
 ---
 
@@ -1029,7 +1029,7 @@ ConnectorId *string
 
 Magic Connector identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
 
 ---
 
@@ -1041,7 +1041,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#description MagicTransitSite#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#description MagicTransitSite#description}.
 
 ---
 
@@ -1057,7 +1057,7 @@ Site high availability mode.
 
 If set to true, the site can have two connectors and runs in high availability mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
 
 ---
 
@@ -1071,7 +1071,7 @@ Location MagicTransitSiteLocation
 
 Location of site in latitude and longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
 
 ---
 
@@ -1085,7 +1085,7 @@ SecondaryConnectorId *string
 
 Magic Connector identifier tag. Used when high availability mode is on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
 
 ---
 
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 &magictransitsite.MagicTransitSiteLocation {
 	Lat: *string,
@@ -1121,7 +1121,7 @@ Lat *string
 
 Latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#lat MagicTransitSite#lat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#lat MagicTransitSite#lat}
 
 ---
 
@@ -1135,7 +1135,7 @@ Lon *string
 
 Longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_transit_site#lon MagicTransitSite#lon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site#lon MagicTransitSite#lon}
 
 ---
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magictransitsite"
 
 magictransitsite.NewMagicTransitSiteLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicTransitSiteLocationOutputReference
 ```

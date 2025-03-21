@@ -4,12 +4,12 @@
 
 ### Image <a name="Image" id="@cdktf/provider-cloudflare.image.Image"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/image cloudflare_image}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image cloudflare_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.image.Image.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/image"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/image"
 
 image.NewImage(scope Construct, id *string, config ImageConfig) Image
 ```
@@ -406,7 +406,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.image.Image.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/image"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/image"
 
 image.Image_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.image.Image.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/image"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/image"
 
 image.Image_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ image.Image_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.image.Image.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/image"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/image"
 
 image.Image_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ image.Image_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.image.Image.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/image"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/image"
 
 image.Image_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Image to import.
 
 The id of the existing Image that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.image.ImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/image"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/image"
 
 &image.ImageConfig {
 	Connection: interface{},
@@ -977,7 +977,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/image#account_id Image#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image#account_id Image#account_id}
 
 ---
 
@@ -991,7 +991,7 @@ File *string
 
 An image binary data. Only needed when type is uploading a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/image#file Image#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image#file Image#file}
 
 ---
 
@@ -1005,7 +1005,7 @@ Metadata *string
 
 User modifiable key-value store. Can use used for keeping references to another system of record for managing images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/image#metadata Image#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image#metadata Image#metadata}
 
 ---
 
@@ -1019,7 +1019,7 @@ RequireSignedUrls interface{}
 
 Indicates whether the image requires a signature token for the access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/image#require_signed_urls Image#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image#require_signed_urls Image#require_signed_urls}
 
 ---
 
@@ -1033,7 +1033,7 @@ Url *string
 
 A URL to fetch an image from origin. Only needed when type is uploading from a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/image#url Image#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image#url Image#url}
 
 ---
 

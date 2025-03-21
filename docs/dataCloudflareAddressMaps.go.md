@@ -4,12 +4,12 @@
 
 ### DataCloudflareAddressMaps <a name="DataCloudflareAddressMaps" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMaps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/address_maps cloudflare_address_maps}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/address_maps cloudflare_address_maps}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMaps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 datacloudflareaddressmaps.NewDataCloudflareAddressMaps(scope Construct, id *string, config DataCloudflareAddressMapsConfig) DataCloudflareAddressMaps
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMaps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 datacloudflareaddressmaps.DataCloudflareAddressMaps_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMaps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 datacloudflareaddressmaps.DataCloudflareAddressMaps_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareaddressmaps.DataCloudflareAddressMaps_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMaps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 datacloudflareaddressmaps.DataCloudflareAddressMaps_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareaddressmaps.DataCloudflareAddressMaps_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMaps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 datacloudflareaddressmaps.DataCloudflareAddressMaps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareAddressMaps 
 
 The id of the existing DataCloudflareAddressMaps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/address_maps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/address_maps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMapsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 &datacloudflareaddressmaps.DataCloudflareAddressMapsConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ AccountId *string
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/address_maps#account_id DataCloudflareAddressMaps#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/address_maps#account_id DataCloudflareAddressMaps#account_id}
 
 ---
 
@@ -730,7 +730,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/address_maps#max_items DataCloudflareAddressMaps#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/address_maps#max_items DataCloudflareAddressMaps#max_items}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMapsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 &datacloudflareaddressmaps.DataCloudflareAddressMapsResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMapsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 datacloudflareaddressmaps.NewDataCloudflareAddressMapsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAddressMapsResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAddressMaps.DataCloudflareAddressMapsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaddressmaps"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaddressmaps"
 
 datacloudflareaddressmaps.NewDataCloudflareAddressMapsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAddressMapsResultOutputReference
 ```

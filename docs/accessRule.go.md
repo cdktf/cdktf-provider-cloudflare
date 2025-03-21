@@ -4,12 +4,12 @@
 
 ### AccessRule <a name="AccessRule" id="@cdktf/provider-cloudflare.accessRule.AccessRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule cloudflare_access_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule cloudflare_access_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 accessrule.NewAccessRule(scope Construct, id *string, config AccessRuleConfig) AccessRule
 ```
@@ -412,7 +412,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessRule.AccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 accessrule.AccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessRule.AccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 accessrule.AccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ accessrule.AccessRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessRule.AccessRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 accessrule.AccessRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ accessrule.AccessRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessRule.AccessRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 accessrule.AccessRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AccessRule to import.
 
 The id of the existing AccessRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 &accessrule.AccessRuleConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Configuration: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.accessRule.AccessRuleConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.accessRule.AccessRuleConfiguration,
 	Mode: *string,
 	AccountId: *string,
 	Notes: *string,
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration">AccessRuleConfiguration</a></code> | The rule configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.mode">Mode</a></code> | <code>*string</code> | The action to apply to a matched request. |
+| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.mode">Mode</a></code> | <code>*string</code> | The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge". |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.notes">Notes</a></code> | <code>*string</code> | An informative summary of the rule, typically used as a reminder or explanation. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
@@ -983,7 +983,7 @@ Configuration AccessRuleConfiguration
 
 The rule configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#configuration AccessRule#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#configuration AccessRule#configuration}
 
 ---
 
@@ -995,9 +995,9 @@ Mode *string
 
 - *Type:* *string
 
-The action to apply to a matched request.
+The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#mode AccessRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#mode AccessRule#mode}
 
 ---
 
@@ -1011,7 +1011,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#account_id AccessRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#account_id AccessRule#account_id}
 
 ---
 
@@ -1025,7 +1025,7 @@ Notes *string
 
 An informative summary of the rule, typically used as a reminder or explanation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#notes AccessRule#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#notes AccessRule#notes}
 
 ---
 
@@ -1039,7 +1039,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 &accessrule.AccessRuleConfiguration {
 	Target: *string,
@@ -1060,7 +1060,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.property.target">Target</a></code> | <code>*string</code> | The configuration target. You must set the target to `ip` when specifying an IP address in the rule. |
+| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.property.target">Target</a></code> | <code>*string</code> | The configuration target. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.property.value">Value</a></code> | <code>*string</code> | The IP address to match. This address will be compared to the IP address of incoming requests. |
 
 ---
@@ -1073,9 +1073,12 @@ Target *string
 
 - *Type:* *string
 
-The configuration target. You must set the target to `ip` when specifying an IP address in the rule.
+The configuration target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#target AccessRule#target}
+You must set the target to `ip` when specifying an IP address in the rule.
+Available values: "ip".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#target AccessRule#target}
 
 ---
 
@@ -1089,7 +1092,7 @@ Value *string
 
 The IP address to match. This address will be compared to the IP address of incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#value AccessRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#value AccessRule#value}
 
 ---
 
@@ -1098,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessRule.AccessRuleScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 &accessrule.AccessRuleScope {
 
@@ -1113,7 +1116,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 accessrule.NewAccessRuleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessRuleConfigurationOutputReference
 ```
@@ -1420,7 +1423,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessRule.AccessRuleScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accessrule"
 
 accessrule.NewAccessRuleScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessRuleScopeOutputReference
 ```

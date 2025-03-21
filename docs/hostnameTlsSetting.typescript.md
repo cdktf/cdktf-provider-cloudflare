@@ -4,7 +4,7 @@
 
 ### HostnameTlsSetting <a name="HostnameTlsSetting" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.resetHostname">resetHostname</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +364,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetHostname` <a name="resetHostname" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.resetHostname"></a>
-
-```typescript
-public resetHostname(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +467,7 @@ The construct id used in the generated config for the HostnameTlsSetting to impo
 
 The id of the existing HostnameTlsSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,10 +815,10 @@ const hostnameTlsSettingConfig: hostnameTlsSetting.HostnameTlsSettingConfig = { 
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.settingId">settingId</a></code> | <code>string</code> | The TLS Setting name. |
+| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.hostname">hostname</a></code> | <code>string</code> | The hostname for which the tls settings are set. |
+| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.settingId">settingId</a></code> | <code>string</code> | The TLS Setting name. Available values: "ciphers", "min_tls_version", "http2". |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.value">value</a></code> | <code>{[ key: string ]: any}</code> | The tls setting value. |
 | <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.hostname">hostname</a></code> | <code>string</code> | The hostname for which the tls settings are set. |
 
 ---
 
@@ -899,6 +892,20 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.hostname"></a>
+
+```typescript
+public readonly hostname: string;
+```
+
+- *Type:* string
+
+The hostname for which the tls settings are set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+
+---
+
 ##### `settingId`<sup>Required</sup> <a name="settingId" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.settingId"></a>
 
 ```typescript
@@ -907,9 +914,9 @@ public readonly settingId: string;
 
 - *Type:* string
 
-The TLS Setting name.
+The TLS Setting name. Available values: "ciphers", "min_tls_version", "http2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
 
 ---
 
@@ -923,7 +930,7 @@ public readonly value: {[ key: string ]: any};
 
 The tls setting value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
 
 ---
 
@@ -937,21 +944,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
-
----
-
-##### `hostname`<sup>Optional</sup> <a name="hostname" id="@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.hostname"></a>
-
-```typescript
-public readonly hostname: string;
-```
-
-- *Type:* string
-
-The hostname for which the tls settings are set.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
 
 ---
 

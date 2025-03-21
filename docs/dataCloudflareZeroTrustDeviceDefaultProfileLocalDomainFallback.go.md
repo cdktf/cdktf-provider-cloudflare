@@ -4,12 +4,12 @@
 
 ### DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback <a name="DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.NewDataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback(scope Construct, id *string, config DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig) DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.DataCloudflareZer
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.DataCloudflareZer
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
 
 datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDev
 
 The id of the existing DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback"
 
 &datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback.DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback#account_id}. |
 
 ---
 
@@ -705,7 +705,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback#account_id DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback#account_id}.
 
 ---
 

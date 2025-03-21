@@ -4,7 +4,7 @@
 
 ### AccessRule <a name="AccessRule" id="@cdktf/provider-cloudflare.accessRule.AccessRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule cloudflare_access_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule cloudflare_access_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer"></a>
 
@@ -43,7 +43,7 @@ AccessRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration">AccessRuleConfiguration</a></code> | The rule configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | The action to apply to a matched request. |
+| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge". |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.notes">notes</a></code> | <code>java.lang.String</code> | An informative summary of the rule, typically used as a reminder or explanation. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The rule configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#configuration AccessRule#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#configuration AccessRule#configuration}
 
 ---
 
@@ -124,9 +124,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The action to apply to a matched request.
+The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#mode AccessRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#mode AccessRule#mode}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#account_id AccessRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#account_id AccessRule#account_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative summary of the rule, typically used as a reminder or explanation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#notes AccessRule#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#notes AccessRule#notes}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the AccessRule to import.
 
 The id of the existing AccessRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1016,7 +1016,7 @@ AccessRuleConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration">AccessRuleConfiguration</a></code> | The rule configuration. |
-| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | The action to apply to a matched request. |
+| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge". |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.notes">notes</a></code> | <code>java.lang.String</code> | An informative summary of the rule, typically used as a reminder or explanation. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
@@ -1103,7 +1103,7 @@ public AccessRuleConfiguration getConfiguration();
 
 The rule configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#configuration AccessRule#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#configuration AccessRule#configuration}
 
 ---
 
@@ -1115,9 +1115,9 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-The action to apply to a matched request.
+The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#mode AccessRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#mode AccessRule#mode}
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getAccountId();
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#account_id AccessRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#account_id AccessRule#account_id}
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.String getNotes();
 
 An informative summary of the rule, typically used as a reminder or explanation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#notes AccessRule#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#notes AccessRule#notes}
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getZoneId();
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#zone_id AccessRule#zone_id}
 
 ---
 
@@ -1180,7 +1180,7 @@ AccessRuleConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.property.target">target</a></code> | <code>java.lang.String</code> | The configuration target. You must set the target to `ip` when specifying an IP address in the rule. |
+| <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.property.target">target</a></code> | <code>java.lang.String</code> | The configuration target. |
 | <code><a href="#@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.property.value">value</a></code> | <code>java.lang.String</code> | The IP address to match. This address will be compared to the IP address of incoming requests. |
 
 ---
@@ -1193,9 +1193,12 @@ public java.lang.String getTarget();
 
 - *Type:* java.lang.String
 
-The configuration target. You must set the target to `ip` when specifying an IP address in the rule.
+The configuration target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#target AccessRule#target}
+You must set the target to `ip` when specifying an IP address in the rule.
+Available values: "ip".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#target AccessRule#target}
 
 ---
 
@@ -1209,7 +1212,7 @@ public java.lang.String getValue();
 
 The IP address to match. This address will be compared to the IP address of incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/access_rule#value AccessRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#value AccessRule#value}
 
 ---
 

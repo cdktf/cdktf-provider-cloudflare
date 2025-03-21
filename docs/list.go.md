@@ -4,12 +4,12 @@
 
 ### List <a name="List" id="@cdktf/provider-cloudflare.list.List"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list cloudflare_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list cloudflare_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.list.List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/list"
 
 list.NewList(scope Construct, id *string, config ListConfig) List
 ```
@@ -385,7 +385,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.list.List.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/list"
 
 list.List_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.list.List.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/list"
 
 list.List_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ list.List_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.list.List.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/list"
 
 list.List_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ list.List_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.list.List.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/list"
 
 list.List_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the List to import.
 
 The id of the existing List that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.list.ListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/list"
 
 &list.ListConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list"
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.kind">Kind</a></code> | <code>*string</code> | The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects). |
+| <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.kind">Kind</a></code> | <code>*string</code> | The type of the list. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.name">Name</a></code> | <code>*string</code> | An informative name for the list. Use this name in filter and rule expressions. |
 | <code><a href="#@cdktf/provider-cloudflare.list.ListConfig.property.description">Description</a></code> | <code>*string</code> | An informative summary of the list. |
 
@@ -932,7 +932,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list#account_id List#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list#account_id List#account_id}
 
 ---
 
@@ -944,9 +944,12 @@ Kind *string
 
 - *Type:* *string
 
-The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
+The type of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list#kind List#kind}
+Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
+Available values: "ip", "redirect", "hostname", "asn".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list#kind List#kind}
 
 ---
 
@@ -960,7 +963,7 @@ Name *string
 
 An informative name for the list. Use this name in filter and rule expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list#name List#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list#name List#name}
 
 ---
 
@@ -974,7 +977,7 @@ Description *string
 
 An informative summary of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list#description List#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list#description List#description}
 
 ---
 

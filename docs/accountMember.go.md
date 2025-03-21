@@ -4,12 +4,12 @@
 
 ### AccountMember <a name="AccountMember" id="@cdktf/provider-cloudflare.accountMember.AccountMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member cloudflare_account_member}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member cloudflare_account_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMember(scope Construct, id *string, config AccountMemberConfig) AccountMember
 ```
@@ -412,7 +412,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accountMember.AccountMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accountMember.AccountMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ accountmember.AccountMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accountMember.AccountMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ accountmember.AccountMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accountMember.AccountMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.AccountMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AccountMember to import.
 
 The id of the existing AccountMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 &accountmember.AccountMemberConfig {
 	Connection: interface{},
@@ -866,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmemb
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.email">Email</a></code> | <code>*string</code> | The contact email address of the user. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.policies">Policies</a></code> | <code>interface{}</code> | Array of policies associated with this member. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | Array of roles associated with this member. |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#status AccountMember#status}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberConfig.property.status">Status</a></code> | <code>*string</code> | Available values: "accepted", "pending". |
 
 ---
 
@@ -950,7 +950,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#account_id AccountMember#account_id}
 
 ---
 
@@ -964,7 +964,7 @@ Email *string
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#email AccountMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#email AccountMember#email}
 
 ---
 
@@ -978,7 +978,7 @@ Policies interface{}
 
 Array of policies associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#policies AccountMember#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#policies AccountMember#policies}
 
 ---
 
@@ -992,7 +992,7 @@ Roles *[]*string
 
 Array of roles associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#roles AccountMember#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#roles AccountMember#roles}
 
 ---
 
@@ -1004,7 +1004,9 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#status AccountMember#status}.
+Available values: "accepted", "pending".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 
@@ -1013,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 &accountmember.AccountMemberPolicies {
 	Access: *string,
@@ -1026,7 +1028,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmemb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberPolicies.property.access">Access</a></code> | <code>*string</code> | Allow or deny operations against the resources. |
+| <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberPolicies.property.access">Access</a></code> | <code>*string</code> | Allow or deny operations against the resources. Available values: "allow", "deny". |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberPolicies.property.permissionGroups">PermissionGroups</a></code> | <code>interface{}</code> | A set of permission groups that are specified to the policy. |
 | <code><a href="#@cdktf/provider-cloudflare.accountMember.AccountMemberPolicies.property.resourceGroups">ResourceGroups</a></code> | <code>interface{}</code> | A list of resource groups that the policy applies to. |
 
@@ -1040,9 +1042,9 @@ Access *string
 
 - *Type:* *string
 
-Allow or deny operations against the resources.
+Allow or deny operations against the resources. Available values: "allow", "deny".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#access AccountMember#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#access AccountMember#access}
 
 ---
 
@@ -1056,7 +1058,7 @@ PermissionGroups interface{}
 
 A set of permission groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
 
 ---
 
@@ -1070,7 +1072,7 @@ ResourceGroups interface{}
 
 A list of resource groups that the policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
 
 ---
 
@@ -1079,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesPermissionGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 &accountmember.AccountMemberPoliciesPermissionGroups {
 	Id: *string,
@@ -1104,7 +1106,7 @@ Id *string
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1118,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesResourceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 &accountmember.AccountMemberPoliciesResourceGroups {
 	Id: *string,
@@ -1141,7 +1143,7 @@ Id *string
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1155,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accountMember.AccountMemberUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 &accountmember.AccountMemberUser {
 
@@ -1168,7 +1170,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmemb
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMemberPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountMemberPoliciesList
 ```
@@ -1328,7 +1330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMemberPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountMemberPoliciesOutputReference
 ```
@@ -1698,7 +1700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesPermissionGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMemberPoliciesPermissionGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountMemberPoliciesPermissionGroupsList
 ```
@@ -1858,7 +1860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesPermissionGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMemberPoliciesPermissionGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountMemberPoliciesPermissionGroupsOutputReference
 ```
@@ -2147,7 +2149,7 @@ func InternalValue() AccountMemberPoliciesPermissionGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesResourceGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMemberPoliciesResourceGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountMemberPoliciesResourceGroupsList
 ```
@@ -2307,7 +2309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesResourceGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMemberPoliciesResourceGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountMemberPoliciesResourceGroupsOutputReference
 ```
@@ -2596,7 +2598,7 @@ func InternalValue() AccountMemberPoliciesResourceGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountMember.AccountMemberUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/accountmember"
 
 accountmember.NewAccountMemberUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountMemberUserOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareMagicNetworkMonitoringRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule#account_id DataCloudflareMagicNetworkMonitoringRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule#account_id DataCloudflareMagicNetworkMonitoringRule#account_id}
   */
   readonly accountId: string;
   /**
   * The id of the rule. Must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule#rule_id DataCloudflareMagicNetworkMonitoringRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule#rule_id DataCloudflareMagicNetworkMonitoringRule#rule_id}
   */
   readonly ruleId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}
 */
 export class DataCloudflareMagicNetworkMonitoringRule extends cdktf.TerraformDataSource {
 
@@ -41,7 +36,7 @@ export class DataCloudflareMagicNetworkMonitoringRule extends cdktf.TerraformDat
   * Generates CDKTF code for importing a DataCloudflareMagicNetworkMonitoringRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicNetworkMonitoringRule to import
-  * @param importFromId The id of the existing DataCloudflareMagicNetworkMonitoringRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicNetworkMonitoringRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicNetworkMonitoringRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -53,7 +48,7 @@ export class DataCloudflareMagicNetworkMonitoringRule extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +59,7 @@ export class DataCloudflareMagicNetworkMonitoringRule extends cdktf.TerraformDat
       terraformResourceType: 'cloudflare_magic_network_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -126,6 +121,11 @@ export class DataCloudflareMagicNetworkMonitoringRule extends cdktf.TerraformDat
     return this.getNumberAttribute('packet_threshold');
   }
 
+  // prefix_match - computed: true, optional: false, required: false
+  public get prefixMatch() {
+    return this.getStringAttribute('prefix_match');
+  }
+
   // prefixes - computed: true, optional: false, required: false
   public get prefixes() {
     return this.getListAttribute('prefixes');
@@ -145,6 +145,21 @@ export class DataCloudflareMagicNetworkMonitoringRule extends cdktf.TerraformDat
   // Temporarily expose input value. Use with caution.
   public get ruleIdInput() {
     return this._ruleId;
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // zscore_sensitivity - computed: true, optional: false, required: false
+  public get zscoreSensitivity() {
+    return this.getStringAttribute('zscore_sensitivity');
+  }
+
+  // zscore_target - computed: true, optional: false, required: false
+  public get zscoreTarget() {
+    return this.getStringAttribute('zscore_target');
   }
 
   // =========

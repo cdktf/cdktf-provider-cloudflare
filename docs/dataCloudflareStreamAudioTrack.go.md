@@ -4,12 +4,12 @@
 
 ### DataCloudflareStreamAudioTrack <a name="DataCloudflareStreamAudioTrack" id="@cdktf/provider-cloudflare.dataCloudflareStreamAudioTrack.DataCloudflareStreamAudioTrack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreamAudioTrack.DataCloudflareStreamAudioTrack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamaudiotrack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamaudiotrack"
 
 datacloudflarestreamaudiotrack.NewDataCloudflareStreamAudioTrack(scope Construct, id *string, config DataCloudflareStreamAudioTrackConfig) DataCloudflareStreamAudioTrack
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareStreamAudioTrack.DataCloudflareStreamAudioTrack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamaudiotrack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamaudiotrack"
 
 datacloudflarestreamaudiotrack.DataCloudflareStreamAudioTrack_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareStreamAudioTrack.DataCloudflareStreamAudioTrack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamaudiotrack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamaudiotrack"
 
 datacloudflarestreamaudiotrack.DataCloudflareStreamAudioTrack_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarestreamaudiotrack.DataCloudflareStreamAudioTrack_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareStreamAudioTrack.DataCloudflareStreamAudioTrack.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamaudiotrack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamaudiotrack"
 
 datacloudflarestreamaudiotrack.DataCloudflareStreamAudioTrack_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarestreamaudiotrack.DataCloudflareStreamAudioTrack_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareStreamAudioTrack.DataCloudflareStreamAudioTrack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamaudiotrack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamaudiotrack"
 
 datacloudflarestreamaudiotrack.DataCloudflareStreamAudioTrack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareStreamAudioT
 
 The id of the existing DataCloudflareStreamAudioTrack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_audio_track#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/stream_audio_track#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareStreamAudioTrack.DataCloudflareStreamAudioTrackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamaudiotrack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamaudiotrack"
 
 &datacloudflarestreamaudiotrack.DataCloudflareStreamAudioTrackConfig {
 	Connection: interface{},
@@ -742,7 +742,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_audio_track#account_id DataCloudflareStreamAudioTrack#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/stream_audio_track#account_id DataCloudflareStreamAudioTrack#account_id}
 
 ---
 
@@ -756,7 +756,7 @@ Identifier *string
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_audio_track#identifier DataCloudflareStreamAudioTrack#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/stream_audio_track#identifier DataCloudflareStreamAudioTrack#identifier}
 
 ---
 

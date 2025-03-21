@@ -4,12 +4,12 @@
 
 ### DataCloudflareZoneSubscription <a name="DataCloudflareZoneSubscription" id="@cdktf/provider-cloudflare.dataCloudflareZoneSubscription.DataCloudflareZoneSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_subscription cloudflare_zone_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_subscription cloudflare_zone_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneSubscription.DataCloudflareZoneSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesubscription"
 
 datacloudflarezonesubscription.NewDataCloudflareZoneSubscription(scope Construct, id *string, config DataCloudflareZoneSubscriptionConfig) DataCloudflareZoneSubscription
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZoneSubscription.DataCloudflareZoneSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesubscription"
 
 datacloudflarezonesubscription.DataCloudflareZoneSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZoneSubscription.DataCloudflareZoneSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesubscription"
 
 datacloudflarezonesubscription.DataCloudflareZoneSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarezonesubscription.DataCloudflareZoneSubscription_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZoneSubscription.DataCloudflareZoneSubscription.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesubscription"
 
 datacloudflarezonesubscription.DataCloudflareZoneSubscription_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarezonesubscription.DataCloudflareZoneSubscription_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZoneSubscription.DataCloudflareZoneSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesubscription"
 
 datacloudflarezonesubscription.DataCloudflareZoneSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZoneSubscrip
 
 The id of the existing DataCloudflareZoneSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneSubscription.DataCloudflareZoneSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesubscription"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesubscription"
 
 &datacloudflarezonesubscription.DataCloudflareZoneSubscriptionConfig {
 	Connection: interface{},
@@ -674,7 +674,7 @@ Identifier *string
 
 Subscription identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_subscription#identifier DataCloudflareZoneSubscription#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_subscription#identifier DataCloudflareZoneSubscription#identifier}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### ZoneDnssec <a name="ZoneDnssec" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonednssec"
 
 zonednssec.NewZoneDnssec(scope Construct, id *string, config ZoneDnssecConfig) ZoneDnssec
 ```
@@ -399,7 +399,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonednssec"
 
 zonednssec.ZoneDnssec_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonednssec"
 
 zonednssec.ZoneDnssec_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ zonednssec.ZoneDnssec_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonednssec"
 
 zonednssec.ZoneDnssec_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ zonednssec.ZoneDnssec_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonednssec"
 
 zonednssec.ZoneDnssec_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ZoneDnssec to import.
 
 The id of the existing ZoneDnssec that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zonednssec"
 
 &zonednssec.ZoneDnssecConfig {
 	Connection: interface{},
@@ -928,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec"
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.dnssecMultiSigner">DnssecMultiSigner</a></code> | <code>interface{}</code> | If true, multi-signer DNSSEC is enabled on the zone, allowing multiple providers to serve a DNSSEC-signed zone at the same time. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.dnssecPresigned">DnssecPresigned</a></code> | <code>interface{}</code> | If true, allows Cloudflare to transfer in a DNSSEC-signed zone including signatures from an external provider, without requiring Cloudflare to sign any records on the fly. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.status">Status</a></code> | <code>*string</code> | Status of DNSSEC, based on user-desired state and presence of necessary records. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.status">Status</a></code> | <code>*string</code> | Status of DNSSEC, based on user-desired state and presence of necessary records. Available values: "active", "disabled". |
 
 ---
 
@@ -1012,7 +1012,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
 
 ---
 
@@ -1031,7 +1031,7 @@ generated by Cloudflare) to be added to the zone.
 
 See [Multi-signer DNSSEC](https://developers.cloudflare.com/dns/dnssec/multi-signer-dnssec/) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
 
 ---
 
@@ -1048,7 +1048,7 @@ If true, allows Cloudflare to transfer in a DNSSEC-signed zone including signatu
 Note that this feature has some limitations.
 See [Cloudflare as Secondary](https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/setup/#dnssec) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
 
 ---
 
@@ -1060,9 +1060,9 @@ Status *string
 
 - *Type:* *string
 
-Status of DNSSEC, based on user-desired state and presence of necessary records.
+Status of DNSSEC, based on user-desired state and presence of necessary records. Available values: "active", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### PageShieldPolicy <a name="PageShieldPolicy" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.NewPageShieldPolicy(scope Construct, id *string, config PageShieldPolicyConfig) PageShieldPolicy
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ pageshieldpolicy.PageShieldPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ pageshieldpolicy.PageShieldPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 pageshieldpolicy.PageShieldPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the PageShieldPolicy to import
 
 The id of the existing PageShieldPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/pageshieldpolicy"
 
 &pageshieldpolicy.PageShieldPolicyConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pageshieldp
 | <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.action">Action</a></code> | <code>*string</code> | The action to take if the expression matches. |
+| <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.action">Action</a></code> | <code>*string</code> | The action to take if the expression matches Available values: "allow", "log". |
 | <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.description">Description</a></code> | <code>*string</code> | A description for the policy. |
 | <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether the policy is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.pageShieldPolicy.PageShieldPolicyConfig.property.expression">Expression</a></code> | <code>*string</code> | The expression which must match for the policy to be applied, using the Cloudflare Firewall rule expression syntax. |
@@ -927,9 +927,9 @@ Action *string
 
 - *Type:* *string
 
-The action to take if the expression matches.
+The action to take if the expression matches Available values: "allow", "log".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy#action PageShieldPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy#action PageShieldPolicy#action}
 
 ---
 
@@ -943,7 +943,7 @@ Description *string
 
 A description for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy#description PageShieldPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy#description PageShieldPolicy#description}
 
 ---
 
@@ -957,7 +957,7 @@ Enabled interface{}
 
 Whether the policy is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy#enabled PageShieldPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy#enabled PageShieldPolicy#enabled}
 
 ---
 
@@ -971,7 +971,7 @@ Expression *string
 
 The expression which must match for the policy to be applied, using the Cloudflare Firewall rule expression syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy#expression PageShieldPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy#expression PageShieldPolicy#expression}
 
 ---
 
@@ -985,7 +985,7 @@ Value *string
 
 The policy which will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy#value PageShieldPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy#value PageShieldPolicy#value}
 
 ---
 
@@ -999,7 +999,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/page_shield_policy#zone_id PageShieldPolicy#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/page_shield_policy#zone_id PageShieldPolicy#zone_id}
 
 ---
 

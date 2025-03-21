@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface StreamCaptionLanguageConfig extends cdktf.TerraformMetaArgument
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language#account_id StreamCaptionLanguage#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language#account_id StreamCaptionLanguage#account_id}
   */
   readonly accountId: string;
   /**
   * The WebVTT file containing the caption or subtitle content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language#file StreamCaptionLanguage#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language#file StreamCaptionLanguage#file}
   */
   readonly file?: string;
   /**
   * A Cloudflare-generated unique identifier for a media item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language#identifier StreamCaptionLanguage#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language#identifier StreamCaptionLanguage#identifier}
   */
   readonly identifier: string;
   /**
   * The language tag in BCP 47 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language#language StreamCaptionLanguage#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language#language StreamCaptionLanguage#language}
   */
   readonly language: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}
 */
 export class StreamCaptionLanguage extends cdktf.TerraformResource {
 
@@ -55,7 +50,7 @@ export class StreamCaptionLanguage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StreamCaptionLanguage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamCaptionLanguage to import
-  * @param importFromId The id of the existing StreamCaptionLanguage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamCaptionLanguage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamCaptionLanguage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class StreamCaptionLanguage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class StreamCaptionLanguage extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_stream_caption_language',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

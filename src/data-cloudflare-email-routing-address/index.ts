@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,32 @@ export interface DataCloudflareEmailRoutingAddressConfig extends cdktf.Terraform
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address#account_id DataCloudflareEmailRoutingAddress#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address#account_id DataCloudflareEmailRoutingAddress#account_id}
   */
   readonly accountId: string;
   /**
   * Destination address identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address#destination_address_identifier DataCloudflareEmailRoutingAddress#destination_address_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address#destination_address_identifier DataCloudflareEmailRoutingAddress#destination_address_identifier}
   */
   readonly destinationAddressIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address#filter DataCloudflareEmailRoutingAddress#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address#filter DataCloudflareEmailRoutingAddress#filter}
   */
   readonly filter?: DataCloudflareEmailRoutingAddressFilter;
 }
 export interface DataCloudflareEmailRoutingAddressFilter {
   /**
   * Sorts results in an ascending or descending order.
+  * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address#direction DataCloudflareEmailRoutingAddress#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address#direction DataCloudflareEmailRoutingAddress#direction}
   */
   readonly direction?: string;
   /**
   * Filter by verified destination addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address#verified DataCloudflareEmailRoutingAddress#verified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address#verified DataCloudflareEmailRoutingAddress#verified}
   */
   readonly verified?: boolean | cdktf.IResolvable;
 }
@@ -162,7 +158,7 @@ export class DataCloudflareEmailRoutingAddressFilterOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address cloudflare_email_routing_address}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address cloudflare_email_routing_address}
 */
 export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource {
 
@@ -178,7 +174,7 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataCloudflareEmailRoutingAddress resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailRoutingAddress to import
-  * @param importFromId The id of the existing DataCloudflareEmailRoutingAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailRoutingAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailRoutingAddress to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -190,7 +186,7 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +197,7 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
       terraformResourceType: 'cloudflare_email_routing_address',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

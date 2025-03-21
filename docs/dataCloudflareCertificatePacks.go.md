@@ -4,12 +4,12 @@
 
 ### DataCloudflareCertificatePacks <a name="DataCloudflareCertificatePacks" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 datacloudflarecertificatepacks.NewDataCloudflareCertificatePacks(scope Construct, id *string, config DataCloudflareCertificatePacksConfig) DataCloudflareCertificatePacks
 ```
@@ -290,7 +290,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 datacloudflarecertificatepacks.DataCloudflareCertificatePacks_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 datacloudflarecertificatepacks.DataCloudflareCertificatePacks_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarecertificatepacks.DataCloudflareCertificatePacks_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 datacloudflarecertificatepacks.DataCloudflareCertificatePacks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datacloudflarecertificatepacks.DataCloudflareCertificatePacks_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 datacloudflarecertificatepacks.DataCloudflareCertificatePacks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareCertificateP
 
 The id of the existing DataCloudflareCertificatePacks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 &datacloudflarecertificatepacks.DataCloudflareCertificatePacksConfig {
 	Connection: interface{},
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.status">Status</a></code> | <code>*string</code> | Include Certificate Packs of all statuses, not just active ones. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.status">Status</a></code> | <code>*string</code> | Include Certificate Packs of all statuses, not just active ones. Available values: "all". |
 
 ---
 
@@ -747,7 +747,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
 
 ---
 
@@ -761,7 +761,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 
 ---
 
@@ -773,9 +773,9 @@ Status *string
 
 - *Type:* *string
 
-Include Certificate Packs of all statuses, not just active ones.
+Include Certificate Packs of all statuses, not just active ones. Available values: "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 
 ---
 
@@ -784,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 &datacloudflarecertificatepacks.DataCloudflareCertificatePacksResult {
 
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 datacloudflarecertificatepacks.NewDataCloudflareCertificatePacksResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCertificatePacksResultList
 ```
@@ -948,7 +948,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecertificatepacks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecertificatepacks"
 
 datacloudflarecertificatepacks.NewDataCloudflareCertificatePacksResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCertificatePacksResultOutputReference
 ```

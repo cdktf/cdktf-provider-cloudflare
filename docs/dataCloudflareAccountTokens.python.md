@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountTokens <a name="DataCloudflareAccountTokens" id="@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer"></a>
 
@@ -39,7 +39,7 @@ dataCloudflareAccountTokens.DataCloudflareAccountTokens(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.direction">direction</a></code> | <code>str</code> | Direction to order results. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.direction">direction</a></code> | <code>str</code> | Direction to order results. Available values: "asc", "desc". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -118,9 +118,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Direction to order results.
+Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -786,7 +786,7 @@ dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.direction">direction</a></code> | <code>str</code> | Direction to order results. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.direction">direction</a></code> | <code>str</code> | Direction to order results. Available values: "asc", "desc". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -871,7 +871,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -883,9 +883,9 @@ direction: str
 
 - *Type:* str
 
-Direction to order results.
+Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 
 ---
 
@@ -899,7 +899,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 

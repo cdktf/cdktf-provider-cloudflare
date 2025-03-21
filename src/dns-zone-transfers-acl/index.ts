@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_acl
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DnsZoneTransfersAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}
   */
   readonly accountId: string;
   /**
   * Allowed IPv4/IPv6 address range of primary or secondary nameservers. This will be applied for the entire account. The IP range is used to allow additional NOTIFY IPs for secondary zones and IPs Cloudflare allows AXFR/IXFR requests from for primary zones. CIDRs are limited to a maximum of /24 for IPv4 and /64 for IPv6 respectively.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_acl#ip_range DnsZoneTransfersAcl#ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_acl#ip_range DnsZoneTransfersAcl#ip_range}
   */
   readonly ipRange: string;
   /**
   * The name of the acl.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_acl#name DnsZoneTransfersAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_acl#name DnsZoneTransfersAcl#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl}
 */
 export class DnsZoneTransfersAcl extends cdktf.TerraformResource {
 
@@ -47,7 +42,7 @@ export class DnsZoneTransfersAcl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DnsZoneTransfersAcl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsZoneTransfersAcl to import
-  * @param importFromId The id of the existing DnsZoneTransfersAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsZoneTransfersAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsZoneTransfersAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +54,7 @@ export class DnsZoneTransfersAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +65,7 @@ export class DnsZoneTransfersAcl extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dns_zone_transfers_acl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

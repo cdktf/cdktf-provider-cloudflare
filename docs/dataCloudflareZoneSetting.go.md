@@ -4,12 +4,12 @@
 
 ### DataCloudflareZoneSetting <a name="DataCloudflareZoneSetting" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_setting cloudflare_zone_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_setting cloudflare_zone_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.NewDataCloudflareZoneSetting(scope Construct, id *string, config DataCloudflareZoneSettingConfig) DataCloudflareZoneSetting
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZoneSetting 
 
 The id of the existing DataCloudflareZoneSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 &datacloudflarezonesetting.DataCloudflareZoneSettingConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ SettingId *string
 
 Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_setting#setting_id DataCloudflareZoneSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_setting#setting_id DataCloudflareZoneSetting#setting_id}
 
 ---
 
@@ -778,7 +778,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_setting#zone_id DataCloudflareZoneSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_setting#zone_id DataCloudflareZoneSetting#zone_id}
 
 ---
 

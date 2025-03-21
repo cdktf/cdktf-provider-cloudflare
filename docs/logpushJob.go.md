@@ -4,12 +4,12 @@
 
 ### LogpushJob <a name="LogpushJob" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job cloudflare_logpush_job}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job cloudflare_logpush_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.NewLogpushJob(scope Construct, id *string, config LogpushJobConfig) LogpushJob
 ```
@@ -482,7 +482,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ logpushjob.LogpushJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ logpushjob.LogpushJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.logpushJob.LogpushJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.LogpushJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -571,7 +571,7 @@ The construct id used in the generated config for the LogpushJob to import.
 
 The id of the existing LogpushJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1123,7 +1123,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 &logpushjob.LogpushJobConfig {
 	Connection: interface{},
@@ -1144,7 +1144,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
 	MaxUploadIntervalSeconds: *f64,
 	MaxUploadRecords: *f64,
 	Name: *string,
-	OutputOptions: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.logpushJob.LogpushJobOutputOptions,
+	OutputOptions: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.logpushJob.LogpushJobOutputOptions,
 	OwnershipChallenge: *string,
 	ZoneId: *string,
 }
@@ -1260,7 +1260,7 @@ Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
 
 Additional configuration parameters supported by the destination may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
 
 ---
 
@@ -1274,7 +1274,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
 
 ---
 
@@ -1288,7 +1288,7 @@ Dataset *string
 
 Name of the dataset. A list of supported datasets can be found on the [Developer Docs](https://developers.cloudflare.com/logs/reference/log-fields/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
 
 ---
 
@@ -1302,7 +1302,7 @@ Enabled interface{}
 
 Flag that indicates if the job is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
 
 ---
 
@@ -1317,8 +1317,9 @@ Frequency *string
 This field is deprecated.
 
 Please use `max_upload_*` parameters instead. The frequency at which Cloudflare sends batches of logs to your destination. Setting frequency to high sends your logs in larger quantities of smaller files. Setting frequency to low sends logs in smaller quantities of larger files.
+Available values: "high", "low".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
 
 ---
 
@@ -1333,8 +1334,9 @@ Kind *string
 The kind parameter (optional) is used to differentiate between Logpush and Edge Log Delivery jobs.
 
 Currently, Edge Log Delivery is only supported for the `http_requests` dataset.
+Available values: "edge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#kind LogpushJob#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#kind LogpushJob#kind}
 
 ---
 
@@ -1350,7 +1352,7 @@ This field is deprecated.
 
 Use `output_options` instead. Configuration string. It specifies things like requested fields and timestamp formats. If migrating from the logpull api, copy the url (full url or just the query string) of your call here, and logpush will keep on making this call for you, setting start and end times appropriately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
 
 ---
 
@@ -1366,7 +1368,7 @@ The maximum uncompressed file size of a batch of logs.
 
 This setting value must be between `5 MB` and `1 GB`, or `0` to disable it. Note that you cannot set a minimum file size; this means that log files may be much smaller than this batch size. This parameter is not available for jobs with `edge` as its kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
 
 ---
 
@@ -1382,7 +1384,7 @@ The maximum interval in seconds for log batches.
 
 This setting must be between 30 and 300 seconds (5 minutes), or `0` to disable it. Note that you cannot specify a minimum interval for log batches; this means that log files may be sent in shorter intervals than this. This parameter is only used for jobs with `edge` as its kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
 
 ---
 
@@ -1398,7 +1400,7 @@ The maximum number of log lines per batch.
 
 This setting must be between 1000 and 1,000,000 lines, or `0` to disable it. Note that you cannot specify a minimum number of log lines per batch; this means that log files may contain many fewer lines than this. This parameter is not available for jobs with `edge` as its kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
 
 ---
 
@@ -1414,7 +1416,7 @@ Optional human readable job name.
 
 Not unique. Cloudflare suggests that you set this to a meaningful string, like the domain name, to make it easier to identify your job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#name LogpushJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#name LogpushJob#name}
 
 ---
 
@@ -1428,7 +1430,7 @@ OutputOptions LogpushJobOutputOptions
 
 The structured replacement for `logpull_options`. When including this field, the `logpull_option` field will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
 
 ---
 
@@ -1442,7 +1444,7 @@ OwnershipChallenge *string
 
 Ownership challenge token to prove destination ownership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
 
 ---
 
@@ -1456,7 +1458,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
 
 ---
 
@@ -1465,12 +1467,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 &logpushjob.LogpushJobOutputOptions {
 	BatchPrefix: *string,
 	BatchSuffix: *string,
-	Cve20214428: interface{},
+	Cve202144228: interface{},
 	FieldDelimiter: *string,
 	FieldNames: *[]*string,
 	OutputType: *string,
@@ -1489,7 +1491,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.batchPrefix">BatchPrefix</a></code> | <code>*string</code> | String to be prepended before each batch. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.batchSuffix">BatchSuffix</a></code> | <code>*string</code> | String to be appended after each batch. |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.cve20214428">Cve20214428</a></code> | <code>interface{}</code> | If set to true, will cause all occurrences of `${` in the generated files to be replaced with `x{`. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.cve202144228">Cve202144228</a></code> | <code>interface{}</code> | If set to true, will cause all occurrences of `${` in the generated files to be replaced with `x{`. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.fieldDelimiter">FieldDelimiter</a></code> | <code>*string</code> | String to join fields. This field be ignored when `record_template` is set. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.fieldNames">FieldNames</a></code> | <code>*[]*string</code> | List of field names to be included in the Logpush output. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.outputType">OutputType</a></code> | <code>*string</code> | Specifies the output type, such as `ndjson` or `csv`. |
@@ -1498,7 +1500,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.recordSuffix">RecordSuffix</a></code> | <code>*string</code> | String to be appended after each record. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.recordTemplate">RecordTemplate</a></code> | <code>*string</code> | String to use as template for each record instead of the default comma-separated list. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.sampleRate">SampleRate</a></code> | <code>*f64</code> | Floating number to specify sampling rate. |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.timestampFormat">TimestampFormat</a></code> | <code>*string</code> | String to specify the format for timestamps, such as `unixnano`, `unix`, or `rfc3339`. |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.timestampFormat">TimestampFormat</a></code> | <code>*string</code> | String to specify the format for timestamps, such as `unixnano`, `unix`, or `rfc3339`. Available values: "unixnano", "unix", "rfc3339". |
 
 ---
 
@@ -1512,7 +1514,7 @@ BatchPrefix *string
 
 String to be prepended before each batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#batch_prefix LogpushJob#batch_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#batch_prefix LogpushJob#batch_prefix}
 
 ---
 
@@ -1526,21 +1528,21 @@ BatchSuffix *string
 
 String to be appended after each batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#batch_suffix LogpushJob#batch_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#batch_suffix LogpushJob#batch_suffix}
 
 ---
 
-##### `Cve20214428`<sup>Optional</sup> <a name="Cve20214428" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.cve20214428"></a>
+##### `Cve202144228`<sup>Optional</sup> <a name="Cve202144228" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions.property.cve202144228"></a>
 
 ```go
-Cve20214428 interface{}
+Cve202144228 interface{}
 ```
 
 - *Type:* interface{}
 
 If set to true, will cause all occurrences of `${` in the generated files to be replaced with `x{`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#cve_2021_4428 LogpushJob#cve_2021_4428}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#cve_2021_44228 LogpushJob#cve_2021_44228}
 
 ---
 
@@ -1554,7 +1556,7 @@ FieldDelimiter *string
 
 String to join fields. This field be ignored when `record_template` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#field_delimiter LogpushJob#field_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#field_delimiter LogpushJob#field_delimiter}
 
 ---
 
@@ -1570,7 +1572,7 @@ List of field names to be included in the Logpush output.
 
 For the moment, there is no option to add all fields at once, so you must specify all the fields names you are interested in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#field_names LogpushJob#field_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#field_names LogpushJob#field_names}
 
 ---
 
@@ -1585,8 +1587,9 @@ OutputType *string
 Specifies the output type, such as `ndjson` or `csv`.
 
 This sets default values for the rest of the settings, depending on the chosen output type. Some formatting rules, like string quoting, are different between output types.
+Available values: "ndjson", "csv".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#output_type LogpushJob#output_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#output_type LogpushJob#output_type}
 
 ---
 
@@ -1600,7 +1603,7 @@ RecordDelimiter *string
 
 String to be inserted in-between the records as separator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_delimiter LogpushJob#record_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#record_delimiter LogpushJob#record_delimiter}
 
 ---
 
@@ -1614,7 +1617,7 @@ RecordPrefix *string
 
 String to be prepended before each record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_prefix LogpushJob#record_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#record_prefix LogpushJob#record_prefix}
 
 ---
 
@@ -1628,7 +1631,7 @@ RecordSuffix *string
 
 String to be appended after each record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_suffix LogpushJob#record_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#record_suffix LogpushJob#record_suffix}
 
 ---
 
@@ -1644,7 +1647,7 @@ String to use as template for each record instead of the default comma-separated
 
 All fields used in the template must be present in `field_names` as well, otherwise they will end up as null. Format as a Go `text/template` without any standard functions, like conditionals, loops, sub-templates, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#record_template LogpushJob#record_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#record_template LogpushJob#record_template}
 
 ---
 
@@ -1660,7 +1663,7 @@ Floating number to specify sampling rate.
 
 Sampling is applied on top of filtering, and regardless of the current `sample_interval` of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#sample_rate LogpushJob#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#sample_rate LogpushJob#sample_rate}
 
 ---
 
@@ -1672,9 +1675,9 @@ TimestampFormat *string
 
 - *Type:* *string
 
-String to specify the format for timestamps, such as `unixnano`, `unix`, or `rfc3339`.
+String to specify the format for timestamps, such as `unixnano`, `unix`, or `rfc3339`. Available values: "unixnano", "unix", "rfc3339".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_job#timestamp_format LogpushJob#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_job#timestamp_format LogpushJob#timestamp_format}
 
 ---
 
@@ -1685,7 +1688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/logpushjob"
 
 logpushjob.NewLogpushJobOutputOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogpushJobOutputOptionsOutputReference
 ```
@@ -1732,7 +1735,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetBatchPrefix">ResetBatchPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetBatchSuffix">ResetBatchSuffix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetCve20214428">ResetCve20214428</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetCve202144228">ResetCve202144228</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetFieldDelimiter">ResetFieldDelimiter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetFieldNames">ResetFieldNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetOutputType">ResetOutputType</a></code> | *No description.* |
@@ -1907,10 +1910,10 @@ func ResetBatchPrefix()
 func ResetBatchSuffix()
 ```
 
-##### `ResetCve20214428` <a name="ResetCve20214428" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetCve20214428"></a>
+##### `ResetCve202144228` <a name="ResetCve202144228" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetCve202144228"></a>
 
 ```go
-func ResetCve20214428()
+func ResetCve202144228()
 ```
 
 ##### `ResetFieldDelimiter` <a name="ResetFieldDelimiter" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.resetFieldDelimiter"></a>
@@ -1976,7 +1979,7 @@ func ResetTimestampFormat()
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.batchPrefixInput">BatchPrefixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.batchSuffixInput">BatchSuffixInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve20214428Input">Cve20214428Input</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve202144228Input">Cve202144228Input</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.fieldDelimiterInput">FieldDelimiterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.fieldNamesInput">FieldNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.outputTypeInput">OutputTypeInput</a></code> | <code>*string</code> | *No description.* |
@@ -1988,7 +1991,7 @@ func ResetTimestampFormat()
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.timestampFormatInput">TimestampFormatInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.batchPrefix">BatchPrefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.batchSuffix">BatchSuffix</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve20214428">Cve20214428</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve202144228">Cve202144228</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.fieldDelimiter">FieldDelimiter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.fieldNames">FieldNames</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.outputType">OutputType</a></code> | <code>*string</code> | *No description.* |
@@ -2046,10 +2049,10 @@ func BatchSuffixInput() *string
 
 ---
 
-##### `Cve20214428Input`<sup>Optional</sup> <a name="Cve20214428Input" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve20214428Input"></a>
+##### `Cve202144228Input`<sup>Optional</sup> <a name="Cve202144228Input" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve202144228Input"></a>
 
 ```go
-func Cve20214428Input() interface{}
+func Cve202144228Input() interface{}
 ```
 
 - *Type:* interface{}
@@ -2166,10 +2169,10 @@ func BatchSuffix() *string
 
 ---
 
-##### `Cve20214428`<sup>Required</sup> <a name="Cve20214428" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve20214428"></a>
+##### `Cve202144228`<sup>Required</sup> <a name="Cve202144228" id="@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.property.cve202144228"></a>
 
 ```go
-func Cve20214428() interface{}
+func Cve202144228() interface{}
 ```
 
 - *Type:* interface{}

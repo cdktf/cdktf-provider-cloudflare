@@ -4,7 +4,7 @@
 
 ### R2BucketEventNotification <a name="R2BucketEventNotification" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer"></a>
 
@@ -25,6 +25,7 @@ R2BucketEventNotification.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .bucketName(java.lang.String)
+//  .jurisdiction(java.lang.String)
 //  .queueId(java.lang.String)
 //  .rules(IResolvable)
 //  .rules(java.util.List<R2BucketEventNotificationRules>)
@@ -44,6 +45,7 @@ R2BucketEventNotification.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Name of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer.parameter.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer.parameter.queueId">queueId</a></code> | <code>java.lang.String</code> | Queue ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer.parameter.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRules">R2BucketEventNotificationRules</a>></code> | Array of rules to drive notifications. |
 
@@ -115,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
 
 ---
 
@@ -125,7 +127,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+
+---
+
+##### `jurisdiction`<sup>Optional</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer.parameter.jurisdiction"></a>
+
+- *Type:* java.lang.String
+
+Jurisdiction of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
 
 ---
 
@@ -135,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Queue ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
 
 ---
 
@@ -145,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of rules to drive notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
 
 ---
 
@@ -177,6 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.putRules">putRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetJurisdiction">resetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetQueueId">resetQueueId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetRules">resetRules</a></code> | *No description.* |
 
@@ -484,6 +497,12 @@ public void putRules(IResolvable OR java.util.List<R2BucketEventNotificationRule
 
 ---
 
+##### `resetJurisdiction` <a name="resetJurisdiction" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetJurisdiction"></a>
+
+```java
+public void resetJurisdiction()
+```
+
 ##### `resetQueueId` <a name="resetQueueId" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.resetQueueId"></a>
 
 ```java
@@ -599,7 +618,7 @@ The construct id used in the generated config for the R2BucketEventNotification 
 
 The id of the existing R2BucketEventNotification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -633,10 +652,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesList">R2BucketEventNotificationRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.bucketNameInput">bucketNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdictionInput">jurisdictionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.queueIdInput">queueIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.rulesInput">rulesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRules">R2BucketEventNotificationRules</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.queueId">queueId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -823,6 +844,16 @@ public java.lang.String getBucketNameInput();
 
 ---
 
+##### `jurisdictionInput`<sup>Optional</sup> <a name="jurisdictionInput" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdictionInput"></a>
+
+```java
+public java.lang.String getJurisdictionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `queueIdInput`<sup>Optional</sup> <a name="queueIdInput" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.queueIdInput"></a>
 
 ```java
@@ -857,6 +888,16 @@ public java.lang.String getAccountId();
 
 ```java
 public java.lang.String getBucketName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `jurisdiction`<sup>Required</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.property.jurisdiction"></a>
+
+```java
+public java.lang.String getJurisdiction();
 ```
 
 - *Type:* java.lang.String
@@ -914,6 +955,7 @@ R2BucketEventNotificationConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .bucketName(java.lang.String)
+//  .jurisdiction(java.lang.String)
 //  .queueId(java.lang.String)
 //  .rules(IResolvable)
 //  .rules(java.util.List<R2BucketEventNotificationRules>)
@@ -933,6 +975,7 @@ R2BucketEventNotificationConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Name of the bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Jurisdiction of the bucket. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.queueId">queueId</a></code> | <code>java.lang.String</code> | Queue ID. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRules">R2BucketEventNotificationRules</a>></code> | Array of rules to drive notifications. |
 
@@ -1018,7 +1061,7 @@ public java.lang.String getAccountId();
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
 
 ---
 
@@ -1032,7 +1075,21 @@ public java.lang.String getBucketName();
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+
+---
+
+##### `jurisdiction`<sup>Optional</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig.property.jurisdiction"></a>
+
+```java
+public java.lang.String getJurisdiction();
+```
+
+- *Type:* java.lang.String
+
+Jurisdiction of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
 
 ---
 
@@ -1046,7 +1103,7 @@ public java.lang.String getQueueId();
 
 Queue ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
 
 ---
 
@@ -1060,7 +1117,7 @@ public java.lang.Object getRules();
 
 Array of rules to drive notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
 
 ---
 
@@ -1124,7 +1181,7 @@ public java.util.List<java.lang.String> getActions();
 
 Array of R2 object actions that will trigger notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
 
 ---
 
@@ -1138,7 +1195,7 @@ public java.lang.String getDescription();
 
 A description that can be used to identify the event notification rule after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
 
 ---
 
@@ -1152,7 +1209,7 @@ public java.lang.String getPrefix();
 
 Notifications will be sent only for objects with this prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
 
 ---
 
@@ -1166,7 +1223,7 @@ public java.lang.String getSuffix();
 
 Notifications will be sent only for objects with this suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
 
 ---
 

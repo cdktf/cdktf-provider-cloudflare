@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareSnippetsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Snippet identifying name
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
+  */
+  readonly snippetName: string;
+  /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets cloudflare_snippets}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets cloudflare_snippets}
 */
 export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
 
@@ -37,7 +38,7 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareSnippets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareSnippets to import
-  * @param importFromId The id of the existing DataCloudflareSnippets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareSnippets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareSnippets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +50,7 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/snippets cloudflare_snippets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/snippets cloudflare_snippets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +61,7 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_snippets',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -71,6 +72,7 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._snippetName = config.snippetName;
     this._zoneId = config.zoneId;
   }
 
@@ -88,9 +90,17 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
     return this.getStringAttribute('modified_on');
   }
 
-  // snippet_name - computed: true, optional: false, required: false
+  // snippet_name - computed: false, optional: false, required: true
+  private _snippetName?: string; 
   public get snippetName() {
     return this.getStringAttribute('snippet_name');
+  }
+  public set snippetName(value: string) {
+    this._snippetName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snippetNameInput() {
+    return this._snippetName;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -112,12 +122,19 @@ export class DataCloudflareSnippets extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      snippet_name: cdktf.stringToTerraform(this._snippetName),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      snippet_name: {
+        value: cdktf.stringToHclTerraform(this._snippetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       zone_id: {
         value: cdktf.stringToHclTerraform(this._zoneId),
         isBlock: false,

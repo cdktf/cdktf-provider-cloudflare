@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_transit_site_wan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,19 @@ export interface DataCloudflareMagicTransitSiteWanConfig extends cdktf.Terraform
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan#account_id DataCloudflareMagicTransitSiteWan#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_transit_site_wan#account_id DataCloudflareMagicTransitSiteWan#account_id}
   */
   readonly accountId: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan#wan_id DataCloudflareMagicTransitSiteWan#wan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_transit_site_wan#site_id DataCloudflareMagicTransitSiteWan#site_id}
+  */
+  readonly siteId: string;
+  /**
+  * Identifier
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_transit_site_wan#wan_id DataCloudflareMagicTransitSiteWan#wan_id}
   */
   readonly wanId?: string;
 }
@@ -91,7 +92,7 @@ export class DataCloudflareMagicTransitSiteWanStaticAddressingOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
 */
 export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource {
 
@@ -107,7 +108,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataCloudflareMagicTransitSiteWan resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicTransitSiteWan to import
-  * @param importFromId The id of the existing DataCloudflareMagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicTransitSiteWan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -119,7 +120,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -130,7 +131,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource
       terraformResourceType: 'cloudflare_magic_transit_site_wan',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -142,6 +143,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._siteId = config.siteId;
     this._wanId = config.wanId;
   }
 
@@ -187,9 +189,17 @@ export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource
     return this.getNumberAttribute('priority');
   }
 
-  // site_id - computed: true, optional: false, required: false
+  // site_id - computed: false, optional: false, required: true
+  private _siteId?: string; 
   public get siteId() {
     return this.getStringAttribute('site_id');
+  }
+  public set siteId(value: string) {
+    this._siteId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get siteIdInput() {
+    return this._siteId;
   }
 
   // static_addressing - computed: true, optional: false, required: false
@@ -226,6 +236,7 @@ export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      site_id: cdktf.stringToTerraform(this._siteId),
       wan_id: cdktf.stringToTerraform(this._wanId),
     };
   }
@@ -234,6 +245,12 @@ export class DataCloudflareMagicTransitSiteWan extends cdktf.TerraformDataSource
     const attrs = {
       account_id: {
         value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      site_id: {
+        value: cdktf.stringToHclTerraform(this._siteId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

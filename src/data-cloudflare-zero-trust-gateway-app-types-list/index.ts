@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_app_types_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_app_types_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataCloudflareZeroTrustGatewayAppTypesListConfig extends cdktf.
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_app_types_list#account_id DataCloudflareZeroTrustGatewayAppTypesList#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_app_types_list#account_id DataCloudflareZeroTrustGatewayAppTypesList#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_app_types_list#max_items DataCloudflareZeroTrustGatewayAppTypesList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_app_types_list#max_items DataCloudflareZeroTrustGatewayAppTypesList#max_items}
   */
   readonly maxItems?: number;
 }
@@ -122,7 +117,7 @@ export class DataCloudflareZeroTrustGatewayAppTypesListResultList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list}
 */
 export class DataCloudflareZeroTrustGatewayAppTypesList extends cdktf.TerraformDataSource {
 
@@ -138,7 +133,7 @@ export class DataCloudflareZeroTrustGatewayAppTypesList extends cdktf.TerraformD
   * Generates CDKTF code for importing a DataCloudflareZeroTrustGatewayAppTypesList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustGatewayAppTypesList to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayAppTypesList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_app_types_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayAppTypesList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_app_types_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustGatewayAppTypesList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -150,7 +145,7 @@ export class DataCloudflareZeroTrustGatewayAppTypesList extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +156,7 @@ export class DataCloudflareZeroTrustGatewayAppTypesList extends cdktf.TerraformD
       terraformResourceType: 'cloudflare_zero_trust_gateway_app_types_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

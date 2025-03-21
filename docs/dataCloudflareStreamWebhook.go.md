@@ -4,12 +4,12 @@
 
 ### DataCloudflareStreamWebhook <a name="DataCloudflareStreamWebhook" id="@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_webhook cloudflare_stream_webhook}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/stream_webhook cloudflare_stream_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamwebhook"
 
 datacloudflarestreamwebhook.NewDataCloudflareStreamWebhook(scope Construct, id *string, config DataCloudflareStreamWebhookConfig) DataCloudflareStreamWebhook
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamwebhook"
 
 datacloudflarestreamwebhook.DataCloudflareStreamWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamwebhook"
 
 datacloudflarestreamwebhook.DataCloudflareStreamWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarestreamwebhook.DataCloudflareStreamWebhook_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamwebhook"
 
 datacloudflarestreamwebhook.DataCloudflareStreamWebhook_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarestreamwebhook.DataCloudflareStreamWebhook_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamwebhook"
 
 datacloudflarestreamwebhook.DataCloudflareStreamWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareStreamWebhoo
 
 The id of the existing DataCloudflareStreamWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/stream_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareStreamWebhook.DataCloudflareStreamWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarestreamwebhook"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarestreamwebhook"
 
 &datacloudflarestreamwebhook.DataCloudflareStreamWebhookConfig {
 	Connection: interface{},
@@ -674,7 +674,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_webhook#account_id DataCloudflareStreamWebhook#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/stream_webhook#account_id DataCloudflareStreamWebhook#account_id}
 
 ---
 

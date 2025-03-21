@@ -4,12 +4,12 @@
 
 ### CustomHostname <a name="CustomHostname" id="@cdktf/provider-cloudflare.customHostname.CustomHostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.NewCustomHostname(scope Construct, id *string, config CustomHostnameConfig) CustomHostname
 ```
@@ -412,7 +412,7 @@ func ResetCustomOriginSni()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.CustomHostname_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.CustomHostname_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ customhostname.CustomHostname_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.CustomHostname_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ customhostname.CustomHostname_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.customHostname.CustomHostname.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.CustomHostname_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the CustomHostname to import.
 
 The id of the existing CustomHostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 &customhostname.CustomHostnameConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostn
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Hostname: *string,
-	Ssl: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.customHostname.CustomHostnameSsl,
+	Ssl: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.customHostname.CustomHostnameSsl,
 	ZoneId: *string,
 	CustomMetadata: *map[string]*string,
 	CustomOriginServer: *string,
@@ -1018,7 +1018,7 @@ Hostname *string
 
 The custom hostname that will point to your hostname via CNAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
 
 ---
 
@@ -1032,7 +1032,7 @@ Ssl CustomHostnameSsl
 
 SSL properties used when creating the custom hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
 
 ---
 
@@ -1046,7 +1046,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
 
 ---
 
@@ -1060,7 +1060,7 @@ CustomMetadata *map[string]*string
 
 Unique key/value metadata for this hostname. These are per-hostname (customer) settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
 
 ---
 
@@ -1074,7 +1074,7 @@ CustomOriginServer *string
 
 a valid hostname that’s been added to your DNS zone as an A, AAAA, or CNAME record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
 
 ---
 
@@ -1090,7 +1090,7 @@ A hostname that will be sent to your custom origin server as SNI for TLS handsha
 
 This can be a valid subdomain of the zone or custom origin server name or the string ':request_host_header:' which will cause the host header in the request to be used as SNI. Not configurable with default/fallback origin server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
 
 ---
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 &customhostname.CustomHostnameOwnershipVerification {
 
@@ -1112,7 +1112,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostn
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 &customhostname.CustomHostnameOwnershipVerificationHttp {
 
@@ -1125,7 +1125,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostn
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 &customhostname.CustomHostnameSsl {
 	BundleMethod: *string,
@@ -1135,7 +1135,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostn
 	CustomCertificate: *string,
 	CustomKey: *string,
 	Method: *string,
-	Settings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.customHostname.CustomHostnameSslSettings,
+	Settings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.customHostname.CustomHostnameSslSettings,
 	Type: *string,
 	Wildcard: interface{},
 }
@@ -1146,14 +1146,14 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostn
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.bundleMethod">BundleMethod</a></code> | <code>*string</code> | A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.certificateAuthority">CertificateAuthority</a></code> | <code>*string</code> | The Certificate Authority that will issue the certificate. |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.certificateAuthority">CertificateAuthority</a></code> | <code>*string</code> | The Certificate Authority that will issue the certificate Available values: "digicert", "google", "lets_encrypt", "ssl_com". |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.cloudflareBranding">CloudflareBranding</a></code> | <code>interface{}</code> | Whether or not to add Cloudflare Branding for the order. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.customCertBundle">CustomCertBundle</a></code> | <code>interface{}</code> | Array of custom certificate and key pairs (1 or 2 pairs allowed). |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.customCertificate">CustomCertificate</a></code> | <code>*string</code> | If a custom uploaded certificate is used. |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.customKey">CustomKey</a></code> | <code>*string</code> | The key for a custom uploaded certificate. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.method">Method</a></code> | <code>*string</code> | Domain control validation (DCV) method used for this hostname. |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.method">Method</a></code> | <code>*string</code> | Domain control validation (DCV) method used for this hostname. Available values: "http", "txt", "email". |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.settings">Settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings">CustomHostnameSslSettings</a></code> | SSL specific settings. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.type">Type</a></code> | <code>*string</code> | Level of validation to be used for this hostname. Domain validation (dv) must be used. |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.type">Type</a></code> | <code>*string</code> | Level of validation to be used for this hostname. Domain validation (dv) must be used. Available values: "dv". |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl.property.wildcard">Wildcard</a></code> | <code>interface{}</code> | Indicates whether the certificate covers a wildcard. |
 
 ---
@@ -1169,8 +1169,9 @@ BundleMethod *string
 A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores.
 
 An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
+Available values: "ubiquitous", "optimal", "force".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#bundle_method CustomHostname#bundle_method}
 
 ---
 
@@ -1182,9 +1183,9 @@ CertificateAuthority *string
 
 - *Type:* *string
 
-The Certificate Authority that will issue the certificate.
+The Certificate Authority that will issue the certificate Available values: "digicert", "google", "lets_encrypt", "ssl_com".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#certificate_authority CustomHostname#certificate_authority}
 
 ---
 
@@ -1200,7 +1201,7 @@ Whether or not to add Cloudflare Branding for the order.
 
 This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#cloudflare_branding CustomHostname#cloudflare_branding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#cloudflare_branding CustomHostname#cloudflare_branding}
 
 ---
 
@@ -1214,7 +1215,7 @@ CustomCertBundle interface{}
 
 Array of custom certificate and key pairs (1 or 2 pairs allowed).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_cert_bundle CustomHostname#custom_cert_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_cert_bundle CustomHostname#custom_cert_bundle}
 
 ---
 
@@ -1228,7 +1229,7 @@ CustomCertificate *string
 
 If a custom uploaded certificate is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
 
 ---
 
@@ -1242,7 +1243,7 @@ CustomKey *string
 
 The key for a custom uploaded certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
 
 ---
 
@@ -1254,9 +1255,9 @@ Method *string
 
 - *Type:* *string
 
-Domain control validation (DCV) method used for this hostname.
+Domain control validation (DCV) method used for this hostname. Available values: "http", "txt", "email".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#method CustomHostname#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#method CustomHostname#method}
 
 ---
 
@@ -1270,7 +1271,7 @@ Settings CustomHostnameSslSettings
 
 SSL specific settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#settings CustomHostname#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#settings CustomHostname#settings}
 
 ---
 
@@ -1282,9 +1283,9 @@ Type *string
 
 - *Type:* *string
 
-Level of validation to be used for this hostname. Domain validation (dv) must be used.
+Level of validation to be used for this hostname. Domain validation (dv) must be used. Available values: "dv".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#type CustomHostname#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#type CustomHostname#type}
 
 ---
 
@@ -1298,7 +1299,7 @@ Wildcard interface{}
 
 Indicates whether the certificate covers a wildcard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#wildcard CustomHostname#wildcard}
 
 ---
 
@@ -1307,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 &customhostname.CustomHostnameSslCustomCertBundle {
 	CustomCertificate: *string,
@@ -1334,7 +1335,7 @@ CustomCertificate *string
 
 If a custom uploaded certificate is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_certificate CustomHostname#custom_certificate}
 
 ---
 
@@ -1348,7 +1349,7 @@ CustomKey *string
 
 The key for a custom uploaded certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#custom_key CustomHostname#custom_key}
 
 ---
 
@@ -1357,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 &customhostname.CustomHostnameSslSettings {
 	Ciphers: *[]*string,
@@ -1373,10 +1374,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostn
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.ciphers">Ciphers</a></code> | <code>*[]*string</code> | An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.earlyHints">EarlyHints</a></code> | <code>*string</code> | Whether or not Early Hints is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.http2">Http2</a></code> | <code>*string</code> | Whether or not HTTP2 is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.minTlsVersion">MinTlsVersion</a></code> | <code>*string</code> | The minimum TLS version supported. |
-| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.tls13">Tls13</a></code> | <code>*string</code> | Whether or not TLS 1.3 is enabled. |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.earlyHints">EarlyHints</a></code> | <code>*string</code> | Whether or not Early Hints is enabled. Available values: "on", "off". |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.http2">Http2</a></code> | <code>*string</code> | Whether or not HTTP2 is enabled. Available values: "on", "off". |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.minTlsVersion">MinTlsVersion</a></code> | <code>*string</code> | The minimum TLS version supported. Available values: "1.0", "1.1", "1.2", "1.3". |
+| <code><a href="#@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings.property.tls13">Tls13</a></code> | <code>*string</code> | Whether or not TLS 1.3 is enabled. Available values: "on", "off". |
 
 ---
 
@@ -1390,7 +1391,7 @@ Ciphers *[]*string
 
 An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#ciphers CustomHostname#ciphers}
 
 ---
 
@@ -1402,9 +1403,9 @@ EarlyHints *string
 
 - *Type:* *string
 
-Whether or not Early Hints is enabled.
+Whether or not Early Hints is enabled. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#early_hints CustomHostname#early_hints}
 
 ---
 
@@ -1416,9 +1417,9 @@ Http2 *string
 
 - *Type:* *string
 
-Whether or not HTTP2 is enabled.
+Whether or not HTTP2 is enabled. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#http2 CustomHostname#http2}
 
 ---
 
@@ -1430,9 +1431,9 @@ MinTlsVersion *string
 
 - *Type:* *string
 
-The minimum TLS version supported.
+The minimum TLS version supported. Available values: "1.0", "1.1", "1.2", "1.3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#min_tls_version CustomHostname#min_tls_version}
 
 ---
 
@@ -1444,9 +1445,9 @@ Tls13 *string
 
 - *Type:* *string
 
-Whether or not TLS 1.3 is enabled.
+Whether or not TLS 1.3 is enabled. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/custom_hostname#tls_1_3 CustomHostname#tls_1_3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/custom_hostname#tls_1_3 CustomHostname#tls_1_3}
 
 ---
 
@@ -1457,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.NewCustomHostnameOwnershipVerificationHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomHostnameOwnershipVerificationHttpOutputReference
 ```
@@ -1728,7 +1729,7 @@ func InternalValue() CustomHostnameOwnershipVerificationHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.NewCustomHostnameOwnershipVerificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomHostnameOwnershipVerificationOutputReference
 ```
@@ -2010,7 +2011,7 @@ func InternalValue() CustomHostnameOwnershipVerification
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.NewCustomHostnameSslCustomCertBundleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslCustomCertBundleList
 ```
@@ -2170,7 +2171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.NewCustomHostnameSslCustomCertBundleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomHostnameSslCustomCertBundleOutputReference
 ```
@@ -2481,7 +2482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.NewCustomHostnameSslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomHostnameSslOutputReference
 ```
@@ -3046,7 +3047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/customhostname"
 
 customhostname.NewCustomHostnameSslSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomHostnameSslSettingsOutputReference
 ```
