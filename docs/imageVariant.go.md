@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.imageVariant.ImageVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.NewImageVariant(scope Construct, id *string, config ImageVariantConfig) ImageVariant
 ```
@@ -398,7 +398,7 @@ func ResetNeverRequireSignedUrls()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.imageVariant.ImageVariant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.ImageVariant_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.imageVariant.ImageVariant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.ImageVariant_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ imagevariant.ImageVariant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.imageVariant.ImageVariant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.ImageVariant_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ imagevariant.ImageVariant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.imageVariant.ImageVariant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.ImageVariant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.imageVariant.ImageVariantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 &imagevariant.ImageVariantConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Id: *string,
-	Options: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.imageVariant.ImageVariantOptions,
+	Options: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.imageVariant.ImageVariantOptions,
 	NeverRequireSignedUrls: interface{},
 }
 ```
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.imageVariant.ImageVariantOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 &imagevariant.ImageVariantOptions {
 	Fit: *string,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.imageVariant.ImageVariantVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 &imagevariant.ImageVariantVariant {
 
@@ -1048,7 +1048,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 &imagevariant.ImageVariantVariantOptions {
 
@@ -1063,7 +1063,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.imageVariant.ImageVariantOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.NewImageVariantOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImageVariantOptionsOutputReference
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.NewImageVariantVariantOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImageVariantVariantOptionsOutputReference
 ```
@@ -1693,7 +1693,7 @@ func InternalValue() ImageVariantVariantOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/imagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/imagevariant"
 
 imagevariant.NewImageVariantVariantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImageVariantVariantOutputReference
 ```

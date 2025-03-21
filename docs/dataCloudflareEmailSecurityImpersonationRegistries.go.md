@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 datacloudflareemailsecurityimpersonationregistries.NewDataCloudflareEmailSecurityImpersonationRegistries(scope Construct, id *string, config DataCloudflareEmailSecurityImpersonationRegistriesConfig) DataCloudflareEmailSecurityImpersonationRegistries
 ```
@@ -311,7 +311,7 @@ func ResetSearch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistries.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityImpersonationRegistries_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistries.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityImpersonationRegistries_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityIm
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistries.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityImpersonationRegistries_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityIm
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistries.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityImpersonationRegistries_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 &datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityImpersonationRegistriesConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistriesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 &datacloudflareemailsecurityimpersonationregistries.DataCloudflareEmailSecurityImpersonationRegistriesResult {
 
@@ -938,7 +938,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaree
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistriesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 datacloudflareemailsecurityimpersonationregistries.NewDataCloudflareEmailSecurityImpersonationRegistriesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailSecurityImpersonationRegistriesResultList
 ```
@@ -1087,7 +1087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistries.DataCloudflareEmailSecurityImpersonationRegistriesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailsecurityimpersonationregistries"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistries"
 
 datacloudflareemailsecurityimpersonationregistries.NewDataCloudflareEmailSecurityImpersonationRegistriesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailSecurityImpersonationRegistriesResultOutputReference
 ```
