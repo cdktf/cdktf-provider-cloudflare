@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 datacloudflareapitokenpermissiongroupslist.NewDataCloudflareApiTokenPermissionGroupsList(scope Construct, id *string, config DataCloudflareApiTokenPermissionGroupsListConfig) DataCloudflareApiTokenPermissionGroupsList
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroupsList_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroupsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroup
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroupsList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroup
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroupsList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 &datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroupsListConfig {
 	Connection: interface{},
@@ -701,7 +701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 &datacloudflareapitokenpermissiongroupslist.DataCloudflareApiTokenPermissionGroupsListResult {
 
@@ -716,7 +716,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 datacloudflareapitokenpermissiongroupslist.NewDataCloudflareApiTokenPermissionGroupsListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareApiTokenPermissionGroupsListResultList
 ```
@@ -865,7 +865,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapitokenpermissiongroupslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitokenpermissiongroupslist"
 
 datacloudflareapitokenpermissiongroupslist.NewDataCloudflareApiTokenPermissionGroupsListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareApiTokenPermissionGroupsListResultOutputReference
 ```
