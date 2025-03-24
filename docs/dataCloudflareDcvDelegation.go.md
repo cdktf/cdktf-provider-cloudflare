@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredcvdelegation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaredcvdelegation"
 
 datacloudflaredcvdelegation.NewDataCloudflareDcvDelegation(scope Construct, id *string, config DataCloudflareDcvDelegationConfig) DataCloudflareDcvDelegation
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredcvdelegation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaredcvdelegation"
 
 datacloudflaredcvdelegation.DataCloudflareDcvDelegation_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredcvdelegation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaredcvdelegation"
 
 datacloudflaredcvdelegation.DataCloudflareDcvDelegation_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaredcvdelegation.DataCloudflareDcvDelegation_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredcvdelegation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaredcvdelegation"
 
 datacloudflaredcvdelegation.DataCloudflareDcvDelegation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaredcvdelegation.DataCloudflareDcvDelegation_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredcvdelegation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaredcvdelegation"
 
 datacloudflaredcvdelegation.DataCloudflareDcvDelegation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaredcvdelegation"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaredcvdelegation"
 
 &datacloudflaredcvdelegation.DataCloudflareDcvDelegationConfig {
 	Connection: interface{},

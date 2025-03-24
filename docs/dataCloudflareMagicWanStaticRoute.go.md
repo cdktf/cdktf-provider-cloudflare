@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 datacloudflaremagicwanstaticroute.NewDataCloudflareMagicWanStaticRoute(scope Construct, id *string, config DataCloudflareMagicWanStaticRouteConfig) DataCloudflareMagicWanStaticRoute
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRoute_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRoute_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRoute_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRoute_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 &datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRouteConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 &datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRouteRoute {
 
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarem
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 &datacloudflaremagicwanstaticroute.DataCloudflareMagicWanStaticRouteRouteScope {
 
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarem
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 datacloudflaremagicwanstaticroute.NewDataCloudflareMagicWanStaticRouteRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanStaticRouteRouteOutputReference
 ```
@@ -1108,7 +1108,7 @@ func InternalValue() DataCloudflareMagicWanStaticRouteRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicwanstaticroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflaremagicwanstaticroute"
 
 datacloudflaremagicwanstaticroute.NewDataCloudflareMagicWanStaticRouteRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanStaticRouteRouteScopeOutputReference
 ```
