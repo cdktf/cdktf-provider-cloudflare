@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 datacloudflarefilters.NewDataCloudflareFilters(scope Construct, id *string, config DataCloudflareFiltersConfig) DataCloudflareFilters
 ```
@@ -318,7 +318,7 @@ func ResetRef()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 datacloudflarefilters.DataCloudflareFilters_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 datacloudflarefilters.DataCloudflareFilters_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datacloudflarefilters.DataCloudflareFilters_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 datacloudflarefilters.DataCloudflareFilters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datacloudflarefilters.DataCloudflareFilters_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 datacloudflarefilters.DataCloudflareFilters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -750,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 &datacloudflarefilters.DataCloudflareFiltersConfig {
 	Connection: interface{},
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 &datacloudflarefilters.DataCloudflareFiltersResult {
 
@@ -982,7 +982,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 datacloudflarefilters.NewDataCloudflareFiltersResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareFiltersResultList
 ```
@@ -1131,7 +1131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarefilters"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarefilters"
 
 datacloudflarefilters.NewDataCloudflareFiltersResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareFiltersResultOutputReference
 ```

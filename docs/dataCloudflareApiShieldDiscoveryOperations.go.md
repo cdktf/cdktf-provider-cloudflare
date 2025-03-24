@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.NewDataCloudflareApiShieldDiscoveryOperations(scope Construct, id *string, config DataCloudflareApiShieldDiscoveryOperationsConfig) DataCloudflareApiShieldDiscoveryOperations
 ```
@@ -339,7 +339,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperations_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperations_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOpera
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOpera
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 &datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperationsConfig {
 	Connection: interface{},
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 &datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperationsResult {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsResultFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 &datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperationsResultFeatures {
 
@@ -1132,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStats.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 &datacloudflareapishielddiscoveryoperations.DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStats {
 
@@ -1147,7 +1147,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsResultFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.NewDataCloudflareApiShieldDiscoveryOperationsResultFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldDiscoveryOperationsResultFeaturesOutputReference
 ```
@@ -1407,7 +1407,7 @@ func InternalValue() DataCloudflareApiShieldDiscoveryOperationsResultFeatures
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.NewDataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStatsOutputReference
 ```
@@ -1689,7 +1689,7 @@ func InternalValue() DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTra
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.NewDataCloudflareApiShieldDiscoveryOperationsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareApiShieldDiscoveryOperationsResultList
 ```
@@ -1838,7 +1838,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperationsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishielddiscoveryoperations"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishielddiscoveryoperations"
 
 datacloudflareapishielddiscoveryoperations.NewDataCloudflareApiShieldDiscoveryOperationsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareApiShieldDiscoveryOperationsResultOutputReference
 ```

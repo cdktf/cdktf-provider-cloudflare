@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.botManagement.BotManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.NewBotManagement(scope Construct, id *string, config BotManagementConfig) BotManagement
 ```
@@ -455,7 +455,7 @@ func ResetSuppressSessionScore()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.botManagement.BotManagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.botManagement.BotManagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ botmanagement.BotManagement_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.botManagement.BotManagement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ botmanagement.BotManagement_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.botManagement.BotManagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.BotManagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1041,7 +1041,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.botManagement.BotManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 &botmanagement.BotManagementConfig {
 	Connection: interface{},
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.botManagement.BotManagementStaleZoneConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 &botmanagement.BotManagementStaleZoneConfiguration {
 
@@ -1353,7 +1353,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanageme
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.botManagement.BotManagementStaleZoneConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/botmanagement"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/botmanagement"
 
 botmanagement.NewBotManagementStaleZoneConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BotManagementStaleZoneConfigurationOutputReference
 ```
