@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnames(scope Construct, id *string, config DataCloudflareCustomHostnamesConfig) DataCloudflareCustomHostnames
 ```
@@ -318,7 +318,7 @@ func ResetSsl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnames.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.DataCloudflareCustomHostnames_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnames.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.DataCloudflareCustomHostnames_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datacloudflarecustomhostnames.DataCloudflareCustomHostnames_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnames.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.DataCloudflareCustomHostnames_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datacloudflarecustomhostnames.DataCloudflareCustomHostnames_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnames.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.DataCloudflareCustomHostnames_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -750,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesResult {
 
@@ -982,7 +982,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarec
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultOwnershipVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesResultOwnershipVerification {
 
@@ -995,7 +995,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarec
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultOwnershipVerificationHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesResultOwnershipVerificationHttp {
 
@@ -1008,7 +1008,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarec
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSsl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesResultSsl {
 
@@ -1021,7 +1021,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarec
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesResultSslSettings {
 
@@ -1034,7 +1034,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarec
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslValidationErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesResultSslValidationErrors {
 
@@ -1047,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarec
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslValidationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 &datacloudflarecustomhostnames.DataCloudflareCustomHostnamesResultSslValidationRecords {
 
@@ -1062,7 +1062,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarec
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCustomHostnamesResultList
 ```
@@ -1211,7 +1211,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCustomHostnamesResultOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() DataCloudflareCustomHostnamesResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultOwnershipVerificationHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultOwnershipVerificationHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomHostnamesResultOwnershipVerificationHttpOutputReference
 ```
@@ -1870,7 +1870,7 @@ func InternalValue() DataCloudflareCustomHostnamesResultOwnershipVerificationHtt
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultOwnershipVerificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultOwnershipVerificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomHostnamesResultOwnershipVerificationOutputReference
 ```
@@ -2152,7 +2152,7 @@ func InternalValue() DataCloudflareCustomHostnamesResultOwnershipVerification
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultSslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomHostnamesResultSslOutputReference
 ```
@@ -2610,7 +2610,7 @@ func InternalValue() DataCloudflareCustomHostnamesResultSsl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultSslSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareCustomHostnamesResultSslSettingsOutputReference
 ```
@@ -2914,7 +2914,7 @@ func InternalValue() DataCloudflareCustomHostnamesResultSslSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslValidationErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultSslValidationErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCustomHostnamesResultSslValidationErrorsList
 ```
@@ -3063,7 +3063,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslValidationErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultSslValidationErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCustomHostnamesResultSslValidationErrorsOutputReference
 ```
@@ -3341,7 +3341,7 @@ func InternalValue() DataCloudflareCustomHostnamesResultSslValidationErrors
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslValidationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultSslValidationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCustomHostnamesResultSslValidationRecordsList
 ```
@@ -3490,7 +3490,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnames.DataCloudflareCustomHostnamesResultSslValidationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarecustomhostnames"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarecustomhostnames"
 
 datacloudflarecustomhostnames.NewDataCloudflareCustomHostnamesResultSslValidationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCustomHostnamesResultSslValidationRecordsOutputReference
 ```

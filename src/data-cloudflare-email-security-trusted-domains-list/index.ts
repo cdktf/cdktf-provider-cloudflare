@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_security_trusted_domains_list
 // generated from terraform resource schema
 

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 r2customdomain.NewR2CustomDomain(scope Construct, id *string, config R2CustomDomainConfig) R2CustomDomain
 ```
@@ -385,7 +385,7 @@ func ResetMinTls()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 r2customdomain.R2CustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 r2customdomain.R2CustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ r2customdomain.R2CustomDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 r2customdomain.R2CustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ r2customdomain.R2CustomDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 r2customdomain.R2CustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 &r2customdomain.R2CustomDomainConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 &r2customdomain.R2CustomDomainStatus {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/r2customdomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2customdomain"
 
 r2customdomain.NewR2CustomDomainStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2CustomDomainStatusOutputReference
 ```

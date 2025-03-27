@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork(scope Construct, id *string, config DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkConfig) DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork
 ```
@@ -303,7 +303,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTu
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTu
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 &datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkConfig {
 	Connection: interface{},
@@ -713,7 +713,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarez
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilter,
 	VirtualNetworkId: *string,
 }
 ```
@@ -850,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 &datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilter {
 	Id: *string,
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork.DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork"
 
 datacloudflarezerotrusttunnelcloudflaredvirtualnetwork.NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference
 ```
