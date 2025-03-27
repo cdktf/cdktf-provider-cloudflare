@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 dnsrecord.NewDnsRecord(scope Construct, id *string, config DnsRecordConfig) DnsRecord
 ```
@@ -453,7 +453,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 dnsrecord.DnsRecord_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 dnsrecord.DnsRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ dnsrecord.DnsRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 dnsrecord.DnsRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ dnsrecord.DnsRecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 dnsrecord.DnsRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1061,7 +1061,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 &dnsrecord.DnsRecordConfig {
 	Connection: interface{},
@@ -1077,10 +1077,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
 	ZoneId: *string,
 	Comment: *string,
 	Content: *string,
-	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dnsRecord.DnsRecordData,
+	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dnsRecord.DnsRecordData,
 	Priority: *f64,
 	Proxied: interface{},
-	Settings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dnsRecord.DnsRecordSettings,
+	Settings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dnsRecord.DnsRecordSettings,
 	Tags: *[]*string,
 }
 ```
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 &dnsrecord.DnsRecordData {
 	Algorithm: *f64,
@@ -1935,7 +1935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 &dnsrecord.DnsRecordSettings {
 	FlattenCname: interface{},
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 dnsrecord.NewDnsRecordDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsRecordDataOutputReference
 ```
@@ -3300,7 +3300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/dnsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnsrecord"
 
 dnsrecord.NewDnsRecordSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsRecordSettingsOutputReference
 ```
