@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.certificatePack.CertificatePack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/certificatepack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/certificatepack"
 
 certificatepack.NewCertificatePack(scope Construct, id *string, config CertificatePackConfig) CertificatePack
 ```
@@ -385,7 +385,7 @@ func ResetCloudflareBranding()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.certificatePack.CertificatePack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/certificatepack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/certificatepack"
 
 certificatepack.CertificatePack_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.certificatePack.CertificatePack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/certificatepack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/certificatepack"
 
 certificatepack.CertificatePack_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ certificatepack.CertificatePack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.certificatePack.CertificatePack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/certificatepack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/certificatepack"
 
 certificatepack.CertificatePack_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ certificatepack.CertificatePack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.certificatePack.CertificatePack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/certificatepack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/certificatepack"
 
 certificatepack.CertificatePack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -850,7 +850,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.certificatePack.CertificatePackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/certificatepack"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/certificatepack"
 
 &certificatepack.CertificatePackConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 datacloudflareemailroutingaddresses.NewDataCloudflareEmailRoutingAddresses(scope Construct, id *string, config DataCloudflareEmailRoutingAddressesConfig) DataCloudflareEmailRoutingAddresses
 ```
@@ -297,7 +297,7 @@ func ResetVerified()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddresses_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddresses_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddresses_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddresses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddresses_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddresses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 &datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddressesConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 &datacloudflareemailroutingaddresses.DataCloudflareEmailRoutingAddressesResult {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 datacloudflareemailroutingaddresses.NewDataCloudflareEmailRoutingAddressesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareEmailRoutingAddressesResultList
 ```
@@ -993,7 +993,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailroutingaddresses"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareemailroutingaddresses"
 
 datacloudflareemailroutingaddresses.NewDataCloudflareEmailRoutingAddressesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareEmailRoutingAddressesResultOutputReference
 ```
