@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 datacloudflareapishieldschemas.NewDataCloudflareApiShieldSchemas(scope Construct, id *string, config DataCloudflareApiShieldSchemasConfig) DataCloudflareApiShieldSchemas
 ```
@@ -297,7 +297,7 @@ func ResetValidationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 datacloudflareapishieldschemas.DataCloudflareApiShieldSchemas_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 datacloudflareapishieldschemas.DataCloudflareApiShieldSchemas_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareapishieldschemas.DataCloudflareApiShieldSchemas_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 datacloudflareapishieldschemas.DataCloudflareApiShieldSchemas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacloudflareapishieldschemas.DataCloudflareApiShieldSchemas_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemas.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 datacloudflareapishieldschemas.DataCloudflareApiShieldSchemas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 &datacloudflareapishieldschemas.DataCloudflareApiShieldSchemasConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemasResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 &datacloudflareapishieldschemas.DataCloudflareApiShieldSchemasResult {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarea
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemasResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 datacloudflareapishieldschemas.NewDataCloudflareApiShieldSchemasResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareApiShieldSchemasResultList
 ```
@@ -993,7 +993,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemas.DataCloudflareApiShieldSchemasResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapishieldschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareapishieldschemas"
 
 datacloudflareapishieldschemas.NewDataCloudflareApiShieldSchemasResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareApiShieldSchemasResultOutputReference
 ```
