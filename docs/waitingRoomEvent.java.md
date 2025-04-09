@@ -4,7 +4,7 @@
 
 ### WaitingRoomEvent <a name="WaitingRoomEvent" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer"></a>
 
@@ -41,6 +41,8 @@ WaitingRoomEvent.Builder.create(Construct scope, java.lang.String id)
 //  .suspended(java.lang.Boolean)
 //  .suspended(IResolvable)
 //  .totalActiveUsers(java.lang.Number)
+//  .turnstileAction(java.lang.String)
+//  .turnstileMode(java.lang.String)
     .build();
 ```
 
@@ -58,7 +60,7 @@ WaitingRoomEvent.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.eventEndTime">eventEndTime</a></code> | <code>java.lang.String</code> | An ISO 8601 timestamp that marks the end of the event. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.eventStartTime">eventStartTime</a></code> | <code>java.lang.String</code> | An ISO 8601 timestamp that marks the start of the event. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.waitingRoomId">waitingRoomId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.waitingRoomId">waitingRoomId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.customPageHtml">customPageHtml</a></code> | <code>java.lang.String</code> | If set, the event will override the waiting room's `custom_page_html` property while it is active. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A note that you can use to add more details about the event. |
@@ -70,6 +72,8 @@ WaitingRoomEvent.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.shuffleAtEventStart">shuffleAtEventStart</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If enabled, users in the prequeue will be shuffled randomly at the `event_start_time`. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.suspended">suspended</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Suspends or allows an event. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.totalActiveUsers">totalActiveUsers</a></code> | <code>java.lang.Number</code> | If set, the event will override the waiting room's `total_active_users` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.turnstileAction">turnstileAction</a></code> | <code>java.lang.String</code> | If set, the event will override the waiting room's `turnstile_action` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.turnstileMode">turnstileMode</a></code> | <code>java.lang.String</code> | If set, the event will override the waiting room's `turnstile_mode` property while it is active. |
 
 ---
 
@@ -139,7 +143,7 @@ Must be unique amongst siblings in the same scope
 
 An ISO 8601 timestamp that marks the end of the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
 
 ---
 
@@ -151,7 +155,7 @@ An ISO 8601 timestamp that marks the start of the event.
 
 At this time, queued users will be processed with the event's configuration. The start time must be at least one minute before `event_end_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
 
 ---
 
@@ -161,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
 
 ---
 
@@ -169,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}.
 
 ---
 
@@ -179,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
 
 ---
 
@@ -191,7 +195,7 @@ If set, the event will override the waiting room's `custom_page_html` property w
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
 
 ---
 
@@ -201,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A note that you can use to add more details about the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
 
 ---
 
@@ -213,7 +217,7 @@ If set, the event will override the waiting room's `disable_session_renewal` pro
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
 
 ---
 
@@ -225,7 +229,7 @@ If set, the event will override the waiting room's `new_users_per_minute` proper
 
 If null, the event will inherit it. This can only be set if the event's `total_active_users` property is also set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
 
 ---
 
@@ -237,7 +241,7 @@ An ISO 8601 timestamp that marks when to begin queueing all users before the eve
 
 The prequeue must start at least five minutes before `event_start_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
 
 ---
 
@@ -249,7 +253,7 @@ If set, the event will override the waiting room's `queueing_method` property wh
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
 
 ---
 
@@ -261,7 +265,7 @@ If set, the event will override the waiting room's `session_duration` property w
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
 
 ---
 
@@ -273,7 +277,7 @@ If enabled, users in the prequeue will be shuffled randomly at the `event_start_
 
 Requires that `prequeue_start_time` is not null. This is useful for situations when many users will join the event prequeue at the same time and you want to shuffle them to ensure fairness. Naturally, it makes the most sense to enable this feature when the `queueing_method` during the event respects ordering such as **fifo**, or else the shuffling may be unnecessary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
 
 ---
 
@@ -285,7 +289,7 @@ Suspends or allows an event.
 
 If set to `true`, the event is ignored and traffic will be handled based on the waiting room configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
 
 ---
 
@@ -297,7 +301,33 @@ If set, the event will override the waiting room's `total_active_users` property
 
 If null, the event will inherit it. This can only be set if the event's `new_users_per_minute` property is also set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
+
+---
+
+##### `turnstileAction`<sup>Optional</sup> <a name="turnstileAction" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.turnstileAction"></a>
+
+- *Type:* java.lang.String
+
+If set, the event will override the waiting room's `turnstile_action` property while it is active.
+
+If null, the event will inherit it.
+Available values: "log", "infinite_queue".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#turnstile_action WaitingRoomEvent#turnstile_action}
+
+---
+
+##### `turnstileMode`<sup>Optional</sup> <a name="turnstileMode" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.Initializer.parameter.turnstileMode"></a>
+
+- *Type:* java.lang.String
+
+If set, the event will override the waiting room's `turnstile_mode` property while it is active.
+
+If null, the event will inherit it.
+Available values: "off", "invisible", "visible_non_interactive", "visible_managed".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#turnstile_mode WaitingRoomEvent#turnstile_mode}
 
 ---
 
@@ -338,6 +368,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetShuffleAtEventStart">resetShuffleAtEventStart</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetSuspended">resetSuspended</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetTotalActiveUsers">resetTotalActiveUsers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetTurnstileAction">resetTurnstileAction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetTurnstileMode">resetTurnstileMode</a></code> | *No description.* |
 
 ---
 
@@ -691,6 +723,18 @@ public void resetSuspended()
 public void resetTotalActiveUsers()
 ```
 
+##### `resetTurnstileAction` <a name="resetTurnstileAction" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetTurnstileAction"></a>
+
+```java
+public void resetTurnstileAction()
+```
+
+##### `resetTurnstileMode` <a name="resetTurnstileMode" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.resetTurnstileMode"></a>
+
+```java
+public void resetTurnstileMode()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -794,7 +838,7 @@ The construct id used in the generated config for the WaitingRoomEvent to import
 
 The id of the existing WaitingRoomEvent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,6 +884,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.shuffleAtEventStartInput">shuffleAtEventStartInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.suspendedInput">suspendedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.totalActiveUsersInput">totalActiveUsersInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileActionInput">turnstileActionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileModeInput">turnstileModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.waitingRoomIdInput">waitingRoomIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.customPageHtml">customPageHtml</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -855,6 +901,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.shuffleAtEventStart">shuffleAtEventStart</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.suspended">suspended</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.totalActiveUsers">totalActiveUsers</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileAction">turnstileAction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileMode">turnstileMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.waitingRoomId">waitingRoomId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -1162,6 +1210,26 @@ public java.lang.Number getTotalActiveUsersInput();
 
 ---
 
+##### `turnstileActionInput`<sup>Optional</sup> <a name="turnstileActionInput" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileActionInput"></a>
+
+```java
+public java.lang.String getTurnstileActionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `turnstileModeInput`<sup>Optional</sup> <a name="turnstileModeInput" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileModeInput"></a>
+
+```java
+public java.lang.String getTurnstileModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `waitingRoomIdInput`<sup>Optional</sup> <a name="waitingRoomIdInput" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.waitingRoomIdInput"></a>
 
 ```java
@@ -1312,6 +1380,26 @@ public java.lang.Number getTotalActiveUsers();
 
 ---
 
+##### `turnstileAction`<sup>Required</sup> <a name="turnstileAction" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileAction"></a>
+
+```java
+public java.lang.String getTurnstileAction();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `turnstileMode`<sup>Required</sup> <a name="turnstileMode" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.turnstileMode"></a>
+
+```java
+public java.lang.String getTurnstileMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `waitingRoomId`<sup>Required</sup> <a name="waitingRoomId" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEvent.property.waitingRoomId"></a>
 
 ```java
@@ -1389,6 +1477,8 @@ WaitingRoomEventConfig.builder()
 //  .suspended(java.lang.Boolean)
 //  .suspended(IResolvable)
 //  .totalActiveUsers(java.lang.Number)
+//  .turnstileAction(java.lang.String)
+//  .turnstileMode(java.lang.String)
     .build();
 ```
 
@@ -1406,7 +1496,7 @@ WaitingRoomEventConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.eventEndTime">eventEndTime</a></code> | <code>java.lang.String</code> | An ISO 8601 timestamp that marks the end of the event. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.eventStartTime">eventStartTime</a></code> | <code>java.lang.String</code> | An ISO 8601 timestamp that marks the start of the event. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.name">name</a></code> | <code>java.lang.String</code> | A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed. |
-| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.waitingRoomId">waitingRoomId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.waitingRoomId">waitingRoomId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.customPageHtml">customPageHtml</a></code> | <code>java.lang.String</code> | If set, the event will override the waiting room's `custom_page_html` property while it is active. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.description">description</a></code> | <code>java.lang.String</code> | A note that you can use to add more details about the event. |
@@ -1418,6 +1508,8 @@ WaitingRoomEventConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.shuffleAtEventStart">shuffleAtEventStart</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If enabled, users in the prequeue will be shuffled randomly at the `event_start_time`. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.suspended">suspended</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Suspends or allows an event. |
 | <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.totalActiveUsers">totalActiveUsers</a></code> | <code>java.lang.Number</code> | If set, the event will override the waiting room's `total_active_users` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.turnstileAction">turnstileAction</a></code> | <code>java.lang.String</code> | If set, the event will override the waiting room's `turnstile_action` property while it is active. |
+| <code><a href="#@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.turnstileMode">turnstileMode</a></code> | <code>java.lang.String</code> | If set, the event will override the waiting room's `turnstile_mode` property while it is active. |
 
 ---
 
@@ -1501,7 +1593,7 @@ public java.lang.String getEventEndTime();
 
 An ISO 8601 timestamp that marks the end of the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
 
 ---
 
@@ -1517,7 +1609,7 @@ An ISO 8601 timestamp that marks the start of the event.
 
 At this time, queued users will be processed with the event's configuration. The start time must be at least one minute before `event_end_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
 
 ---
 
@@ -1531,7 +1623,7 @@ public java.lang.String getName();
 
 A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
 
 ---
 
@@ -1543,7 +1635,7 @@ public java.lang.String getWaitingRoomId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}.
 
 ---
 
@@ -1557,7 +1649,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
 
 ---
 
@@ -1573,7 +1665,7 @@ If set, the event will override the waiting room's `custom_page_html` property w
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
 
 ---
 
@@ -1587,7 +1679,7 @@ public java.lang.String getDescription();
 
 A note that you can use to add more details about the event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
 
 ---
 
@@ -1603,7 +1695,7 @@ If set, the event will override the waiting room's `disable_session_renewal` pro
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
 
 ---
 
@@ -1619,7 +1711,7 @@ If set, the event will override the waiting room's `new_users_per_minute` proper
 
 If null, the event will inherit it. This can only be set if the event's `total_active_users` property is also set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
 
 ---
 
@@ -1635,7 +1727,7 @@ An ISO 8601 timestamp that marks when to begin queueing all users before the eve
 
 The prequeue must start at least five minutes before `event_start_time`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
 
 ---
 
@@ -1651,7 +1743,7 @@ If set, the event will override the waiting room's `queueing_method` property wh
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
 
 ---
 
@@ -1667,7 +1759,7 @@ If set, the event will override the waiting room's `session_duration` property w
 
 If null, the event will inherit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
 
 ---
 
@@ -1683,7 +1775,7 @@ If enabled, users in the prequeue will be shuffled randomly at the `event_start_
 
 Requires that `prequeue_start_time` is not null. This is useful for situations when many users will join the event prequeue at the same time and you want to shuffle them to ensure fairness. Naturally, it makes the most sense to enable this feature when the `queueing_method` during the event respects ordering such as **fifo**, or else the shuffling may be unnecessary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
 
 ---
 
@@ -1699,7 +1791,7 @@ Suspends or allows an event.
 
 If set to `true`, the event is ignored and traffic will be handled based on the waiting room configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
 
 ---
 
@@ -1715,7 +1807,41 @@ If set, the event will override the waiting room's `total_active_users` property
 
 If null, the event will inherit it. This can only be set if the event's `new_users_per_minute` property is also set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
+
+---
+
+##### `turnstileAction`<sup>Optional</sup> <a name="turnstileAction" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.turnstileAction"></a>
+
+```java
+public java.lang.String getTurnstileAction();
+```
+
+- *Type:* java.lang.String
+
+If set, the event will override the waiting room's `turnstile_action` property while it is active.
+
+If null, the event will inherit it.
+Available values: "log", "infinite_queue".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#turnstile_action WaitingRoomEvent#turnstile_action}
+
+---
+
+##### `turnstileMode`<sup>Optional</sup> <a name="turnstileMode" id="@cdktf/provider-cloudflare.waitingRoomEvent.WaitingRoomEventConfig.property.turnstileMode"></a>
+
+```java
+public java.lang.String getTurnstileMode();
+```
+
+- *Type:* java.lang.String
+
+If set, the event will override the waiting room's `turnstile_mode` property while it is active.
+
+If null, the event will inherit it.
+Available values: "off", "invisible", "visible_non_interactive", "visible_managed".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event#turnstile_mode WaitingRoomEvent#turnstile_mode}
 
 ---
 
