@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_rooms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareWaitingRoomsConfig extends cdktf.TerraformMetaArg
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#account_id DataCloudflareWaitingRooms#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_rooms#account_id DataCloudflareWaitingRooms#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
   */
   readonly maxItems?: number;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -374,7 +374,7 @@ export class DataCloudflareWaitingRoomsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}
 */
 export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
 
@@ -390,7 +390,7 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWaitingRooms resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWaitingRooms to import
-  * @param importFromId The id of the existing DataCloudflareWaitingRooms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWaitingRooms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWaitingRooms to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -402,7 +402,7 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -413,7 +413,7 @@ export class DataCloudflareWaitingRooms extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_waiting_rooms',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

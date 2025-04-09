@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/queue
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareQueueConfig extends cdktf.TerraformMetaArguments 
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
   */
   readonly accountId: string;
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
   */
   readonly queueId?: string;
 }
@@ -349,6 +349,11 @@ export class DataCloudflareQueueSettingsOutputReference extends cdktf.ComplexObj
     return this.getNumberAttribute('delivery_delay');
   }
 
+  // delivery_paused - computed: true, optional: false, required: false
+  public get deliveryPaused() {
+    return this.getBooleanAttribute('delivery_paused');
+  }
+
   // message_retention_period - computed: true, optional: false, required: false
   public get messageRetentionPeriod() {
     return this.getNumberAttribute('message_retention_period');
@@ -356,7 +361,7 @@ export class DataCloudflareQueueSettingsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/queue cloudflare_queue}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/queue cloudflare_queue}
 */
 export class DataCloudflareQueue extends cdktf.TerraformDataSource {
 
@@ -372,7 +377,7 @@ export class DataCloudflareQueue extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareQueue resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareQueue to import
-  * @param importFromId The id of the existing DataCloudflareQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/queue#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareQueue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -384,7 +389,7 @@ export class DataCloudflareQueue extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/queue cloudflare_queue} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/queue cloudflare_queue} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -395,7 +400,7 @@ export class DataCloudflareQueue extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_queue',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### Queue <a name="Queue" id="@cdktf/provider-cloudflare.queue.Queue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue cloudflare_queue}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue cloudflare_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.queue.Queue.Initializer"></a>
 
@@ -41,8 +41,8 @@ Queue.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#queue_name Queue#queue_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#account_id Queue#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#queue_name Queue#queue_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -575,7 +575,7 @@ The construct id used in the generated config for the Queue to import.
 
 The id of the existing Queue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,8 +961,8 @@ QueueConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#queue_name Queue#queue_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -1046,7 +1046,7 @@ public java.lang.String getAccountId();
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#account_id Queue#account_id}
 
 ---
 
@@ -1058,7 +1058,7 @@ public java.lang.String getQueueName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#queue_name Queue#queue_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public QueueSettings getSettings();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -1119,6 +1119,8 @@ import com.hashicorp.cdktf.providers.cloudflare.queue.QueueSettings;
 
 QueueSettings.builder()
 //  .deliveryDelay(java.lang.Number)
+//  .deliveryPaused(java.lang.Boolean)
+//  .deliveryPaused(IResolvable)
 //  .messageRetentionPeriod(java.lang.Number)
     .build();
 ```
@@ -1128,6 +1130,7 @@ QueueSettings.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings.property.deliveryDelay">deliveryDelay</a></code> | <code>java.lang.Number</code> | Number of seconds to delay delivery of all messages to consumers. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings.property.deliveryPaused">deliveryPaused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates if message delivery to consumers is currently paused. |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings.property.messageRetentionPeriod">messageRetentionPeriod</a></code> | <code>java.lang.Number</code> | Number of seconds after which an unconsumed message will be delayed. |
 
 ---
@@ -1142,7 +1145,21 @@ public java.lang.Number getDeliveryDelay();
 
 Number of seconds to delay delivery of all messages to consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+
+---
+
+##### `deliveryPaused`<sup>Optional</sup> <a name="deliveryPaused" id="@cdktf/provider-cloudflare.queue.QueueSettings.property.deliveryPaused"></a>
+
+```java
+public java.lang.Object getDeliveryPaused();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Indicates if message delivery to consumers is currently paused.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
 
 ---
 
@@ -1156,7 +1173,7 @@ public java.lang.Number getMessageRetentionPeriod();
 
 Number of seconds after which an unconsumed message will be delayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
 
 ---
 
@@ -2470,6 +2487,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.resetDeliveryDelay">resetDeliveryDelay</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.resetDeliveryPaused">resetDeliveryPaused</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.resetMessageRetentionPeriod">resetMessageRetentionPeriod</a></code> | *No description.* |
 
 ---
@@ -2630,6 +2648,12 @@ Returns a reversible string representation.
 public void resetDeliveryDelay()
 ```
 
+##### `resetDeliveryPaused` <a name="resetDeliveryPaused" id="@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.resetDeliveryPaused"></a>
+
+```java
+public void resetDeliveryPaused()
+```
+
 ##### `resetMessageRetentionPeriod` <a name="resetMessageRetentionPeriod" id="@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.resetMessageRetentionPeriod"></a>
 
 ```java
@@ -2644,8 +2668,10 @@ public void resetMessageRetentionPeriod()
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.deliveryDelayInput">deliveryDelayInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.deliveryPausedInput">deliveryPausedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.messageRetentionPeriodInput">messageRetentionPeriodInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.deliveryDelay">deliveryDelay</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.deliveryPaused">deliveryPaused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.messageRetentionPeriod">messageRetentionPeriod</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | *No description.* |
 
@@ -2685,6 +2711,16 @@ public java.lang.Number getDeliveryDelayInput();
 
 ---
 
+##### `deliveryPausedInput`<sup>Optional</sup> <a name="deliveryPausedInput" id="@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.deliveryPausedInput"></a>
+
+```java
+public java.lang.Object getDeliveryPausedInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `messageRetentionPeriodInput`<sup>Optional</sup> <a name="messageRetentionPeriodInput" id="@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.messageRetentionPeriodInput"></a>
 
 ```java
@@ -2702,6 +2738,16 @@ public java.lang.Number getDeliveryDelay();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `deliveryPaused`<sup>Required</sup> <a name="deliveryPaused" id="@cdktf/provider-cloudflare.queue.QueueSettingsOutputReference.property.deliveryPaused"></a>
+
+```java
+public java.lang.Object getDeliveryPaused();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 

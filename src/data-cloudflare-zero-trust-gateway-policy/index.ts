@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_policy
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareZeroTrustGatewayPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_policy#account_id DataCloudflareZeroTrustGatewayPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_policy#account_id DataCloudflareZeroTrustGatewayPolicy#account_id}
   */
   readonly accountId: string;
   /**
   * The API resource UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_policy#rule_id DataCloudflareZeroTrustGatewayPolicy#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_policy#rule_id DataCloudflareZeroTrustGatewayPolicy#rule_id}
   */
   readonly ruleId?: string;
 }
@@ -845,6 +845,70 @@ export class DataCloudflareZeroTrustGatewayPolicyRuleSettingsQuarantineOutputRef
     return this.getListAttribute('file_types');
   }
 }
+export interface DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirect {
+}
+
+export function dataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirectToTerraform(struct?: DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirectToHclTerraform(struct?: DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirect | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirect | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // include_context - computed: true, optional: false, required: false
+  public get includeContext() {
+    return this.getBooleanAttribute('include_context');
+  }
+
+  // preserve_path_and_query - computed: true, optional: false, required: false
+  public get preservePathAndQuery() {
+    return this.getBooleanAttribute('preserve_path_and_query');
+  }
+
+  // target_uri - computed: true, optional: false, required: false
+  public get targetUri() {
+    return this.getStringAttribute('target_uri');
+  }
+}
 export interface DataCloudflareZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally {
 }
 
@@ -1117,6 +1181,12 @@ export class DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference ext
     return this._quarantine;
   }
 
+  // redirect - computed: true, optional: false, required: false
+  private _redirect = new DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference(this, "redirect");
+  public get redirect() {
+    return this._redirect;
+  }
+
   // resolve_dns_internally - computed: true, optional: false, required: false
   private _resolveDnsInternally = new DataCloudflareZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference(this, "resolve_dns_internally");
   public get resolveDnsInternally() {
@@ -1225,7 +1295,7 @@ export class DataCloudflareZeroTrustGatewayPolicyScheduleOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}
 */
 export class DataCloudflareZeroTrustGatewayPolicy extends cdktf.TerraformDataSource {
 
@@ -1241,7 +1311,7 @@ export class DataCloudflareZeroTrustGatewayPolicy extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataCloudflareZeroTrustGatewayPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustGatewayPolicy to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustGatewayPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1253,7 +1323,7 @@ export class DataCloudflareZeroTrustGatewayPolicy extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1264,7 +1334,7 @@ export class DataCloudflareZeroTrustGatewayPolicy extends cdktf.TerraformDataSou
       terraformResourceType: 'cloudflare_zero_trust_gateway_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

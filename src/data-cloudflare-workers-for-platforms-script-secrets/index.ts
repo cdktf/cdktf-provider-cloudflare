@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,36 +11,36 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataCloudflareWorkersSecretsConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareWorkersForPlatformsScriptSecretsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets#account_id DataCloudflareWorkersSecrets#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets#account_id DataCloudflareWorkersForPlatformsScriptSecrets#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the Workers for Platforms dispatch namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets#dispatch_namespace DataCloudflareWorkersSecrets#dispatch_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets#dispatch_namespace DataCloudflareWorkersForPlatformsScriptSecrets#dispatch_namespace}
   */
   readonly dispatchNamespace: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets#max_items DataCloudflareWorkersSecrets#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets#max_items DataCloudflareWorkersForPlatformsScriptSecrets#max_items}
   */
   readonly maxItems?: number;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets#script_name DataCloudflareWorkersSecrets#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets#script_name DataCloudflareWorkersForPlatformsScriptSecrets#script_name}
   */
   readonly scriptName: string;
 }
-export interface DataCloudflareWorkersSecretsResult {
+export interface DataCloudflareWorkersForPlatformsScriptSecretsResult {
 }
 
-export function dataCloudflareWorkersSecretsResultToTerraform(struct?: DataCloudflareWorkersSecretsResult): any {
+export function dataCloudflareWorkersForPlatformsScriptSecretsResultToTerraform(struct?: DataCloudflareWorkersForPlatformsScriptSecretsResult): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -50,7 +50,7 @@ export function dataCloudflareWorkersSecretsResultToTerraform(struct?: DataCloud
 }
 
 
-export function dataCloudflareWorkersSecretsResultToHclTerraform(struct?: DataCloudflareWorkersSecretsResult): any {
+export function dataCloudflareWorkersForPlatformsScriptSecretsResultToHclTerraform(struct?: DataCloudflareWorkersForPlatformsScriptSecretsResult): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -60,7 +60,7 @@ export function dataCloudflareWorkersSecretsResultToHclTerraform(struct?: DataCl
   return attrs;
 }
 
-export class DataCloudflareWorkersSecretsResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareWorkersForPlatformsScriptSecretsResultOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -73,13 +73,13 @@ export class DataCloudflareWorkersSecretsResultOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCloudflareWorkersSecretsResult | undefined {
+  public get internalValue(): DataCloudflareWorkersForPlatformsScriptSecretsResult | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareWorkersSecretsResult | undefined) {
+  public set internalValue(value: DataCloudflareWorkersForPlatformsScriptSecretsResult | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -99,7 +99,7 @@ export class DataCloudflareWorkersSecretsResultOutputReference extends cdktf.Com
   }
 }
 
-export class DataCloudflareWorkersSecretsResultList extends cdktf.ComplexList {
+export class DataCloudflareWorkersForPlatformsScriptSecretsResultList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -113,33 +113,33 @@ export class DataCloudflareWorkersSecretsResultList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataCloudflareWorkersSecretsResultOutputReference {
-    return new DataCloudflareWorkersSecretsResultOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataCloudflareWorkersForPlatformsScriptSecretsResultOutputReference {
+    return new DataCloudflareWorkersForPlatformsScriptSecretsResultOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets cloudflare_workers_secrets}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets cloudflare_workers_for_platforms_script_secrets}
 */
-export class DataCloudflareWorkersSecrets extends cdktf.TerraformDataSource {
+export class DataCloudflareWorkersForPlatformsScriptSecrets extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "cloudflare_workers_secrets";
+  public static readonly tfResourceType = "cloudflare_workers_for_platforms_script_secrets";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareWorkersSecrets resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a DataCloudflareWorkersForPlatformsScriptSecrets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the DataCloudflareWorkersSecrets to import
-  * @param importFromId The id of the existing DataCloudflareWorkersSecrets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the DataCloudflareWorkersSecrets to import is found
+  * @param importToId The construct id used in the generated config for the DataCloudflareWorkersForPlatformsScriptSecrets to import
+  * @param importFromId The id of the existing DataCloudflareWorkersForPlatformsScriptSecrets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataCloudflareWorkersForPlatformsScriptSecrets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_secrets", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_for_platforms_script_secrets", importId: importFromId, provider });
       }
 
   // ===========
@@ -147,18 +147,18 @@ export class DataCloudflareWorkersSecrets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_secrets cloudflare_workers_secrets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_script_secrets cloudflare_workers_for_platforms_script_secrets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareWorkersSecretsConfig
+  * @param options DataCloudflareWorkersForPlatformsScriptSecretsConfig
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareWorkersSecretsConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareWorkersForPlatformsScriptSecretsConfig) {
     super(scope, id, {
-      terraformResourceType: 'cloudflare_workers_secrets',
+      terraformResourceType: 'cloudflare_workers_for_platforms_script_secrets',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -222,7 +222,7 @@ export class DataCloudflareWorkersSecrets extends cdktf.TerraformDataSource {
   }
 
   // result - computed: true, optional: false, required: false
-  private _result = new DataCloudflareWorkersSecretsResultList(this, "result", false);
+  private _result = new DataCloudflareWorkersForPlatformsScriptSecretsResultList(this, "result", false);
   public get result() {
     return this._result;
   }

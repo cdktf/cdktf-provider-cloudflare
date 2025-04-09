@@ -1,3 +1,3 @@
 # `cloudflare_image_variant`
 
-Refer to the Terraform Registry for docs: [`cloudflare_image_variant`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/image_variant).
+Refer to the Terraform Registry for docs: [`cloudflare_image_variant`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/image_variant).

@@ -136,12 +136,12 @@ Object.defineProperty(exports, 'workersCronTrigger', { get: function () { return
 Object.defineProperty(exports, 'workersCustomDomain', { get: function () { return require('./workers-custom-domain'); } });
 Object.defineProperty(exports, 'workersDeployment', { get: function () { return require('./workers-deployment'); } });
 Object.defineProperty(exports, 'workersForPlatformsDispatchNamespace', { get: function () { return require('./workers-for-platforms-dispatch-namespace'); } });
+Object.defineProperty(exports, 'workersForPlatformsScriptSecret', { get: function () { return require('./workers-for-platforms-script-secret'); } });
 Object.defineProperty(exports, 'workersKv', { get: function () { return require('./workers-kv'); } });
 Object.defineProperty(exports, 'workersKvNamespace', { get: function () { return require('./workers-kv-namespace'); } });
 Object.defineProperty(exports, 'workersRoute', { get: function () { return require('./workers-route'); } });
 Object.defineProperty(exports, 'workersScript', { get: function () { return require('./workers-script'); } });
 Object.defineProperty(exports, 'workersScriptSubdomain', { get: function () { return require('./workers-script-subdomain'); } });
-Object.defineProperty(exports, 'workersSecret', { get: function () { return require('./workers-secret'); } });
 Object.defineProperty(exports, 'zeroTrustAccessApplication', { get: function () { return require('./zero-trust-access-application'); } });
 Object.defineProperty(exports, 'zeroTrustAccessCustomPage', { get: function () { return require('./zero-trust-access-custom-page'); } });
 Object.defineProperty(exports, 'zeroTrustAccessGroup', { get: function () { return require('./zero-trust-access-group'); } });
@@ -410,6 +410,8 @@ Object.defineProperty(exports, 'dataCloudflareWorkersCustomDomains', { get: func
 Object.defineProperty(exports, 'dataCloudflareWorkersDeployment', { get: function () { return require('./data-cloudflare-workers-deployment'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsDispatchNamespace', { get: function () { return require('./data-cloudflare-workers-for-platforms-dispatch-namespace'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsDispatchNamespaces', { get: function () { return require('./data-cloudflare-workers-for-platforms-dispatch-namespaces'); } });
+Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsScriptSecret', { get: function () { return require('./data-cloudflare-workers-for-platforms-script-secret'); } });
+Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsScriptSecrets', { get: function () { return require('./data-cloudflare-workers-for-platforms-script-secrets'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersKv', { get: function () { return require('./data-cloudflare-workers-kv'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersKvNamespace', { get: function () { return require('./data-cloudflare-workers-kv-namespace'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersKvNamespaces', { get: function () { return require('./data-cloudflare-workers-kv-namespaces'); } });
@@ -418,8 +420,6 @@ Object.defineProperty(exports, 'dataCloudflareWorkersRoutes', { get: function ()
 Object.defineProperty(exports, 'dataCloudflareWorkersScript', { get: function () { return require('./data-cloudflare-workers-script'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersScriptSubdomain', { get: function () { return require('./data-cloudflare-workers-script-subdomain'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersScripts', { get: function () { return require('./data-cloudflare-workers-scripts'); } });
-Object.defineProperty(exports, 'dataCloudflareWorkersSecret', { get: function () { return require('./data-cloudflare-workers-secret'); } });
-Object.defineProperty(exports, 'dataCloudflareWorkersSecrets', { get: function () { return require('./data-cloudflare-workers-secrets'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessApplication', { get: function () { return require('./data-cloudflare-zero-trust-access-application'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessApplications', { get: function () { return require('./data-cloudflare-zero-trust-access-applications'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessCustomPage', { get: function () { return require('./data-cloudflare-zero-trust-access-custom-page'); } });

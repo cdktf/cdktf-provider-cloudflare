@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/pages_domains
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/pages_domains
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflarePagesDomainsConfig extends cdktf.TerraformMetaArg
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/pages_domains#account_id DataCloudflarePagesDomains#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/pages_domains#account_id DataCloudflarePagesDomains#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/pages_domains#max_items DataCloudflarePagesDomains#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/pages_domains#max_items DataCloudflarePagesDomains#max_items}
   */
   readonly maxItems?: number;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/pages_domains#project_name DataCloudflarePagesDomains#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/pages_domains#project_name DataCloudflarePagesDomains#project_name}
   */
   readonly projectName: string;
 }
@@ -283,7 +283,7 @@ export class DataCloudflarePagesDomainsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/pages_domains cloudflare_pages_domains}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/pages_domains cloudflare_pages_domains}
 */
 export class DataCloudflarePagesDomains extends cdktf.TerraformDataSource {
 
@@ -299,7 +299,7 @@ export class DataCloudflarePagesDomains extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflarePagesDomains resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePagesDomains to import
-  * @param importFromId The id of the existing DataCloudflarePagesDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/pages_domains#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePagesDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/pages_domains#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePagesDomains to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -311,7 +311,7 @@ export class DataCloudflarePagesDomains extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/pages_domains cloudflare_pages_domains} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/pages_domains cloudflare_pages_domains} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -322,7 +322,7 @@ export class DataCloudflarePagesDomains extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_pages_domains',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
