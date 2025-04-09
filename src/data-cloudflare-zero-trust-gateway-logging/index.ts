@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_logging
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_logging
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,9 +8,186 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareZeroTrustGatewayLoggingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_logging#account_id DataCloudflareZeroTrustGatewayLogging#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_logging#account_id DataCloudflareZeroTrustGatewayLogging#account_id}
   */
   readonly accountId: string;
+}
+export interface DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns {
+}
+
+export function dataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsToTerraform(struct?: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsToHclTerraform(struct?: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDns | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // log_all - computed: true, optional: false, required: false
+  public get logAll() {
+    return this.getBooleanAttribute('log_all');
+  }
+
+  // log_blocks - computed: true, optional: false, required: false
+  public get logBlocks() {
+    return this.getBooleanAttribute('log_blocks');
+  }
+}
+export interface DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp {
+}
+
+export function dataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpToTerraform(struct?: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpToHclTerraform(struct?: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttp | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // log_all - computed: true, optional: false, required: false
+  public get logAll() {
+    return this.getBooleanAttribute('log_all');
+  }
+
+  // log_blocks - computed: true, optional: false, required: false
+  public get logBlocks() {
+    return this.getBooleanAttribute('log_blocks');
+  }
+}
+export interface DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4 {
+}
+
+export function dataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4ToTerraform(struct?: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4ToHclTerraform(struct?: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // log_all - computed: true, optional: false, required: false
+  public get logAll() {
+    return this.getBooleanAttribute('log_all');
+  }
+
+  // log_blocks - computed: true, optional: false, required: false
+  public get logBlocks() {
+    return this.getBooleanAttribute('log_blocks');
+  }
 }
 export interface DataCloudflareZeroTrustGatewayLoggingSettingsByRuleType {
 }
@@ -67,23 +239,26 @@ export class DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputRefere
   }
 
   // dns - computed: true, optional: false, required: false
+  private _dns = new DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference(this, "dns");
   public get dns() {
-    return this.getStringAttribute('dns');
+    return this._dns;
   }
 
   // http - computed: true, optional: false, required: false
+  private _http = new DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference(this, "http");
   public get http() {
-    return this.getStringAttribute('http');
+    return this._http;
   }
 
   // l4 - computed: true, optional: false, required: false
+  private _l4 = new DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference(this, "l4");
   public get l4() {
-    return this.getStringAttribute('l4');
+    return this._l4;
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}
 */
 export class DataCloudflareZeroTrustGatewayLogging extends cdktf.TerraformDataSource {
 
@@ -99,7 +274,7 @@ export class DataCloudflareZeroTrustGatewayLogging extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataCloudflareZeroTrustGatewayLogging resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustGatewayLogging to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_logging#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewayLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustGatewayLogging to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -111,7 +286,7 @@ export class DataCloudflareZeroTrustGatewayLogging extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -122,7 +297,7 @@ export class DataCloudflareZeroTrustGatewayLogging extends cdktf.TerraformDataSo
       terraformResourceType: 'cloudflare_zero_trust_gateway_logging',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

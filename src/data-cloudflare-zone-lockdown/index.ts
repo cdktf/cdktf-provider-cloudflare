@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareZoneLockdownConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#filter DataCloudflareZoneLockdown#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#filter DataCloudflareZoneLockdown#filter}
   */
   readonly filter?: DataCloudflareZoneLockdownFilter;
   /**
   * The unique identifier of the Zone Lockdown rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#lock_downs_id DataCloudflareZoneLockdown#lock_downs_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#lock_downs_id DataCloudflareZoneLockdown#lock_downs_id}
   */
   readonly lockDownsId?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#zone_id DataCloudflareZoneLockdown#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#zone_id DataCloudflareZoneLockdown#zone_id}
   */
   readonly zoneId: string;
 }
@@ -113,55 +108,55 @@ export interface DataCloudflareZoneLockdownFilter {
   /**
   * The timestamp of when the rule was created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#created_on DataCloudflareZoneLockdown#created_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#created_on DataCloudflareZoneLockdown#created_on}
   */
   readonly createdOn?: string;
   /**
   * A string to search for in the description of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#description DataCloudflareZoneLockdown#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#description DataCloudflareZoneLockdown#description}
   */
   readonly description?: string;
   /**
   * A string to search for in the description of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#description_search DataCloudflareZoneLockdown#description_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#description_search DataCloudflareZoneLockdown#description_search}
   */
   readonly descriptionSearch?: string;
   /**
   * A single IP address to search for in existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#ip DataCloudflareZoneLockdown#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#ip DataCloudflareZoneLockdown#ip}
   */
   readonly ip?: string;
   /**
   * A single IP address range to search for in existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#ip_range_search DataCloudflareZoneLockdown#ip_range_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#ip_range_search DataCloudflareZoneLockdown#ip_range_search}
   */
   readonly ipRangeSearch?: string;
   /**
   * A single IP address to search for in existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#ip_search DataCloudflareZoneLockdown#ip_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#ip_search DataCloudflareZoneLockdown#ip_search}
   */
   readonly ipSearch?: string;
   /**
   * The timestamp of when the rule was last modified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#modified_on DataCloudflareZoneLockdown#modified_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#modified_on DataCloudflareZoneLockdown#modified_on}
   */
   readonly modifiedOn?: string;
   /**
   * The priority of the rule to control the processing order. A lower number indicates higher priority. If not provided, any rules with a configured priority will be processed before rules without a priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#priority DataCloudflareZoneLockdown#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#priority DataCloudflareZoneLockdown#priority}
   */
   readonly priority?: number;
   /**
   * A single URI to search for in the list of URLs of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#uri_search DataCloudflareZoneLockdown#uri_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#uri_search DataCloudflareZoneLockdown#uri_search}
   */
   readonly uriSearch?: string;
 }
@@ -487,7 +482,7 @@ export class DataCloudflareZoneLockdownFilterOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown}
 */
 export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
 
@@ -503,7 +498,7 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareZoneLockdown resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZoneLockdown to import
-  * @param importFromId The id of the existing DataCloudflareZoneLockdown that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZoneLockdown that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZoneLockdown to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -515,7 +510,7 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -526,7 +521,7 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone_lockdown',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

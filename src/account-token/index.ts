@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,56 +10,49 @@ export interface AccountTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#account_id AccountToken#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#account_id AccountToken#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#condition AccountToken#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#condition AccountToken#condition}
   */
   readonly condition?: AccountTokenCondition;
   /**
   * The expiration time on or after which the JWT MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#expires_on AccountToken#expires_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#expires_on AccountToken#expires_on}
   */
   readonly expiresOn?: string;
   /**
   * Token name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#name AccountToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#name AccountToken#name}
   */
   readonly name: string;
   /**
   * The time before which the token MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#not_before AccountToken#not_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#not_before AccountToken#not_before}
   */
   readonly notBefore?: string;
   /**
   * List of access policies assigned to the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#policies AccountToken#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#policies AccountToken#policies}
   */
   readonly policies: AccountTokenPolicies[] | cdktf.IResolvable;
-  /**
-  * Status of the token.
-  * Available values: "active", "disabled", "expired".
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#status AccountToken#status}
-  */
-  readonly status?: string;
 }
 export interface AccountTokenConditionRequestIp {
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#in AccountToken#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#in AccountToken#in}
   */
   readonly in?: string[];
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#not_in AccountToken#not_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#not_in AccountToken#not_in}
   */
   readonly notIn?: string[];
 }
@@ -189,7 +177,7 @@ export interface AccountTokenCondition {
   /**
   * Client IP restrictions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#request_ip AccountToken#request_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#request_ip AccountToken#request_ip}
   */
   readonly requestIp?: AccountTokenConditionRequestIp;
 }
@@ -283,11 +271,11 @@ export class AccountTokenConditionOutputReference extends cdktf.ComplexObject {
 }
 export interface AccountTokenPoliciesPermissionGroupsMeta {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#key AccountToken#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#key AccountToken#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#value AccountToken#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#value AccountToken#value}
   */
   readonly value?: string;
 }
@@ -412,7 +400,7 @@ export interface AccountTokenPoliciesPermissionGroups {
   /**
   * Identifier of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#id AccountToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#id AccountToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -421,7 +409,7 @@ export interface AccountTokenPoliciesPermissionGroups {
   /**
   * Attributes associated to the permission group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#meta AccountToken#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#meta AccountToken#meta}
   */
   readonly meta?: AccountTokenPoliciesPermissionGroupsMeta;
 }
@@ -571,19 +559,19 @@ export interface AccountTokenPolicies {
   * Allow or deny operations against the resources.
   * Available values: "allow", "deny".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#effect AccountToken#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#effect AccountToken#effect}
   */
   readonly effect: string;
   /**
   * A set of permission groups that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
   */
   readonly permissionGroups: AccountTokenPoliciesPermissionGroups[] | cdktf.IResolvable;
   /**
   * A list of resource names that the policy applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#resources AccountToken#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#resources AccountToken#resources}
   */
   readonly resources: { [key: string]: string };
 }
@@ -753,7 +741,7 @@ export class AccountTokenPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token cloudflare_account_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token cloudflare_account_token}
 */
 export class AccountToken extends cdktf.TerraformResource {
 
@@ -769,7 +757,7 @@ export class AccountToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccountToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountToken to import
-  * @param importFromId The id of the existing AccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -781,7 +769,7 @@ export class AccountToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/account_token cloudflare_account_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_token cloudflare_account_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -792,7 +780,7 @@ export class AccountToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -809,7 +797,6 @@ export class AccountToken extends cdktf.TerraformResource {
     this._name = config.name;
     this._notBefore = config.notBefore;
     this._policies.internalValue = config.policies;
-    this._status = config.status;
   }
 
   // ==========
@@ -911,7 +898,7 @@ export class AccountToken extends cdktf.TerraformResource {
   }
 
   // policies - computed: false, optional: false, required: true
-  private _policies = new AccountTokenPoliciesList(this, "policies", false);
+  private _policies = new AccountTokenPoliciesList(this, "policies", true);
   public get policies() {
     return this._policies;
   }
@@ -923,20 +910,9 @@ export class AccountToken extends cdktf.TerraformResource {
     return this._policies.internalValue;
   }
 
-  // status - computed: false, optional: true, required: false
-  private _status?: string; 
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
-  }
-  public set status(value: string) {
-    this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status;
   }
 
   // value - computed: true, optional: false, required: false
@@ -956,7 +932,6 @@ export class AccountToken extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       not_before: cdktf.stringToTerraform(this._notBefore),
       policies: cdktf.listMapper(accountTokenPoliciesToTerraform, false)(this._policies.internalValue),
-      status: cdktf.stringToTerraform(this._status),
     };
   }
 
@@ -995,14 +970,8 @@ export class AccountToken extends cdktf.TerraformResource {
       policies: {
         value: cdktf.listMapperHcl(accountTokenPoliciesToHclTerraform, false)(this._policies.internalValue),
         isBlock: true,
-        type: "list",
+        type: "set",
         storageClassType: "AccountTokenPoliciesList",
-      },
-      status: {
-        value: cdktf.stringToHclTerraform(this._status),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
     };
 

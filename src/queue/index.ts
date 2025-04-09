@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +10,15 @@ export interface QueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#account_id Queue#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#account_id Queue#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#queue_name Queue#queue_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#queue_name Queue#queue_name}
   */
   readonly queueName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#settings Queue#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#settings Queue#settings}
   */
   readonly settings?: QueueSettings;
 }
@@ -301,13 +296,19 @@ export interface QueueSettings {
   /**
   * Number of seconds to delay delivery of all messages to consumers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
   */
   readonly deliveryDelay?: number;
   /**
+  * Indicates if message delivery to consumers is currently paused.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
+  */
+  readonly deliveryPaused?: boolean | cdktf.IResolvable;
+  /**
   * Number of seconds after which an unconsumed message will be delayed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
   */
   readonly messageRetentionPeriod?: number;
 }
@@ -319,6 +320,7 @@ export function queueSettingsToTerraform(struct?: QueueSettings | cdktf.IResolva
   }
   return {
     delivery_delay: cdktf.numberToTerraform(struct!.deliveryDelay),
+    delivery_paused: cdktf.booleanToTerraform(struct!.deliveryPaused),
     message_retention_period: cdktf.numberToTerraform(struct!.messageRetentionPeriod),
   }
 }
@@ -335,6 +337,12 @@ export function queueSettingsToHclTerraform(struct?: QueueSettings | cdktf.IReso
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    delivery_paused: {
+      value: cdktf.booleanToHclTerraform(struct!.deliveryPaused),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     message_retention_period: {
       value: cdktf.numberToHclTerraform(struct!.messageRetentionPeriod),
@@ -370,6 +378,10 @@ export class QueueSettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.deliveryDelay = this._deliveryDelay;
     }
+    if (this._deliveryPaused !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deliveryPaused = this._deliveryPaused;
+    }
     if (this._messageRetentionPeriod !== undefined) {
       hasAnyValues = true;
       internalValueResult.messageRetentionPeriod = this._messageRetentionPeriod;
@@ -382,6 +394,7 @@ export class QueueSettingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._deliveryDelay = undefined;
+      this._deliveryPaused = undefined;
       this._messageRetentionPeriod = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -392,6 +405,7 @@ export class QueueSettingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._deliveryDelay = value.deliveryDelay;
+      this._deliveryPaused = value.deliveryPaused;
       this._messageRetentionPeriod = value.messageRetentionPeriod;
     }
   }
@@ -412,6 +426,22 @@ export class QueueSettingsOutputReference extends cdktf.ComplexObject {
     return this._deliveryDelay;
   }
 
+  // delivery_paused - computed: true, optional: true, required: false
+  private _deliveryPaused?: boolean | cdktf.IResolvable; 
+  public get deliveryPaused() {
+    return this.getBooleanAttribute('delivery_paused');
+  }
+  public set deliveryPaused(value: boolean | cdktf.IResolvable) {
+    this._deliveryPaused = value;
+  }
+  public resetDeliveryPaused() {
+    this._deliveryPaused = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deliveryPausedInput() {
+    return this._deliveryPaused;
+  }
+
   // message_retention_period - computed: true, optional: true, required: false
   private _messageRetentionPeriod?: number; 
   public get messageRetentionPeriod() {
@@ -430,7 +460,7 @@ export class QueueSettingsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue cloudflare_queue}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue cloudflare_queue}
 */
 export class Queue extends cdktf.TerraformResource {
 
@@ -446,7 +476,7 @@ export class Queue extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Queue resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Queue to import
-  * @param importFromId The id of the existing Queue that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Queue that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Queue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -458,7 +488,7 @@ export class Queue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue cloudflare_queue} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue cloudflare_queue} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -469,7 +499,7 @@ export class Queue extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_queue',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_room_event
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_room_event
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareWaitingRoomEventConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_room_event#event_id DataCloudflareWaitingRoomEvent#event_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_room_event#event_id DataCloudflareWaitingRoomEvent#event_id}
   */
   readonly eventId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_room_event#waiting_room_id DataCloudflareWaitingRoomEvent#waiting_room_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_room_event#waiting_room_id DataCloudflareWaitingRoomEvent#waiting_room_id}
   */
   readonly waitingRoomId: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_room_event#zone_id DataCloudflareWaitingRoomEvent#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_room_event#zone_id DataCloudflareWaitingRoomEvent#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_room_event cloudflare_waiting_room_event}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_room_event cloudflare_waiting_room_event}
 */
 export class DataCloudflareWaitingRoomEvent extends cdktf.TerraformDataSource {
 
@@ -45,7 +40,7 @@ export class DataCloudflareWaitingRoomEvent extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWaitingRoomEvent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWaitingRoomEvent to import
-  * @param importFromId The id of the existing DataCloudflareWaitingRoomEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_room_event#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWaitingRoomEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_room_event#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWaitingRoomEvent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -57,7 +52,7 @@ export class DataCloudflareWaitingRoomEvent extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_room_event cloudflare_waiting_room_event} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/waiting_room_event cloudflare_waiting_room_event} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +63,7 @@ export class DataCloudflareWaitingRoomEvent extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_waiting_room_event',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -182,6 +177,16 @@ export class DataCloudflareWaitingRoomEvent extends cdktf.TerraformDataSource {
   // total_active_users - computed: true, optional: false, required: false
   public get totalActiveUsers() {
     return this.getNumberAttribute('total_active_users');
+  }
+
+  // turnstile_action - computed: true, optional: false, required: false
+  public get turnstileAction() {
+    return this.getStringAttribute('turnstile_action');
+  }
+
+  // turnstile_mode - computed: true, optional: false, required: false
+  public get turnstileMode() {
+    return this.getStringAttribute('turnstile_mode');
   }
 
   // waiting_room_id - computed: false, optional: false, required: true

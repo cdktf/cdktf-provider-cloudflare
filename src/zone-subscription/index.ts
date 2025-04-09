@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,19 +11,19 @@ export interface ZoneSubscriptionConfig extends cdktf.TerraformMetaArguments {
   * How often the subscription is renewed automatically.
   * Available values: "weekly", "monthly", "quarterly", "yearly".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
   */
   readonly frequency?: string;
   /**
   * Subscription identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#identifier ZoneSubscription#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#identifier ZoneSubscription#identifier}
   */
   readonly identifier: string;
   /**
   * The rate plan applied to the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
   */
   readonly ratePlan?: ZoneSubscriptionRatePlan;
 }
@@ -36,20 +31,20 @@ export interface ZoneSubscriptionRatePlan {
   /**
   * The currency applied to the rate plan subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#currency ZoneSubscription#currency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#currency ZoneSubscription#currency}
   */
   readonly currency?: string;
   /**
   * Whether this rate plan is managed externally from Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#externally_managed ZoneSubscription#externally_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#externally_managed ZoneSubscription#externally_managed}
   */
   readonly externallyManaged?: boolean | cdktf.IResolvable;
   /**
   * The ID of the rate plan.
   * Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#id ZoneSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#id ZoneSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,25 +53,25 @@ export interface ZoneSubscriptionRatePlan {
   /**
   * Whether a rate plan is enterprise-based (or newly adopted term contract).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#is_contract ZoneSubscription#is_contract}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#is_contract ZoneSubscription#is_contract}
   */
   readonly isContract?: boolean | cdktf.IResolvable;
   /**
   * The full name of the rate plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#public_name ZoneSubscription#public_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#public_name ZoneSubscription#public_name}
   */
   readonly publicName?: string;
   /**
   * The scope that this rate plan applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
   */
   readonly scope?: string;
   /**
   * The list of sets this rate plan applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#sets ZoneSubscription#sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#sets ZoneSubscription#sets}
   */
   readonly sets?: string[];
 }
@@ -344,7 +339,7 @@ export class ZoneSubscriptionRatePlanOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription cloudflare_zone_subscription}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription cloudflare_zone_subscription}
 */
 export class ZoneSubscription extends cdktf.TerraformResource {
 
@@ -360,7 +355,7 @@ export class ZoneSubscription extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZoneSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneSubscription to import
-  * @param importFromId The id of the existing ZoneSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -372,7 +367,7 @@ export class ZoneSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -383,7 +378,7 @@ export class ZoneSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_subscription',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
