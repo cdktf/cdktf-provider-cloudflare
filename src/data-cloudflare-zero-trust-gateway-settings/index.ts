@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_gateway_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareZeroTrustGatewaySettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_settings#account_id DataCloudflareZeroTrustGatewaySettings#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_gateway_settings#account_id DataCloudflareZeroTrustGatewaySettings#account_id}
   */
   readonly accountId: string;
 }
@@ -123,6 +123,11 @@ export class DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusNotification
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
+  }
+
+  // include_context - computed: true, optional: false, required: false
+  public get includeContext() {
+    return this.getBooleanAttribute('include_context');
   }
 
   // msg - computed: true, optional: false, required: false
@@ -658,6 +663,60 @@ export class DataCloudflareZeroTrustGatewaySettingsSettingsFipsOutputReference e
     return this.getBooleanAttribute('tls');
   }
 }
+export interface DataCloudflareZeroTrustGatewaySettingsSettingsHostSelector {
+}
+
+export function dataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorToTerraform(struct?: DataCloudflareZeroTrustGatewaySettingsSettingsHostSelector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorToHclTerraform(struct?: DataCloudflareZeroTrustGatewaySettingsSettingsHostSelector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustGatewaySettingsSettingsHostSelector | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustGatewaySettingsSettingsHostSelector | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+}
 export interface DataCloudflareZeroTrustGatewaySettingsSettingsProtocolDetection {
 }
 
@@ -928,6 +987,12 @@ export class DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference exten
     return this._fips;
   }
 
+  // host_selector - computed: true, optional: false, required: false
+  private _hostSelector = new DataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorOutputReference(this, "host_selector");
+  public get hostSelector() {
+    return this._hostSelector;
+  }
+
   // protocol_detection - computed: true, optional: false, required: false
   private _protocolDetection = new DataCloudflareZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference(this, "protocol_detection");
   public get protocolDetection() {
@@ -948,7 +1013,7 @@ export class DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}
 */
 export class DataCloudflareZeroTrustGatewaySettings extends cdktf.TerraformDataSource {
 
@@ -964,7 +1029,7 @@ export class DataCloudflareZeroTrustGatewaySettings extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataCloudflareZeroTrustGatewaySettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustGatewaySettings to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewaySettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustGatewaySettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustGatewaySettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -976,7 +1041,7 @@ export class DataCloudflareZeroTrustGatewaySettings extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -987,7 +1052,7 @@ export class DataCloudflareZeroTrustGatewaySettings extends cdktf.TerraformDataS
       terraformResourceType: 'cloudflare_zero_trust_gateway_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

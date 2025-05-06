@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,23 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareLoadBalancerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
-  */
-  readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}
   */
   readonly loadBalancerId?: string;
   /**
   * (Enterprise only): A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
   */
   readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
   */
   readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
-  * Time, in seconds, until a client's session expires after being created. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are:
-  * - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
-  * - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
-  */
-  readonly sessionAffinityTtl?: number;
-  /**
-  * Steering Policy for this load balancer.
-  * - `"off"`: Use `default_pools`.
-  * - `"geo"`: Use `region_pools`/`country_pools`/`pop_pools`. For non-proxied requests, the country for `country_pools` is determined by `location_strategy`.
-  * - `"random"`: Select a pool randomly.
-  * - `"dynamic_latency"`: Use round trip time to select the closest pool in default_pools (requires pool health checks).
-  * - `"proximity"`: Use the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by `location_strategy` for non-proxied requests.
-  * - `"least_outstanding_requests"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of outstanding requests. Pools with more pending requests are weighted proportionately less relative to others.
-  * - `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
-  * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
-  * Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
-  */
-  readonly steeringPolicy?: string;
-  /**
-  * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
-  */
-  readonly ttl?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}
   */
   readonly zoneId: string;
 }
@@ -487,7 +452,7 @@ export interface DataCloudflareLoadBalancerRulesOverridesSessionAffinityAttribut
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
 }
@@ -596,52 +561,11 @@ export class DataCloudflareLoadBalancerRulesOverridesSessionAffinityAttributesOu
 }
 export interface DataCloudflareLoadBalancerRulesOverrides {
   /**
-  * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
-  */
-  readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
-  /**
   * (Enterprise only): A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
   */
   readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
-  /**
-  * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
-  */
-  readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
-  /**
-  * Time, in seconds, until a client's session expires after being created. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are:
-  * - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
-  * - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
-  */
-  readonly sessionAffinityTtl?: number;
-  /**
-  * Steering Policy for this load balancer.
-  * - `"off"`: Use `default_pools`.
-  * - `"geo"`: Use `region_pools`/`country_pools`/`pop_pools`. For non-proxied requests, the country for `country_pools` is determined by `location_strategy`.
-  * - `"random"`: Select a pool randomly.
-  * - `"dynamic_latency"`: Use round trip time to select the closest pool in default_pools (requires pool health checks).
-  * - `"proximity"`: Use the pools' latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by `location_strategy` for non-proxied requests.
-  * - `"least_outstanding_requests"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of outstanding requests. Pools with more pending requests are weighted proportionately less relative to others.
-  * - `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
-  * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
-  * Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
-  */
-  readonly steeringPolicy?: string;
-  /**
-  * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
-  */
-  readonly ttl?: number;
 }
 
 export function dataCloudflareLoadBalancerRulesOverridesToTerraform(struct?: DataCloudflareLoadBalancerRulesOverrides): any {
@@ -650,12 +574,7 @@ export function dataCloudflareLoadBalancerRulesOverridesToTerraform(struct?: Dat
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    country_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(struct!.countryPools),
     pop_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(struct!.popPools),
-    region_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(struct!.regionPools),
-    session_affinity_ttl: cdktf.numberToTerraform(struct!.sessionAffinityTtl),
-    steering_policy: cdktf.stringToTerraform(struct!.steeringPolicy),
-    ttl: cdktf.numberToTerraform(struct!.ttl),
   }
 }
 
@@ -666,41 +585,11 @@ export function dataCloudflareLoadBalancerRulesOverridesToHclTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    country_pools: {
-      value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(struct!.countryPools),
-      isBlock: false,
-      type: "map",
-      storageClassType: "stringListMap",
-    },
     pop_pools: {
       value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(struct!.popPools),
       isBlock: false,
       type: "map",
       storageClassType: "stringListMap",
-    },
-    region_pools: {
-      value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(struct!.regionPools),
-      isBlock: false,
-      type: "map",
-      storageClassType: "stringListMap",
-    },
-    session_affinity_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.sessionAffinityTtl),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    steering_policy: {
-      value: cdktf.stringToHclTerraform(struct!.steeringPolicy),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    ttl: {
-      value: cdktf.numberToHclTerraform(struct!.ttl),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
     },
   };
 
@@ -722,29 +611,9 @@ export class DataCloudflareLoadBalancerRulesOverridesOutputReference extends cdk
   public get internalValue(): DataCloudflareLoadBalancerRulesOverrides | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._countryPools !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.countryPools = this._countryPools;
-    }
     if (this._popPools !== undefined) {
       hasAnyValues = true;
       internalValueResult.popPools = this._popPools;
-    }
-    if (this._regionPools !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.regionPools = this._regionPools;
-    }
-    if (this._sessionAffinityTtl !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sessionAffinityTtl = this._sessionAffinityTtl;
-    }
-    if (this._steeringPolicy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.steeringPolicy = this._steeringPolicy;
-    }
-    if (this._ttl !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ttl = this._ttl;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -752,21 +621,11 @@ export class DataCloudflareLoadBalancerRulesOverridesOutputReference extends cdk
   public set internalValue(value: DataCloudflareLoadBalancerRulesOverrides | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._countryPools = undefined;
       this._popPools = undefined;
-      this._regionPools = undefined;
-      this._sessionAffinityTtl = undefined;
-      this._steeringPolicy = undefined;
-      this._ttl = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._countryPools = value.countryPools;
       this._popPools = value.popPools;
-      this._regionPools = value.regionPools;
-      this._sessionAffinityTtl = value.sessionAffinityTtl;
-      this._steeringPolicy = value.steeringPolicy;
-      this._ttl = value.ttl;
     }
   }
 
@@ -776,19 +635,9 @@ export class DataCloudflareLoadBalancerRulesOverridesOutputReference extends cdk
     return this._adaptiveRouting;
   }
 
-  // country_pools - computed: true, optional: true, required: false
-  private _countryPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  // country_pools - computed: true, optional: false, required: false
+  private _countryPools = new cdktf.StringListMap(this, "country_pools");
   public get countryPools() {
-    return this.interpolationForAttribute('country_pools');
-  }
-  public set countryPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
-    this._countryPools = value;
-  }
-  public resetCountryPools() {
-    this._countryPools = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get countryPoolsInput() {
     return this._countryPools;
   }
 
@@ -830,19 +679,9 @@ export class DataCloudflareLoadBalancerRulesOverridesOutputReference extends cdk
     return this._randomSteering;
   }
 
-  // region_pools - computed: true, optional: true, required: false
-  private _regionPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  // region_pools - computed: true, optional: false, required: false
+  private _regionPools = new cdktf.StringListMap(this, "region_pools");
   public get regionPools() {
-    return this.interpolationForAttribute('region_pools');
-  }
-  public set regionPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
-    this._regionPools = value;
-  }
-  public resetRegionPools() {
-    this._regionPools = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionPoolsInput() {
     return this._regionPools;
   }
 
@@ -857,52 +696,19 @@ export class DataCloudflareLoadBalancerRulesOverridesOutputReference extends cdk
     return this._sessionAffinityAttributes;
   }
 
-  // session_affinity_ttl - computed: true, optional: true, required: false
-  private _sessionAffinityTtl?: number; 
+  // session_affinity_ttl - computed: true, optional: false, required: false
   public get sessionAffinityTtl() {
     return this.getNumberAttribute('session_affinity_ttl');
   }
-  public set sessionAffinityTtl(value: number) {
-    this._sessionAffinityTtl = value;
-  }
-  public resetSessionAffinityTtl() {
-    this._sessionAffinityTtl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sessionAffinityTtlInput() {
-    return this._sessionAffinityTtl;
-  }
 
-  // steering_policy - computed: true, optional: true, required: false
-  private _steeringPolicy?: string; 
+  // steering_policy - computed: true, optional: false, required: false
   public get steeringPolicy() {
     return this.getStringAttribute('steering_policy');
   }
-  public set steeringPolicy(value: string) {
-    this._steeringPolicy = value;
-  }
-  public resetSteeringPolicy() {
-    this._steeringPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get steeringPolicyInput() {
-    return this._steeringPolicy;
-  }
 
-  // ttl - computed: true, optional: true, required: false
-  private _ttl?: number; 
+  // ttl - computed: true, optional: false, required: false
   public get ttl() {
     return this.getNumberAttribute('ttl');
-  }
-  public set ttl(value: number) {
-    this._ttl = value;
-  }
-  public resetTtl() {
-    this._ttl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ttlInput() {
-    return this._ttl;
   }
 }
 export interface DataCloudflareLoadBalancerRules {
@@ -1016,7 +822,7 @@ export interface DataCloudflareLoadBalancerSessionAffinityAttributes {
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
 }
@@ -1125,7 +931,7 @@ export class DataCloudflareLoadBalancerSessionAffinityAttributesOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer cloudflare_load_balancer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer cloudflare_load_balancer}
 */
 export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
 
@@ -1141,7 +947,7 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareLoadBalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareLoadBalancer to import
-  * @param importFromId The id of the existing DataCloudflareLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareLoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareLoadBalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1153,7 +959,7 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1164,7 +970,7 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1175,13 +981,9 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._countryPools = config.countryPools;
     this._loadBalancerId = config.loadBalancerId;
     this._popPools = config.popPools;
     this._regionPools = config.regionPools;
-    this._sessionAffinityTtl = config.sessionAffinityTtl;
-    this._steeringPolicy = config.steeringPolicy;
-    this._ttl = config.ttl;
     this._zoneId = config.zoneId;
   }
 
@@ -1195,19 +997,9 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
     return this._adaptiveRouting;
   }
 
-  // country_pools - computed: true, optional: true, required: false
-  private _countryPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  // country_pools - computed: true, optional: false, required: false
+  private _countryPools = new cdktf.StringListMap(this, "country_pools");
   public get countryPools() {
-    return this.interpolationForAttribute('country_pools');
-  }
-  public set countryPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
-    this._countryPools = value;
-  }
-  public resetCountryPools() {
-    this._countryPools = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get countryPoolsInput() {
     return this._countryPools;
   }
 
@@ -1338,52 +1130,19 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
     return this._sessionAffinityAttributes;
   }
 
-  // session_affinity_ttl - computed: true, optional: true, required: false
-  private _sessionAffinityTtl?: number; 
+  // session_affinity_ttl - computed: true, optional: false, required: false
   public get sessionAffinityTtl() {
     return this.getNumberAttribute('session_affinity_ttl');
   }
-  public set sessionAffinityTtl(value: number) {
-    this._sessionAffinityTtl = value;
-  }
-  public resetSessionAffinityTtl() {
-    this._sessionAffinityTtl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sessionAffinityTtlInput() {
-    return this._sessionAffinityTtl;
-  }
 
-  // steering_policy - computed: true, optional: true, required: false
-  private _steeringPolicy?: string; 
+  // steering_policy - computed: true, optional: false, required: false
   public get steeringPolicy() {
     return this.getStringAttribute('steering_policy');
   }
-  public set steeringPolicy(value: string) {
-    this._steeringPolicy = value;
-  }
-  public resetSteeringPolicy() {
-    this._steeringPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get steeringPolicyInput() {
-    return this._steeringPolicy;
-  }
 
-  // ttl - computed: true, optional: true, required: false
-  private _ttl?: number; 
+  // ttl - computed: true, optional: false, required: false
   public get ttl() {
     return this.getNumberAttribute('ttl');
-  }
-  public set ttl(value: number) {
-    this._ttl = value;
-  }
-  public resetTtl() {
-    this._ttl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ttlInput() {
-    return this._ttl;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -1399,36 +1158,21 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
     return this._zoneId;
   }
 
-  // zone_name - computed: true, optional: false, required: false
-  public get zoneName() {
-    return this.getStringAttribute('zone_name');
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      country_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(this._countryPools),
       load_balancer_id: cdktf.stringToTerraform(this._loadBalancerId),
       pop_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(this._popPools),
       region_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(this._regionPools),
-      session_affinity_ttl: cdktf.numberToTerraform(this._sessionAffinityTtl),
-      steering_policy: cdktf.stringToTerraform(this._steeringPolicy),
-      ttl: cdktf.numberToTerraform(this._ttl),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      country_pools: {
-        value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(this._countryPools),
-        isBlock: false,
-        type: "map",
-        storageClassType: "stringListMap",
-      },
       load_balancer_id: {
         value: cdktf.stringToHclTerraform(this._loadBalancerId),
         isBlock: false,
@@ -1446,24 +1190,6 @@ export class DataCloudflareLoadBalancer extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "map",
         storageClassType: "stringListMap",
-      },
-      session_affinity_ttl: {
-        value: cdktf.numberToHclTerraform(this._sessionAffinityTtl),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
-      steering_policy: {
-        value: cdktf.stringToHclTerraform(this._steeringPolicy),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
       zone_id: {
         value: cdktf.stringToHclTerraform(this._zoneId),

@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkersRoute <a name="DataCloudflareWorkersRoute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route cloudflare_workers_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route cloudflare_workers_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute.resetRouteId">resetRouteId</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetRouteId` <a name="resetRouteId" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute.resetRouteId"></a>
+
+```typescript
+public resetRouteId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareWorkersRoute
 
 The id of the existing DataCloudflareWorkersRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,8 +643,8 @@ const dataCloudflareWorkersRouteConfig: dataCloudflareWorkersRoute.DataCloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.routeId">routeId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.routeId">routeId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -711,20 +718,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `routeId`<sup>Required</sup> <a name="routeId" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.routeId"></a>
-
-```typescript
-public readonly routeId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route#route_id DataCloudflareWorkersRoute#route_id}
-
----
-
 ##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.zoneId"></a>
 
 ```typescript
@@ -735,7 +728,21 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route#zone_id DataCloudflareWorkersRoute#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route#zone_id DataCloudflareWorkersRoute#zone_id}
+
+---
+
+##### `routeId`<sup>Optional</sup> <a name="routeId" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig.property.routeId"></a>
+
+```typescript
+public readonly routeId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route#route_id DataCloudflareWorkersRoute#route_id}
 
 ---
 

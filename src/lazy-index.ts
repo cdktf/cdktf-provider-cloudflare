@@ -136,7 +136,6 @@ Object.defineProperty(exports, 'workersCronTrigger', { get: function () { return
 Object.defineProperty(exports, 'workersCustomDomain', { get: function () { return require('./workers-custom-domain'); } });
 Object.defineProperty(exports, 'workersDeployment', { get: function () { return require('./workers-deployment'); } });
 Object.defineProperty(exports, 'workersForPlatformsDispatchNamespace', { get: function () { return require('./workers-for-platforms-dispatch-namespace'); } });
-Object.defineProperty(exports, 'workersForPlatformsScriptSecret', { get: function () { return require('./workers-for-platforms-script-secret'); } });
 Object.defineProperty(exports, 'workersKv', { get: function () { return require('./workers-kv'); } });
 Object.defineProperty(exports, 'workersKvNamespace', { get: function () { return require('./workers-kv-namespace'); } });
 Object.defineProperty(exports, 'workersRoute', { get: function () { return require('./workers-route'); } });
@@ -162,7 +161,6 @@ Object.defineProperty(exports, 'zeroTrustDeviceDefaultProfileLocalDomainFallback
 Object.defineProperty(exports, 'zeroTrustDeviceManagedNetworks', { get: function () { return require('./zero-trust-device-managed-networks'); } });
 Object.defineProperty(exports, 'zeroTrustDevicePostureIntegration', { get: function () { return require('./zero-trust-device-posture-integration'); } });
 Object.defineProperty(exports, 'zeroTrustDevicePostureRule', { get: function () { return require('./zero-trust-device-posture-rule'); } });
-Object.defineProperty(exports, 'zeroTrustDexTest', { get: function () { return require('./zero-trust-dex-test'); } });
 Object.defineProperty(exports, 'zeroTrustDlpCustomProfile', { get: function () { return require('./zero-trust-dlp-custom-profile'); } });
 Object.defineProperty(exports, 'zeroTrustDlpDataset', { get: function () { return require('./zero-trust-dlp-dataset'); } });
 Object.defineProperty(exports, 'zeroTrustDlpEntry', { get: function () { return require('./zero-trust-dlp-entry'); } });
@@ -298,8 +296,6 @@ Object.defineProperty(exports, 'dataCloudflareLeakedCredentialCheck', { get: fun
 Object.defineProperty(exports, 'dataCloudflareLeakedCredentialCheckRules', { get: function () { return require('./data-cloudflare-leaked-credential-check-rules'); } });
 Object.defineProperty(exports, 'dataCloudflareList', { get: function () { return require('./data-cloudflare-list'); } });
 Object.defineProperty(exports, 'dataCloudflareListItem', { get: function () { return require('./data-cloudflare-list-item'); } });
-Object.defineProperty(exports, 'dataCloudflareListItems', { get: function () { return require('./data-cloudflare-list-items'); } });
-Object.defineProperty(exports, 'dataCloudflareLists', { get: function () { return require('./data-cloudflare-lists'); } });
 Object.defineProperty(exports, 'dataCloudflareLoadBalancer', { get: function () { return require('./data-cloudflare-load-balancer'); } });
 Object.defineProperty(exports, 'dataCloudflareLoadBalancerMonitor', { get: function () { return require('./data-cloudflare-load-balancer-monitor'); } });
 Object.defineProperty(exports, 'dataCloudflareLoadBalancerMonitors', { get: function () { return require('./data-cloudflare-load-balancer-monitors'); } });
@@ -410,8 +406,6 @@ Object.defineProperty(exports, 'dataCloudflareWorkersCustomDomains', { get: func
 Object.defineProperty(exports, 'dataCloudflareWorkersDeployment', { get: function () { return require('./data-cloudflare-workers-deployment'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsDispatchNamespace', { get: function () { return require('./data-cloudflare-workers-for-platforms-dispatch-namespace'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsDispatchNamespaces', { get: function () { return require('./data-cloudflare-workers-for-platforms-dispatch-namespaces'); } });
-Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsScriptSecret', { get: function () { return require('./data-cloudflare-workers-for-platforms-script-secret'); } });
-Object.defineProperty(exports, 'dataCloudflareWorkersForPlatformsScriptSecrets', { get: function () { return require('./data-cloudflare-workers-for-platforms-script-secrets'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersKv', { get: function () { return require('./data-cloudflare-workers-kv'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersKvNamespace', { get: function () { return require('./data-cloudflare-workers-kv-namespace'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersKvNamespaces', { get: function () { return require('./data-cloudflare-workers-kv-namespaces'); } });
@@ -454,8 +448,6 @@ Object.defineProperty(exports, 'dataCloudflareZeroTrustDevicePostureIntegration'
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDevicePostureIntegrations', { get: function () { return require('./data-cloudflare-zero-trust-device-posture-integrations'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDevicePostureRule', { get: function () { return require('./data-cloudflare-zero-trust-device-posture-rule'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDevicePostureRules', { get: function () { return require('./data-cloudflare-zero-trust-device-posture-rules'); } });
-Object.defineProperty(exports, 'dataCloudflareZeroTrustDexTest', { get: function () { return require('./data-cloudflare-zero-trust-dex-test'); } });
-Object.defineProperty(exports, 'dataCloudflareZeroTrustDexTests', { get: function () { return require('./data-cloudflare-zero-trust-dex-tests'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDlpCustomProfile', { get: function () { return require('./data-cloudflare-zero-trust-dlp-custom-profile'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDlpDataset', { get: function () { return require('./data-cloudflare-zero-trust-dlp-dataset'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustDlpDatasets', { get: function () { return require('./data-cloudflare-zero-trust-dlp-datasets'); } });

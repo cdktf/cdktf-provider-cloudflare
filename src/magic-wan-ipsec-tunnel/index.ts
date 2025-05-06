@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,59 +15,53 @@ export interface MagicWanIpsecTunnelConfig extends cdktf.TerraformMetaArguments 
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#account_id MagicWanIpsecTunnel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#account_id MagicWanIpsecTunnel#account_id}
   */
   readonly accountId: string;
   /**
   * The IP address assigned to the Cloudflare side of the IPsec tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#cloudflare_endpoint MagicWanIpsecTunnel#cloudflare_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#cloudflare_endpoint MagicWanIpsecTunnel#cloudflare_endpoint}
   */
   readonly cloudflareEndpoint: string;
   /**
   * The IP address assigned to the customer side of the IPsec tunnel. Not required, but must be set for proactive traceroutes to work.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#customer_endpoint MagicWanIpsecTunnel#customer_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#customer_endpoint MagicWanIpsecTunnel#customer_endpoint}
   */
   readonly customerEndpoint?: string;
   /**
   * An optional description forthe IPsec tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#description MagicWanIpsecTunnel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#description MagicWanIpsecTunnel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#health_check MagicWanIpsecTunnel#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#health_check MagicWanIpsecTunnel#health_check}
   */
   readonly healthCheck?: MagicWanIpsecTunnelHealthCheck;
   /**
   * A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#interface_address MagicWanIpsecTunnel#interface_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#interface_address MagicWanIpsecTunnel#interface_address}
   */
   readonly interfaceAddress: string;
   /**
-  * Identifier
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#ipsec_tunnel_id MagicWanIpsecTunnel#ipsec_tunnel_id}
-  */
-  readonly ipsecTunnelId?: string;
-  /**
   * The name of the IPsec tunnel. The name cannot share a name with other tunnels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#name MagicWanIpsecTunnel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#name MagicWanIpsecTunnel#name}
   */
   readonly name: string;
   /**
   * A randomly generated or provided string for use in the IPsec tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#psk MagicWanIpsecTunnel#psk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#psk MagicWanIpsecTunnel#psk}
   */
   readonly psk?: string;
   /**
   * If `true`, then IPsec replay protection will be supported in the Cloudflare-to-customer direction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#replay_protection MagicWanIpsecTunnel#replay_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#replay_protection MagicWanIpsecTunnel#replay_protection}
   */
   readonly replayProtection?: boolean | cdktf.IResolvable;
 }
@@ -75,7 +69,7 @@ export interface MagicWanIpsecTunnelHealthCheckTarget {
   /**
   * The saved health check target. Setting the value to the empty string indicates that the calculated default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#saved MagicWanIpsecTunnel#saved}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#saved MagicWanIpsecTunnel#saved}
   */
   readonly saved?: string;
 }
@@ -177,33 +171,33 @@ export interface MagicWanIpsecTunnelHealthCheck {
   * The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
   * Available values: "unidirectional", "bidirectional".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#direction MagicWanIpsecTunnel#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#direction MagicWanIpsecTunnel#direction}
   */
   readonly direction?: string;
   /**
   * Determines whether to run healthchecks for a tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#enabled MagicWanIpsecTunnel#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#enabled MagicWanIpsecTunnel#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * How frequent the health check is run. The default value is `mid`.
   * Available values: "low", "mid", "high".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#rate MagicWanIpsecTunnel#rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#rate MagicWanIpsecTunnel#rate}
   */
   readonly rate?: string;
   /**
   * The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to `customer_gre_endpoint address`. This field is ignored for bidirectional healthchecks as the interface_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#target MagicWanIpsecTunnel#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#target MagicWanIpsecTunnel#target}
   */
   readonly target?: MagicWanIpsecTunnelHealthCheckTarget;
   /**
   * The type of healthcheck to run, reply or request. The default value is `reply`.
   * Available values: "reply", "request".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#type MagicWanIpsecTunnel#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#type MagicWanIpsecTunnel#type}
   */
   readonly type?: string;
 }
@@ -710,326 +704,6 @@ export class MagicWanIpsecTunnelIpsecTunnelOutputReference extends cdktf.Complex
     return this.getBooleanAttribute('replay_protection');
   }
 }
-export interface MagicWanIpsecTunnelIpsecTunnelsHealthCheckTarget {
-}
-
-export function magicWanIpsecTunnelIpsecTunnelsHealthCheckTargetToTerraform(struct?: MagicWanIpsecTunnelIpsecTunnelsHealthCheckTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function magicWanIpsecTunnelIpsecTunnelsHealthCheckTargetToHclTerraform(struct?: MagicWanIpsecTunnelIpsecTunnelsHealthCheckTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class MagicWanIpsecTunnelIpsecTunnelsHealthCheckTargetOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): MagicWanIpsecTunnelIpsecTunnelsHealthCheckTarget | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MagicWanIpsecTunnelIpsecTunnelsHealthCheckTarget | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // effective - computed: true, optional: false, required: false
-  public get effective() {
-    return this.getStringAttribute('effective');
-  }
-
-  // saved - computed: true, optional: false, required: false
-  public get saved() {
-    return this.getStringAttribute('saved');
-  }
-}
-export interface MagicWanIpsecTunnelIpsecTunnelsHealthCheck {
-}
-
-export function magicWanIpsecTunnelIpsecTunnelsHealthCheckToTerraform(struct?: MagicWanIpsecTunnelIpsecTunnelsHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function magicWanIpsecTunnelIpsecTunnelsHealthCheckToHclTerraform(struct?: MagicWanIpsecTunnelIpsecTunnelsHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class MagicWanIpsecTunnelIpsecTunnelsHealthCheckOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): MagicWanIpsecTunnelIpsecTunnelsHealthCheck | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MagicWanIpsecTunnelIpsecTunnelsHealthCheck | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // direction - computed: true, optional: false, required: false
-  public get direction() {
-    return this.getStringAttribute('direction');
-  }
-
-  // enabled - computed: true, optional: false, required: false
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-
-  // rate - computed: true, optional: false, required: false
-  public get rate() {
-    return this.getStringAttribute('rate');
-  }
-
-  // target - computed: true, optional: false, required: false
-  private _target = new MagicWanIpsecTunnelIpsecTunnelsHealthCheckTargetOutputReference(this, "target");
-  public get target() {
-    return this._target;
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-}
-export interface MagicWanIpsecTunnelIpsecTunnelsPskMetadata {
-}
-
-export function magicWanIpsecTunnelIpsecTunnelsPskMetadataToTerraform(struct?: MagicWanIpsecTunnelIpsecTunnelsPskMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function magicWanIpsecTunnelIpsecTunnelsPskMetadataToHclTerraform(struct?: MagicWanIpsecTunnelIpsecTunnelsPskMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class MagicWanIpsecTunnelIpsecTunnelsPskMetadataOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): MagicWanIpsecTunnelIpsecTunnelsPskMetadata | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MagicWanIpsecTunnelIpsecTunnelsPskMetadata | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // last_generated_on - computed: true, optional: false, required: false
-  public get lastGeneratedOn() {
-    return this.getStringAttribute('last_generated_on');
-  }
-}
-export interface MagicWanIpsecTunnelIpsecTunnels {
-}
-
-export function magicWanIpsecTunnelIpsecTunnelsToTerraform(struct?: MagicWanIpsecTunnelIpsecTunnels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function magicWanIpsecTunnelIpsecTunnelsToHclTerraform(struct?: MagicWanIpsecTunnelIpsecTunnels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class MagicWanIpsecTunnelIpsecTunnelsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): MagicWanIpsecTunnelIpsecTunnels | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MagicWanIpsecTunnelIpsecTunnels | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // allow_null_cipher - computed: true, optional: false, required: false
-  public get allowNullCipher() {
-    return this.getBooleanAttribute('allow_null_cipher');
-  }
-
-  // cloudflare_endpoint - computed: true, optional: false, required: false
-  public get cloudflareEndpoint() {
-    return this.getStringAttribute('cloudflare_endpoint');
-  }
-
-  // created_on - computed: true, optional: false, required: false
-  public get createdOn() {
-    return this.getStringAttribute('created_on');
-  }
-
-  // customer_endpoint - computed: true, optional: false, required: false
-  public get customerEndpoint() {
-    return this.getStringAttribute('customer_endpoint');
-  }
-
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-
-  // health_check - computed: true, optional: false, required: false
-  private _healthCheck = new MagicWanIpsecTunnelIpsecTunnelsHealthCheckOutputReference(this, "health_check");
-  public get healthCheck() {
-    return this._healthCheck;
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-
-  // interface_address - computed: true, optional: false, required: false
-  public get interfaceAddress() {
-    return this.getStringAttribute('interface_address');
-  }
-
-  // modified_on - computed: true, optional: false, required: false
-  public get modifiedOn() {
-    return this.getStringAttribute('modified_on');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // psk_metadata - computed: true, optional: false, required: false
-  private _pskMetadata = new MagicWanIpsecTunnelIpsecTunnelsPskMetadataOutputReference(this, "psk_metadata");
-  public get pskMetadata() {
-    return this._pskMetadata;
-  }
-
-  // replay_protection - computed: true, optional: false, required: false
-  public get replayProtection() {
-    return this.getBooleanAttribute('replay_protection');
-  }
-}
-
-export class MagicWanIpsecTunnelIpsecTunnelsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MagicWanIpsecTunnelIpsecTunnelsOutputReference {
-    return new MagicWanIpsecTunnelIpsecTunnelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface MagicWanIpsecTunnelModifiedIpsecTunnelHealthCheckTarget {
 }
 
@@ -1329,9 +1003,63 @@ export class MagicWanIpsecTunnelModifiedIpsecTunnelOutputReference extends cdktf
     return this.getBooleanAttribute('replay_protection');
   }
 }
+export interface MagicWanIpsecTunnelPskMetadata {
+}
+
+export function magicWanIpsecTunnelPskMetadataToTerraform(struct?: MagicWanIpsecTunnelPskMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function magicWanIpsecTunnelPskMetadataToHclTerraform(struct?: MagicWanIpsecTunnelPskMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class MagicWanIpsecTunnelPskMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): MagicWanIpsecTunnelPskMetadata | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MagicWanIpsecTunnelPskMetadata | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // last_generated_on - computed: true, optional: false, required: false
+  public get lastGeneratedOn() {
+    return this.getStringAttribute('last_generated_on');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}
 */
 export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
 
@@ -1347,7 +1075,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MagicWanIpsecTunnel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicWanIpsecTunnel to import
-  * @param importFromId The id of the existing MagicWanIpsecTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicWanIpsecTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicWanIpsecTunnel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1359,7 +1087,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1370,7 +1098,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_wan_ipsec_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1387,7 +1115,6 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
     this._description = config.description;
     this._healthCheck.internalValue = config.healthCheck;
     this._interfaceAddress = config.interfaceAddress;
-    this._ipsecTunnelId = config.ipsecTunnelId;
     this._name = config.name;
     this._psk = config.psk;
     this._replayProtection = config.replayProtection;
@@ -1410,6 +1137,11 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
     return this._accountId;
   }
 
+  // allow_null_cipher - computed: true, optional: false, required: false
+  public get allowNullCipher() {
+    return this.getBooleanAttribute('allow_null_cipher');
+  }
+
   // cloudflare_endpoint - computed: false, optional: false, required: true
   private _cloudflareEndpoint?: string; 
   public get cloudflareEndpoint() {
@@ -1421,6 +1153,11 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cloudflareEndpointInput() {
     return this._cloudflareEndpoint;
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
   }
 
   // customer_endpoint - computed: false, optional: true, required: false
@@ -1471,6 +1208,11 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
     return this._healthCheck.internalValue;
   }
 
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
   // interface_address - computed: false, optional: false, required: true
   private _interfaceAddress?: string; 
   public get interfaceAddress() {
@@ -1490,28 +1232,6 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
     return this._ipsecTunnel;
   }
 
-  // ipsec_tunnel_id - computed: false, optional: true, required: false
-  private _ipsecTunnelId?: string; 
-  public get ipsecTunnelId() {
-    return this.getStringAttribute('ipsec_tunnel_id');
-  }
-  public set ipsecTunnelId(value: string) {
-    this._ipsecTunnelId = value;
-  }
-  public resetIpsecTunnelId() {
-    this._ipsecTunnelId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipsecTunnelIdInput() {
-    return this._ipsecTunnelId;
-  }
-
-  // ipsec_tunnels - computed: true, optional: false, required: false
-  private _ipsecTunnels = new MagicWanIpsecTunnelIpsecTunnelsList(this, "ipsec_tunnels", false);
-  public get ipsecTunnels() {
-    return this._ipsecTunnels;
-  }
-
   // modified - computed: true, optional: false, required: false
   public get modified() {
     return this.getBooleanAttribute('modified');
@@ -1521,6 +1241,11 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
   private _modifiedIpsecTunnel = new MagicWanIpsecTunnelModifiedIpsecTunnelOutputReference(this, "modified_ipsec_tunnel");
   public get modifiedIpsecTunnel() {
     return this._modifiedIpsecTunnel;
+  }
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
 
   // name - computed: false, optional: false, required: true
@@ -1552,6 +1277,12 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
     return this._psk;
   }
 
+  // psk_metadata - computed: true, optional: false, required: false
+  private _pskMetadata = new MagicWanIpsecTunnelPskMetadataOutputReference(this, "psk_metadata");
+  public get pskMetadata() {
+    return this._pskMetadata;
+  }
+
   // replay_protection - computed: true, optional: true, required: false
   private _replayProtection?: boolean | cdktf.IResolvable; 
   public get replayProtection() {
@@ -1580,7 +1311,6 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       health_check: magicWanIpsecTunnelHealthCheckToTerraform(this._healthCheck.internalValue),
       interface_address: cdktf.stringToTerraform(this._interfaceAddress),
-      ipsec_tunnel_id: cdktf.stringToTerraform(this._ipsecTunnelId),
       name: cdktf.stringToTerraform(this._name),
       psk: cdktf.stringToTerraform(this._psk),
       replay_protection: cdktf.booleanToTerraform(this._replayProtection),
@@ -1621,12 +1351,6 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
       },
       interface_address: {
         value: cdktf.stringToHclTerraform(this._interfaceAddress),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      ipsec_tunnel_id: {
-        value: cdktf.stringToHclTerraform(this._ipsecTunnelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

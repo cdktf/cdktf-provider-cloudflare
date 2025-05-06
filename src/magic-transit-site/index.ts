@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface MagicTransitSiteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
   */
   readonly accountId: string;
   /**
   * Magic Connector identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
   */
   readonly connectorId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#description MagicTransitSite#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#description MagicTransitSite#description}
   */
   readonly description?: string;
   /**
   * Site high availability mode. If set to true, the site can have two connectors and runs in high availability mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
   */
   readonly haMode?: boolean | cdktf.IResolvable;
   /**
   * Location of site in latitude and longitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
   */
   readonly location?: MagicTransitSiteLocation;
   /**
   * The name of the site.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
   */
   readonly name: string;
   /**
   * Magic Connector identifier tag. Used when high availability mode is on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
   */
   readonly secondaryConnectorId?: string;
 }
@@ -57,13 +57,13 @@ export interface MagicTransitSiteLocation {
   /**
   * Latitude
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#lat MagicTransitSite#lat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#lat MagicTransitSite#lat}
   */
   readonly lat?: string;
   /**
   * Longitude
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#lon MagicTransitSite#lon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#lon MagicTransitSite#lon}
   */
   readonly lon?: string;
 }
@@ -152,7 +152,7 @@ export class MagicTransitSiteLocationOutputReference extends cdktf.ComplexObject
     }
   }
 
-  // lat - computed: true, optional: true, required: false
+  // lat - computed: false, optional: true, required: false
   private _lat?: string; 
   public get lat() {
     return this.getStringAttribute('lat');
@@ -168,7 +168,7 @@ export class MagicTransitSiteLocationOutputReference extends cdktf.ComplexObject
     return this._lat;
   }
 
-  // lon - computed: true, optional: true, required: false
+  // lon - computed: false, optional: true, required: false
   private _lon?: string; 
   public get lon() {
     return this.getStringAttribute('lon');
@@ -186,7 +186,7 @@ export class MagicTransitSiteLocationOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}
 */
 export class MagicTransitSite extends cdktf.TerraformResource {
 
@@ -202,7 +202,7 @@ export class MagicTransitSite extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MagicTransitSite resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicTransitSite to import
-  * @param importFromId The id of the existing MagicTransitSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicTransitSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicTransitSite to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -214,7 +214,7 @@ export class MagicTransitSite extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site cloudflare_magic_transit_site} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_transit_site cloudflare_magic_transit_site} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +225,7 @@ export class MagicTransitSite extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_transit_site',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -315,7 +315,7 @@ export class MagicTransitSite extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // location - computed: true, optional: true, required: false
+  // location - computed: false, optional: true, required: false
   private _location = new MagicTransitSiteLocationOutputReference(this, "location");
   public get location() {
     return this._location;

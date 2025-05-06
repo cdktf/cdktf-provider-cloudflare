@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,26 +16,26 @@ export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.Ter
   * The direction used to sort returned connections.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#direction DataCloudflarePageShieldConnectionsList#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#direction DataCloudflarePageShieldConnectionsList#direction}
   */
   readonly direction?: string;
   /**
   * When true, excludes connections seen in a `/cdn-cgi` path from the returned connections. The default value is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#exclude_cdn_cgi DataCloudflarePageShieldConnectionsList#exclude_cdn_cgi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#exclude_cdn_cgi DataCloudflarePageShieldConnectionsList#exclude_cdn_cgi}
   */
   readonly excludeCdnCgi?: boolean | cdktf.IResolvable;
   /**
   * Excludes connections whose URL contains one of the URL-encoded URLs separated by commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#exclude_urls DataCloudflarePageShieldConnectionsList#exclude_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#exclude_urls DataCloudflarePageShieldConnectionsList#exclude_urls}
   */
   readonly excludeUrls?: string;
   /**
   * Export the list of connections as a file.
   * Available values: "csv".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#export DataCloudflarePageShieldConnectionsList#export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#export DataCloudflarePageShieldConnectionsList#export}
   */
   readonly export?: string;
   /**
@@ -44,20 +44,20 @@ export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.Ter
   * Wildcards are supported at the start and end of each hostname to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#hosts DataCloudflarePageShieldConnectionsList#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#hosts DataCloudflarePageShieldConnectionsList#hosts}
   */
   readonly hosts?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#max_items DataCloudflarePageShieldConnectionsList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#max_items DataCloudflarePageShieldConnectionsList#max_items}
   */
   readonly maxItems?: number;
   /**
   * The field used to sort returned connections.
   * Available values: "first_seen_at", "last_seen_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#order_by DataCloudflarePageShieldConnectionsList#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#order_by DataCloudflarePageShieldConnectionsList#order_by}
   */
   readonly orderBy?: string;
   /**
@@ -67,7 +67,7 @@ export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.Ter
   * with the applied filters in a single page. This feature is best-effort and it may only work for zones with
   * a low number of connections
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#page DataCloudflarePageShieldConnectionsList#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#page DataCloudflarePageShieldConnectionsList#page}
   */
   readonly page?: string;
   /**
@@ -76,37 +76,37 @@ export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.Ter
   * Wildcards are supported at the start and end of each page URL to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#page_url DataCloudflarePageShieldConnectionsList#page_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#page_url DataCloudflarePageShieldConnectionsList#page_url}
   */
   readonly pageUrl?: string;
   /**
   * The number of results per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#per_page DataCloudflarePageShieldConnectionsList#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#per_page DataCloudflarePageShieldConnectionsList#per_page}
   */
   readonly perPage?: number;
   /**
   * When true, malicious connections appear first in the returned connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#prioritize_malicious DataCloudflarePageShieldConnectionsList#prioritize_malicious}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#prioritize_malicious DataCloudflarePageShieldConnectionsList#prioritize_malicious}
   */
   readonly prioritizeMalicious?: boolean | cdktf.IResolvable;
   /**
   * Filters the returned connections using a comma-separated list of connection statuses. Accepted values: `active`, `infrequent`, and `inactive`. The default value is `active`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#status DataCloudflarePageShieldConnectionsList#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#status DataCloudflarePageShieldConnectionsList#status}
   */
   readonly status?: string;
   /**
   * Includes connections whose URL contain one or more URL-encoded URLs separated by commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#urls DataCloudflarePageShieldConnectionsList#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#urls DataCloudflarePageShieldConnectionsList#urls}
   */
   readonly urls?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#zone_id DataCloudflarePageShieldConnectionsList#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#zone_id DataCloudflarePageShieldConnectionsList#zone_id}
   */
   readonly zoneId: string;
 }
@@ -247,7 +247,7 @@ export class DataCloudflarePageShieldConnectionsListResultList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}
 */
 export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformDataSource {
 
@@ -263,7 +263,7 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataCloudflarePageShieldConnectionsList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePageShieldConnectionsList to import
-  * @param importFromId The id of the existing DataCloudflarePageShieldConnectionsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePageShieldConnectionsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePageShieldConnectionsList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -275,7 +275,7 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -286,7 +286,7 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
       terraformResourceType: 'cloudflare_page_shield_connections_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

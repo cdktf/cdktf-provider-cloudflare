@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/tiered_cache
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/tiered_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,19 +16,19 @@ export interface TieredCacheConfig extends cdktf.TerraformMetaArguments {
   * Enable or disable the Smart Tiered Cache
   * Available values: "on", "off".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/tiered_cache#value TieredCache#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/tiered_cache#value TieredCache#value}
   */
   readonly value: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/tiered_cache cloudflare_tiered_cache}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/tiered_cache cloudflare_tiered_cache}
 */
 export class TieredCache extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class TieredCache extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TieredCache resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TieredCache to import
-  * @param importFromId The id of the existing TieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TieredCache to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +56,7 @@ export class TieredCache extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class TieredCache extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_tiered_cache',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

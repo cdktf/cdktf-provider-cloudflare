@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,15 @@ export interface DataCloudflareLoadBalancerPoolConfig extends cdktf.TerraformMet
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool#account_id DataCloudflareLoadBalancerPool#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool#account_id DataCloudflareLoadBalancerPool#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool#filter DataCloudflareLoadBalancerPool#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool#filter DataCloudflareLoadBalancerPool#filter}
   */
   readonly filter?: DataCloudflareLoadBalancerPoolFilter;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool#pool_id DataCloudflareLoadBalancerPool#pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool#pool_id DataCloudflareLoadBalancerPool#pool_id}
   */
   readonly poolId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareLoadBalancerPoolFilter {
   /**
   * The ID of the Monitor to use for checking the health of origins within this pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool#monitor DataCloudflareLoadBalancerPool#monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool#monitor DataCloudflareLoadBalancerPool#monitor}
   */
   readonly monitor?: string;
 }
@@ -556,6 +556,11 @@ export class DataCloudflareLoadBalancerPoolOriginsOutputReference extends cdktf.
     return this.getStringAttribute('name');
   }
 
+  // port - computed: true, optional: false, required: false
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+
   // virtual_network_id - computed: true, optional: false, required: false
   public get virtualNetworkId() {
     return this.getStringAttribute('virtual_network_id');
@@ -587,7 +592,7 @@ export class DataCloudflareLoadBalancerPoolOriginsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool}
 */
 export class DataCloudflareLoadBalancerPool extends cdktf.TerraformDataSource {
 
@@ -603,7 +608,7 @@ export class DataCloudflareLoadBalancerPool extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareLoadBalancerPool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareLoadBalancerPool to import
-  * @param importFromId The id of the existing DataCloudflareLoadBalancerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareLoadBalancerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareLoadBalancerPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -615,7 +620,7 @@ export class DataCloudflareLoadBalancerPool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -626,7 +631,7 @@ export class DataCloudflareLoadBalancerPool extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_load_balancer_pool',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

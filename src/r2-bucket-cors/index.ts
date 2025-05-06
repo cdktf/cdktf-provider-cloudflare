@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface R2BucketCorsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Account ID
+  * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#account_id R2BucketCors#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#account_id R2BucketCors#account_id}
   */
   readonly accountId: string;
   /**
-  * Name of the bucket
+  * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#bucket_name R2BucketCors#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#bucket_name R2BucketCors#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#jurisdiction R2BucketCors#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#jurisdiction R2BucketCors#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#rules R2BucketCors#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#rules R2BucketCors#rules}
   */
   readonly rules?: R2BucketCorsRules[] | cdktf.IResolvable;
 }
@@ -39,24 +39,24 @@ export interface R2BucketCorsRulesAllowed {
   /**
   * Specifies the value for the Access-Control-Allow-Headers header R2 sets when requesting objects in this bucket from a browser. Cross-origin requests that include custom headers (e.g. x-user-id) should specify these headers as AllowedHeaders.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#headers R2BucketCors#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#headers R2BucketCors#headers}
   */
   readonly headers?: string[];
   /**
   * Specifies the value for the Access-Control-Allow-Methods header R2 sets when requesting objects in a bucket from a browser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#methods R2BucketCors#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#methods R2BucketCors#methods}
   */
   readonly methods: string[];
   /**
   * Specifies the value for the Access-Control-Allow-Origin header R2 sets when requesting objects in a bucket from a browser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#origins R2BucketCors#origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#origins R2BucketCors#origins}
   */
   readonly origins: string[];
 }
 
-export function r2BucketCorsRulesAllowedToTerraform(struct?: R2BucketCorsRulesAllowed): any {
+export function r2BucketCorsRulesAllowedToTerraform(struct?: R2BucketCorsRulesAllowed | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -69,7 +69,7 @@ export function r2BucketCorsRulesAllowedToTerraform(struct?: R2BucketCorsRulesAl
 }
 
 
-export function r2BucketCorsRulesAllowedToHclTerraform(struct?: R2BucketCorsRulesAllowed): any {
+export function r2BucketCorsRulesAllowedToHclTerraform(struct?: R2BucketCorsRulesAllowed | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -101,6 +101,7 @@ export function r2BucketCorsRulesAllowedToHclTerraform(struct?: R2BucketCorsRule
 
 export class R2BucketCorsRulesAllowedOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,7 +111,10 @@ export class R2BucketCorsRulesAllowedOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): R2BucketCorsRulesAllowed | undefined {
+  public get internalValue(): R2BucketCorsRulesAllowed | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._headers !== undefined) {
@@ -128,22 +132,28 @@ export class R2BucketCorsRulesAllowedOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: R2BucketCorsRulesAllowed | undefined) {
+  public set internalValue(value: R2BucketCorsRulesAllowed | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._headers = undefined;
       this._methods = undefined;
       this._origins = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._headers = value.headers;
       this._methods = value.methods;
       this._origins = value.origins;
     }
   }
 
-  // headers - computed: true, optional: true, required: false
+  // headers - computed: false, optional: true, required: false
   private _headers?: string[]; 
   public get headers() {
     return this.getListAttribute('headers');
@@ -159,7 +169,7 @@ export class R2BucketCorsRulesAllowedOutputReference extends cdktf.ComplexObject
     return this._headers;
   }
 
-  // methods - computed: true, optional: false, required: true
+  // methods - computed: false, optional: false, required: true
   private _methods?: string[]; 
   public get methods() {
     return this.getListAttribute('methods');
@@ -172,7 +182,7 @@ export class R2BucketCorsRulesAllowedOutputReference extends cdktf.ComplexObject
     return this._methods;
   }
 
-  // origins - computed: true, optional: false, required: true
+  // origins - computed: false, optional: false, required: true
   private _origins?: string[]; 
   public get origins() {
     return this.getListAttribute('origins');
@@ -189,19 +199,19 @@ export interface R2BucketCorsRules {
   /**
   * Object specifying allowed origins, methods and headers for this CORS rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#allowed R2BucketCors#allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#allowed R2BucketCors#allowed}
   */
   readonly allowed: R2BucketCorsRulesAllowed;
   /**
   * Specifies the headers that can be exposed back, and accessed by, the JavaScript making the cross-origin request. If you need to access headers beyond the safelisted response headers, such as Content-Encoding or cf-cache-status, you must specify it here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#expose_headers R2BucketCors#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#expose_headers R2BucketCors#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
-  * Identifier for this rule
+  * Identifier for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#id R2BucketCors#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#id R2BucketCors#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -210,7 +220,7 @@ export interface R2BucketCorsRules {
   /**
   * Specifies the amount of time (in seconds) browsers are allowed to cache CORS preflight responses. Browsers may limit this to 2 hours or less, even if the maximum value (86400) is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#max_age_seconds R2BucketCors#max_age_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#max_age_seconds R2BucketCors#max_age_seconds}
   */
   readonly maxAgeSeconds?: number;
 }
@@ -327,7 +337,7 @@ export class R2BucketCorsRulesOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // allowed - computed: true, optional: false, required: true
+  // allowed - computed: false, optional: false, required: true
   private _allowed = new R2BucketCorsRulesAllowedOutputReference(this, "allowed");
   public get allowed() {
     return this._allowed;
@@ -340,7 +350,7 @@ export class R2BucketCorsRulesOutputReference extends cdktf.ComplexObject {
     return this._allowed.internalValue;
   }
 
-  // expose_headers - computed: true, optional: true, required: false
+  // expose_headers - computed: false, optional: true, required: false
   private _exposeHeaders?: string[]; 
   public get exposeHeaders() {
     return this.getListAttribute('expose_headers');
@@ -356,7 +366,7 @@ export class R2BucketCorsRulesOutputReference extends cdktf.ComplexObject {
     return this._exposeHeaders;
   }
 
-  // id - computed: true, optional: true, required: false
+  // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -372,7 +382,7 @@ export class R2BucketCorsRulesOutputReference extends cdktf.ComplexObject {
     return this._id;
   }
 
-  // max_age_seconds - computed: true, optional: true, required: false
+  // max_age_seconds - computed: false, optional: true, required: false
   private _maxAgeSeconds?: number; 
   public get maxAgeSeconds() {
     return this.getNumberAttribute('max_age_seconds');
@@ -410,7 +420,7 @@ export class R2BucketCorsRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}
 */
 export class R2BucketCors extends cdktf.TerraformResource {
 
@@ -426,7 +436,7 @@ export class R2BucketCors extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a R2BucketCors resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2BucketCors to import
-  * @param importFromId The id of the existing R2BucketCors that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2BucketCors that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2BucketCors to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -438,7 +448,7 @@ export class R2BucketCors extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -449,7 +459,7 @@ export class R2BucketCors extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket_cors',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -512,7 +522,7 @@ export class R2BucketCors extends cdktf.TerraformResource {
     return this._jurisdiction;
   }
 
-  // rules - computed: true, optional: true, required: false
+  // rules - computed: false, optional: true, required: false
   private _rules = new R2BucketCorsRulesList(this, "rules", false);
   public get rules() {
     return this._rules;

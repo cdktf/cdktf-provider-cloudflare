@@ -1,3 +1,3 @@
 # `cloudflare_zone_hold`
 
-Refer to the Terraform Registry for docs: [`cloudflare_zone_hold`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_hold).
+Refer to the Terraform Registry for docs: [`cloudflare_zone_hold`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_hold).

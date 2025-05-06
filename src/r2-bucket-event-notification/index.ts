@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface R2BucketEventNotificationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Account ID
+  * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
   */
   readonly accountId: string;
   /**
-  * Name of the bucket
+  * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
-  * Queue ID
+  * Queue ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
   */
   readonly queueId?: string;
   /**
-  * Array of rules to drive notifications
+  * Array of rules to drive notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
   */
   readonly rules?: R2BucketEventNotificationRules[] | cdktf.IResolvable;
 }
@@ -231,27 +231,27 @@ export class R2BucketEventNotificationQueuesList extends cdktf.ComplexList {
 }
 export interface R2BucketEventNotificationRules {
   /**
-  * Array of R2 object actions that will trigger notifications
+  * Array of R2 object actions that will trigger notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
   */
   readonly actions: string[];
   /**
-  * A description that can be used to identify the event notification rule after creation
+  * A description that can be used to identify the event notification rule after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
   */
   readonly description?: string;
   /**
-  * Notifications will be sent only for objects with this prefix
+  * Notifications will be sent only for objects with this prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
   */
   readonly prefix?: string;
   /**
-  * Notifications will be sent only for objects with this suffix
+  * Notifications will be sent only for objects with this suffix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
   */
   readonly suffix?: string;
 }
@@ -368,7 +368,7 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
     }
   }
 
-  // actions - computed: true, optional: false, required: true
+  // actions - computed: false, optional: false, required: true
   private _actions?: string[]; 
   public get actions() {
     return this.getListAttribute('actions');
@@ -381,7 +381,7 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
     return this._actions;
   }
 
-  // description - computed: true, optional: true, required: false
+  // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -397,7 +397,7 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
     return this._description;
   }
 
-  // prefix - computed: true, optional: true, required: false
+  // prefix - computed: false, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -413,7 +413,7 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
     return this._prefix;
   }
 
-  // suffix - computed: true, optional: true, required: false
+  // suffix - computed: false, optional: true, required: false
   private _suffix?: string; 
   public get suffix() {
     return this.getStringAttribute('suffix');
@@ -451,7 +451,7 @@ export class R2BucketEventNotificationRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}
 */
 export class R2BucketEventNotification extends cdktf.TerraformResource {
 
@@ -467,7 +467,7 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a R2BucketEventNotification resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2BucketEventNotification to import
-  * @param importFromId The id of the existing R2BucketEventNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2BucketEventNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2BucketEventNotification to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -479,7 +479,7 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -490,7 +490,7 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket_event_notification',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -576,7 +576,7 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
     return this._queues;
   }
 
-  // rules - computed: true, optional: true, required: false
+  // rules - computed: false, optional: true, required: false
   private _rules = new R2BucketEventNotificationRulesList(this, "rules", false);
   public get rules() {
     return this._rules;

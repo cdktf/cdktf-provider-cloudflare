@@ -4,7 +4,7 @@
 
 ### DataCloudflareTieredCache <a name="DataCloudflareTieredCache" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTieredCache.DataCloudflareTieredCache.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareTieredCache 
 
 The id of the existing DataCloudflareTieredCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/tiered_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/tiered_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/tiered_cache#zone_id DataCloudflareTieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/tiered_cache#zone_id DataCloudflareTieredCache#zone_id}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +15,50 @@ export interface NotificationPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
   */
   readonly accountId: string;
   /**
   * Optional specification of how often to re-alert from the same incident, not support on all alert types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#alert_interval NotificationPolicy#alert_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#alert_interval NotificationPolicy#alert_interval}
   */
   readonly alertInterval?: string;
   /**
   * Refers to which event will trigger a Notification dispatch. You can use the endpoint to get available alert types which then will give you a list of possible values.
-  * Available values: "access_custom_certificate_expiration_type", "advanced_ddos_attack_l4_alert", "advanced_ddos_attack_l7_alert", "advanced_http_alert_error", "bgp_hijack_notification", "billing_usage_alert", "block_notification_block_removed", "block_notification_new_block", "block_notification_review_rejected", "brand_protection_alert", "brand_protection_digest", "clickhouse_alert_fw_anomaly", "clickhouse_alert_fw_ent_anomaly", "cloudforce_one_request_notification", "custom_analytics", "custom_ssl_certificate_event_type", "dedicated_ssl_certificate_event_type", "device_connectivity_anomaly_alert", "dos_attack_l4", "dos_attack_l7", "expiring_service_token_alert", "failing_logpush_job_disabled_alert", "fbm_auto_advertisement", "fbm_dosd_attack", "fbm_volumetric_attack", "health_check_status_notification", "hostname_aop_custom_certificate_expiration_type", "http_alert_edge_error", "http_alert_origin_error", "image_notification", "image_resizing_notification", "incident_alert", "load_balancing_health_alert", "load_balancing_pool_enablement_alert", "logo_match_alert", "magic_tunnel_health_check_event", "magic_wan_tunnel_health", "maintenance_event_notification", "mtls_certificate_store_certificate_expiration_type", "pages_event_alert", "radar_notification", "real_origin_monitoring", "scriptmonitor_alert_new_code_change_detections", "scriptmonitor_alert_new_hosts", "scriptmonitor_alert_new_malicious_hosts", "scriptmonitor_alert_new_malicious_scripts", "scriptmonitor_alert_new_malicious_url", "scriptmonitor_alert_new_max_length_resource_url", "scriptmonitor_alert_new_resources", "secondary_dns_all_primaries_failing", "secondary_dns_primaries_failing", "secondary_dns_warning", "secondary_dns_zone_successfully_updated", "secondary_dns_zone_validation_warning", "security_insights_alert", "sentinel_alert", "stream_live_notifications", "synthetic_test_latency_alert", "synthetic_test_low_availability_alert", "traffic_anomalies_alert", "tunnel_health_event", "tunnel_update_event", "universal_ssl_event_type", "web_analytics_metrics_update", "zone_aop_custom_certificate_expiration_type".
+  * Available values: "access_custom_certificate_expiration_type", "advanced_ddos_attack_l4_alert", "advanced_ddos_attack_l7_alert", "advanced_http_alert_error", "bgp_hijack_notification", "billing_usage_alert", "block_notification_block_removed", "block_notification_new_block", "block_notification_review_rejected", "bot_traffic_basic_alert", "brand_protection_alert", "brand_protection_digest", "clickhouse_alert_fw_anomaly", "clickhouse_alert_fw_ent_anomaly", "cloudforce_one_request_notification", "custom_analytics", "custom_bot_detection_alert", "custom_ssl_certificate_event_type", "dedicated_ssl_certificate_event_type", "device_connectivity_anomaly_alert", "dos_attack_l4", "dos_attack_l7", "expiring_service_token_alert", "failing_logpush_job_disabled_alert", "fbm_auto_advertisement", "fbm_dosd_attack", "fbm_volumetric_attack", "health_check_status_notification", "hostname_aop_custom_certificate_expiration_type", "http_alert_edge_error", "http_alert_origin_error", "image_notification", "image_resizing_notification", "incident_alert", "load_balancing_health_alert", "load_balancing_pool_enablement_alert", "logo_match_alert", "magic_tunnel_health_check_event", "magic_wan_tunnel_health", "maintenance_event_notification", "mtls_certificate_store_certificate_expiration_type", "pages_event_alert", "radar_notification", "real_origin_monitoring", "scriptmonitor_alert_new_code_change_detections", "scriptmonitor_alert_new_hosts", "scriptmonitor_alert_new_malicious_hosts", "scriptmonitor_alert_new_malicious_scripts", "scriptmonitor_alert_new_malicious_url", "scriptmonitor_alert_new_max_length_resource_url", "scriptmonitor_alert_new_resources", "secondary_dns_all_primaries_failing", "secondary_dns_primaries_failing", "secondary_dns_warning", "secondary_dns_zone_successfully_updated", "secondary_dns_zone_validation_warning", "security_insights_alert", "sentinel_alert", "stream_live_notifications", "synthetic_test_latency_alert", "synthetic_test_low_availability_alert", "traffic_anomalies_alert", "tunnel_health_event", "tunnel_update_event", "universal_ssl_event_type", "web_analytics_metrics_update", "zone_aop_custom_certificate_expiration_type".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
   */
   readonly alertType: string;
   /**
   * Optional description for the Notification policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#description NotificationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#description NotificationPolicy#description}
   */
   readonly description?: string;
   /**
   * Whether or not the Notification policy is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
   */
   readonly filters?: NotificationPolicyFilters;
   /**
   * List of IDs that will be used when dispatching a notification. IDs for email type will be the email address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#mechanisms NotificationPolicy#mechanisms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#mechanisms NotificationPolicy#mechanisms}
   */
   readonly mechanisms: NotificationPolicyMechanisms;
   /**
   * Name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#name NotificationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#name NotificationPolicy#name}
   */
   readonly name: string;
 }
@@ -66,253 +66,253 @@ export interface NotificationPolicyFilters {
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
   */
   readonly actions?: string[];
   /**
   * Used for configuring radar_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#affected_asns NotificationPolicy#affected_asns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#affected_asns NotificationPolicy#affected_asns}
   */
   readonly affectedAsns?: string[];
   /**
   * Used for configuring incident_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
   */
   readonly affectedComponents?: string[];
   /**
   * Used for configuring radar_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#affected_locations NotificationPolicy#affected_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#affected_locations NotificationPolicy#affected_locations}
   */
   readonly affectedLocations?: string[];
   /**
   * Used for configuring maintenance_event_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
   */
   readonly airportCode?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
   */
   readonly alertTriggerPreferences?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#alert_trigger_preferences_value NotificationPolicy#alert_trigger_preferences_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#alert_trigger_preferences_value NotificationPolicy#alert_trigger_preferences_value}
   */
   readonly alertTriggerPreferencesValue?: string[];
   /**
   * Used for configuring load_balancing_pool_enablement_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
   */
   readonly enabled?: string[];
   /**
   * Used for configuring pages_event_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
   */
   readonly environment?: string[];
   /**
   * Used for configuring pages_event_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#event NotificationPolicy#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#event NotificationPolicy#event}
   */
   readonly event?: string[];
   /**
   * Used for configuring load_balancing_health_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
   */
   readonly eventSource?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
   */
   readonly eventType?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
   */
   readonly groupBy?: string[];
   /**
   * Used for configuring health_check_status_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
   */
   readonly healthCheckId?: string[];
   /**
   * Used for configuring incident_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
   */
   readonly incidentImpact?: string[];
   /**
   * Used for configuring stream_live_notifications
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
   */
   readonly inputId?: string[];
   /**
   * Used for configuring security_insights_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#insight_class NotificationPolicy#insight_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#insight_class NotificationPolicy#insight_class}
   */
   readonly insightClass?: string[];
   /**
   * Used for configuring billing_usage_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
   */
   readonly limit?: string[];
   /**
   * Used for configuring logo_match_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#logo_tag NotificationPolicy#logo_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#logo_tag NotificationPolicy#logo_tag}
   */
   readonly logoTag?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
   */
   readonly megabitsPerSecond?: string[];
   /**
   * Used for configuring load_balancing_health_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
   */
   readonly newHealth?: string[];
   /**
   * Used for configuring tunnel_health_event
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
   */
   readonly newStatus?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
   */
   readonly packetsPerSecond?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
   */
   readonly poolId?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#pop_names NotificationPolicy#pop_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#pop_names NotificationPolicy#pop_names}
   */
   readonly popNames?: string[];
   /**
   * Used for configuring billing_usage_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#product NotificationPolicy#product}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#product NotificationPolicy#product}
   */
   readonly product?: string[];
   /**
   * Used for configuring pages_event_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
   */
   readonly projectId?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
   */
   readonly protocol?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#query_tag NotificationPolicy#query_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#query_tag NotificationPolicy#query_tag}
   */
   readonly queryTag?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l7_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
   */
   readonly requestsPerSecond?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
   */
   readonly selectors?: string[];
   /**
   * Used for configuring clickhouse_alert_fw_ent_anomaly
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#services NotificationPolicy#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#services NotificationPolicy#services}
   */
   readonly services?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
   */
   readonly slo?: string[];
   /**
   * Used for configuring health_check_status_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#status NotificationPolicy#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#status NotificationPolicy#status}
   */
   readonly status?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l7_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
   */
   readonly targetHostname?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
   */
   readonly targetIp?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l7_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
   */
   readonly targetZoneName?: string[];
   /**
   * Used for configuring traffic_anomalies_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#traffic_exclusions NotificationPolicy#traffic_exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#traffic_exclusions NotificationPolicy#traffic_exclusions}
   */
   readonly trafficExclusions?: string[];
   /**
   * Used for configuring tunnel_health_event
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
   */
   readonly tunnelId?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#tunnel_name NotificationPolicy#tunnel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#tunnel_name NotificationPolicy#tunnel_name}
   */
   readonly tunnelName?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#where NotificationPolicy#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#where NotificationPolicy#where}
   */
   readonly where?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
   */
   readonly zones?: string[];
 }
@@ -921,7 +921,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     }
   }
 
-  // actions - computed: true, optional: true, required: false
+  // actions - computed: false, optional: true, required: false
   private _actions?: string[]; 
   public get actions() {
     return this.getListAttribute('actions');
@@ -937,7 +937,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._actions;
   }
 
-  // affected_asns - computed: true, optional: true, required: false
+  // affected_asns - computed: false, optional: true, required: false
   private _affectedAsns?: string[]; 
   public get affectedAsns() {
     return this.getListAttribute('affected_asns');
@@ -953,7 +953,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._affectedAsns;
   }
 
-  // affected_components - computed: true, optional: true, required: false
+  // affected_components - computed: false, optional: true, required: false
   private _affectedComponents?: string[]; 
   public get affectedComponents() {
     return this.getListAttribute('affected_components');
@@ -969,7 +969,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._affectedComponents;
   }
 
-  // affected_locations - computed: true, optional: true, required: false
+  // affected_locations - computed: false, optional: true, required: false
   private _affectedLocations?: string[]; 
   public get affectedLocations() {
     return this.getListAttribute('affected_locations');
@@ -985,7 +985,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._affectedLocations;
   }
 
-  // airport_code - computed: true, optional: true, required: false
+  // airport_code - computed: false, optional: true, required: false
   private _airportCode?: string[]; 
   public get airportCode() {
     return this.getListAttribute('airport_code');
@@ -1001,7 +1001,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._airportCode;
   }
 
-  // alert_trigger_preferences - computed: true, optional: true, required: false
+  // alert_trigger_preferences - computed: false, optional: true, required: false
   private _alertTriggerPreferences?: string[]; 
   public get alertTriggerPreferences() {
     return this.getListAttribute('alert_trigger_preferences');
@@ -1017,7 +1017,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._alertTriggerPreferences;
   }
 
-  // alert_trigger_preferences_value - computed: true, optional: true, required: false
+  // alert_trigger_preferences_value - computed: false, optional: true, required: false
   private _alertTriggerPreferencesValue?: string[]; 
   public get alertTriggerPreferencesValue() {
     return this.getListAttribute('alert_trigger_preferences_value');
@@ -1033,7 +1033,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._alertTriggerPreferencesValue;
   }
 
-  // enabled - computed: true, optional: true, required: false
+  // enabled - computed: false, optional: true, required: false
   private _enabled?: string[]; 
   public get enabled() {
     return this.getListAttribute('enabled');
@@ -1049,7 +1049,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._enabled;
   }
 
-  // environment - computed: true, optional: true, required: false
+  // environment - computed: false, optional: true, required: false
   private _environment?: string[]; 
   public get environment() {
     return this.getListAttribute('environment');
@@ -1065,7 +1065,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._environment;
   }
 
-  // event - computed: true, optional: true, required: false
+  // event - computed: false, optional: true, required: false
   private _event?: string[]; 
   public get event() {
     return this.getListAttribute('event');
@@ -1081,7 +1081,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._event;
   }
 
-  // event_source - computed: true, optional: true, required: false
+  // event_source - computed: false, optional: true, required: false
   private _eventSource?: string[]; 
   public get eventSource() {
     return this.getListAttribute('event_source');
@@ -1097,7 +1097,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._eventSource;
   }
 
-  // event_type - computed: true, optional: true, required: false
+  // event_type - computed: false, optional: true, required: false
   private _eventType?: string[]; 
   public get eventType() {
     return this.getListAttribute('event_type');
@@ -1113,7 +1113,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._eventType;
   }
 
-  // group_by - computed: true, optional: true, required: false
+  // group_by - computed: false, optional: true, required: false
   private _groupBy?: string[]; 
   public get groupBy() {
     return this.getListAttribute('group_by');
@@ -1129,7 +1129,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._groupBy;
   }
 
-  // health_check_id - computed: true, optional: true, required: false
+  // health_check_id - computed: false, optional: true, required: false
   private _healthCheckId?: string[]; 
   public get healthCheckId() {
     return this.getListAttribute('health_check_id');
@@ -1145,7 +1145,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._healthCheckId;
   }
 
-  // incident_impact - computed: true, optional: true, required: false
+  // incident_impact - computed: false, optional: true, required: false
   private _incidentImpact?: string[]; 
   public get incidentImpact() {
     return this.getListAttribute('incident_impact');
@@ -1161,7 +1161,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._incidentImpact;
   }
 
-  // input_id - computed: true, optional: true, required: false
+  // input_id - computed: false, optional: true, required: false
   private _inputId?: string[]; 
   public get inputId() {
     return this.getListAttribute('input_id');
@@ -1177,7 +1177,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._inputId;
   }
 
-  // insight_class - computed: true, optional: true, required: false
+  // insight_class - computed: false, optional: true, required: false
   private _insightClass?: string[]; 
   public get insightClass() {
     return this.getListAttribute('insight_class');
@@ -1193,7 +1193,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._insightClass;
   }
 
-  // limit - computed: true, optional: true, required: false
+  // limit - computed: false, optional: true, required: false
   private _limit?: string[]; 
   public get limit() {
     return this.getListAttribute('limit');
@@ -1209,7 +1209,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._limit;
   }
 
-  // logo_tag - computed: true, optional: true, required: false
+  // logo_tag - computed: false, optional: true, required: false
   private _logoTag?: string[]; 
   public get logoTag() {
     return this.getListAttribute('logo_tag');
@@ -1225,7 +1225,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._logoTag;
   }
 
-  // megabits_per_second - computed: true, optional: true, required: false
+  // megabits_per_second - computed: false, optional: true, required: false
   private _megabitsPerSecond?: string[]; 
   public get megabitsPerSecond() {
     return this.getListAttribute('megabits_per_second');
@@ -1241,7 +1241,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._megabitsPerSecond;
   }
 
-  // new_health - computed: true, optional: true, required: false
+  // new_health - computed: false, optional: true, required: false
   private _newHealth?: string[]; 
   public get newHealth() {
     return this.getListAttribute('new_health');
@@ -1257,7 +1257,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._newHealth;
   }
 
-  // new_status - computed: true, optional: true, required: false
+  // new_status - computed: false, optional: true, required: false
   private _newStatus?: string[]; 
   public get newStatus() {
     return this.getListAttribute('new_status');
@@ -1273,7 +1273,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._newStatus;
   }
 
-  // packets_per_second - computed: true, optional: true, required: false
+  // packets_per_second - computed: false, optional: true, required: false
   private _packetsPerSecond?: string[]; 
   public get packetsPerSecond() {
     return this.getListAttribute('packets_per_second');
@@ -1289,7 +1289,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._packetsPerSecond;
   }
 
-  // pool_id - computed: true, optional: true, required: false
+  // pool_id - computed: false, optional: true, required: false
   private _poolId?: string[]; 
   public get poolId() {
     return this.getListAttribute('pool_id');
@@ -1305,7 +1305,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._poolId;
   }
 
-  // pop_names - computed: true, optional: true, required: false
+  // pop_names - computed: false, optional: true, required: false
   private _popNames?: string[]; 
   public get popNames() {
     return this.getListAttribute('pop_names');
@@ -1321,7 +1321,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._popNames;
   }
 
-  // product - computed: true, optional: true, required: false
+  // product - computed: false, optional: true, required: false
   private _product?: string[]; 
   public get product() {
     return this.getListAttribute('product');
@@ -1337,7 +1337,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._product;
   }
 
-  // project_id - computed: true, optional: true, required: false
+  // project_id - computed: false, optional: true, required: false
   private _projectId?: string[]; 
   public get projectId() {
     return this.getListAttribute('project_id');
@@ -1353,7 +1353,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._projectId;
   }
 
-  // protocol - computed: true, optional: true, required: false
+  // protocol - computed: false, optional: true, required: false
   private _protocol?: string[]; 
   public get protocol() {
     return this.getListAttribute('protocol');
@@ -1369,7 +1369,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._protocol;
   }
 
-  // query_tag - computed: true, optional: true, required: false
+  // query_tag - computed: false, optional: true, required: false
   private _queryTag?: string[]; 
   public get queryTag() {
     return this.getListAttribute('query_tag');
@@ -1385,7 +1385,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._queryTag;
   }
 
-  // requests_per_second - computed: true, optional: true, required: false
+  // requests_per_second - computed: false, optional: true, required: false
   private _requestsPerSecond?: string[]; 
   public get requestsPerSecond() {
     return this.getListAttribute('requests_per_second');
@@ -1401,7 +1401,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._requestsPerSecond;
   }
 
-  // selectors - computed: true, optional: true, required: false
+  // selectors - computed: false, optional: true, required: false
   private _selectors?: string[]; 
   public get selectors() {
     return this.getListAttribute('selectors');
@@ -1417,7 +1417,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._selectors;
   }
 
-  // services - computed: true, optional: true, required: false
+  // services - computed: false, optional: true, required: false
   private _services?: string[]; 
   public get services() {
     return this.getListAttribute('services');
@@ -1433,7 +1433,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._services;
   }
 
-  // slo - computed: true, optional: true, required: false
+  // slo - computed: false, optional: true, required: false
   private _slo?: string[]; 
   public get slo() {
     return this.getListAttribute('slo');
@@ -1449,7 +1449,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._slo;
   }
 
-  // status - computed: true, optional: true, required: false
+  // status - computed: false, optional: true, required: false
   private _status?: string[]; 
   public get status() {
     return this.getListAttribute('status');
@@ -1465,7 +1465,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._status;
   }
 
-  // target_hostname - computed: true, optional: true, required: false
+  // target_hostname - computed: false, optional: true, required: false
   private _targetHostname?: string[]; 
   public get targetHostname() {
     return this.getListAttribute('target_hostname');
@@ -1481,7 +1481,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._targetHostname;
   }
 
-  // target_ip - computed: true, optional: true, required: false
+  // target_ip - computed: false, optional: true, required: false
   private _targetIp?: string[]; 
   public get targetIp() {
     return this.getListAttribute('target_ip');
@@ -1497,7 +1497,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._targetIp;
   }
 
-  // target_zone_name - computed: true, optional: true, required: false
+  // target_zone_name - computed: false, optional: true, required: false
   private _targetZoneName?: string[]; 
   public get targetZoneName() {
     return this.getListAttribute('target_zone_name');
@@ -1513,7 +1513,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._targetZoneName;
   }
 
-  // traffic_exclusions - computed: true, optional: true, required: false
+  // traffic_exclusions - computed: false, optional: true, required: false
   private _trafficExclusions?: string[]; 
   public get trafficExclusions() {
     return this.getListAttribute('traffic_exclusions');
@@ -1529,7 +1529,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._trafficExclusions;
   }
 
-  // tunnel_id - computed: true, optional: true, required: false
+  // tunnel_id - computed: false, optional: true, required: false
   private _tunnelId?: string[]; 
   public get tunnelId() {
     return this.getListAttribute('tunnel_id');
@@ -1545,7 +1545,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._tunnelId;
   }
 
-  // tunnel_name - computed: true, optional: true, required: false
+  // tunnel_name - computed: false, optional: true, required: false
   private _tunnelName?: string[]; 
   public get tunnelName() {
     return this.getListAttribute('tunnel_name');
@@ -1561,7 +1561,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._tunnelName;
   }
 
-  // where - computed: true, optional: true, required: false
+  // where - computed: false, optional: true, required: false
   private _where?: string[]; 
   public get where() {
     return this.getListAttribute('where');
@@ -1577,7 +1577,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return this._where;
   }
 
-  // zones - computed: true, optional: true, required: false
+  // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
     return this.getListAttribute('zones');
@@ -1597,7 +1597,7 @@ export interface NotificationPolicyMechanismsEmail {
   /**
   * The email address
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#id NotificationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#id NotificationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1718,7 +1718,7 @@ export interface NotificationPolicyMechanismsPagerduty {
   /**
   * UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#id NotificationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#id NotificationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1839,7 +1839,7 @@ export interface NotificationPolicyMechanismsWebhooks {
   /**
   * UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#id NotificationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#id NotificationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1958,15 +1958,15 @@ export class NotificationPolicyMechanismsWebhooksList extends cdktf.ComplexList 
 }
 export interface NotificationPolicyMechanisms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#email NotificationPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#email NotificationPolicy#email}
   */
   readonly email?: NotificationPolicyMechanismsEmail[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}
   */
   readonly pagerduty?: NotificationPolicyMechanismsPagerduty[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}
   */
   readonly webhooks?: NotificationPolicyMechanismsWebhooks[] | cdktf.IResolvable;
 }
@@ -2118,7 +2118,7 @@ export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy cloudflare_notification_policy}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy cloudflare_notification_policy}
 */
 export class NotificationPolicy extends cdktf.TerraformResource {
 
@@ -2134,7 +2134,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationPolicy to import
-  * @param importFromId The id of the existing NotificationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2146,7 +2146,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/notification_policy cloudflare_notification_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/notification_policy cloudflare_notification_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2157,7 +2157,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_notification_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -2261,7 +2261,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // filters - computed: true, optional: true, required: false
+  // filters - computed: false, optional: true, required: false
   private _filters = new NotificationPolicyFiltersOutputReference(this, "filters");
   public get filters() {
     return this._filters;

@@ -1,3 +1,3 @@
 # `cloudflare_queue_consumer`
 
-Refer to the Terraform Registry for docs: [`cloudflare_queue_consumer`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer).
+Refer to the Terraform Registry for docs: [`cloudflare_queue_consumer`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/queue_consumer).

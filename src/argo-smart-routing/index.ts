@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/argo_smart_routing
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/argo_smart_routing
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,19 +16,19 @@ export interface ArgoSmartRoutingConfig extends cdktf.TerraformMetaArguments {
   * Enables Argo Smart Routing.
   * Available values: "on", "off".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
   */
   readonly value: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}
 */
 export class ArgoSmartRouting extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class ArgoSmartRouting extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ArgoSmartRouting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArgoSmartRouting to import
-  * @param importFromId The id of the existing ArgoSmartRouting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ArgoSmartRouting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArgoSmartRouting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +56,7 @@ export class ArgoSmartRouting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class ArgoSmartRouting extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_argo_smart_routing',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface R2BucketLifecycleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Account ID
+  * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
   */
   readonly accountId: string;
   /**
-  * Name of the bucket
+  * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}
   */
   readonly rules?: R2BucketLifecycleRules[] | cdktf.IResolvable;
 }
 export interface R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge: number;
   /**
   * Available values: "Age".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -132,7 +132,7 @@ export class R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutpu
     }
   }
 
-  // max_age - computed: true, optional: false, required: true
+  // max_age - computed: false, optional: false, required: true
   private _maxAge?: number; 
   public get maxAge() {
     return this.getNumberAttribute('max_age');
@@ -145,7 +145,7 @@ export class R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutpu
     return this._maxAge;
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -160,9 +160,9 @@ export class R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutpu
 }
 export interface R2BucketLifecycleRulesAbortMultipartUploadsTransition {
   /**
-  * Condition for lifecycle transitions to apply after an object reaches an age in seconds
+  * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition?: R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition;
 }
@@ -238,7 +238,7 @@ export class R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReferenc
     }
   }
 
-  // condition - computed: true, optional: true, required: false
+  // condition - computed: false, optional: true, required: false
   private _condition = new R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference(this, "condition");
   public get condition() {
     return this._condition;
@@ -256,14 +256,14 @@ export class R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReferenc
 }
 export interface R2BucketLifecycleRulesConditions {
   /**
-  * Transitions will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads
+  * Transitions will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
   */
   readonly prefix: string;
 }
 
-export function r2BucketLifecycleRulesConditionsToTerraform(struct?: R2BucketLifecycleRulesConditions): any {
+export function r2BucketLifecycleRulesConditionsToTerraform(struct?: R2BucketLifecycleRulesConditions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -274,7 +274,7 @@ export function r2BucketLifecycleRulesConditionsToTerraform(struct?: R2BucketLif
 }
 
 
-export function r2BucketLifecycleRulesConditionsToHclTerraform(struct?: R2BucketLifecycleRulesConditions): any {
+export function r2BucketLifecycleRulesConditionsToHclTerraform(struct?: R2BucketLifecycleRulesConditions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -294,6 +294,7 @@ export function r2BucketLifecycleRulesConditionsToHclTerraform(struct?: R2Bucket
 
 export class R2BucketLifecycleRulesConditionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -303,7 +304,10 @@ export class R2BucketLifecycleRulesConditionsOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): R2BucketLifecycleRulesConditions | undefined {
+  public get internalValue(): R2BucketLifecycleRulesConditions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix !== undefined) {
@@ -313,18 +317,24 @@ export class R2BucketLifecycleRulesConditionsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: R2BucketLifecycleRulesConditions | undefined) {
+  public set internalValue(value: R2BucketLifecycleRulesConditions | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._prefix = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._prefix = value.prefix;
     }
   }
 
-  // prefix - computed: true, optional: false, required: true
+  // prefix - computed: false, optional: false, required: true
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -339,17 +349,17 @@ export class R2BucketLifecycleRulesConditionsOutputReference extends cdktf.Compl
 }
 export interface R2BucketLifecycleRulesDeleteObjectsTransitionCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge?: number;
   /**
   * Available values: "Age".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -451,7 +461,7 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReferen
     }
   }
 
-  // date - computed: true, optional: true, required: false
+  // date - computed: false, optional: true, required: false
   private _date?: string; 
   public get date() {
     return this.getStringAttribute('date');
@@ -467,7 +477,7 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReferen
     return this._date;
   }
 
-  // max_age - computed: true, optional: true, required: false
+  // max_age - computed: false, optional: true, required: false
   private _maxAge?: number; 
   public get maxAge() {
     return this.getNumberAttribute('max_age');
@@ -483,7 +493,7 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReferen
     return this._maxAge;
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -498,9 +508,9 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReferen
 }
 export interface R2BucketLifecycleRulesDeleteObjectsTransition {
   /**
-  * Condition for lifecycle transitions to apply after an object reaches an age in seconds
+  * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition?: R2BucketLifecycleRulesDeleteObjectsTransitionCondition;
 }
@@ -576,7 +586,7 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference extend
     }
   }
 
-  // condition - computed: true, optional: true, required: false
+  // condition - computed: false, optional: true, required: false
   private _condition = new R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference(this, "condition");
   public get condition() {
     return this._condition;
@@ -594,22 +604,22 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference extend
 }
 export interface R2BucketLifecycleRulesStorageClassTransitionsCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge?: number;
   /**
   * Available values: "Age".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
 
-export function r2BucketLifecycleRulesStorageClassTransitionsConditionToTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitionsCondition): any {
+export function r2BucketLifecycleRulesStorageClassTransitionsConditionToTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitionsCondition | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -622,7 +632,7 @@ export function r2BucketLifecycleRulesStorageClassTransitionsConditionToTerrafor
 }
 
 
-export function r2BucketLifecycleRulesStorageClassTransitionsConditionToHclTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitionsCondition): any {
+export function r2BucketLifecycleRulesStorageClassTransitionsConditionToHclTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitionsCondition | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -654,6 +664,7 @@ export function r2BucketLifecycleRulesStorageClassTransitionsConditionToHclTerra
 
 export class R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -663,7 +674,10 @@ export class R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReferen
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): R2BucketLifecycleRulesStorageClassTransitionsCondition | undefined {
+  public get internalValue(): R2BucketLifecycleRulesStorageClassTransitionsCondition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._date !== undefined) {
@@ -681,22 +695,28 @@ export class R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: R2BucketLifecycleRulesStorageClassTransitionsCondition | undefined) {
+  public set internalValue(value: R2BucketLifecycleRulesStorageClassTransitionsCondition | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._date = undefined;
       this._maxAge = undefined;
       this._type = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._date = value.date;
       this._maxAge = value.maxAge;
       this._type = value.type;
     }
   }
 
-  // date - computed: true, optional: true, required: false
+  // date - computed: false, optional: true, required: false
   private _date?: string; 
   public get date() {
     return this.getStringAttribute('date');
@@ -712,7 +732,7 @@ export class R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReferen
     return this._date;
   }
 
-  // max_age - computed: true, optional: true, required: false
+  // max_age - computed: false, optional: true, required: false
   private _maxAge?: number; 
   public get maxAge() {
     return this.getNumberAttribute('max_age');
@@ -728,7 +748,7 @@ export class R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReferen
     return this._maxAge;
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -743,15 +763,15 @@ export class R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReferen
 }
 export interface R2BucketLifecycleRulesStorageClassTransitions {
   /**
-  * Condition for lifecycle transitions to apply after an object reaches an age in seconds
+  * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition: R2BucketLifecycleRulesStorageClassTransitionsCondition;
   /**
   * Available values: "InfrequentAccess".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
   */
   readonly storageClass: string;
 }
@@ -842,7 +862,7 @@ export class R2BucketLifecycleRulesStorageClassTransitionsOutputReference extend
     }
   }
 
-  // condition - computed: true, optional: false, required: true
+  // condition - computed: false, optional: false, required: true
   private _condition = new R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference(this, "condition");
   public get condition() {
     return this._condition;
@@ -855,7 +875,7 @@ export class R2BucketLifecycleRulesStorageClassTransitionsOutputReference extend
     return this._condition.internalValue;
   }
 
-  // storage_class - computed: true, optional: false, required: true
+  // storage_class - computed: false, optional: false, required: true
   private _storageClass?: string; 
   public get storageClass() {
     return this.getStringAttribute('storage_class');
@@ -890,42 +910,42 @@ export class R2BucketLifecycleRulesStorageClassTransitionsList extends cdktf.Com
 }
 export interface R2BucketLifecycleRules {
   /**
-  * Transition to abort ongoing multipart uploads
+  * Transition to abort ongoing multipart uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
   */
   readonly abortMultipartUploadsTransition?: R2BucketLifecycleRulesAbortMultipartUploadsTransition;
   /**
-  * Conditions that apply to all transitions of this rule
+  * Conditions that apply to all transitions of this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
   */
   readonly conditions: R2BucketLifecycleRulesConditions;
   /**
-  * Transition to delete objects
+  * Transition to delete objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
   */
   readonly deleteObjectsTransition?: R2BucketLifecycleRulesDeleteObjectsTransition;
   /**
-  * Whether or not this rule is in effect
+  * Whether or not this rule is in effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Unique identifier for this rule
+  * Unique identifier for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Transitions to change the storage class of objects
+  * Transitions to change the storage class of objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
   */
   readonly storageClassTransitions?: R2BucketLifecycleRulesStorageClassTransitions[] | cdktf.IResolvable;
 }
@@ -1068,7 +1088,7 @@ export class R2BucketLifecycleRulesOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // abort_multipart_uploads_transition - computed: true, optional: true, required: false
+  // abort_multipart_uploads_transition - computed: false, optional: true, required: false
   private _abortMultipartUploadsTransition = new R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference(this, "abort_multipart_uploads_transition");
   public get abortMultipartUploadsTransition() {
     return this._abortMultipartUploadsTransition;
@@ -1084,7 +1104,7 @@ export class R2BucketLifecycleRulesOutputReference extends cdktf.ComplexObject {
     return this._abortMultipartUploadsTransition.internalValue;
   }
 
-  // conditions - computed: true, optional: false, required: true
+  // conditions - computed: false, optional: false, required: true
   private _conditions = new R2BucketLifecycleRulesConditionsOutputReference(this, "conditions");
   public get conditions() {
     return this._conditions;
@@ -1097,7 +1117,7 @@ export class R2BucketLifecycleRulesOutputReference extends cdktf.ComplexObject {
     return this._conditions.internalValue;
   }
 
-  // delete_objects_transition - computed: true, optional: true, required: false
+  // delete_objects_transition - computed: false, optional: true, required: false
   private _deleteObjectsTransition = new R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference(this, "delete_objects_transition");
   public get deleteObjectsTransition() {
     return this._deleteObjectsTransition;
@@ -1113,7 +1133,7 @@ export class R2BucketLifecycleRulesOutputReference extends cdktf.ComplexObject {
     return this._deleteObjectsTransition.internalValue;
   }
 
-  // enabled - computed: true, optional: false, required: true
+  // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -1126,7 +1146,7 @@ export class R2BucketLifecycleRulesOutputReference extends cdktf.ComplexObject {
     return this._enabled;
   }
 
-  // id - computed: true, optional: false, required: true
+  // id - computed: false, optional: false, required: true
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -1139,7 +1159,7 @@ export class R2BucketLifecycleRulesOutputReference extends cdktf.ComplexObject {
     return this._id;
   }
 
-  // storage_class_transitions - computed: true, optional: true, required: false
+  // storage_class_transitions - computed: false, optional: true, required: false
   private _storageClassTransitions = new R2BucketLifecycleRulesStorageClassTransitionsList(this, "storage_class_transitions", false);
   public get storageClassTransitions() {
     return this._storageClassTransitions;
@@ -1177,7 +1197,7 @@ export class R2BucketLifecycleRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
 */
 export class R2BucketLifecycle extends cdktf.TerraformResource {
 
@@ -1193,7 +1213,7 @@ export class R2BucketLifecycle extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a R2BucketLifecycle resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2BucketLifecycle to import
-  * @param importFromId The id of the existing R2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2BucketLifecycle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1205,7 +1225,7 @@ export class R2BucketLifecycle extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1216,7 +1236,7 @@ export class R2BucketLifecycle extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket_lifecycle',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1279,7 +1299,7 @@ export class R2BucketLifecycle extends cdktf.TerraformResource {
     return this._jurisdiction;
   }
 
-  // rules - computed: true, optional: true, required: false
+  // rules - computed: false, optional: true, required: false
   private _rules = new R2BucketLifecycleRulesList(this, "rules", false);
   public get rules() {
     return this._rules;

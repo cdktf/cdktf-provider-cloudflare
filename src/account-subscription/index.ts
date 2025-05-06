@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,26 +15,26 @@ export interface AccountSubscriptionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
   */
   readonly accountId: string;
   /**
   * How often the subscription is renewed automatically.
   * Available values: "weekly", "monthly", "quarterly", "yearly".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
   */
   readonly frequency?: string;
   /**
   * The rate plan applied to the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
   */
   readonly ratePlan?: AccountSubscriptionRatePlan;
   /**
   * Subscription identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#subscription_identifier AccountSubscription#subscription_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#subscription_identifier AccountSubscription#subscription_identifier}
   */
   readonly subscriptionIdentifier?: string;
 }
@@ -42,20 +42,20 @@ export interface AccountSubscriptionRatePlan {
   /**
   * The currency applied to the rate plan subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#currency AccountSubscription#currency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#currency AccountSubscription#currency}
   */
   readonly currency?: string;
   /**
   * Whether this rate plan is managed externally from Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#externally_managed AccountSubscription#externally_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#externally_managed AccountSubscription#externally_managed}
   */
   readonly externallyManaged?: boolean | cdktf.IResolvable;
   /**
   * The ID of the rate plan.
   * Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#id AccountSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#id AccountSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,25 +64,25 @@ export interface AccountSubscriptionRatePlan {
   /**
   * Whether a rate plan is enterprise-based (or newly adopted term contract).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#is_contract AccountSubscription#is_contract}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#is_contract AccountSubscription#is_contract}
   */
   readonly isContract?: boolean | cdktf.IResolvable;
   /**
   * The full name of the rate plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#public_name AccountSubscription#public_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#public_name AccountSubscription#public_name}
   */
   readonly publicName?: string;
   /**
   * The scope that this rate plan applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#scope AccountSubscription#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#scope AccountSubscription#scope}
   */
   readonly scope?: string;
   /**
   * The list of sets this rate plan applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#sets AccountSubscription#sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#sets AccountSubscription#sets}
   */
   readonly sets?: string[];
 }
@@ -236,7 +236,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     }
   }
 
-  // currency - computed: true, optional: true, required: false
+  // currency - computed: false, optional: true, required: false
   private _currency?: string; 
   public get currency() {
     return this.getStringAttribute('currency');
@@ -252,7 +252,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return this._currency;
   }
 
-  // externally_managed - computed: true, optional: true, required: false
+  // externally_managed - computed: false, optional: true, required: false
   private _externallyManaged?: boolean | cdktf.IResolvable; 
   public get externallyManaged() {
     return this.getBooleanAttribute('externally_managed');
@@ -268,7 +268,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return this._externallyManaged;
   }
 
-  // id - computed: true, optional: true, required: false
+  // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -284,7 +284,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return this._id;
   }
 
-  // is_contract - computed: true, optional: true, required: false
+  // is_contract - computed: false, optional: true, required: false
   private _isContract?: boolean | cdktf.IResolvable; 
   public get isContract() {
     return this.getBooleanAttribute('is_contract');
@@ -300,7 +300,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return this._isContract;
   }
 
-  // public_name - computed: true, optional: true, required: false
+  // public_name - computed: false, optional: true, required: false
   private _publicName?: string; 
   public get publicName() {
     return this.getStringAttribute('public_name');
@@ -316,7 +316,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return this._publicName;
   }
 
-  // scope - computed: true, optional: true, required: false
+  // scope - computed: false, optional: true, required: false
   private _scope?: string; 
   public get scope() {
     return this.getStringAttribute('scope');
@@ -332,7 +332,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return this._scope;
   }
 
-  // sets - computed: true, optional: true, required: false
+  // sets - computed: false, optional: true, required: false
   private _sets?: string[]; 
   public get sets() {
     return this.getListAttribute('sets');
@@ -350,7 +350,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription cloudflare_account_subscription}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription cloudflare_account_subscription}
 */
 export class AccountSubscription extends cdktf.TerraformResource {
 
@@ -366,7 +366,7 @@ export class AccountSubscription extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccountSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountSubscription to import
-  * @param importFromId The id of the existing AccountSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -378,7 +378,7 @@ export class AccountSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/account_subscription cloudflare_account_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account_subscription cloudflare_account_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -389,7 +389,7 @@ export class AccountSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_subscription',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -464,7 +464,7 @@ export class AccountSubscription extends cdktf.TerraformResource {
     return this.getNumberAttribute('price');
   }
 
-  // rate_plan - computed: true, optional: true, required: false
+  // rate_plan - computed: false, optional: true, required: false
   private _ratePlan = new AccountSubscriptionRatePlanOutputReference(this, "rate_plan");
   public get ratePlan() {
     return this._ratePlan;
