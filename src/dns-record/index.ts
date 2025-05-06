@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,68 +10,68 @@ export interface DnsRecordConfig extends cdktf.TerraformMetaArguments {
   /**
   * Comments or notes about the DNS record. This field has no effect on DNS responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#comment DnsRecord#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#comment DnsRecord#comment}
   */
   readonly comment?: string;
   /**
   * A valid IPv4 address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#content DnsRecord#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#content DnsRecord#content}
   */
   readonly content?: string;
   /**
   * Components of a CAA record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#data DnsRecord#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#data DnsRecord#data}
   */
   readonly data?: DnsRecordData;
   /**
   * DNS record name (or @ for the zone apex) in Punycode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#name DnsRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#name DnsRecord#name}
   */
   readonly name: string;
   /**
   * Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#priority DnsRecord#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#priority DnsRecord#priority}
   */
   readonly priority?: number;
   /**
   * Whether the record is receiving the performance and security benefits of Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#proxied DnsRecord#proxied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#proxied DnsRecord#proxied}
   */
   readonly proxied?: boolean | cdktf.IResolvable;
   /**
   * Settings for the DNS record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#settings DnsRecord#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#settings DnsRecord#settings}
   */
   readonly settings?: DnsRecordSettings;
   /**
   * Custom tags for the DNS record. This field has no effect on DNS responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#tags DnsRecord#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#tags DnsRecord#tags}
   */
   readonly tags?: string[];
   /**
   * Time To Live (TTL) of the DNS record in seconds. Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#ttl DnsRecord#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#ttl DnsRecord#ttl}
   */
   readonly ttl: number;
   /**
   * Record type.
   * Available values: "A".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#type DnsRecord#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#type DnsRecord#type}
   */
   readonly type: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
   */
   readonly zoneId: string;
 }
@@ -84,219 +79,219 @@ export interface DnsRecordData {
   /**
   * Algorithm.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
   */
   readonly algorithm?: number;
   /**
   * Altitude of location in meters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#altitude DnsRecord#altitude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#altitude DnsRecord#altitude}
   */
   readonly altitude?: number;
   /**
   * Certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#certificate DnsRecord#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#certificate DnsRecord#certificate}
   */
   readonly certificate?: string;
   /**
   * Digest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#digest DnsRecord#digest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#digest DnsRecord#digest}
   */
   readonly digest?: string;
   /**
   * Digest Type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
   */
   readonly digestType?: number;
   /**
   * fingerprint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
   */
   readonly fingerprint?: string;
   /**
   * Flags for the CAA record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#flags DnsRecord#flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#flags DnsRecord#flags}
   */
   readonly flags?: number;
   /**
   * Key Tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
   */
   readonly keyTag?: number;
   /**
   * Degrees of latitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
   */
   readonly latDegrees?: number;
   /**
   * Latitude direction.
   * Available values: "N", "S".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
   */
   readonly latDirection?: string;
   /**
   * Minutes of latitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
   */
   readonly latMinutes?: number;
   /**
   * Seconds of latitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
   */
   readonly latSeconds?: number;
   /**
   * Degrees of longitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
   */
   readonly longDegrees?: number;
   /**
   * Longitude direction.
   * Available values: "E", "W".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
   */
   readonly longDirection?: string;
   /**
   * Minutes of longitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
   */
   readonly longMinutes?: number;
   /**
   * Seconds of longitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
   */
   readonly longSeconds?: number;
   /**
   * Matching Type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
   */
   readonly matchingType?: number;
   /**
   * Order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#order DnsRecord#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#order DnsRecord#order}
   */
   readonly order?: number;
   /**
   * The port of the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#port DnsRecord#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#port DnsRecord#port}
   */
   readonly port?: number;
   /**
   * Horizontal precision of location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
   */
   readonly precisionHorz?: number;
   /**
   * Vertical precision of location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
   */
   readonly precisionVert?: number;
   /**
   * Preference.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#preference DnsRecord#preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#preference DnsRecord#preference}
   */
   readonly preference?: number;
   /**
   * priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#priority DnsRecord#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#priority DnsRecord#priority}
   */
   readonly priority?: number;
   /**
   * Protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#protocol DnsRecord#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#protocol DnsRecord#protocol}
   */
   readonly protocol?: number;
   /**
   * Public Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#public_key DnsRecord#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#public_key DnsRecord#public_key}
   */
   readonly publicKey?: string;
   /**
   * Regex.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#regex DnsRecord#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#regex DnsRecord#regex}
   */
   readonly regex?: string;
   /**
   * Replacement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#replacement DnsRecord#replacement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#replacement DnsRecord#replacement}
   */
   readonly replacement?: string;
   /**
   * Selector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#selector DnsRecord#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#selector DnsRecord#selector}
   */
   readonly selector?: number;
   /**
   * Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#service DnsRecord#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#service DnsRecord#service}
   */
   readonly service?: string;
   /**
   * Size of location in meters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#size DnsRecord#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#size DnsRecord#size}
   */
   readonly size?: number;
   /**
   * Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#tag DnsRecord#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#tag DnsRecord#tag}
   */
   readonly tag?: string;
   /**
   * target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#target DnsRecord#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#target DnsRecord#target}
   */
   readonly target?: string;
   /**
   * Type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#type DnsRecord#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#type DnsRecord#type}
   */
   readonly type?: number;
   /**
   * Usage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#usage DnsRecord#usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#usage DnsRecord#usage}
   */
   readonly usage?: number;
   /**
   * Value of the record. This field's semantics depend on the chosen tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#value DnsRecord#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#value DnsRecord#value}
   */
   readonly value?: string;
   /**
   * The record weight.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#weight DnsRecord#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#weight DnsRecord#weight}
   */
   readonly weight?: number;
 }
@@ -827,7 +822,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // algorithm - computed: true, optional: true, required: false
+  // algorithm - computed: false, optional: true, required: false
   private _algorithm?: number; 
   public get algorithm() {
     return this.getNumberAttribute('algorithm');
@@ -843,7 +838,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._algorithm;
   }
 
-  // altitude - computed: true, optional: true, required: false
+  // altitude - computed: false, optional: true, required: false
   private _altitude?: number; 
   public get altitude() {
     return this.getNumberAttribute('altitude');
@@ -859,7 +854,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._altitude;
   }
 
-  // certificate - computed: true, optional: true, required: false
+  // certificate - computed: false, optional: true, required: false
   private _certificate?: string; 
   public get certificate() {
     return this.getStringAttribute('certificate');
@@ -875,7 +870,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._certificate;
   }
 
-  // digest - computed: true, optional: true, required: false
+  // digest - computed: false, optional: true, required: false
   private _digest?: string; 
   public get digest() {
     return this.getStringAttribute('digest');
@@ -891,7 +886,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._digest;
   }
 
-  // digest_type - computed: true, optional: true, required: false
+  // digest_type - computed: false, optional: true, required: false
   private _digestType?: number; 
   public get digestType() {
     return this.getNumberAttribute('digest_type');
@@ -907,7 +902,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._digestType;
   }
 
-  // fingerprint - computed: true, optional: true, required: false
+  // fingerprint - computed: false, optional: true, required: false
   private _fingerprint?: string; 
   public get fingerprint() {
     return this.getStringAttribute('fingerprint');
@@ -923,7 +918,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._fingerprint;
   }
 
-  // flags - computed: true, optional: true, required: false
+  // flags - computed: false, optional: true, required: false
   private _flags?: number; 
   public get flags() {
     return this.getNumberAttribute('flags');
@@ -939,7 +934,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._flags;
   }
 
-  // key_tag - computed: true, optional: true, required: false
+  // key_tag - computed: false, optional: true, required: false
   private _keyTag?: number; 
   public get keyTag() {
     return this.getNumberAttribute('key_tag');
@@ -955,7 +950,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._keyTag;
   }
 
-  // lat_degrees - computed: true, optional: true, required: false
+  // lat_degrees - computed: false, optional: true, required: false
   private _latDegrees?: number; 
   public get latDegrees() {
     return this.getNumberAttribute('lat_degrees');
@@ -971,7 +966,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._latDegrees;
   }
 
-  // lat_direction - computed: true, optional: true, required: false
+  // lat_direction - computed: false, optional: true, required: false
   private _latDirection?: string; 
   public get latDirection() {
     return this.getStringAttribute('lat_direction');
@@ -987,7 +982,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._latDirection;
   }
 
-  // lat_minutes - computed: true, optional: true, required: false
+  // lat_minutes - computed: false, optional: true, required: false
   private _latMinutes?: number; 
   public get latMinutes() {
     return this.getNumberAttribute('lat_minutes');
@@ -1003,7 +998,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._latMinutes;
   }
 
-  // lat_seconds - computed: true, optional: true, required: false
+  // lat_seconds - computed: false, optional: true, required: false
   private _latSeconds?: number; 
   public get latSeconds() {
     return this.getNumberAttribute('lat_seconds');
@@ -1019,7 +1014,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._latSeconds;
   }
 
-  // long_degrees - computed: true, optional: true, required: false
+  // long_degrees - computed: false, optional: true, required: false
   private _longDegrees?: number; 
   public get longDegrees() {
     return this.getNumberAttribute('long_degrees');
@@ -1035,7 +1030,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._longDegrees;
   }
 
-  // long_direction - computed: true, optional: true, required: false
+  // long_direction - computed: false, optional: true, required: false
   private _longDirection?: string; 
   public get longDirection() {
     return this.getStringAttribute('long_direction');
@@ -1051,7 +1046,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._longDirection;
   }
 
-  // long_minutes - computed: true, optional: true, required: false
+  // long_minutes - computed: false, optional: true, required: false
   private _longMinutes?: number; 
   public get longMinutes() {
     return this.getNumberAttribute('long_minutes');
@@ -1067,7 +1062,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._longMinutes;
   }
 
-  // long_seconds - computed: true, optional: true, required: false
+  // long_seconds - computed: false, optional: true, required: false
   private _longSeconds?: number; 
   public get longSeconds() {
     return this.getNumberAttribute('long_seconds');
@@ -1083,7 +1078,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._longSeconds;
   }
 
-  // matching_type - computed: true, optional: true, required: false
+  // matching_type - computed: false, optional: true, required: false
   private _matchingType?: number; 
   public get matchingType() {
     return this.getNumberAttribute('matching_type');
@@ -1099,7 +1094,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._matchingType;
   }
 
-  // order - computed: true, optional: true, required: false
+  // order - computed: false, optional: true, required: false
   private _order?: number; 
   public get order() {
     return this.getNumberAttribute('order');
@@ -1115,7 +1110,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._order;
   }
 
-  // port - computed: true, optional: true, required: false
+  // port - computed: false, optional: true, required: false
   private _port?: number; 
   public get port() {
     return this.getNumberAttribute('port');
@@ -1131,7 +1126,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._port;
   }
 
-  // precision_horz - computed: true, optional: true, required: false
+  // precision_horz - computed: false, optional: true, required: false
   private _precisionHorz?: number; 
   public get precisionHorz() {
     return this.getNumberAttribute('precision_horz');
@@ -1147,7 +1142,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._precisionHorz;
   }
 
-  // precision_vert - computed: true, optional: true, required: false
+  // precision_vert - computed: false, optional: true, required: false
   private _precisionVert?: number; 
   public get precisionVert() {
     return this.getNumberAttribute('precision_vert');
@@ -1163,7 +1158,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._precisionVert;
   }
 
-  // preference - computed: true, optional: true, required: false
+  // preference - computed: false, optional: true, required: false
   private _preference?: number; 
   public get preference() {
     return this.getNumberAttribute('preference');
@@ -1179,7 +1174,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._preference;
   }
 
-  // priority - computed: true, optional: true, required: false
+  // priority - computed: false, optional: true, required: false
   private _priority?: number; 
   public get priority() {
     return this.getNumberAttribute('priority');
@@ -1195,7 +1190,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._priority;
   }
 
-  // protocol - computed: true, optional: true, required: false
+  // protocol - computed: false, optional: true, required: false
   private _protocol?: number; 
   public get protocol() {
     return this.getNumberAttribute('protocol');
@@ -1211,7 +1206,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._protocol;
   }
 
-  // public_key - computed: true, optional: true, required: false
+  // public_key - computed: false, optional: true, required: false
   private _publicKey?: string; 
   public get publicKey() {
     return this.getStringAttribute('public_key');
@@ -1227,7 +1222,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._publicKey;
   }
 
-  // regex - computed: true, optional: true, required: false
+  // regex - computed: false, optional: true, required: false
   private _regex?: string; 
   public get regex() {
     return this.getStringAttribute('regex');
@@ -1243,7 +1238,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._regex;
   }
 
-  // replacement - computed: true, optional: true, required: false
+  // replacement - computed: false, optional: true, required: false
   private _replacement?: string; 
   public get replacement() {
     return this.getStringAttribute('replacement');
@@ -1259,7 +1254,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._replacement;
   }
 
-  // selector - computed: true, optional: true, required: false
+  // selector - computed: false, optional: true, required: false
   private _selector?: number; 
   public get selector() {
     return this.getNumberAttribute('selector');
@@ -1275,7 +1270,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._selector;
   }
 
-  // service - computed: true, optional: true, required: false
+  // service - computed: false, optional: true, required: false
   private _service?: string; 
   public get service() {
     return this.getStringAttribute('service');
@@ -1291,7 +1286,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._service;
   }
 
-  // size - computed: true, optional: true, required: false
+  // size - computed: false, optional: true, required: false
   private _size?: number; 
   public get size() {
     return this.getNumberAttribute('size');
@@ -1307,7 +1302,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._size;
   }
 
-  // tag - computed: true, optional: true, required: false
+  // tag - computed: false, optional: true, required: false
   private _tag?: string; 
   public get tag() {
     return this.getStringAttribute('tag');
@@ -1323,7 +1318,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._tag;
   }
 
-  // target - computed: true, optional: true, required: false
+  // target - computed: false, optional: true, required: false
   private _target?: string; 
   public get target() {
     return this.getStringAttribute('target');
@@ -1339,7 +1334,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._target;
   }
 
-  // type - computed: true, optional: true, required: false
+  // type - computed: false, optional: true, required: false
   private _type?: number; 
   public get type() {
     return this.getNumberAttribute('type');
@@ -1355,7 +1350,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 
-  // usage - computed: true, optional: true, required: false
+  // usage - computed: false, optional: true, required: false
   private _usage?: number; 
   public get usage() {
     return this.getNumberAttribute('usage');
@@ -1371,7 +1366,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._usage;
   }
 
-  // value - computed: true, optional: true, required: false
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -1387,7 +1382,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return this._value;
   }
 
-  // weight - computed: true, optional: true, required: false
+  // weight - computed: false, optional: true, required: false
   private _weight?: number; 
   public get weight() {
     return this.getNumberAttribute('weight');
@@ -1407,19 +1402,19 @@ export interface DnsRecordSettings {
   /**
   * If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
   */
   readonly flattenCname?: boolean | cdktf.IResolvable;
   /**
   * When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
   */
   readonly ipv4Only?: boolean | cdktf.IResolvable;
   /**
   * When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
   */
   readonly ipv6Only?: boolean | cdktf.IResolvable;
 }
@@ -1571,7 +1566,7 @@ export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record cloudflare_dns_record}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record cloudflare_dns_record}
 */
 export class DnsRecord extends cdktf.TerraformResource {
 
@@ -1587,7 +1582,7 @@ export class DnsRecord extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DnsRecord resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsRecord to import
-  * @param importFromId The id of the existing DnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsRecord to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1599,7 +1594,7 @@ export class DnsRecord extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/dns_record cloudflare_dns_record} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/dns_record cloudflare_dns_record} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1610,7 +1605,7 @@ export class DnsRecord extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dns_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1680,7 +1675,7 @@ export class DnsRecord extends cdktf.TerraformResource {
     return this.getStringAttribute('created_on');
   }
 
-  // data - computed: true, optional: true, required: false
+  // data - computed: false, optional: true, required: false
   private _data = new DnsRecordDataOutputReference(this, "data");
   public get data() {
     return this._data;

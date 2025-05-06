@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,59 +10,53 @@ export interface MagicWanGreTunnelConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
   */
   readonly accountId: string;
   /**
   * The IP address assigned to the Cloudflare side of the GRE tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
   */
-  readonly cloudflareGreEndpoint?: string;
+  readonly cloudflareGreEndpoint: string;
   /**
   * The IP address assigned to the customer side of the GRE tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
   */
-  readonly customerGreEndpoint?: string;
+  readonly customerGreEndpoint: string;
   /**
   * An optional description of the GRE tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
   */
   readonly description?: string;
   /**
-  * Identifier
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#gre_tunnel_id MagicWanGreTunnel#gre_tunnel_id}
-  */
-  readonly greTunnelId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}
   */
   readonly healthCheck?: MagicWanGreTunnelHealthCheck;
   /**
   * A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
   */
-  readonly interfaceAddress?: string;
+  readonly interfaceAddress: string;
   /**
   * Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
   */
   readonly mtu?: number;
   /**
   * The name of the tunnel. The name cannot contain spaces or special characters, must be 15 characters or less, and cannot share a name with another GRE tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
   */
-  readonly name?: string;
+  readonly name: string;
   /**
   * Time To Live (TTL) in number of hops of the GRE tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
   */
   readonly ttl?: number;
 }
@@ -310,271 +299,11 @@ export class MagicWanGreTunnelGreTunnelOutputReference extends cdktf.ComplexObje
     return this.getNumberAttribute('ttl');
   }
 }
-export interface MagicWanGreTunnelGreTunnelsHealthCheckTarget {
-}
-
-export function magicWanGreTunnelGreTunnelsHealthCheckTargetToTerraform(struct?: MagicWanGreTunnelGreTunnelsHealthCheckTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function magicWanGreTunnelGreTunnelsHealthCheckTargetToHclTerraform(struct?: MagicWanGreTunnelGreTunnelsHealthCheckTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class MagicWanGreTunnelGreTunnelsHealthCheckTargetOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): MagicWanGreTunnelGreTunnelsHealthCheckTarget | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MagicWanGreTunnelGreTunnelsHealthCheckTarget | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // effective - computed: true, optional: false, required: false
-  public get effective() {
-    return this.getStringAttribute('effective');
-  }
-
-  // saved - computed: true, optional: false, required: false
-  public get saved() {
-    return this.getStringAttribute('saved');
-  }
-}
-export interface MagicWanGreTunnelGreTunnelsHealthCheck {
-}
-
-export function magicWanGreTunnelGreTunnelsHealthCheckToTerraform(struct?: MagicWanGreTunnelGreTunnelsHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function magicWanGreTunnelGreTunnelsHealthCheckToHclTerraform(struct?: MagicWanGreTunnelGreTunnelsHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class MagicWanGreTunnelGreTunnelsHealthCheckOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): MagicWanGreTunnelGreTunnelsHealthCheck | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MagicWanGreTunnelGreTunnelsHealthCheck | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // direction - computed: true, optional: false, required: false
-  public get direction() {
-    return this.getStringAttribute('direction');
-  }
-
-  // enabled - computed: true, optional: false, required: false
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-
-  // rate - computed: true, optional: false, required: false
-  public get rate() {
-    return this.getStringAttribute('rate');
-  }
-
-  // target - computed: true, optional: false, required: false
-  private _target = new MagicWanGreTunnelGreTunnelsHealthCheckTargetOutputReference(this, "target");
-  public get target() {
-    return this._target;
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-}
-export interface MagicWanGreTunnelGreTunnels {
-}
-
-export function magicWanGreTunnelGreTunnelsToTerraform(struct?: MagicWanGreTunnelGreTunnels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function magicWanGreTunnelGreTunnelsToHclTerraform(struct?: MagicWanGreTunnelGreTunnels): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class MagicWanGreTunnelGreTunnelsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): MagicWanGreTunnelGreTunnels | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MagicWanGreTunnelGreTunnels | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // cloudflare_gre_endpoint - computed: true, optional: false, required: false
-  public get cloudflareGreEndpoint() {
-    return this.getStringAttribute('cloudflare_gre_endpoint');
-  }
-
-  // created_on - computed: true, optional: false, required: false
-  public get createdOn() {
-    return this.getStringAttribute('created_on');
-  }
-
-  // customer_gre_endpoint - computed: true, optional: false, required: false
-  public get customerGreEndpoint() {
-    return this.getStringAttribute('customer_gre_endpoint');
-  }
-
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-
-  // health_check - computed: true, optional: false, required: false
-  private _healthCheck = new MagicWanGreTunnelGreTunnelsHealthCheckOutputReference(this, "health_check");
-  public get healthCheck() {
-    return this._healthCheck;
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-
-  // interface_address - computed: true, optional: false, required: false
-  public get interfaceAddress() {
-    return this.getStringAttribute('interface_address');
-  }
-
-  // modified_on - computed: true, optional: false, required: false
-  public get modifiedOn() {
-    return this.getStringAttribute('modified_on');
-  }
-
-  // mtu - computed: true, optional: false, required: false
-  public get mtu() {
-    return this.getNumberAttribute('mtu');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // ttl - computed: true, optional: false, required: false
-  public get ttl() {
-    return this.getNumberAttribute('ttl');
-  }
-}
-
-export class MagicWanGreTunnelGreTunnelsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MagicWanGreTunnelGreTunnelsOutputReference {
-    return new MagicWanGreTunnelGreTunnelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface MagicWanGreTunnelHealthCheckTarget {
   /**
   * The saved health check target. Setting the value to the empty string indicates that the calculated default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#saved MagicWanGreTunnel#saved}
   */
   readonly saved?: string;
 }
@@ -676,33 +405,33 @@ export interface MagicWanGreTunnelHealthCheck {
   * The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
   * Available values: "unidirectional", "bidirectional".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#direction MagicWanGreTunnel#direction}
   */
   readonly direction?: string;
   /**
   * Determines whether to run healthchecks for a tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#enabled MagicWanGreTunnel#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * How frequent the health check is run. The default value is `mid`.
   * Available values: "low", "mid", "high".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#rate MagicWanGreTunnel#rate}
   */
   readonly rate?: string;
   /**
   * The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to `customer_gre_endpoint address`. This field is ignored for bidirectional healthchecks as the interface_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#target MagicWanGreTunnel#target}
   */
   readonly target?: MagicWanGreTunnelHealthCheckTarget;
   /**
   * The type of healthcheck to run, reply or request. The default value is `reply`.
   * Available values: "reply", "request".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#type MagicWanGreTunnel#type}
   */
   readonly type?: string;
 }
@@ -1151,7 +880,7 @@ export class MagicWanGreTunnelModifiedGreTunnelOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}
 */
 export class MagicWanGreTunnel extends cdktf.TerraformResource {
 
@@ -1167,7 +896,7 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MagicWanGreTunnel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicWanGreTunnel to import
-  * @param importFromId The id of the existing MagicWanGreTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicWanGreTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicWanGreTunnel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1179,7 +908,7 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1190,7 +919,7 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_wan_gre_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1205,7 +934,6 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
     this._cloudflareGreEndpoint = config.cloudflareGreEndpoint;
     this._customerGreEndpoint = config.customerGreEndpoint;
     this._description = config.description;
-    this._greTunnelId = config.greTunnelId;
     this._healthCheck.internalValue = config.healthCheck;
     this._interfaceAddress = config.interfaceAddress;
     this._mtu = config.mtu;
@@ -1230,7 +958,7 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // cloudflare_gre_endpoint - computed: false, optional: true, required: false
+  // cloudflare_gre_endpoint - computed: false, optional: false, required: true
   private _cloudflareGreEndpoint?: string; 
   public get cloudflareGreEndpoint() {
     return this.getStringAttribute('cloudflare_gre_endpoint');
@@ -1238,24 +966,23 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
   public set cloudflareGreEndpoint(value: string) {
     this._cloudflareGreEndpoint = value;
   }
-  public resetCloudflareGreEndpoint() {
-    this._cloudflareGreEndpoint = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get cloudflareGreEndpointInput() {
     return this._cloudflareGreEndpoint;
   }
 
-  // customer_gre_endpoint - computed: false, optional: true, required: false
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // customer_gre_endpoint - computed: false, optional: false, required: true
   private _customerGreEndpoint?: string; 
   public get customerGreEndpoint() {
     return this.getStringAttribute('customer_gre_endpoint');
   }
   public set customerGreEndpoint(value: string) {
     this._customerGreEndpoint = value;
-  }
-  public resetCustomerGreEndpoint() {
-    this._customerGreEndpoint = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customerGreEndpointInput() {
@@ -1284,28 +1011,6 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
     return this._greTunnel;
   }
 
-  // gre_tunnel_id - computed: false, optional: true, required: false
-  private _greTunnelId?: string; 
-  public get greTunnelId() {
-    return this.getStringAttribute('gre_tunnel_id');
-  }
-  public set greTunnelId(value: string) {
-    this._greTunnelId = value;
-  }
-  public resetGreTunnelId() {
-    this._greTunnelId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get greTunnelIdInput() {
-    return this._greTunnelId;
-  }
-
-  // gre_tunnels - computed: true, optional: false, required: false
-  private _greTunnels = new MagicWanGreTunnelGreTunnelsList(this, "gre_tunnels", false);
-  public get greTunnels() {
-    return this._greTunnels;
-  }
-
   // health_check - computed: true, optional: true, required: false
   private _healthCheck = new MagicWanGreTunnelHealthCheckOutputReference(this, "health_check");
   public get healthCheck() {
@@ -1322,16 +1027,18 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
     return this._healthCheck.internalValue;
   }
 
-  // interface_address - computed: false, optional: true, required: false
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // interface_address - computed: false, optional: false, required: true
   private _interfaceAddress?: string; 
   public get interfaceAddress() {
     return this.getStringAttribute('interface_address');
   }
   public set interfaceAddress(value: string) {
     this._interfaceAddress = value;
-  }
-  public resetInterfaceAddress() {
-    this._interfaceAddress = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get interfaceAddressInput() {
@@ -1347,6 +1054,11 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
   private _modifiedGreTunnel = new MagicWanGreTunnelModifiedGreTunnelOutputReference(this, "modified_gre_tunnel");
   public get modifiedGreTunnel() {
     return this._modifiedGreTunnel;
+  }
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
 
   // mtu - computed: true, optional: true, required: false
@@ -1365,16 +1077,13 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
     return this._mtu;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -1407,7 +1116,6 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
       cloudflare_gre_endpoint: cdktf.stringToTerraform(this._cloudflareGreEndpoint),
       customer_gre_endpoint: cdktf.stringToTerraform(this._customerGreEndpoint),
       description: cdktf.stringToTerraform(this._description),
-      gre_tunnel_id: cdktf.stringToTerraform(this._greTunnelId),
       health_check: magicWanGreTunnelHealthCheckToTerraform(this._healthCheck.internalValue),
       interface_address: cdktf.stringToTerraform(this._interfaceAddress),
       mtu: cdktf.numberToTerraform(this._mtu),
@@ -1438,12 +1146,6 @@ export class MagicWanGreTunnel extends cdktf.TerraformResource {
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      gre_tunnel_id: {
-        value: cdktf.stringToHclTerraform(this._greTunnelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareOriginCaCertificatesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Limit to the number of records returned.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates#limit DataCloudflareOriginCaCertificates#limit}
+  */
+  readonly limit?: number;
+  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates#max_items DataCloudflareOriginCaCertificates#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates#max_items DataCloudflareOriginCaCertificates#max_items}
   */
   readonly maxItems?: number;
   /**
-  * Identifier
+  * Offset the results
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates#zone_id DataCloudflareOriginCaCertificates#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates#offset DataCloudflareOriginCaCertificates#offset}
+  */
+  readonly offset?: number;
+  /**
+  * Identifier.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates#zone_id DataCloudflareOriginCaCertificates#zone_id}
   */
   readonly zoneId: string;
 }
@@ -132,7 +139,7 @@ export class DataCloudflareOriginCaCertificatesResultList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}
 */
 export class DataCloudflareOriginCaCertificates extends cdktf.TerraformDataSource {
 
@@ -148,7 +155,7 @@ export class DataCloudflareOriginCaCertificates extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataCloudflareOriginCaCertificates resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareOriginCaCertificates to import
-  * @param importFromId The id of the existing DataCloudflareOriginCaCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareOriginCaCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareOriginCaCertificates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -160,7 +167,7 @@ export class DataCloudflareOriginCaCertificates extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -171,7 +178,7 @@ export class DataCloudflareOriginCaCertificates extends cdktf.TerraformDataSourc
       terraformResourceType: 'cloudflare_origin_ca_certificates',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -182,13 +189,31 @@ export class DataCloudflareOriginCaCertificates extends cdktf.TerraformDataSourc
       connection: config.connection,
       forEach: config.forEach
     });
+    this._limit = config.limit;
     this._maxItems = config.maxItems;
+    this._offset = config.offset;
     this._zoneId = config.zoneId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // limit - computed: false, optional: true, required: false
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  public resetLimit() {
+    this._limit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
 
   // max_items - computed: false, optional: true, required: false
   private _maxItems?: number; 
@@ -204,6 +229,22 @@ export class DataCloudflareOriginCaCertificates extends cdktf.TerraformDataSourc
   // Temporarily expose input value. Use with caution.
   public get maxItemsInput() {
     return this._maxItems;
+  }
+
+  // offset - computed: false, optional: true, required: false
+  private _offset?: number; 
+  public get offset() {
+    return this.getNumberAttribute('offset');
+  }
+  public set offset(value: number) {
+    this._offset = value;
+  }
+  public resetOffset() {
+    this._offset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get offsetInput() {
+    return this._offset;
   }
 
   // result - computed: true, optional: false, required: false
@@ -231,15 +272,29 @@ export class DataCloudflareOriginCaCertificates extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      limit: cdktf.numberToTerraform(this._limit),
       max_items: cdktf.numberToTerraform(this._maxItems),
+      offset: cdktf.numberToTerraform(this._offset),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      limit: {
+        value: cdktf.numberToHclTerraform(this._limit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       max_items: {
         value: cdktf.numberToHclTerraform(this._maxItems),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      offset: {
+        value: cdktf.numberToHclTerraform(this._offset),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

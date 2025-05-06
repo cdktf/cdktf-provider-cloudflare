@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,89 +8,101 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustDeviceDefaultProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#account_id ZeroTrustDeviceDefaultProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#account_id ZeroTrustDeviceDefaultProfile#account_id}
   */
   readonly accountId: string;
   /**
   * Whether to allow the user to switch WARP between modes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#allow_mode_switch ZeroTrustDeviceDefaultProfile#allow_mode_switch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#allow_mode_switch ZeroTrustDeviceDefaultProfile#allow_mode_switch}
   */
   readonly allowModeSwitch?: boolean | cdktf.IResolvable;
   /**
   * Whether to receive update notifications when a new version of the client is available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#allow_updates ZeroTrustDeviceDefaultProfile#allow_updates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#allow_updates ZeroTrustDeviceDefaultProfile#allow_updates}
   */
   readonly allowUpdates?: boolean | cdktf.IResolvable;
   /**
   * Whether to allow devices to leave the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#allowed_to_leave ZeroTrustDeviceDefaultProfile#allowed_to_leave}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#allowed_to_leave ZeroTrustDeviceDefaultProfile#allowed_to_leave}
   */
   readonly allowedToLeave?: boolean | cdktf.IResolvable;
   /**
   * The amount of time in seconds to reconnect after having been disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#auto_connect ZeroTrustDeviceDefaultProfile#auto_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#auto_connect ZeroTrustDeviceDefaultProfile#auto_connect}
   */
   readonly autoConnect?: number;
   /**
   * Turn on the captive portal after the specified amount of time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#captive_portal ZeroTrustDeviceDefaultProfile#captive_portal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#captive_portal ZeroTrustDeviceDefaultProfile#captive_portal}
   */
   readonly captivePortal?: number;
   /**
   * If the `dns_server` field of a fallback domain is not present, the client will fall back to a best guess of the default/system DNS resolvers unless this policy option is set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#disable_auto_fallback ZeroTrustDeviceDefaultProfile#disable_auto_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#disable_auto_fallback ZeroTrustDeviceDefaultProfile#disable_auto_fallback}
   */
   readonly disableAutoFallback?: boolean | cdktf.IResolvable;
   /**
   * List of routes excluded in the WARP client's tunnel. Both 'exclude' and 'include' cannot be set in the same request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#exclude ZeroTrustDeviceDefaultProfile#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#exclude ZeroTrustDeviceDefaultProfile#exclude}
   */
   readonly exclude?: ZeroTrustDeviceDefaultProfileExclude[] | cdktf.IResolvable;
   /**
   * Whether to add Microsoft IPs to Split Tunnel exclusions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#exclude_office_ips ZeroTrustDeviceDefaultProfile#exclude_office_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#exclude_office_ips ZeroTrustDeviceDefaultProfile#exclude_office_ips}
   */
   readonly excludeOfficeIps?: boolean | cdktf.IResolvable;
   /**
   * List of routes included in the WARP client's tunnel. Both 'exclude' and 'include' cannot be set in the same request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#include ZeroTrustDeviceDefaultProfile#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#include ZeroTrustDeviceDefaultProfile#include}
   */
   readonly include?: ZeroTrustDeviceDefaultProfileInclude[] | cdktf.IResolvable;
   /**
+  * The amount of time in minutes a user is allowed access to their LAN. A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#lan_allow_minutes ZeroTrustDeviceDefaultProfile#lan_allow_minutes}
+  */
+  readonly lanAllowMinutes?: number;
+  /**
+  * The size of the subnet for the local access network. Note that this field is omitted from the response if null or unset.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#lan_allow_subnet_size ZeroTrustDeviceDefaultProfile#lan_allow_subnet_size}
+  */
+  readonly lanAllowSubnetSize?: number;
+  /**
   * Determines if the operating system will register WARP's local interface IP with your on-premises DNS server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#register_interface_ip_with_dns ZeroTrustDeviceDefaultProfile#register_interface_ip_with_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#register_interface_ip_with_dns ZeroTrustDeviceDefaultProfile#register_interface_ip_with_dns}
   */
   readonly registerInterfaceIpWithDns?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#service_mode_v2 ZeroTrustDeviceDefaultProfile#service_mode_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#service_mode_v2 ZeroTrustDeviceDefaultProfile#service_mode_v2}
   */
   readonly serviceModeV2?: ZeroTrustDeviceDefaultProfileServiceModeV2;
   /**
   * The URL to launch when the Send Feedback button is clicked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#support_url ZeroTrustDeviceDefaultProfile#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#support_url ZeroTrustDeviceDefaultProfile#support_url}
   */
   readonly supportUrl?: string;
   /**
   * Whether to allow the user to turn off the WARP switch and disconnect the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#switch_locked ZeroTrustDeviceDefaultProfile#switch_locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#switch_locked ZeroTrustDeviceDefaultProfile#switch_locked}
   */
   readonly switchLocked?: boolean | cdktf.IResolvable;
   /**
   * Determines which tunnel protocol to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#tunnel_protocol ZeroTrustDeviceDefaultProfile#tunnel_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#tunnel_protocol ZeroTrustDeviceDefaultProfile#tunnel_protocol}
   */
   readonly tunnelProtocol?: string;
 }
@@ -103,19 +110,19 @@ export interface ZeroTrustDeviceDefaultProfileExclude {
   /**
   * The address in CIDR format to exclude from the tunnel. If `address` is present, `host` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#address ZeroTrustDeviceDefaultProfile#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#address ZeroTrustDeviceDefaultProfile#address}
   */
   readonly address?: string;
   /**
   * A description of the Split Tunnel item, displayed in the client UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#description ZeroTrustDeviceDefaultProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#description ZeroTrustDeviceDefaultProfile#description}
   */
   readonly description?: string;
   /**
   * The domain name to exclude from the tunnel. If `host` is present, `address` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#host ZeroTrustDeviceDefaultProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#host ZeroTrustDeviceDefaultProfile#host}
   */
   readonly host?: string;
 }
@@ -219,7 +226,7 @@ export class ZeroTrustDeviceDefaultProfileExcludeOutputReference extends cdktf.C
     }
   }
 
-  // address - computed: true, optional: true, required: false
+  // address - computed: false, optional: true, required: false
   private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
@@ -235,7 +242,7 @@ export class ZeroTrustDeviceDefaultProfileExcludeOutputReference extends cdktf.C
     return this._address;
   }
 
-  // description - computed: true, optional: true, required: false
+  // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -251,7 +258,7 @@ export class ZeroTrustDeviceDefaultProfileExcludeOutputReference extends cdktf.C
     return this._description;
   }
 
-  // host - computed: true, optional: true, required: false
+  // host - computed: false, optional: true, required: false
   private _host?: string; 
   public get host() {
     return this.getStringAttribute('host');
@@ -376,19 +383,19 @@ export interface ZeroTrustDeviceDefaultProfileInclude {
   /**
   * The address in CIDR format to include in the tunnel. If `address` is present, `host` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#address ZeroTrustDeviceDefaultProfile#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#address ZeroTrustDeviceDefaultProfile#address}
   */
   readonly address?: string;
   /**
   * A description of the Split Tunnel item, displayed in the client UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#description ZeroTrustDeviceDefaultProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#description ZeroTrustDeviceDefaultProfile#description}
   */
   readonly description?: string;
   /**
   * The domain name to include in the tunnel. If `host` is present, `address` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#host ZeroTrustDeviceDefaultProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#host ZeroTrustDeviceDefaultProfile#host}
   */
   readonly host?: string;
 }
@@ -492,7 +499,7 @@ export class ZeroTrustDeviceDefaultProfileIncludeOutputReference extends cdktf.C
     }
   }
 
-  // address - computed: true, optional: true, required: false
+  // address - computed: false, optional: true, required: false
   private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
@@ -508,7 +515,7 @@ export class ZeroTrustDeviceDefaultProfileIncludeOutputReference extends cdktf.C
     return this._address;
   }
 
-  // description - computed: true, optional: true, required: false
+  // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -524,7 +531,7 @@ export class ZeroTrustDeviceDefaultProfileIncludeOutputReference extends cdktf.C
     return this._description;
   }
 
-  // host - computed: true, optional: true, required: false
+  // host - computed: false, optional: true, required: false
   private _host?: string; 
   public get host() {
     return this.getStringAttribute('host');
@@ -564,13 +571,13 @@ export interface ZeroTrustDeviceDefaultProfileServiceModeV2 {
   /**
   * The mode to run the WARP client under.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#mode ZeroTrustDeviceDefaultProfile#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#mode ZeroTrustDeviceDefaultProfile#mode}
   */
   readonly mode?: string;
   /**
   * The port number when used with proxy mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#port ZeroTrustDeviceDefaultProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#port ZeroTrustDeviceDefaultProfile#port}
   */
   readonly port?: number;
 }
@@ -659,7 +666,7 @@ export class ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference extends c
     }
   }
 
-  // mode - computed: true, optional: true, required: false
+  // mode - computed: false, optional: true, required: false
   private _mode?: string; 
   public get mode() {
     return this.getStringAttribute('mode');
@@ -675,7 +682,7 @@ export class ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference extends c
     return this._mode;
   }
 
-  // port - computed: true, optional: true, required: false
+  // port - computed: false, optional: true, required: false
   private _port?: number; 
   public get port() {
     return this.getNumberAttribute('port');
@@ -693,7 +700,7 @@ export class ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}
 */
 export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
 
@@ -709,7 +716,7 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustDeviceDefaultProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDeviceDefaultProfile to import
-  * @param importFromId The id of the existing ZeroTrustDeviceDefaultProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDeviceDefaultProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDeviceDefaultProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -721,7 +728,7 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -732,7 +739,7 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_device_default_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -753,6 +760,8 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
     this._exclude.internalValue = config.exclude;
     this._excludeOfficeIps = config.excludeOfficeIps;
     this._include.internalValue = config.include;
+    this._lanAllowMinutes = config.lanAllowMinutes;
+    this._lanAllowSubnetSize = config.lanAllowSubnetSize;
     this._registerInterfaceIpWithDns = config.registerInterfaceIpWithDns;
     this._serviceModeV2.internalValue = config.serviceModeV2;
     this._supportUrl = config.supportUrl;
@@ -883,7 +892,7 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
     return this.getBooleanAttribute('enabled');
   }
 
-  // exclude - computed: true, optional: true, required: false
+  // exclude - computed: false, optional: true, required: false
   private _exclude = new ZeroTrustDeviceDefaultProfileExcludeList(this, "exclude", false);
   public get exclude() {
     return this._exclude;
@@ -931,7 +940,7 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // include - computed: true, optional: true, required: false
+  // include - computed: false, optional: true, required: false
   private _include = new ZeroTrustDeviceDefaultProfileIncludeList(this, "include", false);
   public get include() {
     return this._include;
@@ -945,6 +954,38 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get includeInput() {
     return this._include.internalValue;
+  }
+
+  // lan_allow_minutes - computed: false, optional: true, required: false
+  private _lanAllowMinutes?: number; 
+  public get lanAllowMinutes() {
+    return this.getNumberAttribute('lan_allow_minutes');
+  }
+  public set lanAllowMinutes(value: number) {
+    this._lanAllowMinutes = value;
+  }
+  public resetLanAllowMinutes() {
+    this._lanAllowMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lanAllowMinutesInput() {
+    return this._lanAllowMinutes;
+  }
+
+  // lan_allow_subnet_size - computed: false, optional: true, required: false
+  private _lanAllowSubnetSize?: number; 
+  public get lanAllowSubnetSize() {
+    return this.getNumberAttribute('lan_allow_subnet_size');
+  }
+  public set lanAllowSubnetSize(value: number) {
+    this._lanAllowSubnetSize = value;
+  }
+  public resetLanAllowSubnetSize() {
+    this._lanAllowSubnetSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lanAllowSubnetSizeInput() {
+    return this._lanAllowSubnetSize;
   }
 
   // register_interface_ip_with_dns - computed: false, optional: true, required: false
@@ -963,7 +1004,7 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
     return this._registerInterfaceIpWithDns;
   }
 
-  // service_mode_v2 - computed: true, optional: true, required: false
+  // service_mode_v2 - computed: false, optional: true, required: false
   private _serviceModeV2 = new ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference(this, "service_mode_v2");
   public get serviceModeV2() {
     return this._serviceModeV2;
@@ -1043,6 +1084,8 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
       exclude: cdktf.listMapper(zeroTrustDeviceDefaultProfileExcludeToTerraform, false)(this._exclude.internalValue),
       exclude_office_ips: cdktf.booleanToTerraform(this._excludeOfficeIps),
       include: cdktf.listMapper(zeroTrustDeviceDefaultProfileIncludeToTerraform, false)(this._include.internalValue),
+      lan_allow_minutes: cdktf.numberToTerraform(this._lanAllowMinutes),
+      lan_allow_subnet_size: cdktf.numberToTerraform(this._lanAllowSubnetSize),
       register_interface_ip_with_dns: cdktf.booleanToTerraform(this._registerInterfaceIpWithDns),
       service_mode_v2: zeroTrustDeviceDefaultProfileServiceModeV2ToTerraform(this._serviceModeV2.internalValue),
       support_url: cdktf.stringToTerraform(this._supportUrl),
@@ -1112,6 +1155,18 @@ export class ZeroTrustDeviceDefaultProfile extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustDeviceDefaultProfileIncludeList",
+      },
+      lan_allow_minutes: {
+        value: cdktf.numberToHclTerraform(this._lanAllowMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lan_allow_subnet_size: {
+        value: cdktf.numberToHclTerraform(this._lanAllowSubnetSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       register_interface_ip_with_dns: {
         value: cdktf.booleanToHclTerraform(this._registerInterfaceIpWithDns),

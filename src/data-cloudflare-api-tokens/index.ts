@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/api_tokens
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/api_tokens
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +11,13 @@ export interface DataCloudflareApiTokensConfig extends cdktf.TerraformMetaArgume
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
   */
   readonly direction?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
   */
   readonly maxItems?: number;
 }
@@ -501,7 +496,7 @@ export class DataCloudflareApiTokensResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/api_tokens cloudflare_api_tokens}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/api_tokens cloudflare_api_tokens}
 */
 export class DataCloudflareApiTokens extends cdktf.TerraformDataSource {
 
@@ -517,7 +512,7 @@ export class DataCloudflareApiTokens extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareApiTokens resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiTokens to import
-  * @param importFromId The id of the existing DataCloudflareApiTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiTokens to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -529,7 +524,7 @@ export class DataCloudflareApiTokens extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -540,7 +535,7 @@ export class DataCloudflareApiTokens extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_api_tokens',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

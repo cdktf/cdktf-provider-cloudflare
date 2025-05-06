@@ -1,3 +1,3 @@
 # `data_cloudflare_load_balancer`
 
-Refer to the Terraform Registry for docs: [`data_cloudflare_load_balancer`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer).
+Refer to the Terraform Registry for docs: [`data_cloudflare_load_balancer`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer).

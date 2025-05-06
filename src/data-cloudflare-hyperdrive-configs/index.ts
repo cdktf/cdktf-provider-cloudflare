@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/hyperdrive_configs
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/hyperdrive_configs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataCloudflareHyperdriveConfigsConfig extends cdktf.TerraformMe
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/hyperdrive_configs#account_id DataCloudflareHyperdriveConfigs#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/hyperdrive_configs#account_id DataCloudflareHyperdriveConfigs#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/hyperdrive_configs#max_items DataCloudflareHyperdriveConfigs#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/hyperdrive_configs#max_items DataCloudflareHyperdriveConfigs#max_items}
   */
   readonly maxItems?: number;
 }
@@ -87,6 +82,70 @@ export class DataCloudflareHyperdriveConfigsResultCachingOutputReference extends
   // stale_while_revalidate - computed: true, optional: false, required: false
   public get staleWhileRevalidate() {
     return this.getNumberAttribute('stale_while_revalidate');
+  }
+}
+export interface DataCloudflareHyperdriveConfigsResultMtls {
+}
+
+export function dataCloudflareHyperdriveConfigsResultMtlsToTerraform(struct?: DataCloudflareHyperdriveConfigsResultMtls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareHyperdriveConfigsResultMtlsToHclTerraform(struct?: DataCloudflareHyperdriveConfigsResultMtls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareHyperdriveConfigsResultMtlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareHyperdriveConfigsResultMtls | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareHyperdriveConfigsResultMtls | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ca_certificate_id - computed: true, optional: false, required: false
+  public get caCertificateId() {
+    return this.getStringAttribute('ca_certificate_id');
+  }
+
+  // mtls_certificate_id - computed: true, optional: false, required: false
+  public get mtlsCertificateId() {
+    return this.getStringAttribute('mtls_certificate_id');
+  }
+
+  // sslmode - computed: true, optional: false, required: false
+  public get sslmode() {
+    return this.getStringAttribute('sslmode');
   }
 }
 export interface DataCloudflareHyperdriveConfigsResultOrigin {
@@ -250,6 +309,12 @@ export class DataCloudflareHyperdriveConfigsResultOutputReference extends cdktf.
     return this.getStringAttribute('modified_on');
   }
 
+  // mtls - computed: true, optional: false, required: false
+  private _mtls = new DataCloudflareHyperdriveConfigsResultMtlsOutputReference(this, "mtls");
+  public get mtls() {
+    return this._mtls;
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -282,7 +347,7 @@ export class DataCloudflareHyperdriveConfigsResultList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}
 */
 export class DataCloudflareHyperdriveConfigs extends cdktf.TerraformDataSource {
 
@@ -298,7 +363,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareHyperdriveConfigs resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareHyperdriveConfigs to import
-  * @param importFromId The id of the existing DataCloudflareHyperdriveConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/hyperdrive_configs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareHyperdriveConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/hyperdrive_configs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareHyperdriveConfigs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -310,7 +375,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -321,7 +386,7 @@ export class DataCloudflareHyperdriveConfigs extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_hyperdrive_configs',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

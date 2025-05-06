@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,26 +10,26 @@ export interface EmailSecurityTrustedDomainsConfig extends cdktf.TerraformMetaAr
   /**
   * Account Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#body EmailSecurityTrustedDomains#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#body EmailSecurityTrustedDomains#body}
   */
   readonly body?: EmailSecurityTrustedDomainsBody[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
   */
   readonly comments?: string;
   /**
   * Select to prevent recently registered domains from triggering a
   * Suspicious or Malicious disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
   */
   readonly isRecent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
   */
   readonly isRegex?: boolean | cdktf.IResolvable;
   /**
@@ -42,28 +37,28 @@ export interface EmailSecurityTrustedDomainsConfig extends cdktf.TerraformMetaAr
   * spelling to your connected domains. Prevents listed domains from
   * triggering a Spoof disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
   */
   readonly isSimilarity?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
   */
   readonly pattern?: string;
 }
 export interface EmailSecurityTrustedDomainsBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
   */
   readonly comments?: string;
   /**
   * Select to prevent recently registered domains from triggering a
   * Suspicious or Malicious disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
   */
   readonly isRecent: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
   */
   readonly isRegex: boolean | cdktf.IResolvable;
   /**
@@ -71,11 +66,11 @@ export interface EmailSecurityTrustedDomainsBody {
   * spelling to your connected domains. Prevents listed domains from
   * triggering a Spoof disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
   */
   readonly isSimilarity: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
   */
   readonly pattern: string;
 }
@@ -205,7 +200,7 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
     }
   }
 
-  // comments - computed: true, optional: true, required: false
+  // comments - computed: false, optional: true, required: false
   private _comments?: string; 
   public get comments() {
     return this.getStringAttribute('comments');
@@ -221,7 +216,7 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
     return this._comments;
   }
 
-  // is_recent - computed: true, optional: false, required: true
+  // is_recent - computed: false, optional: false, required: true
   private _isRecent?: boolean | cdktf.IResolvable; 
   public get isRecent() {
     return this.getBooleanAttribute('is_recent');
@@ -234,7 +229,7 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
     return this._isRecent;
   }
 
-  // is_regex - computed: true, optional: false, required: true
+  // is_regex - computed: false, optional: false, required: true
   private _isRegex?: boolean | cdktf.IResolvable; 
   public get isRegex() {
     return this.getBooleanAttribute('is_regex');
@@ -247,7 +242,7 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
     return this._isRegex;
   }
 
-  // is_similarity - computed: true, optional: false, required: true
+  // is_similarity - computed: false, optional: false, required: true
   private _isSimilarity?: boolean | cdktf.IResolvable; 
   public get isSimilarity() {
     return this.getBooleanAttribute('is_similarity');
@@ -260,7 +255,7 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
     return this._isSimilarity;
   }
 
-  // pattern - computed: true, optional: false, required: true
+  // pattern - computed: false, optional: false, required: true
   private _pattern?: string; 
   public get pattern() {
     return this.getStringAttribute('pattern');
@@ -295,7 +290,7 @@ export class EmailSecurityTrustedDomainsBodyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}
 */
 export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
 
@@ -311,7 +306,7 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EmailSecurityTrustedDomains resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailSecurityTrustedDomains to import
-  * @param importFromId The id of the existing EmailSecurityTrustedDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailSecurityTrustedDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailSecurityTrustedDomains to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -323,7 +318,7 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +329,7 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_security_trusted_domains',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -371,7 +366,7 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // body - computed: true, optional: true, required: false
+  // body - computed: false, optional: true, required: false
   private _body = new EmailSecurityTrustedDomainsBodyList(this, "body", false);
   public get body() {
     return this._body;

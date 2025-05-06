@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataCloudflareWorkersRouteConfig extends cdktf.TerraformMetaArg
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route#route_id DataCloudflareWorkersRoute#route_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route#route_id DataCloudflareWorkersRoute#route_id}
   */
-  readonly routeId: string;
+  readonly routeId?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route#zone_id DataCloudflareWorkersRoute#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route#zone_id DataCloudflareWorkersRoute#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route cloudflare_workers_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route cloudflare_workers_route}
 */
 export class DataCloudflareWorkersRoute extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataCloudflareWorkersRoute extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWorkersRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWorkersRoute to import
-  * @param importFromId The id of the existing DataCloudflareWorkersRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWorkersRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWorkersRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataCloudflareWorkersRoute extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_route cloudflare_workers_route} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_route cloudflare_workers_route} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataCloudflareWorkersRoute extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_workers_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -95,13 +90,16 @@ export class DataCloudflareWorkersRoute extends cdktf.TerraformDataSource {
     return this.getStringAttribute('pattern');
   }
 
-  // route_id - computed: false, optional: false, required: true
+  // route_id - computed: false, optional: true, required: false
   private _routeId?: string; 
   public get routeId() {
     return this.getStringAttribute('route_id');
   }
   public set routeId(value: string) {
     this._routeId = value;
+  }
+  public resetRouteId() {
+    this._routeId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get routeIdInput() {

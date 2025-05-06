@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,23 @@ export interface HyperdriveConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
   */
   readonly caching?: HyperdriveConfigCaching;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#mtls HyperdriveConfig#mtls}
+  */
+  readonly mtls?: HyperdriveConfigMtls;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
   */
   readonly origin: HyperdriveConfigOrigin;
 }
@@ -35,19 +34,19 @@ export interface HyperdriveConfigCaching {
   /**
   * When set to true, disables the caching of SQL responses. (Default: false)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * When present, specifies max duration for which items should persist in the cache. Not returned if set to default. (Default: 60)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
   */
   readonly maxAge?: number;
   /**
   * When present, indicates the number of seconds cache may serve the response after it becomes stale. Not returned if set to default. (Default: 15)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
   */
   readonly staleWhileRevalidate?: number;
 }
@@ -165,7 +164,7 @@ export class HyperdriveConfigCachingOutputReference extends cdktf.ComplexObject 
     return this._disabled;
   }
 
-  // max_age - computed: true, optional: true, required: false
+  // max_age - computed: false, optional: true, required: false
   private _maxAge?: number; 
   public get maxAge() {
     return this.getNumberAttribute('max_age');
@@ -181,7 +180,7 @@ export class HyperdriveConfigCachingOutputReference extends cdktf.ComplexObject 
     return this._maxAge;
   }
 
-  // stale_while_revalidate - computed: true, optional: true, required: false
+  // stale_while_revalidate - computed: false, optional: true, required: false
   private _staleWhileRevalidate?: number; 
   public get staleWhileRevalidate() {
     return this.getNumberAttribute('stale_while_revalidate');
@@ -197,54 +196,220 @@ export class HyperdriveConfigCachingOutputReference extends cdktf.ComplexObject 
     return this._staleWhileRevalidate;
   }
 }
+export interface HyperdriveConfigMtls {
+  /**
+  * CA certificate ID
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#ca_certificate_id HyperdriveConfig#ca_certificate_id}
+  */
+  readonly caCertificateId?: string;
+  /**
+  * mTLS certificate ID
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#mtls_certificate_id HyperdriveConfig#mtls_certificate_id}
+  */
+  readonly mtlsCertificateId?: string;
+  /**
+  * SSL mode used for CA verification. Must be 'require', 'verify-ca', or 'verify-full'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#sslmode HyperdriveConfig#sslmode}
+  */
+  readonly sslmode?: string;
+}
+
+export function hyperdriveConfigMtlsToTerraform(struct?: HyperdriveConfigMtls | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ca_certificate_id: cdktf.stringToTerraform(struct!.caCertificateId),
+    mtls_certificate_id: cdktf.stringToTerraform(struct!.mtlsCertificateId),
+    sslmode: cdktf.stringToTerraform(struct!.sslmode),
+  }
+}
+
+
+export function hyperdriveConfigMtlsToHclTerraform(struct?: HyperdriveConfigMtls | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ca_certificate_id: {
+      value: cdktf.stringToHclTerraform(struct!.caCertificateId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mtls_certificate_id: {
+      value: cdktf.stringToHclTerraform(struct!.mtlsCertificateId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sslmode: {
+      value: cdktf.stringToHclTerraform(struct!.sslmode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class HyperdriveConfigMtlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): HyperdriveConfigMtls | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._caCertificateId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.caCertificateId = this._caCertificateId;
+    }
+    if (this._mtlsCertificateId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mtlsCertificateId = this._mtlsCertificateId;
+    }
+    if (this._sslmode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslmode = this._sslmode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: HyperdriveConfigMtls | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._caCertificateId = undefined;
+      this._mtlsCertificateId = undefined;
+      this._sslmode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._caCertificateId = value.caCertificateId;
+      this._mtlsCertificateId = value.mtlsCertificateId;
+      this._sslmode = value.sslmode;
+    }
+  }
+
+  // ca_certificate_id - computed: false, optional: true, required: false
+  private _caCertificateId?: string; 
+  public get caCertificateId() {
+    return this.getStringAttribute('ca_certificate_id');
+  }
+  public set caCertificateId(value: string) {
+    this._caCertificateId = value;
+  }
+  public resetCaCertificateId() {
+    this._caCertificateId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caCertificateIdInput() {
+    return this._caCertificateId;
+  }
+
+  // mtls_certificate_id - computed: false, optional: true, required: false
+  private _mtlsCertificateId?: string; 
+  public get mtlsCertificateId() {
+    return this.getStringAttribute('mtls_certificate_id');
+  }
+  public set mtlsCertificateId(value: string) {
+    this._mtlsCertificateId = value;
+  }
+  public resetMtlsCertificateId() {
+    this._mtlsCertificateId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mtlsCertificateIdInput() {
+    return this._mtlsCertificateId;
+  }
+
+  // sslmode - computed: false, optional: true, required: false
+  private _sslmode?: string; 
+  public get sslmode() {
+    return this.getStringAttribute('sslmode');
+  }
+  public set sslmode(value: string) {
+    this._sslmode = value;
+  }
+  public resetSslmode() {
+    this._sslmode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslmodeInput() {
+    return this._sslmode;
+  }
+}
 export interface HyperdriveConfigOrigin {
   /**
   * The Client ID of the Access token to use when connecting to the origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
   */
   readonly accessClientId?: string;
   /**
   * The Client Secret of the Access token to use when connecting to the origin database. This value is write-only and never returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
   */
   readonly accessClientSecret?: string;
   /**
   * The name of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
   */
   readonly database: string;
   /**
   * The host (hostname or IP) of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
   */
   readonly host: string;
   /**
   * The password required to access your origin database. This value is write-only and never returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
   */
   readonly password: string;
   /**
   * The port (default: 5432 for Postgres) of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
   */
   readonly port?: number;
   /**
   * Specifies the URL scheme used to connect to your origin database.
-  * Available values: "postgres", "postgresql".
+  * Available values: "postgres", "postgresql", "mysql".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
   */
   readonly scheme: string;
   /**
   * The user of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
   */
   readonly user: string;
 }
@@ -526,7 +691,7 @@ export class HyperdriveConfigOriginOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}
 */
 export class HyperdriveConfig extends cdktf.TerraformResource {
 
@@ -542,7 +707,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a HyperdriveConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HyperdriveConfig to import
-  * @param importFromId The id of the existing HyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HyperdriveConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -554,7 +719,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -565,7 +730,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_hyperdrive_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -578,6 +743,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._caching.internalValue = config.caching;
+    this._mtls.internalValue = config.mtls;
     this._name = config.name;
     this._origin.internalValue = config.origin;
   }
@@ -599,7 +765,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // caching - computed: true, optional: true, required: false
+  // caching - computed: false, optional: true, required: false
   private _caching = new HyperdriveConfigCachingOutputReference(this, "caching");
   public get caching() {
     return this._caching;
@@ -628,6 +794,22 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
   // modified_on - computed: true, optional: false, required: false
   public get modifiedOn() {
     return this.getStringAttribute('modified_on');
+  }
+
+  // mtls - computed: false, optional: true, required: false
+  private _mtls = new HyperdriveConfigMtlsOutputReference(this, "mtls");
+  public get mtls() {
+    return this._mtls;
+  }
+  public putMtls(value: HyperdriveConfigMtls) {
+    this._mtls.internalValue = value;
+  }
+  public resetMtls() {
+    this._mtls.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mtlsInput() {
+    return this._mtls.internalValue;
   }
 
   // name - computed: false, optional: false, required: true
@@ -664,6 +846,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       caching: hyperdriveConfigCachingToTerraform(this._caching.internalValue),
+      mtls: hyperdriveConfigMtlsToTerraform(this._mtls.internalValue),
       name: cdktf.stringToTerraform(this._name),
       origin: hyperdriveConfigOriginToTerraform(this._origin.internalValue),
     };
@@ -682,6 +865,12 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "HyperdriveConfigCaching",
+      },
+      mtls: {
+        value: hyperdriveConfigMtlsToHclTerraform(this._mtls.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "HyperdriveConfigMtls",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),

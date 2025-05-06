@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,69 +10,73 @@ export interface PagesProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#account_id PagesProject#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#account_id PagesProject#account_id}
   */
   readonly accountId: string;
   /**
   * Configs for the project build process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#build_config PagesProject#build_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#build_config PagesProject#build_config}
   */
   readonly buildConfig?: PagesProjectBuildConfig;
   /**
   * Configs for deployments in a project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
   */
   readonly deploymentConfigs?: PagesProjectDeploymentConfigs;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
   /**
   * Production branch of the project. Used to identify production deployments.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
   */
   readonly productionBranch?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#source PagesProject#source}
+  */
+  readonly source?: PagesProjectSource;
 }
 export interface PagesProjectBuildConfig {
   /**
   * Enable build caching for the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#build_caching PagesProject#build_caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#build_caching PagesProject#build_caching}
   */
   readonly buildCaching?: boolean | cdktf.IResolvable;
   /**
   * Command used to build project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#build_command PagesProject#build_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#build_command PagesProject#build_command}
   */
   readonly buildCommand?: string;
   /**
   * Output directory of the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
   */
   readonly destinationDir?: string;
   /**
   * Directory to run the command.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
   */
   readonly rootDir?: string;
   /**
   * The classifying tag for analytics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
   */
   readonly webAnalyticsTag?: string;
   /**
   * The auth token for analytics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
   */
   readonly webAnalyticsToken?: string;
 }
@@ -218,7 +217,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     }
   }
 
-  // build_caching - computed: true, optional: true, required: false
+  // build_caching - computed: false, optional: true, required: false
   private _buildCaching?: boolean | cdktf.IResolvable; 
   public get buildCaching() {
     return this.getBooleanAttribute('build_caching');
@@ -234,7 +233,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return this._buildCaching;
   }
 
-  // build_command - computed: true, optional: true, required: false
+  // build_command - computed: false, optional: true, required: false
   private _buildCommand?: string; 
   public get buildCommand() {
     return this.getStringAttribute('build_command');
@@ -250,7 +249,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return this._buildCommand;
   }
 
-  // destination_dir - computed: true, optional: true, required: false
+  // destination_dir - computed: false, optional: true, required: false
   private _destinationDir?: string; 
   public get destinationDir() {
     return this.getStringAttribute('destination_dir');
@@ -266,7 +265,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return this._destinationDir;
   }
 
-  // root_dir - computed: true, optional: true, required: false
+  // root_dir - computed: false, optional: true, required: false
   private _rootDir?: string; 
   public get rootDir() {
     return this.getStringAttribute('root_dir');
@@ -282,7 +281,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return this._rootDir;
   }
 
-  // web_analytics_tag - computed: true, optional: true, required: false
+  // web_analytics_tag - computed: false, optional: true, required: false
   private _webAnalyticsTag?: string; 
   public get webAnalyticsTag() {
     return this.getStringAttribute('web_analytics_tag');
@@ -298,7 +297,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return this._webAnalyticsTag;
   }
 
-  // web_analytics_token - computed: true, optional: true, required: false
+  // web_analytics_token - computed: false, optional: true, required: false
   private _webAnalyticsToken?: string; 
   public get webAnalyticsToken() {
     return this.getStringAttribute('web_analytics_token');
@@ -1055,7 +1054,7 @@ export class PagesProjectCanonicalDeploymentOutputReference extends cdktf.Comple
 }
 export interface PagesProjectDeploymentConfigsPreviewAiBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#project_id PagesProject#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#project_id PagesProject#project_id}
   */
   readonly projectId?: string;
 }
@@ -1132,7 +1131,7 @@ export class PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference exten
     }
   }
 
-  // project_id - computed: true, optional: true, required: false
+  // project_id - computed: false, optional: true, required: false
   private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
@@ -1171,7 +1170,7 @@ export interface PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets {
   /**
   * Name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#dataset PagesProject#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#dataset PagesProject#dataset}
   */
   readonly dataset?: string;
 }
@@ -1248,7 +1247,7 @@ export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputRe
     }
   }
 
-  // dataset - computed: true, optional: true, required: false
+  // dataset - computed: false, optional: true, required: false
   private _dataset?: string; 
   public get dataset() {
     return this.getStringAttribute('dataset');
@@ -1366,7 +1365,7 @@ export interface PagesProjectDeploymentConfigsPreviewD1Databases {
   /**
   * UUID of the D1 database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1446,7 +1445,7 @@ export class PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference exte
     }
   }
 
-  // id - computed: true, optional: true, required: false
+  // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -1485,7 +1484,7 @@ export interface PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces {
   /**
   * ID of the Durable Object namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId?: string;
 }
@@ -1562,7 +1561,7 @@ export class PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputRe
     }
   }
 
-  // namespace_id - computed: true, optional: true, required: false
+  // namespace_id - computed: false, optional: true, required: false
   private _namespaceId?: string; 
   public get namespaceId() {
     return this.getStringAttribute('namespace_id');
@@ -1601,13 +1600,13 @@ export interface PagesProjectDeploymentConfigsPreviewEnvVars {
   /**
   * Available values: "plain_text".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#type PagesProject#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#type PagesProject#type}
   */
   readonly type: string;
   /**
   * Environment variable value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#value PagesProject#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#value PagesProject#value}
   */
   readonly value: string;
 }
@@ -1697,7 +1696,7 @@ export class PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference extends 
     }
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -1710,7 +1709,7 @@ export class PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference extends 
     return this._type;
   }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: false, optional: false, required: true
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -1744,7 +1743,7 @@ export class PagesProjectDeploymentConfigsPreviewEnvVarsMap extends cdktf.Comple
 }
 export interface PagesProjectDeploymentConfigsPreviewHyperdriveBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1824,7 +1823,7 @@ export class PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReferen
     }
   }
 
-  // id - computed: true, optional: true, required: false
+  // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -1863,7 +1862,7 @@ export interface PagesProjectDeploymentConfigsPreviewKvNamespaces {
   /**
   * ID of the KV namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId?: string;
 }
@@ -1940,7 +1939,7 @@ export class PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference ext
     }
   }
 
-  // namespace_id - computed: true, optional: true, required: false
+  // namespace_id - computed: false, optional: true, required: false
   private _namespaceId?: string; 
   public get namespaceId() {
     return this.getStringAttribute('namespace_id');
@@ -1977,7 +1976,7 @@ export class PagesProjectDeploymentConfigsPreviewKvNamespacesMap extends cdktf.C
 }
 export interface PagesProjectDeploymentConfigsPreviewMtlsCertificates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
   */
   readonly certificateId?: string;
 }
@@ -2054,7 +2053,7 @@ export class PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference
     }
   }
 
-  // certificate_id - computed: true, optional: true, required: false
+  // certificate_id - computed: false, optional: true, required: false
   private _certificateId?: string; 
   public get certificateId() {
     return this.getStringAttribute('certificate_id');
@@ -2093,7 +2092,7 @@ export interface PagesProjectDeploymentConfigsPreviewPlacement {
   /**
   * Placement mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#mode PagesProject#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#mode PagesProject#mode}
   */
   readonly mode?: string;
 }
@@ -2169,7 +2168,7 @@ export class PagesProjectDeploymentConfigsPreviewPlacementOutputReference extend
     }
   }
 
-  // mode - computed: true, optional: true, required: false
+  // mode - computed: false, optional: true, required: false
   private _mode?: string; 
   public get mode() {
     return this.getStringAttribute('mode');
@@ -2189,7 +2188,7 @@ export interface PagesProjectDeploymentConfigsPreviewQueueProducers {
   /**
   * Name of the Queue.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name?: string;
 }
@@ -2266,7 +2265,7 @@ export class PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference e
     }
   }
 
-  // name - computed: true, optional: true, required: false
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -2305,13 +2304,13 @@ export interface PagesProjectDeploymentConfigsPreviewR2Buckets {
   /**
   * Jurisdiction of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Name of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name?: string;
 }
@@ -2401,7 +2400,7 @@ export class PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference extend
     }
   }
 
-  // jurisdiction - computed: true, optional: true, required: false
+  // jurisdiction - computed: false, optional: true, required: false
   private _jurisdiction?: string; 
   public get jurisdiction() {
     return this.getStringAttribute('jurisdiction');
@@ -2417,7 +2416,7 @@ export class PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference extend
     return this._jurisdiction;
   }
 
-  // name - computed: true, optional: true, required: false
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -2456,19 +2455,19 @@ export interface PagesProjectDeploymentConfigsPreviewServices {
   /**
   * The entrypoint to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
   */
   readonly entrypoint?: string;
   /**
   * The Service environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#environment PagesProject#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#environment PagesProject#environment}
   */
   readonly environment?: string;
   /**
   * The Service name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#service PagesProject#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#service PagesProject#service}
   */
   readonly service?: string;
 }
@@ -2571,7 +2570,7 @@ export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends
     }
   }
 
-  // entrypoint - computed: true, optional: true, required: false
+  // entrypoint - computed: false, optional: true, required: false
   private _entrypoint?: string; 
   public get entrypoint() {
     return this.getStringAttribute('entrypoint');
@@ -2587,7 +2586,7 @@ export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends
     return this._entrypoint;
   }
 
-  // environment - computed: true, optional: true, required: false
+  // environment - computed: false, optional: true, required: false
   private _environment?: string; 
   public get environment() {
     return this.getStringAttribute('environment');
@@ -2603,7 +2602,7 @@ export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends
     return this._environment;
   }
 
-  // service - computed: true, optional: true, required: false
+  // service - computed: false, optional: true, required: false
   private _service?: string; 
   public get service() {
     return this.getStringAttribute('service');
@@ -2640,7 +2639,7 @@ export class PagesProjectDeploymentConfigsPreviewServicesMap extends cdktf.Compl
 }
 export interface PagesProjectDeploymentConfigsPreviewVectorizeBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#index_name PagesProject#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#index_name PagesProject#index_name}
   */
   readonly indexName?: string;
 }
@@ -2717,7 +2716,7 @@ export class PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReferenc
     }
   }
 
-  // index_name - computed: true, optional: true, required: false
+  // index_name - computed: false, optional: true, required: false
   private _indexName?: string; 
   public get indexName() {
     return this.getStringAttribute('index_name');
@@ -2756,97 +2755,97 @@ export interface PagesProjectDeploymentConfigsPreview {
   /**
   * Constellation bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
   */
   readonly aiBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewAiBindings } | cdktf.IResolvable;
   /**
   * Analytics Engine bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
   */
   readonly analyticsEngineDatasets?: { [key: string]: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets } | cdktf.IResolvable;
   /**
   * Browser bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#browsers PagesProject#browsers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#browsers PagesProject#browsers}
   */
   readonly browsers?: { [key: string]: PagesProjectDeploymentConfigsPreviewBrowsers } | cdktf.IResolvable;
   /**
   * Compatibility date used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Compatibility flags used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * D1 databases used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
   */
   readonly d1Databases?: { [key: string]: PagesProjectDeploymentConfigsPreviewD1Databases } | cdktf.IResolvable;
   /**
   * Durable Object namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
   */
   readonly durableObjectNamespaces?: { [key: string]: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces } | cdktf.IResolvable;
   /**
   * Environment variables used for builds and Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
   */
   readonly envVars?: { [key: string]: PagesProjectDeploymentConfigsPreviewEnvVars } | cdktf.IResolvable;
   /**
   * Hyperdrive bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
   */
   readonly hyperdriveBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewHyperdriveBindings } | cdktf.IResolvable;
   /**
   * KV namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
   */
   readonly kvNamespaces?: { [key: string]: PagesProjectDeploymentConfigsPreviewKvNamespaces } | cdktf.IResolvable;
   /**
   * mTLS bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
   */
   readonly mtlsCertificates?: { [key: string]: PagesProjectDeploymentConfigsPreviewMtlsCertificates } | cdktf.IResolvable;
   /**
   * Placement setting used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#placement PagesProject#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#placement PagesProject#placement}
   */
   readonly placement?: PagesProjectDeploymentConfigsPreviewPlacement;
   /**
   * Queue Producer bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
   */
   readonly queueProducers?: { [key: string]: PagesProjectDeploymentConfigsPreviewQueueProducers } | cdktf.IResolvable;
   /**
   * R2 buckets used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
   */
   readonly r2Buckets?: { [key: string]: PagesProjectDeploymentConfigsPreviewR2Buckets } | cdktf.IResolvable;
   /**
   * Services used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#services PagesProject#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#services PagesProject#services}
   */
   readonly services?: { [key: string]: PagesProjectDeploymentConfigsPreviewServices } | cdktf.IResolvable;
   /**
   * Vectorize bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
   */
   readonly vectorizeBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewVectorizeBindings } | cdktf.IResolvable;
 }
@@ -3117,7 +3116,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     }
   }
 
-  // ai_bindings - computed: true, optional: true, required: false
+  // ai_bindings - computed: false, optional: true, required: false
   private _aiBindings = new PagesProjectDeploymentConfigsPreviewAiBindingsMap(this, "ai_bindings");
   public get aiBindings() {
     return this._aiBindings;
@@ -3133,7 +3132,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._aiBindings.internalValue;
   }
 
-  // analytics_engine_datasets - computed: true, optional: true, required: false
+  // analytics_engine_datasets - computed: false, optional: true, required: false
   private _analyticsEngineDatasets = new PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap(this, "analytics_engine_datasets");
   public get analyticsEngineDatasets() {
     return this._analyticsEngineDatasets;
@@ -3149,7 +3148,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._analyticsEngineDatasets.internalValue;
   }
 
-  // browsers - computed: true, optional: true, required: false
+  // browsers - computed: false, optional: true, required: false
   private _browsers = new PagesProjectDeploymentConfigsPreviewBrowsersMap(this, "browsers");
   public get browsers() {
     return this._browsers;
@@ -3165,7 +3164,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._browsers.internalValue;
   }
 
-  // compatibility_date - computed: true, optional: true, required: false
+  // compatibility_date - computed: false, optional: true, required: false
   private _compatibilityDate?: string; 
   public get compatibilityDate() {
     return this.getStringAttribute('compatibility_date');
@@ -3181,7 +3180,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._compatibilityDate;
   }
 
-  // compatibility_flags - computed: true, optional: true, required: false
+  // compatibility_flags - computed: false, optional: true, required: false
   private _compatibilityFlags?: string[]; 
   public get compatibilityFlags() {
     return this.getListAttribute('compatibility_flags');
@@ -3197,7 +3196,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._compatibilityFlags;
   }
 
-  // d1_databases - computed: true, optional: true, required: false
+  // d1_databases - computed: false, optional: true, required: false
   private _d1Databases = new PagesProjectDeploymentConfigsPreviewD1DatabasesMap(this, "d1_databases");
   public get d1Databases() {
     return this._d1Databases;
@@ -3213,7 +3212,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._d1Databases.internalValue;
   }
 
-  // durable_object_namespaces - computed: true, optional: true, required: false
+  // durable_object_namespaces - computed: false, optional: true, required: false
   private _durableObjectNamespaces = new PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap(this, "durable_object_namespaces");
   public get durableObjectNamespaces() {
     return this._durableObjectNamespaces;
@@ -3229,7 +3228,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._durableObjectNamespaces.internalValue;
   }
 
-  // env_vars - computed: true, optional: true, required: false
+  // env_vars - computed: false, optional: true, required: false
   private _envVars = new PagesProjectDeploymentConfigsPreviewEnvVarsMap(this, "env_vars");
   public get envVars() {
     return this._envVars;
@@ -3245,7 +3244,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._envVars.internalValue;
   }
 
-  // hyperdrive_bindings - computed: true, optional: true, required: false
+  // hyperdrive_bindings - computed: false, optional: true, required: false
   private _hyperdriveBindings = new PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap(this, "hyperdrive_bindings");
   public get hyperdriveBindings() {
     return this._hyperdriveBindings;
@@ -3261,7 +3260,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._hyperdriveBindings.internalValue;
   }
 
-  // kv_namespaces - computed: true, optional: true, required: false
+  // kv_namespaces - computed: false, optional: true, required: false
   private _kvNamespaces = new PagesProjectDeploymentConfigsPreviewKvNamespacesMap(this, "kv_namespaces");
   public get kvNamespaces() {
     return this._kvNamespaces;
@@ -3277,7 +3276,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._kvNamespaces.internalValue;
   }
 
-  // mtls_certificates - computed: true, optional: true, required: false
+  // mtls_certificates - computed: false, optional: true, required: false
   private _mtlsCertificates = new PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap(this, "mtls_certificates");
   public get mtlsCertificates() {
     return this._mtlsCertificates;
@@ -3293,7 +3292,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._mtlsCertificates.internalValue;
   }
 
-  // placement - computed: true, optional: true, required: false
+  // placement - computed: false, optional: true, required: false
   private _placement = new PagesProjectDeploymentConfigsPreviewPlacementOutputReference(this, "placement");
   public get placement() {
     return this._placement;
@@ -3309,7 +3308,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._placement.internalValue;
   }
 
-  // queue_producers - computed: true, optional: true, required: false
+  // queue_producers - computed: false, optional: true, required: false
   private _queueProducers = new PagesProjectDeploymentConfigsPreviewQueueProducersMap(this, "queue_producers");
   public get queueProducers() {
     return this._queueProducers;
@@ -3325,7 +3324,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._queueProducers.internalValue;
   }
 
-  // r2_buckets - computed: true, optional: true, required: false
+  // r2_buckets - computed: false, optional: true, required: false
   private _r2Buckets = new PagesProjectDeploymentConfigsPreviewR2BucketsMap(this, "r2_buckets");
   public get r2Buckets() {
     return this._r2Buckets;
@@ -3341,7 +3340,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._r2Buckets.internalValue;
   }
 
-  // services - computed: true, optional: true, required: false
+  // services - computed: false, optional: true, required: false
   private _services = new PagesProjectDeploymentConfigsPreviewServicesMap(this, "services");
   public get services() {
     return this._services;
@@ -3357,7 +3356,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return this._services.internalValue;
   }
 
-  // vectorize_bindings - computed: true, optional: true, required: false
+  // vectorize_bindings - computed: false, optional: true, required: false
   private _vectorizeBindings = new PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap(this, "vectorize_bindings");
   public get vectorizeBindings() {
     return this._vectorizeBindings;
@@ -3375,7 +3374,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
 }
 export interface PagesProjectDeploymentConfigsProductionAiBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#project_id PagesProject#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#project_id PagesProject#project_id}
   */
   readonly projectId?: string;
 }
@@ -3452,7 +3451,7 @@ export class PagesProjectDeploymentConfigsProductionAiBindingsOutputReference ex
     }
   }
 
-  // project_id - computed: true, optional: true, required: false
+  // project_id - computed: false, optional: true, required: false
   private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
@@ -3491,7 +3490,7 @@ export interface PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets 
   /**
   * Name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#dataset PagesProject#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#dataset PagesProject#dataset}
   */
   readonly dataset?: string;
 }
@@ -3568,7 +3567,7 @@ export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutpu
     }
   }
 
-  // dataset - computed: true, optional: true, required: false
+  // dataset - computed: false, optional: true, required: false
   private _dataset?: string; 
   public get dataset() {
     return this.getStringAttribute('dataset');
@@ -3686,7 +3685,7 @@ export interface PagesProjectDeploymentConfigsProductionD1Databases {
   /**
   * UUID of the D1 database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3766,7 +3765,7 @@ export class PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference e
     }
   }
 
-  // id - computed: true, optional: true, required: false
+  // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -3805,7 +3804,7 @@ export interface PagesProjectDeploymentConfigsProductionDurableObjectNamespaces 
   /**
   * ID of the Durable Object namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId?: string;
 }
@@ -3882,7 +3881,7 @@ export class PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutpu
     }
   }
 
-  // namespace_id - computed: true, optional: true, required: false
+  // namespace_id - computed: false, optional: true, required: false
   private _namespaceId?: string; 
   public get namespaceId() {
     return this.getStringAttribute('namespace_id');
@@ -3921,13 +3920,13 @@ export interface PagesProjectDeploymentConfigsProductionEnvVars {
   /**
   * Available values: "plain_text".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#type PagesProject#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#type PagesProject#type}
   */
   readonly type: string;
   /**
   * Environment variable value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#value PagesProject#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#value PagesProject#value}
   */
   readonly value: string;
 }
@@ -4017,7 +4016,7 @@ export class PagesProjectDeploymentConfigsProductionEnvVarsOutputReference exten
     }
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -4030,7 +4029,7 @@ export class PagesProjectDeploymentConfigsProductionEnvVarsOutputReference exten
     return this._type;
   }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: false, optional: false, required: true
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -4064,7 +4063,7 @@ export class PagesProjectDeploymentConfigsProductionEnvVarsMap extends cdktf.Com
 }
 export interface PagesProjectDeploymentConfigsProductionHyperdriveBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4144,7 +4143,7 @@ export class PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputRefe
     }
   }
 
-  // id - computed: true, optional: true, required: false
+  // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -4183,7 +4182,7 @@ export interface PagesProjectDeploymentConfigsProductionKvNamespaces {
   /**
   * ID of the KV namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId?: string;
 }
@@ -4260,7 +4259,7 @@ export class PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference 
     }
   }
 
-  // namespace_id - computed: true, optional: true, required: false
+  // namespace_id - computed: false, optional: true, required: false
   private _namespaceId?: string; 
   public get namespaceId() {
     return this.getStringAttribute('namespace_id');
@@ -4297,7 +4296,7 @@ export class PagesProjectDeploymentConfigsProductionKvNamespacesMap extends cdkt
 }
 export interface PagesProjectDeploymentConfigsProductionMtlsCertificates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
   */
   readonly certificateId?: string;
 }
@@ -4374,7 +4373,7 @@ export class PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputRefere
     }
   }
 
-  // certificate_id - computed: true, optional: true, required: false
+  // certificate_id - computed: false, optional: true, required: false
   private _certificateId?: string; 
   public get certificateId() {
     return this.getStringAttribute('certificate_id');
@@ -4413,7 +4412,7 @@ export interface PagesProjectDeploymentConfigsProductionPlacement {
   /**
   * Placement mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#mode PagesProject#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#mode PagesProject#mode}
   */
   readonly mode?: string;
 }
@@ -4489,7 +4488,7 @@ export class PagesProjectDeploymentConfigsProductionPlacementOutputReference ext
     }
   }
 
-  // mode - computed: true, optional: true, required: false
+  // mode - computed: false, optional: true, required: false
   private _mode?: string; 
   public get mode() {
     return this.getStringAttribute('mode');
@@ -4509,7 +4508,7 @@ export interface PagesProjectDeploymentConfigsProductionQueueProducers {
   /**
   * Name of the Queue.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name?: string;
 }
@@ -4586,7 +4585,7 @@ export class PagesProjectDeploymentConfigsProductionQueueProducersOutputReferenc
     }
   }
 
-  // name - computed: true, optional: true, required: false
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -4625,13 +4624,13 @@ export interface PagesProjectDeploymentConfigsProductionR2Buckets {
   /**
   * Jurisdiction of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Name of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name?: string;
 }
@@ -4721,7 +4720,7 @@ export class PagesProjectDeploymentConfigsProductionR2BucketsOutputReference ext
     }
   }
 
-  // jurisdiction - computed: true, optional: true, required: false
+  // jurisdiction - computed: false, optional: true, required: false
   private _jurisdiction?: string; 
   public get jurisdiction() {
     return this.getStringAttribute('jurisdiction');
@@ -4737,7 +4736,7 @@ export class PagesProjectDeploymentConfigsProductionR2BucketsOutputReference ext
     return this._jurisdiction;
   }
 
-  // name - computed: true, optional: true, required: false
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -4776,19 +4775,19 @@ export interface PagesProjectDeploymentConfigsProductionServices {
   /**
   * The entrypoint to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
   */
   readonly entrypoint?: string;
   /**
   * The Service environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#environment PagesProject#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#environment PagesProject#environment}
   */
   readonly environment?: string;
   /**
   * The Service name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#service PagesProject#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#service PagesProject#service}
   */
   readonly service?: string;
 }
@@ -4891,7 +4890,7 @@ export class PagesProjectDeploymentConfigsProductionServicesOutputReference exte
     }
   }
 
-  // entrypoint - computed: true, optional: true, required: false
+  // entrypoint - computed: false, optional: true, required: false
   private _entrypoint?: string; 
   public get entrypoint() {
     return this.getStringAttribute('entrypoint');
@@ -4907,7 +4906,7 @@ export class PagesProjectDeploymentConfigsProductionServicesOutputReference exte
     return this._entrypoint;
   }
 
-  // environment - computed: true, optional: true, required: false
+  // environment - computed: false, optional: true, required: false
   private _environment?: string; 
   public get environment() {
     return this.getStringAttribute('environment');
@@ -4923,7 +4922,7 @@ export class PagesProjectDeploymentConfigsProductionServicesOutputReference exte
     return this._environment;
   }
 
-  // service - computed: true, optional: true, required: false
+  // service - computed: false, optional: true, required: false
   private _service?: string; 
   public get service() {
     return this.getStringAttribute('service');
@@ -4960,7 +4959,7 @@ export class PagesProjectDeploymentConfigsProductionServicesMap extends cdktf.Co
 }
 export interface PagesProjectDeploymentConfigsProductionVectorizeBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#index_name PagesProject#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#index_name PagesProject#index_name}
   */
   readonly indexName?: string;
 }
@@ -5037,7 +5036,7 @@ export class PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputRefer
     }
   }
 
-  // index_name - computed: true, optional: true, required: false
+  // index_name - computed: false, optional: true, required: false
   private _indexName?: string; 
   public get indexName() {
     return this.getStringAttribute('index_name');
@@ -5076,97 +5075,97 @@ export interface PagesProjectDeploymentConfigsProduction {
   /**
   * Constellation bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
   */
   readonly aiBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionAiBindings } | cdktf.IResolvable;
   /**
   * Analytics Engine bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
   */
   readonly analyticsEngineDatasets?: { [key: string]: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets } | cdktf.IResolvable;
   /**
   * Browser bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#browsers PagesProject#browsers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#browsers PagesProject#browsers}
   */
   readonly browsers?: { [key: string]: PagesProjectDeploymentConfigsProductionBrowsers } | cdktf.IResolvable;
   /**
   * Compatibility date used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Compatibility flags used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * D1 databases used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
   */
   readonly d1Databases?: { [key: string]: PagesProjectDeploymentConfigsProductionD1Databases } | cdktf.IResolvable;
   /**
   * Durable Object namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
   */
   readonly durableObjectNamespaces?: { [key: string]: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces } | cdktf.IResolvable;
   /**
   * Environment variables used for builds and Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
   */
   readonly envVars?: { [key: string]: PagesProjectDeploymentConfigsProductionEnvVars } | cdktf.IResolvable;
   /**
   * Hyperdrive bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
   */
   readonly hyperdriveBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionHyperdriveBindings } | cdktf.IResolvable;
   /**
   * KV namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
   */
   readonly kvNamespaces?: { [key: string]: PagesProjectDeploymentConfigsProductionKvNamespaces } | cdktf.IResolvable;
   /**
   * mTLS bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
   */
   readonly mtlsCertificates?: { [key: string]: PagesProjectDeploymentConfigsProductionMtlsCertificates } | cdktf.IResolvable;
   /**
   * Placement setting used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#placement PagesProject#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#placement PagesProject#placement}
   */
   readonly placement?: PagesProjectDeploymentConfigsProductionPlacement;
   /**
   * Queue Producer bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
   */
   readonly queueProducers?: { [key: string]: PagesProjectDeploymentConfigsProductionQueueProducers } | cdktf.IResolvable;
   /**
   * R2 buckets used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
   */
   readonly r2Buckets?: { [key: string]: PagesProjectDeploymentConfigsProductionR2Buckets } | cdktf.IResolvable;
   /**
   * Services used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#services PagesProject#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#services PagesProject#services}
   */
   readonly services?: { [key: string]: PagesProjectDeploymentConfigsProductionServices } | cdktf.IResolvable;
   /**
   * Vectorize bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
   */
   readonly vectorizeBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionVectorizeBindings } | cdktf.IResolvable;
 }
@@ -5437,7 +5436,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     }
   }
 
-  // ai_bindings - computed: true, optional: true, required: false
+  // ai_bindings - computed: false, optional: true, required: false
   private _aiBindings = new PagesProjectDeploymentConfigsProductionAiBindingsMap(this, "ai_bindings");
   public get aiBindings() {
     return this._aiBindings;
@@ -5453,7 +5452,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._aiBindings.internalValue;
   }
 
-  // analytics_engine_datasets - computed: true, optional: true, required: false
+  // analytics_engine_datasets - computed: false, optional: true, required: false
   private _analyticsEngineDatasets = new PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap(this, "analytics_engine_datasets");
   public get analyticsEngineDatasets() {
     return this._analyticsEngineDatasets;
@@ -5469,7 +5468,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._analyticsEngineDatasets.internalValue;
   }
 
-  // browsers - computed: true, optional: true, required: false
+  // browsers - computed: false, optional: true, required: false
   private _browsers = new PagesProjectDeploymentConfigsProductionBrowsersMap(this, "browsers");
   public get browsers() {
     return this._browsers;
@@ -5485,7 +5484,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._browsers.internalValue;
   }
 
-  // compatibility_date - computed: true, optional: true, required: false
+  // compatibility_date - computed: false, optional: true, required: false
   private _compatibilityDate?: string; 
   public get compatibilityDate() {
     return this.getStringAttribute('compatibility_date');
@@ -5501,7 +5500,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._compatibilityDate;
   }
 
-  // compatibility_flags - computed: true, optional: true, required: false
+  // compatibility_flags - computed: false, optional: true, required: false
   private _compatibilityFlags?: string[]; 
   public get compatibilityFlags() {
     return this.getListAttribute('compatibility_flags');
@@ -5517,7 +5516,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._compatibilityFlags;
   }
 
-  // d1_databases - computed: true, optional: true, required: false
+  // d1_databases - computed: false, optional: true, required: false
   private _d1Databases = new PagesProjectDeploymentConfigsProductionD1DatabasesMap(this, "d1_databases");
   public get d1Databases() {
     return this._d1Databases;
@@ -5533,7 +5532,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._d1Databases.internalValue;
   }
 
-  // durable_object_namespaces - computed: true, optional: true, required: false
+  // durable_object_namespaces - computed: false, optional: true, required: false
   private _durableObjectNamespaces = new PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap(this, "durable_object_namespaces");
   public get durableObjectNamespaces() {
     return this._durableObjectNamespaces;
@@ -5549,7 +5548,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._durableObjectNamespaces.internalValue;
   }
 
-  // env_vars - computed: true, optional: true, required: false
+  // env_vars - computed: false, optional: true, required: false
   private _envVars = new PagesProjectDeploymentConfigsProductionEnvVarsMap(this, "env_vars");
   public get envVars() {
     return this._envVars;
@@ -5565,7 +5564,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._envVars.internalValue;
   }
 
-  // hyperdrive_bindings - computed: true, optional: true, required: false
+  // hyperdrive_bindings - computed: false, optional: true, required: false
   private _hyperdriveBindings = new PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap(this, "hyperdrive_bindings");
   public get hyperdriveBindings() {
     return this._hyperdriveBindings;
@@ -5581,7 +5580,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._hyperdriveBindings.internalValue;
   }
 
-  // kv_namespaces - computed: true, optional: true, required: false
+  // kv_namespaces - computed: false, optional: true, required: false
   private _kvNamespaces = new PagesProjectDeploymentConfigsProductionKvNamespacesMap(this, "kv_namespaces");
   public get kvNamespaces() {
     return this._kvNamespaces;
@@ -5597,7 +5596,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._kvNamespaces.internalValue;
   }
 
-  // mtls_certificates - computed: true, optional: true, required: false
+  // mtls_certificates - computed: false, optional: true, required: false
   private _mtlsCertificates = new PagesProjectDeploymentConfigsProductionMtlsCertificatesMap(this, "mtls_certificates");
   public get mtlsCertificates() {
     return this._mtlsCertificates;
@@ -5613,7 +5612,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._mtlsCertificates.internalValue;
   }
 
-  // placement - computed: true, optional: true, required: false
+  // placement - computed: false, optional: true, required: false
   private _placement = new PagesProjectDeploymentConfigsProductionPlacementOutputReference(this, "placement");
   public get placement() {
     return this._placement;
@@ -5629,7 +5628,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._placement.internalValue;
   }
 
-  // queue_producers - computed: true, optional: true, required: false
+  // queue_producers - computed: false, optional: true, required: false
   private _queueProducers = new PagesProjectDeploymentConfigsProductionQueueProducersMap(this, "queue_producers");
   public get queueProducers() {
     return this._queueProducers;
@@ -5645,7 +5644,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._queueProducers.internalValue;
   }
 
-  // r2_buckets - computed: true, optional: true, required: false
+  // r2_buckets - computed: false, optional: true, required: false
   private _r2Buckets = new PagesProjectDeploymentConfigsProductionR2BucketsMap(this, "r2_buckets");
   public get r2Buckets() {
     return this._r2Buckets;
@@ -5661,7 +5660,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._r2Buckets.internalValue;
   }
 
-  // services - computed: true, optional: true, required: false
+  // services - computed: false, optional: true, required: false
   private _services = new PagesProjectDeploymentConfigsProductionServicesMap(this, "services");
   public get services() {
     return this._services;
@@ -5677,7 +5676,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return this._services.internalValue;
   }
 
-  // vectorize_bindings - computed: true, optional: true, required: false
+  // vectorize_bindings - computed: false, optional: true, required: false
   private _vectorizeBindings = new PagesProjectDeploymentConfigsProductionVectorizeBindingsMap(this, "vectorize_bindings");
   public get vectorizeBindings() {
     return this._vectorizeBindings;
@@ -5697,13 +5696,13 @@ export interface PagesProjectDeploymentConfigs {
   /**
   * Configs for preview deploys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#preview PagesProject#preview}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#preview PagesProject#preview}
   */
   readonly preview?: PagesProjectDeploymentConfigsPreview;
   /**
   * Configs for production deploys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#production PagesProject#production}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#production PagesProject#production}
   */
   readonly production?: PagesProjectDeploymentConfigsProduction;
 }
@@ -5792,7 +5791,7 @@ export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexO
     }
   }
 
-  // preview - computed: true, optional: true, required: false
+  // preview - computed: false, optional: true, required: false
   private _preview = new PagesProjectDeploymentConfigsPreviewOutputReference(this, "preview");
   public get preview() {
     return this._preview;
@@ -5808,7 +5807,7 @@ export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexO
     return this._preview.internalValue;
   }
 
-  // production - computed: true, optional: true, required: false
+  // production - computed: false, optional: true, required: false
   private _production = new PagesProjectDeploymentConfigsProductionOutputReference(this, "production");
   public get production() {
     return this._production;
@@ -6564,30 +6563,156 @@ export class PagesProjectLatestDeploymentOutputReference extends cdktf.ComplexOb
   }
 }
 export interface PagesProjectSourceConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
+  */
+  readonly deploymentsEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#owner PagesProject#owner}
+  */
+  readonly owner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}
+  */
+  readonly pathExcludes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#path_includes PagesProject#path_includes}
+  */
+  readonly pathIncludes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
+  */
+  readonly prCommentsEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
+  */
+  readonly previewBranchExcludes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
+  */
+  readonly previewBranchIncludes?: string[];
+  /**
+  * Available values: "all", "none", "custom".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
+  */
+  readonly previewDeploymentSetting?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+  */
+  readonly productionBranch?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}
+  */
+  readonly productionDeploymentsEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
+  */
+  readonly repoName?: string;
 }
 
-export function pagesProjectSourceConfigToTerraform(struct?: PagesProjectSourceConfig): any {
+export function pagesProjectSourceConfigToTerraform(struct?: PagesProjectSourceConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    deployments_enabled: cdktf.booleanToTerraform(struct!.deploymentsEnabled),
+    owner: cdktf.stringToTerraform(struct!.owner),
+    path_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pathExcludes),
+    path_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pathIncludes),
+    pr_comments_enabled: cdktf.booleanToTerraform(struct!.prCommentsEnabled),
+    preview_branch_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.previewBranchExcludes),
+    preview_branch_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.previewBranchIncludes),
+    preview_deployment_setting: cdktf.stringToTerraform(struct!.previewDeploymentSetting),
+    production_branch: cdktf.stringToTerraform(struct!.productionBranch),
+    production_deployments_enabled: cdktf.booleanToTerraform(struct!.productionDeploymentsEnabled),
+    repo_name: cdktf.stringToTerraform(struct!.repoName),
   }
 }
 
 
-export function pagesProjectSourceConfigToHclTerraform(struct?: PagesProjectSourceConfig): any {
+export function pagesProjectSourceConfigToHclTerraform(struct?: PagesProjectSourceConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    deployments_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.deploymentsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_excludes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pathExcludes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    path_includes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pathIncludes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    pr_comments_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.prCommentsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    preview_branch_excludes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.previewBranchExcludes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    preview_branch_includes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.previewBranchIncludes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    preview_deployment_setting: {
+      value: cdktf.stringToHclTerraform(struct!.previewDeploymentSetting),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    production_branch: {
+      value: cdktf.stringToHclTerraform(struct!.productionBranch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    production_deployments_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.productionDeploymentsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    repo_name: {
+      value: cdktf.stringToHclTerraform(struct!.repoName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
   };
-  return attrs;
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6597,101 +6722,322 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectSourceConfig | undefined {
+  public get internalValue(): PagesProjectSourceConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._deploymentsEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deploymentsEnabled = this._deploymentsEnabled;
+    }
+    if (this._owner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.owner = this._owner;
+    }
+    if (this._pathExcludes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathExcludes = this._pathExcludes;
+    }
+    if (this._pathIncludes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathIncludes = this._pathIncludes;
+    }
+    if (this._prCommentsEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prCommentsEnabled = this._prCommentsEnabled;
+    }
+    if (this._previewBranchExcludes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.previewBranchExcludes = this._previewBranchExcludes;
+    }
+    if (this._previewBranchIncludes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.previewBranchIncludes = this._previewBranchIncludes;
+    }
+    if (this._previewDeploymentSetting !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.previewDeploymentSetting = this._previewDeploymentSetting;
+    }
+    if (this._productionBranch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.productionBranch = this._productionBranch;
+    }
+    if (this._productionDeploymentsEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.productionDeploymentsEnabled = this._productionDeploymentsEnabled;
+    }
+    if (this._repoName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repoName = this._repoName;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectSourceConfig | undefined) {
+  public set internalValue(value: PagesProjectSourceConfig | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deploymentsEnabled = undefined;
+      this._owner = undefined;
+      this._pathExcludes = undefined;
+      this._pathIncludes = undefined;
+      this._prCommentsEnabled = undefined;
+      this._previewBranchExcludes = undefined;
+      this._previewBranchIncludes = undefined;
+      this._previewDeploymentSetting = undefined;
+      this._productionBranch = undefined;
+      this._productionDeploymentsEnabled = undefined;
+      this._repoName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deploymentsEnabled = value.deploymentsEnabled;
+      this._owner = value.owner;
+      this._pathExcludes = value.pathExcludes;
+      this._pathIncludes = value.pathIncludes;
+      this._prCommentsEnabled = value.prCommentsEnabled;
+      this._previewBranchExcludes = value.previewBranchExcludes;
+      this._previewBranchIncludes = value.previewBranchIncludes;
+      this._previewDeploymentSetting = value.previewDeploymentSetting;
+      this._productionBranch = value.productionBranch;
+      this._productionDeploymentsEnabled = value.productionDeploymentsEnabled;
+      this._repoName = value.repoName;
     }
   }
 
-  // deployments_enabled - computed: true, optional: false, required: false
+  // deployments_enabled - computed: false, optional: true, required: false
+  private _deploymentsEnabled?: boolean | cdktf.IResolvable; 
   public get deploymentsEnabled() {
     return this.getBooleanAttribute('deployments_enabled');
   }
+  public set deploymentsEnabled(value: boolean | cdktf.IResolvable) {
+    this._deploymentsEnabled = value;
+  }
+  public resetDeploymentsEnabled() {
+    this._deploymentsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentsEnabledInput() {
+    return this._deploymentsEnabled;
+  }
 
-  // owner - computed: true, optional: false, required: false
+  // owner - computed: false, optional: true, required: false
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
+  public set owner(value: string) {
+    this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner;
+  }
 
-  // path_excludes - computed: true, optional: false, required: false
+  // path_excludes - computed: false, optional: true, required: false
+  private _pathExcludes?: string[]; 
   public get pathExcludes() {
     return this.getListAttribute('path_excludes');
   }
+  public set pathExcludes(value: string[]) {
+    this._pathExcludes = value;
+  }
+  public resetPathExcludes() {
+    this._pathExcludes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathExcludesInput() {
+    return this._pathExcludes;
+  }
 
-  // path_includes - computed: true, optional: false, required: false
+  // path_includes - computed: false, optional: true, required: false
+  private _pathIncludes?: string[]; 
   public get pathIncludes() {
     return this.getListAttribute('path_includes');
   }
+  public set pathIncludes(value: string[]) {
+    this._pathIncludes = value;
+  }
+  public resetPathIncludes() {
+    this._pathIncludes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathIncludesInput() {
+    return this._pathIncludes;
+  }
 
-  // pr_comments_enabled - computed: true, optional: false, required: false
+  // pr_comments_enabled - computed: false, optional: true, required: false
+  private _prCommentsEnabled?: boolean | cdktf.IResolvable; 
   public get prCommentsEnabled() {
     return this.getBooleanAttribute('pr_comments_enabled');
   }
+  public set prCommentsEnabled(value: boolean | cdktf.IResolvable) {
+    this._prCommentsEnabled = value;
+  }
+  public resetPrCommentsEnabled() {
+    this._prCommentsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prCommentsEnabledInput() {
+    return this._prCommentsEnabled;
+  }
 
-  // preview_branch_excludes - computed: true, optional: false, required: false
+  // preview_branch_excludes - computed: false, optional: true, required: false
+  private _previewBranchExcludes?: string[]; 
   public get previewBranchExcludes() {
     return this.getListAttribute('preview_branch_excludes');
   }
+  public set previewBranchExcludes(value: string[]) {
+    this._previewBranchExcludes = value;
+  }
+  public resetPreviewBranchExcludes() {
+    this._previewBranchExcludes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get previewBranchExcludesInput() {
+    return this._previewBranchExcludes;
+  }
 
-  // preview_branch_includes - computed: true, optional: false, required: false
+  // preview_branch_includes - computed: false, optional: true, required: false
+  private _previewBranchIncludes?: string[]; 
   public get previewBranchIncludes() {
     return this.getListAttribute('preview_branch_includes');
   }
+  public set previewBranchIncludes(value: string[]) {
+    this._previewBranchIncludes = value;
+  }
+  public resetPreviewBranchIncludes() {
+    this._previewBranchIncludes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get previewBranchIncludesInput() {
+    return this._previewBranchIncludes;
+  }
 
-  // preview_deployment_setting - computed: true, optional: false, required: false
+  // preview_deployment_setting - computed: false, optional: true, required: false
+  private _previewDeploymentSetting?: string; 
   public get previewDeploymentSetting() {
     return this.getStringAttribute('preview_deployment_setting');
   }
+  public set previewDeploymentSetting(value: string) {
+    this._previewDeploymentSetting = value;
+  }
+  public resetPreviewDeploymentSetting() {
+    this._previewDeploymentSetting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get previewDeploymentSettingInput() {
+    return this._previewDeploymentSetting;
+  }
 
-  // production_branch - computed: true, optional: false, required: false
+  // production_branch - computed: false, optional: true, required: false
+  private _productionBranch?: string; 
   public get productionBranch() {
     return this.getStringAttribute('production_branch');
   }
+  public set productionBranch(value: string) {
+    this._productionBranch = value;
+  }
+  public resetProductionBranch() {
+    this._productionBranch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get productionBranchInput() {
+    return this._productionBranch;
+  }
 
-  // production_deployments_enabled - computed: true, optional: false, required: false
+  // production_deployments_enabled - computed: false, optional: true, required: false
+  private _productionDeploymentsEnabled?: boolean | cdktf.IResolvable; 
   public get productionDeploymentsEnabled() {
     return this.getBooleanAttribute('production_deployments_enabled');
   }
+  public set productionDeploymentsEnabled(value: boolean | cdktf.IResolvable) {
+    this._productionDeploymentsEnabled = value;
+  }
+  public resetProductionDeploymentsEnabled() {
+    this._productionDeploymentsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get productionDeploymentsEnabledInput() {
+    return this._productionDeploymentsEnabled;
+  }
 
-  // repo_name - computed: true, optional: false, required: false
+  // repo_name - computed: false, optional: true, required: false
+  private _repoName?: string; 
   public get repoName() {
     return this.getStringAttribute('repo_name');
   }
+  public set repoName(value: string) {
+    this._repoName = value;
+  }
+  public resetRepoName() {
+    this._repoName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repoNameInput() {
+    return this._repoName;
+  }
 }
 export interface PagesProjectSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#config PagesProject#config}
+  */
+  readonly config?: PagesProjectSourceConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#type PagesProject#type}
+  */
+  readonly type?: string;
 }
 
-export function pagesProjectSourceToTerraform(struct?: PagesProjectSource): any {
+export function pagesProjectSourceToTerraform(struct?: PagesProjectSource | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    config: pagesProjectSourceConfigToTerraform(struct!.config),
+    type: cdktf.stringToTerraform(struct!.type),
   }
 }
 
 
-export function pagesProjectSourceToHclTerraform(struct?: PagesProjectSource): any {
+export function pagesProjectSourceToHclTerraform(struct?: PagesProjectSource | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    config: {
+      value: pagesProjectSourceConfigToHclTerraform(struct!.config),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "PagesProjectSourceConfig",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
   };
-  return attrs;
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PagesProjectSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6701,35 +7047,77 @@ export class PagesProjectSourceOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectSource | undefined {
+  public get internalValue(): PagesProjectSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._config?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.config = this._config?.internalValue;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectSource | undefined) {
+  public set internalValue(value: PagesProjectSource | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._config.internalValue = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._config.internalValue = value.config;
+      this._type = value.type;
     }
   }
 
-  // config - computed: true, optional: false, required: false
+  // config - computed: false, optional: true, required: false
   private _config = new PagesProjectSourceConfigOutputReference(this, "config");
   public get config() {
     return this._config;
   }
+  public putConfig(value: PagesProjectSourceConfig) {
+    this._config.internalValue = value;
+  }
+  public resetConfig() {
+    this._config.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configInput() {
+    return this._config.internalValue;
+  }
 
-  // type - computed: true, optional: false, required: false
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project cloudflare_pages_project}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project cloudflare_pages_project}
 */
 export class PagesProject extends cdktf.TerraformResource {
 
@@ -6745,7 +7133,7 @@ export class PagesProject extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PagesProject resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PagesProject to import
-  * @param importFromId The id of the existing PagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PagesProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -6757,7 +7145,7 @@ export class PagesProject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project cloudflare_pages_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project cloudflare_pages_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6768,7 +7156,7 @@ export class PagesProject extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -6784,6 +7172,7 @@ export class PagesProject extends cdktf.TerraformResource {
     this._deploymentConfigs.internalValue = config.deploymentConfigs;
     this._name = config.name;
     this._productionBranch = config.productionBranch;
+    this._source.internalValue = config.source;
   }
 
   // ==========
@@ -6803,7 +7192,7 @@ export class PagesProject extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // build_config - computed: true, optional: true, required: false
+  // build_config - computed: false, optional: true, required: false
   private _buildConfig = new PagesProjectBuildConfigOutputReference(this, "build_config");
   public get buildConfig() {
     return this._buildConfig;
@@ -6830,7 +7219,7 @@ export class PagesProject extends cdktf.TerraformResource {
     return this.getStringAttribute('created_on');
   }
 
-  // deployment_configs - computed: true, optional: true, required: false
+  // deployment_configs - computed: false, optional: true, required: false
   private _deploymentConfigs = new PagesProjectDeploymentConfigsOutputReference(this, "deployment_configs");
   public get deploymentConfigs() {
     return this._deploymentConfigs;
@@ -6891,10 +7280,20 @@ export class PagesProject extends cdktf.TerraformResource {
     return this._productionBranch;
   }
 
-  // source - computed: true, optional: false, required: false
+  // source - computed: false, optional: true, required: false
   private _source = new PagesProjectSourceOutputReference(this, "source");
   public get source() {
     return this._source;
+  }
+  public putSource(value: PagesProjectSource) {
+    this._source.internalValue = value;
+  }
+  public resetSource() {
+    this._source.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source.internalValue;
   }
 
   // subdomain - computed: true, optional: false, required: false
@@ -6913,6 +7312,7 @@ export class PagesProject extends cdktf.TerraformResource {
       deployment_configs: pagesProjectDeploymentConfigsToTerraform(this._deploymentConfigs.internalValue),
       name: cdktf.stringToTerraform(this._name),
       production_branch: cdktf.stringToTerraform(this._productionBranch),
+      source: pagesProjectSourceToTerraform(this._source.internalValue),
     };
   }
 
@@ -6947,6 +7347,12 @@ export class PagesProject extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      source: {
+        value: pagesProjectSourceToHclTerraform(this._source.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "PagesProjectSource",
       },
     };
 

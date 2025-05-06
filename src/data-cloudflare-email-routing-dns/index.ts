@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/email_routing_dns
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_dns
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +10,69 @@ export interface DataCloudflareEmailRoutingDnsConfig extends cdktf.TerraformMeta
   /**
   * Domain of your zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/email_routing_dns#subdomain DataCloudflareEmailRoutingDns#subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_dns#subdomain DataCloudflareEmailRoutingDns#subdomain}
   */
   readonly subdomain?: string;
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/email_routing_dns#zone_id DataCloudflareEmailRoutingDns#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_dns#zone_id DataCloudflareEmailRoutingDns#zone_id}
   */
   readonly zoneId: string;
+}
+export interface DataCloudflareEmailRoutingDnsErrorsSource {
+}
+
+export function dataCloudflareEmailRoutingDnsErrorsSourceToTerraform(struct?: DataCloudflareEmailRoutingDnsErrorsSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareEmailRoutingDnsErrorsSourceToHclTerraform(struct?: DataCloudflareEmailRoutingDnsErrorsSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareEmailRoutingDnsErrorsSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareEmailRoutingDnsErrorsSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareEmailRoutingDnsErrorsSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // pointer - computed: true, optional: false, required: false
+  public get pointer() {
+    return this.getStringAttribute('pointer');
+  }
 }
 export interface DataCloudflareEmailRoutingDnsErrors {
 }
@@ -81,9 +130,20 @@ export class DataCloudflareEmailRoutingDnsErrorsOutputReference extends cdktf.Co
     return this.getNumberAttribute('code');
   }
 
+  // documentation_url - computed: true, optional: false, required: false
+  public get documentationUrl() {
+    return this.getStringAttribute('documentation_url');
+  }
+
   // message - computed: true, optional: false, required: false
   public get message() {
     return this.getStringAttribute('message');
+  }
+
+  // source - computed: true, optional: false, required: false
+  private _source = new DataCloudflareEmailRoutingDnsErrorsSourceOutputReference(this, "source");
+  public get source() {
+    return this._source;
   }
 }
 
@@ -103,6 +163,60 @@ export class DataCloudflareEmailRoutingDnsErrorsList extends cdktf.ComplexList {
   */
   public get(index: number): DataCloudflareEmailRoutingDnsErrorsOutputReference {
     return new DataCloudflareEmailRoutingDnsErrorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataCloudflareEmailRoutingDnsMessagesSource {
+}
+
+export function dataCloudflareEmailRoutingDnsMessagesSourceToTerraform(struct?: DataCloudflareEmailRoutingDnsMessagesSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareEmailRoutingDnsMessagesSourceToHclTerraform(struct?: DataCloudflareEmailRoutingDnsMessagesSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareEmailRoutingDnsMessagesSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareEmailRoutingDnsMessagesSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareEmailRoutingDnsMessagesSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // pointer - computed: true, optional: false, required: false
+  public get pointer() {
+    return this.getStringAttribute('pointer');
   }
 }
 export interface DataCloudflareEmailRoutingDnsMessages {
@@ -161,9 +275,20 @@ export class DataCloudflareEmailRoutingDnsMessagesOutputReference extends cdktf.
     return this.getNumberAttribute('code');
   }
 
+  // documentation_url - computed: true, optional: false, required: false
+  public get documentationUrl() {
+    return this.getStringAttribute('documentation_url');
+  }
+
   // message - computed: true, optional: false, required: false
   public get message() {
     return this.getStringAttribute('message');
+  }
+
+  // source - computed: true, optional: false, required: false
+  private _source = new DataCloudflareEmailRoutingDnsMessagesSourceOutputReference(this, "source");
+  public get source() {
+    return this._source;
   }
 }
 
@@ -592,7 +717,7 @@ export class DataCloudflareEmailRoutingDnsResultInfoOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns}
 */
 export class DataCloudflareEmailRoutingDns extends cdktf.TerraformDataSource {
 
@@ -608,7 +733,7 @@ export class DataCloudflareEmailRoutingDns extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareEmailRoutingDns resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailRoutingDns to import
-  * @param importFromId The id of the existing DataCloudflareEmailRoutingDns that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/email_routing_dns#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailRoutingDns that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_dns#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailRoutingDns to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -620,7 +745,7 @@ export class DataCloudflareEmailRoutingDns extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -631,7 +756,7 @@ export class DataCloudflareEmailRoutingDns extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_email_routing_dns',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustDevicePostureRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#account_id ZeroTrustDevicePostureRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#account_id ZeroTrustDevicePostureRule#account_id}
   */
   readonly accountId: string;
   /**
   * The description of the device posture rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#description ZeroTrustDevicePostureRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#description ZeroTrustDevicePostureRule#description}
   */
   readonly description?: string;
   /**
   * Sets the expiration time for a posture check result. If empty, the result remains valid until it is overwritten by new data from the WARP client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#expiration ZeroTrustDevicePostureRule#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#expiration ZeroTrustDevicePostureRule#expiration}
   */
   readonly expiration?: string;
   /**
   * The value to be checked against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#input ZeroTrustDevicePostureRule#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#input ZeroTrustDevicePostureRule#input}
   */
   readonly input?: ZeroTrustDevicePostureRuleInput;
   /**
   * The conditions that the client must match to run the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#match ZeroTrustDevicePostureRule#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#match ZeroTrustDevicePostureRule#match}
   */
   readonly match?: ZeroTrustDevicePostureRuleMatch[] | cdktf.IResolvable;
   /**
   * The name of the device posture rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#name ZeroTrustDevicePostureRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#name ZeroTrustDevicePostureRule#name}
   */
   readonly name: string;
   /**
   * Polling frequency for the WARP client posture check. Default: `5m` (poll every five minutes). Minimum: `1m`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#schedule ZeroTrustDevicePostureRule#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#schedule ZeroTrustDevicePostureRule#schedule}
   */
   readonly schedule?: string;
   /**
   * The type of device posture rule.
-  * Available values: "file", "application", "tanium", "gateway", "warp", "disk_encryption", "sentinelone", "carbonblack", "firewall", "os_version", "domain_joined", "client_certificate", "client_certificate_v2", "unique_client_id", "kolide", "tanium_s2s", "crowdstrike_s2s", "intune", "workspace_one", "sentinelone_s2s", "custom_s2s".
+  * Available values: "file", "application", "tanium", "gateway", "warp", "disk_encryption", "serial_number", "sentinelone", "carbonblack", "firewall", "os_version", "domain_joined", "client_certificate", "client_certificate_v2", "unique_client_id", "kolide", "tanium_s2s", "crowdstrike_s2s", "intune", "workspace_one", "sentinelone_s2s", "custom_s2s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#type ZeroTrustDevicePostureRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#type ZeroTrustDevicePostureRule#type}
   */
   readonly type: string;
 }
@@ -64,13 +59,13 @@ export interface ZeroTrustDevicePostureRuleInputLocations {
   /**
   * List of paths to check for client certificate on linux.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#paths ZeroTrustDevicePostureRule#paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#paths ZeroTrustDevicePostureRule#paths}
   */
   readonly paths?: string[];
   /**
   * List of trust stores to check for client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#trust_stores ZeroTrustDevicePostureRule#trust_stores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#trust_stores ZeroTrustDevicePostureRule#trust_stores}
   */
   readonly trustStores?: string[];
 }
@@ -159,7 +154,7 @@ export class ZeroTrustDevicePostureRuleInputLocationsOutputReference extends cdk
     }
   }
 
-  // paths - computed: true, optional: true, required: false
+  // paths - computed: false, optional: true, required: false
   private _paths?: string[]; 
   public get paths() {
     return this.getListAttribute('paths');
@@ -175,7 +170,7 @@ export class ZeroTrustDevicePostureRuleInputLocationsOutputReference extends cdk
     return this._paths;
   }
 
-  // trust_stores - computed: true, optional: true, required: false
+  // trust_stores - computed: false, optional: true, required: false
   private _trustStores?: string[]; 
   public get trustStores() {
     return this.getListAttribute('trust_stores');
@@ -195,87 +190,87 @@ export interface ZeroTrustDevicePostureRuleInput {
   /**
   * The Number of active threats.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#active_threats ZeroTrustDevicePostureRule#active_threats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#active_threats ZeroTrustDevicePostureRule#active_threats}
   */
   readonly activeThreats?: number;
   /**
   * UUID of Cloudflare managed certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#certificate_id ZeroTrustDevicePostureRule#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#certificate_id ZeroTrustDevicePostureRule#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * List of volume names to be checked for encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#check_disks ZeroTrustDevicePostureRule#check_disks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#check_disks ZeroTrustDevicePostureRule#check_disks}
   */
   readonly checkDisks?: string[];
   /**
   * Confirm the certificate was not imported from another device. We recommend keeping this enabled unless the certificate was deployed without a private key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#check_private_key ZeroTrustDevicePostureRule#check_private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#check_private_key ZeroTrustDevicePostureRule#check_private_key}
   */
   readonly checkPrivateKey?: boolean | cdktf.IResolvable;
   /**
-  * Common Name that is protected by the certificate
+  * Common Name that is protected by the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#cn ZeroTrustDevicePostureRule#cn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#cn ZeroTrustDevicePostureRule#cn}
   */
   readonly cn?: string;
   /**
-  * Compliance Status
+  * Compliance Status.
   * Available values: "compliant", "noncompliant", "unknown".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#compliance_status ZeroTrustDevicePostureRule#compliance_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#compliance_status ZeroTrustDevicePostureRule#compliance_status}
   */
   readonly complianceStatus?: string;
   /**
   * Posture Integration ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#connection_id ZeroTrustDevicePostureRule#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#connection_id ZeroTrustDevicePostureRule#connection_id}
   */
   readonly connectionId?: string;
   /**
-  * Count Operator
+  * Count Operator.
   * Available values: "<", "<=", ">", ">=", "==".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#count_operator ZeroTrustDevicePostureRule#count_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#count_operator ZeroTrustDevicePostureRule#count_operator}
   */
   readonly countOperator?: string;
   /**
-  * Domain
+  * Domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#domain ZeroTrustDevicePostureRule#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#domain ZeroTrustDevicePostureRule#domain}
   */
   readonly domain?: string;
   /**
   * For more details on eid last seen, refer to the Tanium documentation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#eid_last_seen ZeroTrustDevicePostureRule#eid_last_seen}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#eid_last_seen ZeroTrustDevicePostureRule#eid_last_seen}
   */
   readonly eidLastSeen?: string;
   /**
-  * Enabled
+  * Enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#enabled ZeroTrustDevicePostureRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#enabled ZeroTrustDevicePostureRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Whether or not file exists
+  * Whether or not file exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#exists ZeroTrustDevicePostureRule#exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#exists ZeroTrustDevicePostureRule#exists}
   */
   readonly exists?: boolean | cdktf.IResolvable;
   /**
-  * List of values indicating purposes for which the certificate public key can be used
+  * List of values indicating purposes for which the certificate public key can be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#extended_key_usage ZeroTrustDevicePostureRule#extended_key_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#extended_key_usage ZeroTrustDevicePostureRule#extended_key_usage}
   */
   readonly extendedKeyUsage?: string[];
   /**
   * List ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#id ZeroTrustDevicePostureRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#id ZeroTrustDevicePostureRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -284,163 +279,163 @@ export interface ZeroTrustDevicePostureRuleInput {
   /**
   * Whether device is infected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#infected ZeroTrustDevicePostureRule#infected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#infected ZeroTrustDevicePostureRule#infected}
   */
   readonly infected?: boolean | cdktf.IResolvable;
   /**
   * Whether device is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#is_active ZeroTrustDevicePostureRule#is_active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#is_active ZeroTrustDevicePostureRule#is_active}
   */
   readonly isActive?: boolean | cdktf.IResolvable;
   /**
   * The Number of Issues.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#issue_count ZeroTrustDevicePostureRule#issue_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#issue_count ZeroTrustDevicePostureRule#issue_count}
   */
   readonly issueCount?: string;
   /**
   * For more details on last seen, please refer to the Crowdstrike documentation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#last_seen ZeroTrustDevicePostureRule#last_seen}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#last_seen ZeroTrustDevicePostureRule#last_seen}
   */
   readonly lastSeen?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#locations ZeroTrustDevicePostureRule#locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#locations ZeroTrustDevicePostureRule#locations}
   */
   readonly locations?: ZeroTrustDevicePostureRuleInputLocations;
   /**
   * Network status of device.
   * Available values: "connected", "disconnected", "disconnecting", "connecting".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#network_status ZeroTrustDevicePostureRule#network_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#network_status ZeroTrustDevicePostureRule#network_status}
   */
   readonly networkStatus?: string;
   /**
-  * Operating system
+  * Operating system.
   * Available values: "windows", "linux", "mac".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#operating_system ZeroTrustDevicePostureRule#operating_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#operating_system ZeroTrustDevicePostureRule#operating_system}
   */
   readonly operatingSystem?: string;
   /**
   * Agent operational state.
   * Available values: "na", "partially_disabled", "auto_fully_disabled", "fully_disabled", "auto_partially_disabled", "disabled_error", "db_corruption".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#operational_state ZeroTrustDevicePostureRule#operational_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#operational_state ZeroTrustDevicePostureRule#operational_state}
   */
   readonly operationalState?: string;
   /**
-  * operator
+  * Operator.
   * Available values: "<", "<=", ">", ">=", "==".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#operator ZeroTrustDevicePostureRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#operator ZeroTrustDevicePostureRule#operator}
   */
   readonly operator?: string;
   /**
-  * Os Version
+  * Os Version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#os ZeroTrustDevicePostureRule#os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#os ZeroTrustDevicePostureRule#os}
   */
   readonly os?: string;
   /**
-  * Operating System Distribution Name (linux only)
+  * Operating System Distribution Name (linux only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#os_distro_name ZeroTrustDevicePostureRule#os_distro_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#os_distro_name ZeroTrustDevicePostureRule#os_distro_name}
   */
   readonly osDistroName?: string;
   /**
-  * Version of OS Distribution (linux only)
+  * Version of OS Distribution (linux only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#os_distro_revision ZeroTrustDevicePostureRule#os_distro_revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#os_distro_revision ZeroTrustDevicePostureRule#os_distro_revision}
   */
   readonly osDistroRevision?: string;
   /**
-  * Additional version data. For Mac or iOS, the Product Version Extra. For Linux, the kernel release version. (Mac, iOS, and Linux only)
+  * Additional version data. For Mac or iOS, the Product Version Extra. For Linux, the kernel release version. (Mac, iOS, and Linux only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#os_version_extra ZeroTrustDevicePostureRule#os_version_extra}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#os_version_extra ZeroTrustDevicePostureRule#os_version_extra}
   */
   readonly osVersionExtra?: string;
   /**
-  * overall
+  * Overall.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#overall ZeroTrustDevicePostureRule#overall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#overall ZeroTrustDevicePostureRule#overall}
   */
   readonly overall?: string;
   /**
   * File path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#path ZeroTrustDevicePostureRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#path ZeroTrustDevicePostureRule#path}
   */
   readonly path?: string;
   /**
   * Whether to check all disks for encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#require_all ZeroTrustDevicePostureRule#require_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#require_all ZeroTrustDevicePostureRule#require_all}
   */
   readonly requireAll?: boolean | cdktf.IResolvable;
   /**
   * For more details on risk level, refer to the Tanium documentation.
   * Available values: "low", "medium", "high", "critical".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#risk_level ZeroTrustDevicePostureRule#risk_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#risk_level ZeroTrustDevicePostureRule#risk_level}
   */
   readonly riskLevel?: string;
   /**
   * A value between 0-100 assigned to devices set by the 3rd party posture provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#score ZeroTrustDevicePostureRule#score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#score ZeroTrustDevicePostureRule#score}
   */
   readonly score?: number;
   /**
-  * Score Operator
+  * Score Operator.
   * Available values: "<", "<=", ">", ">=", "==".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#score_operator ZeroTrustDevicePostureRule#score_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#score_operator ZeroTrustDevicePostureRule#score_operator}
   */
   readonly scoreOperator?: string;
   /**
-  * SensorConfig
+  * SensorConfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#sensor_config ZeroTrustDevicePostureRule#sensor_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#sensor_config ZeroTrustDevicePostureRule#sensor_config}
   */
   readonly sensorConfig?: string;
   /**
   * SHA-256.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#sha256 ZeroTrustDevicePostureRule#sha256}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#sha256 ZeroTrustDevicePostureRule#sha256}
   */
   readonly sha256?: string;
   /**
   * For more details on state, please refer to the Crowdstrike documentation.
   * Available values: "online", "offline", "unknown".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#state ZeroTrustDevicePostureRule#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#state ZeroTrustDevicePostureRule#state}
   */
   readonly state?: string;
   /**
   * Signing certificate thumbprint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#thumbprint ZeroTrustDevicePostureRule#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#thumbprint ZeroTrustDevicePostureRule#thumbprint}
   */
   readonly thumbprint?: string;
   /**
   * For more details on total score, refer to the Tanium documentation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#total_score ZeroTrustDevicePostureRule#total_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#total_score ZeroTrustDevicePostureRule#total_score}
   */
   readonly totalScore?: number;
   /**
-  * Version of OS
+  * Version of OS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#version ZeroTrustDevicePostureRule#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#version ZeroTrustDevicePostureRule#version}
   */
   readonly version?: string;
   /**
-  * Version Operator
+  * Version Operator.
   * Available values: "<", "<=", ">", ">=", "==".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#version_operator ZeroTrustDevicePostureRule#version_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#version_operator ZeroTrustDevicePostureRule#version_operator}
   */
   readonly versionOperator?: string;
 }
@@ -1023,7 +1018,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     }
   }
 
-  // active_threats - computed: true, optional: true, required: false
+  // active_threats - computed: false, optional: true, required: false
   private _activeThreats?: number; 
   public get activeThreats() {
     return this.getNumberAttribute('active_threats');
@@ -1039,7 +1034,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._activeThreats;
   }
 
-  // certificate_id - computed: true, optional: true, required: false
+  // certificate_id - computed: false, optional: true, required: false
   private _certificateId?: string; 
   public get certificateId() {
     return this.getStringAttribute('certificate_id');
@@ -1055,7 +1050,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._certificateId;
   }
 
-  // check_disks - computed: true, optional: true, required: false
+  // check_disks - computed: false, optional: true, required: false
   private _checkDisks?: string[]; 
   public get checkDisks() {
     return this.getListAttribute('check_disks');
@@ -1071,7 +1066,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._checkDisks;
   }
 
-  // check_private_key - computed: true, optional: true, required: false
+  // check_private_key - computed: false, optional: true, required: false
   private _checkPrivateKey?: boolean | cdktf.IResolvable; 
   public get checkPrivateKey() {
     return this.getBooleanAttribute('check_private_key');
@@ -1087,7 +1082,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._checkPrivateKey;
   }
 
-  // cn - computed: true, optional: true, required: false
+  // cn - computed: false, optional: true, required: false
   private _cn?: string; 
   public get cn() {
     return this.getStringAttribute('cn');
@@ -1103,7 +1098,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._cn;
   }
 
-  // compliance_status - computed: true, optional: true, required: false
+  // compliance_status - computed: false, optional: true, required: false
   private _complianceStatus?: string; 
   public get complianceStatus() {
     return this.getStringAttribute('compliance_status');
@@ -1119,7 +1114,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._complianceStatus;
   }
 
-  // connection_id - computed: true, optional: true, required: false
+  // connection_id - computed: false, optional: true, required: false
   private _connectionId?: string; 
   public get connectionId() {
     return this.getStringAttribute('connection_id');
@@ -1135,7 +1130,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._connectionId;
   }
 
-  // count_operator - computed: true, optional: true, required: false
+  // count_operator - computed: false, optional: true, required: false
   private _countOperator?: string; 
   public get countOperator() {
     return this.getStringAttribute('count_operator');
@@ -1151,7 +1146,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._countOperator;
   }
 
-  // domain - computed: true, optional: true, required: false
+  // domain - computed: false, optional: true, required: false
   private _domain?: string; 
   public get domain() {
     return this.getStringAttribute('domain');
@@ -1167,7 +1162,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._domain;
   }
 
-  // eid_last_seen - computed: true, optional: true, required: false
+  // eid_last_seen - computed: false, optional: true, required: false
   private _eidLastSeen?: string; 
   public get eidLastSeen() {
     return this.getStringAttribute('eid_last_seen');
@@ -1183,7 +1178,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._eidLastSeen;
   }
 
-  // enabled - computed: true, optional: true, required: false
+  // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -1199,7 +1194,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._enabled;
   }
 
-  // exists - computed: true, optional: true, required: false
+  // exists - computed: false, optional: true, required: false
   private _exists?: boolean | cdktf.IResolvable; 
   public get exists() {
     return this.getBooleanAttribute('exists');
@@ -1215,7 +1210,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._exists;
   }
 
-  // extended_key_usage - computed: true, optional: true, required: false
+  // extended_key_usage - computed: false, optional: true, required: false
   private _extendedKeyUsage?: string[]; 
   public get extendedKeyUsage() {
     return this.getListAttribute('extended_key_usage');
@@ -1231,7 +1226,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._extendedKeyUsage;
   }
 
-  // id - computed: true, optional: true, required: false
+  // id - computed: false, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -1247,7 +1242,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._id;
   }
 
-  // infected - computed: true, optional: true, required: false
+  // infected - computed: false, optional: true, required: false
   private _infected?: boolean | cdktf.IResolvable; 
   public get infected() {
     return this.getBooleanAttribute('infected');
@@ -1263,7 +1258,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._infected;
   }
 
-  // is_active - computed: true, optional: true, required: false
+  // is_active - computed: false, optional: true, required: false
   private _isActive?: boolean | cdktf.IResolvable; 
   public get isActive() {
     return this.getBooleanAttribute('is_active');
@@ -1279,7 +1274,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._isActive;
   }
 
-  // issue_count - computed: true, optional: true, required: false
+  // issue_count - computed: false, optional: true, required: false
   private _issueCount?: string; 
   public get issueCount() {
     return this.getStringAttribute('issue_count');
@@ -1295,7 +1290,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._issueCount;
   }
 
-  // last_seen - computed: true, optional: true, required: false
+  // last_seen - computed: false, optional: true, required: false
   private _lastSeen?: string; 
   public get lastSeen() {
     return this.getStringAttribute('last_seen');
@@ -1311,7 +1306,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._lastSeen;
   }
 
-  // locations - computed: true, optional: true, required: false
+  // locations - computed: false, optional: true, required: false
   private _locations = new ZeroTrustDevicePostureRuleInputLocationsOutputReference(this, "locations");
   public get locations() {
     return this._locations;
@@ -1327,7 +1322,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._locations.internalValue;
   }
 
-  // network_status - computed: true, optional: true, required: false
+  // network_status - computed: false, optional: true, required: false
   private _networkStatus?: string; 
   public get networkStatus() {
     return this.getStringAttribute('network_status');
@@ -1343,7 +1338,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._networkStatus;
   }
 
-  // operating_system - computed: true, optional: true, required: false
+  // operating_system - computed: false, optional: true, required: false
   private _operatingSystem?: string; 
   public get operatingSystem() {
     return this.getStringAttribute('operating_system');
@@ -1359,7 +1354,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._operatingSystem;
   }
 
-  // operational_state - computed: true, optional: true, required: false
+  // operational_state - computed: false, optional: true, required: false
   private _operationalState?: string; 
   public get operationalState() {
     return this.getStringAttribute('operational_state');
@@ -1375,7 +1370,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._operationalState;
   }
 
-  // operator - computed: true, optional: true, required: false
+  // operator - computed: false, optional: true, required: false
   private _operator?: string; 
   public get operator() {
     return this.getStringAttribute('operator');
@@ -1391,7 +1386,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._operator;
   }
 
-  // os - computed: true, optional: true, required: false
+  // os - computed: false, optional: true, required: false
   private _os?: string; 
   public get os() {
     return this.getStringAttribute('os');
@@ -1407,7 +1402,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._os;
   }
 
-  // os_distro_name - computed: true, optional: true, required: false
+  // os_distro_name - computed: false, optional: true, required: false
   private _osDistroName?: string; 
   public get osDistroName() {
     return this.getStringAttribute('os_distro_name');
@@ -1423,7 +1418,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._osDistroName;
   }
 
-  // os_distro_revision - computed: true, optional: true, required: false
+  // os_distro_revision - computed: false, optional: true, required: false
   private _osDistroRevision?: string; 
   public get osDistroRevision() {
     return this.getStringAttribute('os_distro_revision');
@@ -1439,7 +1434,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._osDistroRevision;
   }
 
-  // os_version_extra - computed: true, optional: true, required: false
+  // os_version_extra - computed: false, optional: true, required: false
   private _osVersionExtra?: string; 
   public get osVersionExtra() {
     return this.getStringAttribute('os_version_extra');
@@ -1455,7 +1450,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._osVersionExtra;
   }
 
-  // overall - computed: true, optional: true, required: false
+  // overall - computed: false, optional: true, required: false
   private _overall?: string; 
   public get overall() {
     return this.getStringAttribute('overall');
@@ -1471,7 +1466,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._overall;
   }
 
-  // path - computed: true, optional: true, required: false
+  // path - computed: false, optional: true, required: false
   private _path?: string; 
   public get path() {
     return this.getStringAttribute('path');
@@ -1487,7 +1482,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._path;
   }
 
-  // require_all - computed: true, optional: true, required: false
+  // require_all - computed: false, optional: true, required: false
   private _requireAll?: boolean | cdktf.IResolvable; 
   public get requireAll() {
     return this.getBooleanAttribute('require_all');
@@ -1503,7 +1498,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._requireAll;
   }
 
-  // risk_level - computed: true, optional: true, required: false
+  // risk_level - computed: false, optional: true, required: false
   private _riskLevel?: string; 
   public get riskLevel() {
     return this.getStringAttribute('risk_level');
@@ -1519,7 +1514,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._riskLevel;
   }
 
-  // score - computed: true, optional: true, required: false
+  // score - computed: false, optional: true, required: false
   private _score?: number; 
   public get score() {
     return this.getNumberAttribute('score');
@@ -1535,7 +1530,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._score;
   }
 
-  // score_operator - computed: true, optional: true, required: false
+  // score_operator - computed: false, optional: true, required: false
   private _scoreOperator?: string; 
   public get scoreOperator() {
     return this.getStringAttribute('score_operator');
@@ -1551,7 +1546,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._scoreOperator;
   }
 
-  // sensor_config - computed: true, optional: true, required: false
+  // sensor_config - computed: false, optional: true, required: false
   private _sensorConfig?: string; 
   public get sensorConfig() {
     return this.getStringAttribute('sensor_config');
@@ -1567,7 +1562,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._sensorConfig;
   }
 
-  // sha256 - computed: true, optional: true, required: false
+  // sha256 - computed: false, optional: true, required: false
   private _sha256?: string; 
   public get sha256() {
     return this.getStringAttribute('sha256');
@@ -1583,7 +1578,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._sha256;
   }
 
-  // state - computed: true, optional: true, required: false
+  // state - computed: false, optional: true, required: false
   private _state?: string; 
   public get state() {
     return this.getStringAttribute('state');
@@ -1599,7 +1594,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._state;
   }
 
-  // thumbprint - computed: true, optional: true, required: false
+  // thumbprint - computed: false, optional: true, required: false
   private _thumbprint?: string; 
   public get thumbprint() {
     return this.getStringAttribute('thumbprint');
@@ -1615,7 +1610,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._thumbprint;
   }
 
-  // total_score - computed: true, optional: true, required: false
+  // total_score - computed: false, optional: true, required: false
   private _totalScore?: number; 
   public get totalScore() {
     return this.getNumberAttribute('total_score');
@@ -1631,7 +1626,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._totalScore;
   }
 
-  // version - computed: true, optional: true, required: false
+  // version - computed: false, optional: true, required: false
   private _version?: string; 
   public get version() {
     return this.getStringAttribute('version');
@@ -1647,7 +1642,7 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
     return this._version;
   }
 
-  // version_operator - computed: true, optional: true, required: false
+  // version_operator - computed: false, optional: true, required: false
   private _versionOperator?: string; 
   public get versionOperator() {
     return this.getStringAttribute('version_operator');
@@ -1665,9 +1660,9 @@ export class ZeroTrustDevicePostureRuleInputOutputReference extends cdktf.Comple
 }
 export interface ZeroTrustDevicePostureRuleMatch {
   /**
-  * Available values: "windows", "mac", "linux", "android", "ios".
+  * Available values: "windows", "mac", "linux", "android", "ios", "chromeos".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#platform ZeroTrustDevicePostureRule#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#platform ZeroTrustDevicePostureRule#platform}
   */
   readonly platform?: string;
 }
@@ -1745,7 +1740,7 @@ export class ZeroTrustDevicePostureRuleMatchOutputReference extends cdktf.Comple
     }
   }
 
-  // platform - computed: true, optional: true, required: false
+  // platform - computed: false, optional: true, required: false
   private _platform?: string; 
   public get platform() {
     return this.getStringAttribute('platform');
@@ -1783,7 +1778,7 @@ export class ZeroTrustDevicePostureRuleMatchList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}
 */
 export class ZeroTrustDevicePostureRule extends cdktf.TerraformResource {
 
@@ -1799,7 +1794,7 @@ export class ZeroTrustDevicePostureRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustDevicePostureRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDevicePostureRule to import
-  * @param importFromId The id of the existing ZeroTrustDevicePostureRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDevicePostureRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDevicePostureRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1811,7 +1806,7 @@ export class ZeroTrustDevicePostureRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1822,7 +1817,7 @@ export class ZeroTrustDevicePostureRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_device_posture_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1897,7 +1892,7 @@ export class ZeroTrustDevicePostureRule extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // input - computed: true, optional: true, required: false
+  // input - computed: false, optional: true, required: false
   private _input = new ZeroTrustDevicePostureRuleInputOutputReference(this, "input");
   public get input() {
     return this._input;
@@ -1913,7 +1908,7 @@ export class ZeroTrustDevicePostureRule extends cdktf.TerraformResource {
     return this._input.internalValue;
   }
 
-  // match - computed: true, optional: true, required: false
+  // match - computed: false, optional: true, required: false
   private _match = new ZeroTrustDevicePostureRuleMatchList(this, "match", false);
   public get match() {
     return this._match;

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/registrar_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/registrar_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataCloudflareRegistrarDomainConfig extends cdktf.TerraformMeta
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
   */
   readonly domainName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/registrar_domain cloudflare_registrar_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/registrar_domain cloudflare_registrar_domain}
 */
 export class DataCloudflareRegistrarDomain extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataCloudflareRegistrarDomain extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareRegistrarDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRegistrarDomain to import
-  * @param importFromId The id of the existing DataCloudflareRegistrarDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/registrar_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRegistrarDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/registrar_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRegistrarDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataCloudflareRegistrarDomain extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/registrar_domain cloudflare_registrar_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/registrar_domain cloudflare_registrar_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataCloudflareRegistrarDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_registrar_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
