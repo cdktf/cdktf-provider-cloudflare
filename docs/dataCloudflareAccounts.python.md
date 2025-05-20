@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccounts <a name="DataCloudflareAccounts" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts cloudflare_accounts}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts cloudflare_accounts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
 
 ---
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the DataCloudflareAccounts to 
 
 The id of the existing DataCloudflareAccounts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,7 +878,7 @@ direction: str
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
 
 ---
 
@@ -892,7 +892,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
 
 ---
 
@@ -906,7 +906,7 @@ name: str
 
 Name of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
 
 ---
 
@@ -1667,9 +1667,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.abuseContactEmail">abuse_contact_email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.defaultNameservers">default_nameservers</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.enforceTwofactor">enforce_twofactor</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.useAccountCustomNsByDefault">use_account_custom_ns_by_default</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettings">DataCloudflareAccountsResultSettings</a></code> | *No description.* |
 
 ---
@@ -1708,30 +1706,10 @@ abuse_contact_email: str
 
 ---
 
-##### `default_nameservers`<sup>Required</sup> <a name="default_nameservers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.defaultNameservers"></a>
-
-```python
-default_nameservers: str
-```
-
-- *Type:* str
-
----
-
 ##### `enforce_twofactor`<sup>Required</sup> <a name="enforce_twofactor" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.enforceTwofactor"></a>
 
 ```python
 enforce_twofactor: IResolvable
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
-##### `use_account_custom_ns_by_default`<sup>Required</sup> <a name="use_account_custom_ns_by_default" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.useAccountCustomNsByDefault"></a>
-
-```python
-use_account_custom_ns_by_default: IResolvable
 ```
 
 - *Type:* cdktf.IResolvable

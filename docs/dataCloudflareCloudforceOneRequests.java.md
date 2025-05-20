@@ -4,7 +4,7 @@
 
 ### DataCloudflareCloudforceOneRequests <a name="DataCloudflareCloudforceOneRequests" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer"></a>
 
@@ -23,8 +23,18 @@ DataCloudflareCloudforceOneRequests.Builder.create(Construct scope, java.lang.St
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .accountIdentifier(java.lang.String)
+    .accountId(java.lang.String)
+    .page(java.lang.Number)
+    .perPage(java.lang.Number)
+//  .completedAfter(java.lang.String)
+//  .completedBefore(java.lang.String)
+//  .createdAfter(java.lang.String)
+//  .createdBefore(java.lang.String)
 //  .maxItems(java.lang.Number)
+//  .requestType(java.lang.String)
+//  .sortBy(java.lang.String)
+//  .sortOrder(java.lang.String)
+//  .status(java.lang.String)
     .build();
 ```
 
@@ -39,8 +49,18 @@ DataCloudflareCloudforceOneRequests.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.accountIdentifier">accountIdentifier</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.page">page</a></code> | <code>java.lang.Number</code> | Page number of results. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.perPage">perPage</a></code> | <code>java.lang.Number</code> | Number of results per page. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.completedAfter">completedAfter</a></code> | <code>java.lang.String</code> | Retrieve requests completed after this time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.completedBefore">completedBefore</a></code> | <code>java.lang.String</code> | Retrieve requests completed before this time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.createdAfter">createdAfter</a></code> | <code>java.lang.String</code> | Retrieve requests created after this time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.createdBefore">createdBefore</a></code> | <code>java.lang.String</code> | Retrieve requests created before this time. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.requestType">requestType</a></code> | <code>java.lang.String</code> | Requested information from request. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.sortBy">sortBy</a></code> | <code>java.lang.String</code> | Field to sort results by. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.sortOrder">sortOrder</a></code> | <code>java.lang.String</code> | Sort order (asc or desc). Available values: "asc", "desc". |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Request Status. Available values: "open", "accepted", "reported", "approved", "completed", "declined". |
 
 ---
 
@@ -104,13 +124,73 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `accountIdentifier`<sup>Required</sup> <a name="accountIdentifier" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.accountIdentifier"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_requests#account_identifier DataCloudflareCloudforceOneRequests#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#account_id DataCloudflareCloudforceOneRequests#account_id}
+
+---
+
+##### `page`<sup>Required</sup> <a name="page" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.page"></a>
+
+- *Type:* java.lang.Number
+
+Page number of results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#page DataCloudflareCloudforceOneRequests#page}
+
+---
+
+##### `perPage`<sup>Required</sup> <a name="perPage" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.perPage"></a>
+
+- *Type:* java.lang.Number
+
+Number of results per page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#per_page DataCloudflareCloudforceOneRequests#per_page}
+
+---
+
+##### `completedAfter`<sup>Optional</sup> <a name="completedAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.completedAfter"></a>
+
+- *Type:* java.lang.String
+
+Retrieve requests completed after this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#completed_after DataCloudflareCloudforceOneRequests#completed_after}
+
+---
+
+##### `completedBefore`<sup>Optional</sup> <a name="completedBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.completedBefore"></a>
+
+- *Type:* java.lang.String
+
+Retrieve requests completed before this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#completed_before DataCloudflareCloudforceOneRequests#completed_before}
+
+---
+
+##### `createdAfter`<sup>Optional</sup> <a name="createdAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.createdAfter"></a>
+
+- *Type:* java.lang.String
+
+Retrieve requests created after this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#created_after DataCloudflareCloudforceOneRequests#created_after}
+
+---
+
+##### `createdBefore`<sup>Optional</sup> <a name="createdBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.createdBefore"></a>
+
+- *Type:* java.lang.String
+
+Retrieve requests created before this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#created_before DataCloudflareCloudforceOneRequests#created_before}
 
 ---
 
@@ -120,7 +200,47 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_requests#max_items DataCloudflareCloudforceOneRequests#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#max_items DataCloudflareCloudforceOneRequests#max_items}
+
+---
+
+##### `requestType`<sup>Optional</sup> <a name="requestType" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.requestType"></a>
+
+- *Type:* java.lang.String
+
+Requested information from request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#request_type DataCloudflareCloudforceOneRequests#request_type}
+
+---
+
+##### `sortBy`<sup>Optional</sup> <a name="sortBy" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.sortBy"></a>
+
+- *Type:* java.lang.String
+
+Field to sort results by.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#sort_by DataCloudflareCloudforceOneRequests#sort_by}
+
+---
+
+##### `sortOrder`<sup>Optional</sup> <a name="sortOrder" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.sortOrder"></a>
+
+- *Type:* java.lang.String
+
+Sort order (asc or desc). Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#sort_order DataCloudflareCloudforceOneRequests#sort_order}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.Initializer.parameter.status"></a>
+
+- *Type:* java.lang.String
+
+Request Status. Available values: "open", "accepted", "reported", "approved", "completed", "declined".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#status DataCloudflareCloudforceOneRequests#status}
 
 ---
 
@@ -145,7 +265,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCompletedAfter">resetCompletedAfter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCompletedBefore">resetCompletedBefore</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCreatedAfter">resetCreatedAfter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCreatedBefore">resetCreatedBefore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetMaxItems">resetMaxItems</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetRequestType">resetRequestType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetSortBy">resetSortBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetSortOrder">resetSortOrder</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetStatus">resetStatus</a></code> | *No description.* |
 
 ---
 
@@ -341,10 +469,58 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetCompletedAfter` <a name="resetCompletedAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCompletedAfter"></a>
+
+```java
+public void resetCompletedAfter()
+```
+
+##### `resetCompletedBefore` <a name="resetCompletedBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCompletedBefore"></a>
+
+```java
+public void resetCompletedBefore()
+```
+
+##### `resetCreatedAfter` <a name="resetCreatedAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCreatedAfter"></a>
+
+```java
+public void resetCreatedAfter()
+```
+
+##### `resetCreatedBefore` <a name="resetCreatedBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetCreatedBefore"></a>
+
+```java
+public void resetCreatedBefore()
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetMaxItems"></a>
 
 ```java
 public void resetMaxItems()
+```
+
+##### `resetRequestType` <a name="resetRequestType" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetRequestType"></a>
+
+```java
+public void resetRequestType()
+```
+
+##### `resetSortBy` <a name="resetSortBy" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetSortBy"></a>
+
+```java
+public void resetSortBy()
+```
+
+##### `resetSortOrder` <a name="resetSortOrder" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetSortOrder"></a>
+
+```java
+public void resetSortOrder()
+```
+
+##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.resetStatus"></a>
+
+```java
+public void resetStatus()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -450,7 +626,7 @@ The construct id used in the generated config for the DataCloudflareCloudforceOn
 
 The id of the existing DataCloudflareCloudforceOneRequests that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_requests#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -479,10 +655,30 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.result">result</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsResultList">DataCloudflareCloudforceOneRequestsResultList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountIdentifierInput">accountIdentifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedAfterInput">completedAfterInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedBeforeInput">completedBeforeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdAfterInput">createdAfterInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdBeforeInput">createdBeforeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.maxItemsInput">maxItemsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountIdentifier">accountIdentifier</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.pageInput">pageInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.perPageInput">perPageInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.requestTypeInput">requestTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortByInput">sortByInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortOrderInput">sortOrderInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.statusInput">statusInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedAfter">completedAfter</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedBefore">completedBefore</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdAfter">createdAfter</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdBefore">createdBefore</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.page">page</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.perPage">perPage</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.requestType">requestType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortBy">sortBy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortOrder">sortOrder</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -618,10 +814,50 @@ public DataCloudflareCloudforceOneRequestsResultList getResult();
 
 ---
 
-##### `accountIdentifierInput`<sup>Optional</sup> <a name="accountIdentifierInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountIdentifierInput"></a>
+##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountIdInput"></a>
 
 ```java
-public java.lang.String getAccountIdentifierInput();
+public java.lang.String getAccountIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `completedAfterInput`<sup>Optional</sup> <a name="completedAfterInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedAfterInput"></a>
+
+```java
+public java.lang.String getCompletedAfterInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `completedBeforeInput`<sup>Optional</sup> <a name="completedBeforeInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedBeforeInput"></a>
+
+```java
+public java.lang.String getCompletedBeforeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createdAfterInput`<sup>Optional</sup> <a name="createdAfterInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdAfterInput"></a>
+
+```java
+public java.lang.String getCreatedAfterInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createdBeforeInput`<sup>Optional</sup> <a name="createdBeforeInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdBeforeInput"></a>
+
+```java
+public java.lang.String getCreatedBeforeInput();
 ```
 
 - *Type:* java.lang.String
@@ -638,10 +874,110 @@ public java.lang.Number getMaxItemsInput();
 
 ---
 
-##### `accountIdentifier`<sup>Required</sup> <a name="accountIdentifier" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountIdentifier"></a>
+##### `pageInput`<sup>Optional</sup> <a name="pageInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.pageInput"></a>
 
 ```java
-public java.lang.String getAccountIdentifier();
+public java.lang.Number getPageInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `perPageInput`<sup>Optional</sup> <a name="perPageInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.perPageInput"></a>
+
+```java
+public java.lang.Number getPerPageInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `requestTypeInput`<sup>Optional</sup> <a name="requestTypeInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.requestTypeInput"></a>
+
+```java
+public java.lang.String getRequestTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sortByInput`<sup>Optional</sup> <a name="sortByInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortByInput"></a>
+
+```java
+public java.lang.String getSortByInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sortOrderInput`<sup>Optional</sup> <a name="sortOrderInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortOrderInput"></a>
+
+```java
+public java.lang.String getSortOrderInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.statusInput"></a>
+
+```java
+public java.lang.String getStatusInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `completedAfter`<sup>Required</sup> <a name="completedAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedAfter"></a>
+
+```java
+public java.lang.String getCompletedAfter();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `completedBefore`<sup>Required</sup> <a name="completedBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.completedBefore"></a>
+
+```java
+public java.lang.String getCompletedBefore();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createdAfter`<sup>Required</sup> <a name="createdAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdAfter"></a>
+
+```java
+public java.lang.String getCreatedAfter();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createdBefore`<sup>Required</sup> <a name="createdBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.createdBefore"></a>
+
+```java
+public java.lang.String getCreatedBefore();
 ```
 
 - *Type:* java.lang.String
@@ -655,6 +991,66 @@ public java.lang.Number getMaxItems();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `page`<sup>Required</sup> <a name="page" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.page"></a>
+
+```java
+public java.lang.Number getPage();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `perPage`<sup>Required</sup> <a name="perPage" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.perPage"></a>
+
+```java
+public java.lang.Number getPerPage();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `requestType`<sup>Required</sup> <a name="requestType" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.requestType"></a>
+
+```java
+public java.lang.String getRequestType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sortBy`<sup>Required</sup> <a name="sortBy" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortBy"></a>
+
+```java
+public java.lang.String getSortBy();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sortOrder`<sup>Required</sup> <a name="sortOrder" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.sortOrder"></a>
+
+```java
+public java.lang.String getSortOrder();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequests.property.status"></a>
+
+```java
+public java.lang.String getStatus();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -697,8 +1093,18 @@ DataCloudflareCloudforceOneRequestsConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .accountIdentifier(java.lang.String)
+    .accountId(java.lang.String)
+    .page(java.lang.Number)
+    .perPage(java.lang.Number)
+//  .completedAfter(java.lang.String)
+//  .completedBefore(java.lang.String)
+//  .createdAfter(java.lang.String)
+//  .createdBefore(java.lang.String)
 //  .maxItems(java.lang.Number)
+//  .requestType(java.lang.String)
+//  .sortBy(java.lang.String)
+//  .sortOrder(java.lang.String)
+//  .status(java.lang.String)
     .build();
 ```
 
@@ -713,8 +1119,18 @@ DataCloudflareCloudforceOneRequestsConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.accountIdentifier">accountIdentifier</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.page">page</a></code> | <code>java.lang.Number</code> | Page number of results. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.perPage">perPage</a></code> | <code>java.lang.Number</code> | Number of results per page. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.completedAfter">completedAfter</a></code> | <code>java.lang.String</code> | Retrieve requests completed after this time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.completedBefore">completedBefore</a></code> | <code>java.lang.String</code> | Retrieve requests completed before this time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.createdAfter">createdAfter</a></code> | <code>java.lang.String</code> | Retrieve requests created after this time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.createdBefore">createdBefore</a></code> | <code>java.lang.String</code> | Retrieve requests created before this time. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.requestType">requestType</a></code> | <code>java.lang.String</code> | Requested information from request. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.sortBy">sortBy</a></code> | <code>java.lang.String</code> | Field to sort results by. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.sortOrder">sortOrder</a></code> | <code>java.lang.String</code> | Sort order (asc or desc). Available values: "asc", "desc". |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.status">status</a></code> | <code>java.lang.String</code> | Request Status. Available values: "open", "accepted", "reported", "approved", "completed", "declined". |
 
 ---
 
@@ -788,17 +1204,101 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `accountIdentifier`<sup>Required</sup> <a name="accountIdentifier" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.accountIdentifier"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.accountId"></a>
 
 ```java
-public java.lang.String getAccountIdentifier();
+public java.lang.String getAccountId();
 ```
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_requests#account_identifier DataCloudflareCloudforceOneRequests#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#account_id DataCloudflareCloudforceOneRequests#account_id}
+
+---
+
+##### `page`<sup>Required</sup> <a name="page" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.page"></a>
+
+```java
+public java.lang.Number getPage();
+```
+
+- *Type:* java.lang.Number
+
+Page number of results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#page DataCloudflareCloudforceOneRequests#page}
+
+---
+
+##### `perPage`<sup>Required</sup> <a name="perPage" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.perPage"></a>
+
+```java
+public java.lang.Number getPerPage();
+```
+
+- *Type:* java.lang.Number
+
+Number of results per page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#per_page DataCloudflareCloudforceOneRequests#per_page}
+
+---
+
+##### `completedAfter`<sup>Optional</sup> <a name="completedAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.completedAfter"></a>
+
+```java
+public java.lang.String getCompletedAfter();
+```
+
+- *Type:* java.lang.String
+
+Retrieve requests completed after this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#completed_after DataCloudflareCloudforceOneRequests#completed_after}
+
+---
+
+##### `completedBefore`<sup>Optional</sup> <a name="completedBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.completedBefore"></a>
+
+```java
+public java.lang.String getCompletedBefore();
+```
+
+- *Type:* java.lang.String
+
+Retrieve requests completed before this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#completed_before DataCloudflareCloudforceOneRequests#completed_before}
+
+---
+
+##### `createdAfter`<sup>Optional</sup> <a name="createdAfter" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.createdAfter"></a>
+
+```java
+public java.lang.String getCreatedAfter();
+```
+
+- *Type:* java.lang.String
+
+Retrieve requests created after this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#created_after DataCloudflareCloudforceOneRequests#created_after}
+
+---
+
+##### `createdBefore`<sup>Optional</sup> <a name="createdBefore" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.createdBefore"></a>
+
+```java
+public java.lang.String getCreatedBefore();
+```
+
+- *Type:* java.lang.String
+
+Retrieve requests created before this time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#created_before DataCloudflareCloudforceOneRequests#created_before}
 
 ---
 
@@ -812,7 +1312,63 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_requests#max_items DataCloudflareCloudforceOneRequests#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#max_items DataCloudflareCloudforceOneRequests#max_items}
+
+---
+
+##### `requestType`<sup>Optional</sup> <a name="requestType" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.requestType"></a>
+
+```java
+public java.lang.String getRequestType();
+```
+
+- *Type:* java.lang.String
+
+Requested information from request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#request_type DataCloudflareCloudforceOneRequests#request_type}
+
+---
+
+##### `sortBy`<sup>Optional</sup> <a name="sortBy" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.sortBy"></a>
+
+```java
+public java.lang.String getSortBy();
+```
+
+- *Type:* java.lang.String
+
+Field to sort results by.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#sort_by DataCloudflareCloudforceOneRequests#sort_by}
+
+---
+
+##### `sortOrder`<sup>Optional</sup> <a name="sortOrder" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.sortOrder"></a>
+
+```java
+public java.lang.String getSortOrder();
+```
+
+- *Type:* java.lang.String
+
+Sort order (asc or desc). Available values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#sort_order DataCloudflareCloudforceOneRequests#sort_order}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequests.DataCloudflareCloudforceOneRequestsConfig.property.status"></a>
+
+```java
+public java.lang.String getStatus();
+```
+
+- *Type:* java.lang.String
+
+Request Status. Available values: "open", "accepted", "reported", "approved", "completed", "declined".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_requests#status DataCloudflareCloudforceOneRequests#status}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CloudforceOneRequestMessage <a name="CloudforceOneRequestMessage" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer"></a>
 
@@ -23,8 +23,8 @@ CloudforceOneRequestMessage.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .accountIdentifier(java.lang.String)
-    .requestIdentifier(java.lang.String)
+    .accountId(java.lang.String)
+    .requestId(java.lang.String)
 //  .content(java.lang.String)
     .build();
 ```
@@ -40,8 +40,8 @@ CloudforceOneRequestMessage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.accountIdentifier">accountIdentifier</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.requestIdentifier">requestIdentifier</a></code> | <code>java.lang.String</code> | UUID. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.requestId">requestId</a></code> | <code>java.lang.String</code> | UUID. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.content">content</a></code> | <code>java.lang.String</code> | Content of message. |
 
 ---
@@ -106,23 +106,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `accountIdentifier`<sup>Required</sup> <a name="accountIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.accountIdentifier"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#account_identifier CloudforceOneRequestMessage#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
 
 ---
 
-##### `requestIdentifier`<sup>Required</sup> <a name="requestIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.requestIdentifier"></a>
+##### `requestId`<sup>Required</sup> <a name="requestId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer.parameter.requestId"></a>
 
 - *Type:* java.lang.String
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#request_identifier CloudforceOneRequestMessage#request_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Content of message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
 
 ---
 
@@ -566,7 +566,7 @@ The construct id used in the generated config for the CloudforceOneRequestMessag
 
 The id of the existing CloudforceOneRequestMessage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,12 +601,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.id">id</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.isFollowOnRequest">isFollowOnRequest</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.updated">updated</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifierInput">accountIdentifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.contentInput">contentInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifierInput">requestIdentifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifier">accountIdentifier</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdInput">requestIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.content">content</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifier">requestIdentifier</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestId">requestId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -802,10 +802,10 @@ public java.lang.String getUpdated();
 
 ---
 
-##### `accountIdentifierInput`<sup>Optional</sup> <a name="accountIdentifierInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifierInput"></a>
+##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdInput"></a>
 
 ```java
-public java.lang.String getAccountIdentifierInput();
+public java.lang.String getAccountIdInput();
 ```
 
 - *Type:* java.lang.String
@@ -822,20 +822,20 @@ public java.lang.String getContentInput();
 
 ---
 
-##### `requestIdentifierInput`<sup>Optional</sup> <a name="requestIdentifierInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifierInput"></a>
+##### `requestIdInput`<sup>Optional</sup> <a name="requestIdInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdInput"></a>
 
 ```java
-public java.lang.String getRequestIdentifierInput();
+public java.lang.String getRequestIdInput();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `accountIdentifier`<sup>Required</sup> <a name="accountIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifier"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountId"></a>
 
 ```java
-public java.lang.String getAccountIdentifier();
+public java.lang.String getAccountId();
 ```
 
 - *Type:* java.lang.String
@@ -852,10 +852,10 @@ public java.lang.String getContent();
 
 ---
 
-##### `requestIdentifier`<sup>Required</sup> <a name="requestIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifier"></a>
+##### `requestId`<sup>Required</sup> <a name="requestId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestId"></a>
 
 ```java
-public java.lang.String getRequestIdentifier();
+public java.lang.String getRequestId();
 ```
 
 - *Type:* java.lang.String
@@ -901,8 +901,8 @@ CloudforceOneRequestMessageConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .accountIdentifier(java.lang.String)
-    .requestIdentifier(java.lang.String)
+    .accountId(java.lang.String)
+    .requestId(java.lang.String)
 //  .content(java.lang.String)
     .build();
 ```
@@ -918,8 +918,8 @@ CloudforceOneRequestMessageConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountIdentifier">accountIdentifier</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestIdentifier">requestIdentifier</a></code> | <code>java.lang.String</code> | UUID. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestId">requestId</a></code> | <code>java.lang.String</code> | UUID. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.content">content</a></code> | <code>java.lang.String</code> | Content of message. |
 
 ---
@@ -994,31 +994,31 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `accountIdentifier`<sup>Required</sup> <a name="accountIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountIdentifier"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountId"></a>
 
 ```java
-public java.lang.String getAccountIdentifier();
+public java.lang.String getAccountId();
 ```
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#account_identifier CloudforceOneRequestMessage#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
 
 ---
 
-##### `requestIdentifier`<sup>Required</sup> <a name="requestIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestIdentifier"></a>
+##### `requestId`<sup>Required</sup> <a name="requestId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestId"></a>
 
 ```java
-public java.lang.String getRequestIdentifier();
+public java.lang.String getRequestId();
 ```
 
 - *Type:* java.lang.String
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#request_identifier CloudforceOneRequestMessage#request_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
 
 ---
 
@@ -1032,7 +1032,7 @@ public java.lang.String getContent();
 
 Content of message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
 
 ---
 

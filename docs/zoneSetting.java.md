@@ -4,7 +4,7 @@
 
 ### ZoneSetting <a name="ZoneSetting" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting cloudflare_zone_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting cloudflare_zone_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer"></a>
 
@@ -26,7 +26,8 @@ ZoneSetting.Builder.create(Construct scope, java.lang.String id)
     .settingId(java.lang.String)
     .value(java.util.Map<java.lang.String, java.lang.Object>)
     .zoneId(java.lang.String)
-//  .id(java.lang.String)
+//  .enabled(java.lang.Boolean)
+//  .enabled(IResolvable)
     .build();
 ```
 
@@ -44,7 +45,7 @@ ZoneSetting.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer.parameter.settingId">settingId</a></code> | <code>java.lang.String</code> | Setting name. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer.parameter.value">value</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Current value of the zone setting. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | ID of the zone setting. Available values: "0rtt". |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | ssl-recommender enrollment setting. |
 
 ---
 
@@ -114,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
 
 ---
 
@@ -124,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Current value of the zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#value ZoneSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#value ZoneSetting#value}
 
 ---
 
@@ -134,20 +135,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer.parameter.id"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer.parameter.enabled"></a>
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-ID of the zone setting. Available values: "0rtt".
+ssl-recommender enrollment setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#id ZoneSetting#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
 
 ---
 
@@ -178,7 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetEnabled">resetEnabled</a></code> | *No description.* |
 
 ---
 
@@ -472,10 +470,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetId"></a>
+##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetEnabled"></a>
 
 ```java
-public void resetId()
+public void resetEnabled()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -581,7 +579,7 @@ The construct id used in the generated config for the ZoneSetting to import.
 
 The id of the existing ZoneSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,13 +610,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.editable">editable</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.modifiedOn">modifiedOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.timeRemaining">timeRemaining</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.settingIdInput">settingIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.valueInput">valueInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.settingId">settingId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.value">value</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -777,6 +776,16 @@ public IResolvable getEditable();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `modifiedOn`<sup>Required</sup> <a name="modifiedOn" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.modifiedOn"></a>
 
 ```java
@@ -797,13 +806,13 @@ public java.lang.Number getTimeRemaining();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.idInput"></a>
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabledInput"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.Object getEnabledInput();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -837,13 +846,13 @@ public java.lang.String getZoneIdInput();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabled"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getEnabled();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -919,7 +928,8 @@ ZoneSettingConfig.builder()
     .settingId(java.lang.String)
     .value(java.util.Map<java.lang.String, java.lang.Object>)
     .zoneId(java.lang.String)
-//  .id(java.lang.String)
+//  .enabled(java.lang.Boolean)
+//  .enabled(IResolvable)
     .build();
 ```
 
@@ -937,7 +947,7 @@ ZoneSettingConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.settingId">settingId</a></code> | <code>java.lang.String</code> | Setting name. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.value">value</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | Current value of the zone setting. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.id">id</a></code> | <code>java.lang.String</code> | ID of the zone setting. Available values: "0rtt". |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | ssl-recommender enrollment setting. |
 
 ---
 
@@ -1021,7 +1031,7 @@ public java.lang.String getSettingId();
 
 Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
 
 ---
 
@@ -1035,7 +1045,7 @@ public java.util.Map<java.lang.String, java.lang.Object> getValue();
 
 Current value of the zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#value ZoneSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#value ZoneSetting#value}
 
 ---
 
@@ -1049,24 +1059,21 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.id"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.enabled"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getEnabled();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-ID of the zone setting. Available values: "0rtt".
+ssl-recommender enrollment setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#id ZoneSetting#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
 
 ---
 

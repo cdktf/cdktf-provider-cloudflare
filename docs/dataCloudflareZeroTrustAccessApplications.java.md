@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessApplications <a name="DataCloudflareZeroTrustAccessApplications" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessApplications.DataCloudflareZeroTrustAccessApplications"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessApplications.DataCloudflareZeroTrustAccessApplications.Initializer"></a>
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#account_id DataCloudflareZeroTrustAccessApplications#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#account_id DataCloudflareZeroTrustAccessApplications#account_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The aud of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#aud DataCloudflareZeroTrustAccessApplications#aud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#aud DataCloudflareZeroTrustAccessApplications#aud}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The domain of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#domain DataCloudflareZeroTrustAccessApplications#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#domain DataCloudflareZeroTrustAccessApplications#domain}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#max_items DataCloudflareZeroTrustAccessApplications#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#max_items DataCloudflareZeroTrustAccessApplications#max_items}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#name DataCloudflareZeroTrustAccessApplications#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#name DataCloudflareZeroTrustAccessApplications#name}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Search for apps by other listed query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#search DataCloudflareZeroTrustAccessApplications#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#search DataCloudflareZeroTrustAccessApplications#search}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#zone_id DataCloudflareZeroTrustAccessApplications#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#zone_id DataCloudflareZeroTrustAccessApplications#zone_id}
 
 ---
 
@@ -552,7 +552,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessApplications that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1020,7 +1020,7 @@ public java.lang.String getAccountId();
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#account_id DataCloudflareZeroTrustAccessApplications#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#account_id DataCloudflareZeroTrustAccessApplications#account_id}
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getAud();
 
 The aud of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#aud DataCloudflareZeroTrustAccessApplications#aud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#aud DataCloudflareZeroTrustAccessApplications#aud}
 
 ---
 
@@ -1048,7 +1048,7 @@ public java.lang.String getDomain();
 
 The domain of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#domain DataCloudflareZeroTrustAccessApplications#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#domain DataCloudflareZeroTrustAccessApplications#domain}
 
 ---
 
@@ -1062,7 +1062,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#max_items DataCloudflareZeroTrustAccessApplications#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#max_items DataCloudflareZeroTrustAccessApplications#max_items}
 
 ---
 
@@ -1076,7 +1076,7 @@ public java.lang.String getName();
 
 The name of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#name DataCloudflareZeroTrustAccessApplications#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#name DataCloudflareZeroTrustAccessApplications#name}
 
 ---
 
@@ -1090,7 +1090,7 @@ public java.lang.String getSearch();
 
 Search for apps by other listed query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#search DataCloudflareZeroTrustAccessApplications#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#search DataCloudflareZeroTrustAccessApplications#search}
 
 ---
 
@@ -1104,7 +1104,7 @@ public java.lang.String getZoneId();
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_applications#zone_id DataCloudflareZeroTrustAccessApplications#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_applications#zone_id DataCloudflareZeroTrustAccessApplications#zone_id}
 
 ---
 

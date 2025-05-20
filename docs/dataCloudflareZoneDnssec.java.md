@@ -4,7 +4,7 @@
 
 ### DataCloudflareZoneDnssec <a name="DataCloudflareZoneDnssec" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
 
 ---
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the DataCloudflareZoneDnssec t
 
 The id of the existing DataCloudflareZoneDnssec that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_dnssec#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_dnssec#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -465,6 +465,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.digestType">digestType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.dnssecMultiSigner">dnssecMultiSigner</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.dnssecPresigned">dnssecPresigned</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.dnssecUseNsec3">dnssecUseNsec3</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.ds">ds</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.flags">flags</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.keyTag">keyTag</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -653,6 +654,16 @@ public IResolvable getDnssecMultiSigner();
 
 ```java
 public IResolvable getDnssecPresigned();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `dnssecUseNsec3`<sup>Required</sup> <a name="dnssecUseNsec3" id="@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec.property.dnssecUseNsec3"></a>
+
+```java
+public IResolvable getDnssecUseNsec3();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable
@@ -887,7 +898,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_dnssec#zone_id DataCloudflareZoneDnssec#zone_id}
 
 ---
 

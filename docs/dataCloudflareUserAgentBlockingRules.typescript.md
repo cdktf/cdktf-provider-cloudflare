@@ -4,7 +4,7 @@
 
 ### DataCloudflareUserAgentBlockingRules <a name="DataCloudflareUserAgentBlockingRules" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataCloudflareUserAgentBlo
 
 The id of the existing DataCloudflareUserAgentBlockingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/user_agent_blocking_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user_agent_blocking_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ public readonly zoneId: string;
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/user_agent_blocking_rules#zone_id DataCloudflareUserAgentBlockingRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user_agent_blocking_rules#zone_id DataCloudflareUserAgentBlockingRules#zone_id}
 
 ---
 
@@ -810,7 +810,7 @@ public readonly description: string;
 
 A string to search for in the description of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/user_agent_blocking_rules#description DataCloudflareUserAgentBlockingRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user_agent_blocking_rules#description DataCloudflareUserAgentBlockingRules#description}
 
 ---
 
@@ -824,7 +824,7 @@ public readonly descriptionSearch: string;
 
 A string to search for in the description of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/user_agent_blocking_rules#description_search DataCloudflareUserAgentBlockingRules#description_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user_agent_blocking_rules#description_search DataCloudflareUserAgentBlockingRules#description_search}
 
 ---
 
@@ -838,7 +838,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/user_agent_blocking_rules#max_items DataCloudflareUserAgentBlockingRules#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user_agent_blocking_rules#max_items DataCloudflareUserAgentBlockingRules#max_items}
 
 ---
 
@@ -852,7 +852,7 @@ public readonly uaSearch: string;
 
 A string to search for in the user agent values of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/user_agent_blocking_rules#ua_search DataCloudflareUserAgentBlockingRules#ua_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user_agent_blocking_rules#ua_search DataCloudflareUserAgentBlockingRules#ua_search}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### WorkersRoute <a name="WorkersRoute" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route cloudflare_workers_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route cloudflare_workers_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRoute.resetScript">resetScript</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetScript` <a name="resetScript" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.resetScript"></a>
+
+```typescript
+public resetScript(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the WorkersRoute to import.
 
 The id of the existing WorkersRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -761,8 +768,8 @@ const workersRouteConfig: workersRoute.WorkersRouteConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.pattern">pattern</a></code> | <code>string</code> | Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior). |
-| <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.script">script</a></code> | <code>string</code> | Name of the script to run if the route matches. |
 | <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.script">script</a></code> | <code>string</code> | Name of the script to run if the route matches. |
 
 ---
 
@@ -846,21 +853,7 @@ public readonly pattern: string;
 
 Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route#pattern WorkersRoute#pattern}
-
----
-
-##### `script`<sup>Required</sup> <a name="script" id="@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.script"></a>
-
-```typescript
-public readonly script: string;
-```
-
-- *Type:* string
-
-Name of the script to run if the route matches.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route#script WorkersRoute#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route#pattern WorkersRoute#pattern}
 
 ---
 
@@ -874,7 +867,21 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
+
+---
+
+##### `script`<sup>Optional</sup> <a name="script" id="@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.property.script"></a>
+
+```typescript
+public readonly script: string;
+```
+
+- *Type:* string
+
+Name of the script to run if the route matches.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route#script WorkersRoute#script}
 
 ---
 

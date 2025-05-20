@@ -4,7 +4,7 @@
 
 ### DataCloudflareLogpullRetention <a name="DataCloudflareLogpullRetention" id="@cdktf/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareLogpullReten
 
 The id of the existing DataCloudflareLogpullRetention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/logpull_retention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/logpull_retention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/logpull_retention#zone_id DataCloudflareLogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/logpull_retention#zone_id DataCloudflareLogpullRetention#zone_id}
 
 ---
 

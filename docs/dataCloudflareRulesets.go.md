@@ -4,7 +4,7 @@
 
 ### DataCloudflareRulesets <a name="DataCloudflareRulesets" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/rulesets cloudflare_rulesets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/rulesets cloudflare_rulesets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareRulesets to 
 
 The id of the existing DataCloudflareRulesets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
 
 ---
 
@@ -768,7 +768,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
 
 ---
 
@@ -782,7 +782,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
 
 ---
 

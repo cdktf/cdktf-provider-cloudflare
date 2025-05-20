@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessGroup <a name="DataCloudflareZeroTrustAccessGroup" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer"></a>
 
@@ -42,7 +42,7 @@ DataCloudflareZeroTrustAccessGroup.Builder.create(Construct scope, java.lang.Str
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupFilter">DataCloudflareZeroTrustAccessGroupFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupFilter">DataCloudflareZeroTrustAccessGroupFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | UUID. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroup.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#account_id DataCloudflareZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#account_id DataCloudflareZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupFilter">DataCloudflareZeroTrustAccessGroupFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#group_id DataCloudflareZeroTrustAccessGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#group_id DataCloudflareZeroTrustAccessGroup#group_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#zone_id DataCloudflareZeroTrustAccessGroup#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#zone_id DataCloudflareZeroTrustAccessGroup#zone_id}
 
 ---
 
@@ -506,7 +506,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,7 +893,7 @@ DataCloudflareZeroTrustAccessGroupConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupConfig.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupFilter">DataCloudflareZeroTrustAccessGroupFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupConfig.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupFilter">DataCloudflareZeroTrustAccessGroupFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupConfig.property.groupId">groupId</a></code> | <code>java.lang.String</code> | UUID. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
@@ -979,7 +979,7 @@ public java.lang.String getAccountId();
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#account_id DataCloudflareZeroTrustAccessGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#account_id DataCloudflareZeroTrustAccessGroup#account_id}
 
 ---
 
@@ -991,7 +991,7 @@ public DataCloudflareZeroTrustAccessGroupFilter getFilter();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessGroup.DataCloudflareZeroTrustAccessGroupFilter">DataCloudflareZeroTrustAccessGroupFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#filter DataCloudflareZeroTrustAccessGroup#filter}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public java.lang.String getGroupId();
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#group_id DataCloudflareZeroTrustAccessGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#group_id DataCloudflareZeroTrustAccessGroup#group_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.String getZoneId();
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#zone_id DataCloudflareZeroTrustAccessGroup#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#zone_id DataCloudflareZeroTrustAccessGroup#zone_id}
 
 ---
 
@@ -1331,7 +1331,7 @@ public java.lang.String getName();
 
 The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#name DataCloudflareZeroTrustAccessGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#name DataCloudflareZeroTrustAccessGroup#name}
 
 ---
 
@@ -1345,7 +1345,7 @@ public java.lang.String getSearch();
 
 Search for groups by other listed query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_group#search DataCloudflareZeroTrustAccessGroup#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_group#search DataCloudflareZeroTrustAccessGroup#search}
 
 ---
 

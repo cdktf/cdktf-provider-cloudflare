@@ -4,7 +4,7 @@
 
 ### DataCloudflareR2Bucket <a name="DataCloudflareR2Bucket" id="@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareR2Bucket to 
 
 The id of the existing DataCloudflareR2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -394,6 +394,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.creationDate">CreationDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.storageClass">StorageClass</a></code> | <code>*string</code> | *No description.* |
@@ -530,6 +531,16 @@ func Provider() TerraformProvider
 
 ```go
 func CreationDate() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Jurisdiction`<sup>Required</sup> <a name="Jurisdiction" id="@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket.property.jurisdiction"></a>
+
+```go
+func Jurisdiction() *string
 ```
 
 - *Type:* *string
@@ -742,7 +753,7 @@ AccountId *string
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/r2_bucket#account_id DataCloudflareR2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket#account_id DataCloudflareR2Bucket#account_id}
 
 ---
 
@@ -756,7 +767,7 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/r2_bucket#bucket_name DataCloudflareR2Bucket#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket#bucket_name DataCloudflareR2Bucket#bucket_name}
 
 ---
 

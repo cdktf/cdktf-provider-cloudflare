@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccounts <a name="DataCloudflareAccounts" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts cloudflare_accounts}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts cloudflare_accounts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
 
 ---
 
@@ -476,7 +476,7 @@ The construct id used in the generated config for the DataCloudflareAccounts to 
 
 The id of the existing DataCloudflareAccounts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ public java.lang.String getDirection();
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
 
 ---
 
@@ -862,7 +862,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
 
 ---
 
@@ -876,7 +876,7 @@ public java.lang.String getName();
 
 Name of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
 
 ---
 
@@ -1577,9 +1577,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.abuseContactEmail">abuseContactEmail</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.defaultNameservers">defaultNameservers</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.enforceTwofactor">enforceTwofactor</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.useAccountCustomNsByDefault">useAccountCustomNsByDefault</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettings">DataCloudflareAccountsResultSettings</a></code> | *No description.* |
 
 ---
@@ -1618,30 +1616,10 @@ public java.lang.String getAbuseContactEmail();
 
 ---
 
-##### `defaultNameservers`<sup>Required</sup> <a name="defaultNameservers" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.defaultNameservers"></a>
-
-```java
-public java.lang.String getDefaultNameservers();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `enforceTwofactor`<sup>Required</sup> <a name="enforceTwofactor" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.enforceTwofactor"></a>
 
 ```java
 public IResolvable getEnforceTwofactor();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
-##### `useAccountCustomNsByDefault`<sup>Required</sup> <a name="useAccountCustomNsByDefault" id="@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsResultSettingsOutputReference.property.useAccountCustomNsByDefault"></a>
-
-```java
-public IResolvable getUseAccountCustomNsByDefault();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable

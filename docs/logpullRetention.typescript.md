@@ -4,7 +4,7 @@
 
 ### LogpullRetention <a name="LogpullRetention" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LogpullRetention to import
 
 The id of the existing LogpullRetention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
 
 ---
 
@@ -833,7 +833,7 @@ public readonly flag: boolean | IResolvable;
 
 The log retention flag for Logpull API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/logpull_retention#flag LogpullRetention#flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/logpull_retention#flag LogpullRetention#flag}
 
 ---
 

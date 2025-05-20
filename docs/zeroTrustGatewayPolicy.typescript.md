@@ -4,7 +4,7 @@
 
 ### ZeroTrustGatewayPolicy <a name="ZeroTrustGatewayPolicy" id="@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicy.Initializer"></a>
 
@@ -576,7 +576,7 @@ The construct id used in the generated config for the ZeroTrustGatewayPolicy to 
 
 The id of the existing ZeroTrustGatewayPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1133,7 +1133,7 @@ const zeroTrustGatewayPolicyConfig: zeroTrustGatewayPolicy.ZeroTrustGatewayPolic
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#account_id ZeroTrustGatewayPolicy#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#account_id ZeroTrustGatewayPolicy#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.action">action</a></code> | <code>string</code> | The action to preform when the associated traffic, identity, and device posture expressions are either absent or evaluate to `true`. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.name">name</a></code> | <code>string</code> | The name of the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyConfig.property.description">description</a></code> | <code>string</code> | The description of the rule. |
@@ -1227,7 +1227,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#account_id ZeroTrustGatewayPolicy#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#account_id ZeroTrustGatewayPolicy#account_id}.
 
 ---
 
@@ -1243,7 +1243,7 @@ The action to preform when the associated traffic, identity, and device posture 
 
 Available values: "on", "off", "allow", "block", "scan", "noscan", "safesearch", "ytrestricted", "isolate", "noisolate", "override", "l4_override", "egress", "resolve", "quarantine", "redirect".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly name: string;
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#name ZeroTrustGatewayPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#name ZeroTrustGatewayPolicy#name}
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly description: string;
 
 The description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#description ZeroTrustGatewayPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#description ZeroTrustGatewayPolicy#description}
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly devicePosture: string;
 
 The wirefilter expression used for device posture check matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#device_posture ZeroTrustGatewayPolicy#device_posture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#device_posture ZeroTrustGatewayPolicy#device_posture}
 
 ---
 
@@ -1299,7 +1299,7 @@ public readonly enabled: boolean | IResolvable;
 
 True if the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
 
 ---
 
@@ -1315,7 +1315,7 @@ The expiration time stamp and default duration of a DNS policy. Takes precedence
 
 This does not apply to HTTP or network policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#expiration ZeroTrustGatewayPolicy#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#expiration ZeroTrustGatewayPolicy#expiration}
 
 ---
 
@@ -1329,7 +1329,7 @@ public readonly filters: string[];
 
 The protocol or layer to evaluate the traffic, identity, and device posture expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#filters ZeroTrustGatewayPolicy#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#filters ZeroTrustGatewayPolicy#filters}
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly identity: string;
 
 The wirefilter expression used for identity matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#identity ZeroTrustGatewayPolicy#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#identity ZeroTrustGatewayPolicy#identity}
 
 ---
 
@@ -1357,9 +1357,9 @@ public readonly precedence: number;
 
 Precedence sets the order of your rules.
 
-Lower values indicate higher precedence. At each processing phase, applicable rules are evaluated in ascending order of this value.
+Lower values indicate higher precedence. At each processing phase, applicable rules are evaluated in ascending order of this value. Refer to [Order of enforcement](http://developers.cloudflare.com/learning-paths/secure-internet-traffic/understand-policies/order-of-enforcement/#manage-precedence-with-terraform) docs on how to manage precedence via Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#precedence ZeroTrustGatewayPolicy#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#precedence ZeroTrustGatewayPolicy#precedence}
 
 ---
 
@@ -1373,7 +1373,7 @@ public readonly ruleSettings: ZeroTrustGatewayPolicyRuleSettings;
 
 Additional settings that modify the rule's action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#rule_settings ZeroTrustGatewayPolicy#rule_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#rule_settings ZeroTrustGatewayPolicy#rule_settings}
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly schedule: ZeroTrustGatewayPolicySchedule;
 
 The schedule for activating DNS policies. This does not apply to HTTP or network policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#schedule ZeroTrustGatewayPolicy#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#schedule ZeroTrustGatewayPolicy#schedule}
 
 ---
 
@@ -1401,7 +1401,7 @@ public readonly traffic: string;
 
 The wirefilter expression used for traffic matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#traffic ZeroTrustGatewayPolicy#traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#traffic ZeroTrustGatewayPolicy#traffic}
 
 ---
 
@@ -1443,7 +1443,7 @@ Policies with an expiration do not consider the timezone of
 clients they are applied to, and expire "globally" at the point
 given by their `expires_at` value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#expires_at ZeroTrustGatewayPolicy#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#expires_at ZeroTrustGatewayPolicy#expires_at}
 
 ---
 
@@ -1459,7 +1459,7 @@ The default duration a policy will be active in minutes.
 
 Must be set in order to use the `reset_expiration` endpoint on this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
 
 ---
 
@@ -1517,7 +1517,7 @@ Add custom headers to allowed requests, in the form of key-value pairs.
 
 Keys are header names, pointing to an array with its header value(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#add_headers ZeroTrustGatewayPolicy#add_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#add_headers ZeroTrustGatewayPolicy#add_headers}
 
 ---
 
@@ -1531,7 +1531,7 @@ public readonly allowChildBypass: boolean | IResolvable;
 
 Set by parent MSP accounts to enable their children to bypass this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#allow_child_bypass ZeroTrustGatewayPolicy#allow_child_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#allow_child_bypass ZeroTrustGatewayPolicy#allow_child_bypass}
 
 ---
 
@@ -1545,7 +1545,7 @@ public readonly auditSsh: ZeroTrustGatewayPolicyRuleSettingsAuditSsh;
 
 Settings for the Audit SSH action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#audit_ssh ZeroTrustGatewayPolicy#audit_ssh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#audit_ssh ZeroTrustGatewayPolicy#audit_ssh}
 
 ---
 
@@ -1559,7 +1559,7 @@ public readonly bisoAdminControls: ZeroTrustGatewayPolicyRuleSettingsBisoAdminCo
 
 Configure how browser isolation behaves.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#biso_admin_controls ZeroTrustGatewayPolicy#biso_admin_controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#biso_admin_controls ZeroTrustGatewayPolicy#biso_admin_controls}
 
 ---
 
@@ -1573,7 +1573,7 @@ public readonly blockPage: ZeroTrustGatewayPolicyRuleSettingsBlockPage;
 
 Custom block page settings. If missing/null, blocking will use the the account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#block_page ZeroTrustGatewayPolicy#block_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#block_page ZeroTrustGatewayPolicy#block_page}
 
 ---
 
@@ -1587,7 +1587,7 @@ public readonly blockPageEnabled: boolean | IResolvable;
 
 Enable the custom block page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#block_page_enabled ZeroTrustGatewayPolicy#block_page_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#block_page_enabled ZeroTrustGatewayPolicy#block_page_enabled}
 
 ---
 
@@ -1601,7 +1601,7 @@ public readonly blockReason: string;
 
 The text describing why this block occurred, displayed on the custom block page (if enabled).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#block_reason ZeroTrustGatewayPolicy#block_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#block_reason ZeroTrustGatewayPolicy#block_reason}
 
 ---
 
@@ -1615,7 +1615,7 @@ public readonly bypassParentRule: boolean | IResolvable;
 
 Set by children MSP accounts to bypass their parent's rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#bypass_parent_rule ZeroTrustGatewayPolicy#bypass_parent_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#bypass_parent_rule ZeroTrustGatewayPolicy#bypass_parent_rule}
 
 ---
 
@@ -1629,7 +1629,7 @@ public readonly checkSession: ZeroTrustGatewayPolicyRuleSettingsCheckSession;
 
 Configure how session check behaves.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#check_session ZeroTrustGatewayPolicy#check_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#check_session ZeroTrustGatewayPolicy#check_session}
 
 ---
 
@@ -1645,7 +1645,7 @@ Add your own custom resolvers to route queries that match the resolver policy.
 
 Cannot be used when 'resolve_dns_through_cloudflare' or 'resolve_dns_internally' are set. DNS queries will route to the address closest to their origin. Only valid when a rule's action is set to 'resolve'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#dns_resolvers ZeroTrustGatewayPolicy#dns_resolvers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#dns_resolvers ZeroTrustGatewayPolicy#dns_resolvers}
 
 ---
 
@@ -1661,7 +1661,7 @@ Configure how Gateway Proxy traffic egresses.
 
 You can enable this setting for rules with Egress actions and filters, or omit it to indicate local egress via WARP IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#egress ZeroTrustGatewayPolicy#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#egress ZeroTrustGatewayPolicy#egress}
 
 ---
 
@@ -1677,7 +1677,7 @@ Set to true, to ignore the category matches at CNAME domains in a response.
 
 If unchecked, the categories in this rule will be checked against all the CNAME domain categories in a response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ignore_cname_category_matches ZeroTrustGatewayPolicy#ignore_cname_category_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ignore_cname_category_matches ZeroTrustGatewayPolicy#ignore_cname_category_matches}
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly insecureDisableDnssecValidation: boolean | IResolvable;
 
 INSECURE - disable DNSSEC validation (for Allow actions).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#insecure_disable_dnssec_validation ZeroTrustGatewayPolicy#insecure_disable_dnssec_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#insecure_disable_dnssec_validation ZeroTrustGatewayPolicy#insecure_disable_dnssec_validation}
 
 ---
 
@@ -1707,7 +1707,7 @@ Set to true to enable IPs in DNS resolver category blocks.
 
 By default categories only block based on domain names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ip_categories ZeroTrustGatewayPolicy#ip_categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ip_categories ZeroTrustGatewayPolicy#ip_categories}
 
 ---
 
@@ -1723,7 +1723,7 @@ Set to true to include IPs in DNS resolver indicator feed blocks.
 
 By default indicator feeds only block based on domain names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ip_indicator_feeds ZeroTrustGatewayPolicy#ip_indicator_feeds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ip_indicator_feeds ZeroTrustGatewayPolicy#ip_indicator_feeds}
 
 ---
 
@@ -1737,7 +1737,7 @@ public readonly l4Override: ZeroTrustGatewayPolicyRuleSettingsL4Override;
 
 Send matching traffic to the supplied destination IP address and port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#l4override ZeroTrustGatewayPolicy#l4override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#l4override ZeroTrustGatewayPolicy#l4override}
 
 ---
 
@@ -1751,7 +1751,7 @@ public readonly notificationSettings: ZeroTrustGatewayPolicyRuleSettingsNotifica
 
 Configure a notification to display on the user's device when this rule is matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#notification_settings ZeroTrustGatewayPolicy#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#notification_settings ZeroTrustGatewayPolicy#notification_settings}
 
 ---
 
@@ -1765,7 +1765,7 @@ public readonly overrideHost: string;
 
 Override matching DNS queries with a hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#override_host ZeroTrustGatewayPolicy#override_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#override_host ZeroTrustGatewayPolicy#override_host}
 
 ---
 
@@ -1779,7 +1779,7 @@ public readonly overrideIps: string[];
 
 Override matching DNS queries with an IP or set of IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#override_ips ZeroTrustGatewayPolicy#override_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#override_ips ZeroTrustGatewayPolicy#override_ips}
 
 ---
 
@@ -1793,7 +1793,7 @@ public readonly payloadLog: ZeroTrustGatewayPolicyRuleSettingsPayloadLog;
 
 Configure DLP payload logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#payload_log ZeroTrustGatewayPolicy#payload_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#payload_log ZeroTrustGatewayPolicy#payload_log}
 
 ---
 
@@ -1807,7 +1807,7 @@ public readonly quarantine: ZeroTrustGatewayPolicyRuleSettingsQuarantine;
 
 Settings that apply to quarantine rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#quarantine ZeroTrustGatewayPolicy#quarantine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#quarantine ZeroTrustGatewayPolicy#quarantine}
 
 ---
 
@@ -1821,7 +1821,7 @@ public readonly redirect: ZeroTrustGatewayPolicyRuleSettingsRedirect;
 
 Settings that apply to redirect rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#redirect ZeroTrustGatewayPolicy#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#redirect ZeroTrustGatewayPolicy#redirect}
 
 ---
 
@@ -1837,7 +1837,7 @@ Configure to forward the query to the internal DNS service, passing the specifie
 
 Cannot be set when 'dns_resolvers' are specified or 'resolve_dns_through_cloudflare' is set. Only valid when a rule's action is set to 'resolve'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#resolve_dns_internally ZeroTrustGatewayPolicy#resolve_dns_internally}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#resolve_dns_internally ZeroTrustGatewayPolicy#resolve_dns_internally}
 
 ---
 
@@ -1851,7 +1851,7 @@ public readonly resolveDnsThroughCloudflare: boolean | IResolvable;
 
 Enable to send queries that match the policy to Cloudflare's default 1.1.1.1 DNS resolver. Cannot be set when 'dns_resolvers' are specified or 'resolve_dns_internally' is set. Only valid when a rule's action is set to 'resolve'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#resolve_dns_through_cloudflare ZeroTrustGatewayPolicy#resolve_dns_through_cloudflare}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#resolve_dns_through_cloudflare ZeroTrustGatewayPolicy#resolve_dns_through_cloudflare}
 
 ---
 
@@ -1865,7 +1865,7 @@ public readonly untrustedCert: ZeroTrustGatewayPolicyRuleSettingsUntrustedCert;
 
 Configure behavior when an upstream cert is invalid or an SSL error occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#untrusted_cert ZeroTrustGatewayPolicy#untrusted_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#untrusted_cert ZeroTrustGatewayPolicy#untrusted_cert}
 
 ---
 
@@ -1897,7 +1897,7 @@ public readonly commandLogging: boolean | IResolvable;
 
 Enable to turn on SSH command logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#command_logging ZeroTrustGatewayPolicy#command_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#command_logging ZeroTrustGatewayPolicy#command_logging}
 
 ---
 
@@ -1943,7 +1943,7 @@ Configure whether copy is enabled or not.
 When set with "remote_only", copying isolated content from the remote browser to the user's local clipboard is disabled. When absent, copy is enabled. Only applies when `version == "v2"`.
 Available values: "enabled", "disabled", "remote_only".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#copy ZeroTrustGatewayPolicy#copy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#copy ZeroTrustGatewayPolicy#copy}
 
 ---
 
@@ -1957,7 +1957,7 @@ public readonly dcp: boolean | IResolvable;
 
 Set to false to enable copy-pasting. Only applies when `version == "v1"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#dcp ZeroTrustGatewayPolicy#dcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#dcp ZeroTrustGatewayPolicy#dcp}
 
 ---
 
@@ -1971,7 +1971,7 @@ public readonly dd: boolean | IResolvable;
 
 Set to false to enable downloading. Only applies when `version == "v1"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#dd ZeroTrustGatewayPolicy#dd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#dd ZeroTrustGatewayPolicy#dd}
 
 ---
 
@@ -1985,7 +1985,7 @@ public readonly dk: boolean | IResolvable;
 
 Set to false to enable keyboard usage. Only applies when `version == "v1"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#dk ZeroTrustGatewayPolicy#dk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#dk ZeroTrustGatewayPolicy#dk}
 
 ---
 
@@ -2002,7 +2002,7 @@ Configure whether downloading enabled or not.
 When absent, downloading is enabled. Only applies when `version == "v2"`.
 Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#download ZeroTrustGatewayPolicy#download}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#download ZeroTrustGatewayPolicy#download}
 
 ---
 
@@ -2016,7 +2016,7 @@ public readonly dp: boolean | IResolvable;
 
 Set to false to enable printing. Only applies when `version == "v1"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#dp ZeroTrustGatewayPolicy#dp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#dp ZeroTrustGatewayPolicy#dp}
 
 ---
 
@@ -2030,7 +2030,7 @@ public readonly du: boolean | IResolvable;
 
 Set to false to enable uploading. Only applies when `version == "v1"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#du ZeroTrustGatewayPolicy#du}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#du ZeroTrustGatewayPolicy#du}
 
 ---
 
@@ -2047,7 +2047,7 @@ Configure whether keyboard usage is enabled or not.
 When absent, keyboard usage is enabled. Only applies when `version == "v2"`.
 Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#keyboard ZeroTrustGatewayPolicy#keyboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#keyboard ZeroTrustGatewayPolicy#keyboard}
 
 ---
 
@@ -2064,7 +2064,7 @@ Configure whether pasting is enabled or not.
 When set with "remote_only", pasting content from the user's local clipboard into isolated pages is disabled. When absent, paste is enabled. Only applies when `version == "v2"`.
 Available values: "enabled", "disabled", "remote_only".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#paste ZeroTrustGatewayPolicy#paste}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#paste ZeroTrustGatewayPolicy#paste}
 
 ---
 
@@ -2081,7 +2081,7 @@ Configure whether printing is enabled or not.
 When absent, printing is enabled. Only applies when `version == "v2"`.
 Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#printing ZeroTrustGatewayPolicy#printing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#printing ZeroTrustGatewayPolicy#printing}
 
 ---
 
@@ -2098,7 +2098,7 @@ Configure whether uploading is enabled or not.
 When absent, uploading is enabled. Only applies when `version == "v2"`.
 Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#upload ZeroTrustGatewayPolicy#upload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#upload ZeroTrustGatewayPolicy#upload}
 
 ---
 
@@ -2112,7 +2112,7 @@ public readonly version: string;
 
 Indicates which version of the browser isolation controls should apply. Available values: "v1", "v2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#version ZeroTrustGatewayPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#version ZeroTrustGatewayPolicy#version}
 
 ---
 
@@ -2145,7 +2145,7 @@ public readonly targetUri: string;
 
 URI to which the user will be redirected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
 
 ---
 
@@ -2159,7 +2159,7 @@ public readonly includeContext: boolean | IResolvable;
 
 If true, context information will be passed as query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
 
 ---
 
@@ -2192,7 +2192,7 @@ public readonly duration: string;
 
 Configure how fresh the session needs to be to be considered valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
 
 ---
 
@@ -2206,7 +2206,7 @@ public readonly enforce: boolean | IResolvable;
 
 Set to true to enable session enforcement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#enforce ZeroTrustGatewayPolicy#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#enforce ZeroTrustGatewayPolicy#enforce}
 
 ---
 
@@ -2224,8 +2224,8 @@ const zeroTrustGatewayPolicyRuleSettingsDnsResolvers: zeroTrustGatewayPolicy.Zer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolvers.property.ipv4">ipv4</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4">ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolvers.property.ipv6">ipv6</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6">ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolvers.property.ipv4">ipv4</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4">ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolvers.property.ipv6">ipv6</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6">ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}. |
 
 ---
 
@@ -2237,7 +2237,7 @@ public readonly ipv4: IResolvable | ZeroTrustGatewayPolicyRuleSettingsDnsResolve
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4">ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}.
 
 ---
 
@@ -2249,7 +2249,7 @@ public readonly ipv6: IResolvable | ZeroTrustGatewayPolicyRuleSettingsDnsResolve
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6">ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}.
 
 ---
 
@@ -2284,7 +2284,7 @@ public readonly ip: string;
 
 IPv4 address of upstream resolver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
 
 ---
 
@@ -2298,7 +2298,7 @@ public readonly port: number;
 
 A port number to use for upstream resolver. Defaults to 53 if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
 
 ---
 
@@ -2312,7 +2312,7 @@ public readonly routeThroughPrivateNetwork: boolean | IResolvable;
 
 Whether to connect to this resolver over a private network. Must be set when vnet_id is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
 
 ---
 
@@ -2326,7 +2326,7 @@ public readonly vnetId: string;
 
 Optionally specify a virtual network for this resolver. Uses default virtual network id if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
 
 ---
 
@@ -2361,7 +2361,7 @@ public readonly ip: string;
 
 IPv6 address of upstream resolver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
 
 ---
 
@@ -2375,7 +2375,7 @@ public readonly port: number;
 
 A port number to use for upstream resolver. Defaults to 53 if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
 
 ---
 
@@ -2389,7 +2389,7 @@ public readonly routeThroughPrivateNetwork: boolean | IResolvable;
 
 Whether to connect to this resolver over a private network. Must be set when vnet_id is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
 
 ---
 
@@ -2403,7 +2403,7 @@ public readonly vnetId: string;
 
 Optionally specify a virtual network for this resolver. Uses default virtual network id if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
 
 ---
 
@@ -2437,7 +2437,7 @@ public readonly ipv4: string;
 
 The IPv4 address to be used for egress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}
 
 ---
 
@@ -2453,7 +2453,7 @@ The fallback IPv4 address to be used for egress in the event of an error egressi
 
 Can be '0.0.0.0' to indicate local egress via WARP IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ipv4_fallback ZeroTrustGatewayPolicy#ipv4_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ipv4_fallback ZeroTrustGatewayPolicy#ipv4_fallback}
 
 ---
 
@@ -2467,7 +2467,7 @@ public readonly ipv6: string;
 
 The IPv6 range to be used for egress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}
 
 ---
 
@@ -2500,7 +2500,7 @@ public readonly ip: string;
 
 IPv4 or IPv6 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
 
 ---
 
@@ -2514,7 +2514,7 @@ public readonly port: number;
 
 A port number to use for TCP/UDP overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
 
 ---
 
@@ -2549,7 +2549,7 @@ public readonly enabled: boolean | IResolvable;
 
 Set notification on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
 
 ---
 
@@ -2563,7 +2563,7 @@ public readonly includeContext: boolean | IResolvable;
 
 If true, context information will be passed as query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
 
 ---
 
@@ -2577,7 +2577,7 @@ public readonly msg: string;
 
 Customize the message shown in the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#msg ZeroTrustGatewayPolicy#msg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#msg ZeroTrustGatewayPolicy#msg}
 
 ---
 
@@ -2591,7 +2591,7 @@ public readonly supportUrl: string;
 
 Optional URL to direct users to additional information. If not set, the notification will open a block page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#support_url ZeroTrustGatewayPolicy#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#support_url ZeroTrustGatewayPolicy#support_url}
 
 ---
 
@@ -2623,7 +2623,7 @@ public readonly enabled: boolean | IResolvable;
 
 Set to true to enable DLP payload logging for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
 
 ---
 
@@ -2655,7 +2655,7 @@ public readonly fileTypes: string[];
 
 Types of files to sandbox.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#file_types ZeroTrustGatewayPolicy#file_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#file_types ZeroTrustGatewayPolicy#file_types}
 
 ---
 
@@ -2689,7 +2689,7 @@ public readonly targetUri: string;
 
 URI to which the user will be redirected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
 
 ---
 
@@ -2703,7 +2703,7 @@ public readonly includeContext: boolean | IResolvable;
 
 If true, context information will be passed as query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
 
 ---
 
@@ -2717,7 +2717,7 @@ public readonly preservePathAndQuery: boolean | IResolvable;
 
 If true, the path and query parameters from the original request will be appended to target_uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#preserve_path_and_query ZeroTrustGatewayPolicy#preserve_path_and_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#preserve_path_and_query ZeroTrustGatewayPolicy#preserve_path_and_query}
 
 ---
 
@@ -2752,7 +2752,7 @@ The fallback behavior to apply when the internal DNS response code is different 
 
 Available values: "none", "public_dns".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#fallback ZeroTrustGatewayPolicy#fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#fallback ZeroTrustGatewayPolicy#fallback}
 
 ---
 
@@ -2766,7 +2766,7 @@ public readonly viewId: string;
 
 The internal DNS view identifier that's passed to the internal DNS service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#view_id ZeroTrustGatewayPolicy#view_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#view_id ZeroTrustGatewayPolicy#view_id}
 
 ---
 
@@ -2801,7 +2801,7 @@ The action performed when an untrusted certificate is seen.
 The default action is an error with HTTP code 526.
 Available values: "pass_through", "block", "error".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
 
 ---
 
@@ -2842,7 +2842,7 @@ The time intervals when the rule will be active on Fridays, in increasing order 
 
 If this parameter is omitted, the rule will be deactivated on Fridays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#fri ZeroTrustGatewayPolicy#fri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#fri ZeroTrustGatewayPolicy#fri}
 
 ---
 
@@ -2858,7 +2858,7 @@ The time intervals when the rule will be active on Mondays, in increasing order 
 
 If this parameter is omitted, the rule will be deactivated on Mondays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#mon ZeroTrustGatewayPolicy#mon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#mon ZeroTrustGatewayPolicy#mon}
 
 ---
 
@@ -2874,7 +2874,7 @@ The time intervals when the rule will be active on Saturdays, in increasing orde
 
 If this parameter is omitted, the rule will be deactivated on Saturdays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#sat ZeroTrustGatewayPolicy#sat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#sat ZeroTrustGatewayPolicy#sat}
 
 ---
 
@@ -2890,7 +2890,7 @@ The time intervals when the rule will be active on Sundays, in increasing order 
 
 If this parameter is omitted, the rule will be deactivated on Sundays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#sun ZeroTrustGatewayPolicy#sun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#sun ZeroTrustGatewayPolicy#sun}
 
 ---
 
@@ -2906,7 +2906,7 @@ The time intervals when the rule will be active on Thursdays, in increasing orde
 
 If this parameter is omitted, the rule will be deactivated on Thursdays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#thu ZeroTrustGatewayPolicy#thu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#thu ZeroTrustGatewayPolicy#thu}
 
 ---
 
@@ -2922,7 +2922,7 @@ The time zone the rule will be evaluated against.
 
 If a [valid time zone city name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) is provided, Gateway will always use the current time at that time zone. If this parameter is omitted, then Gateway will use the time zone inferred from the user's source IP to evaluate the rule. If Gateway cannot determine the time zone from the IP, we will fall back to the time zone of the user's connected data center.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#time_zone ZeroTrustGatewayPolicy#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#time_zone ZeroTrustGatewayPolicy#time_zone}
 
 ---
 
@@ -2938,7 +2938,7 @@ The time intervals when the rule will be active on Tuesdays, in increasing order
 
 If this parameter is omitted, the rule will be deactivated on Tuesdays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#tue ZeroTrustGatewayPolicy#tue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#tue ZeroTrustGatewayPolicy#tue}
 
 ---
 
@@ -2954,7 +2954,7 @@ The time intervals when the rule will be active on Wednesdays, in increasing ord
 
 If this parameter is omitted, the rule will be deactivated on Wednesdays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_gateway_policy#wed ZeroTrustGatewayPolicy#wed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy#wed ZeroTrustGatewayPolicy#wed}
 
 ---
 

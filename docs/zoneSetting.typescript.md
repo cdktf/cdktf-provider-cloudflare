@@ -4,7 +4,7 @@
 
 ### ZoneSetting <a name="ZoneSetting" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting cloudflare_zone_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting cloudflare_zone_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.Initializer"></a>
 
@@ -73,7 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetEnabled">resetEnabled</a></code> | *No description.* |
 
 ---
 
@@ -365,10 +365,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetId"></a>
+##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.resetEnabled"></a>
 
 ```typescript
-public resetId(): void
+public resetEnabled(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ZoneSetting to import.
 
 The id of the existing ZoneSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -505,13 +505,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.editable">editable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.modifiedOn">modifiedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.timeRemaining">timeRemaining</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.settingIdInput">settingIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.valueInput">valueInput</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.settingId">settingId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.value">value</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
@@ -670,6 +671,16 @@ public readonly editable: IResolvable;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `modifiedOn`<sup>Required</sup> <a name="modifiedOn" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.modifiedOn"></a>
 
 ```typescript
@@ -690,13 +701,13 @@ public readonly timeRemaining: number;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.idInput"></a>
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabledInput"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* string
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -730,13 +741,13 @@ public readonly zoneIdInput: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.id"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSetting.property.enabled"></a>
 
 ```typescript
-public readonly id: string;
+public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* string
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -814,7 +825,7 @@ const zoneSettingConfig: zoneSetting.ZoneSettingConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.settingId">settingId</a></code> | <code>string</code> | Setting name. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.value">value</a></code> | <code>{[ key: string ]: any}</code> | Current value of the zone setting. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.id">id</a></code> | <code>string</code> | ID of the zone setting. Available values: "0rtt". |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | ssl-recommender enrollment setting. |
 
 ---
 
@@ -898,7 +909,7 @@ public readonly settingId: string;
 
 Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
 
 ---
 
@@ -912,7 +923,7 @@ public readonly value: {[ key: string ]: any};
 
 Current value of the zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#value ZoneSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#value ZoneSetting#value}
 
 ---
 
@@ -926,24 +937,21 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.id"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.enabled"></a>
 
 ```typescript
-public readonly id: string;
+public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* string
+- *Type:* boolean | cdktf.IResolvable
 
-ID of the zone setting. Available values: "0rtt".
+ssl-recommender enrollment setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting#id ZoneSetting#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
 
 ---
 

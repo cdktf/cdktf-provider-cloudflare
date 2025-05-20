@@ -4,7 +4,7 @@
 
 ### CloudforceOneRequestMessage <a name="CloudforceOneRequestMessage" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CloudforceOneRequestMessag
 
 The id of the existing CloudforceOneRequestMessage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -509,12 +509,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.id">Id</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.isFollowOnRequest">IsFollowOnRequest</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.updated">Updated</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifierInput">AccountIdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.contentInput">ContentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifierInput">RequestIdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifier">AccountIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdInput">RequestIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.content">Content</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifier">RequestIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestId">RequestId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -710,10 +710,10 @@ func Updated() *string
 
 ---
 
-##### `AccountIdentifierInput`<sup>Optional</sup> <a name="AccountIdentifierInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifierInput"></a>
+##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdInput"></a>
 
 ```go
-func AccountIdentifierInput() *string
+func AccountIdInput() *string
 ```
 
 - *Type:* *string
@@ -730,20 +730,20 @@ func ContentInput() *string
 
 ---
 
-##### `RequestIdentifierInput`<sup>Optional</sup> <a name="RequestIdentifierInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifierInput"></a>
+##### `RequestIdInput`<sup>Optional</sup> <a name="RequestIdInput" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdInput"></a>
 
 ```go
-func RequestIdentifierInput() *string
+func RequestIdInput() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `AccountIdentifier`<sup>Required</sup> <a name="AccountIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountIdentifier"></a>
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.accountId"></a>
 
 ```go
-func AccountIdentifier() *string
+func AccountId() *string
 ```
 
 - *Type:* *string
@@ -760,10 +760,10 @@ func Content() *string
 
 ---
 
-##### `RequestIdentifier`<sup>Required</sup> <a name="RequestIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestIdentifier"></a>
+##### `RequestId`<sup>Required</sup> <a name="RequestId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage.property.requestId"></a>
 
 ```go
-func RequestIdentifier() *string
+func RequestId() *string
 ```
 
 - *Type:* *string
@@ -805,8 +805,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceo
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccountIdentifier: *string,
-	RequestIdentifier: *string,
+	AccountId: *string,
+	RequestId: *string,
 	Content: *string,
 }
 ```
@@ -822,8 +822,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceo
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountIdentifier">AccountIdentifier</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestIdentifier">RequestIdentifier</a></code> | <code>*string</code> | UUID. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestId">RequestId</a></code> | <code>*string</code> | UUID. |
 | <code><a href="#@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.content">Content</a></code> | <code>*string</code> | Content of message. |
 
 ---
@@ -898,31 +898,31 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountIdentifier`<sup>Required</sup> <a name="AccountIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountIdentifier"></a>
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.accountId"></a>
 
 ```go
-AccountIdentifier *string
+AccountId *string
 ```
 
 - *Type:* *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#account_identifier CloudforceOneRequestMessage#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
 
 ---
 
-##### `RequestIdentifier`<sup>Required</sup> <a name="RequestIdentifier" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestIdentifier"></a>
+##### `RequestId`<sup>Required</sup> <a name="RequestId" id="@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessageConfig.property.requestId"></a>
 
 ```go
-RequestIdentifier *string
+RequestId *string
 ```
 
 - *Type:* *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#request_identifier CloudforceOneRequestMessage#request_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
 
 ---
 
@@ -936,7 +936,7 @@ Content *string
 
 Content of message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
 
 ---
 
