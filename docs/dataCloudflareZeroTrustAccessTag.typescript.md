@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessTag <a name="DataCloudflareZeroTrustAccessTag" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -750,7 +750,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly tagName: string;
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
 
 ---
 

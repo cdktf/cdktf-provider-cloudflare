@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktf/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -507,7 +507,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -920,7 +920,7 @@ public readonly name: string;
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly type: string;
 
 the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly settings: AccountSettings;
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -964,7 +964,7 @@ information related to the tenant unit, and optionally, an id of the unit to cre
 
 see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -983,9 +983,7 @@ const accountSettings: account.AccountSettings = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.abuseContactEmail">abuseContactEmail</a></code> | <code>string</code> | Sets an abuse contact email to notify for abuse reports. |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.defaultNameservers">defaultNameservers</a></code> | <code>string</code> | Specifies the default nameservers to be used for new zones added to this account. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.enforceTwofactor">enforceTwofactor</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether membership in this account requires that Two-Factor Authentication is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.useAccountCustomNsByDefault">useAccountCustomNsByDefault</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether new zones should use the account-level custom nameservers by default. |
 
 ---
 
@@ -999,31 +997,7 @@ public readonly abuseContactEmail: string;
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
-
----
-
-##### `defaultNameservers`<sup>Optional</sup> <a name="defaultNameservers" id="@cdktf/provider-cloudflare.account.AccountSettings.property.defaultNameservers"></a>
-
-```typescript
-public readonly defaultNameservers: string;
-```
-
-- *Type:* string
-
-Specifies the default nameservers to be used for new zones added to this account.
-
-`cloudflare.standard` for Cloudflare-branded nameservers
-- `custom.account` for account custom nameservers
-- `custom.tenant` for tenant custom nameservers
-
-See [Custom Nameservers](https://developers.cloudflare.com/dns/additional-options/custom-nameservers/)
-for more information.
-
-Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
-Available values: "cloudflare.standard", "custom.account", "custom.tenant".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#default_nameservers Account#default_nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1037,23 +1011,7 @@ public readonly enforceTwofactor: boolean | IResolvable;
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
-
----
-
-##### `useAccountCustomNsByDefault`<sup>Optional</sup> <a name="useAccountCustomNsByDefault" id="@cdktf/provider-cloudflare.account.AccountSettings.property.useAccountCustomNsByDefault"></a>
-
-```typescript
-public readonly useAccountCustomNsByDefault: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-Indicates whether new zones should use the account-level custom nameservers by default.
-
-Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#use_account_custom_ns_by_default Account#use_account_custom_ns_by_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1085,7 +1043,7 @@ public readonly id: string;
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,9 +1103,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetAbuseContactEmail">resetAbuseContactEmail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetDefaultNameservers">resetDefaultNameservers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetEnforceTwofactor">resetEnforceTwofactor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetUseAccountCustomNsByDefault">resetUseAccountCustomNsByDefault</a></code> | *No description.* |
 
 ---
 
@@ -1307,22 +1263,10 @@ Returns a reversible string representation.
 public resetAbuseContactEmail(): void
 ```
 
-##### `resetDefaultNameservers` <a name="resetDefaultNameservers" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetDefaultNameservers"></a>
-
-```typescript
-public resetDefaultNameservers(): void
-```
-
 ##### `resetEnforceTwofactor` <a name="resetEnforceTwofactor" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetEnforceTwofactor"></a>
 
 ```typescript
 public resetEnforceTwofactor(): void
-```
-
-##### `resetUseAccountCustomNsByDefault` <a name="resetUseAccountCustomNsByDefault" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetUseAccountCustomNsByDefault"></a>
-
-```typescript
-public resetUseAccountCustomNsByDefault(): void
 ```
 
 
@@ -1333,13 +1277,9 @@ public resetUseAccountCustomNsByDefault(): void
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.abuseContactEmailInput">abuseContactEmailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameserversInput">defaultNameserversInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactorInput">enforceTwofactorInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefaultInput">useAccountCustomNsByDefaultInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.abuseContactEmail">abuseContactEmail</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameservers">defaultNameservers</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactor">enforceTwofactor</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefault">useAccountCustomNsByDefault</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | *No description.* |
 
 ---
@@ -1378,30 +1318,10 @@ public readonly abuseContactEmailInput: string;
 
 ---
 
-##### `defaultNameserversInput`<sup>Optional</sup> <a name="defaultNameserversInput" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameserversInput"></a>
-
-```typescript
-public readonly defaultNameserversInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `enforceTwofactorInput`<sup>Optional</sup> <a name="enforceTwofactorInput" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactorInput"></a>
 
 ```typescript
 public readonly enforceTwofactorInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
-##### `useAccountCustomNsByDefaultInput`<sup>Optional</sup> <a name="useAccountCustomNsByDefaultInput" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefaultInput"></a>
-
-```typescript
-public readonly useAccountCustomNsByDefaultInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -1418,30 +1338,10 @@ public readonly abuseContactEmail: string;
 
 ---
 
-##### `defaultNameservers`<sup>Required</sup> <a name="defaultNameservers" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameservers"></a>
-
-```typescript
-public readonly defaultNameservers: string;
-```
-
-- *Type:* string
-
----
-
 ##### `enforceTwofactor`<sup>Required</sup> <a name="enforceTwofactor" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactor"></a>
 
 ```typescript
 public readonly enforceTwofactor: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
-##### `useAccountCustomNsByDefault`<sup>Required</sup> <a name="useAccountCustomNsByDefault" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefault"></a>
-
-```typescript
-public readonly useAccountCustomNsByDefault: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable

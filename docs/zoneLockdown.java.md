@@ -4,7 +4,7 @@
 
 ### ZoneLockdown <a name="ZoneLockdown" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.Initializer"></a>
 
@@ -115,7 +115,7 @@ A list of IP addresses or CIDR ranges that will be allowed to access the URLs sp
 
 You can include any number of `ip` or `ip_range` configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
 
 ---
 
@@ -127,7 +127,7 @@ The URLs to include in the current WAF override.
 
 You can use wildcards. Each entered URL will be escaped before use, which means you can only use simple wildcard patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
 
 ---
 
@@ -577,7 +577,7 @@ The construct id used in the generated config for the ZoneLockdown to import.
 
 The id of the existing ZoneLockdown that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1018,7 +1018,7 @@ A list of IP addresses or CIDR ranges that will be allowed to access the URLs sp
 
 You can include any number of `ip` or `ip_range` configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
 
 ---
 
@@ -1034,7 +1034,7 @@ The URLs to include in the current WAF override.
 
 You can use wildcards. Each entered URL will be escaped before use, which means you can only use simple wildcard patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
 
 ---
 
@@ -1048,7 +1048,7 @@ public java.lang.String getZoneId();
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
 
 ---
 
@@ -1085,9 +1085,9 @@ public java.lang.String getTarget();
 The configuration target.
 
 You must set the target to `ip` when specifying an IP address in the Zone Lockdown rule.
-Available values: "ip".
+Available values: "ip", "ip_range".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
 
 ---
 
@@ -1101,7 +1101,7 @@ public java.lang.String getValue();
 
 The IP address to match. This address will be compared to the IP address of incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
 
 ---
 

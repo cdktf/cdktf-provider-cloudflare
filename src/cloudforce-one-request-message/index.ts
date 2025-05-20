@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface CloudforceOneRequestMessageConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#account_identifier CloudforceOneRequestMessage#account_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
   */
-  readonly accountIdentifier: string;
+  readonly accountId: string;
   /**
-  * Content of message
+  * Content of message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
   */
   readonly content?: string;
   /**
-  * UUID
+  * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#request_identifier CloudforceOneRequestMessage#request_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
   */
-  readonly requestIdentifier: string;
+  readonly requestId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}
 */
 export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudforceOneRequestMessage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudforceOneRequestMessage to import
-  * @param importFromId The id of the existing CloudforceOneRequestMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudforceOneRequestMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudforceOneRequestMessage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_cloudforce_one_request_message',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -83,26 +83,26 @@ export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountIdentifier = config.accountIdentifier;
+    this._accountId = config.accountId;
     this._content = config.content;
-    this._requestIdentifier = config.requestIdentifier;
+    this._requestId = config.requestId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_identifier - computed: false, optional: false, required: true
-  private _accountIdentifier?: string; 
-  public get accountIdentifier() {
-    return this.getStringAttribute('account_identifier');
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
   }
-  public set accountIdentifier(value: string) {
-    this._accountIdentifier = value;
+  public set accountId(value: string) {
+    this._accountId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get accountIdentifierInput() {
-    return this._accountIdentifier;
+  public get accountIdInput() {
+    return this._accountId;
   }
 
   // author - computed: true, optional: false, required: false
@@ -141,17 +141,17 @@ export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
     return this.getBooleanAttribute('is_follow_on_request');
   }
 
-  // request_identifier - computed: false, optional: false, required: true
-  private _requestIdentifier?: string; 
-  public get requestIdentifier() {
-    return this.getStringAttribute('request_identifier');
+  // request_id - computed: false, optional: false, required: true
+  private _requestId?: string; 
+  public get requestId() {
+    return this.getStringAttribute('request_id');
   }
-  public set requestIdentifier(value: string) {
-    this._requestIdentifier = value;
+  public set requestId(value: string) {
+    this._requestId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestIdentifierInput() {
-    return this._requestIdentifier;
+  public get requestIdInput() {
+    return this._requestId;
   }
 
   // updated - computed: true, optional: false, required: false
@@ -165,16 +165,16 @@ export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_identifier: cdktf.stringToTerraform(this._accountIdentifier),
+      account_id: cdktf.stringToTerraform(this._accountId),
       content: cdktf.stringToTerraform(this._content),
-      request_identifier: cdktf.stringToTerraform(this._requestIdentifier),
+      request_id: cdktf.stringToTerraform(this._requestId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      account_identifier: {
-        value: cdktf.stringToHclTerraform(this._accountIdentifier),
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -185,8 +185,8 @@ export class CloudforceOneRequestMessage extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      request_identifier: {
-        value: cdktf.stringToHclTerraform(this._requestIdentifier),
+      request_id: {
+        value: cdktf.stringToHclTerraform(this._requestId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -161,6 +161,7 @@ export * as zeroTrustDeviceDefaultProfileLocalDomainFallback from './zero-trust-
 export * as zeroTrustDeviceManagedNetworks from './zero-trust-device-managed-networks';
 export * as zeroTrustDevicePostureIntegration from './zero-trust-device-posture-integration';
 export * as zeroTrustDevicePostureRule from './zero-trust-device-posture-rule';
+export * as zeroTrustDexTest from './zero-trust-dex-test';
 export * as zeroTrustDlpCustomProfile from './zero-trust-dlp-custom-profile';
 export * as zeroTrustDlpDataset from './zero-trust-dlp-dataset';
 export * as zeroTrustDlpEntry from './zero-trust-dlp-entry';
@@ -235,7 +236,7 @@ export * as dataCloudflareCallsTurnApp from './data-cloudflare-calls-turn-app';
 export * as dataCloudflareCallsTurnApps from './data-cloudflare-calls-turn-apps';
 export * as dataCloudflareCertificatePack from './data-cloudflare-certificate-pack';
 export * as dataCloudflareCertificatePacks from './data-cloudflare-certificate-packs';
-export * as dataCloudflareCloudConnectorRulesList from './data-cloudflare-cloud-connector-rules-list';
+export * as dataCloudflareCloudConnectorRules from './data-cloudflare-cloud-connector-rules';
 export * as dataCloudflareCloudforceOneRequest from './data-cloudflare-cloudforce-one-request';
 export * as dataCloudflareCloudforceOneRequestAsset from './data-cloudflare-cloudforce-one-request-asset';
 export * as dataCloudflareCloudforceOneRequestMessage from './data-cloudflare-cloudforce-one-request-message';
@@ -448,6 +449,8 @@ export * as dataCloudflareZeroTrustDevicePostureIntegration from './data-cloudfl
 export * as dataCloudflareZeroTrustDevicePostureIntegrations from './data-cloudflare-zero-trust-device-posture-integrations';
 export * as dataCloudflareZeroTrustDevicePostureRule from './data-cloudflare-zero-trust-device-posture-rule';
 export * as dataCloudflareZeroTrustDevicePostureRules from './data-cloudflare-zero-trust-device-posture-rules';
+export * as dataCloudflareZeroTrustDexTest from './data-cloudflare-zero-trust-dex-test';
+export * as dataCloudflareZeroTrustDexTests from './data-cloudflare-zero-trust-dex-tests';
 export * as dataCloudflareZeroTrustDlpCustomProfile from './data-cloudflare-zero-trust-dlp-custom-profile';
 export * as dataCloudflareZeroTrustDlpDataset from './data-cloudflare-zero-trust-dlp-dataset';
 export * as dataCloudflareZeroTrustDlpDatasets from './data-cloudflare-zero-trust-dlp-datasets';
@@ -479,6 +482,7 @@ export * as dataCloudflareZeroTrustTunnelCloudflaredToken from './data-cloudflar
 export * as dataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork from './data-cloudflare-zero-trust-tunnel-cloudflared-virtual-network';
 export * as dataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks from './data-cloudflare-zero-trust-tunnel-cloudflared-virtual-networks';
 export * as dataCloudflareZeroTrustTunnelCloudflareds from './data-cloudflare-zero-trust-tunnel-cloudflareds';
+export * as dataCloudflareZeroTrustTunnelWarpConnectorToken from './data-cloudflare-zero-trust-tunnel-warp-connector-token';
 export * as dataCloudflareZone from './data-cloudflare-zone';
 export * as dataCloudflareZoneCacheReserve from './data-cloudflare-zone-cache-reserve';
 export * as dataCloudflareZoneCacheVariants from './data-cloudflare-zone-cache-variants';

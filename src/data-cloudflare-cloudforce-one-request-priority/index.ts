@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareCloudforceOneRequestPriorityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority#account_identifier DataCloudflareCloudforceOneRequestPriority#account_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority#account_id DataCloudflareCloudforceOneRequestPriority#account_id}
   */
-  readonly accountIdentifier: string;
+  readonly accountId: string;
   /**
-  * UUID
+  * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority#priority_identifer DataCloudflareCloudforceOneRequestPriority#priority_identifer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority#priority_id DataCloudflareCloudforceOneRequestPriority#priority_id}
   */
-  readonly priorityIdentifer: string;
+  readonly priorityId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}
 */
 export class DataCloudflareCloudforceOneRequestPriority extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataCloudflareCloudforceOneRequestPriority extends cdktf.TerraformD
   * Generates CDKTF code for importing a DataCloudflareCloudforceOneRequestPriority resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCloudforceOneRequestPriority to import
-  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequestPriority that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequestPriority that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCloudforceOneRequestPriority to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DataCloudflareCloudforceOneRequestPriority extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DataCloudflareCloudforceOneRequestPriority extends cdktf.TerraformD
       terraformResourceType: 'cloudflare_cloudforce_one_request_priority',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -77,25 +77,25 @@ export class DataCloudflareCloudforceOneRequestPriority extends cdktf.TerraformD
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountIdentifier = config.accountIdentifier;
-    this._priorityIdentifer = config.priorityIdentifer;
+    this._accountId = config.accountId;
+    this._priorityId = config.priorityId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_identifier - computed: false, optional: false, required: true
-  private _accountIdentifier?: string; 
-  public get accountIdentifier() {
-    return this.getStringAttribute('account_identifier');
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
   }
-  public set accountIdentifier(value: string) {
-    this._accountIdentifier = value;
+  public set accountId(value: string) {
+    this._accountId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get accountIdentifierInput() {
-    return this._accountIdentifier;
+  public get accountIdInput() {
+    return this._accountId;
   }
 
   // completed - computed: true, optional: false, required: false
@@ -128,17 +128,17 @@ export class DataCloudflareCloudforceOneRequestPriority extends cdktf.TerraformD
     return this.getStringAttribute('priority');
   }
 
-  // priority_identifer - computed: false, optional: false, required: true
-  private _priorityIdentifer?: string; 
-  public get priorityIdentifer() {
-    return this.getStringAttribute('priority_identifer');
+  // priority_id - computed: false, optional: false, required: true
+  private _priorityId?: string; 
+  public get priorityId() {
+    return this.getStringAttribute('priority_id');
   }
-  public set priorityIdentifer(value: string) {
-    this._priorityIdentifer = value;
+  public set priorityId(value: string) {
+    this._priorityId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get priorityIdentiferInput() {
-    return this._priorityIdentifer;
+  public get priorityIdInput() {
+    return this._priorityId;
   }
 
   // readable_id - computed: true, optional: false, required: false
@@ -182,21 +182,21 @@ export class DataCloudflareCloudforceOneRequestPriority extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_identifier: cdktf.stringToTerraform(this._accountIdentifier),
-      priority_identifer: cdktf.stringToTerraform(this._priorityIdentifer),
+      account_id: cdktf.stringToTerraform(this._accountId),
+      priority_id: cdktf.stringToTerraform(this._priorityId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      account_identifier: {
-        value: cdktf.stringToHclTerraform(this._accountIdentifier),
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      priority_identifer: {
-        value: cdktf.stringToHclTerraform(this._priorityIdentifer),
+      priority_id: {
+        value: cdktf.stringToHclTerraform(this._priorityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

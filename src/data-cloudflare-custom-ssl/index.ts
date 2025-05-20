@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataCloudflareCustomSslConfig extends cdktf.TerraformMetaArgume
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl#custom_certificate_id DataCloudflareCustomSsl#custom_certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl#custom_certificate_id DataCloudflareCustomSsl#custom_certificate_id}
   */
   readonly customCertificateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl#filter DataCloudflareCustomSsl#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl#filter DataCloudflareCustomSsl#filter}
   */
   readonly filter?: DataCloudflareCustomSslFilter;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl#zone_id DataCloudflareCustomSsl#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl#zone_id DataCloudflareCustomSsl#zone_id}
   */
   readonly zoneId: string;
 }
@@ -34,14 +34,14 @@ export interface DataCloudflareCustomSslFilter {
   * Whether to match all search requirements or at least one (any).
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl#match DataCloudflareCustomSsl#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl#match DataCloudflareCustomSsl#match}
   */
   readonly match?: string;
   /**
   * Status of the zone's custom SSL.
   * Available values: "active", "expired", "deleted", "pending", "initializing".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl#status DataCloudflareCustomSsl#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl#status DataCloudflareCustomSsl#status}
   */
   readonly status?: string;
 }
@@ -377,7 +377,7 @@ export class DataCloudflareCustomSslKeylessServerOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}
 */
 export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
 
@@ -393,7 +393,7 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareCustomSsl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCustomSsl to import
-  * @param importFromId The id of the existing DataCloudflareCustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCustomSsl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -405,7 +405,7 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -416,7 +416,7 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_custom_ssl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

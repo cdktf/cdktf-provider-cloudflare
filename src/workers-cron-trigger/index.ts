@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface WorkersCronTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}
   */
   readonly schedules: WorkersCronTriggerSchedules[] | cdktf.IResolvable;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
   */
   readonly scriptName: string;
 }
 export interface WorkersCronTriggerSchedules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}
   */
   readonly cron: string;
 }
@@ -109,6 +109,11 @@ export class WorkersCronTriggerSchedulesOutputReference extends cdktf.ComplexObj
     }
   }
 
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
   // cron - computed: false, optional: false, required: true
   private _cron?: string; 
   public get cron() {
@@ -120,6 +125,11 @@ export class WorkersCronTriggerSchedulesOutputReference extends cdktf.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get cronInput() {
     return this._cron;
+  }
+
+  // modified_on - computed: true, optional: false, required: false
+  public get modifiedOn() {
+    return this.getStringAttribute('modified_on');
   }
 }
 
@@ -144,7 +154,7 @@ export class WorkersCronTriggerSchedulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}
 */
 export class WorkersCronTrigger extends cdktf.TerraformResource {
 
@@ -160,7 +170,7 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersCronTrigger resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersCronTrigger to import
-  * @param importFromId The id of the existing WorkersCronTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersCronTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersCronTrigger to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -172,7 +182,7 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -183,7 +193,7 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_cron_trigger',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

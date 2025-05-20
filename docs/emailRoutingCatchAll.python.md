@@ -4,7 +4,7 @@
 
 ### EmailRoutingCatchAll <a name="EmailRoutingCatchAll" id="@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 List actions for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of matchers for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Routing rule status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the EmailRoutingCatchAll to im
 
 The id of the existing EmailRoutingCatchAll that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1016,7 +1016,7 @@ emailRoutingCatchAll.EmailRoutingCatchAllActions(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions.property.type">type</a></code> | <code>str</code> | Type of action for catch-all rule. Available values: "drop", "forward", "worker". |
-| <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions.property.value">value</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}. |
+| <code><a href="#@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions.property.value">value</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}. |
 
 ---
 
@@ -1030,7 +1030,7 @@ type: str
 
 Type of action for catch-all rule. Available values: "drop", "forward", "worker".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
 
 ---
 
@@ -1042,7 +1042,7 @@ value: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}.
 
 ---
 
@@ -1168,7 +1168,7 @@ actions: typing.Union[IResolvable, typing.List[EmailRoutingCatchAllActions]]
 
 List actions for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
 
 ---
 
@@ -1182,7 +1182,7 @@ matchers: typing.Union[IResolvable, typing.List[EmailRoutingCatchAllMatchers]]
 
 List of matchers for the catch-all routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
 
 ---
 
@@ -1196,7 +1196,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
 
 ---
 
@@ -1210,7 +1210,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Routing rule status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
 
 ---
 
@@ -1224,7 +1224,7 @@ name: str
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
 
 ---
 
@@ -1258,7 +1258,7 @@ type: str
 
 Type of matcher. Default is 'all'. Available values: "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
 
 ---
 

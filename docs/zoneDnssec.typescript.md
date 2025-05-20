@@ -4,7 +4,7 @@
 
 ### ZoneDnssec <a name="ZoneDnssec" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.resetDnssecMultiSigner">resetDnssecMultiSigner</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.resetDnssecPresigned">resetDnssecPresigned</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.resetDnssecUseNsec3">resetDnssecUseNsec3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.resetStatus">resetStatus</a></code> | *No description.* |
 
 ---
@@ -379,6 +380,12 @@ public resetDnssecMultiSigner(): void
 public resetDnssecPresigned(): void
 ```
 
+##### `resetDnssecUseNsec3` <a name="resetDnssecUseNsec3" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.resetDnssecUseNsec3"></a>
+
+```typescript
+public resetDnssecUseNsec3(): void
+```
+
 ##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.resetStatus"></a>
 
 ```typescript
@@ -488,7 +495,7 @@ The construct id used in the generated config for the ZoneDnssec to import.
 
 The id of the existing ZoneDnssec that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,10 +538,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.publicKey">publicKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecMultiSignerInput">dnssecMultiSignerInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecPresignedInput">dnssecPresignedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecUseNsec3Input">dnssecUseNsec3Input</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecMultiSigner">dnssecMultiSigner</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecPresigned">dnssecPresigned</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecUseNsec3">dnssecUseNsec3</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
@@ -812,6 +821,16 @@ public readonly dnssecPresignedInput: boolean | IResolvable;
 
 ---
 
+##### `dnssecUseNsec3Input`<sup>Optional</sup> <a name="dnssecUseNsec3Input" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecUseNsec3Input"></a>
+
+```typescript
+public readonly dnssecUseNsec3Input: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.statusInput"></a>
 
 ```typescript
@@ -846,6 +865,16 @@ public readonly dnssecMultiSigner: boolean | IResolvable;
 
 ```typescript
 public readonly dnssecPresigned: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `dnssecUseNsec3`<sup>Required</sup> <a name="dnssecUseNsec3" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec.property.dnssecUseNsec3"></a>
+
+```typescript
+public readonly dnssecUseNsec3: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -916,6 +945,7 @@ const zoneDnssecConfig: zoneDnssec.ZoneDnssecConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.dnssecMultiSigner">dnssecMultiSigner</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, multi-signer DNSSEC is enabled on the zone, allowing multiple providers to serve a DNSSEC-signed zone at the same time. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.dnssecPresigned">dnssecPresigned</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, allows Cloudflare to transfer in a DNSSEC-signed zone including signatures from an external provider, without requiring Cloudflare to sign any records on the fly. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.dnssecUseNsec3">dnssecUseNsec3</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, enables the use of NSEC3 together with DNSSEC on the zone. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.status">status</a></code> | <code>string</code> | Status of DNSSEC, based on user-desired state and presence of necessary records. Available values: "active", "disabled". |
 
 ---
@@ -1000,7 +1030,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
 
 ---
 
@@ -1019,7 +1049,7 @@ generated by Cloudflare) to be added to the zone.
 
 See [Multi-signer DNSSEC](https://developers.cloudflare.com/dns/dnssec/multi-signer-dnssec/) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
 
 ---
 
@@ -1036,7 +1066,28 @@ If true, allows Cloudflare to transfer in a DNSSEC-signed zone including signatu
 Note that this feature has some limitations.
 See [Cloudflare as Secondary](https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/setup/#dnssec) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
+
+---
+
+##### `dnssecUseNsec3`<sup>Optional</sup> <a name="dnssecUseNsec3" id="@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssecConfig.property.dnssecUseNsec3"></a>
+
+```typescript
+public readonly dnssecUseNsec3: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If true, enables the use of NSEC3 together with DNSSEC on the zone.
+
+Combined with setting dnssec_presigned to true, this enables the use of
+NSEC3 records when transferring in from an external provider.
+If dnssec_presigned is instead set to false (default), NSEC3 records will be
+generated and signed at request time.
+
+See [DNSSEC with NSEC3](https://developers.cloudflare.com/dns/dnssec/enable-nsec3/) for details.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#dnssec_use_nsec3 ZoneDnssec#dnssec_use_nsec3}
 
 ---
 
@@ -1050,7 +1101,7 @@ public readonly status: string;
 
 Status of DNSSEC, based on user-desired state and presence of necessary records. Available values: "active", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
 
 ---
 

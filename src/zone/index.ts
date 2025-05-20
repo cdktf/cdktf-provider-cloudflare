@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone#account Zone#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone#account Zone#account}
   */
   readonly account: ZoneAccount;
   /**
   * The domain name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone#name Zone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone#name Zone#name}
   */
   readonly name: string;
   /**
@@ -27,14 +27,14 @@ export interface ZoneConfig extends cdktf.TerraformMetaArguments {
   * typically a partner-hosted zone or a CNAME setup.
   * Available values: "full", "partial", "secondary", "internal".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone#type Zone#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone#type Zone#type}
   */
   readonly type?: string;
   /**
   * An array of domains used for custom name servers. This is only
   * available for Business and Enterprise plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
   */
   readonly vanityNameServers?: string[];
 }
@@ -42,7 +42,7 @@ export interface ZoneAccount {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone#id Zone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone#id Zone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -285,9 +285,221 @@ export class ZoneOwnerOutputReference extends cdktf.ComplexObject {
     return this.getStringAttribute('type');
   }
 }
+export interface ZonePlan {
+}
+
+export function zonePlanToTerraform(struct?: ZonePlan): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zonePlanToHclTerraform(struct?: ZonePlan): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZonePlanOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZonePlan | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZonePlan | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // can_subscribe - computed: true, optional: false, required: false
+  public get canSubscribe() {
+    return this.getBooleanAttribute('can_subscribe');
+  }
+
+  // currency - computed: true, optional: false, required: false
+  public get currency() {
+    return this.getStringAttribute('currency');
+  }
+
+  // externally_managed - computed: true, optional: false, required: false
+  public get externallyManaged() {
+    return this.getBooleanAttribute('externally_managed');
+  }
+
+  // frequency - computed: true, optional: false, required: false
+  public get frequency() {
+    return this.getStringAttribute('frequency');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // is_subscribed - computed: true, optional: false, required: false
+  public get isSubscribed() {
+    return this.getBooleanAttribute('is_subscribed');
+  }
+
+  // legacy_discount - computed: true, optional: false, required: false
+  public get legacyDiscount() {
+    return this.getBooleanAttribute('legacy_discount');
+  }
+
+  // legacy_id - computed: true, optional: false, required: false
+  public get legacyId() {
+    return this.getStringAttribute('legacy_id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // price - computed: true, optional: false, required: false
+  public get price() {
+    return this.getNumberAttribute('price');
+  }
+}
+export interface ZoneTenant {
+}
+
+export function zoneTenantToTerraform(struct?: ZoneTenant): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zoneTenantToHclTerraform(struct?: ZoneTenant): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZoneTenantOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZoneTenant | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZoneTenant | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+export interface ZoneTenantUnit {
+}
+
+export function zoneTenantUnitToTerraform(struct?: ZoneTenantUnit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function zoneTenantUnitToHclTerraform(struct?: ZoneTenantUnit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ZoneTenantUnitOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ZoneTenantUnit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ZoneTenantUnit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone cloudflare_zone}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone}
 */
 export class Zone extends cdktf.TerraformResource {
 
@@ -303,7 +515,7 @@ export class Zone extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Zone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Zone to import
-  * @param importFromId The id of the existing Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Zone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -315,7 +527,7 @@ export class Zone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone cloudflare_zone} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -326,7 +538,7 @@ export class Zone extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -363,6 +575,11 @@ export class Zone extends cdktf.TerraformResource {
   // activated_on - computed: true, optional: false, required: false
   public get activatedOn() {
     return this.getStringAttribute('activated_on');
+  }
+
+  // cname_suffix - computed: true, optional: false, required: false
+  public get cnameSuffix() {
+    return this.getStringAttribute('cname_suffix');
   }
 
   // created_on - computed: true, optional: false, required: false
@@ -435,9 +652,32 @@ export class Zone extends cdktf.TerraformResource {
     return this.getBooleanAttribute('paused');
   }
 
+  // permissions - computed: true, optional: false, required: false
+  public get permissions() {
+    return this.getListAttribute('permissions');
+  }
+
+  // plan - computed: true, optional: false, required: false
+  private _plan = new ZonePlanOutputReference(this, "plan");
+  public get plan() {
+    return this._plan;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // tenant - computed: true, optional: false, required: false
+  private _tenant = new ZoneTenantOutputReference(this, "tenant");
+  public get tenant() {
+    return this._tenant;
+  }
+
+  // tenant_unit - computed: true, optional: false, required: false
+  private _tenantUnit = new ZoneTenantUnitOutputReference(this, "tenant_unit");
+  public get tenantUnit() {
+    return this._tenantUnit;
   }
 
   // type - computed: true, optional: true, required: false

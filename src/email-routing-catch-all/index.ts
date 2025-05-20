@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface EmailRoutingCatchAllConfig extends cdktf.TerraformMetaArguments
   /**
   * List actions for the catch-all routing rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
   */
   readonly actions: EmailRoutingCatchAllActions[] | cdktf.IResolvable;
   /**
   * Routing rule status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * List of matchers for the catch-all routing rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
   */
   readonly matchers: EmailRoutingCatchAllMatchers[] | cdktf.IResolvable;
   /**
   * Routing rule name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
   */
   readonly name?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
   */
   readonly zoneId: string;
 }
@@ -48,11 +48,11 @@ export interface EmailRoutingCatchAllActions {
   * Type of action for catch-all rule.
   * Available values: "drop", "forward", "worker".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#value EmailRoutingCatchAll#value}
   */
   readonly value?: string[];
 }
@@ -197,7 +197,7 @@ export interface EmailRoutingCatchAllMatchers {
   * Type of matcher. Default is 'all'.
   * Available values: "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#type EmailRoutingCatchAll#type}
   */
   readonly type: string;
 }
@@ -310,7 +310,7 @@ export class EmailRoutingCatchAllMatchersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}
 */
 export class EmailRoutingCatchAll extends cdktf.TerraformResource {
 
@@ -326,7 +326,7 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EmailRoutingCatchAll resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailRoutingCatchAll to import
-  * @param importFromId The id of the existing EmailRoutingCatchAll that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailRoutingCatchAll that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailRoutingCatchAll to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -338,7 +338,7 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -349,7 +349,7 @@ export class EmailRoutingCatchAll extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_catch_all',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

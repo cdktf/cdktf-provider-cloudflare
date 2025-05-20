@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktf/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -507,7 +507,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,7 +932,7 @@ Name *string
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -946,7 +946,7 @@ Type *string
 
 the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -960,7 +960,7 @@ Settings AccountSettings
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -976,7 +976,7 @@ information related to the tenant unit, and optionally, an id of the unit to cre
 
 see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -989,9 +989,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/account"
 
 &account.AccountSettings {
 	AbuseContactEmail: *string,
-	DefaultNameservers: *string,
 	EnforceTwofactor: interface{},
-	UseAccountCustomNsByDefault: interface{},
 }
 ```
 
@@ -1000,9 +998,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/account"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.abuseContactEmail">AbuseContactEmail</a></code> | <code>*string</code> | Sets an abuse contact email to notify for abuse reports. |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.defaultNameservers">DefaultNameservers</a></code> | <code>*string</code> | Specifies the default nameservers to be used for new zones added to this account. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.enforceTwofactor">EnforceTwofactor</a></code> | <code>interface{}</code> | Indicates whether membership in this account requires that Two-Factor Authentication is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings.property.useAccountCustomNsByDefault">UseAccountCustomNsByDefault</a></code> | <code>interface{}</code> | Indicates whether new zones should use the account-level custom nameservers by default. |
 
 ---
 
@@ -1016,31 +1012,7 @@ AbuseContactEmail *string
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
-
----
-
-##### `DefaultNameservers`<sup>Optional</sup> <a name="DefaultNameservers" id="@cdktf/provider-cloudflare.account.AccountSettings.property.defaultNameservers"></a>
-
-```go
-DefaultNameservers *string
-```
-
-- *Type:* *string
-
-Specifies the default nameservers to be used for new zones added to this account.
-
-* `cloudflare.standard` for Cloudflare-branded nameservers
-* `custom.account` for account custom nameservers
-* `custom.tenant` for tenant custom nameservers
-
-See [Custom Nameservers](https://developers.cloudflare.com/dns/additional-options/custom-nameservers/)
-for more information.
-
-Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
-Available values: "cloudflare.standard", "custom.account", "custom.tenant".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#default_nameservers Account#default_nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1054,23 +1026,7 @@ EnforceTwofactor interface{}
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
-
----
-
-##### `UseAccountCustomNsByDefault`<sup>Optional</sup> <a name="UseAccountCustomNsByDefault" id="@cdktf/provider-cloudflare.account.AccountSettings.property.useAccountCustomNsByDefault"></a>
-
-```go
-UseAccountCustomNsByDefault interface{}
-```
-
-- *Type:* interface{}
-
-Indicates whether new zones should use the account-level custom nameservers by default.
-
-Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#use_account_custom_ns_by_default Account#use_account_custom_ns_by_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1104,7 +1060,7 @@ Id *string
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1164,9 +1120,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetAbuseContactEmail">ResetAbuseContactEmail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetDefaultNameservers">ResetDefaultNameservers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetEnforceTwofactor">ResetEnforceTwofactor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetUseAccountCustomNsByDefault">ResetUseAccountCustomNsByDefault</a></code> | *No description.* |
 
 ---
 
@@ -1326,22 +1280,10 @@ Returns a reversible string representation.
 func ResetAbuseContactEmail()
 ```
 
-##### `ResetDefaultNameservers` <a name="ResetDefaultNameservers" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetDefaultNameservers"></a>
-
-```go
-func ResetDefaultNameservers()
-```
-
 ##### `ResetEnforceTwofactor` <a name="ResetEnforceTwofactor" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetEnforceTwofactor"></a>
 
 ```go
 func ResetEnforceTwofactor()
-```
-
-##### `ResetUseAccountCustomNsByDefault` <a name="ResetUseAccountCustomNsByDefault" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.resetUseAccountCustomNsByDefault"></a>
-
-```go
-func ResetUseAccountCustomNsByDefault()
 ```
 
 
@@ -1352,13 +1294,9 @@ func ResetUseAccountCustomNsByDefault()
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.abuseContactEmailInput">AbuseContactEmailInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameserversInput">DefaultNameserversInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactorInput">EnforceTwofactorInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefaultInput">UseAccountCustomNsByDefaultInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.abuseContactEmail">AbuseContactEmail</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameservers">DefaultNameservers</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactor">EnforceTwofactor</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefault">UseAccountCustomNsByDefault</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -1397,30 +1335,10 @@ func AbuseContactEmailInput() *string
 
 ---
 
-##### `DefaultNameserversInput`<sup>Optional</sup> <a name="DefaultNameserversInput" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameserversInput"></a>
-
-```go
-func DefaultNameserversInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `EnforceTwofactorInput`<sup>Optional</sup> <a name="EnforceTwofactorInput" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactorInput"></a>
 
 ```go
 func EnforceTwofactorInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `UseAccountCustomNsByDefaultInput`<sup>Optional</sup> <a name="UseAccountCustomNsByDefaultInput" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefaultInput"></a>
-
-```go
-func UseAccountCustomNsByDefaultInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -1437,30 +1355,10 @@ func AbuseContactEmail() *string
 
 ---
 
-##### `DefaultNameservers`<sup>Required</sup> <a name="DefaultNameservers" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.defaultNameservers"></a>
-
-```go
-func DefaultNameservers() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `EnforceTwofactor`<sup>Required</sup> <a name="EnforceTwofactor" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.enforceTwofactor"></a>
 
 ```go
 func EnforceTwofactor() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `UseAccountCustomNsByDefault`<sup>Required</sup> <a name="UseAccountCustomNsByDefault" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference.property.useAccountCustomNsByDefault"></a>
-
-```go
-func UseAccountCustomNsByDefault() interface{}
 ```
 
 - *Type:* interface{}

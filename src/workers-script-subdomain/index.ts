@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface WorkersScriptSubdomainConfig extends cdktf.TerraformMetaArgumen
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
   */
   readonly accountId: string;
   /**
   * Whether the Worker should be available on the workers.dev subdomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Whether the Worker's Preview URLs should be available on the workers.dev subdomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
   */
   readonly previewsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
   */
   readonly scriptName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}
 */
 export class WorkersScriptSubdomain extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersScriptSubdomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersScriptSubdomain to import
-  * @param importFromId The id of the existing WorkersScriptSubdomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersScriptSubdomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersScriptSubdomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_script_subdomain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
