@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/total_tls
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/total_tls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,25 +11,25 @@ export interface TotalTlsConfig extends cdktf.TerraformMetaArguments {
   * The Certificate Authority that Total TLS certificates will be issued through.
   * Available values: "google", "lets_encrypt", "ssl_com".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
   */
   readonly certificateAuthority?: string;
   /**
   * If enabled, Total TLS will order a hostname specific TLS certificate for any proxied A, AAAA, or CNAME record in your zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/total_tls#enabled TotalTls#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/total_tls#enabled TotalTls#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/total_tls cloudflare_total_tls}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/total_tls cloudflare_total_tls}
 */
 export class TotalTls extends cdktf.TerraformResource {
 
@@ -50,7 +45,7 @@ export class TotalTls extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TotalTls resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TotalTls to import
-  * @param importFromId The id of the existing TotalTls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TotalTls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TotalTls to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class TotalTls extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/total_tls cloudflare_total_tls} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/total_tls cloudflare_total_tls} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class TotalTls extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_total_tls',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

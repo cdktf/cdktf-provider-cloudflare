@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,26 +10,26 @@ export interface AccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#name Account#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#name Account#name}
   */
   readonly name: string;
   /**
   * Account settings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#settings Account#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#settings Account#settings}
   */
   readonly settings?: AccountSettings;
   /**
   * the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise.
   * Available values: "standard", "enterprise".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#type Account#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#type Account#type}
   */
   readonly type: string;
   /**
   * information related to the tenant unit, and optionally, an id of the unit to create the account on. see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#unit Account#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#unit Account#unit}
   */
   readonly unit?: AccountUnit;
 }
@@ -42,41 +37,16 @@ export interface AccountSettings {
   /**
   * Sets an abuse contact email to notify for abuse reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
   */
   readonly abuseContactEmail?: string;
-  /**
-  * Specifies the default nameservers to be used for new zones added to this account.
-  * 
-  * - `cloudflare.standard` for Cloudflare-branded nameservers
-  * - `custom.account` for account custom nameservers
-  * - `custom.tenant` for tenant custom nameservers
-  * 
-  * See [Custom Nameservers](https://developers.cloudflare.com/dns/additional-options/custom-nameservers/)
-  * for more information.
-  * 
-  * Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
-  * Available values: "cloudflare.standard", "custom.account", "custom.tenant".
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#default_nameservers Account#default_nameservers}
-  */
-  readonly defaultNameservers?: string;
   /**
   * Indicates whether membership in this account requires that
   * Two-Factor Authentication is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
   */
   readonly enforceTwofactor?: boolean | cdktf.IResolvable;
-  /**
-  * Indicates whether new zones should use the account-level custom
-  * nameservers by default.
-  * 
-  * Deprecated in favor of [DNS Settings](https://developers.cloudflare.com/api/operations/dns-settings-for-an-account-update-dns-settings).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#use_account_custom_ns_by_default Account#use_account_custom_ns_by_default}
-  */
-  readonly useAccountCustomNsByDefault?: boolean | cdktf.IResolvable;
 }
 
 export function accountSettingsToTerraform(struct?: AccountSettings | cdktf.IResolvable): any {
@@ -86,9 +56,7 @@ export function accountSettingsToTerraform(struct?: AccountSettings | cdktf.IRes
   }
   return {
     abuse_contact_email: cdktf.stringToTerraform(struct!.abuseContactEmail),
-    default_nameservers: cdktf.stringToTerraform(struct!.defaultNameservers),
     enforce_twofactor: cdktf.booleanToTerraform(struct!.enforceTwofactor),
-    use_account_custom_ns_by_default: cdktf.booleanToTerraform(struct!.useAccountCustomNsByDefault),
   }
 }
 
@@ -105,20 +73,8 @@ export function accountSettingsToHclTerraform(struct?: AccountSettings | cdktf.I
       type: "simple",
       storageClassType: "string",
     },
-    default_nameservers: {
-      value: cdktf.stringToHclTerraform(struct!.defaultNameservers),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     enforce_twofactor: {
       value: cdktf.booleanToHclTerraform(struct!.enforceTwofactor),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    use_account_custom_ns_by_default: {
-      value: cdktf.booleanToHclTerraform(struct!.useAccountCustomNsByDefault),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -151,17 +107,9 @@ export class AccountSettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.abuseContactEmail = this._abuseContactEmail;
     }
-    if (this._defaultNameservers !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.defaultNameservers = this._defaultNameservers;
-    }
     if (this._enforceTwofactor !== undefined) {
       hasAnyValues = true;
       internalValueResult.enforceTwofactor = this._enforceTwofactor;
-    }
-    if (this._useAccountCustomNsByDefault !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.useAccountCustomNsByDefault = this._useAccountCustomNsByDefault;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -171,9 +119,7 @@ export class AccountSettingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._abuseContactEmail = undefined;
-      this._defaultNameservers = undefined;
       this._enforceTwofactor = undefined;
-      this._useAccountCustomNsByDefault = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -183,9 +129,7 @@ export class AccountSettingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._abuseContactEmail = value.abuseContactEmail;
-      this._defaultNameservers = value.defaultNameservers;
       this._enforceTwofactor = value.enforceTwofactor;
-      this._useAccountCustomNsByDefault = value.useAccountCustomNsByDefault;
     }
   }
 
@@ -205,22 +149,6 @@ export class AccountSettingsOutputReference extends cdktf.ComplexObject {
     return this._abuseContactEmail;
   }
 
-  // default_nameservers - computed: true, optional: true, required: false
-  private _defaultNameservers?: string; 
-  public get defaultNameservers() {
-    return this.getStringAttribute('default_nameservers');
-  }
-  public set defaultNameservers(value: string) {
-    this._defaultNameservers = value;
-  }
-  public resetDefaultNameservers() {
-    this._defaultNameservers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultNameserversInput() {
-    return this._defaultNameservers;
-  }
-
   // enforce_twofactor - computed: true, optional: true, required: false
   private _enforceTwofactor?: boolean | cdktf.IResolvable; 
   public get enforceTwofactor() {
@@ -236,28 +164,12 @@ export class AccountSettingsOutputReference extends cdktf.ComplexObject {
   public get enforceTwofactorInput() {
     return this._enforceTwofactor;
   }
-
-  // use_account_custom_ns_by_default - computed: true, optional: true, required: false
-  private _useAccountCustomNsByDefault?: boolean | cdktf.IResolvable; 
-  public get useAccountCustomNsByDefault() {
-    return this.getBooleanAttribute('use_account_custom_ns_by_default');
-  }
-  public set useAccountCustomNsByDefault(value: boolean | cdktf.IResolvable) {
-    this._useAccountCustomNsByDefault = value;
-  }
-  public resetUseAccountCustomNsByDefault() {
-    this._useAccountCustomNsByDefault = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get useAccountCustomNsByDefaultInput() {
-    return this._useAccountCustomNsByDefault;
-  }
 }
 export interface AccountUnit {
   /**
   * Tenant unit ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#id Account#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#id Account#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -354,7 +266,7 @@ export class AccountUnitOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account cloudflare_account}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account cloudflare_account}
 */
 export class Account extends cdktf.TerraformResource {
 
@@ -370,7 +282,7 @@ export class Account extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Account resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Account to import
-  * @param importFromId The id of the existing Account that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Account that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Account to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -382,7 +294,7 @@ export class Account extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/account cloudflare_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account cloudflare_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -393,7 +305,7 @@ export class Account extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

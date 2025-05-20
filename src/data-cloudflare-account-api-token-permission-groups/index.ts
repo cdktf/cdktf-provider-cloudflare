@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/account_api_token_permission_groups
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_api_token_permission_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataCloudflareAccountApiTokenPermissionGroupsConfig extends cdk
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/account_api_token_permission_groups#account_id DataCloudflareAccountApiTokenPermissionGroups#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_api_token_permission_groups#account_id DataCloudflareAccountApiTokenPermissionGroups#account_id}
   */
   readonly accountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}
 */
 export class DataCloudflareAccountApiTokenPermissionGroups extends cdktf.TerraformDataSource {
 
@@ -37,7 +32,7 @@ export class DataCloudflareAccountApiTokenPermissionGroups extends cdktf.Terrafo
   * Generates CDKTF code for importing a DataCloudflareAccountApiTokenPermissionGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccountApiTokenPermissionGroups to import
-  * @param importFromId The id of the existing DataCloudflareAccountApiTokenPermissionGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/account_api_token_permission_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccountApiTokenPermissionGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_api_token_permission_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccountApiTokenPermissionGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +44,7 @@ export class DataCloudflareAccountApiTokenPermissionGroups extends cdktf.Terrafo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +55,7 @@ export class DataCloudflareAccountApiTokenPermissionGroups extends cdktf.Terrafo
       terraformResourceType: 'cloudflare_account_api_token_permission_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

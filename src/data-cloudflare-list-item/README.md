@@ -1,3 +1,3 @@
 # `data_cloudflare_list_item`
 
-Refer to the Terraform Registry for docs: [`data_cloudflare_list_item`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/list_item).
+Refer to the Terraform Registry for docs: [`data_cloudflare_list_item`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/list_item).

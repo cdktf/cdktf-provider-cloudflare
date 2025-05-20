@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +10,37 @@ export interface ZeroTrustTunnelCloudflaredRouteConfig extends cdktf.TerraformMe
   /**
   * Cloudflare account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route#account_id ZeroTrustTunnelCloudflaredRoute#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route#account_id ZeroTrustTunnelCloudflaredRoute#account_id}
   */
   readonly accountId: string;
   /**
   * Optional remark describing the route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route#comment ZeroTrustTunnelCloudflaredRoute#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route#comment ZeroTrustTunnelCloudflaredRoute#comment}
   */
   readonly comment?: string;
   /**
   * The private IPv4 or IPv6 range connected by the route, in CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route#network ZeroTrustTunnelCloudflaredRoute#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route#network ZeroTrustTunnelCloudflaredRoute#network}
   */
   readonly network: string;
   /**
   * UUID of the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route#tunnel_id ZeroTrustTunnelCloudflaredRoute#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route#tunnel_id ZeroTrustTunnelCloudflaredRoute#tunnel_id}
   */
   readonly tunnelId: string;
   /**
   * UUID of the virtual network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route#virtual_network_id ZeroTrustTunnelCloudflaredRoute#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route#virtual_network_id ZeroTrustTunnelCloudflaredRoute#virtual_network_id}
   */
   readonly virtualNetworkId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route}
 */
 export class ZeroTrustTunnelCloudflaredRoute extends cdktf.TerraformResource {
 
@@ -61,7 +56,7 @@ export class ZeroTrustTunnelCloudflaredRoute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustTunnelCloudflaredRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustTunnelCloudflaredRoute to import
-  * @param importFromId The id of the existing ZeroTrustTunnelCloudflaredRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustTunnelCloudflaredRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustTunnelCloudflaredRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +68,7 @@ export class ZeroTrustTunnelCloudflaredRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +79,7 @@ export class ZeroTrustTunnelCloudflaredRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_tunnel_cloudflared_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -176,7 +171,7 @@ export class ZeroTrustTunnelCloudflaredRoute extends cdktf.TerraformResource {
     return this._tunnelId;
   }
 
-  // virtual_network_id - computed: false, optional: true, required: false
+  // virtual_network_id - computed: true, optional: true, required: false
   private _virtualNetworkId?: string; 
   public get virtualNetworkId() {
     return this.getStringAttribute('virtual_network_id');

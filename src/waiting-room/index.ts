@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   /**
   * Only available for the Waiting Room Advanced subscription. Additional hostname and path combinations to which this waiting room will be applied. There is an implied wildcard at the end of the path. The hostname and path combination must be unique to this and all other waiting rooms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
   */
   readonly additionalRoutes?: WaitingRoomAdditionalRoutes[] | cdktf.IResolvable;
   /**
   * Configures cookie attributes for the waiting room cookie. This encrypted cookie stores a user's status in the waiting room, such as queue position.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#cookie_attributes WaitingRoom#cookie_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#cookie_attributes WaitingRoom#cookie_attributes}
   */
   readonly cookieAttributes?: WaitingRoomCookieAttributes;
   /**
   * Appends a '_' + a custom suffix to the end of Cloudflare Waiting Room's cookie name(__cf_waitingroom). If `cookie_suffix` is "abcd", the cookie name will be `__cf_waitingroom_abcd`. This field is required if using `additional_routes`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
   */
   readonly cookieSuffix?: string;
   /**
@@ -41,38 +36,38 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 
   * To view the full list of variables, look at the `cfWaitingRoom` object described under the `json_response_enabled` property in other Waiting Room API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
   */
   readonly customPageHtml?: string;
   /**
   * The language of the default page template. If no default_template_language is provided, then `en-US` (English) will be used.
   * Available values: "en-US", "es-ES", "de-DE", "fr-FR", "it-IT", "ja-JP", "ko-KR", "pt-BR", "zh-CN", "zh-TW", "nl-NL", "pl-PL", "id-ID", "tr-TR", "ar-EG", "ru-RU", "fa-IR", "bg-BG", "hr-HR", "cs-CZ", "da-DK", "fi-FI", "lt-LT", "ms-MY", "nb-NO", "ro-RO", "el-GR", "he-IL", "hi-IN", "hu-HU", "sr-BA", "sk-SK", "sl-SI", "sv-SE", "tl-PH", "th-TH", "uk-UA", "vi-VN".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
   */
   readonly defaultTemplateLanguage?: string;
   /**
   * A note that you can use to add more details about the waiting room.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#description WaitingRoom#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#description WaitingRoom#description}
   */
   readonly description?: string;
   /**
   * Only available for the Waiting Room Advanced subscription. Disables automatic renewal of session cookies. If `true`, an accepted user will have session_duration minutes to browse the site. After that, they will have to go through the waiting room again. If `false`, a user's session cookie will be automatically renewed on every request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
   */
   readonly disableSessionRenewal?: boolean | cdktf.IResolvable;
   /**
   * A list of enabled origin commands.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#enabled_origin_commands WaitingRoom#enabled_origin_commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#enabled_origin_commands WaitingRoom#enabled_origin_commands}
   */
   readonly enabledOriginCommands?: string[];
   /**
   * The host name to which the waiting room will be applied (no wildcards). Please do not include the scheme (http:// or https://). The host and path combination must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#host WaitingRoom#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#host WaitingRoom#host}
   */
   readonly host: string;
   /**
@@ -87,7 +82,7 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 8. `queueIsFull`: Boolean indicating if the waiting room's queue is currently full and not accepting new users at the moment.
   * 9. `queueAll`: Boolean indicating if all users will be queued in the waiting room and no one will be let into the origin website.
   * 10. `lastUpdated`: String displaying the timestamp as an ISO 8601 string of the user's last attempt to leave the waiting room and be let into the origin website. The user is able to make another attempt after `refreshIntervalSeconds` past this time. If the user makes a request too soon, it will be ignored and `lastUpdated` will not change.
-  * 11. `refreshIntervalSeconds`: Integer indicating the number of seconds after `lastUpdated` until the user is able to make another attempt to leave the waiting room and be let into the origin website. When the `queueingMethod` is `reject`, there is no specified refresh time — it will always be **zero**.
+  * 11. `refreshIntervalSeconds`: Integer indicating the number of seconds after `lastUpdated` until the user is able to make another attempt to leave the waiting room and be let into the origin website. When the `queueingMethod` is `reject`, there is no specified refresh time —\_it will always be **zero**.
   * 12. `queueingMethod`: The queueing method currently used by the waiting room. It is either **fifo**, **random**, **passthrough**, or **reject**.
   * 13. `isFIFOQueue`: Boolean indicating if the waiting room uses a FIFO (First-In-First-Out) queue.
   * 14. `isRandomQueue`: Boolean indicating if the waiting room uses a Random queue where users gain access randomly.
@@ -100,6 +95,8 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 21. `timeUntilEventEnd`: Valid only when `isEventActive` is **true**. Integer indicating the number of minutes until the event ends.
   * 22. `timeUntilEventEndFormatted`: String displaying the `timeUntilEventEnd` formatted in English for users. If `isEventActive` is **false**, `timeUntilEventEndFormatted` will display **unavailable**.
   * 23. `shuffleAtEventStart`: Valid only when `isEventActive` is **true**. Boolean indicating if the users in the prequeue are shuffled randomly when the event starts.
+  * 24. `turnstile`: Empty when turnstile isn't enabled. String displaying an html tag to display the Turnstile widget. Please add the `{{{turnstile}}}` tag to the `custom_html` template to ensure the Turnstile widget appears.
+  * 25. `infiniteQueue`: Boolean indicating whether the response is for a user in the infinite queue.
   * 
   * An example cURL to a waiting room could be:
   * 
@@ -164,33 +161,33 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 			"timeUntilEventEndFormatted": "15 minutes",
   * 			"shuffleAtEventStart": true
   * 		}
-  * 	}.
+  * 	}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
   */
   readonly jsonResponseEnabled?: boolean | cdktf.IResolvable;
   /**
   * A unique name to identify the waiting room. Only alphanumeric characters, hyphens and underscores are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#name WaitingRoom#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#name WaitingRoom#name}
   */
   readonly name: string;
   /**
   * Sets the number of new users that will be let into the route every minute. This value is used as baseline for the number of users that are let in per minute. So it is possible that there is a little more or little less traffic coming to the route based on the traffic patterns at that time around the world.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
   */
   readonly newUsersPerMinute: number;
   /**
   * Sets the path within the host to enable the waiting room on. The waiting room will be enabled for all subpaths as well. If there are two waiting rooms on the same subpath, the waiting room for the most specific path will be chosen. Wildcards and query parameters are not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#path WaitingRoom#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#path WaitingRoom#path}
   */
   readonly path?: string;
   /**
   * If queue_all is `true`, all the traffic that is coming to a route will be sent to the waiting room. No new traffic can get to the route once this field is set and estimated time will become unavailable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
   */
   readonly queueAll?: boolean | cdktf.IResolvable;
   /**
@@ -201,32 +198,32 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 4. `reject`: Users will be immediately rejected from the waiting room. As a result, no users will reach the origin website while this is enabled. This can be used if you wish to reject all traffic while performing maintenance, block traffic during a specified period of time (an event), or block traffic while events are not occurring. Consider a waiting room used for vaccine distribution that only allows traffic during sign-up events, and otherwise blocks all traffic. For this case, the waiting room uses `reject`, and its events override this with `fifo`, `random`, or `passthrough`. When this queueing method is enabled and neither `queueAll` is enabled nor an event is prequeueing, the waiting room page **will not refresh automatically**.
   * Available values: "fifo", "random", "passthrough", "reject".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
   */
   readonly queueingMethod?: string;
   /**
   * HTTP status code returned to a user while in the queue.
   * Available values: 200, 202, 429.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#queueing_status_code WaitingRoom#queueing_status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#queueing_status_code WaitingRoom#queueing_status_code}
   */
   readonly queueingStatusCode?: number;
   /**
   * Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the route. If a user is not seen by Cloudflare again in that time period, they will be treated as a new user that visits the route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
   */
   readonly sessionDuration?: number;
   /**
   * Suspends or allows traffic going to the waiting room. If set to `true`, the traffic will not go to the waiting room.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
   */
   readonly suspended?: boolean | cdktf.IResolvable;
   /**
   * Sets the total number of active user sessions on the route at a point in time. A route is a combination of host and path on which a waiting room is available. This value is used as a baseline for the total number of active user sessions on the route. It is possible to have a situation where there are more or less active users sessions on the route based on the traffic patterns at that time around the world.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
   */
   readonly totalActiveUsers: number;
   /**
@@ -237,7 +234,7 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * origin. `infinite_queue` requires Advanced Waiting Room.
   * Available values: "log", "infinite_queue".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#turnstile_action WaitingRoom#turnstile_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#turnstile_action WaitingRoom#turnstile_action}
   */
   readonly turnstileAction?: string;
   /**
@@ -248,13 +245,13 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * `off` or `invisible` requires Advanced Waiting Room.
   * Available values: "off", "invisible", "visible_non_interactive", "visible_managed".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#turnstile_mode WaitingRoom#turnstile_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#turnstile_mode WaitingRoom#turnstile_mode}
   */
   readonly turnstileMode?: string;
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
   */
   readonly zoneId: string;
 }
@@ -262,13 +259,13 @@ export interface WaitingRoomAdditionalRoutes {
   /**
   * The hostname to which this waiting room will be applied (no wildcards). The hostname must be the primary domain, subdomain, or custom hostname (if using SSL for SaaS) of this zone. Please do not include the scheme (http:// or https://).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#host WaitingRoom#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#host WaitingRoom#host}
   */
   readonly host?: string;
   /**
   * Sets the path within the host to enable the waiting room on. The waiting room will be enabled for all subpaths as well. If there are two waiting rooms on the same subpath, the waiting room for the most specific path will be chosen. Wildcards and query parameters are not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#path WaitingRoom#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#path WaitingRoom#path}
   */
   readonly path?: string;
 }
@@ -416,14 +413,14 @@ export interface WaitingRoomCookieAttributes {
   * Configures the SameSite attribute on the waiting room cookie. Value `auto` will be translated to `lax` or `none` depending if **Always Use HTTPS** is enabled. Note that when using value `none`, the secure attribute cannot be set to `never`.
   * Available values: "auto", "lax", "none", "strict".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#samesite WaitingRoom#samesite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#samesite WaitingRoom#samesite}
   */
   readonly samesite?: string;
   /**
   * Configures the Secure attribute on the waiting room cookie. Value `always` indicates that the Secure attribute will be set in the Set-Cookie header, `never` indicates that the Secure attribute will not be set, and `auto` will set the Secure attribute depending if **Always Use HTTPS** is enabled.
   * Available values: "auto", "always", "never".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#secure WaitingRoom#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#secure WaitingRoom#secure}
   */
   readonly secure?: string;
 }
@@ -546,7 +543,7 @@ export class WaitingRoomCookieAttributesOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room cloudflare_waiting_room}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room cloudflare_waiting_room}
 */
 export class WaitingRoom extends cdktf.TerraformResource {
 
@@ -562,7 +559,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaitingRoom resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoom to import
-  * @param importFromId The id of the existing WaitingRoom that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoom that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoom to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -574,7 +571,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/waiting_room cloudflare_waiting_room} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/waiting_room cloudflare_waiting_room} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -585,7 +582,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

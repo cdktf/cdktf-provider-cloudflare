@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloud_connector_rules_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloud_connector_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,24 +6,18 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataCloudflareCloudConnectorRulesListConfig extends cdktf.TerraformMetaArguments {
-  /**
-  * Max items to fetch, default: 1000
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloud_connector_rules_list#max_items DataCloudflareCloudConnectorRulesList#max_items}
-  */
-  readonly maxItems?: number;
+export interface DataCloudflareCloudConnectorRulesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloud_connector_rules_list#zone_id DataCloudflareCloudConnectorRulesList#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloud_connector_rules#zone_id DataCloudflareCloudConnectorRules#zone_id}
   */
   readonly zoneId: string;
 }
-export interface DataCloudflareCloudConnectorRulesListResultParameters {
+export interface DataCloudflareCloudConnectorRulesRulesParameters {
 }
 
-export function dataCloudflareCloudConnectorRulesListResultParametersToTerraform(struct?: DataCloudflareCloudConnectorRulesListResultParameters): any {
+export function dataCloudflareCloudConnectorRulesRulesParametersToTerraform(struct?: DataCloudflareCloudConnectorRulesRulesParameters): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -38,7 +27,7 @@ export function dataCloudflareCloudConnectorRulesListResultParametersToTerraform
 }
 
 
-export function dataCloudflareCloudConnectorRulesListResultParametersToHclTerraform(struct?: DataCloudflareCloudConnectorRulesListResultParameters): any {
+export function dataCloudflareCloudConnectorRulesRulesParametersToHclTerraform(struct?: DataCloudflareCloudConnectorRulesRulesParameters): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -48,7 +37,7 @@ export function dataCloudflareCloudConnectorRulesListResultParametersToHclTerraf
   return attrs;
 }
 
-export class DataCloudflareCloudConnectorRulesListResultParametersOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareCloudConnectorRulesRulesParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -59,13 +48,13 @@ export class DataCloudflareCloudConnectorRulesListResultParametersOutputReferenc
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareCloudConnectorRulesListResultParameters | undefined {
+  public get internalValue(): DataCloudflareCloudConnectorRulesRulesParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareCloudConnectorRulesListResultParameters | undefined) {
+  public set internalValue(value: DataCloudflareCloudConnectorRulesRulesParameters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -79,10 +68,10 @@ export class DataCloudflareCloudConnectorRulesListResultParametersOutputReferenc
     return this.getStringAttribute('host');
   }
 }
-export interface DataCloudflareCloudConnectorRulesListResult {
+export interface DataCloudflareCloudConnectorRulesRules {
 }
 
-export function dataCloudflareCloudConnectorRulesListResultToTerraform(struct?: DataCloudflareCloudConnectorRulesListResult): any {
+export function dataCloudflareCloudConnectorRulesRulesToTerraform(struct?: DataCloudflareCloudConnectorRulesRules): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -92,7 +81,7 @@ export function dataCloudflareCloudConnectorRulesListResultToTerraform(struct?: 
 }
 
 
-export function dataCloudflareCloudConnectorRulesListResultToHclTerraform(struct?: DataCloudflareCloudConnectorRulesListResult): any {
+export function dataCloudflareCloudConnectorRulesRulesToHclTerraform(struct?: DataCloudflareCloudConnectorRulesRules): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -102,7 +91,7 @@ export function dataCloudflareCloudConnectorRulesListResultToHclTerraform(struct
   return attrs;
 }
 
-export class DataCloudflareCloudConnectorRulesListResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareCloudConnectorRulesRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -115,13 +104,13 @@ export class DataCloudflareCloudConnectorRulesListResultOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCloudflareCloudConnectorRulesListResult | undefined {
+  public get internalValue(): DataCloudflareCloudConnectorRulesRules | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareCloudConnectorRulesListResult | undefined) {
+  public set internalValue(value: DataCloudflareCloudConnectorRulesRules | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -151,7 +140,7 @@ export class DataCloudflareCloudConnectorRulesListResultOutputReference extends 
   }
 
   // parameters - computed: true, optional: false, required: false
-  private _parameters = new DataCloudflareCloudConnectorRulesListResultParametersOutputReference(this, "parameters");
+  private _parameters = new DataCloudflareCloudConnectorRulesRulesParametersOutputReference(this, "parameters");
   public get parameters() {
     return this._parameters;
   }
@@ -162,7 +151,7 @@ export class DataCloudflareCloudConnectorRulesListResultOutputReference extends 
   }
 }
 
-export class DataCloudflareCloudConnectorRulesListResultList extends cdktf.ComplexList {
+export class DataCloudflareCloudConnectorRulesRulesList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -176,33 +165,33 @@ export class DataCloudflareCloudConnectorRulesListResultList extends cdktf.Compl
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataCloudflareCloudConnectorRulesListResultOutputReference {
-    return new DataCloudflareCloudConnectorRulesListResultOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataCloudflareCloudConnectorRulesRulesOutputReference {
+    return new DataCloudflareCloudConnectorRulesRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloud_connector_rules_list cloudflare_cloud_connector_rules_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}
 */
-export class DataCloudflareCloudConnectorRulesList extends cdktf.TerraformDataSource {
+export class DataCloudflareCloudConnectorRules extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "cloudflare_cloud_connector_rules_list";
+  public static readonly tfResourceType = "cloudflare_cloud_connector_rules";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareCloudConnectorRulesList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a DataCloudflareCloudConnectorRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the DataCloudflareCloudConnectorRulesList to import
-  * @param importFromId The id of the existing DataCloudflareCloudConnectorRulesList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloud_connector_rules_list#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the DataCloudflareCloudConnectorRulesList to import is found
+  * @param importToId The construct id used in the generated config for the DataCloudflareCloudConnectorRules to import
+  * @param importFromId The id of the existing DataCloudflareCloudConnectorRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataCloudflareCloudConnectorRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloud_connector_rules_list", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloud_connector_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -210,18 +199,18 @@ export class DataCloudflareCloudConnectorRulesList extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloud_connector_rules_list cloudflare_cloud_connector_rules_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareCloudConnectorRulesListConfig
+  * @param options DataCloudflareCloudConnectorRulesConfig
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareCloudConnectorRulesListConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareCloudConnectorRulesConfig) {
     super(scope, id, {
-      terraformResourceType: 'cloudflare_cloud_connector_rules_list',
+      terraformResourceType: 'cloudflare_cloud_connector_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -232,7 +221,6 @@ export class DataCloudflareCloudConnectorRulesList extends cdktf.TerraformDataSo
       connection: config.connection,
       forEach: config.forEach
     });
-    this._maxItems = config.maxItems;
     this._zoneId = config.zoneId;
   }
 
@@ -240,26 +228,15 @@ export class DataCloudflareCloudConnectorRulesList extends cdktf.TerraformDataSo
   // ATTRIBUTES
   // ==========
 
-  // max_items - computed: false, optional: true, required: false
-  private _maxItems?: number; 
-  public get maxItems() {
-    return this.getNumberAttribute('max_items');
-  }
-  public set maxItems(value: number) {
-    this._maxItems = value;
-  }
-  public resetMaxItems() {
-    this._maxItems = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxItemsInput() {
-    return this._maxItems;
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
-  // result - computed: true, optional: false, required: false
-  private _result = new DataCloudflareCloudConnectorRulesListResultList(this, "result", false);
-  public get result() {
-    return this._result;
+  // rules - computed: true, optional: false, required: false
+  private _rules = new DataCloudflareCloudConnectorRulesRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -281,19 +258,12 @@ export class DataCloudflareCloudConnectorRulesList extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      max_items: cdktf.numberToTerraform(this._maxItems),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
       zone_id: {
         value: cdktf.stringToHclTerraform(this._zoneId),
         isBlock: false,

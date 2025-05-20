@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareCloudforceOneRequestAssetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset#account_identifier DataCloudflareCloudforceOneRequestAsset#account_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset#account_id DataCloudflareCloudforceOneRequestAsset#account_id}
   */
-  readonly accountIdentifier: string;
+  readonly accountId: string;
   /**
-  * UUID
+  * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset#asset_identifer DataCloudflareCloudforceOneRequestAsset#asset_identifer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset#asset_id DataCloudflareCloudforceOneRequestAsset#asset_id}
   */
-  readonly assetIdentifer: string;
+  readonly assetId: string;
   /**
-  * UUID
+  * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset#request_identifier DataCloudflareCloudforceOneRequestAsset#request_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset#request_id DataCloudflareCloudforceOneRequestAsset#request_id}
   */
-  readonly requestIdentifier: string;
+  readonly requestId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}
 */
 export class DataCloudflareCloudforceOneRequestAsset extends cdktf.TerraformDataSource {
 
@@ -49,7 +44,7 @@ export class DataCloudflareCloudforceOneRequestAsset extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataCloudflareCloudforceOneRequestAsset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCloudforceOneRequestAsset to import
-  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequestAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequestAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCloudforceOneRequestAsset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class DataCloudflareCloudforceOneRequestAsset extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class DataCloudflareCloudforceOneRequestAsset extends cdktf.TerraformData
       terraformResourceType: 'cloudflare_cloudforce_one_request_asset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -83,39 +78,39 @@ export class DataCloudflareCloudforceOneRequestAsset extends cdktf.TerraformData
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountIdentifier = config.accountIdentifier;
-    this._assetIdentifer = config.assetIdentifer;
-    this._requestIdentifier = config.requestIdentifier;
+    this._accountId = config.accountId;
+    this._assetId = config.assetId;
+    this._requestId = config.requestId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_identifier - computed: false, optional: false, required: true
-  private _accountIdentifier?: string; 
-  public get accountIdentifier() {
-    return this.getStringAttribute('account_identifier');
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
   }
-  public set accountIdentifier(value: string) {
-    this._accountIdentifier = value;
+  public set accountId(value: string) {
+    this._accountId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get accountIdentifierInput() {
-    return this._accountIdentifier;
+  public get accountIdInput() {
+    return this._accountId;
   }
 
-  // asset_identifer - computed: false, optional: false, required: true
-  private _assetIdentifer?: string; 
-  public get assetIdentifer() {
-    return this.getStringAttribute('asset_identifer');
+  // asset_id - computed: false, optional: false, required: true
+  private _assetId?: string; 
+  public get assetId() {
+    return this.getStringAttribute('asset_id');
   }
-  public set assetIdentifer(value: string) {
-    this._assetIdentifer = value;
+  public set assetId(value: string) {
+    this._assetId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get assetIdentiferInput() {
-    return this._assetIdentifer;
+  public get assetIdInput() {
+    return this._assetId;
   }
 
   // created - computed: true, optional: false, required: false
@@ -143,17 +138,17 @@ export class DataCloudflareCloudforceOneRequestAsset extends cdktf.TerraformData
     return this.getStringAttribute('name');
   }
 
-  // request_identifier - computed: false, optional: false, required: true
-  private _requestIdentifier?: string; 
-  public get requestIdentifier() {
-    return this.getStringAttribute('request_identifier');
+  // request_id - computed: false, optional: false, required: true
+  private _requestId?: string; 
+  public get requestId() {
+    return this.getStringAttribute('request_id');
   }
-  public set requestIdentifier(value: string) {
-    this._requestIdentifier = value;
+  public set requestId(value: string) {
+    this._requestId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestIdentifierInput() {
-    return this._requestIdentifier;
+  public get requestIdInput() {
+    return this._requestId;
   }
 
   // =========
@@ -162,28 +157,28 @@ export class DataCloudflareCloudforceOneRequestAsset extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_identifier: cdktf.stringToTerraform(this._accountIdentifier),
-      asset_identifer: cdktf.stringToTerraform(this._assetIdentifer),
-      request_identifier: cdktf.stringToTerraform(this._requestIdentifier),
+      account_id: cdktf.stringToTerraform(this._accountId),
+      asset_id: cdktf.stringToTerraform(this._assetId),
+      request_id: cdktf.stringToTerraform(this._requestId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      account_identifier: {
-        value: cdktf.stringToHclTerraform(this._accountIdentifier),
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      asset_identifer: {
-        value: cdktf.stringToHclTerraform(this._assetIdentifer),
+      asset_id: {
+        value: cdktf.stringToHclTerraform(this._assetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      request_identifier: {
-        value: cdktf.stringToHclTerraform(this._requestIdentifier),
+      request_id: {
+        value: cdktf.stringToHclTerraform(this._requestId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

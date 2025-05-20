@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface CloudforceOneRequestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request#account_identifier CloudforceOneRequest#account_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request#account_id CloudforceOneRequest#account_id}
   */
-  readonly accountIdentifier: string;
+  readonly accountId: string;
   /**
-  * Request content
+  * Request content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
   */
   readonly content?: string;
   /**
-  * Priority for analyzing the request
+  * Priority for analyzing the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
   */
   readonly priority?: string;
   /**
-  * Requested information from request
+  * Requested information from request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
   */
   readonly requestType?: string;
   /**
-  * Brief description of the request
+  * Brief description of the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
   */
   readonly summary?: string;
   /**
-  * The CISA defined Traffic Light Protocol (TLP)
+  * The CISA defined Traffic Light Protocol (TLP).
   * Available values: "clear", "amber", "amber-strict", "green", "red".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
   */
   readonly tlp?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}
 */
 export class CloudforceOneRequest extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudforceOneRequest resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudforceOneRequest to import
-  * @param importFromId The id of the existing CloudforceOneRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudforceOneRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudforceOneRequest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_cloudforce_one_request',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -102,7 +97,7 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountIdentifier = config.accountIdentifier;
+    this._accountId = config.accountId;
     this._content = config.content;
     this._priority = config.priority;
     this._requestType = config.requestType;
@@ -114,17 +109,17 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_identifier - computed: false, optional: false, required: true
-  private _accountIdentifier?: string; 
-  public get accountIdentifier() {
-    return this.getStringAttribute('account_identifier');
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
   }
-  public set accountIdentifier(value: string) {
-    this._accountIdentifier = value;
+  public set accountId(value: string) {
+    this._accountId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get accountIdentifierInput() {
-    return this._accountIdentifier;
+  public get accountIdInput() {
+    return this._accountId;
   }
 
   // completed - computed: true, optional: false, required: false
@@ -258,7 +253,7 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_identifier: cdktf.stringToTerraform(this._accountIdentifier),
+      account_id: cdktf.stringToTerraform(this._accountId),
       content: cdktf.stringToTerraform(this._content),
       priority: cdktf.stringToTerraform(this._priority),
       request_type: cdktf.stringToTerraform(this._requestType),
@@ -269,8 +264,8 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      account_identifier: {
-        value: cdktf.stringToHclTerraform(this._accountIdentifier),
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

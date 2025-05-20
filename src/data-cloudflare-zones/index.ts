@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareZonesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#account DataCloudflareZones#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#account DataCloudflareZones#account}
   */
   readonly account?: DataCloudflareZonesAccount;
   /**
   * Direction to order zones.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#direction DataCloudflareZones#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#direction DataCloudflareZones#direction}
   */
   readonly direction?: string;
   /**
   * Whether to match all search requirements or at least one (any).
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#match DataCloudflareZones#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#match DataCloudflareZones#match}
   */
   readonly match?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#max_items DataCloudflareZones#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#max_items DataCloudflareZones#max_items}
   */
   readonly maxItems?: number;
   /**
@@ -47,21 +42,21 @@ export interface DataCloudflareZonesConfig extends cdktf.TerraformMetaArguments 
   *   * `ends_with_case_sensitive`
   *   * `contains_case_sensitive`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#name DataCloudflareZones#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#name DataCloudflareZones#name}
   */
   readonly name?: string;
   /**
   * Field to order zones by.
   * Available values: "name", "status", "account.id", "account.name", "plan.id".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#order DataCloudflareZones#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#order DataCloudflareZones#order}
   */
   readonly order?: string;
   /**
   * A zone status
   * Available values: "initializing", "pending", "active", "moved".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#status DataCloudflareZones#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#status DataCloudflareZones#status}
   */
   readonly status?: string;
 }
@@ -69,7 +64,7 @@ export interface DataCloudflareZonesAccount {
   /**
   * An account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#id DataCloudflareZones#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#id DataCloudflareZones#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -86,7 +81,7 @@ export interface DataCloudflareZonesAccount {
   *   * `ends_with_case_sensitive`
   *   * `contains_case_sensitive`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#name DataCloudflareZones#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#name DataCloudflareZones#name}
   */
   readonly name?: string;
 }
@@ -414,6 +409,218 @@ export class DataCloudflareZonesResultOwnerOutputReference extends cdktf.Complex
     return this.getStringAttribute('type');
   }
 }
+export interface DataCloudflareZonesResultPlan {
+}
+
+export function dataCloudflareZonesResultPlanToTerraform(struct?: DataCloudflareZonesResultPlan): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZonesResultPlanToHclTerraform(struct?: DataCloudflareZonesResultPlan): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZonesResultPlanOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZonesResultPlan | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZonesResultPlan | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // can_subscribe - computed: true, optional: false, required: false
+  public get canSubscribe() {
+    return this.getBooleanAttribute('can_subscribe');
+  }
+
+  // currency - computed: true, optional: false, required: false
+  public get currency() {
+    return this.getStringAttribute('currency');
+  }
+
+  // externally_managed - computed: true, optional: false, required: false
+  public get externallyManaged() {
+    return this.getBooleanAttribute('externally_managed');
+  }
+
+  // frequency - computed: true, optional: false, required: false
+  public get frequency() {
+    return this.getStringAttribute('frequency');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // is_subscribed - computed: true, optional: false, required: false
+  public get isSubscribed() {
+    return this.getBooleanAttribute('is_subscribed');
+  }
+
+  // legacy_discount - computed: true, optional: false, required: false
+  public get legacyDiscount() {
+    return this.getBooleanAttribute('legacy_discount');
+  }
+
+  // legacy_id - computed: true, optional: false, required: false
+  public get legacyId() {
+    return this.getStringAttribute('legacy_id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // price - computed: true, optional: false, required: false
+  public get price() {
+    return this.getNumberAttribute('price');
+  }
+}
+export interface DataCloudflareZonesResultTenant {
+}
+
+export function dataCloudflareZonesResultTenantToTerraform(struct?: DataCloudflareZonesResultTenant): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZonesResultTenantToHclTerraform(struct?: DataCloudflareZonesResultTenant): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZonesResultTenantOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZonesResultTenant | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZonesResultTenant | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+export interface DataCloudflareZonesResultTenantUnit {
+}
+
+export function dataCloudflareZonesResultTenantUnitToTerraform(struct?: DataCloudflareZonesResultTenantUnit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZonesResultTenantUnitToHclTerraform(struct?: DataCloudflareZonesResultTenantUnit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZonesResultTenantUnitOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZonesResultTenantUnit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZonesResultTenantUnit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+}
 export interface DataCloudflareZonesResult {
 }
 
@@ -474,6 +681,11 @@ export class DataCloudflareZonesResultOutputReference extends cdktf.ComplexObjec
   // activated_on - computed: true, optional: false, required: false
   public get activatedOn() {
     return this.getStringAttribute('activated_on');
+  }
+
+  // cname_suffix - computed: true, optional: false, required: false
+  public get cnameSuffix() {
+    return this.getStringAttribute('cname_suffix');
   }
 
   // created_on - computed: true, optional: false, required: false
@@ -538,9 +750,32 @@ export class DataCloudflareZonesResultOutputReference extends cdktf.ComplexObjec
     return this.getBooleanAttribute('paused');
   }
 
+  // permissions - computed: true, optional: false, required: false
+  public get permissions() {
+    return this.getListAttribute('permissions');
+  }
+
+  // plan - computed: true, optional: false, required: false
+  private _plan = new DataCloudflareZonesResultPlanOutputReference(this, "plan");
+  public get plan() {
+    return this._plan;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // tenant - computed: true, optional: false, required: false
+  private _tenant = new DataCloudflareZonesResultTenantOutputReference(this, "tenant");
+  public get tenant() {
+    return this._tenant;
+  }
+
+  // tenant_unit - computed: true, optional: false, required: false
+  private _tenantUnit = new DataCloudflareZonesResultTenantUnitOutputReference(this, "tenant_unit");
+  public get tenantUnit() {
+    return this._tenantUnit;
   }
 
   // type - computed: true, optional: false, required: false
@@ -579,7 +814,7 @@ export class DataCloudflareZonesResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones cloudflare_zones}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones cloudflare_zones}
 */
 export class DataCloudflareZones extends cdktf.TerraformDataSource {
 
@@ -595,7 +830,7 @@ export class DataCloudflareZones extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareZones resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZones to import
-  * @param importFromId The id of the existing DataCloudflareZones that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZones that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZones to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -607,7 +842,7 @@ export class DataCloudflareZones extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zones cloudflare_zones} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zones cloudflare_zones} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -618,7 +853,7 @@ export class DataCloudflareZones extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zones',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

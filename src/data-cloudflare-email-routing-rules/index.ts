@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataCloudflareEmailRoutingRulesConfig extends cdktf.TerraformMe
   /**
   * Filter by enabled routing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_rules#enabled DataCloudflareEmailRoutingRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_rules#enabled DataCloudflareEmailRoutingRules#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_rules#max_items DataCloudflareEmailRoutingRules#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_rules#max_items DataCloudflareEmailRoutingRules#max_items}
   */
   readonly maxItems?: number;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_rules#zone_id DataCloudflareEmailRoutingRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_rules#zone_id DataCloudflareEmailRoutingRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -305,7 +300,7 @@ export class DataCloudflareEmailRoutingRulesResultList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}
 */
 export class DataCloudflareEmailRoutingRules extends cdktf.TerraformDataSource {
 
@@ -321,7 +316,7 @@ export class DataCloudflareEmailRoutingRules extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareEmailRoutingRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailRoutingRules to import
-  * @param importFromId The id of the existing DataCloudflareEmailRoutingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailRoutingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailRoutingRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -333,7 +328,7 @@ export class DataCloudflareEmailRoutingRules extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +339,7 @@ export class DataCloudflareEmailRoutingRules extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_email_routing_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

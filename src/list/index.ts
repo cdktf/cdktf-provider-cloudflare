@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +10,32 @@ export interface ListConfig extends cdktf.TerraformMetaArguments {
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#account_id List#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#account_id List#account_id}
   */
   readonly accountId: string;
   /**
   * An informative summary of the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#description List#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#description List#description}
   */
   readonly description?: string;
   /**
   * The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
   * Available values: "ip", "redirect", "hostname", "asn".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#kind List#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#kind List#kind}
   */
   readonly kind: string;
   /**
   * An informative name for the list. Use this name in filter and rule expressions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#name List#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#name List#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list cloudflare_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list cloudflare_list}
 */
 export class List extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class List extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a List resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the List to import
-  * @param importFromId The id of the existing List that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing List that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the List to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class List extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list cloudflare_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list cloudflare_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class List extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

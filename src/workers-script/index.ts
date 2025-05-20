@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,104 +10,104 @@ export interface WorkersScriptConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#account_id WorkersScript#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#account_id WorkersScript#account_id}
   */
   readonly accountId: string;
   /**
   * Configuration for assets within a Worker
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#assets WorkersScript#assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#assets WorkersScript#assets}
   */
   readonly assets?: WorkersScriptAssets;
   /**
   * List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#bindings WorkersScript#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#bindings WorkersScript#bindings}
   */
   readonly bindings?: WorkersScriptBindings[] | cdktf.IResolvable;
   /**
   * Name of the part in the multipart request that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#body_part WorkersScript#body_part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#body_part WorkersScript#body_part}
   */
   readonly bodyPart?: string;
   /**
   * Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * Module or Service Worker contents of the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#content WorkersScript#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#content WorkersScript#content}
   */
   readonly content: string;
   /**
   * Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
   */
   readonly keepAssets?: boolean | cdktf.IResolvable;
   /**
   * List of binding types to keep from previous_upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
   */
   readonly keepBindings?: string[];
   /**
   * Whether Logpush is turned on for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#logpush WorkersScript#logpush}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#logpush WorkersScript#logpush}
   */
   readonly logpush?: boolean | cdktf.IResolvable;
   /**
   * Name of the part in the multipart request that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#main_module WorkersScript#main_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#main_module WorkersScript#main_module}
   */
   readonly mainModule?: string;
   /**
   * Migrations to apply for Durable Objects associated with this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#migrations WorkersScript#migrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#migrations WorkersScript#migrations}
   */
   readonly migrations?: WorkersScriptMigrations;
   /**
   * Observability settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#observability WorkersScript#observability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#observability WorkersScript#observability}
   */
   readonly observability?: WorkersScriptObservability;
   /**
   * Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#placement WorkersScript#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#placement WorkersScript#placement}
   */
   readonly placement?: WorkersScriptPlacement;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#script_name WorkersScript#script_name}
   */
   readonly scriptName: string;
   /**
   * List of Workers that will consume logs from the attached Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
   */
   readonly tailConsumers?: WorkersScriptTailConsumers[] | cdktf.IResolvable;
   /**
   * Usage model for the Worker invocations.
   * Available values: "standard".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
   */
   readonly usageModel?: string;
 }
@@ -120,39 +115,39 @@ export interface WorkersScriptAssetsConfig {
   /**
   * The contents of a _headers file (used to attach custom headers on asset responses)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#_headers WorkersScript#_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#_headers WorkersScript#_headers}
   */
   readonly headers?: string;
   /**
   * The contents of a _redirects file (used to apply redirects or proxy paths ahead of asset serving)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#_redirects WorkersScript#_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#_redirects WorkersScript#_redirects}
   */
   readonly redirects?: string;
   /**
   * Determines the redirects and rewrites of requests for HTML content.
   * Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
   */
   readonly htmlHandling?: string;
   /**
   * Determines the response when a request does not match a static asset, and there is no Worker script.
   * Available values: "none", "404-page", "single-page-application".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
   */
   readonly notFoundHandling?: string;
   /**
   * When true, requests will always invoke the Worker script. Otherwise, attempt to serve an asset matching the request, falling back to the Worker script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
   */
   readonly runWorkerFirst?: boolean | cdktf.IResolvable;
   /**
   * When true and the incoming request matches an asset, that will be served instead of invoking the Worker script. When false, requests will always invoke the Worker script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
   */
   readonly serveDirectly?: boolean | cdktf.IResolvable;
 }
@@ -393,13 +388,13 @@ export interface WorkersScriptAssets {
   /**
   * Configuration for assets within a Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#config WorkersScript#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#config WorkersScript#config}
   */
   readonly config?: WorkersScriptAssetsConfig;
   /**
   * Token provided upon successful upload of all files from a registered manifest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#jwt WorkersScript#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#jwt WorkersScript#jwt}
   */
   readonly jwt?: string;
 }
@@ -524,13 +519,13 @@ export interface WorkersScriptBindingsOutboundWorker {
   /**
   * Environment of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Name of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service?: string;
 }
@@ -619,7 +614,7 @@ export class WorkersScriptBindingsOutboundWorkerOutputReference extends cdktf.Co
     }
   }
 
-  // environment - computed: false, optional: true, required: false
+  // environment - computed: true, optional: true, required: false
   private _environment?: string; 
   public get environment() {
     return this.getStringAttribute('environment');
@@ -635,7 +630,7 @@ export class WorkersScriptBindingsOutboundWorkerOutputReference extends cdktf.Co
     return this._environment;
   }
 
-  // service - computed: false, optional: true, required: false
+  // service - computed: true, optional: true, required: false
   private _service?: string; 
   public get service() {
     return this.getStringAttribute('service');
@@ -655,13 +650,13 @@ export interface WorkersScriptBindingsOutbound {
   /**
   * Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#params WorkersScript#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#params WorkersScript#params}
   */
   readonly params?: string[];
   /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#worker WorkersScript#worker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#worker WorkersScript#worker}
   */
   readonly worker?: WorkersScriptBindingsOutboundWorker;
 }
@@ -750,7 +745,7 @@ export class WorkersScriptBindingsOutboundOutputReference extends cdktf.ComplexO
     }
   }
 
-  // params - computed: false, optional: true, required: false
+  // params - computed: true, optional: true, required: false
   private _params?: string[]; 
   public get params() {
     return this.getListAttribute('params');
@@ -766,7 +761,7 @@ export class WorkersScriptBindingsOutboundOutputReference extends cdktf.ComplexO
     return this._params;
   }
 
-  // worker - computed: false, optional: true, required: false
+  // worker - computed: true, optional: true, required: false
   private _worker = new WorkersScriptBindingsOutboundWorkerOutputReference(this, "worker");
   public get worker() {
     return this._worker;
@@ -786,50 +781,50 @@ export interface WorkersScriptBindings {
   /**
   * Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#algorithm WorkersScript#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#algorithm WorkersScript#algorithm}
   */
   readonly algorithm?: string;
   /**
   * R2 bucket to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * Identifier of the certificate to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * The exported class name of the Durable Object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#class_name WorkersScript#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#class_name WorkersScript#class_name}
   */
   readonly className?: string;
   /**
   * The name of the dataset to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#dataset WorkersScript#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#dataset WorkersScript#dataset}
   */
   readonly dataset?: string;
   /**
   * The environment of the script_name to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
   * Available values: "raw", "pkcs8", "spki", "jwk".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#format WorkersScript#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#format WorkersScript#format}
   */
   readonly format?: string;
   /**
   * Identifier of the D1 database to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#id WorkersScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#id WorkersScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,104 +833,104 @@ export interface WorkersScriptBindings {
   /**
   * Name of the Vectorize index to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#index_name WorkersScript#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#index_name WorkersScript#index_name}
   */
   readonly indexName?: string;
   /**
   * JSON data to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#json WorkersScript#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#json WorkersScript#json}
   */
   readonly json?: string;
   /**
   * Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#key_base64 WorkersScript#key_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#key_base64 WorkersScript#key_base64}
   */
   readonly keyBase64?: string;
   /**
   * Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#key_jwk WorkersScript#key_jwk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#key_jwk WorkersScript#key_jwk}
   */
   readonly keyJwk?: string;
   /**
   * A JavaScript variable name for the binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#name WorkersScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#name WorkersScript#name}
   */
   readonly name: string;
   /**
   * Namespace to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#namespace WorkersScript#namespace}
   */
   readonly namespace?: string;
   /**
   * Namespace identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
   */
   readonly namespaceId?: string;
   /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#outbound WorkersScript#outbound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#outbound WorkersScript#outbound}
   */
   readonly outbound?: WorkersScriptBindingsOutbound;
   /**
   * Name of the Pipeline to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#pipeline WorkersScript#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#pipeline WorkersScript#pipeline}
   */
   readonly pipeline?: string;
   /**
   * Name of the Queue to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
   */
   readonly queueName?: string;
   /**
   * The script where the Durable Object is defined, if it is external to this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#script_name WorkersScript#script_name}
   */
   readonly scriptName?: string;
   /**
   * Name of the secret in the store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#secret_name WorkersScript#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#secret_name WorkersScript#secret_name}
   */
   readonly secretName?: string;
   /**
   * Name of Worker to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service?: string;
   /**
   * ID of the store containing the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#store_id WorkersScript#store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#store_id WorkersScript#store_id}
   */
   readonly storeId?: string;
   /**
   * The text value to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#text WorkersScript#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#text WorkersScript#text}
   */
   readonly text?: string;
   /**
   * The kind of resource that the binding provides.
-  * Available values: "ai".
+  * Available values: "ai", "analytics_engine", "assets", "browser", "d1", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "r2_bucket", "secret_text", "service", "tail_consumer", "vectorize", "version_metadata", "secrets_store_secret", "secret_key".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#type WorkersScript#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#type WorkersScript#type}
   */
   readonly type: string;
   /**
   * Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#usages WorkersScript#usages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#usages WorkersScript#usages}
   */
   readonly usages?: string[];
 }
@@ -1325,7 +1320,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // algorithm - computed: false, optional: true, required: false
+  // algorithm - computed: true, optional: true, required: false
   private _algorithm?: string; 
   public get algorithm() {
     return this.getStringAttribute('algorithm');
@@ -1341,7 +1336,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._algorithm;
   }
 
-  // bucket_name - computed: false, optional: true, required: false
+  // bucket_name - computed: true, optional: true, required: false
   private _bucketName?: string; 
   public get bucketName() {
     return this.getStringAttribute('bucket_name');
@@ -1357,7 +1352,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._bucketName;
   }
 
-  // certificate_id - computed: false, optional: true, required: false
+  // certificate_id - computed: true, optional: true, required: false
   private _certificateId?: string; 
   public get certificateId() {
     return this.getStringAttribute('certificate_id');
@@ -1373,7 +1368,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._certificateId;
   }
 
-  // class_name - computed: false, optional: true, required: false
+  // class_name - computed: true, optional: true, required: false
   private _className?: string; 
   public get className() {
     return this.getStringAttribute('class_name');
@@ -1389,7 +1384,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._className;
   }
 
-  // dataset - computed: false, optional: true, required: false
+  // dataset - computed: true, optional: true, required: false
   private _dataset?: string; 
   public get dataset() {
     return this.getStringAttribute('dataset');
@@ -1405,7 +1400,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._dataset;
   }
 
-  // environment - computed: false, optional: true, required: false
+  // environment - computed: true, optional: true, required: false
   private _environment?: string; 
   public get environment() {
     return this.getStringAttribute('environment');
@@ -1421,7 +1416,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._environment;
   }
 
-  // format - computed: false, optional: true, required: false
+  // format - computed: true, optional: true, required: false
   private _format?: string; 
   public get format() {
     return this.getStringAttribute('format');
@@ -1437,7 +1432,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._format;
   }
 
-  // id - computed: false, optional: true, required: false
+  // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -1453,7 +1448,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._id;
   }
 
-  // index_name - computed: false, optional: true, required: false
+  // index_name - computed: true, optional: true, required: false
   private _indexName?: string; 
   public get indexName() {
     return this.getStringAttribute('index_name');
@@ -1469,7 +1464,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._indexName;
   }
 
-  // json - computed: false, optional: true, required: false
+  // json - computed: true, optional: true, required: false
   private _json?: string; 
   public get json() {
     return this.getStringAttribute('json');
@@ -1485,7 +1480,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._json;
   }
 
-  // key_base64 - computed: false, optional: true, required: false
+  // key_base64 - computed: true, optional: true, required: false
   private _keyBase64?: string; 
   public get keyBase64() {
     return this.getStringAttribute('key_base64');
@@ -1501,7 +1496,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._keyBase64;
   }
 
-  // key_jwk - computed: false, optional: true, required: false
+  // key_jwk - computed: true, optional: true, required: false
   private _keyJwk?: string; 
   public get keyJwk() {
     return this.getStringAttribute('key_jwk');
@@ -1517,7 +1512,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._keyJwk;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -1530,7 +1525,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._name;
   }
 
-  // namespace - computed: false, optional: true, required: false
+  // namespace - computed: true, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
     return this.getStringAttribute('namespace');
@@ -1546,7 +1541,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._namespace;
   }
 
-  // namespace_id - computed: false, optional: true, required: false
+  // namespace_id - computed: true, optional: true, required: false
   private _namespaceId?: string; 
   public get namespaceId() {
     return this.getStringAttribute('namespace_id');
@@ -1562,7 +1557,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._namespaceId;
   }
 
-  // outbound - computed: false, optional: true, required: false
+  // outbound - computed: true, optional: true, required: false
   private _outbound = new WorkersScriptBindingsOutboundOutputReference(this, "outbound");
   public get outbound() {
     return this._outbound;
@@ -1578,7 +1573,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._outbound.internalValue;
   }
 
-  // pipeline - computed: false, optional: true, required: false
+  // pipeline - computed: true, optional: true, required: false
   private _pipeline?: string; 
   public get pipeline() {
     return this.getStringAttribute('pipeline');
@@ -1594,7 +1589,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._pipeline;
   }
 
-  // queue_name - computed: false, optional: true, required: false
+  // queue_name - computed: true, optional: true, required: false
   private _queueName?: string; 
   public get queueName() {
     return this.getStringAttribute('queue_name');
@@ -1610,7 +1605,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._queueName;
   }
 
-  // script_name - computed: false, optional: true, required: false
+  // script_name - computed: true, optional: true, required: false
   private _scriptName?: string; 
   public get scriptName() {
     return this.getStringAttribute('script_name');
@@ -1626,7 +1621,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._scriptName;
   }
 
-  // secret_name - computed: false, optional: true, required: false
+  // secret_name - computed: true, optional: true, required: false
   private _secretName?: string; 
   public get secretName() {
     return this.getStringAttribute('secret_name');
@@ -1642,7 +1637,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._secretName;
   }
 
-  // service - computed: false, optional: true, required: false
+  // service - computed: true, optional: true, required: false
   private _service?: string; 
   public get service() {
     return this.getStringAttribute('service');
@@ -1658,7 +1653,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._service;
   }
 
-  // store_id - computed: false, optional: true, required: false
+  // store_id - computed: true, optional: true, required: false
   private _storeId?: string; 
   public get storeId() {
     return this.getStringAttribute('store_id');
@@ -1674,7 +1669,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._storeId;
   }
 
-  // text - computed: false, optional: true, required: false
+  // text - computed: true, optional: true, required: false
   private _text?: string; 
   public get text() {
     return this.getStringAttribute('text');
@@ -1690,7 +1685,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._text;
   }
 
-  // type - computed: false, optional: false, required: true
+  // type - computed: true, optional: false, required: true
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -1703,7 +1698,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 
-  // usages - computed: false, optional: true, required: false
+  // usages - computed: true, optional: true, required: false
   private _usages?: string[]; 
   public get usages() {
     return this.getListAttribute('usages');
@@ -1741,11 +1736,11 @@ export class WorkersScriptBindingsList extends cdktf.ComplexList {
 }
 export interface WorkersScriptMigrationsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -1836,7 +1831,7 @@ export class WorkersScriptMigrationsRenamedClassesOutputReference extends cdktf.
     }
   }
 
-  // from - computed: false, optional: true, required: false
+  // from - computed: true, optional: true, required: false
   private _from?: string; 
   public get from() {
     return this.getStringAttribute('from');
@@ -1852,7 +1847,7 @@ export class WorkersScriptMigrationsRenamedClassesOutputReference extends cdktf.
     return this._from;
   }
 
-  // to - computed: false, optional: true, required: false
+  // to - computed: true, optional: true, required: false
   private _to?: string; 
   public get to() {
     return this.getStringAttribute('to');
@@ -1890,11 +1885,11 @@ export class WorkersScriptMigrationsRenamedClassesList extends cdktf.ComplexList
 }
 export interface WorkersScriptMigrationsStepsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -1985,7 +1980,7 @@ export class WorkersScriptMigrationsStepsRenamedClassesOutputReference extends c
     }
   }
 
-  // from - computed: false, optional: true, required: false
+  // from - computed: true, optional: true, required: false
   private _from?: string; 
   public get from() {
     return this.getStringAttribute('from');
@@ -2001,7 +1996,7 @@ export class WorkersScriptMigrationsStepsRenamedClassesOutputReference extends c
     return this._from;
   }
 
-  // to - computed: false, optional: true, required: false
+  // to - computed: true, optional: true, required: false
   private _to?: string; 
   public get to() {
     return this.getStringAttribute('to');
@@ -2039,15 +2034,15 @@ export class WorkersScriptMigrationsStepsRenamedClassesList extends cdktf.Comple
 }
 export interface WorkersScriptMigrationsStepsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#from_script WorkersScript#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#from_script WorkersScript#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -2151,7 +2146,7 @@ export class WorkersScriptMigrationsStepsTransferredClassesOutputReference exten
     }
   }
 
-  // from - computed: false, optional: true, required: false
+  // from - computed: true, optional: true, required: false
   private _from?: string; 
   public get from() {
     return this.getStringAttribute('from');
@@ -2167,7 +2162,7 @@ export class WorkersScriptMigrationsStepsTransferredClassesOutputReference exten
     return this._from;
   }
 
-  // from_script - computed: false, optional: true, required: false
+  // from_script - computed: true, optional: true, required: false
   private _fromScript?: string; 
   public get fromScript() {
     return this.getStringAttribute('from_script');
@@ -2183,7 +2178,7 @@ export class WorkersScriptMigrationsStepsTransferredClassesOutputReference exten
     return this._fromScript;
   }
 
-  // to - computed: false, optional: true, required: false
+  // to - computed: true, optional: true, required: false
   private _to?: string; 
   public get to() {
     return this.getStringAttribute('to');
@@ -2223,31 +2218,31 @@ export interface WorkersScriptMigrationsSteps {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
   */
   readonly renamedClasses?: WorkersScriptMigrationsStepsRenamedClasses[] | cdktf.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
   */
   readonly transferredClasses?: WorkersScriptMigrationsStepsTransferredClasses[] | cdktf.IResolvable;
 }
@@ -2377,7 +2372,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
     }
   }
 
-  // deleted_classes - computed: false, optional: true, required: false
+  // deleted_classes - computed: true, optional: true, required: false
   private _deletedClasses?: string[]; 
   public get deletedClasses() {
     return this.getListAttribute('deleted_classes');
@@ -2393,7 +2388,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
     return this._deletedClasses;
   }
 
-  // new_classes - computed: false, optional: true, required: false
+  // new_classes - computed: true, optional: true, required: false
   private _newClasses?: string[]; 
   public get newClasses() {
     return this.getListAttribute('new_classes');
@@ -2409,7 +2404,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
     return this._newClasses;
   }
 
-  // new_sqlite_classes - computed: false, optional: true, required: false
+  // new_sqlite_classes - computed: true, optional: true, required: false
   private _newSqliteClasses?: string[]; 
   public get newSqliteClasses() {
     return this.getListAttribute('new_sqlite_classes');
@@ -2425,7 +2420,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
     return this._newSqliteClasses;
   }
 
-  // renamed_classes - computed: false, optional: true, required: false
+  // renamed_classes - computed: true, optional: true, required: false
   private _renamedClasses = new WorkersScriptMigrationsStepsRenamedClassesList(this, "renamed_classes", false);
   public get renamedClasses() {
     return this._renamedClasses;
@@ -2441,7 +2436,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
     return this._renamedClasses.internalValue;
   }
 
-  // transferred_classes - computed: false, optional: true, required: false
+  // transferred_classes - computed: true, optional: true, required: false
   private _transferredClasses = new WorkersScriptMigrationsStepsTransferredClassesList(this, "transferred_classes", false);
   public get transferredClasses() {
     return this._transferredClasses;
@@ -2479,15 +2474,15 @@ export class WorkersScriptMigrationsStepsList extends cdktf.ComplexList {
 }
 export interface WorkersScriptMigrationsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#from_script WorkersScript#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#from_script WorkersScript#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
@@ -2591,7 +2586,7 @@ export class WorkersScriptMigrationsTransferredClassesOutputReference extends cd
     }
   }
 
-  // from - computed: false, optional: true, required: false
+  // from - computed: true, optional: true, required: false
   private _from?: string; 
   public get from() {
     return this.getStringAttribute('from');
@@ -2607,7 +2602,7 @@ export class WorkersScriptMigrationsTransferredClassesOutputReference extends cd
     return this._from;
   }
 
-  // from_script - computed: false, optional: true, required: false
+  // from_script - computed: true, optional: true, required: false
   private _fromScript?: string; 
   public get fromScript() {
     return this.getStringAttribute('from_script');
@@ -2623,7 +2618,7 @@ export class WorkersScriptMigrationsTransferredClassesOutputReference extends cd
     return this._fromScript;
   }
 
-  // to - computed: false, optional: true, required: false
+  // to - computed: true, optional: true, required: false
   private _to?: string; 
   public get to() {
     return this.getStringAttribute('to');
@@ -2663,49 +2658,49 @@ export interface WorkersScriptMigrations {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * Tag to set as the latest migration tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
   */
   readonly newTag?: string;
   /**
   * Tag used to verify against the latest migration tag for this Worker. If they don't match, the upload is rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
   */
   readonly oldTag?: string;
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
   */
   readonly renamedClasses?: WorkersScriptMigrationsRenamedClasses[] | cdktf.IResolvable;
   /**
   * Migrations to apply in order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#steps WorkersScript#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#steps WorkersScript#steps}
   */
   readonly steps?: WorkersScriptMigrationsSteps[] | cdktf.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
   */
   readonly transferredClasses?: WorkersScriptMigrationsTransferredClasses[] | cdktf.IResolvable;
 }
@@ -2872,7 +2867,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     }
   }
 
-  // deleted_classes - computed: false, optional: true, required: false
+  // deleted_classes - computed: true, optional: true, required: false
   private _deletedClasses?: string[]; 
   public get deletedClasses() {
     return this.getListAttribute('deleted_classes');
@@ -2888,7 +2883,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._deletedClasses;
   }
 
-  // new_classes - computed: false, optional: true, required: false
+  // new_classes - computed: true, optional: true, required: false
   private _newClasses?: string[]; 
   public get newClasses() {
     return this.getListAttribute('new_classes');
@@ -2904,7 +2899,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._newClasses;
   }
 
-  // new_sqlite_classes - computed: false, optional: true, required: false
+  // new_sqlite_classes - computed: true, optional: true, required: false
   private _newSqliteClasses?: string[]; 
   public get newSqliteClasses() {
     return this.getListAttribute('new_sqlite_classes');
@@ -2920,7 +2915,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._newSqliteClasses;
   }
 
-  // new_tag - computed: false, optional: true, required: false
+  // new_tag - computed: true, optional: true, required: false
   private _newTag?: string; 
   public get newTag() {
     return this.getStringAttribute('new_tag');
@@ -2936,7 +2931,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._newTag;
   }
 
-  // old_tag - computed: false, optional: true, required: false
+  // old_tag - computed: true, optional: true, required: false
   private _oldTag?: string; 
   public get oldTag() {
     return this.getStringAttribute('old_tag');
@@ -2952,7 +2947,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._oldTag;
   }
 
-  // renamed_classes - computed: false, optional: true, required: false
+  // renamed_classes - computed: true, optional: true, required: false
   private _renamedClasses = new WorkersScriptMigrationsRenamedClassesList(this, "renamed_classes", false);
   public get renamedClasses() {
     return this._renamedClasses;
@@ -2968,7 +2963,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._renamedClasses.internalValue;
   }
 
-  // steps - computed: false, optional: true, required: false
+  // steps - computed: true, optional: true, required: false
   private _steps = new WorkersScriptMigrationsStepsList(this, "steps", false);
   public get steps() {
     return this._steps;
@@ -2984,7 +2979,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._steps.internalValue;
   }
 
-  // transferred_classes - computed: false, optional: true, required: false
+  // transferred_classes - computed: true, optional: true, required: false
   private _transferredClasses = new WorkersScriptMigrationsTransferredClassesList(this, "transferred_classes", false);
   public get transferredClasses() {
     return this._transferredClasses;
@@ -3000,19 +2995,185 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return this._transferredClasses.internalValue;
   }
 }
+export interface WorkersScriptObservabilityLogs {
+  /**
+  * Whether logs are enabled for the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+  */
+  readonly headSamplingRate?: number;
+  /**
+  * Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#invocation_logs WorkersScript#invocation_logs}
+  */
+  readonly invocationLogs: boolean | cdktf.IResolvable;
+}
+
+export function workersScriptObservabilityLogsToTerraform(struct?: WorkersScriptObservabilityLogs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    head_sampling_rate: cdktf.numberToTerraform(struct!.headSamplingRate),
+    invocation_logs: cdktf.booleanToTerraform(struct!.invocationLogs),
+  }
+}
+
+
+export function workersScriptObservabilityLogsToHclTerraform(struct?: WorkersScriptObservabilityLogs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    head_sampling_rate: {
+      value: cdktf.numberToHclTerraform(struct!.headSamplingRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    invocation_logs: {
+      value: cdktf.booleanToHclTerraform(struct!.invocationLogs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkersScriptObservabilityLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkersScriptObservabilityLogs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._headSamplingRate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headSamplingRate = this._headSamplingRate;
+    }
+    if (this._invocationLogs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invocationLogs = this._invocationLogs;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkersScriptObservabilityLogs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+      this._headSamplingRate = undefined;
+      this._invocationLogs = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+      this._headSamplingRate = value.headSamplingRate;
+      this._invocationLogs = value.invocationLogs;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // head_sampling_rate - computed: false, optional: true, required: false
+  private _headSamplingRate?: number; 
+  public get headSamplingRate() {
+    return this.getNumberAttribute('head_sampling_rate');
+  }
+  public set headSamplingRate(value: number) {
+    this._headSamplingRate = value;
+  }
+  public resetHeadSamplingRate() {
+    this._headSamplingRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headSamplingRateInput() {
+    return this._headSamplingRate;
+  }
+
+  // invocation_logs - computed: false, optional: false, required: true
+  private _invocationLogs?: boolean | cdktf.IResolvable; 
+  public get invocationLogs() {
+    return this.getBooleanAttribute('invocation_logs');
+  }
+  public set invocationLogs(value: boolean | cdktf.IResolvable) {
+    this._invocationLogs = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invocationLogsInput() {
+    return this._invocationLogs;
+  }
+}
 export interface WorkersScriptObservability {
   /**
   * Whether observability is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#enabled WorkersScript#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
+  /**
+  * Log settings for the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#logs WorkersScript#logs}
+  */
+  readonly logs?: WorkersScriptObservabilityLogs;
 }
 
 export function workersScriptObservabilityToTerraform(struct?: WorkersScriptObservability | cdktf.IResolvable): any {
@@ -3023,6 +3184,7 @@ export function workersScriptObservabilityToTerraform(struct?: WorkersScriptObse
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     head_sampling_rate: cdktf.numberToTerraform(struct!.headSamplingRate),
+    logs: workersScriptObservabilityLogsToTerraform(struct!.logs),
   }
 }
 
@@ -3044,6 +3206,12 @@ export function workersScriptObservabilityToHclTerraform(struct?: WorkersScriptO
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    logs: {
+      value: workersScriptObservabilityLogsToHclTerraform(struct!.logs),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "WorkersScriptObservabilityLogs",
     },
   };
 
@@ -3077,6 +3245,10 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.headSamplingRate = this._headSamplingRate;
     }
+    if (this._logs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logs = this._logs?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -3086,6 +3258,7 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._headSamplingRate = undefined;
+      this._logs.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -3096,6 +3269,7 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._enabled = value.enabled;
       this._headSamplingRate = value.headSamplingRate;
+      this._logs.internalValue = value.logs;
     }
   }
 
@@ -3127,13 +3301,29 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
   public get headSamplingRateInput() {
     return this._headSamplingRate;
   }
+
+  // logs - computed: false, optional: true, required: false
+  private _logs = new WorkersScriptObservabilityLogsOutputReference(this, "logs");
+  public get logs() {
+    return this._logs;
+  }
+  public putLogs(value: WorkersScriptObservabilityLogs) {
+    this._logs.internalValue = value;
+  }
+  public resetLogs() {
+    this._logs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logsInput() {
+    return this._logs.internalValue;
+  }
 }
 export interface WorkersScriptPlacement {
   /**
   * Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
   * Available values: "smart".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#mode WorkersScript#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#mode WorkersScript#mode}
   */
   readonly mode?: string;
 }
@@ -3214,7 +3404,7 @@ export class WorkersScriptPlacementOutputReference extends cdktf.ComplexObject {
     return this.getStringAttribute('last_analyzed_at');
   }
 
-  // mode - computed: false, optional: true, required: false
+  // mode - computed: true, optional: true, required: false
   private _mode?: string; 
   public get mode() {
     return this.getStringAttribute('mode');
@@ -3239,19 +3429,19 @@ export interface WorkersScriptTailConsumers {
   /**
   * Optional environment if the Worker utilizes one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Optional dispatch namespace the script belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#namespace WorkersScript#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of Worker that is to be the consumer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service: string;
 }
@@ -3355,7 +3545,7 @@ export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObje
     }
   }
 
-  // environment - computed: false, optional: true, required: false
+  // environment - computed: true, optional: true, required: false
   private _environment?: string; 
   public get environment() {
     return this.getStringAttribute('environment');
@@ -3371,7 +3561,7 @@ export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObje
     return this._environment;
   }
 
-  // namespace - computed: false, optional: true, required: false
+  // namespace - computed: true, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
     return this.getStringAttribute('namespace');
@@ -3387,7 +3577,7 @@ export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObje
     return this._namespace;
   }
 
-  // service - computed: false, optional: false, required: true
+  // service - computed: true, optional: false, required: true
   private _service?: string; 
   public get service() {
     return this.getStringAttribute('service');
@@ -3422,7 +3612,7 @@ export class WorkersScriptTailConsumersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script cloudflare_workers_script}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script cloudflare_workers_script}
 */
 export class WorkersScript extends cdktf.TerraformResource {
 
@@ -3438,7 +3628,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersScript resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersScript to import
-  * @param importFromId The id of the existing WorkersScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3450,7 +3640,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_script cloudflare_workers_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script cloudflare_workers_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3461,7 +3651,7 @@ export class WorkersScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -3524,7 +3714,7 @@ export class WorkersScript extends cdktf.TerraformResource {
     return this._assets.internalValue;
   }
 
-  // bindings - computed: false, optional: true, required: false
+  // bindings - computed: true, optional: true, required: false
   private _bindings = new WorkersScriptBindingsList(this, "bindings", false);
   public get bindings() {
     return this._bindings;
@@ -3556,7 +3746,7 @@ export class WorkersScript extends cdktf.TerraformResource {
     return this._bodyPart;
   }
 
-  // compatibility_date - computed: false, optional: true, required: false
+  // compatibility_date - computed: true, optional: true, required: false
   private _compatibilityDate?: string; 
   public get compatibilityDate() {
     return this.getStringAttribute('compatibility_date');
@@ -3572,7 +3762,7 @@ export class WorkersScript extends cdktf.TerraformResource {
     return this._compatibilityDate;
   }
 
-  // compatibility_flags - computed: false, optional: true, required: false
+  // compatibility_flags - computed: true, optional: true, required: false
   private _compatibilityFlags?: string[]; 
   public get compatibilityFlags() {
     return this.getListAttribute('compatibility_flags');
@@ -3690,7 +3880,7 @@ export class WorkersScript extends cdktf.TerraformResource {
     return this._mainModule;
   }
 
-  // migrations - computed: false, optional: true, required: false
+  // migrations - computed: true, optional: true, required: false
   private _migrations = new WorkersScriptMigrationsOutputReference(this, "migrations");
   public get migrations() {
     return this._migrations;
@@ -3727,7 +3917,7 @@ export class WorkersScript extends cdktf.TerraformResource {
     return this._observability.internalValue;
   }
 
-  // placement - computed: false, optional: true, required: false
+  // placement - computed: true, optional: true, required: false
   private _placement = new WorkersScriptPlacementOutputReference(this, "placement");
   public get placement() {
     return this._placement;
@@ -3761,7 +3951,7 @@ export class WorkersScript extends cdktf.TerraformResource {
     return this.getNumberAttribute('startup_time_ms');
   }
 
-  // tail_consumers - computed: false, optional: true, required: false
+  // tail_consumers - computed: true, optional: true, required: false
   private _tailConsumers = new WorkersScriptTailConsumersList(this, "tail_consumers", false);
   public get tailConsumers() {
     return this._tailConsumers;
