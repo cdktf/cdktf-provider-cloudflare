@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicy(scope Construct, id *string, config NotificationPolicyConfig) NotificationPolicy
 ```
@@ -432,7 +432,7 @@ func ResetFilters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NotificationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NotificationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ notificationpolicy.NotificationPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NotificationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ notificationpolicy.NotificationPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NotificationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 &notificationpolicy.NotificationPolicyConfig {
 	Connection: interface{},
@@ -942,12 +942,12 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificatio
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	AlertType: *string,
-	Mechanisms: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.notificationPolicy.NotificationPolicyMechanisms,
+	Mechanisms: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.notificationPolicy.NotificationPolicyMechanisms,
 	Name: *string,
 	AlertInterval: *string,
 	Description: *string,
 	Enabled: interface{},
-	Filters: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.notificationPolicy.NotificationPolicyFilters,
+	Filters: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.notificationPolicy.NotificationPolicyFilters,
 }
 ```
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 &notificationpolicy.NotificationPolicyFilters {
 	Actions: *[]*string,
@@ -1857,7 +1857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 &notificationpolicy.NotificationPolicyMechanisms {
 	Email: interface{},
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 &notificationpolicy.NotificationPolicyMechanismsEmail {
 	Id: *string,
@@ -1954,7 +1954,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerduty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 &notificationpolicy.NotificationPolicyMechanismsPagerduty {
 	Id: *string,
@@ -1991,7 +1991,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 &notificationpolicy.NotificationPolicyMechanismsWebhooks {
 	Id: *string,
@@ -2030,7 +2030,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationPolicyFiltersOutputReference
 ```
@@ -3497,7 +3497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyMechanismsEmailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyMechanismsEmailList
 ```
@@ -3657,7 +3657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyMechanismsEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationPolicyMechanismsEmailOutputReference
 ```
@@ -3953,7 +3953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyMechanismsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationPolicyMechanismsOutputReference
 ```
@@ -4328,7 +4328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyMechanismsPagerdutyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyMechanismsPagerdutyList
 ```
@@ -4488,7 +4488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyMechanismsPagerdutyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationPolicyMechanismsPagerdutyOutputReference
 ```
@@ -4784,7 +4784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyMechanismsWebhooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyMechanismsWebhooksList
 ```
@@ -4944,7 +4944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicy"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy"
 
 notificationpolicy.NewNotificationPolicyMechanismsWebhooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationPolicyMechanismsWebhooksOutputReference
 ```

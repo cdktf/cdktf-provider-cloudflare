@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimit(scope Construct, id *string, config RateLimitConfig) RateLimit
 ```
@@ -404,7 +404,7 @@ func PutMatch(value RateLimitMatch)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.rateLimit.RateLimit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.RateLimit_IsConstruct(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.rateLimit.RateLimit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.RateLimit_IsTerraformElement(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ ratelimit.RateLimit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.rateLimit.RateLimit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.RateLimit_IsTerraformResource(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ ratelimit.RateLimit_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.rateLimit.RateLimit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.RateLimit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -847,11 +847,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitAction {
 	Mode: *string,
-	Response: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.rateLimit.RateLimitActionResponse,
+	Response: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.rateLimit.RateLimitActionResponse,
 	Timeout: *f64,
 }
 ```
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitActionResponse {
 	Body: *string,
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitBypass.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitBypass {
 
@@ -982,7 +982,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitConfig {
 	Connection: interface{},
@@ -992,8 +992,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.rateLimit.RateLimitAction,
-	Match: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.rateLimit.RateLimitMatch,
+	Action: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.rateLimit.RateLimitAction,
+	Match: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.rateLimit.RateLimitMatch,
 	Period: *f64,
 	Threshold: *f64,
 	ZoneId: *string,
@@ -1168,12 +1168,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitMatch {
 	Headers: interface{},
-	Request: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.rateLimit.RateLimitMatchRequest,
-	Response: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.rateLimit.RateLimitMatchResponse,
+	Request: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.rateLimit.RateLimitMatchRequest,
+	Response: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.rateLimit.RateLimitMatchResponse,
 }
 ```
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitMatchHeaders {
 	Name: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitMatchRequest {
 	Methods: *[]*string,
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 &ratelimit.RateLimitMatchResponse {
 	OriginTraffic: interface{},
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RateLimitActionOutputReference
 ```
@@ -1752,7 +1752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitActionResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RateLimitActionResponseOutputReference
 ```
@@ -2059,7 +2059,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitBypassList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitBypassList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RateLimitBypassList
 ```
@@ -2208,7 +2208,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitBypassOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitBypassOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RateLimitBypassOutputReference
 ```
@@ -2497,7 +2497,7 @@ func InternalValue() RateLimitBypass
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitMatchHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RateLimitMatchHeadersList
 ```
@@ -2657,7 +2657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitMatchHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RateLimitMatchHeadersOutputReference
 ```
@@ -3011,7 +3011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RateLimitMatchOutputReference
 ```
@@ -3386,7 +3386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitMatchRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RateLimitMatchRequestOutputReference
 ```
@@ -3722,7 +3722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ratelimit"
 
 ratelimit.NewRateLimitMatchResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RateLimitMatchResponseOutputReference
 ```

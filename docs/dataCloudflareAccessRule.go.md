@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.NewDataCloudflareAccessRule(scope Construct, id *string, config DataCloudflareAccessRuleConfig) DataCloudflareAccessRule
 ```
@@ -317,7 +317,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.DataCloudflareAccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.DataCloudflareAccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareaccessrule.DataCloudflareAccessRule_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.DataCloudflareAccessRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ datacloudflareaccessrule.DataCloudflareAccessRule_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.DataCloudflareAccessRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 &datacloudflareaccessrule.DataCloudflareAccessRuleConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareAccessRule.DataCloudflareAccessRuleFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareAccessRule.DataCloudflareAccessRuleFilter,
 	RuleId: *string,
 	ZoneId: *string,
 }
@@ -924,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 &datacloudflareaccessrule.DataCloudflareAccessRuleConfiguration {
 
@@ -937,10 +937,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 &datacloudflareaccessrule.DataCloudflareAccessRuleFilter {
-	Configuration: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareAccessRule.DataCloudflareAccessRuleFilterConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareAccessRule.DataCloudflareAccessRuleFilterConfiguration,
 	Direction: *string,
 	Match: *string,
 	Mode: *string,
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleFilterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 &datacloudflareaccessrule.DataCloudflareAccessRuleFilterConfiguration {
 	Target: *string,
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 &datacloudflareaccessrule.DataCloudflareAccessRuleScope {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.NewDataCloudflareAccessRuleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccessRuleConfigurationOutputReference
 ```
@@ -1390,7 +1390,7 @@ func InternalValue() DataCloudflareAccessRuleConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleFilterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.NewDataCloudflareAccessRuleFilterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccessRuleFilterConfigurationOutputReference
 ```
@@ -1697,7 +1697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.NewDataCloudflareAccessRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccessRuleFilterOutputReference
 ```
@@ -2133,7 +2133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccessRule.DataCloudflareAccessRuleScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccessrule"
 
 datacloudflareaccessrule.NewDataCloudflareAccessRuleScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccessRuleScopeOutputReference
 ```

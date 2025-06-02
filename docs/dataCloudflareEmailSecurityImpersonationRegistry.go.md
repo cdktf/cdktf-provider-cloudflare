@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 datacloudflareemailsecurityimpersonationregistry.NewDataCloudflareEmailSecurityImpersonationRegistry(scope Construct, id *string, config DataCloudflareEmailSecurityImpersonationRegistryConfig) DataCloudflareEmailSecurityImpersonationRegistry
 ```
@@ -303,7 +303,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpersonationRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpersonationRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpersonationRegistry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpersonationRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 &datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpersonationRegistryConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudfl
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	DisplayNameId: *f64,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistryFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistryFilter,
 }
 ```
 
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistryFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 &datacloudflareemailsecurityimpersonationregistry.DataCloudflareEmailSecurityImpersonationRegistryFilter {
 	Direction: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareEmailSecurityImpersonationRegistry.DataCloudflareEmailSecurityImpersonationRegistryFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareemailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityimpersonationregistry"
 
 datacloudflareemailsecurityimpersonationregistry.NewDataCloudflareEmailSecurityImpersonationRegistryFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareEmailSecurityImpersonationRegistryFilterOutputReference
 ```
