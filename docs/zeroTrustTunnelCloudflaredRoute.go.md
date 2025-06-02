@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredRoute.ZeroTrustTunnelCloudflaredRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrusttunnelcloudflaredroute"
 
 zerotrusttunnelcloudflaredroute.NewZeroTrustTunnelCloudflaredRoute(scope Construct, id *string, config ZeroTrustTunnelCloudflaredRouteConfig) ZeroTrustTunnelCloudflaredRoute
 ```
@@ -392,7 +392,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredRoute.ZeroTrustTunnelCloudflaredRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrusttunnelcloudflaredroute"
 
 zerotrusttunnelcloudflaredroute.ZeroTrustTunnelCloudflaredRoute_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredRoute.ZeroTrustTunnelCloudflaredRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrusttunnelcloudflaredroute"
 
 zerotrusttunnelcloudflaredroute.ZeroTrustTunnelCloudflaredRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ zerotrusttunnelcloudflaredroute.ZeroTrustTunnelCloudflaredRoute_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredRoute.ZeroTrustTunnelCloudflaredRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrusttunnelcloudflaredroute"
 
 zerotrusttunnelcloudflaredroute.ZeroTrustTunnelCloudflaredRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ zerotrusttunnelcloudflaredroute.ZeroTrustTunnelCloudflaredRoute_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredRoute.ZeroTrustTunnelCloudflaredRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrusttunnelcloudflaredroute"
 
 zerotrusttunnelcloudflaredroute.ZeroTrustTunnelCloudflaredRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredRoute.ZeroTrustTunnelCloudflaredRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrusttunnelcloudflaredroute"
 
 &zerotrusttunnelcloudflaredroute.ZeroTrustTunnelCloudflaredRouteConfig {
 	Connection: interface{},

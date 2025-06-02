@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.NewR2BucketCors(scope Construct, id *string, config R2BucketCorsConfig) R2BucketCors
 ```
@@ -405,7 +405,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCors.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.R2BucketCors_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.R2BucketCors_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ r2bucketcors.R2BucketCors_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCors.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.R2BucketCors_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ r2bucketcors.R2BucketCors_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.R2BucketCors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 &r2bucketcors.R2BucketCorsConfig {
 	Connection: interface{},
@@ -946,10 +946,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 &r2bucketcors.R2BucketCorsRules {
-	Allowed: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.r2BucketCors.R2BucketCorsRulesAllowed,
+	Allowed: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.r2BucketCors.R2BucketCorsRulesAllowed,
 	ExposeHeaders: *[]*string,
 	Id: *string,
 	MaxAgeSeconds: *f64,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 &r2bucketcors.R2BucketCorsRulesAllowed {
 	Methods: *[]*string,
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.NewR2BucketCorsRulesAllowedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2BucketCorsRulesAllowedOutputReference
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.NewR2BucketCorsRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) R2BucketCorsRulesList
 ```
@@ -1587,7 +1587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/r2bucketcors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketcors"
 
 r2bucketcors.NewR2BucketCorsRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) R2BucketCorsRulesOutputReference
 ```

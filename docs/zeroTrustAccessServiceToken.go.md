@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessservicetoken"
 
 zerotrustaccessservicetoken.NewZeroTrustAccessServiceToken(scope Construct, id *string, config ZeroTrustAccessServiceTokenConfig) ZeroTrustAccessServiceToken
 ```
@@ -399,7 +399,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessservicetoken"
 
 zerotrustaccessservicetoken.ZeroTrustAccessServiceToken_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessservicetoken"
 
 zerotrustaccessservicetoken.ZeroTrustAccessServiceToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ zerotrustaccessservicetoken.ZeroTrustAccessServiceToken_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessservicetoken"
 
 zerotrustaccessservicetoken.ZeroTrustAccessServiceToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ zerotrustaccessservicetoken.ZeroTrustAccessServiceToken_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessservicetoken"
 
 zerotrustaccessservicetoken.ZeroTrustAccessServiceToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessservicetoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessservicetoken"
 
 &zerotrustaccessservicetoken.ZeroTrustAccessServiceTokenConfig {
 	Connection: interface{},

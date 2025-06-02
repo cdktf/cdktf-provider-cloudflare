@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestpriority"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestpriority"
 
 cloudforceonerequestpriority.NewCloudforceOneRequestPriority(scope Construct, id *string, config CloudforceOneRequestPriorityConfig) CloudforceOneRequestPriority
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestpriority"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestpriority"
 
 cloudforceonerequestpriority.CloudforceOneRequestPriority_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestpriority"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestpriority"
 
 cloudforceonerequestpriority.CloudforceOneRequestPriority_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ cloudforceonerequestpriority.CloudforceOneRequestPriority_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestpriority"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestpriority"
 
 cloudforceonerequestpriority.CloudforceOneRequestPriority_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ cloudforceonerequestpriority.CloudforceOneRequestPriority_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestpriority"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestpriority"
 
 cloudforceonerequestpriority.CloudforceOneRequestPriority_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudforceonerequestpriority"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestpriority"
 
 &cloudforceonerequestpriority.CloudforceOneRequestPriorityConfig {
 	Connection: interface{},

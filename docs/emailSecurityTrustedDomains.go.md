@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 emailsecuritytrusteddomains.NewEmailSecurityTrustedDomains(scope Construct, id *string, config EmailSecurityTrustedDomainsConfig) EmailSecurityTrustedDomains
 ```
@@ -433,7 +433,7 @@ func ResetPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 emailsecuritytrusteddomains.EmailSecurityTrustedDomains_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 emailsecuritytrusteddomains.EmailSecurityTrustedDomains_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ emailsecuritytrusteddomains.EmailSecurityTrustedDomains_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 emailsecuritytrusteddomains.EmailSecurityTrustedDomains_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ emailsecuritytrusteddomains.EmailSecurityTrustedDomains_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 emailsecuritytrusteddomains.EmailSecurityTrustedDomains_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 &emailsecuritytrusteddomains.EmailSecurityTrustedDomainsBody {
 	IsRecent: interface{},
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 &emailsecuritytrusteddomains.EmailSecurityTrustedDomainsConfig {
 	Connection: interface{},
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 emailsecuritytrusteddomains.NewEmailSecurityTrustedDomainsBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailSecurityTrustedDomainsBodyList
 ```
@@ -1375,7 +1375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailsecuritytrusteddomains"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains"
 
 emailsecuritytrusteddomains.NewEmailSecurityTrustedDomainsBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailSecurityTrustedDomainsBodyOutputReference
 ```

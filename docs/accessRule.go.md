@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessRule.AccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 accessrule.NewAccessRule(scope Construct, id *string, config AccessRuleConfig) AccessRule
 ```
@@ -412,7 +412,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.accessRule.AccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 accessrule.AccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.accessRule.AccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 accessrule.AccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ accessrule.AccessRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.accessRule.AccessRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 accessrule.AccessRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ accessrule.AccessRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.accessRule.AccessRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 accessrule.AccessRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessRule.AccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 &accessrule.AccessRuleConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Configuration: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.accessRule.AccessRuleConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.accessRule.AccessRuleConfiguration,
 	Mode: *string,
 	AccountId: *string,
 	Notes: *string,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 &accessrule.AccessRuleConfiguration {
 	Target: *string,
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.accessRule.AccessRuleScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 &accessrule.AccessRuleScope {
 
@@ -1116,7 +1116,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 accessrule.NewAccessRuleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessRuleConfigurationOutputReference
 ```
@@ -1423,7 +1423,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accessRule.AccessRuleScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accessrule"
 
 accessrule.NewAccessRuleScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessRuleScopeOutputReference
 ```

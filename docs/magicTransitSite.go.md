@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 magictransitsite.NewMagicTransitSite(scope Construct, id *string, config MagicTransitSiteConfig) MagicTransitSite
 ```
@@ -426,7 +426,7 @@ func ResetSecondaryConnectorId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 magictransitsite.MagicTransitSite_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 magictransitsite.MagicTransitSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ magictransitsite.MagicTransitSite_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 magictransitsite.MagicTransitSite_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ magictransitsite.MagicTransitSite_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 magictransitsite.MagicTransitSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 &magictransitsite.MagicTransitSiteConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransi
 	ConnectorId: *string,
 	Description: *string,
 	HaMode: interface{},
-	Location: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12.magicTransitSite.MagicTransitSiteLocation,
+	Location: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.magicTransitSite.MagicTransitSiteLocation,
 	SecondaryConnectorId: *string,
 }
 ```
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 &magictransitsite.MagicTransitSiteLocation {
 	Lat: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magictransitsite"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsite"
 
 magictransitsite.NewMagicTransitSiteLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicTransitSiteLocationOutputReference
 ```

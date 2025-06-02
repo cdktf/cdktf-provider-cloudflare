@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersroute"
 
 workersroute.NewWorkersRoute(scope Construct, id *string, config WorkersRouteConfig) WorkersRoute
 ```
@@ -385,7 +385,7 @@ func ResetScript()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersroute"
 
 workersroute.WorkersRoute_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersroute"
 
 workersroute.WorkersRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ workersroute.WorkersRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersroute"
 
 workersroute.WorkersRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ workersroute.WorkersRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workersRoute.WorkersRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersroute"
 
 workersroute.WorkersRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersRoute.WorkersRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersroute"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersroute"
 
 &workersroute.WorkersRouteConfig {
 	Connection: interface{},
