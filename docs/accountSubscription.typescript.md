@@ -4,7 +4,7 @@
 
 ### AccountSubscription <a name="AccountSubscription" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription cloudflare_account_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription cloudflare_account_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.Initializer"></a>
 
@@ -76,7 +76,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.putRatePlan">putRatePlan</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.resetFrequency">resetFrequency</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.resetRatePlan">resetRatePlan</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.resetSubscriptionIdentifier">resetSubscriptionIdentifier</a></code> | *No description.* |
 
 ---
 
@@ -392,12 +391,6 @@ public resetFrequency(): void
 public resetRatePlan(): void
 ```
 
-##### `resetSubscriptionIdentifier` <a name="resetSubscriptionIdentifier" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.resetSubscriptionIdentifier"></a>
-
-```typescript
-public resetSubscriptionIdentifier(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -501,7 +494,7 @@ The construct id used in the generated config for the AccountSubscription to imp
 
 The id of the existing AccountSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,10 +534,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.frequencyInput">frequencyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.ratePlanInput">ratePlanInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlan">AccountSubscriptionRatePlan</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.subscriptionIdentifierInput">subscriptionIdentifierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.frequency">frequency</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.subscriptionIdentifier">subscriptionIdentifier</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -790,16 +781,6 @@ public readonly ratePlanInput: IResolvable | AccountSubscriptionRatePlan;
 
 ---
 
-##### `subscriptionIdentifierInput`<sup>Optional</sup> <a name="subscriptionIdentifierInput" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.subscriptionIdentifierInput"></a>
-
-```typescript
-public readonly subscriptionIdentifierInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.accountId"></a>
 
 ```typescript
@@ -814,16 +795,6 @@ public readonly accountId: string;
 
 ```typescript
 public readonly frequency: string;
-```
-
-- *Type:* string
-
----
-
-##### `subscriptionIdentifier`<sup>Required</sup> <a name="subscriptionIdentifier" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscription.property.subscriptionIdentifier"></a>
-
-```typescript
-public readonly subscriptionIdentifier: string;
 ```
 
 - *Type:* string
@@ -874,7 +845,6 @@ const accountSubscriptionConfig: accountSubscription.AccountSubscriptionConfig =
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.property.frequency">frequency</a></code> | <code>string</code> | How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly". |
 | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.property.ratePlan">ratePlan</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlan">AccountSubscriptionRatePlan</a></code> | The rate plan applied to the subscription. |
-| <code><a href="#@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.property.subscriptionIdentifier">subscriptionIdentifier</a></code> | <code>string</code> | Subscription identifier tag. |
 
 ---
 
@@ -958,7 +928,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
 
 ---
 
@@ -972,7 +942,7 @@ public readonly frequency: string;
 
 How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
 
 ---
 
@@ -986,21 +956,7 @@ public readonly ratePlan: AccountSubscriptionRatePlan;
 
 The rate plan applied to the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
-
----
-
-##### `subscriptionIdentifier`<sup>Optional</sup> <a name="subscriptionIdentifier" id="@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.property.subscriptionIdentifier"></a>
-
-```typescript
-public readonly subscriptionIdentifier: string;
-```
-
-- *Type:* string
-
-Subscription identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#subscription_identifier AccountSubscription#subscription_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
 
 ---
 
@@ -1038,7 +994,7 @@ public readonly currency: string;
 
 The currency applied to the rate plan subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#currency AccountSubscription#currency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#currency AccountSubscription#currency}
 
 ---
 
@@ -1052,7 +1008,7 @@ public readonly externallyManaged: boolean | IResolvable;
 
 Whether this rate plan is managed externally from Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#externally_managed AccountSubscription#externally_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#externally_managed AccountSubscription#externally_managed}
 
 ---
 
@@ -1066,7 +1022,7 @@ public readonly id: string;
 
 The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#id AccountSubscription#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#id AccountSubscription#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1083,7 +1039,7 @@ public readonly isContract: boolean | IResolvable;
 
 Whether a rate plan is enterprise-based (or newly adopted term contract).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#is_contract AccountSubscription#is_contract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#is_contract AccountSubscription#is_contract}
 
 ---
 
@@ -1097,7 +1053,7 @@ public readonly publicName: string;
 
 The full name of the rate plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#public_name AccountSubscription#public_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#public_name AccountSubscription#public_name}
 
 ---
 
@@ -1111,7 +1067,7 @@ public readonly scope: string;
 
 The scope that this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#scope AccountSubscription#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#scope AccountSubscription#scope}
 
 ---
 
@@ -1125,7 +1081,7 @@ public readonly sets: string[];
 
 The list of sets this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription#sets AccountSubscription#sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription#sets AccountSubscription#sets}
 
 ---
 
