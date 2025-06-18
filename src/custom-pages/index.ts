@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,38 @@ export interface CustomPagesConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages#account_id CustomPages#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages#account_id CustomPages#account_id}
   */
   readonly accountId?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages#identifier CustomPages#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages#identifier CustomPages#identifier}
   */
   readonly identifier: string;
   /**
   * The custom page state.
   * Available values: "default", "customized".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages#state CustomPages#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages#state CustomPages#state}
   */
   readonly state: string;
   /**
   * The URL associated with the custom page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages#url CustomPages#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages#url CustomPages#url}
   */
   readonly url: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages#zone_id CustomPages#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages#zone_id CustomPages#zone_id}
   */
   readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages cloudflare_custom_pages}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages cloudflare_custom_pages}
 */
 export class CustomPages extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class CustomPages extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomPages resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomPages to import
-  * @param importFromId The id of the existing CustomPages that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomPages that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomPages to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class CustomPages extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/custom_pages cloudflare_custom_pages} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/custom_pages cloudflare_custom_pages} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class CustomPages extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_pages',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

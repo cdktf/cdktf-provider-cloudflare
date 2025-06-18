@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,26 +15,26 @@ export interface DataCloudflareR2BucketEventNotificationConfig extends cdktf.Ter
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification#account_id DataCloudflareR2BucketEventNotification#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification#account_id DataCloudflareR2BucketEventNotification#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification#bucket_name DataCloudflareR2BucketEventNotification#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification#bucket_name DataCloudflareR2BucketEventNotification#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Queue ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification#queue_id DataCloudflareR2BucketEventNotification#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification#queue_id DataCloudflareR2BucketEventNotification#queue_id}
   */
   readonly queueId: string;
 }
-export interface DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionCondition {
+export interface DataCloudflareR2BucketEventNotificationRules {
 }
 
-export function dataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionConditionToTerraform(struct?: DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionCondition): any {
+export function dataCloudflareR2BucketEventNotificationRulesToTerraform(struct?: DataCloudflareR2BucketEventNotificationRules): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -44,7 +44,7 @@ export function dataCloudflareR2BucketEventNotificationAbortMultipartUploadsTran
 }
 
 
-export function dataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionConditionToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionCondition): any {
+export function dataCloudflareR2BucketEventNotificationRulesToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationRules): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -54,358 +54,7 @@ export function dataCloudflareR2BucketEventNotificationAbortMultipartUploadsTran
   return attrs;
 }
 
-export class DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // max_age - computed: true, optional: false, required: false
-  public get maxAge() {
-    return this.getNumberAttribute('max_age');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-}
-export interface DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransition {
-}
-
-export function dataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionToTerraform(struct?: DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // condition - computed: true, optional: false, required: false
-  private _condition = new DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionConditionOutputReference(this, "condition");
-  public get condition() {
-    return this._condition;
-  }
-}
-export interface DataCloudflareR2BucketEventNotificationConditions {
-}
-
-export function dataCloudflareR2BucketEventNotificationConditionsToTerraform(struct?: DataCloudflareR2BucketEventNotificationConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareR2BucketEventNotificationConditionsToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareR2BucketEventNotificationConditionsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): DataCloudflareR2BucketEventNotificationConditions | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareR2BucketEventNotificationConditions | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // prefix - computed: true, optional: false, required: false
-  public get prefix() {
-    return this.getStringAttribute('prefix');
-  }
-}
-export interface DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionCondition {
-}
-
-export function dataCloudflareR2BucketEventNotificationDeleteObjectsTransitionConditionToTerraform(struct?: DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareR2BucketEventNotificationDeleteObjectsTransitionConditionToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // date - computed: true, optional: false, required: false
-  public get date() {
-    return this.getStringAttribute('date');
-  }
-
-  // max_age - computed: true, optional: false, required: false
-  public get maxAge() {
-    return this.getNumberAttribute('max_age');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-}
-export interface DataCloudflareR2BucketEventNotificationDeleteObjectsTransition {
-}
-
-export function dataCloudflareR2BucketEventNotificationDeleteObjectsTransitionToTerraform(struct?: DataCloudflareR2BucketEventNotificationDeleteObjectsTransition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareR2BucketEventNotificationDeleteObjectsTransitionToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationDeleteObjectsTransition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): DataCloudflareR2BucketEventNotificationDeleteObjectsTransition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareR2BucketEventNotificationDeleteObjectsTransition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // condition - computed: true, optional: false, required: false
-  private _condition = new DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionConditionOutputReference(this, "condition");
-  public get condition() {
-    return this._condition;
-  }
-}
-export interface DataCloudflareR2BucketEventNotificationStorageClassTransitionsCondition {
-}
-
-export function dataCloudflareR2BucketEventNotificationStorageClassTransitionsConditionToTerraform(struct?: DataCloudflareR2BucketEventNotificationStorageClassTransitionsCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareR2BucketEventNotificationStorageClassTransitionsConditionToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationStorageClassTransitionsCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareR2BucketEventNotificationStorageClassTransitionsConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): DataCloudflareR2BucketEventNotificationStorageClassTransitionsCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataCloudflareR2BucketEventNotificationStorageClassTransitionsCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // date - computed: true, optional: false, required: false
-  public get date() {
-    return this.getStringAttribute('date');
-  }
-
-  // max_age - computed: true, optional: false, required: false
-  public get maxAge() {
-    return this.getNumberAttribute('max_age');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-}
-export interface DataCloudflareR2BucketEventNotificationStorageClassTransitions {
-}
-
-export function dataCloudflareR2BucketEventNotificationStorageClassTransitionsToTerraform(struct?: DataCloudflareR2BucketEventNotificationStorageClassTransitions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataCloudflareR2BucketEventNotificationStorageClassTransitionsToHclTerraform(struct?: DataCloudflareR2BucketEventNotificationStorageClassTransitions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataCloudflareR2BucketEventNotificationStorageClassTransitionsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareR2BucketEventNotificationRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -418,13 +67,13 @@ export class DataCloudflareR2BucketEventNotificationStorageClassTransitionsOutpu
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCloudflareR2BucketEventNotificationStorageClassTransitions | undefined {
+  public get internalValue(): DataCloudflareR2BucketEventNotificationRules | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareR2BucketEventNotificationStorageClassTransitions | undefined) {
+  public set internalValue(value: DataCloudflareR2BucketEventNotificationRules | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -433,19 +82,38 @@ export class DataCloudflareR2BucketEventNotificationStorageClassTransitionsOutpu
     }
   }
 
-  // condition - computed: true, optional: false, required: false
-  private _condition = new DataCloudflareR2BucketEventNotificationStorageClassTransitionsConditionOutputReference(this, "condition");
-  public get condition() {
-    return this._condition;
+  // actions - computed: true, optional: false, required: false
+  public get actions() {
+    return this.getListAttribute('actions');
   }
 
-  // storage_class - computed: true, optional: false, required: false
-  public get storageClass() {
-    return this.getStringAttribute('storage_class');
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // prefix - computed: true, optional: false, required: false
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+
+  // rule_id - computed: true, optional: false, required: false
+  public get ruleId() {
+    return this.getStringAttribute('rule_id');
+  }
+
+  // suffix - computed: true, optional: false, required: false
+  public get suffix() {
+    return this.getStringAttribute('suffix');
   }
 }
 
-export class DataCloudflareR2BucketEventNotificationStorageClassTransitionsList extends cdktf.ComplexList {
+export class DataCloudflareR2BucketEventNotificationRulesList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -459,13 +127,13 @@ export class DataCloudflareR2BucketEventNotificationStorageClassTransitionsList 
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataCloudflareR2BucketEventNotificationStorageClassTransitionsOutputReference {
-    return new DataCloudflareR2BucketEventNotificationStorageClassTransitionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataCloudflareR2BucketEventNotificationRulesOutputReference {
+    return new DataCloudflareR2BucketEventNotificationRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}
 */
 export class DataCloudflareR2BucketEventNotification extends cdktf.TerraformDataSource {
 
@@ -481,7 +149,7 @@ export class DataCloudflareR2BucketEventNotification extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataCloudflareR2BucketEventNotification resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareR2BucketEventNotification to import
-  * @param importFromId The id of the existing DataCloudflareR2BucketEventNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareR2BucketEventNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareR2BucketEventNotification to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -493,7 +161,7 @@ export class DataCloudflareR2BucketEventNotification extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -504,7 +172,7 @@ export class DataCloudflareR2BucketEventNotification extends cdktf.TerraformData
       terraformResourceType: 'cloudflare_r2_bucket_event_notification',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -523,12 +191,6 @@ export class DataCloudflareR2BucketEventNotification extends cdktf.TerraformData
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // abort_multipart_uploads_transition - computed: true, optional: false, required: false
-  private _abortMultipartUploadsTransition = new DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionOutputReference(this, "abort_multipart_uploads_transition");
-  public get abortMultipartUploadsTransition() {
-    return this._abortMultipartUploadsTransition;
-  }
 
   // account_id - computed: false, optional: false, required: true
   private _accountId?: string; 
@@ -556,28 +218,6 @@ export class DataCloudflareR2BucketEventNotification extends cdktf.TerraformData
     return this._bucketName;
   }
 
-  // conditions - computed: true, optional: false, required: false
-  private _conditions = new DataCloudflareR2BucketEventNotificationConditionsOutputReference(this, "conditions");
-  public get conditions() {
-    return this._conditions;
-  }
-
-  // delete_objects_transition - computed: true, optional: false, required: false
-  private _deleteObjectsTransition = new DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionOutputReference(this, "delete_objects_transition");
-  public get deleteObjectsTransition() {
-    return this._deleteObjectsTransition;
-  }
-
-  // enabled - computed: true, optional: false, required: false
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-
   // queue_id - computed: false, optional: false, required: true
   private _queueId?: string; 
   public get queueId() {
@@ -591,10 +231,15 @@ export class DataCloudflareR2BucketEventNotification extends cdktf.TerraformData
     return this._queueId;
   }
 
-  // storage_class_transitions - computed: true, optional: false, required: false
-  private _storageClassTransitions = new DataCloudflareR2BucketEventNotificationStorageClassTransitionsList(this, "storage_class_transitions", false);
-  public get storageClassTransitions() {
-    return this._storageClassTransitions;
+  // queue_name - computed: true, optional: false, required: false
+  public get queueName() {
+    return this.getStringAttribute('queue_name');
+  }
+
+  // rules - computed: true, optional: false, required: false
+  private _rules = new DataCloudflareR2BucketEventNotificationRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
   }
 
   // =========
