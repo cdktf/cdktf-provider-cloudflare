@@ -4,7 +4,7 @@
 
 ### AccountDnsSettingsInternalView <a name="AccountDnsSettingsInternalView" id="@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The list of zones linked to this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
 
 ---
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the AccountDnsSettingsInternal
 
 The id of the existing AccountDnsSettingsInternalView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1015,7 +1015,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
 
 ---
 
@@ -1029,7 +1029,7 @@ name: str
 
 The name of the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
 
 ---
 
@@ -1043,7 +1043,7 @@ zones: typing.List[str]
 
 The list of zones linked to this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
 
 ---
 

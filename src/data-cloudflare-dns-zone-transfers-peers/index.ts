@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_zone_transfers_peers
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_zone_transfers_peers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareDnsZoneTransfersPeersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_zone_transfers_peers#account_id DataCloudflareDnsZoneTransfersPeers#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_zone_transfers_peers#account_id DataCloudflareDnsZoneTransfersPeers#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_zone_transfers_peers#max_items DataCloudflareDnsZoneTransfersPeers#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_zone_transfers_peers#max_items DataCloudflareDnsZoneTransfersPeers#max_items}
   */
   readonly maxItems?: number;
 }
@@ -125,7 +125,7 @@ export class DataCloudflareDnsZoneTransfersPeersResultList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers}
 */
 export class DataCloudflareDnsZoneTransfersPeers extends cdktf.TerraformDataSource {
 
@@ -141,7 +141,7 @@ export class DataCloudflareDnsZoneTransfersPeers extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataCloudflareDnsZoneTransfersPeers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareDnsZoneTransfersPeers to import
-  * @param importFromId The id of the existing DataCloudflareDnsZoneTransfersPeers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_zone_transfers_peers#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareDnsZoneTransfersPeers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_zone_transfers_peers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareDnsZoneTransfersPeers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -153,7 +153,7 @@ export class DataCloudflareDnsZoneTransfersPeers extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class DataCloudflareDnsZoneTransfersPeers extends cdktf.TerraformDataSour
       terraformResourceType: 'cloudflare_dns_zone_transfers_peers',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

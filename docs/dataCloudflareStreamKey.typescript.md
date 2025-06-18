@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreamKey <a name="DataCloudflareStreamKey" id="@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/stream_key cloudflare_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/stream_key cloudflare_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareStreamKey to
 
 The id of the existing DataCloudflareStreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,7 +687,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
 
 ---
 

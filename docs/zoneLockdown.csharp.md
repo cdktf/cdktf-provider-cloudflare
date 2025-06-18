@@ -4,7 +4,7 @@
 
 ### ZoneLockdown <a name="ZoneLockdown" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.Initializer"></a>
 
@@ -74,6 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.putConfigurations">PutConfigurations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.resetPaused">ResetPaused</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.resetPriority">ResetPriority</a></code> | *No description.* |
 
 ---
 
@@ -377,6 +380,24 @@ private void PutConfigurations(object Value)
 
 ---
 
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.resetDescription"></a>
+
+```csharp
+private void ResetDescription()
+```
+
+##### `ResetPaused` <a name="ResetPaused" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.resetPaused"></a>
+
+```csharp
+private void ResetPaused()
+```
+
+##### `ResetPriority` <a name="ResetPriority" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.resetPriority"></a>
+
+```csharp
+private void ResetPriority()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -480,7 +501,7 @@ The construct id used in the generated config for the ZoneLockdown to import.
 
 The id of the existing ZoneLockdown that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -512,13 +533,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.configurations">Configurations</a></code> | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList">ZoneLockdownConfigurationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.createdOn">CreatedOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.modifiedOn">ModifiedOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.paused">Paused</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.configurationsInput">ConfigurationsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.pausedInput">PausedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.priorityInput">PriorityInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.urlsInput">UrlsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.paused">Paused</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.priority">Priority</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.urls">Urls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.zoneId">ZoneId</a></code> | <code>string</code> | *No description.* |
 
@@ -686,16 +711,6 @@ public string CreatedOn { get; }
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.description"></a>
-
-```csharp
-public string Description { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.id"></a>
 
 ```csharp
@@ -716,16 +731,6 @@ public string ModifiedOn { get; }
 
 ---
 
-##### `Paused`<sup>Required</sup> <a name="Paused" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.paused"></a>
-
-```csharp
-public IResolvable Paused { get; }
-```
-
-- *Type:* HashiCorp.Cdktf.IResolvable
-
----
-
 ##### `ConfigurationsInput`<sup>Optional</sup> <a name="ConfigurationsInput" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.configurationsInput"></a>
 
 ```csharp
@@ -733,6 +738,36 @@ public object ConfigurationsInput { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.descriptionInput"></a>
+
+```csharp
+public string DescriptionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PausedInput`<sup>Optional</sup> <a name="PausedInput" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.pausedInput"></a>
+
+```csharp
+public object PausedInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.priorityInput"></a>
+
+```csharp
+public double PriorityInput { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -753,6 +788,36 @@ public string ZoneIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Paused`<sup>Required</sup> <a name="Paused" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.paused"></a>
+
+```csharp
+public object Paused { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown.property.priority"></a>
+
+```csharp
+public double Priority { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -813,7 +878,10 @@ new ZoneLockdownConfig {
     object[] Provisioners = null,
     object Configurations,
     string[] Urls,
-    string ZoneId
+    string ZoneId,
+    string Description = null,
+    object Paused = null,
+    double Priority = null
 };
 ```
 
@@ -831,6 +899,9 @@ new ZoneLockdownConfig {
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.configurations">Configurations</a></code> | <code>object</code> | A list of IP addresses or CIDR ranges that will be allowed to access the URLs specified in the Zone Lockdown rule. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.urls">Urls</a></code> | <code>string[]</code> | The URLs to include in the current WAF override. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Defines an identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.description">Description</a></code> | <code>string</code> | An informative summary of the rate limit. This value is sanitized and any tags will be removed. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.paused">Paused</a></code> | <code>object</code> | When true, indicates that the rule is currently paused. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.priority">Priority</a></code> | <code>double</code> | The priority of the rule to control the processing order. |
 
 ---
 
@@ -916,7 +987,7 @@ A list of IP addresses or CIDR ranges that will be allowed to access the URLs sp
 
 You can include any number of `ip` or `ip_range` configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
 
 ---
 
@@ -932,7 +1003,7 @@ The URLs to include in the current WAF override.
 
 You can use wildcards. Each entered URL will be escaped before use, which means you can only use simple wildcard patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
 
 ---
 
@@ -946,7 +1017,51 @@ public string ZoneId { get; set; }
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.description"></a>
+
+```csharp
+public string Description { get; set; }
+```
+
+- *Type:* string
+
+An informative summary of the rate limit. This value is sanitized and any tags will be removed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#description ZoneLockdown#description}
+
+---
+
+##### `Paused`<sup>Optional</sup> <a name="Paused" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.paused"></a>
+
+```csharp
+public object Paused { get; set; }
+```
+
+- *Type:* object
+
+When true, indicates that the rule is currently paused.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
+
+---
+
+##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig.property.priority"></a>
+
+```csharp
+public double Priority { get; set; }
+```
+
+- *Type:* double
+
+The priority of the rule to control the processing order.
+
+A lower number indicates higher priority. If not provided, any rules with a configured priority will be processed before rules without a priority.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#priority ZoneLockdown#priority}
 
 ---
 
@@ -985,7 +1100,7 @@ The configuration target.
 You must set the target to `ip` when specifying an IP address in the Zone Lockdown rule.
 Available values: "ip", "ip_range".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
 
 ---
 
@@ -999,7 +1114,7 @@ public string Value { get; set; }
 
 The IP address to match. This address will be compared to the IP address of incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
 
 ---
 
