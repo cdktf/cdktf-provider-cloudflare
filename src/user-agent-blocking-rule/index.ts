@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface UserAgentBlockingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
   */
   readonly configuration: UserAgentBlockingRuleConfiguration;
+  /**
+  * An informative summary of the rule. This value is sanitized and any tags will be removed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
+  */
+  readonly description?: string;
   /**
   * The action to apply to a matched request.
   * Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
   */
   readonly mode: string;
   /**
-  * The unique identifier of the User Agent Blocking rule.
+  * When true, indicates that the rule is currently paused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule#ua_rule_id UserAgentBlockingRule#ua_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
   */
-  readonly uaRuleId?: string;
+  readonly paused?: boolean | cdktf.IResolvable;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
   */
   readonly zoneId: string;
 }
@@ -41,13 +47,13 @@ export interface UserAgentBlockingRuleConfiguration {
   * The configuration target. You must set the target to `ua` when specifying a user agent in the rule.
   * Available values: "ua".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
   */
   readonly target?: string;
   /**
   * the user agent to exactly match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
   */
   readonly value?: string;
 }
@@ -170,7 +176,7 @@ export class UserAgentBlockingRuleConfigurationOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
 */
 export class UserAgentBlockingRule extends cdktf.TerraformResource {
 
@@ -186,7 +192,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserAgentBlockingRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserAgentBlockingRule to import
-  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserAgentBlockingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -198,7 +204,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -209,7 +215,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_user_agent_blocking_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -221,8 +227,9 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._configuration.internalValue = config.configuration;
+    this._description = config.description;
     this._mode = config.mode;
-    this._uaRuleId = config.uaRuleId;
+    this._paused = config.paused;
     this._zoneId = config.zoneId;
   }
 
@@ -243,6 +250,27 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
     return this._configuration.internalValue;
   }
 
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
   // mode - computed: false, optional: false, required: true
   private _mode?: string; 
   public get mode() {
@@ -256,20 +284,20 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
     return this._mode;
   }
 
-  // ua_rule_id - computed: false, optional: true, required: false
-  private _uaRuleId?: string; 
-  public get uaRuleId() {
-    return this.getStringAttribute('ua_rule_id');
+  // paused - computed: true, optional: true, required: false
+  private _paused?: boolean | cdktf.IResolvable; 
+  public get paused() {
+    return this.getBooleanAttribute('paused');
   }
-  public set uaRuleId(value: string) {
-    this._uaRuleId = value;
+  public set paused(value: boolean | cdktf.IResolvable) {
+    this._paused = value;
   }
-  public resetUaRuleId() {
-    this._uaRuleId = undefined;
+  public resetPaused() {
+    this._paused = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get uaRuleIdInput() {
-    return this._uaRuleId;
+  public get pausedInput() {
+    return this._paused;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -292,8 +320,9 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       configuration: userAgentBlockingRuleConfigurationToTerraform(this._configuration.internalValue),
+      description: cdktf.stringToTerraform(this._description),
       mode: cdktf.stringToTerraform(this._mode),
-      ua_rule_id: cdktf.stringToTerraform(this._uaRuleId),
+      paused: cdktf.booleanToTerraform(this._paused),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
@@ -306,17 +335,23 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
         type: "struct",
         storageClassType: "UserAgentBlockingRuleConfiguration",
       },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       mode: {
         value: cdktf.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      ua_rule_id: {
-        value: cdktf.stringToHclTerraform(this._uaRuleId),
+      paused: {
+        value: cdktf.booleanToHclTerraform(this._paused),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
+        storageClassType: "boolean",
       },
       zone_id: {
         value: cdktf.stringToHclTerraform(this._zoneId),

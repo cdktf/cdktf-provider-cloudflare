@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,32 @@ export interface ZeroTrustAccessCustomPageConfig extends cdktf.TerraformMetaArgu
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
   */
   readonly accountId: string;
   /**
-  * Number of apps the custom page is assigned to.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#app_count ZeroTrustAccessCustomPage#app_count}
-  */
-  readonly appCount?: number;
-  /**
   * Custom page HTML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
   */
   readonly customHtml: string;
   /**
   * Custom page name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
   */
   readonly name: string;
   /**
   * Custom page type.
   * Available values: "identity_denied", "forbidden".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}
 */
 export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
 
@@ -62,7 +56,7 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustAccessCustomPage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustAccessCustomPage to import
-  * @param importFromId The id of the existing ZeroTrustAccessCustomPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustAccessCustomPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustAccessCustomPage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +68,7 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +79,7 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_access_custom_page',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -97,7 +91,6 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._appCount = config.appCount;
     this._customHtml = config.customHtml;
     this._name = config.name;
     this._type = config.type;
@@ -118,27 +111,6 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
-  }
-
-  // app_count - computed: false, optional: true, required: false
-  private _appCount?: number; 
-  public get appCount() {
-    return this.getNumberAttribute('app_count');
-  }
-  public set appCount(value: number) {
-    this._appCount = value;
-  }
-  public resetAppCount() {
-    this._appCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get appCountInput() {
-    return this._appCount;
-  }
-
-  // created_at - computed: true, optional: false, required: false
-  public get createdAt() {
-    return this.getStringAttribute('created_at');
   }
 
   // custom_html - computed: false, optional: false, required: true
@@ -190,11 +162,6 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
     return this.getStringAttribute('uid');
   }
 
-  // updated_at - computed: true, optional: false, required: false
-  public get updatedAt() {
-    return this.getStringAttribute('updated_at');
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -202,7 +169,6 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      app_count: cdktf.numberToTerraform(this._appCount),
       custom_html: cdktf.stringToTerraform(this._customHtml),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
@@ -216,12 +182,6 @@ export class ZeroTrustAccessCustomPage extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      app_count: {
-        value: cdktf.numberToHclTerraform(this._appCount),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
       custom_html: {
         value: cdktf.stringToHclTerraform(this._customHtml),

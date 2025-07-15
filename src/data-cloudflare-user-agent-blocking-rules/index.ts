@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DataCloudflareUserAgentBlockingRulesConfig extends cdktf.Terraf
   /**
   * A string to search for in the description of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#description DataCloudflareUserAgentBlockingRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#description DataCloudflareUserAgentBlockingRules#description}
   */
   readonly description?: string;
   /**
-  * A string to search for in the description of existing rules.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#description_search DataCloudflareUserAgentBlockingRules#description_search}
-  */
-  readonly descriptionSearch?: string;
-  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#max_items DataCloudflareUserAgentBlockingRules#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#max_items DataCloudflareUserAgentBlockingRules#max_items}
   */
   readonly maxItems?: number;
   /**
+  * When true, indicates that the rule is currently paused.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#paused DataCloudflareUserAgentBlockingRules#paused}
+  */
+  readonly paused?: boolean | cdktf.IResolvable;
+  /**
   * A string to search for in the user agent values of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#ua_search DataCloudflareUserAgentBlockingRules#ua_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#user_agent DataCloudflareUserAgentBlockingRules#user_agent}
   */
-  readonly uaSearch?: string;
+  readonly userAgent?: string;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#zone_id DataCloudflareUserAgentBlockingRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#zone_id DataCloudflareUserAgentBlockingRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -200,7 +200,7 @@ export class DataCloudflareUserAgentBlockingRulesResultList extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}
 */
 export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSource {
 
@@ -216,7 +216,7 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataCloudflareUserAgentBlockingRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareUserAgentBlockingRules to import
-  * @param importFromId The id of the existing DataCloudflareUserAgentBlockingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareUserAgentBlockingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareUserAgentBlockingRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -228,7 +228,7 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +239,7 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
       terraformResourceType: 'cloudflare_user_agent_blocking_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -251,9 +251,9 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
       forEach: config.forEach
     });
     this._description = config.description;
-    this._descriptionSearch = config.descriptionSearch;
     this._maxItems = config.maxItems;
-    this._uaSearch = config.uaSearch;
+    this._paused = config.paused;
+    this._userAgent = config.userAgent;
     this._zoneId = config.zoneId;
   }
 
@@ -277,22 +277,6 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
     return this._description;
   }
 
-  // description_search - computed: false, optional: true, required: false
-  private _descriptionSearch?: string; 
-  public get descriptionSearch() {
-    return this.getStringAttribute('description_search');
-  }
-  public set descriptionSearch(value: string) {
-    this._descriptionSearch = value;
-  }
-  public resetDescriptionSearch() {
-    this._descriptionSearch = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionSearchInput() {
-    return this._descriptionSearch;
-  }
-
   // max_items - computed: false, optional: true, required: false
   private _maxItems?: number; 
   public get maxItems() {
@@ -309,26 +293,42 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
     return this._maxItems;
   }
 
+  // paused - computed: false, optional: true, required: false
+  private _paused?: boolean | cdktf.IResolvable; 
+  public get paused() {
+    return this.getBooleanAttribute('paused');
+  }
+  public set paused(value: boolean | cdktf.IResolvable) {
+    this._paused = value;
+  }
+  public resetPaused() {
+    this._paused = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pausedInput() {
+    return this._paused;
+  }
+
   // result - computed: true, optional: false, required: false
   private _result = new DataCloudflareUserAgentBlockingRulesResultList(this, "result", false);
   public get result() {
     return this._result;
   }
 
-  // ua_search - computed: false, optional: true, required: false
-  private _uaSearch?: string; 
-  public get uaSearch() {
-    return this.getStringAttribute('ua_search');
+  // user_agent - computed: false, optional: true, required: false
+  private _userAgent?: string; 
+  public get userAgent() {
+    return this.getStringAttribute('user_agent');
   }
-  public set uaSearch(value: string) {
-    this._uaSearch = value;
+  public set userAgent(value: string) {
+    this._userAgent = value;
   }
-  public resetUaSearch() {
-    this._uaSearch = undefined;
+  public resetUserAgent() {
+    this._userAgent = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get uaSearchInput() {
-    return this._uaSearch;
+  public get userAgentInput() {
+    return this._userAgent;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -351,9 +351,9 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
-      description_search: cdktf.stringToTerraform(this._descriptionSearch),
       max_items: cdktf.numberToTerraform(this._maxItems),
-      ua_search: cdktf.stringToTerraform(this._uaSearch),
+      paused: cdktf.booleanToTerraform(this._paused),
+      user_agent: cdktf.stringToTerraform(this._userAgent),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
@@ -366,20 +366,20 @@ export class DataCloudflareUserAgentBlockingRules extends cdktf.TerraformDataSou
         type: "simple",
         storageClassType: "string",
       },
-      description_search: {
-        value: cdktf.stringToHclTerraform(this._descriptionSearch),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       max_items: {
         value: cdktf.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
-      ua_search: {
-        value: cdktf.stringToHclTerraform(this._uaSearch),
+      paused: {
+        value: cdktf.booleanToHclTerraform(this._paused),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      user_agent: {
+        value: cdktf.stringToHclTerraform(this._userAgent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### AccountToken <a name="AccountToken" id="@cdktf/provider-cloudflare.accountToken.AccountToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token cloudflare_account_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token cloudflare_account_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer"></a>
 
@@ -26,7 +26,8 @@ accountToken.AccountToken(
   policies: typing.Union[IResolvable, typing.List[AccountTokenPolicies]],
   condition: AccountTokenCondition = None,
   expires_on: str = None,
-  not_before: str = None
+  not_before: str = None,
+  status: str = None
 )
 ```
 
@@ -44,9 +45,10 @@ accountToken.AccountToken(
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.name">name</a></code> | <code>str</code> | Token name. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.policies">policies</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]</code> | List of access policies assigned to the token. |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#condition AccountToken#condition}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#condition AccountToken#condition}. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.expiresOn">expires_on</a></code> | <code>str</code> | The expiration time on or after which the JWT MUST NOT be accepted for processing. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.notBefore">not_before</a></code> | <code>str</code> | The time before which the token MUST NOT be accepted for processing. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.status">status</a></code> | <code>str</code> | Status of the token. Available values: "active", "disabled", "expired". |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#account_id AccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#account_id AccountToken#account_id}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Token name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#name AccountToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#name AccountToken#name}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of access policies assigned to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#policies AccountToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#policies AccountToken#policies}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#condition AccountToken#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#condition AccountToken#condition}.
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The expiration time on or after which the JWT MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#expires_on AccountToken#expires_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#expires_on AccountToken#expires_on}
 
 ---
 
@@ -164,7 +166,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The time before which the token MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#not_before AccountToken#not_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#not_before AccountToken#not_before}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.status"></a>
+
+- *Type:* str
+
+Status of the token. Available values: "active", "disabled", "expired".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#status AccountToken#status}
 
 ---
 
@@ -200,6 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.resetCondition">reset_condition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.resetExpiresOn">reset_expires_on</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.resetNotBefore">reset_not_before</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.resetStatus">reset_status</a></code> | *No description.* |
 
 ---
 
@@ -542,7 +555,7 @@ def put_condition(
 
 Client IP restrictions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#request_ip AccountToken#request_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#request_ip AccountToken#request_ip}
 
 ---
 
@@ -576,6 +589,12 @@ def reset_expires_on() -> None
 
 ```python
 def reset_not_before() -> None
+```
+
+##### `reset_status` <a name="reset_status" id="@cdktf/provider-cloudflare.accountToken.AccountToken.resetStatus"></a>
+
+```python
+def reset_status() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -692,7 +711,7 @@ The construct id used in the generated config for the AccountToken to import.
 
 The id of the existing AccountToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,7 +747,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.lastUsedOn">last_used_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.policies">policies</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList">AccountTokenPoliciesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.conditionInput">condition_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>]</code> | *No description.* |
@@ -736,10 +754,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.notBeforeInput">not_before_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.policiesInput">policies_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.notBefore">not_before</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.status">status</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -945,16 +965,6 @@ policies: AccountTokenPoliciesList
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.status"></a>
-
-```python
-status: str
-```
-
-- *Type:* str
-
----
-
 ##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.value"></a>
 
 ```python
@@ -1025,6 +1035,16 @@ policies_input: typing.Union[IResolvable, typing.List[AccountTokenPolicies]]
 
 ---
 
+##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.statusInput"></a>
+
+```python
+status_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.accountId"></a>
 
 ```python
@@ -1059,6 +1079,16 @@ name: str
 
 ```python
 not_before: str
+```
+
+- *Type:* str
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.status"></a>
+
+```python
+status: str
 ```
 
 - *Type:* str
@@ -1115,7 +1145,7 @@ request_ip: AccountTokenConditionRequestIp
 
 Client IP restrictions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#request_ip AccountToken#request_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#request_ip AccountToken#request_ip}
 
 ---
 
@@ -1151,7 +1181,7 @@ in: typing.List[str]
 
 List of IPv4/IPv6 CIDR addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#in AccountToken#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#in AccountToken#in}
 
 ---
 
@@ -1165,7 +1195,7 @@ not_in: typing.List[str]
 
 List of IPv4/IPv6 CIDR addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#not_in AccountToken#not_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#not_in AccountToken#not_in}
 
 ---
 
@@ -1189,7 +1219,8 @@ accountToken.AccountTokenConfig(
   policies: typing.Union[IResolvable, typing.List[AccountTokenPolicies]],
   condition: AccountTokenCondition = None,
   expires_on: str = None,
-  not_before: str = None
+  not_before: str = None,
+  status: str = None
 )
 ```
 
@@ -1207,9 +1238,10 @@ accountToken.AccountTokenConfig(
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.name">name</a></code> | <code>str</code> | Token name. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.policies">policies</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]</code> | List of access policies assigned to the token. |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#condition AccountToken#condition}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#condition AccountToken#condition}. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.expiresOn">expires_on</a></code> | <code>str</code> | The expiration time on or after which the JWT MUST NOT be accepted for processing. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.notBefore">not_before</a></code> | <code>str</code> | The time before which the token MUST NOT be accepted for processing. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.status">status</a></code> | <code>str</code> | Status of the token. Available values: "active", "disabled", "expired". |
 
 ---
 
@@ -1293,7 +1325,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#account_id AccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#account_id AccountToken#account_id}
 
 ---
 
@@ -1307,7 +1339,7 @@ name: str
 
 Token name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#name AccountToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#name AccountToken#name}
 
 ---
 
@@ -1321,7 +1353,7 @@ policies: typing.Union[IResolvable, typing.List[AccountTokenPolicies]]
 
 List of access policies assigned to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#policies AccountToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#policies AccountToken#policies}
 
 ---
 
@@ -1333,7 +1365,7 @@ condition: AccountTokenCondition
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#condition AccountToken#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#condition AccountToken#condition}.
 
 ---
 
@@ -1347,7 +1379,7 @@ expires_on: str
 
 The expiration time on or after which the JWT MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#expires_on AccountToken#expires_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#expires_on AccountToken#expires_on}
 
 ---
 
@@ -1361,7 +1393,21 @@ not_before: str
 
 The time before which the token MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#not_before AccountToken#not_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#not_before AccountToken#not_before}
+
+---
+
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.status"></a>
+
+```python
+status: str
+```
+
+- *Type:* str
+
+Status of the token. Available values: "active", "disabled", "expired".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#status AccountToken#status}
 
 ---
 
@@ -1399,7 +1445,7 @@ effect: str
 
 Allow or deny operations against the resources. Available values: "allow", "deny".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#effect AccountToken#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#effect AccountToken#effect}
 
 ---
 
@@ -1413,7 +1459,7 @@ permission_groups: typing.Union[IResolvable, typing.List[AccountTokenPoliciesPer
 
 A set of permission groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
 
 ---
 
@@ -1427,7 +1473,7 @@ resources: typing.Mapping[str]
 
 A list of resource names that the policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#resources AccountToken#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#resources AccountToken#resources}
 
 ---
 
@@ -1463,7 +1509,7 @@ id: str
 
 Identifier of the permission group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#id AccountToken#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#id AccountToken#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1480,7 +1526,7 @@ meta: AccountTokenPoliciesPermissionGroupsMeta
 
 Attributes associated to the permission group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#meta AccountToken#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#meta AccountToken#meta}
 
 ---
 
@@ -1501,8 +1547,8 @@ accountToken.AccountTokenPoliciesPermissionGroupsMeta(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#key AccountToken#key}. |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#value AccountToken#value}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#key AccountToken#key}. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#value AccountToken#value}. |
 
 ---
 
@@ -1514,7 +1560,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#key AccountToken#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#key AccountToken#key}.
 
 ---
 
@@ -1526,7 +1572,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#value AccountToken#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#value AccountToken#value}.
 
 ---
 
@@ -1777,7 +1823,7 @@ def put_request_ip(
 
 List of IPv4/IPv6 CIDR addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#in AccountToken#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#in AccountToken#in}
 
 ---
 
@@ -1787,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of IPv4/IPv6 CIDR addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#not_in AccountToken#not_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#not_in AccountToken#not_in}
 
 ---
 
@@ -3518,7 +3564,7 @@ def put_meta(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#key AccountToken#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#key AccountToken#key}.
 
 ---
 
@@ -3526,7 +3572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token#value AccountToken#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token#value AccountToken#value}.
 
 ---
 
