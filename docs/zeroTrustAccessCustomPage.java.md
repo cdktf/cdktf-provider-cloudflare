@@ -4,7 +4,7 @@
 
 ### ZeroTrustAccessCustomPage <a name="ZeroTrustAccessCustomPage" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.Initializer"></a>
 
@@ -27,7 +27,6 @@ ZeroTrustAccessCustomPage.Builder.create(Construct scope, java.lang.String id)
     .customHtml(java.lang.String)
     .name(java.lang.String)
     .type(java.lang.String)
-//  .appCount(java.lang.Number)
     .build();
 ```
 
@@ -46,7 +45,6 @@ ZeroTrustAccessCustomPage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.Initializer.parameter.customHtml">customHtml</a></code> | <code>java.lang.String</code> | Custom page HTML. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Custom page name. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Custom page type. Available values: "identity_denied", "forbidden". |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.Initializer.parameter.appCount">appCount</a></code> | <code>java.lang.Number</code> | Number of apps the custom page is assigned to. |
 
 ---
 
@@ -116,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
 
 ---
 
@@ -126,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Custom page HTML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
 
 ---
 
@@ -136,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Custom page name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
 
 ---
 
@@ -146,17 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Custom page type. Available values: "identity_denied", "forbidden".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
-
----
-
-##### `appCount`<sup>Optional</sup> <a name="appCount" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.Initializer.parameter.appCount"></a>
-
-- *Type:* java.lang.Number
-
-Number of apps the custom page is assigned to.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#app_count ZeroTrustAccessCustomPage#app_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
 
 ---
 
@@ -187,7 +175,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.resetAppCount">resetAppCount</a></code> | *No description.* |
 
 ---
 
@@ -481,12 +468,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAppCount` <a name="resetAppCount" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.resetAppCount"></a>
-
-```java
-public void resetAppCount()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -590,7 +571,7 @@ The construct id used in the generated config for the ZeroTrustAccessCustomPage 
 
 The id of the existing ZeroTrustAccessCustomPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,17 +601,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.uid">uid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.appCountInput">appCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.customHtmlInput">customHtmlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.appCount">appCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.customHtml">customHtml</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -779,16 +756,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.createdAt"></a>
-
-```java
-public java.lang.String getCreatedAt();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.id"></a>
 
 ```java
@@ -809,16 +776,6 @@ public java.lang.String getUid();
 
 ---
 
-##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.updatedAt"></a>
-
-```java
-public java.lang.String getUpdatedAt();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.accountIdInput"></a>
 
 ```java
@@ -826,16 +783,6 @@ public java.lang.String getAccountIdInput();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `appCountInput`<sup>Optional</sup> <a name="appCountInput" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.appCountInput"></a>
-
-```java
-public java.lang.Number getAppCountInput();
-```
-
-- *Type:* java.lang.Number
 
 ---
 
@@ -876,16 +823,6 @@ public java.lang.String getAccountId();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `appCount`<sup>Required</sup> <a name="appCount" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPage.property.appCount"></a>
-
-```java
-public java.lang.Number getAppCount();
-```
-
-- *Type:* java.lang.Number
 
 ---
 
@@ -962,7 +899,6 @@ ZeroTrustAccessCustomPageConfig.builder()
     .customHtml(java.lang.String)
     .name(java.lang.String)
     .type(java.lang.String)
-//  .appCount(java.lang.Number)
     .build();
 ```
 
@@ -981,7 +917,6 @@ ZeroTrustAccessCustomPageConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageConfig.property.customHtml">customHtml</a></code> | <code>java.lang.String</code> | Custom page HTML. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageConfig.property.name">name</a></code> | <code>java.lang.String</code> | Custom page name. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageConfig.property.type">type</a></code> | <code>java.lang.String</code> | Custom page type. Available values: "identity_denied", "forbidden". |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageConfig.property.appCount">appCount</a></code> | <code>java.lang.Number</code> | Number of apps the custom page is assigned to. |
 
 ---
 
@@ -1065,7 +1000,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#account_id ZeroTrustAccessCustomPage#account_id}
 
 ---
 
@@ -1079,7 +1014,7 @@ public java.lang.String getCustomHtml();
 
 Custom page HTML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#custom_html ZeroTrustAccessCustomPage#custom_html}
 
 ---
 
@@ -1093,7 +1028,7 @@ public java.lang.String getName();
 
 Custom page name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#name ZeroTrustAccessCustomPage#name}
 
 ---
 
@@ -1107,21 +1042,7 @@ public java.lang.String getType();
 
 Custom page type. Available values: "identity_denied", "forbidden".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
-
----
-
-##### `appCount`<sup>Optional</sup> <a name="appCount" id="@cdktf/provider-cloudflare.zeroTrustAccessCustomPage.ZeroTrustAccessCustomPageConfig.property.appCount"></a>
-
-```java
-public java.lang.Number getAppCount();
-```
-
-- *Type:* java.lang.Number
-
-Number of apps the custom page is assigned to.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page#app_count ZeroTrustAccessCustomPage#app_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page#type ZeroTrustAccessCustomPage#type}
 
 ---
 

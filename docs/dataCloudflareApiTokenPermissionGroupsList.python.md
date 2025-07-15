@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiTokenPermissionGroupsList <a name="DataCloudflareApiTokenPermissionGroupsList" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer"></a>
 
@@ -21,7 +21,9 @@ dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroup
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  max_items: typing.Union[int, float] = None
+  max_items: typing.Union[int, float] = None,
+  name: str = None,
+  scope: str = None
 )
 ```
 
@@ -37,6 +39,8 @@ dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroup
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer.parameter.name">name</a></code> | <code>str</code> | Filter by the name of the permission group. The value must be URL-encoded. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Filter by the scope of the permission group. The value must be URL-encoded. |
 
 ---
 
@@ -106,7 +110,27 @@ Must be unique amongst siblings in the same scope
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/api_token_permission_groups_list#max_items DataCloudflareApiTokenPermissionGroupsList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list#max_items DataCloudflareApiTokenPermissionGroupsList#max_items}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer.parameter.name"></a>
+
+- *Type:* str
+
+Filter by the name of the permission group. The value must be URL-encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list#name DataCloudflareApiTokenPermissionGroupsList#name}
+
+---
+
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.Initializer.parameter.scope"></a>
+
+- *Type:* str
+
+Filter by the scope of the permission group. The value must be URL-encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list#scope DataCloudflareApiTokenPermissionGroupsList#scope}
 
 ---
 
@@ -132,6 +156,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.resetMaxItems">reset_max_items</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.resetScope">reset_scope</a></code> | *No description.* |
 
 ---
 
@@ -358,6 +384,18 @@ def interpolation_for_attribute(
 def reset_max_items() -> None
 ```
 
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_scope` <a name="reset_scope" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.resetScope"></a>
+
+```python
+def reset_scope() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -472,7 +510,7 @@ The construct id used in the generated config for the DataCloudflareApiTokenPerm
 
 The id of the existing DataCloudflareApiTokenPermissionGroupsList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/api_token_permission_groups_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -502,7 +540,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.result">result</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListResultList">DataCloudflareApiTokenPermissionGroupsListResultList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.maxItemsInput">max_items_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -648,6 +690,26 @@ max_items_input: typing.Union[int, float]
 
 ---
 
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `scope_input`<sup>Optional</sup> <a name="scope_input" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.scopeInput"></a>
+
+```python
+scope_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `max_items`<sup>Required</sup> <a name="max_items" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.maxItems"></a>
 
 ```python
@@ -655,6 +717,26 @@ max_items: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsList.property.scope"></a>
+
+```python
+scope: str
+```
+
+- *Type:* str
 
 ---
 
@@ -693,7 +775,9 @@ dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroup
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  max_items: typing.Union[int, float] = None
+  max_items: typing.Union[int, float] = None,
+  name: str = None,
+  scope: str = None
 )
 ```
 
@@ -709,6 +793,8 @@ dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroup
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.property.name">name</a></code> | <code>str</code> | Filter by the name of the permission group. The value must be URL-encoded. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.property.scope">scope</a></code> | <code>str</code> | Filter by the scope of the permission group. The value must be URL-encoded. |
 
 ---
 
@@ -792,7 +878,35 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/api_token_permission_groups_list#max_items DataCloudflareApiTokenPermissionGroupsList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list#max_items DataCloudflareApiTokenPermissionGroupsList#max_items}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Filter by the name of the permission group. The value must be URL-encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list#name DataCloudflareApiTokenPermissionGroupsList#name}
+
+---
+
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroupsList.DataCloudflareApiTokenPermissionGroupsListConfig.property.scope"></a>
+
+```python
+scope: str
+```
+
+- *Type:* str
+
+Filter by the scope of the permission group. The value must be URL-encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/api_token_permission_groups_list#scope DataCloudflareApiTokenPermissionGroupsList#scope}
 
 ---
 

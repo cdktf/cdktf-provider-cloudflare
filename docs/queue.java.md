@@ -4,7 +4,7 @@
 
 ### Queue <a name="Queue" id="@cdktf/provider-cloudflare.queue.Queue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue cloudflare_queue}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue cloudflare_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.queue.Queue.Initializer"></a>
 
@@ -41,8 +41,8 @@ Queue.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#queue_name Queue#queue_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.Queue.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#account_id Queue#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#queue_name Queue#queue_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -575,7 +575,7 @@ The construct id used in the generated config for the Queue to import.
 
 The id of the existing Queue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,8 +961,8 @@ QueueConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#queue_name Queue#queue_name}. |
-| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.queueName">queueName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -1046,7 +1046,7 @@ public java.lang.String getAccountId();
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#account_id Queue#account_id}
 
 ---
 
@@ -1058,7 +1058,7 @@ public java.lang.String getQueueName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#queue_name Queue#queue_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public QueueSettings getSettings();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.Number getDeliveryDelay();
 
 Number of seconds to delay delivery of all messages to consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.Object getDeliveryPaused();
 
 Indicates if message delivery to consumers is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.Number getMessageRetentionPeriod();
 
 Number of seconds after which an unconsumed message will be delayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
 
 ---
 

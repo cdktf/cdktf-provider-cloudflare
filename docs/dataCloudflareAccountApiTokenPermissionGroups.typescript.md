@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountApiTokenPermissionGroups <a name="DataCloudflareAccountApiTokenPermissionGroups" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.Initializer"></a>
 
@@ -67,6 +67,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.resetScope">resetScope</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +264,18 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetName` <a name="resetName" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
+##### `resetScope` <a name="resetScope" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.resetScope"></a>
+
+```typescript
+public resetScope(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -365,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareAccountApiTo
 
 The id of the existing DataCloudflareAccountApiTokenPermissionGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_api_token_permission_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,11 +407,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.scopeInput">scopeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.scope">scope</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -523,10 +538,40 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.id"></a>
+##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.accountIdInput"></a>
 
 ```typescript
-public readonly id: string;
+public readonly accountIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scopeInput`<sup>Optional</sup> <a name="scopeInput" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.scopeInput"></a>
+
+```typescript
+public readonly scopeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
 ```
 
 - *Type:* string
@@ -543,30 +588,10 @@ public readonly name: string;
 
 ---
 
-##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.scopes"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.scope"></a>
 
 ```typescript
-public readonly scopes: string[];
-```
-
-- *Type:* string[]
-
----
-
-##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.accountIdInput"></a>
-
-```typescript
-public readonly accountIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroups.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
+public readonly scope: string;
 ```
 
 - *Type:* string
@@ -615,6 +640,8 @@ const dataCloudflareAccountApiTokenPermissionGroupsConfig: dataCloudflareAccount
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroupsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroupsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroupsConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroupsConfig.property.name">name</a></code> | <code>string</code> | Filter by the name of the permission group. The value must be URL-encoded. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroupsConfig.property.scope">scope</a></code> | <code>string</code> | Filter by the scope of the permission group. The value must be URL-encoded. |
 
 ---
 
@@ -698,7 +725,35 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_api_token_permission_groups#account_id DataCloudflareAccountApiTokenPermissionGroups#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups#account_id DataCloudflareAccountApiTokenPermissionGroups#account_id}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroupsConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Filter by the name of the permission group. The value must be URL-encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups#name DataCloudflareAccountApiTokenPermissionGroups#name}
+
+---
+
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktf/provider-cloudflare.dataCloudflareAccountApiTokenPermissionGroups.DataCloudflareAccountApiTokenPermissionGroupsConfig.property.scope"></a>
+
+```typescript
+public readonly scope: string;
+```
+
+- *Type:* string
+
+Filter by the scope of the permission group. The value must be URL-encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups#scope DataCloudflareAccountApiTokenPermissionGroups#scope}
 
 ---
 

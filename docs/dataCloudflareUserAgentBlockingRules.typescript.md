@@ -4,7 +4,7 @@
 
 ### DataCloudflareUserAgentBlockingRules <a name="DataCloudflareUserAgentBlockingRules" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.Initializer"></a>
 
@@ -68,9 +68,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetDescriptionSearch">resetDescriptionSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetMaxItems">resetMaxItems</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetUaSearch">resetUaSearch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetPaused">resetPaused</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetUserAgent">resetUserAgent</a></code> | *No description.* |
 
 ---
 
@@ -272,22 +272,22 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetDescription(): void
 ```
 
-##### `resetDescriptionSearch` <a name="resetDescriptionSearch" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetDescriptionSearch"></a>
-
-```typescript
-public resetDescriptionSearch(): void
-```
-
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetMaxItems"></a>
 
 ```typescript
 public resetMaxItems(): void
 ```
 
-##### `resetUaSearch` <a name="resetUaSearch" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetUaSearch"></a>
+##### `resetPaused` <a name="resetPaused" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetPaused"></a>
 
 ```typescript
-public resetUaSearch(): void
+public resetPaused(): void
+```
+
+##### `resetUserAgent` <a name="resetUserAgent" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.resetUserAgent"></a>
+
+```typescript
+public resetUserAgent(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataCloudflareUserAgentBlo
 
 The id of the existing DataCloudflareUserAgentBlockingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -423,14 +423,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.result">result</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesResultList">DataCloudflareUserAgentBlockingRulesResultList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.descriptionSearchInput">descriptionSearchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.maxItemsInput">maxItemsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.uaSearchInput">uaSearchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.pausedInput">pausedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.userAgentInput">userAgentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.descriptionSearch">descriptionSearch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.maxItems">maxItems</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.uaSearch">uaSearch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.userAgent">userAgent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -577,16 +577,6 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `descriptionSearchInput`<sup>Optional</sup> <a name="descriptionSearchInput" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.descriptionSearchInput"></a>
-
-```typescript
-public readonly descriptionSearchInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `maxItemsInput`<sup>Optional</sup> <a name="maxItemsInput" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.maxItemsInput"></a>
 
 ```typescript
@@ -597,10 +587,20 @@ public readonly maxItemsInput: number;
 
 ---
 
-##### `uaSearchInput`<sup>Optional</sup> <a name="uaSearchInput" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.uaSearchInput"></a>
+##### `pausedInput`<sup>Optional</sup> <a name="pausedInput" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.pausedInput"></a>
 
 ```typescript
-public readonly uaSearchInput: string;
+public readonly pausedInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `userAgentInput`<sup>Optional</sup> <a name="userAgentInput" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.userAgentInput"></a>
+
+```typescript
+public readonly userAgentInput: string;
 ```
 
 - *Type:* string
@@ -627,16 +627,6 @@ public readonly description: string;
 
 ---
 
-##### `descriptionSearch`<sup>Required</sup> <a name="descriptionSearch" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.descriptionSearch"></a>
-
-```typescript
-public readonly descriptionSearch: string;
-```
-
-- *Type:* string
-
----
-
 ##### `maxItems`<sup>Required</sup> <a name="maxItems" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.maxItems"></a>
 
 ```typescript
@@ -647,10 +637,20 @@ public readonly maxItems: number;
 
 ---
 
-##### `uaSearch`<sup>Required</sup> <a name="uaSearch" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.uaSearch"></a>
+##### `paused`<sup>Required</sup> <a name="paused" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.paused"></a>
 
 ```typescript
-public readonly uaSearch: string;
+public readonly paused: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `userAgent`<sup>Required</sup> <a name="userAgent" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRules.property.userAgent"></a>
+
+```typescript
+public readonly userAgent: string;
 ```
 
 - *Type:* string
@@ -710,9 +710,9 @@ const dataCloudflareUserAgentBlockingRulesConfig: dataCloudflareUserAgentBlockin
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Defines an identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.description">description</a></code> | <code>string</code> | A string to search for in the description of existing rules. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.descriptionSearch">descriptionSearch</a></code> | <code>string</code> | A string to search for in the description of existing rules. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.uaSearch">uaSearch</a></code> | <code>string</code> | A string to search for in the user agent values of existing rules. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, indicates that the rule is currently paused. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.userAgent">userAgent</a></code> | <code>string</code> | A string to search for in the user agent values of existing rules. |
 
 ---
 
@@ -796,7 +796,7 @@ public readonly zoneId: string;
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#zone_id DataCloudflareUserAgentBlockingRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#zone_id DataCloudflareUserAgentBlockingRules#zone_id}
 
 ---
 
@@ -810,21 +810,7 @@ public readonly description: string;
 
 A string to search for in the description of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#description DataCloudflareUserAgentBlockingRules#description}
-
----
-
-##### `descriptionSearch`<sup>Optional</sup> <a name="descriptionSearch" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.descriptionSearch"></a>
-
-```typescript
-public readonly descriptionSearch: string;
-```
-
-- *Type:* string
-
-A string to search for in the description of existing rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#description_search DataCloudflareUserAgentBlockingRules#description_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#description DataCloudflareUserAgentBlockingRules#description}
 
 ---
 
@@ -838,21 +824,35 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#max_items DataCloudflareUserAgentBlockingRules#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#max_items DataCloudflareUserAgentBlockingRules#max_items}
 
 ---
 
-##### `uaSearch`<sup>Optional</sup> <a name="uaSearch" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.uaSearch"></a>
+##### `paused`<sup>Optional</sup> <a name="paused" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.paused"></a>
 
 ```typescript
-public readonly uaSearch: string;
+public readonly paused: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When true, indicates that the rule is currently paused.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#paused DataCloudflareUserAgentBlockingRules#paused}
+
+---
+
+##### `userAgent`<sup>Optional</sup> <a name="userAgent" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRules.DataCloudflareUserAgentBlockingRulesConfig.property.userAgent"></a>
+
+```typescript
+public readonly userAgent: string;
 ```
 
 - *Type:* string
 
 A string to search for in the user agent values of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules#ua_search DataCloudflareUserAgentBlockingRules#ua_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules#user_agent DataCloudflareUserAgentBlockingRules#user_agent}
 
 ---
 

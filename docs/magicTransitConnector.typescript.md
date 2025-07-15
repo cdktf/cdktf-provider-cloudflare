@@ -4,7 +4,7 @@
 
 ### MagicTransitConnector <a name="MagicTransitConnector" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.putDevice">putDevice</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.resetActivated">resetActivated</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.resetInterruptWindowDurationHours">resetInterruptWindowDurationHours</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.resetInterruptWindowHourOfDay">resetInterruptWindowHourOfDay</a></code> | *No description.* |
@@ -369,6 +370,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putDevice` <a name="putDevice" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.putDevice"></a>
+
+```typescript
+public putDevice(value: MagicTransitConnectorDevice): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.putDevice.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a>
+
+---
+
 ##### `resetActivated` <a name="resetActivated" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.resetActivated"></a>
 
 ```typescript
@@ -502,7 +515,7 @@ The construct id used in the generated config for the MagicTransitConnector to i
 
 The id of the existing MagicTransitConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -539,14 +552,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.lastUpdated">lastUpdated</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.activatedInput">activatedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.connectorIdInput">connectorIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.deviceInput">deviceInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.interruptWindowDurationHoursInput">interruptWindowDurationHoursInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.interruptWindowHourOfDayInput">interruptWindowHourOfDayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.notesInput">notesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.timezoneInput">timezoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.activated">activated</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.connectorId">connectorId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.interruptWindowDurationHours">interruptWindowDurationHours</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.interruptWindowHourOfDay">interruptWindowHourOfDay</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.notes">notes</a></code> | <code>string</code> | *No description.* |
@@ -766,13 +778,13 @@ public readonly activatedInput: boolean | IResolvable;
 
 ---
 
-##### `connectorIdInput`<sup>Optional</sup> <a name="connectorIdInput" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.connectorIdInput"></a>
+##### `deviceInput`<sup>Optional</sup> <a name="deviceInput" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.deviceInput"></a>
 
 ```typescript
-public readonly connectorIdInput: string;
+public readonly deviceInput: IResolvable | MagicTransitConnectorDevice;
 ```
 
-- *Type:* string
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a>
 
 ---
 
@@ -833,16 +845,6 @@ public readonly activated: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
-
----
-
-##### `connectorId`<sup>Required</sup> <a name="connectorId" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector.property.connectorId"></a>
-
-```typescript
-public readonly connectorId: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -928,12 +930,12 @@ const magicTransitConnectorConfig: magicTransitConnector.MagicTransitConnectorCo
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.connectorId">connectorId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#connector_id MagicTransitConnector#connector_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.activated">activated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#activated MagicTransitConnector#activated}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.interruptWindowDurationHours">interruptWindowDurationHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#interrupt_window_duration_hours MagicTransitConnector#interrupt_window_duration_hours}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.interruptWindowHourOfDay">interruptWindowHourOfDay</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#interrupt_window_hour_of_day MagicTransitConnector#interrupt_window_hour_of_day}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.notes">notes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#notes MagicTransitConnector#notes}. |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.timezone">timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#timezone MagicTransitConnector#timezone}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.device">device</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#device MagicTransitConnector#device}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.activated">activated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#activated MagicTransitConnector#activated}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.interruptWindowDurationHours">interruptWindowDurationHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#interrupt_window_duration_hours MagicTransitConnector#interrupt_window_duration_hours}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.interruptWindowHourOfDay">interruptWindowHourOfDay</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#interrupt_window_hour_of_day MagicTransitConnector#interrupt_window_hour_of_day}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.notes">notes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#notes MagicTransitConnector#notes}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.timezone">timezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#timezone MagicTransitConnector#timezone}. |
 
 ---
 
@@ -1017,19 +1019,19 @@ public readonly accountId: string;
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#account_id MagicTransitConnector#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#account_id MagicTransitConnector#account_id}
 
 ---
 
-##### `connectorId`<sup>Required</sup> <a name="connectorId" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.connectorId"></a>
+##### `device`<sup>Required</sup> <a name="device" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.property.device"></a>
 
 ```typescript
-public readonly connectorId: string;
+public readonly device: MagicTransitConnectorDevice;
 ```
 
-- *Type:* string
+- *Type:* <a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#connector_id MagicTransitConnector#connector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#device MagicTransitConnector#device}.
 
 ---
 
@@ -1041,7 +1043,7 @@ public readonly activated: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#activated MagicTransitConnector#activated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#activated MagicTransitConnector#activated}.
 
 ---
 
@@ -1053,7 +1055,7 @@ public readonly interruptWindowDurationHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#interrupt_window_duration_hours MagicTransitConnector#interrupt_window_duration_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#interrupt_window_duration_hours MagicTransitConnector#interrupt_window_duration_hours}.
 
 ---
 
@@ -1065,7 +1067,7 @@ public readonly interruptWindowHourOfDay: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#interrupt_window_hour_of_day MagicTransitConnector#interrupt_window_hour_of_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#interrupt_window_hour_of_day MagicTransitConnector#interrupt_window_hour_of_day}.
 
 ---
 
@@ -1077,7 +1079,7 @@ public readonly notes: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#notes MagicTransitConnector#notes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#notes MagicTransitConnector#notes}.
 
 ---
 
@@ -1089,7 +1091,7 @@ public readonly timezone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector#timezone MagicTransitConnector#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#timezone MagicTransitConnector#timezone}.
 
 ---
 
@@ -1103,6 +1105,41 @@ import { magicTransitConnector } from '@cdktf/provider-cloudflare'
 const magicTransitConnectorDevice: magicTransitConnector.MagicTransitConnectorDevice = { ... }
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#id MagicTransitConnector#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice.property.serialNumber">serialNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#serial_number MagicTransitConnector#serial_number}. |
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#id MagicTransitConnector#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `serialNumber`<sup>Optional</sup> <a name="serialNumber" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice.property.serialNumber"></a>
+
+```typescript
+public readonly serialNumber: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector#serial_number MagicTransitConnector#serial_number}.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -1156,6 +1193,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.resetSerialNumber">resetSerialNumber</a></code> | *No description.* |
 
 ---
 
@@ -1309,6 +1348,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetId` <a name="resetId" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetSerialNumber` <a name="resetSerialNumber" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.resetSerialNumber"></a>
+
+```typescript
+public resetSerialNumber(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1316,9 +1367,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.serialNumberInput">serialNumberInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.serialNumber">serialNumber</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a></code> | *No description.* |
 
 ---
 
@@ -1340,6 +1393,26 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serialNumberInput`<sup>Optional</sup> <a name="serialNumberInput" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.serialNumberInput"></a>
+
+```typescript
+public readonly serialNumberInput: string;
 ```
 
 - *Type:* string
@@ -1369,10 +1442,10 @@ public readonly serialNumber: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MagicTransitConnectorDevice;
+public readonly internalValue: IResolvable | MagicTransitConnectorDevice;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice">MagicTransitConnectorDevice</a>
 
 ---
 

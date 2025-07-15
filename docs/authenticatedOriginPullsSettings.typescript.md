@@ -4,7 +4,7 @@
 
 ### AuthenticatedOriginPullsSettings <a name="AuthenticatedOriginPullsSettings" id="@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the AuthenticatedOriginPullsSe
 
 The id of the existing AuthenticatedOriginPullsSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/authenticated_origin_pulls_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/authenticated_origin_pulls_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -812,7 +812,7 @@ public readonly enabled: boolean | IResolvable;
 
 Indicates whether zone-level authenticated origin pulls is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/authenticated_origin_pulls_settings#enabled AuthenticatedOriginPullsSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/authenticated_origin_pulls_settings#enabled AuthenticatedOriginPullsSettings#enabled}
 
 ---
 
@@ -826,7 +826,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/authenticated_origin_pulls_settings#zone_id AuthenticatedOriginPullsSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/authenticated_origin_pulls_settings#zone_id AuthenticatedOriginPullsSettings#zone_id}
 
 ---
 

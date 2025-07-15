@@ -4,7 +4,7 @@
 
 ### DataCloudflareList <a name="DataCloudflareList" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/list cloudflare_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/list cloudflare_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.resetListId">resetListId</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetListId` <a name="resetListId" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.resetListId"></a>
+
+```typescript
+public resetListId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareList to impo
 
 The id of the existing DataCloudflareList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,11 +783,11 @@ public readonly accountId: string;
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
 
 ---
 
-##### `listId`<sup>Required</sup> <a name="listId" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.listId"></a>
+##### `listId`<sup>Optional</sup> <a name="listId" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.listId"></a>
 
 ```typescript
 public readonly listId: string;
@@ -790,7 +797,7 @@ public readonly listId: string;
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
 
 ---
 

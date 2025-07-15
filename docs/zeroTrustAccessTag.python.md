@@ -4,7 +4,7 @@
 
 ### ZeroTrustAccessTag <a name="ZeroTrustAccessTag" id="@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the ZeroTrustAccessTag to impo
 
 The id of the existing ZeroTrustAccessTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,10 +621,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.appCount">app_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
@@ -774,40 +771,10 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `app_count`<sup>Required</sup> <a name="app_count" id="@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.appCount"></a>
-
-```python
-app_count: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `created_at`<sup>Required</sup> <a name="created_at" id="@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.createdAt"></a>
-
-```python
-created_at: str
-```
-
-- *Type:* str
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.id"></a>
 
 ```python
 id: str
-```
-
-- *Type:* str
-
----
-
-##### `updated_at`<sup>Required</sup> <a name="updated_at" id="@cdktf/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.property.updatedAt"></a>
-
-```python
-updated_at: str
 ```
 
 - *Type:* str
@@ -990,7 +957,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
 
 ---
 
@@ -1004,7 +971,7 @@ name: str
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
 
 ---
 

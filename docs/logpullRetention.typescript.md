@@ -4,7 +4,7 @@
 
 ### LogpullRetention <a name="LogpullRetention" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LogpullRetention to import
 
 The id of the existing LogpullRetention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/logpull_retention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,6 +504,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.flagInput">flagInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.flag">flag</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -650,6 +651,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ```
 
 - *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.logpullRetention.LogpullRetention.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -819,7 +830,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/logpull_retention#zone_id LogpullRetention#zone_id}
 
 ---
 
@@ -833,7 +844,7 @@ public readonly flag: boolean | IResolvable;
 
 The log retention flag for Logpull API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/logpull_retention#flag LogpullRetention#flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/logpull_retention#flag LogpullRetention#flag}
 
 ---
 
