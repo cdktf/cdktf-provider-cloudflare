@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,46 @@ export interface ImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image#account_id Image#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image#account_id Image#account_id}
   */
   readonly accountId: string;
   /**
   * An image binary data. Only needed when type is uploading a file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image#file Image#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image#file Image#file}
   */
   readonly file?: string;
   /**
+  * An optional custom unique identifier for your image.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image#id Image#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
   * User modifiable key-value store. Can use used for keeping references to another system of record for managing images.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image#metadata Image#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image#metadata Image#metadata}
   */
   readonly metadata?: string;
   /**
   * Indicates whether the image requires a signature token for the access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image#require_signed_urls Image#require_signed_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image#require_signed_urls Image#require_signed_urls}
   */
   readonly requireSignedUrls?: boolean | cdktf.IResolvable;
   /**
   * A URL to fetch an image from origin. Only needed when type is uploading from a URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image#url Image#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image#url Image#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image cloudflare_image}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image cloudflare_image}
 */
 export class Image extends cdktf.TerraformResource {
 
@@ -61,7 +70,7 @@ export class Image extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Image resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Image to import
-  * @param importFromId The id of the existing Image that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Image that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Image to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +82,7 @@ export class Image extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image cloudflare_image} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image cloudflare_image} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +93,7 @@ export class Image extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_image',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -97,6 +106,7 @@ export class Image extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._file = config.file;
+    this._id = config.id;
     this._metadata = config.metadata;
     this._requireSignedUrls = config.requireSignedUrls;
     this._url = config.url;
@@ -140,9 +150,17 @@ export class Image extends cdktf.TerraformResource {
     return this.getStringAttribute('filename');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // meta - computed: true, optional: false, required: false
@@ -216,6 +234,7 @@ export class Image extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       file: cdktf.stringToTerraform(this._file),
+      id: cdktf.stringToTerraform(this._id),
       metadata: cdktf.stringToTerraform(this._metadata),
       require_signed_urls: cdktf.booleanToTerraform(this._requireSignedUrls),
       url: cdktf.stringToTerraform(this._url),
@@ -232,6 +251,12 @@ export class Image extends cdktf.TerraformResource {
       },
       file: {
         value: cdktf.stringToHclTerraform(this._file),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

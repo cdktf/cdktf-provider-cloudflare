@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DataCloudflareZeroTrustAccessGroupsConfig extends cdktf.Terrafo
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups#account_id DataCloudflareZeroTrustAccessGroups#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups#account_id DataCloudflareZeroTrustAccessGroups#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups#max_items DataCloudflareZeroTrustAccessGroups#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups#max_items DataCloudflareZeroTrustAccessGroups#max_items}
   */
   readonly maxItems?: number;
   /**
   * The name of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups#name DataCloudflareZeroTrustAccessGroups#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups#name DataCloudflareZeroTrustAccessGroups#name}
   */
   readonly name?: string;
   /**
   * Search for groups by other listed query parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups#search DataCloudflareZeroTrustAccessGroups#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups#search DataCloudflareZeroTrustAccessGroups#search}
   */
   readonly search?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups#zone_id DataCloudflareZeroTrustAccessGroups#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups#zone_id DataCloudflareZeroTrustAccessGroups#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1089,6 +1089,70 @@ export class DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputRe
     return this.getStringAttribute('id');
   }
 }
+export interface DataCloudflareZeroTrustAccessGroupsResultExcludeOidc {
+}
+
+export function dataCloudflareZeroTrustAccessGroupsResultExcludeOidcToTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultExcludeOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustAccessGroupsResultExcludeOidcToHclTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultExcludeOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustAccessGroupsResultExcludeOidcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustAccessGroupsResultExcludeOidc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustAccessGroupsResultExcludeOidc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // claim_name - computed: true, optional: false, required: false
+  public get claimName() {
+    return this.getStringAttribute('claim_name');
+  }
+
+  // claim_value - computed: true, optional: false, required: false
+  public get claimValue() {
+    return this.getStringAttribute('claim_value');
+  }
+
+  // identity_provider_id - computed: true, optional: false, required: false
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+}
 export interface DataCloudflareZeroTrustAccessGroupsResultExcludeOkta {
 }
 
@@ -1429,6 +1493,12 @@ export class DataCloudflareZeroTrustAccessGroupsResultExcludeOutputReference ext
   private _loginMethod = new DataCloudflareZeroTrustAccessGroupsResultExcludeLoginMethodOutputReference(this, "login_method");
   public get loginMethod() {
     return this._loginMethod;
+  }
+
+  // oidc - computed: true, optional: false, required: false
+  private _oidc = new DataCloudflareZeroTrustAccessGroupsResultExcludeOidcOutputReference(this, "oidc");
+  public get oidc() {
+    return this._oidc;
   }
 
   // okta - computed: true, optional: false, required: false
@@ -2514,6 +2584,70 @@ export class DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputRe
     return this.getStringAttribute('id');
   }
 }
+export interface DataCloudflareZeroTrustAccessGroupsResultIncludeOidc {
+}
+
+export function dataCloudflareZeroTrustAccessGroupsResultIncludeOidcToTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultIncludeOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustAccessGroupsResultIncludeOidcToHclTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultIncludeOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustAccessGroupsResultIncludeOidcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustAccessGroupsResultIncludeOidc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustAccessGroupsResultIncludeOidc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // claim_name - computed: true, optional: false, required: false
+  public get claimName() {
+    return this.getStringAttribute('claim_name');
+  }
+
+  // claim_value - computed: true, optional: false, required: false
+  public get claimValue() {
+    return this.getStringAttribute('claim_value');
+  }
+
+  // identity_provider_id - computed: true, optional: false, required: false
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+}
 export interface DataCloudflareZeroTrustAccessGroupsResultIncludeOkta {
 }
 
@@ -2854,6 +2988,12 @@ export class DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference ext
   private _loginMethod = new DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference(this, "login_method");
   public get loginMethod() {
     return this._loginMethod;
+  }
+
+  // oidc - computed: true, optional: false, required: false
+  private _oidc = new DataCloudflareZeroTrustAccessGroupsResultIncludeOidcOutputReference(this, "oidc");
+  public get oidc() {
+    return this._oidc;
   }
 
   // okta - computed: true, optional: false, required: false
@@ -3939,6 +4079,70 @@ export class DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutput
     return this.getStringAttribute('id');
   }
 }
+export interface DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidc {
+}
+
+export function dataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcToTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcToHclTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // claim_name - computed: true, optional: false, required: false
+  public get claimName() {
+    return this.getStringAttribute('claim_name');
+  }
+
+  // claim_value - computed: true, optional: false, required: false
+  public get claimValue() {
+    return this.getStringAttribute('claim_value');
+  }
+
+  // identity_provider_id - computed: true, optional: false, required: false
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+}
 export interface DataCloudflareZeroTrustAccessGroupsResultIsDefaultOkta {
 }
 
@@ -4279,6 +4483,12 @@ export class DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference e
   private _loginMethod = new DataCloudflareZeroTrustAccessGroupsResultIsDefaultLoginMethodOutputReference(this, "login_method");
   public get loginMethod() {
     return this._loginMethod;
+  }
+
+  // oidc - computed: true, optional: false, required: false
+  private _oidc = new DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcOutputReference(this, "oidc");
+  public get oidc() {
+    return this._oidc;
   }
 
   // okta - computed: true, optional: false, required: false
@@ -5364,6 +5574,70 @@ export class DataCloudflareZeroTrustAccessGroupsResultRequireLoginMethodOutputRe
     return this.getStringAttribute('id');
   }
 }
+export interface DataCloudflareZeroTrustAccessGroupsResultRequireOidc {
+}
+
+export function dataCloudflareZeroTrustAccessGroupsResultRequireOidcToTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultRequireOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustAccessGroupsResultRequireOidcToHclTerraform(struct?: DataCloudflareZeroTrustAccessGroupsResultRequireOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustAccessGroupsResultRequireOidcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustAccessGroupsResultRequireOidc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustAccessGroupsResultRequireOidc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // claim_name - computed: true, optional: false, required: false
+  public get claimName() {
+    return this.getStringAttribute('claim_name');
+  }
+
+  // claim_value - computed: true, optional: false, required: false
+  public get claimValue() {
+    return this.getStringAttribute('claim_value');
+  }
+
+  // identity_provider_id - computed: true, optional: false, required: false
+  public get identityProviderId() {
+    return this.getStringAttribute('identity_provider_id');
+  }
+}
 export interface DataCloudflareZeroTrustAccessGroupsResultRequireOkta {
 }
 
@@ -5706,6 +5980,12 @@ export class DataCloudflareZeroTrustAccessGroupsResultRequireOutputReference ext
     return this._loginMethod;
   }
 
+  // oidc - computed: true, optional: false, required: false
+  private _oidc = new DataCloudflareZeroTrustAccessGroupsResultRequireOidcOutputReference(this, "oidc");
+  public get oidc() {
+    return this._oidc;
+  }
+
   // okta - computed: true, optional: false, required: false
   private _okta = new DataCloudflareZeroTrustAccessGroupsResultRequireOktaOutputReference(this, "okta");
   public get okta() {
@@ -5859,7 +6139,7 @@ export class DataCloudflareZeroTrustAccessGroupsResultList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups cloudflare_zero_trust_access_groups}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups cloudflare_zero_trust_access_groups}
 */
 export class DataCloudflareZeroTrustAccessGroups extends cdktf.TerraformDataSource {
 
@@ -5875,7 +6155,7 @@ export class DataCloudflareZeroTrustAccessGroups extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataCloudflareZeroTrustAccessGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustAccessGroups to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustAccessGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -5887,7 +6167,7 @@ export class DataCloudflareZeroTrustAccessGroups extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_groups cloudflare_zero_trust_access_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_groups cloudflare_zero_trust_access_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5898,7 +6178,7 @@ export class DataCloudflareZeroTrustAccessGroups extends cdktf.TerraformDataSour
       terraformResourceType: 'cloudflare_zero_trust_access_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

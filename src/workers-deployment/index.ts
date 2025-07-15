@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +15,27 @@ export interface WorkersDeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}
   */
   readonly annotations?: WorkersDeploymentAnnotations;
   /**
   * Name of the script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
   */
   readonly scriptName: string;
   /**
   * Available values: "percentage".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
   */
   readonly strategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}
   */
   readonly versions: WorkersDeploymentVersions[] | cdktf.IResolvable;
 }
@@ -43,7 +43,7 @@ export interface WorkersDeploymentAnnotations {
   /**
   * Human-readable message about the deployment. Truncated to 100 bytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
   */
   readonly workersMessage?: string;
 }
@@ -378,11 +378,11 @@ export class WorkersDeploymentDeploymentsList extends cdktf.ComplexList {
 }
 export interface WorkersDeploymentVersions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}
   */
   readonly percentage: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}
   */
   readonly versionId: string;
 }
@@ -521,7 +521,7 @@ export class WorkersDeploymentVersionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment cloudflare_workers_deployment}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment cloudflare_workers_deployment}
 */
 export class WorkersDeployment extends cdktf.TerraformResource {
 
@@ -537,7 +537,7 @@ export class WorkersDeployment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersDeployment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersDeployment to import
-  * @param importFromId The id of the existing WorkersDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -549,7 +549,7 @@ export class WorkersDeployment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -560,7 +560,7 @@ export class WorkersDeployment extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_deployment',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
