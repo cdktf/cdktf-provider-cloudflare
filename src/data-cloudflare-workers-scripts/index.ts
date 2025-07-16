@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/workers_scripts
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_scripts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareWorkersScriptsConfig extends cdktf.TerraformMetaA
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
   */
   readonly maxItems?: number;
 }
@@ -308,7 +308,7 @@ export class DataCloudflareWorkersScriptsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_scripts cloudflare_workers_scripts}
 */
 export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
 
@@ -324,7 +324,7 @@ export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWorkersScripts resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWorkersScripts to import
-  * @param importFromId The id of the existing DataCloudflareWorkersScripts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWorkersScripts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWorkersScripts to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -336,7 +336,7 @@ export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -347,7 +347,7 @@ export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_workers_scripts',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.0',
+        providerVersion: '5.7.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

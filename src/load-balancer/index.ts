@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +15,67 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
   */
   readonly adaptiveRouting?: LoadBalancerAdaptiveRouting;
   /**
   * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
   */
   readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * A list of pool IDs ordered by their failover priority. Pools defined here are used by default, or when region_pools are not configured for a given region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
   */
   readonly defaultPools: string[];
   /**
   * Object description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#description LoadBalancer#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#description LoadBalancer#description}
   */
   readonly description?: string;
   /**
   * Whether to enable (the default) this load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#enabled LoadBalancer#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The pool ID to use when all other pools are detected as unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
   */
   readonly fallbackPool: string;
   /**
   * Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
   */
   readonly locationStrategy?: LoadBalancerLocationStrategy;
   /**
   * The DNS hostname to associate with your Load Balancer. If this hostname already exists as a DNS record in Cloudflare's DNS, the Load Balancer will take precedence and the DNS record will not be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#name LoadBalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#name LoadBalancer#name}
   */
   readonly name: string;
   /**
   * List of networks where Load Balancer or Pool is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#networks LoadBalancer#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#networks LoadBalancer#networks}
   */
   readonly networks?: string[];
   /**
   * (Enterprise only): A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
   */
   readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * Whether the hostname should be gray clouded (false) or orange clouded (true).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#proxied LoadBalancer#proxied}
   */
   readonly proxied?: boolean | cdktf.IResolvable;
   /**
@@ -84,19 +84,19 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   * - `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
   * - `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
   */
   readonly randomSteering?: LoadBalancerRandomSteering;
   /**
   * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
   */
   readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * BETA Field Not General Access: A list of rules for this load balancer to execute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#rules LoadBalancer#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#rules LoadBalancer#rules}
   */
   readonly rules?: LoadBalancerRules[] | cdktf.IResolvable;
   /**
@@ -106,13 +106,13 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   * - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
   * Available values: "none", "cookie", "ip_cookie", "header".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
   * Configures attributes for session affinity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
   */
   readonly sessionAffinityAttributes?: LoadBalancerSessionAffinityAttributes;
   /**
@@ -120,7 +120,7 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   * - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
   * - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
@@ -135,17 +135,17 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   * Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
   * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}
   */
   readonly zoneId: string;
 }
@@ -153,7 +153,7 @@ export interface LoadBalancerAdaptiveRouting {
   /**
   * Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
   */
   readonly failoverAcrossPools?: boolean | cdktf.IResolvable;
 }
@@ -252,7 +252,7 @@ export interface LoadBalancerLocationStrategy {
   * - `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   * Available values: "pop", "resolver_ip".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#mode LoadBalancer#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#mode LoadBalancer#mode}
   */
   readonly mode?: string;
   /**
@@ -263,7 +263,7 @@ export interface LoadBalancerLocationStrategy {
   * - `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   * Available values: "always", "never", "proximity", "geo".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
   */
   readonly preferEcs?: string;
 }
@@ -388,13 +388,13 @@ export interface LoadBalancerRandomSteering {
   /**
   * The default weight for pools in the load balancer that are not specified in the pool_weights map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
   */
   readonly defaultWeight?: number;
   /**
   * A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
   */
   readonly poolWeights?: { [key: string]: number };
 }
@@ -519,25 +519,25 @@ export interface LoadBalancerRulesFixedResponse {
   /**
   * The http 'Content-Type' header to include in the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#content_type LoadBalancer#content_type}
   */
   readonly contentType?: string;
   /**
   * The http 'Location' header to include in the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#location LoadBalancer#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#location LoadBalancer#location}
   */
   readonly location?: string;
   /**
   * Text to include as the http body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#message_body LoadBalancer#message_body}
   */
   readonly messageBody?: string;
   /**
   * The http status code to respond with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#status_code LoadBalancer#status_code}
   */
   readonly statusCode?: number;
 }
@@ -720,7 +720,7 @@ export interface LoadBalancerRulesOverridesAdaptiveRouting {
   /**
   * Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
   */
   readonly failoverAcrossPools?: boolean | cdktf.IResolvable;
 }
@@ -819,7 +819,7 @@ export interface LoadBalancerRulesOverridesLocationStrategy {
   * - `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   * Available values: "pop", "resolver_ip".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#mode LoadBalancer#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#mode LoadBalancer#mode}
   */
   readonly mode?: string;
   /**
@@ -830,7 +830,7 @@ export interface LoadBalancerRulesOverridesLocationStrategy {
   * - `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   * Available values: "always", "never", "proximity", "geo".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
   */
   readonly preferEcs?: string;
 }
@@ -955,13 +955,13 @@ export interface LoadBalancerRulesOverridesRandomSteering {
   /**
   * The default weight for pools in the load balancer that are not specified in the pool_weights map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
   */
   readonly defaultWeight?: number;
   /**
   * A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
   */
   readonly poolWeights?: { [key: string]: number };
 }
@@ -1086,13 +1086,13 @@ export interface LoadBalancerRulesOverridesSessionAffinityAttributes {
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
   /**
   * Configures the names of HTTP headers to base session affinity on when header `session_affinity` is enabled. At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#headers LoadBalancer#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#headers LoadBalancer#headers}
   */
   readonly headers?: string[];
   /**
@@ -1100,21 +1100,21 @@ export interface LoadBalancerRulesOverridesSessionAffinityAttributes {
   * - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
   * - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
   */
   readonly requireAllHeaders?: boolean | cdktf.IResolvable;
   /**
   * Configures the SameSite attribute on session affinity cookie. Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
   * Available values: "Auto", "Lax", "None", "Strict".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#samesite LoadBalancer#samesite}
   */
   readonly samesite?: string;
   /**
   * Configures the Secure attribute on session affinity cookie. Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
   * Available values: "Auto", "Always", "Never".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#secure LoadBalancer#secure}
   */
   readonly secure?: string;
   /**
@@ -1124,7 +1124,7 @@ export interface LoadBalancerRulesOverridesSessionAffinityAttributes {
   * - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
   * Available values: "none", "temporary", "sticky".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
   */
   readonly zeroDowntimeFailover?: string;
 }
@@ -1365,37 +1365,37 @@ export interface LoadBalancerRulesOverrides {
   /**
   * Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
   */
   readonly adaptiveRouting?: LoadBalancerRulesOverridesAdaptiveRouting;
   /**
   * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
   */
   readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
   * A list of pool IDs ordered by their failover priority. Pools defined here are used by default, or when region_pools are not configured for a given region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
   */
   readonly defaultPools?: string[];
   /**
   * The pool ID to use when all other pools are detected as unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
   */
   readonly fallbackPool?: string;
   /**
   * Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
   */
   readonly locationStrategy?: LoadBalancerRulesOverridesLocationStrategy;
   /**
   * (Enterprise only): A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
   */
   readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
@@ -1404,13 +1404,13 @@ export interface LoadBalancerRulesOverrides {
   * - `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
   * - `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
   */
   readonly randomSteering?: LoadBalancerRulesOverridesRandomSteering;
   /**
   * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
   */
   readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
   /**
@@ -1420,13 +1420,13 @@ export interface LoadBalancerRulesOverrides {
   * - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
   * Available values: "none", "cookie", "ip_cookie", "header".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
   * Configures attributes for session affinity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
   */
   readonly sessionAffinityAttributes?: LoadBalancerRulesOverridesSessionAffinityAttributes;
   /**
@@ -1434,7 +1434,7 @@ export interface LoadBalancerRulesOverrides {
   * - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
   * - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
@@ -1449,13 +1449,13 @@ export interface LoadBalancerRulesOverrides {
   * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   * Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
   * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#ttl LoadBalancer#ttl}
   */
   readonly ttl?: number;
 }
@@ -1899,43 +1899,43 @@ export interface LoadBalancerRules {
   /**
   * The condition expressions to evaluate. If the condition evaluates to true, the overrides or fixed_response in this rule will be applied. An empty condition is always true. For more details on condition expressions, please see https://developers.cloudflare.com/load-balancing/understand-basics/load-balancing-rules/expressions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#condition LoadBalancer#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#condition LoadBalancer#condition}
   */
   readonly condition?: string;
   /**
   * Disable this specific rule. It will no longer be evaluated by this load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#disabled LoadBalancer#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * A collection of fields used to directly respond to the eyeball instead of routing to a pool. If a fixed_response is supplied the rule will be marked as terminates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
   */
   readonly fixedResponse?: LoadBalancerRulesFixedResponse;
   /**
   * Name of this rule. Only used for human readability.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#name LoadBalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#name LoadBalancer#name}
   */
   readonly name?: string;
   /**
   * A collection of overrides to apply to the load balancer when this rule's condition is true. All fields are optional.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#overrides LoadBalancer#overrides}
   */
   readonly overrides?: LoadBalancerRulesOverrides;
   /**
   * The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If no value is provided for any rule the array order of the rules field will be used to assign a priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#priority LoadBalancer#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#priority LoadBalancer#priority}
   */
   readonly priority?: number;
   /**
   * If this rule's condition is true, this causes rule evaluation to stop after processing this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#terminates LoadBalancer#terminates}
   */
   readonly terminates?: boolean | cdktf.IResolvable;
 }
@@ -2227,13 +2227,13 @@ export interface LoadBalancerSessionAffinityAttributes {
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
   /**
   * Configures the names of HTTP headers to base session affinity on when header `session_affinity` is enabled. At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#headers LoadBalancer#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#headers LoadBalancer#headers}
   */
   readonly headers?: string[];
   /**
@@ -2241,21 +2241,21 @@ export interface LoadBalancerSessionAffinityAttributes {
   * - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
   * - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
   */
   readonly requireAllHeaders?: boolean | cdktf.IResolvable;
   /**
   * Configures the SameSite attribute on session affinity cookie. Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
   * Available values: "Auto", "Lax", "None", "Strict".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#samesite LoadBalancer#samesite}
   */
   readonly samesite?: string;
   /**
   * Configures the Secure attribute on session affinity cookie. Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
   * Available values: "Auto", "Always", "Never".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#secure LoadBalancer#secure}
   */
   readonly secure?: string;
   /**
@@ -2265,7 +2265,7 @@ export interface LoadBalancerSessionAffinityAttributes {
   * - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
   * Available values: "none", "temporary", "sticky".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
   */
   readonly zeroDowntimeFailover?: string;
 }
@@ -2504,7 +2504,7 @@ export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer cloudflare_load_balancer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer cloudflare_load_balancer}
 */
 export class LoadBalancer extends cdktf.TerraformResource {
 
@@ -2520,7 +2520,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LoadBalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadBalancer to import
-  * @param importFromId The id of the existing LoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadBalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2532,7 +2532,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer cloudflare_load_balancer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/load_balancer cloudflare_load_balancer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2543,7 +2543,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.0',
+        providerVersion: '5.7.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

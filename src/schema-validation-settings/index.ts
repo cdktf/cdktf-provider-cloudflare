@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/schema_validation_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,7 +21,7 @@ export interface SchemaValidationSettingsConfig extends cdktf.TerraformMetaArgum
   *   - `"none"` - skip running schema validation
   * Available values: "none", "log", "block".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
   */
   readonly validationDefaultMitigationAction: string;
   /**
@@ -31,19 +31,19 @@ export interface SchemaValidationSettingsConfig extends cdktf.TerraformMetaArgum
   *   - `null` - clears any existing override
   * Available values: "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
   */
   readonly validationOverrideMitigationAction?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}
 */
 export class SchemaValidationSettings extends cdktf.TerraformResource {
 
@@ -59,7 +59,7 @@ export class SchemaValidationSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SchemaValidationSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SchemaValidationSettings to import
-  * @param importFromId The id of the existing SchemaValidationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/schema_validation_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SchemaValidationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SchemaValidationSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -71,7 +71,7 @@ export class SchemaValidationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +82,7 @@ export class SchemaValidationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_schema_validation_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.0',
+        providerVersion: '5.7.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

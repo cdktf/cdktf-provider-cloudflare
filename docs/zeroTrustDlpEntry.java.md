@@ -4,7 +4,7 @@
 
 ### ZeroTrustDlpEntry <a name="ZeroTrustDlpEntry" id="@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer"></a>
 
@@ -44,11 +44,11 @@ ZeroTrustDlpEntry.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.pattern">pattern</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.pattern">pattern</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Available values: "custom", "predefined", "integration". |
 
 ---
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "custom", "predefined", "integration".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
 
 ---
 
@@ -606,7 +606,7 @@ The construct id used in the generated config for the ZeroTrustDlpEntry to impor
 
 The id of the existing ZeroTrustDlpEntry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1062,11 +1062,11 @@ ZeroTrustDlpEntryConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.pattern">pattern</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.pattern">pattern</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.type">type</a></code> | <code>java.lang.String</code> | Available values: "custom", "predefined", "integration". |
 
 ---
@@ -1149,7 +1149,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
 
 ---
 
@@ -1161,7 +1161,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public ZeroTrustDlpEntryPattern getPattern();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public java.lang.String getProfileId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public java.lang.String getType();
 
 Available values: "custom", "predefined", "integration".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
 
 ---
 
@@ -1232,7 +1232,7 @@ ZeroTrustDlpEntryPattern.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern.property.regex">regex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern.property.regex">regex</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern.property.validation">validation</a></code> | <code>java.lang.String</code> | Available values: "luhn". |
 
 ---
@@ -1245,7 +1245,7 @@ public java.lang.String getRegex();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}.
 
 ---
 
@@ -1259,7 +1259,7 @@ public java.lang.String getValidation();
 
 Available values: "luhn".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_dlp_entry#validation ZeroTrustDlpEntry#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_entry#validation ZeroTrustDlpEntry#validation}
 
 ---
 

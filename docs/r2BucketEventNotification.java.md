@@ -4,7 +4,7 @@
 
 ### R2BucketEventNotification <a name="R2BucketEventNotification" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification.Initializer"></a>
 
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
 
 ---
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Queue ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of rules to drive notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
 
 ---
 
@@ -611,7 +611,7 @@ The construct id used in the generated config for the R2BucketEventNotification 
 
 The id of the existing R2BucketEventNotification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,7 +1054,7 @@ public java.lang.String getAccountId();
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
 
 ---
 
@@ -1068,7 +1068,7 @@ public java.lang.String getBucketName();
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
 
 ---
 
@@ -1082,7 +1082,7 @@ public java.lang.String getQueueId();
 
 Queue ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
 
 ---
 
@@ -1096,7 +1096,7 @@ public java.lang.String getJurisdiction();
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
 
 ---
 
@@ -1110,7 +1110,7 @@ public java.lang.Object getRules();
 
 Array of rules to drive notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.util.List<java.lang.String> getActions();
 
 Array of R2 object actions that will trigger notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.String getDescription();
 
 A description that can be used to identify the event notification rule after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
 
 ---
 
@@ -1178,7 +1178,7 @@ public java.lang.String getPrefix();
 
 Notifications will be sent only for objects with this prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
 
 ---
 
@@ -1192,7 +1192,7 @@ public java.lang.String getSuffix();
 
 Notifications will be sent only for objects with this suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
 
 ---
 

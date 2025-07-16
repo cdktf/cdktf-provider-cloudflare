@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/content_scanning_expressions
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareContentScanningExpressionsConfig extends cdktf.Te
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/content_scanning_expressions#max_items DataCloudflareContentScanningExpressions#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions#max_items DataCloudflareContentScanningExpressions#max_items}
   */
   readonly maxItems?: number;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/content_scanning_expressions#zone_id DataCloudflareContentScanningExpressions#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions#zone_id DataCloudflareContentScanningExpressions#zone_id}
   */
   readonly zoneId: string;
 }
@@ -107,7 +107,7 @@ export class DataCloudflareContentScanningExpressionsResultList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}
 */
 export class DataCloudflareContentScanningExpressions extends cdktf.TerraformDataSource {
 
@@ -123,7 +123,7 @@ export class DataCloudflareContentScanningExpressions extends cdktf.TerraformDat
   * Generates CDKTF code for importing a DataCloudflareContentScanningExpressions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareContentScanningExpressions to import
-  * @param importFromId The id of the existing DataCloudflareContentScanningExpressions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/content_scanning_expressions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareContentScanningExpressions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareContentScanningExpressions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -135,7 +135,7 @@ export class DataCloudflareContentScanningExpressions extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +146,7 @@ export class DataCloudflareContentScanningExpressions extends cdktf.TerraformDat
       terraformResourceType: 'cloudflare_content_scanning_expressions',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.0',
+        providerVersion: '5.7.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
