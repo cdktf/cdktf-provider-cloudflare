@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,44 +15,44 @@ export interface R2CustomDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Name of the custom domain to be added.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
   */
   readonly domain: string;
   /**
   * Whether to enable public bucket access at the custom domain. If undefined, the domain will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Minimum TLS Version the custom domain will accept for incoming connections. If not set, defaults to 1.0.
   * Available values: "1.0", "1.1", "1.2", "1.3".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
   */
   readonly minTls?: string;
   /**
   * Zone ID of the custom domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
   */
   readonly zoneId: string;
 }
@@ -117,7 +117,7 @@ export class R2CustomDomainStatusOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}
 */
 export class R2CustomDomain extends cdktf.TerraformResource {
 
@@ -133,7 +133,7 @@ export class R2CustomDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a R2CustomDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2CustomDomain to import
-  * @param importFromId The id of the existing R2CustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2CustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2CustomDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +145,7 @@ export class R2CustomDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class R2CustomDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_custom_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.0',
+        providerVersion: '5.7.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
