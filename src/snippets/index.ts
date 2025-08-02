@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface SnippetsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Content files of uploaded snippet
+  * The list of files belonging to the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#files Snippets#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#files Snippets#files}
   */
-  readonly files?: string;
+  readonly files: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#metadata Snippets#metadata}
-  */
-  readonly metadata?: SnippetsMetadata;
-  /**
-  * Snippet identifying name
+  * Metadata about the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#snippet_name Snippets#snippet_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#metadata Snippets#metadata}
+  */
+  readonly metadata: SnippetsMetadata;
+  /**
+  * The identifying name of the snippet.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#snippet_name Snippets#snippet_name}
   */
   readonly snippetName: string;
   /**
-  * Identifier
+  * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#zone_id Snippets#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#zone_id Snippets#zone_id}
   */
   readonly zoneId: string;
 }
 export interface SnippetsMetadata {
   /**
-  * Main module name of uploaded snippet
+  * Name of the file that contains the main module of the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#main_module Snippets#main_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#main_module Snippets#main_module}
   */
-  readonly mainModule?: string;
+  readonly mainModule: string;
 }
 
 export function snippetsMetadataToTerraform(struct?: SnippetsMetadata | cdktf.IResolvable): any {
@@ -115,16 +117,13 @@ export class SnippetsMetadataOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // main_module - computed: false, optional: true, required: false
+  // main_module - computed: false, optional: false, required: true
   private _mainModule?: string; 
   public get mainModule() {
     return this.getStringAttribute('main_module');
   }
   public set mainModule(value: string) {
     this._mainModule = value;
-  }
-  public resetMainModule() {
-    this._mainModule = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get mainModuleInput() {
@@ -133,7 +132,7 @@ export class SnippetsMetadataOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets cloudflare_snippets}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets cloudflare_snippets}
 */
 export class Snippets extends cdktf.TerraformResource {
 
@@ -149,7 +148,7 @@ export class Snippets extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Snippets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Snippets to import
-  * @param importFromId The id of the existing Snippets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Snippets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Snippets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -161,7 +160,7 @@ export class Snippets extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets cloudflare_snippets} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets cloudflare_snippets} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +171,7 @@ export class Snippets extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_snippets',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.1',
+        providerVersion: '5.8.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -198,32 +197,26 @@ export class Snippets extends cdktf.TerraformResource {
     return this.getStringAttribute('created_on');
   }
 
-  // files - computed: false, optional: true, required: false
-  private _files?: string; 
+  // files - computed: false, optional: false, required: true
+  private _files?: string[]; 
   public get files() {
-    return this.getStringAttribute('files');
+    return this.getListAttribute('files');
   }
-  public set files(value: string) {
+  public set files(value: string[]) {
     this._files = value;
-  }
-  public resetFiles() {
-    this._files = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get filesInput() {
     return this._files;
   }
 
-  // metadata - computed: false, optional: true, required: false
+  // metadata - computed: false, optional: false, required: true
   private _metadata = new SnippetsMetadataOutputReference(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
   public putMetadata(value: SnippetsMetadata) {
     this._metadata.internalValue = value;
-  }
-  public resetMetadata() {
-    this._metadata.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
@@ -267,7 +260,7 @@ export class Snippets extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      files: cdktf.stringToTerraform(this._files),
+      files: cdktf.listMapper(cdktf.stringToTerraform, false)(this._files),
       metadata: snippetsMetadataToTerraform(this._metadata.internalValue),
       snippet_name: cdktf.stringToTerraform(this._snippetName),
       zone_id: cdktf.stringToTerraform(this._zoneId),
@@ -277,10 +270,10 @@ export class Snippets extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       files: {
-        value: cdktf.stringToHclTerraform(this._files),
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._files),
         isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+        type: "list",
+        storageClassType: "stringList",
       },
       metadata: {
         value: snippetsMetadataToHclTerraform(this._metadata.internalValue),
