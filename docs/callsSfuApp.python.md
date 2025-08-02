@@ -4,7 +4,7 @@
 
 ### CallsSfuApp <a name="CallsSfuApp" id="@cdktf/provider-cloudflare.callsSfuApp.CallsSfuApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.callsSfuApp.CallsSfuApp.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A short description of Calls app, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app#name CallsSfuApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app#name CallsSfuApp#name}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the CallsSfuApp to import.
 
 The id of the existing CallsSfuApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1040,7 +1040,7 @@ account_id: str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
 
 ---
 
@@ -1054,7 +1054,7 @@ app_id: str
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
 
 ---
 
@@ -1068,7 +1068,7 @@ name: str
 
 A short description of Calls app, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/calls_sfu_app#name CallsSfuApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/calls_sfu_app#name CallsSfuApp#name}
 
 ---
 

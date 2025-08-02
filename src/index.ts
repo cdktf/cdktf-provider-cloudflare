@@ -359,6 +359,7 @@ export * as dataCloudflarePagesProject from './data-cloudflare-pages-project';
 export * as dataCloudflarePagesProjects from './data-cloudflare-pages-projects';
 export * as dataCloudflareQueue from './data-cloudflare-queue';
 export * as dataCloudflareQueueConsumer from './data-cloudflare-queue-consumer';
+export * as dataCloudflareQueueConsumers from './data-cloudflare-queue-consumers';
 export * as dataCloudflareQueues from './data-cloudflare-queues';
 export * as dataCloudflareR2Bucket from './data-cloudflare-r2-bucket';
 export * as dataCloudflareR2BucketCors from './data-cloudflare-r2-bucket-cors';

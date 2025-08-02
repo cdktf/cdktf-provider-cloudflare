@@ -4,7 +4,7 @@
 
 ### Snippets <a name="Snippets" id="@cdktf/provider-cloudflare.snippets.Snippets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets cloudflare_snippets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets cloudflare_snippets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.snippets.Snippets.Initializer"></a>
 
@@ -23,10 +23,10 @@ Snippets.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+    .files(java.util.List<java.lang.String>)
+    .metadata(SnippetsMetadata)
     .snippetName(java.lang.String)
     .zoneId(java.lang.String)
-//  .files(java.lang.String)
-//  .metadata(SnippetsMetadata)
     .build();
 ```
 
@@ -41,10 +41,10 @@ Snippets.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.snippetName">snippetName</a></code> | <code>java.lang.String</code> | Snippet identifying name. |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.files">files</a></code> | <code>java.lang.String</code> | Content files of uploaded snippet. |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#metadata Snippets#metadata}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.files">files</a></code> | <code>java.util.List<java.lang.String></code> | The list of files belonging to the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a></code> | Metadata about the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.snippetName">snippetName</a></code> | <code>java.lang.String</code> | The identifying name of the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The unique ID of the zone. |
 
 ---
 
@@ -108,13 +108,33 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `files`<sup>Required</sup> <a name="files" id="@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.files"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+The list of files belonging to the snippet.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#files Snippets#files}
+
+---
+
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.metadata"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a>
+
+Metadata about the snippet.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#metadata Snippets#metadata}
+
+---
+
 ##### `snippetName`<sup>Required</sup> <a name="snippetName" id="@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.snippetName"></a>
 
 - *Type:* java.lang.String
 
-Snippet identifying name.
+The identifying name of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#snippet_name Snippets#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#snippet_name Snippets#snippet_name}
 
 ---
 
@@ -122,27 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Identifier.
+The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#zone_id Snippets#zone_id}
-
----
-
-##### `files`<sup>Optional</sup> <a name="files" id="@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.files"></a>
-
-- *Type:* java.lang.String
-
-Content files of uploaded snippet.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#files Snippets#files}
-
----
-
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-cloudflare.snippets.Snippets.Initializer.parameter.metadata"></a>
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#metadata Snippets#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#zone_id Snippets#zone_id}
 
 ---
 
@@ -174,8 +176,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.putMetadata">putMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.resetFiles">resetFiles</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.resetMetadata">resetMetadata</a></code> | *No description.* |
 
 ---
 
@@ -481,18 +481,6 @@ public void putMetadata(SnippetsMetadata value)
 
 ---
 
-##### `resetFiles` <a name="resetFiles" id="@cdktf/provider-cloudflare.snippets.Snippets.resetFiles"></a>
-
-```java
-public void resetFiles()
-```
-
-##### `resetMetadata` <a name="resetMetadata" id="@cdktf/provider-cloudflare.snippets.Snippets.resetMetadata"></a>
-
-```java
-public void resetMetadata()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -596,7 +584,7 @@ The construct id used in the generated config for the Snippets to import.
 
 The id of the existing Snippets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -629,11 +617,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadataOutputReference">SnippetsMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.modifiedOn">modifiedOn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.filesInput">filesInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.filesInput">filesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.metadataInput">metadataInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.snippetNameInput">snippetNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.files">files</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.files">files</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.snippetName">snippetName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.Snippets.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -814,10 +802,10 @@ public java.lang.String getModifiedOn();
 ##### `filesInput`<sup>Optional</sup> <a name="filesInput" id="@cdktf/provider-cloudflare.snippets.Snippets.property.filesInput"></a>
 
 ```java
-public java.lang.String getFilesInput();
+public java.util.List<java.lang.String> getFilesInput();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -854,10 +842,10 @@ public java.lang.String getZoneIdInput();
 ##### `files`<sup>Required</sup> <a name="files" id="@cdktf/provider-cloudflare.snippets.Snippets.property.files"></a>
 
 ```java
-public java.lang.String getFiles();
+public java.util.List<java.lang.String> getFiles();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -920,10 +908,10 @@ SnippetsConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+    .files(java.util.List<java.lang.String>)
+    .metadata(SnippetsMetadata)
     .snippetName(java.lang.String)
     .zoneId(java.lang.String)
-//  .files(java.lang.String)
-//  .metadata(SnippetsMetadata)
     .build();
 ```
 
@@ -938,10 +926,10 @@ SnippetsConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.snippetName">snippetName</a></code> | <code>java.lang.String</code> | Snippet identifying name. |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.files">files</a></code> | <code>java.lang.String</code> | Content files of uploaded snippet. |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#metadata Snippets#metadata}. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.files">files</a></code> | <code>java.util.List<java.lang.String></code> | The list of files belonging to the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a></code> | Metadata about the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.snippetName">snippetName</a></code> | <code>java.lang.String</code> | The identifying name of the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The unique ID of the zone. |
 
 ---
 
@@ -1015,6 +1003,34 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `files`<sup>Required</sup> <a name="files" id="@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.files"></a>
+
+```java
+public java.util.List<java.lang.String> getFiles();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The list of files belonging to the snippet.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#files Snippets#files}
+
+---
+
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.metadata"></a>
+
+```java
+public SnippetsMetadata getMetadata();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a>
+
+Metadata about the snippet.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#metadata Snippets#metadata}
+
+---
+
 ##### `snippetName`<sup>Required</sup> <a name="snippetName" id="@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.snippetName"></a>
 
 ```java
@@ -1023,9 +1039,9 @@ public java.lang.String getSnippetName();
 
 - *Type:* java.lang.String
 
-Snippet identifying name.
+The identifying name of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#snippet_name Snippets#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#snippet_name Snippets#snippet_name}
 
 ---
 
@@ -1037,35 +1053,9 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Identifier.
+The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#zone_id Snippets#zone_id}
-
----
-
-##### `files`<sup>Optional</sup> <a name="files" id="@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.files"></a>
-
-```java
-public java.lang.String getFiles();
-```
-
-- *Type:* java.lang.String
-
-Content files of uploaded snippet.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#files Snippets#files}
-
----
-
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-cloudflare.snippets.SnippetsConfig.property.metadata"></a>
-
-```java
-public SnippetsMetadata getMetadata();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata">SnippetsMetadata</a>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#metadata Snippets#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#zone_id Snippets#zone_id}
 
 ---
 
@@ -1077,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import com.hashicorp.cdktf.providers.cloudflare.snippets.SnippetsMetadata;
 
 SnippetsMetadata.builder()
-//  .mainModule(java.lang.String)
+    .mainModule(java.lang.String)
     .build();
 ```
 
@@ -1085,11 +1075,11 @@ SnippetsMetadata.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata.property.mainModule">mainModule</a></code> | <code>java.lang.String</code> | Main module name of uploaded snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadata.property.mainModule">mainModule</a></code> | <code>java.lang.String</code> | Name of the file that contains the main module of the snippet. |
 
 ---
 
-##### `mainModule`<sup>Optional</sup> <a name="mainModule" id="@cdktf/provider-cloudflare.snippets.SnippetsMetadata.property.mainModule"></a>
+##### `mainModule`<sup>Required</sup> <a name="mainModule" id="@cdktf/provider-cloudflare.snippets.SnippetsMetadata.property.mainModule"></a>
 
 ```java
 public java.lang.String getMainModule();
@@ -1097,9 +1087,9 @@ public java.lang.String getMainModule();
 
 - *Type:* java.lang.String
 
-Main module name of uploaded snippet.
+Name of the file that contains the main module of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets#main_module Snippets#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets#main_module Snippets#main_module}
 
 ---
 
@@ -1155,7 +1145,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.snippets.SnippetsMetadataOutputReference.resetMainModule">resetMainModule</a></code> | *No description.* |
 
 ---
 
@@ -1308,12 +1297,6 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `resetMainModule` <a name="resetMainModule" id="@cdktf/provider-cloudflare.snippets.SnippetsMetadataOutputReference.resetMainModule"></a>
-
-```java
-public void resetMainModule()
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

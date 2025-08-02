@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomPages <a name="DataCloudflareCustomPages" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages cloudflare_custom_pages}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages cloudflare_custom_pages}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataCloudflareCustomPages.DataCloudflareCustomPages(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
@@ -108,9 +108,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Identifier.
+Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages#identifier DataCloudflareCustomPages#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages#identifier DataCloudflareCustomPages#identifier}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages#account_id DataCloudflareCustomPages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages#account_id DataCloudflareCustomPages#account_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages#zone_id DataCloudflareCustomPages#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages#zone_id DataCloudflareCustomPages#zone_id}
 
 ---
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DataCloudflareCustomPages 
 
 The id of the existing DataCloudflareCustomPages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,6 +531,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.previewTarget">preview_target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.requiredTokens">required_tokens</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
@@ -662,6 +670,86 @@ provider: TerraformProvider
 
 ---
 
+##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.createdOn"></a>
+
+```python
+created_on: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `modified_on`<sup>Required</sup> <a name="modified_on" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.modifiedOn"></a>
+
+```python
+modified_on: str
+```
+
+- *Type:* str
+
+---
+
+##### `preview_target`<sup>Required</sup> <a name="preview_target" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.previewTarget"></a>
+
+```python
+preview_target: str
+```
+
+- *Type:* str
+
+---
+
+##### `required_tokens`<sup>Required</sup> <a name="required_tokens" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.requiredTokens"></a>
+
+```python
+required_tokens: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.state"></a>
+
+```python
+state: str
+```
+
+- *Type:* str
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
 ##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.property.accountIdInput"></a>
 
 ```python
@@ -774,7 +862,7 @@ dataCloudflareCustomPages.DataCloudflareCustomPagesConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPagesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPagesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPagesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPagesConfig.property.identifier">identifier</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPagesConfig.property.identifier">identifier</a></code> | <code>str</code> | Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPagesConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPagesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
@@ -858,9 +946,9 @@ identifier: str
 
 - *Type:* str
 
-Identifier.
+Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages#identifier DataCloudflareCustomPages#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages#identifier DataCloudflareCustomPages#identifier}
 
 ---
 
@@ -874,7 +962,7 @@ account_id: str
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages#account_id DataCloudflareCustomPages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages#account_id DataCloudflareCustomPages#account_id}
 
 ---
 
@@ -888,7 +976,7 @@ zone_id: str
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages#zone_id DataCloudflareCustomPages#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages#zone_id DataCloudflareCustomPages#zone_id}
 
 ---
 

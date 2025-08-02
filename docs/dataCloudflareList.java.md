@@ -4,7 +4,7 @@
 
 ### DataCloudflareList <a name="DataCloudflareList" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list cloudflare_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list cloudflare_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer"></a>
 
@@ -39,7 +39,7 @@ DataCloudflareList.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID for this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer.parameter.listId">listId</a></code> | <code>java.lang.String</code> | The unique ID of the list. |
 
 ---
@@ -108,9 +108,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Defines an identifier.
+The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list#account_id DataCloudflareList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#account_id DataCloudflareList#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list#list_id DataCloudflareList#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#list_id DataCloudflareList#list_id}
 
 ---
 
@@ -450,7 +450,7 @@ The construct id used in the generated config for the DataCloudflareList to impo
 
 The id of the existing DataCloudflareList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -790,7 +790,7 @@ DataCloudflareListConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID for this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.listId">listId</a></code> | <code>java.lang.String</code> | The unique ID of the list. |
 
 ---
@@ -873,9 +873,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Defines an identifier.
+The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list#account_id DataCloudflareList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#account_id DataCloudflareList#account_id}
 
 ---
 
@@ -889,7 +889,7 @@ public java.lang.String getListId();
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list#list_id DataCloudflareList#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#list_id DataCloudflareList#list_id}
 
 ---
 

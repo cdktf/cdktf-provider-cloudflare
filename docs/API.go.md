@@ -202,6 +202,7 @@ The following submodules are available:
 - [dataCloudflarePagesProjects](./dataCloudflarePagesProjects.go.md)
 - [dataCloudflareQueue](./dataCloudflareQueue.go.md)
 - [dataCloudflareQueueConsumer](./dataCloudflareQueueConsumer.go.md)
+- [dataCloudflareQueueConsumers](./dataCloudflareQueueConsumers.go.md)
 - [dataCloudflareQueues](./dataCloudflareQueues.go.md)
 - [dataCloudflareR2Bucket](./dataCloudflareR2Bucket.go.md)
 - [dataCloudflareR2BucketCors](./dataCloudflareR2BucketCors.go.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareResourceGroupsConfig extends cdktf.TerraformMetaA
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups#account_id DataCloudflareResourceGroups#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups#account_id DataCloudflareResourceGroups#account_id}
   */
   readonly accountId: string;
   /**
   * ID of the resource group to be fetched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups#id DataCloudflareResourceGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups#id DataCloudflareResourceGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,13 @@ export interface DataCloudflareResourceGroupsConfig extends cdktf.TerraformMetaA
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups#max_items DataCloudflareResourceGroups#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups#max_items DataCloudflareResourceGroups#max_items}
   */
   readonly maxItems?: number;
   /**
   * Name of the resource group to be fetched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups#name DataCloudflareResourceGroups#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups#name DataCloudflareResourceGroups#name}
   */
   readonly name?: string;
 }
@@ -349,7 +349,7 @@ export class DataCloudflareResourceGroupsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups cloudflare_resource_groups}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups cloudflare_resource_groups}
 */
 export class DataCloudflareResourceGroups extends cdktf.TerraformDataSource {
 
@@ -365,7 +365,7 @@ export class DataCloudflareResourceGroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareResourceGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareResourceGroups to import
-  * @param importFromId The id of the existing DataCloudflareResourceGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareResourceGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareResourceGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -377,7 +377,7 @@ export class DataCloudflareResourceGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/resource_groups cloudflare_resource_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/resource_groups cloudflare_resource_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -388,7 +388,7 @@ export class DataCloudflareResourceGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_resource_groups',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.1',
+        providerVersion: '5.8.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

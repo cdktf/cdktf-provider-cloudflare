@@ -202,6 +202,7 @@ The following submodules are available:
 - [dataCloudflarePagesProjects](./dataCloudflarePagesProjects.python.md)
 - [dataCloudflareQueue](./dataCloudflareQueue.python.md)
 - [dataCloudflareQueueConsumer](./dataCloudflareQueueConsumer.python.md)
+- [dataCloudflareQueueConsumers](./dataCloudflareQueueConsumers.python.md)
 - [dataCloudflareQueues](./dataCloudflareQueues.python.md)
 - [dataCloudflareR2Bucket](./dataCloudflareR2Bucket.python.md)
 - [dataCloudflareR2BucketCors](./dataCloudflareR2BucketCors.python.md)

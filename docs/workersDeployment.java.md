@@ -4,7 +4,7 @@
 
 ### WorkersDeployment <a name="WorkersDeployment" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment cloudflare_workers_deployment}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment cloudflare_workers_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer"></a>
 
@@ -44,10 +44,10 @@ WorkersDeployment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Name of the script. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.strategy">strategy</a></code> | <code>java.lang.String</code> | Available values: "percentage". |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
 
 ---
 
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 
 ---
 
@@ -125,9 +125,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Name of the script.
+Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "percentage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
 
 ---
 
@@ -613,7 +613,7 @@ The construct id used in the generated config for the WorkersDeployment to impor
 
 The id of the existing WorkersDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -646,7 +646,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference">WorkersDeploymentAnnotationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.authorEmail">authorEmail</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.deployments">deployments</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList">WorkersDeploymentDeploymentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList">WorkersDeploymentVersionsList</a></code> | *No description.* |
@@ -833,16 +832,6 @@ public java.lang.String getCreatedOn();
 
 ---
 
-##### `deployments`<sup>Required</sup> <a name="deployments" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.deployments"></a>
-
-```java
-public WorkersDeploymentDeploymentsList getDeployments();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList">WorkersDeploymentDeploymentsList</a>
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.id"></a>
 
 ```java
@@ -1003,7 +992,7 @@ public java.lang.String getWorkersMessage();
 
 Human-readable message about the deployment. Truncated to 100 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
 
 ---
 
@@ -1047,10 +1036,10 @@ WorkersDeploymentConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Name of the script. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.scriptName">scriptName</a></code> | <code>java.lang.String</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.strategy">strategy</a></code> | <code>java.lang.String</code> | Available values: "percentage". |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.versions">versions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
 
 ---
 
@@ -1134,7 +1123,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 
 ---
 
@@ -1146,9 +1135,9 @@ public java.lang.String getScriptName();
 
 - *Type:* java.lang.String
 
-Name of the script.
+Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 
 ---
 
@@ -1162,7 +1151,7 @@ public java.lang.String getStrategy();
 
 Available values: "percentage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 
 ---
 
@@ -1174,7 +1163,7 @@ public java.lang.Object getVersions();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
 
 ---
 
@@ -1186,45 +1175,9 @@ public WorkersDeploymentAnnotations getAnnotations();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
 
 ---
-
-### WorkersDeploymentDeployments <a name="WorkersDeploymentDeployments" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeployments;
-
-WorkersDeploymentDeployments.builder()
-    .build();
-```
-
-
-### WorkersDeploymentDeploymentsAnnotations <a name="WorkersDeploymentDeploymentsAnnotations" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeploymentsAnnotations;
-
-WorkersDeploymentDeploymentsAnnotations.builder()
-    .build();
-```
-
-
-### WorkersDeploymentDeploymentsVersions <a name="WorkersDeploymentDeploymentsVersions" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeploymentsVersions;
-
-WorkersDeploymentDeploymentsVersions.builder()
-    .build();
-```
-
 
 ### WorkersDeploymentVersions <a name="WorkersDeploymentVersions" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions"></a>
 
@@ -1243,8 +1196,8 @@ WorkersDeploymentVersions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.percentage">percentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.versionId">versionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.percentage">percentage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.versionId">versionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}. |
 
 ---
 
@@ -1256,7 +1209,7 @@ public java.lang.Number getPercentage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}.
 
 ---
 
@@ -1268,7 +1221,7 @@ public java.lang.String getVersionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}.
 
 ---
 
@@ -1491,6 +1444,7 @@ public void resetWorkersMessage()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersTriggeredBy">workersTriggeredBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersMessageInput">workersMessageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersMessage">workersMessage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | *No description.* |
@@ -1515,6 +1469,16 @@ If this returns an empty array the stack will not be attached.
 
 ```java
 public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `workersTriggeredBy`<sup>Required</sup> <a name="workersTriggeredBy" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersTriggeredBy"></a>
+
+```java
+public java.lang.String getWorkersTriggeredBy();
 ```
 
 - *Type:* java.lang.String
@@ -1548,1197 +1512,6 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
-
----
-
-
-### WorkersDeploymentDeploymentsAnnotationsOutputReference <a name="WorkersDeploymentDeploymentsAnnotationsOutputReference" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeploymentsAnnotationsOutputReference;
-
-new WorkersDeploymentDeploymentsAnnotationsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.workersMessage">workersMessage</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations">WorkersDeploymentDeploymentsAnnotations</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `workersMessage`<sup>Required</sup> <a name="workersMessage" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.workersMessage"></a>
-
-```java
-public java.lang.String getWorkersMessage();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.internalValue"></a>
-
-```java
-public WorkersDeploymentDeploymentsAnnotations getInternalValue();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations">WorkersDeploymentDeploymentsAnnotations</a>
-
----
-
-
-### WorkersDeploymentDeploymentsList <a name="WorkersDeploymentDeploymentsList" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeploymentsList;
-
-new WorkersDeploymentDeploymentsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.get">get</a></code> | *No description.* |
-
----
-
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.allWithMapKey"></a>
-
-```java
-public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.get"></a>
-
-```java
-public WorkersDeploymentDeploymentsOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-
-### WorkersDeploymentDeploymentsOutputReference <a name="WorkersDeploymentDeploymentsOutputReference" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeploymentsOutputReference;
-
-new WorkersDeploymentDeploymentsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference">WorkersDeploymentDeploymentsAnnotationsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.authorEmail">authorEmail</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.strategy">strategy</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList">WorkersDeploymentDeploymentsVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments">WorkersDeploymentDeployments</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `annotations`<sup>Required</sup> <a name="annotations" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.annotations"></a>
-
-```java
-public WorkersDeploymentDeploymentsAnnotationsOutputReference getAnnotations();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference">WorkersDeploymentDeploymentsAnnotationsOutputReference</a>
-
----
-
-##### `authorEmail`<sup>Required</sup> <a name="authorEmail" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.authorEmail"></a>
-
-```java
-public java.lang.String getAuthorEmail();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.createdOn"></a>
-
-```java
-public java.lang.String getCreatedOn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.source"></a>
-
-```java
-public java.lang.String getSource();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `strategy`<sup>Required</sup> <a name="strategy" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.strategy"></a>
-
-```java
-public java.lang.String getStrategy();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `versions`<sup>Required</sup> <a name="versions" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.versions"></a>
-
-```java
-public WorkersDeploymentDeploymentsVersionsList getVersions();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList">WorkersDeploymentDeploymentsVersionsList</a>
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.internalValue"></a>
-
-```java
-public WorkersDeploymentDeployments getInternalValue();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments">WorkersDeploymentDeployments</a>
-
----
-
-
-### WorkersDeploymentDeploymentsVersionsList <a name="WorkersDeploymentDeploymentsVersionsList" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeploymentsVersionsList;
-
-new WorkersDeploymentDeploymentsVersionsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.get">get</a></code> | *No description.* |
-
----
-
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.allWithMapKey"></a>
-
-```java
-public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.get"></a>
-
-```java
-public WorkersDeploymentDeploymentsVersionsOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-
-### WorkersDeploymentDeploymentsVersionsOutputReference <a name="WorkersDeploymentDeploymentsVersionsOutputReference" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.cloudflare.workers_deployment.WorkersDeploymentDeploymentsVersionsOutputReference;
-
-new WorkersDeploymentDeploymentsVersionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.percentage">percentage</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.versionId">versionId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions">WorkersDeploymentDeploymentsVersions</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `percentage`<sup>Required</sup> <a name="percentage" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.percentage"></a>
-
-```java
-public java.lang.Number getPercentage();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `versionId`<sup>Required</sup> <a name="versionId" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.versionId"></a>
-
-```java
-public java.lang.String getVersionId();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.internalValue"></a>
-
-```java
-public WorkersDeploymentDeploymentsVersions getInternalValue();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions">WorkersDeploymentDeploymentsVersions</a>
 
 ---
 

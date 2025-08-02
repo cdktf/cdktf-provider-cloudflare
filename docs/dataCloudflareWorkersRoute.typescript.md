@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkersRoute <a name="DataCloudflareWorkersRoute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_route cloudflare_workers_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_route cloudflare_workers_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareWorkersRoute
 
 The id of the existing DataCloudflareWorkersRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,7 +728,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_route#zone_id DataCloudflareWorkersRoute#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_route#zone_id DataCloudflareWorkersRoute#zone_id}
 
 ---
 
@@ -742,7 +742,7 @@ public readonly routeId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/workers_route#route_id DataCloudflareWorkersRoute#route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_route#route_id DataCloudflareWorkersRoute#route_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareArgoSmartRouting <a name="DataCloudflareArgoSmartRouting" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRouting.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareArgoSmartRou
 
 The id of the existing DataCloudflareArgoSmartRouting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -590,7 +590,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRoutingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRoutingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRoutingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRoutingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareArgoSmartRouting.DataCloudflareArgoSmartRoutingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Specifies the zone associated with the API call. |
 
 ---
 
@@ -672,9 +672,9 @@ ZoneId *string
 
 - *Type:* *string
 
-Identifier.
+Specifies the zone associated with the API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/argo_smart_routing#zone_id DataCloudflareArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/argo_smart_routing#zone_id DataCloudflareArgoSmartRouting#zone_id}
 
 ---
 

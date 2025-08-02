@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface MagicTransitSiteAclConfig extends cdktf.TerraformMetaArguments 
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#account_id MagicTransitSiteAcl#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#account_id MagicTransitSiteAcl#account_id}
   */
   readonly accountId: string;
   /**
   * Description for the ACL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#description MagicTransitSiteAcl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#description MagicTransitSiteAcl#description}
   */
   readonly description?: string;
   /**
   * The desired forwarding action for this ACL policy. If set to "false", the policy will forward traffic to Cloudflare. If set to "true", the policy will forward traffic locally on the Magic Connector. If not included in request, will default to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#forward_locally MagicTransitSiteAcl#forward_locally}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#forward_locally MagicTransitSiteAcl#forward_locally}
   */
   readonly forwardLocally?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#lan_1 MagicTransitSiteAcl#lan_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#lan_1 MagicTransitSiteAcl#lan_1}
   */
   readonly lan1: MagicTransitSiteAclLan1;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#lan_2 MagicTransitSiteAcl#lan_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#lan_2 MagicTransitSiteAcl#lan_2}
   */
   readonly lan2: MagicTransitSiteAclLan2;
   /**
   * The name of the ACL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#name MagicTransitSiteAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#name MagicTransitSiteAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#protocols MagicTransitSiteAcl#protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#protocols MagicTransitSiteAcl#protocols}
   */
   readonly protocols?: string[];
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#site_id MagicTransitSiteAcl#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#site_id MagicTransitSiteAcl#site_id}
   */
   readonly siteId: string;
   /**
   * The desired traffic direction for this ACL policy. If set to "false", the policy will allow bidirectional traffic. If set to "true", the policy will only allow traffic in one direction. If not included in request, will default to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#unidirectional MagicTransitSiteAcl#unidirectional}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#unidirectional MagicTransitSiteAcl#unidirectional}
   */
   readonly unidirectional?: boolean | cdktf.IResolvable;
 }
@@ -65,31 +65,31 @@ export interface MagicTransitSiteAclLan1 {
   /**
   * The identifier for the LAN you want to create an ACL policy with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
   */
   readonly lanId: string;
   /**
   * The name of the LAN based on the provided lan_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
   */
   readonly lanName?: string;
   /**
   * Array of port ranges on the provided LAN that will be included in the ACL. If no ports or port rangess are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
   */
   readonly portRanges?: string[];
   /**
   * Array of ports on the provided LAN that will be included in the ACL. If no ports or port ranges are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
   */
   readonly ports?: number[];
   /**
   * Array of subnet IPs within the LAN that will be included in the ACL. If no subnets are provided, communication on any subnets on this LAN are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
   */
   readonly subnets?: string[];
 }
@@ -298,31 +298,31 @@ export interface MagicTransitSiteAclLan2 {
   /**
   * The identifier for the LAN you want to create an ACL policy with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
   */
   readonly lanId: string;
   /**
   * The name of the LAN based on the provided lan_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
   */
   readonly lanName?: string;
   /**
   * Array of port ranges on the provided LAN that will be included in the ACL. If no ports or port rangess are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
   */
   readonly portRanges?: string[];
   /**
   * Array of ports on the provided LAN that will be included in the ACL. If no ports or port ranges are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
   */
   readonly ports?: number[];
   /**
   * Array of subnet IPs within the LAN that will be included in the ACL. If no subnets are provided, communication on any subnets on this LAN are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
   */
   readonly subnets?: string[];
 }
@@ -529,7 +529,7 @@ export class MagicTransitSiteAclLan2OutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}
 */
 export class MagicTransitSiteAcl extends cdktf.TerraformResource {
 
@@ -545,7 +545,7 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MagicTransitSiteAcl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicTransitSiteAcl to import
-  * @param importFromId The id of the existing MagicTransitSiteAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicTransitSiteAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicTransitSiteAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -557,7 +557,7 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -568,7 +568,7 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_transit_site_acl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.1',
+        providerVersion: '5.8.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

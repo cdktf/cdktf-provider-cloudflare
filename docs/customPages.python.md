@@ -4,7 +4,7 @@
 
 ### CustomPages <a name="CustomPages" id="@cdktf/provider-cloudflare.customPages.CustomPages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages cloudflare_custom_pages}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages cloudflare_custom_pages}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.customPages.CustomPages.Initializer"></a>
 
@@ -23,8 +23,8 @@ customPages.CustomPages(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   identifier: str,
   state: str,
-  url: str,
   account_id: str = None,
+  url: str = None,
   zone_id: str = None
 )
 ```
@@ -40,10 +40,10 @@ customPages.CustomPages(
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block". |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.state">state</a></code> | <code>str</code> | The custom page state. Available values: "default", "customized". |
-| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.url">url</a></code> | <code>str</code> | The URL associated with the custom page. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.url">url</a></code> | <code>str</code> | The URL associated with the custom page. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
 ---
@@ -112,9 +112,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Identifier.
+Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#identifier CustomPages#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#identifier CustomPages#identifier}
 
 ---
 
@@ -124,17 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The custom page state. Available values: "default", "customized".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#state CustomPages#state}
-
----
-
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.url"></a>
-
-- *Type:* str
-
-The URL associated with the custom page.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#url CustomPages#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#state CustomPages#state}
 
 ---
 
@@ -144,7 +134,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#account_id CustomPages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#account_id CustomPages#account_id}
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-cloudflare.customPages.CustomPages.Initializer.parameter.url"></a>
+
+- *Type:* str
+
+The URL associated with the custom page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#url CustomPages#url}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#zone_id CustomPages#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#zone_id CustomPages#zone_id}
 
 ---
 
@@ -186,6 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.resetUrl">reset_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
@@ -521,6 +522,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_account_id() -> None
 ```
 
+##### `reset_url` <a name="reset_url" id="@cdktf/provider-cloudflare.customPages.CustomPages.resetUrl"></a>
+
+```python
+def reset_url() -> None
+```
+
 ##### `reset_zone_id` <a name="reset_zone_id" id="@cdktf/provider-cloudflare.customPages.CustomPages.resetZoneId"></a>
 
 ```python
@@ -641,7 +648,7 @@ The construct id used in the generated config for the CustomPages to import.
 
 The id of the existing CustomPages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +678,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.modifiedOn">modified_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.previewTarget">preview_target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.requiredTokens">required_tokens</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPages.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
@@ -827,6 +839,26 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-cloudflare.customPages.CustomPages.property.createdOn"></a>
+
+```python
+created_on: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-cloudflare.customPages.CustomPages.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.customPages.CustomPages.property.id"></a>
 
 ```python
@@ -834,6 +866,36 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `modified_on`<sup>Required</sup> <a name="modified_on" id="@cdktf/provider-cloudflare.customPages.CustomPages.property.modifiedOn"></a>
+
+```python
+modified_on: str
+```
+
+- *Type:* str
+
+---
+
+##### `preview_target`<sup>Required</sup> <a name="preview_target" id="@cdktf/provider-cloudflare.customPages.CustomPages.property.previewTarget"></a>
+
+```python
+preview_target: str
+```
+
+- *Type:* str
+
+---
+
+##### `required_tokens`<sup>Required</sup> <a name="required_tokens" id="@cdktf/provider-cloudflare.customPages.CustomPages.property.requiredTokens"></a>
+
+```python
+required_tokens: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -974,8 +1036,8 @@ customPages.CustomPagesConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   identifier: str,
   state: str,
-  url: str,
   account_id: str = None,
+  url: str = None,
   zone_id: str = None
 )
 ```
@@ -991,10 +1053,10 @@ customPages.CustomPagesConfig(
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.identifier">identifier</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.identifier">identifier</a></code> | <code>str</code> | Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block". |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.state">state</a></code> | <code>str</code> | The custom page state. Available values: "default", "customized". |
-| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.url">url</a></code> | <code>str</code> | The URL associated with the custom page. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.url">url</a></code> | <code>str</code> | The URL associated with the custom page. |
 | <code><a href="#@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
 ---
@@ -1077,9 +1139,9 @@ identifier: str
 
 - *Type:* str
 
-Identifier.
+Error Page Types Available values: "under_attack", "basic_challenge", "waf_challenge", "waf_block", "ip_block", "country_challenge", "500_errors", "1000_errors", "managed_challenge", "ratelimit_block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#identifier CustomPages#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#identifier CustomPages#identifier}
 
 ---
 
@@ -1093,21 +1155,7 @@ state: str
 
 The custom page state. Available values: "default", "customized".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#state CustomPages#state}
-
----
-
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.url"></a>
-
-```python
-url: str
-```
-
-- *Type:* str
-
-The URL associated with the custom page.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#url CustomPages#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#state CustomPages#state}
 
 ---
 
@@ -1121,7 +1169,21 @@ account_id: str
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#account_id CustomPages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#account_id CustomPages#account_id}
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-cloudflare.customPages.CustomPagesConfig.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+The URL associated with the custom page.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#url CustomPages#url}
 
 ---
 
@@ -1135,7 +1197,7 @@ zone_id: str
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/custom_pages#zone_id CustomPages#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/custom_pages#zone_id CustomPages#zone_id}
 
 ---
 

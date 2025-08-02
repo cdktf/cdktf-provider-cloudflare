@@ -202,6 +202,7 @@ The following submodules are available:
 - [dataCloudflarePagesProjects](./dataCloudflarePagesProjects.csharp.md)
 - [dataCloudflareQueue](./dataCloudflareQueue.csharp.md)
 - [dataCloudflareQueueConsumer](./dataCloudflareQueueConsumer.csharp.md)
+- [dataCloudflareQueueConsumers](./dataCloudflareQueueConsumers.csharp.md)
 - [dataCloudflareQueues](./dataCloudflareQueues.csharp.md)
 - [dataCloudflareR2Bucket](./dataCloudflareR2Bucket.csharp.md)
 - [dataCloudflareR2BucketCors](./dataCloudflareR2BucketCors.csharp.md)

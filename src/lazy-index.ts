@@ -359,6 +359,7 @@ Object.defineProperty(exports, 'dataCloudflarePagesProject', { get: function () 
 Object.defineProperty(exports, 'dataCloudflarePagesProjects', { get: function () { return require('./data-cloudflare-pages-projects'); } });
 Object.defineProperty(exports, 'dataCloudflareQueue', { get: function () { return require('./data-cloudflare-queue'); } });
 Object.defineProperty(exports, 'dataCloudflareQueueConsumer', { get: function () { return require('./data-cloudflare-queue-consumer'); } });
+Object.defineProperty(exports, 'dataCloudflareQueueConsumers', { get: function () { return require('./data-cloudflare-queue-consumers'); } });
 Object.defineProperty(exports, 'dataCloudflareQueues', { get: function () { return require('./data-cloudflare-queues'); } });
 Object.defineProperty(exports, 'dataCloudflareR2Bucket', { get: function () { return require('./data-cloudflare-r2-bucket'); } });
 Object.defineProperty(exports, 'dataCloudflareR2BucketCors', { get: function () { return require('./data-cloudflare-r2-bucket-cors'); } });

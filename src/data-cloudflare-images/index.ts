@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,19 @@ export interface DataCloudflareImagesConfig extends cdktf.TerraformMetaArguments
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#account_id DataCloudflareImages#account_id}
   */
   readonly accountId: string;
   /**
+  * Internal user ID set within the creator field. Setting to empty string "" will return images where creator field is not set
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#creator DataCloudflareImages#creator}
+  */
+  readonly creator?: string;
+  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#max_items DataCloudflareImages#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#max_items DataCloudflareImages#max_items}
   */
   readonly maxItems?: number;
 }
@@ -74,6 +80,11 @@ export class DataCloudflareImagesResultImagesOutputReference extends cdktf.Compl
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // creator - computed: true, optional: false, required: false
+  public get creator() {
+    return this.getStringAttribute('creator');
   }
 
   // filename - computed: true, optional: false, required: false
@@ -203,7 +214,7 @@ export class DataCloudflareImagesResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images cloudflare_images}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images cloudflare_images}
 */
 export class DataCloudflareImages extends cdktf.TerraformDataSource {
 
@@ -219,7 +230,7 @@ export class DataCloudflareImages extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareImages resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareImages to import
-  * @param importFromId The id of the existing DataCloudflareImages that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareImages that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareImages to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -231,7 +242,7 @@ export class DataCloudflareImages extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images cloudflare_images} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images cloudflare_images} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +253,7 @@ export class DataCloudflareImages extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_images',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.1',
+        providerVersion: '5.8.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -254,6 +265,7 @@ export class DataCloudflareImages extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._creator = config.creator;
     this._maxItems = config.maxItems;
   }
 
@@ -272,6 +284,22 @@ export class DataCloudflareImages extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // creator - computed: false, optional: true, required: false
+  private _creator?: string; 
+  public get creator() {
+    return this.getStringAttribute('creator');
+  }
+  public set creator(value: string) {
+    this._creator = value;
+  }
+  public resetCreator() {
+    this._creator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get creatorInput() {
+    return this._creator;
   }
 
   // max_items - computed: false, optional: true, required: false
@@ -303,6 +331,7 @@ export class DataCloudflareImages extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      creator: cdktf.stringToTerraform(this._creator),
       max_items: cdktf.numberToTerraform(this._maxItems),
     };
   }
@@ -311,6 +340,12 @@ export class DataCloudflareImages extends cdktf.TerraformDataSource {
     const attrs = {
       account_id: {
         value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creator: {
+        value: cdktf.stringToHclTerraform(this._creator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

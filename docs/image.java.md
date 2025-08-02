@@ -4,7 +4,7 @@
 
 ### Image <a name="Image" id="@cdktf/provider-cloudflare.image.Image"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image cloudflare_image}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image cloudflare_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.image.Image.Initializer"></a>
 
@@ -25,6 +25,7 @@ Image.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .id(java.lang.String)
+//  .creator(java.lang.String)
 //  .file(java.lang.String)
 //  .metadata(java.lang.String)
 //  .requireSignedUrls(java.lang.Boolean)
@@ -46,6 +47,7 @@ Image.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | An optional custom unique identifier for your image. |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.creator">creator</a></code> | <code>java.lang.String</code> | Can set the creator field with an internal user ID. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.file">file</a></code> | <code>java.lang.String</code> | An image binary data. Only needed when type is uploading a file. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.metadata">metadata</a></code> | <code>java.lang.String</code> | User modifiable key-value store. Can use used for keeping references to another system of record for managing images. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.requireSignedUrls">requireSignedUrls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the image requires a signature token for the access. |
@@ -119,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#account_id Image#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#account_id Image#account_id}
 
 ---
 
@@ -129,10 +131,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An optional custom unique identifier for your image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#id Image#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#id Image#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-cloudflare.image.Image.Initializer.parameter.creator"></a>
+
+- *Type:* java.lang.String
+
+Can set the creator field with an internal user ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#creator Image#creator}
 
 ---
 
@@ -142,7 +154,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 An image binary data. Only needed when type is uploading a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#file Image#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#file Image#file}
 
 ---
 
@@ -152,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 User modifiable key-value store. Can use used for keeping references to another system of record for managing images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#metadata Image#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#metadata Image#metadata}
 
 ---
 
@@ -162,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates whether the image requires a signature token for the access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#require_signed_urls Image#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#require_signed_urls Image#require_signed_urls}
 
 ---
 
@@ -172,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A URL to fetch an image from origin. Only needed when type is uploading from a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#url Image#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#url Image#url}
 
 ---
 
@@ -203,6 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.resetCreator">resetCreator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.resetFile">resetFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.resetMetadata">resetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.resetRequireSignedUrls">resetRequireSignedUrls</a></code> | *No description.* |
@@ -500,6 +513,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetCreator` <a name="resetCreator" id="@cdktf/provider-cloudflare.image.Image.resetCreator"></a>
+
+```java
+public void resetCreator()
+```
+
 ##### `resetFile` <a name="resetFile" id="@cdktf/provider-cloudflare.image.Image.resetFile"></a>
 
 ```java
@@ -627,7 +646,7 @@ The construct id used in the generated config for the Image to import.
 
 The id of the existing Image that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,12 +681,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.uploaded">uploaded</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.variants">variants</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.property.creatorInput">creatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.fileInput">fileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.metadataInput">metadataInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.requireSignedUrlsInput">requireSignedUrlsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.property.creator">creator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.file">file</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.metadata">metadata</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -868,6 +889,16 @@ public java.lang.String getAccountIdInput();
 
 ---
 
+##### `creatorInput`<sup>Optional</sup> <a name="creatorInput" id="@cdktf/provider-cloudflare.image.Image.property.creatorInput"></a>
+
+```java
+public java.lang.String getCreatorInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `fileInput`<sup>Optional</sup> <a name="fileInput" id="@cdktf/provider-cloudflare.image.Image.property.fileInput"></a>
 
 ```java
@@ -922,6 +953,16 @@ public java.lang.String getUrlInput();
 
 ```java
 public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-cloudflare.image.Image.property.creator"></a>
+
+```java
+public java.lang.String getCreator();
 ```
 
 - *Type:* java.lang.String
@@ -1019,6 +1060,7 @@ ImageConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
     .id(java.lang.String)
+//  .creator(java.lang.String)
 //  .file(java.lang.String)
 //  .metadata(java.lang.String)
 //  .requireSignedUrls(java.lang.Boolean)
@@ -1040,6 +1082,7 @@ ImageConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.id">id</a></code> | <code>java.lang.String</code> | An optional custom unique identifier for your image. |
+| <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.creator">creator</a></code> | <code>java.lang.String</code> | Can set the creator field with an internal user ID. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.file">file</a></code> | <code>java.lang.String</code> | An image binary data. Only needed when type is uploading a file. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.metadata">metadata</a></code> | <code>java.lang.String</code> | User modifiable key-value store. Can use used for keeping references to another system of record for managing images. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.requireSignedUrls">requireSignedUrls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the image requires a signature token for the access. |
@@ -1127,7 +1170,7 @@ public java.lang.String getAccountId();
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#account_id Image#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#account_id Image#account_id}
 
 ---
 
@@ -1141,10 +1184,24 @@ public java.lang.String getId();
 
 An optional custom unique identifier for your image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#id Image#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#id Image#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-cloudflare.image.ImageConfig.property.creator"></a>
+
+```java
+public java.lang.String getCreator();
+```
+
+- *Type:* java.lang.String
+
+Can set the creator field with an internal user ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#creator Image#creator}
 
 ---
 
@@ -1158,7 +1215,7 @@ public java.lang.String getFile();
 
 An image binary data. Only needed when type is uploading a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#file Image#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#file Image#file}
 
 ---
 
@@ -1172,7 +1229,7 @@ public java.lang.String getMetadata();
 
 User modifiable key-value store. Can use used for keeping references to another system of record for managing images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#metadata Image#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#metadata Image#metadata}
 
 ---
 
@@ -1186,7 +1243,7 @@ public java.lang.Object getRequireSignedUrls();
 
 Indicates whether the image requires a signature token for the access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#require_signed_urls Image#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#require_signed_urls Image#require_signed_urls}
 
 ---
 
@@ -1200,7 +1257,7 @@ public java.lang.String getUrl();
 
 A URL to fetch an image from origin. Only needed when type is uploading from a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#url Image#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#url Image#url}
 
 ---
 

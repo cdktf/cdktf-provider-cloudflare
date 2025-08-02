@@ -4,7 +4,7 @@
 
 ### SnippetRules <a name="SnippetRules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules cloudflare_snippet_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules cloudflare_snippet_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.putRules">PutRules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.resetRules">ResetRules</a></code> | *No description.* |
 
 ---
 
@@ -378,12 +377,6 @@ func PutRules(value interface{})
 
 ---
 
-##### `ResetRules` <a name="ResetRules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.resetRules"></a>
-
-```go
-func ResetRules()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -487,7 +480,7 @@ The construct id used in the generated config for the SnippetRules to import.
 
 The id of the existing SnippetRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,6 +513,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.enabled">Enabled</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.expression">Expression</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.lastUpdated">LastUpdated</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rules">Rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesList">SnippetRulesRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.snippetName">SnippetName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -700,6 +695,26 @@ func Expression() *string
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LastUpdated`<sup>Required</sup> <a name="LastUpdated" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.lastUpdated"></a>
+
+```go
+func LastUpdated() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Rules`<sup>Required</sup> <a name="Rules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRules.property.rules"></a>
 
 ```go
@@ -785,8 +800,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/snippetrule
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ZoneId: *string,
 	Rules: interface{},
+	ZoneId: *string,
 }
 ```
 
@@ -801,8 +816,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/snippetrule
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.rules">Rules</a></code> | <code>interface{}</code> | List of snippet rules. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.rules">Rules</a></code> | <code>interface{}</code> | A list of snippet rules. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The unique ID of the zone. |
 
 ---
 
@@ -876,6 +891,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `Rules`<sup>Required</sup> <a name="Rules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.rules"></a>
+
+```go
+Rules interface{}
+```
+
+- *Type:* interface{}
+
+A list of snippet rules.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules#rules SnippetRules#rules}
+
+---
+
 ##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.zoneId"></a>
 
 ```go
@@ -884,23 +913,9 @@ ZoneId *string
 
 - *Type:* *string
 
-Identifier.
+The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
-
----
-
-##### `Rules`<sup>Optional</sup> <a name="Rules" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig.property.rules"></a>
-
-```go
-Rules interface{}
-```
-
-- *Type:* interface{}
-
-List of snippet rules.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#rules SnippetRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
 
 ---
 
@@ -912,10 +927,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/snippetrules"
 
 &snippetrules.SnippetRulesRules {
-	Description: *string,
-	Enabled: interface{},
 	Expression: *string,
 	SnippetName: *string,
+	Description: *string,
+	Enabled: interface{},
 }
 ```
 
@@ -923,10 +938,38 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/snippetrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#description SnippetRules#description}. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#enabled SnippetRules#enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#expression SnippetRules#expression}. |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName">SnippetName</a></code> | <code>*string</code> | Snippet identifying name. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">Expression</a></code> | <code>*string</code> | The expression defining which traffic will match the rule. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName">SnippetName</a></code> | <code>*string</code> | The identifying name of the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">Description</a></code> | <code>*string</code> | An informative description of the rule. |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether the rule should be executed. |
+
+---
+
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression"></a>
+
+```go
+Expression *string
+```
+
+- *Type:* *string
+
+The expression defining which traffic will match the rule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules#expression SnippetRules#expression}
+
+---
+
+##### `SnippetName`<sup>Required</sup> <a name="SnippetName" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName"></a>
+
+```go
+SnippetName *string
+```
+
+- *Type:* *string
+
+The identifying name of the snippet.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
 
 ---
 
@@ -938,7 +981,9 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#description SnippetRules#description}.
+An informative description of the rule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules#description SnippetRules#description}
 
 ---
 
@@ -950,33 +995,9 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#enabled SnippetRules#enabled}.
+Whether the rule should be executed.
 
----
-
-##### `Expression`<sup>Optional</sup> <a name="Expression" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression"></a>
-
-```go
-Expression *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#expression SnippetRules#expression}.
-
----
-
-##### `SnippetName`<sup>Optional</sup> <a name="SnippetName" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName"></a>
-
-```go
-SnippetName *string
-```
-
-- *Type:* *string
-
-Snippet identifying name.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippet_rules#enabled SnippetRules#enabled}
 
 ---
 
@@ -1212,8 +1233,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.resetExpression">ResetExpression</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.resetSnippetName">ResetSnippetName</a></code> | *No description.* |
 
 ---
 
@@ -1379,18 +1398,6 @@ func ResetDescription()
 func ResetEnabled()
 ```
 
-##### `ResetExpression` <a name="ResetExpression" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.resetExpression"></a>
-
-```go
-func ResetExpression()
-```
-
-##### `ResetSnippetName` <a name="ResetSnippetName" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.resetSnippetName"></a>
-
-```go
-func ResetSnippetName()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1398,6 +1405,8 @@ func ResetSnippetName()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.lastUpdated">LastUpdated</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.expressionInput">ExpressionInput</a></code> | <code>*string</code> | *No description.* |
@@ -1428,6 +1437,26 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LastUpdated`<sup>Required</sup> <a name="LastUpdated" id="@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference.property.lastUpdated"></a>
+
+```go
+func LastUpdated() *string
 ```
 
 - *Type:* *string

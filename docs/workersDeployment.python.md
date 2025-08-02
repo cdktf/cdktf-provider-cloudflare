@@ -4,7 +4,7 @@
 
 ### WorkersDeployment <a name="WorkersDeployment" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment cloudflare_workers_deployment}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment cloudflare_workers_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer"></a>
 
@@ -41,10 +41,10 @@ workersDeployment.WorkersDeployment(
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of the script. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.strategy">strategy</a></code> | <code>str</code> | Available values: "percentage". |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.versions">versions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.versions">versions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 
 ---
 
@@ -122,9 +122,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Name of the script.
+Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "percentage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
 
 ---
 
@@ -526,7 +526,7 @@ def put_annotations(
 
 Human-readable message about the deployment. Truncated to 100 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
 
 ---
 
@@ -664,7 +664,7 @@ The construct id used in the generated config for the WorkersDeployment to impor
 
 The id of the existing WorkersDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -697,7 +697,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference">WorkersDeploymentAnnotationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.authorEmail">author_email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.deployments">deployments</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList">WorkersDeploymentDeploymentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList">WorkersDeploymentVersionsList</a></code> | *No description.* |
@@ -884,16 +883,6 @@ created_on: str
 
 ---
 
-##### `deployments`<sup>Required</sup> <a name="deployments" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.deployments"></a>
-
-```python
-deployments: WorkersDeploymentDeploymentsList
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList">WorkersDeploymentDeploymentsList</a>
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.property.id"></a>
 
 ```python
@@ -1054,7 +1043,7 @@ workers_message: str
 
 Human-readable message about the deployment. Truncated to 100 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
 
 ---
 
@@ -1093,10 +1082,10 @@ workersDeployment.WorkersDeploymentConfig(
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of the script. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.strategy">strategy</a></code> | <code>str</code> | Available values: "percentage". |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.versions">versions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.versions">versions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
 
 ---
 
@@ -1180,7 +1169,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 
 ---
 
@@ -1192,9 +1181,9 @@ script_name: str
 
 - *Type:* str
 
-Name of the script.
+Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 
 ---
 
@@ -1208,7 +1197,7 @@ strategy: str
 
 Available values: "percentage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 
 ---
 
@@ -1220,7 +1209,7 @@ versions: typing.Union[IResolvable, typing.List[WorkersDeploymentVersions]]
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
 
 ---
 
@@ -1232,42 +1221,9 @@ annotations: WorkersDeploymentAnnotations
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
 
 ---
-
-### WorkersDeploymentDeployments <a name="WorkersDeploymentDeployments" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeployments()
-```
-
-
-### WorkersDeploymentDeploymentsAnnotations <a name="WorkersDeploymentDeploymentsAnnotations" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeploymentsAnnotations()
-```
-
-
-### WorkersDeploymentDeploymentsVersions <a name="WorkersDeploymentDeploymentsVersions" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeploymentsVersions()
-```
-
 
 ### WorkersDeploymentVersions <a name="WorkersDeploymentVersions" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions"></a>
 
@@ -1286,8 +1242,8 @@ workersDeployment.WorkersDeploymentVersions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.percentage">percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.versionId">version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.percentage">percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.versionId">version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}. |
 
 ---
 
@@ -1299,7 +1255,7 @@ percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}.
 
 ---
 
@@ -1311,7 +1267,7 @@ version_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}.
 
 ---
 
@@ -1559,6 +1515,7 @@ def reset_workers_message() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersTriggeredBy">workers_triggered_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersMessageInput">workers_message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersMessage">workers_message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>]</code> | *No description.* |
@@ -1583,6 +1540,16 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workers_triggered_by`<sup>Required</sup> <a name="workers_triggered_by" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.property.workersTriggeredBy"></a>
+
+```python
+workers_triggered_by: str
 ```
 
 - *Type:* str
@@ -1616,1296 +1583,6 @@ internal_value: typing.Union[IResolvable, WorkersDeploymentAnnotations]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>]
-
----
-
-
-### WorkersDeploymentDeploymentsAnnotationsOutputReference <a name="WorkersDeploymentDeploymentsAnnotationsOutputReference" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.workersMessage">workers_message</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations">WorkersDeploymentDeploymentsAnnotations</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `workers_message`<sup>Required</sup> <a name="workers_message" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.workersMessage"></a>
-
-```python
-workers_message: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: WorkersDeploymentDeploymentsAnnotations
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotations">WorkersDeploymentDeploymentsAnnotations</a>
-
----
-
-
-### WorkersDeploymentDeploymentsList <a name="WorkersDeploymentDeploymentsList" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeploymentsList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> WorkersDeploymentDeploymentsOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-
-### WorkersDeploymentDeploymentsOutputReference <a name="WorkersDeploymentDeploymentsOutputReference" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeploymentsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference">WorkersDeploymentDeploymentsAnnotationsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.authorEmail">author_email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.strategy">strategy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.versions">versions</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList">WorkersDeploymentDeploymentsVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments">WorkersDeploymentDeployments</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `annotations`<sup>Required</sup> <a name="annotations" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.annotations"></a>
-
-```python
-annotations: WorkersDeploymentDeploymentsAnnotationsOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsAnnotationsOutputReference">WorkersDeploymentDeploymentsAnnotationsOutputReference</a>
-
----
-
-##### `author_email`<sup>Required</sup> <a name="author_email" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.authorEmail"></a>
-
-```python
-author_email: str
-```
-
-- *Type:* str
-
----
-
-##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.createdOn"></a>
-
-```python
-created_on: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.source"></a>
-
-```python
-source: str
-```
-
-- *Type:* str
-
----
-
-##### `strategy`<sup>Required</sup> <a name="strategy" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.strategy"></a>
-
-```python
-strategy: str
-```
-
-- *Type:* str
-
----
-
-##### `versions`<sup>Required</sup> <a name="versions" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.versions"></a>
-
-```python
-versions: WorkersDeploymentDeploymentsVersionsList
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList">WorkersDeploymentDeploymentsVersionsList</a>
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: WorkersDeploymentDeployments
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeployments">WorkersDeploymentDeployments</a>
-
----
-
-
-### WorkersDeploymentDeploymentsVersionsList <a name="WorkersDeploymentDeploymentsVersionsList" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeploymentsVersionsList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> WorkersDeploymentDeploymentsVersionsOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-
-### WorkersDeploymentDeploymentsVersionsOutputReference <a name="WorkersDeploymentDeploymentsVersionsOutputReference" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_cloudflare import workers_deployment
-
-workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.percentage">percentage</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.versionId">version_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions">WorkersDeploymentDeploymentsVersions</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `percentage`<sup>Required</sup> <a name="percentage" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.percentage"></a>
-
-```python
-percentage: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `version_id`<sup>Required</sup> <a name="version_id" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.versionId"></a>
-
-```python
-version_id: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersionsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: WorkersDeploymentDeploymentsVersions
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentDeploymentsVersions">WorkersDeploymentDeploymentsVersions</a>
 
 ---
 

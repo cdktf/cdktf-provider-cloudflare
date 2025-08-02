@@ -4,7 +4,7 @@
 
 ### DataCloudflareImage <a name="DataCloudflareImage" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image cloudflare_image}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/image cloudflare_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareImage to imp
 
 The id of the existing DataCloudflareImage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,6 +393,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.creator">Creator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.filename">Filename</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.meta">Meta</a></code> | <code>string</code> | *No description.* |
@@ -525,6 +526,16 @@ public TerraformProvider Provider { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Creator`<sup>Required</sup> <a name="Creator" id="@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage.property.creator"></a>
+
+```csharp
+public string Creator { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -764,7 +775,7 @@ public string AccountId { get; set; }
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image#account_id DataCloudflareImage#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/image#account_id DataCloudflareImage#account_id}
 
 ---
 
@@ -778,7 +789,7 @@ public string ImageId { get; set; }
 
 Image unique identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/image#image_id DataCloudflareImage#image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/image#image_id DataCloudflareImage#image_id}
 
 ---
 

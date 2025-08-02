@@ -4,7 +4,7 @@
 
 ### DataCloudflareUrlNormalizationSettings <a name="DataCloudflareUrlNormalizationSettings" id="@cdktf/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareUrlNormalizationSettings.DataCloudflareUrlNormalizationSettings.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareUrlNormaliza
 
 The id of the existing DataCloudflareUrlNormalizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,7 +687,7 @@ public readonly zoneId: string;
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/url_normalization_settings#zone_id DataCloudflareUrlNormalizationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/url_normalization_settings#zone_id DataCloudflareUrlNormalizationSettings#zone_id}
 
 ---
 

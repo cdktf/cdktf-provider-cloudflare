@@ -4,7 +4,7 @@
 
 ### ByoIpPrefix <a name="ByoIpPrefix" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ByoIpPrefix to import.
 
 The id of the existing ByoIpPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -989,7 +989,7 @@ public string AccountId { get; set; }
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
 
 ---
 
@@ -1003,7 +1003,7 @@ public double Asn { get; set; }
 
 Autonomous System Number (ASN) the prefix will be advertised under.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
 
 ---
 
@@ -1017,7 +1017,7 @@ public string Cidr { get; set; }
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
 
 ---
 
@@ -1031,7 +1031,7 @@ public string LoaDocumentId { get; set; }
 
 Identifier for the uploaded LOA document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
 
 ---
 
@@ -1045,7 +1045,7 @@ public string Description { get; set; }
 
 Description of the prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
 
 ---
 

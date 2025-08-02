@@ -4,7 +4,7 @@
 
 ### ZeroTrustDnsLocation <a name="ZeroTrustDnsLocation" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer"></a>
 
@@ -42,7 +42,7 @@ zeroTrustDnsLocation.ZeroTrustDnsLocation(
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the location. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.clientDefault">client_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True if the location is the default location. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.Initializer.parameter.dnsDestinationIpsId">dns_destination_ips_id</a></code> | <code>str</code> | The identifier of the pair of IPv4 addresses assigned to this location. |
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 True if the location is the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
 
 ---
 
@@ -148,7 +148,7 @@ The identifier of the pair of IPv4 addresses assigned to this location.
 
 When creating a location, if this field is absent or set with null, the pair of shared IPv4 addresses (0e4a32c6-6fb8-4858-9296-98f51631e8e6) is auto-assigned. When updating a location, if the field is absent or set with null, the pre-assigned pair remains unchanged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 True if the location needs to resolve EDNS queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
 
 ---
 
@@ -170,7 +170,7 @@ The destination endpoints configured for this location.
 
 When updating a location, if this field is absent or set with null, the endpoints configuration remains unchanged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
 
 ---
 
@@ -182,7 +182,7 @@ A list of network ranges that requests from this location would originate from.
 
 A non-empty list is only effective if the ipv4 endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -552,42 +552,42 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_endpoints(
-  doh: ZeroTrustDnsLocationEndpointsDoh = None,
-  dot: ZeroTrustDnsLocationEndpointsDot = None,
-  ipv4: ZeroTrustDnsLocationEndpointsIpv4 = None,
-  ipv6: ZeroTrustDnsLocationEndpointsIpv6 = None
+  doh: ZeroTrustDnsLocationEndpointsDoh,
+  dot: ZeroTrustDnsLocationEndpointsDot,
+  ipv4: ZeroTrustDnsLocationEndpointsIpv4,
+  ipv6: ZeroTrustDnsLocationEndpointsIpv6
 ) -> None
 ```
 
-###### `doh`<sup>Optional</sup> <a name="doh" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.doh"></a>
+###### `doh`<sup>Required</sup> <a name="doh" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.doh"></a>
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDoh">ZeroTrustDnsLocationEndpointsDoh</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}.
 
 ---
 
-###### `dot`<sup>Optional</sup> <a name="dot" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.dot"></a>
+###### `dot`<sup>Required</sup> <a name="dot" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.dot"></a>
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDot">ZeroTrustDnsLocationEndpointsDot</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}.
 
 ---
 
-###### `ipv4`<sup>Optional</sup> <a name="ipv4" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.ipv4"></a>
+###### `ipv4`<sup>Required</sup> <a name="ipv4" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.ipv4"></a>
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv4">ZeroTrustDnsLocationEndpointsIpv4</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}.
 
 ---
 
-###### `ipv6`<sup>Optional</sup> <a name="ipv6" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.ipv6"></a>
+###### `ipv6`<sup>Required</sup> <a name="ipv6" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocation.putEndpoints.parameter.ipv6"></a>
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6">ZeroTrustDnsLocationEndpointsIpv6</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}.
 
 ---
 
@@ -749,7 +749,7 @@ The construct id used in the generated config for the ZeroTrustDnsLocation to im
 
 The id of the existing ZeroTrustDnsLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1222,7 +1222,7 @@ zeroTrustDnsLocation.ZeroTrustDnsLocationConfig(
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.name">name</a></code> | <code>str</code> | The name of the location. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.clientDefault">client_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True if the location is the default location. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationConfig.property.dnsDestinationIpsId">dns_destination_ips_id</a></code> | <code>str</code> | The identifier of the pair of IPv4 addresses assigned to this location. |
@@ -1310,7 +1310,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}.
 
 ---
 
@@ -1324,7 +1324,7 @@ name: str
 
 The name of the location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
 
 ---
 
@@ -1338,7 +1338,7 @@ client_default: typing.Union[bool, IResolvable]
 
 True if the location is the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
 
 ---
 
@@ -1354,7 +1354,7 @@ The identifier of the pair of IPv4 addresses assigned to this location.
 
 When creating a location, if this field is absent or set with null, the pair of shared IPv4 addresses (0e4a32c6-6fb8-4858-9296-98f51631e8e6) is auto-assigned. When updating a location, if the field is absent or set with null, the pre-assigned pair remains unchanged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
 
 ---
 
@@ -1368,7 +1368,7 @@ ecs_support: typing.Union[bool, IResolvable]
 
 True if the location needs to resolve EDNS queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
 
 ---
 
@@ -1384,7 +1384,7 @@ The destination endpoints configured for this location.
 
 When updating a location, if this field is absent or set with null, the endpoints configuration remains unchanged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
 
 ---
 
@@ -1400,7 +1400,7 @@ A list of network ranges that requests from this location would originate from.
 
 A non-empty list is only effective if the ipv4 endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1412,10 +1412,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import zero_trust_dns_location
 
 zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints(
-  doh: ZeroTrustDnsLocationEndpointsDoh = None,
-  dot: ZeroTrustDnsLocationEndpointsDot = None,
-  ipv4: ZeroTrustDnsLocationEndpointsIpv4 = None,
-  ipv6: ZeroTrustDnsLocationEndpointsIpv6 = None
+  doh: ZeroTrustDnsLocationEndpointsDoh,
+  dot: ZeroTrustDnsLocationEndpointsDot,
+  ipv4: ZeroTrustDnsLocationEndpointsIpv4,
+  ipv6: ZeroTrustDnsLocationEndpointsIpv6
 )
 ```
 
@@ -1423,14 +1423,14 @@ zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.doh">doh</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDoh">ZeroTrustDnsLocationEndpointsDoh</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.dot">dot</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDot">ZeroTrustDnsLocationEndpointsDot</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv4">ipv4</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv4">ZeroTrustDnsLocationEndpointsIpv4</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}. |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv6">ipv6</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6">ZeroTrustDnsLocationEndpointsIpv6</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.doh">doh</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDoh">ZeroTrustDnsLocationEndpointsDoh</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.dot">dot</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDot">ZeroTrustDnsLocationEndpointsDot</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv4">ipv4</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv4">ZeroTrustDnsLocationEndpointsIpv4</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv6">ipv6</a></code> | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6">ZeroTrustDnsLocationEndpointsIpv6</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}. |
 
 ---
 
-##### `doh`<sup>Optional</sup> <a name="doh" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.doh"></a>
+##### `doh`<sup>Required</sup> <a name="doh" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.doh"></a>
 
 ```python
 doh: ZeroTrustDnsLocationEndpointsDoh
@@ -1438,11 +1438,11 @@ doh: ZeroTrustDnsLocationEndpointsDoh
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDoh">ZeroTrustDnsLocationEndpointsDoh</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}.
 
 ---
 
-##### `dot`<sup>Optional</sup> <a name="dot" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.dot"></a>
+##### `dot`<sup>Required</sup> <a name="dot" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.dot"></a>
 
 ```python
 dot: ZeroTrustDnsLocationEndpointsDot
@@ -1450,11 +1450,11 @@ dot: ZeroTrustDnsLocationEndpointsDot
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsDot">ZeroTrustDnsLocationEndpointsDot</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}.
 
 ---
 
-##### `ipv4`<sup>Optional</sup> <a name="ipv4" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv4"></a>
+##### `ipv4`<sup>Required</sup> <a name="ipv4" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv4"></a>
 
 ```python
 ipv4: ZeroTrustDnsLocationEndpointsIpv4
@@ -1462,11 +1462,11 @@ ipv4: ZeroTrustDnsLocationEndpointsIpv4
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv4">ZeroTrustDnsLocationEndpointsIpv4</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}.
 
 ---
 
-##### `ipv6`<sup>Optional</sup> <a name="ipv6" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv6"></a>
+##### `ipv6`<sup>Required</sup> <a name="ipv6" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpoints.property.ipv6"></a>
 
 ```python
 ipv6: ZeroTrustDnsLocationEndpointsIpv6
@@ -1474,7 +1474,7 @@ ipv6: ZeroTrustDnsLocationEndpointsIpv6
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsIpv6">ZeroTrustDnsLocationEndpointsIpv6</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}.
 
 ---
 
@@ -1512,7 +1512,7 @@ enabled: typing.Union[bool, IResolvable]
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1528,7 +1528,7 @@ A list of allowed source IP network ranges for this endpoint.
 
 When empty, all source IPs are allowed. A non-empty list is only effective if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1542,7 +1542,7 @@ require_token: typing.Union[bool, IResolvable]
 
 True if the endpoint requires [user identity](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/agentless/dns/dns-over-https/#filter-doh-requests-by-user) authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
 
 ---
 
@@ -1576,7 +1576,7 @@ network: str
 
 The IP address or IP CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 
@@ -1612,7 +1612,7 @@ enabled: typing.Union[bool, IResolvable]
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1628,7 +1628,7 @@ A list of allowed source IP network ranges for this endpoint.
 
 When empty, all source IPs are allowed. A non-empty list is only effective if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1662,7 +1662,7 @@ network: str
 
 The IP address or IP CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 
@@ -1696,7 +1696,7 @@ enabled: typing.Union[bool, IResolvable]
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1732,7 +1732,7 @@ enabled: typing.Union[bool, IResolvable]
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -1748,7 +1748,7 @@ A list of allowed source IPv6 network ranges for this endpoint.
 
 When empty, all source IPs are allowed. A non-empty list is only effective if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -1782,7 +1782,7 @@ network: str
 
 The IPv6 address or IPv6 CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 
@@ -1816,7 +1816,7 @@ network: str
 
 The IPv4 address or IPv4 CIDR. IPv4 CIDRs are limited to a maximum of /24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
 
 ---
 
@@ -4710,10 +4710,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.putDot">put_dot</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.putIpv4">put_ipv4</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.putIpv6">put_ipv6</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetDoh">reset_doh</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetDot">reset_dot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetIpv4">reset_ipv4</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetIpv6">reset_ipv6</a></code> | *No description.* |
 
 ---
 
@@ -4905,7 +4901,7 @@ def put_doh(
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -4917,7 +4913,7 @@ A list of allowed source IP network ranges for this endpoint.
 
 When empty, all source IPs are allowed. A non-empty list is only effective if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -4927,7 +4923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 True if the endpoint requires [user identity](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/agentless/dns/dns-over-https/#filter-doh-requests-by-user) authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
 
 ---
 
@@ -4946,7 +4942,7 @@ def put_dot(
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -4958,7 +4954,7 @@ A list of allowed source IP network ranges for this endpoint.
 
 When empty, all source IPs are allowed. A non-empty list is only effective if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
 
@@ -4976,7 +4972,7 @@ def put_ipv4(
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -4995,7 +4991,7 @@ def put_ipv6(
 
 True if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 
 ---
 
@@ -5007,33 +5003,9 @@ A list of allowed source IPv6 network ranges for this endpoint.
 
 When empty, all source IPs are allowed. A non-empty list is only effective if the endpoint is enabled for this location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
 
 ---
-
-##### `reset_doh` <a name="reset_doh" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetDoh"></a>
-
-```python
-def reset_doh() -> None
-```
-
-##### `reset_dot` <a name="reset_dot" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetDot"></a>
-
-```python
-def reset_dot() -> None
-```
-
-##### `reset_ipv4` <a name="reset_ipv4" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetIpv4"></a>
-
-```python
-def reset_ipv4() -> None
-```
-
-##### `reset_ipv6` <a name="reset_ipv6" id="@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference.resetIpv6"></a>
-
-```python
-def reset_ipv6() -> None
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

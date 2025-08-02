@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,51 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustDlpCustomProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#account_id ZeroTrustDlpCustomProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#account_id ZeroTrustDlpCustomProfile#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#ai_context_enabled ZeroTrustDlpCustomProfile#ai_context_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#ai_context_enabled ZeroTrustDlpCustomProfile#ai_context_enabled}
   */
   readonly aiContextEnabled?: boolean | cdktf.IResolvable;
   /**
   * Related DLP policies will trigger when the match count exceeds the number set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#allowed_match_count ZeroTrustDlpCustomProfile#allowed_match_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#allowed_match_count ZeroTrustDlpCustomProfile#allowed_match_count}
   */
   readonly allowedMatchCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#confidence_threshold ZeroTrustDlpCustomProfile#confidence_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#confidence_threshold ZeroTrustDlpCustomProfile#confidence_threshold}
   */
   readonly confidenceThreshold?: string;
   /**
   * Scan the context of predefined entries to only return matches surrounded by keywords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#context_awareness ZeroTrustDlpCustomProfile#context_awareness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#context_awareness ZeroTrustDlpCustomProfile#context_awareness}
   */
   readonly contextAwareness?: ZeroTrustDlpCustomProfileContextAwareness;
   /**
   * The description of the profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#description ZeroTrustDlpCustomProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#description ZeroTrustDlpCustomProfile#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#entries ZeroTrustDlpCustomProfile#entries}
+  * Custom entries from this profile.
+  * If this field is omitted, entries owned by this profile will not be changed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#entries ZeroTrustDlpCustomProfile#entries}
   */
-  readonly entries: ZeroTrustDlpCustomProfileEntries[] | cdktf.IResolvable;
+  readonly entries?: ZeroTrustDlpCustomProfileEntries[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#ocr_enabled ZeroTrustDlpCustomProfile#ocr_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#ocr_enabled ZeroTrustDlpCustomProfile#ocr_enabled}
   */
   readonly ocrEnabled?: boolean | cdktf.IResolvable;
   /**
   * Entries from other profiles (e.g. pre-defined Cloudflare profiles, or your Microsoft Information Protection profiles).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#shared_entries ZeroTrustDlpCustomProfile#shared_entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#shared_entries ZeroTrustDlpCustomProfile#shared_entries}
   */
   readonly sharedEntries?: ZeroTrustDlpCustomProfileSharedEntries[] | cdktf.IResolvable;
 }
@@ -65,7 +68,7 @@ export interface ZeroTrustDlpCustomProfileContextAwarenessSkip {
   /**
   * If the content type is a file, skip context analysis and return all matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#files ZeroTrustDlpCustomProfile#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#files ZeroTrustDlpCustomProfile#files}
   */
   readonly files: boolean | cdktf.IResolvable;
 }
@@ -158,13 +161,13 @@ export interface ZeroTrustDlpCustomProfileContextAwareness {
   /**
   * If true, scan the context of predefined entries to only return matches surrounded by keywords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Content types to exclude from context analysis and return all matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#skip ZeroTrustDlpCustomProfile#skip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#skip ZeroTrustDlpCustomProfile#skip}
   */
   readonly skip: ZeroTrustDlpCustomProfileContextAwarenessSkip;
 }
@@ -281,13 +284,13 @@ export class ZeroTrustDlpCustomProfileContextAwarenessOutputReference extends cd
 }
 export interface ZeroTrustDlpCustomProfileEntriesPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#regex ZeroTrustDlpCustomProfile#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#regex ZeroTrustDlpCustomProfile#regex}
   */
   readonly regex: string;
   /**
   * Available values: "luhn".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#validation ZeroTrustDlpCustomProfile#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#validation ZeroTrustDlpCustomProfile#validation}
   */
   readonly validation?: string;
 }
@@ -407,21 +410,21 @@ export class ZeroTrustDlpCustomProfileEntriesPatternOutputReference extends cdkt
 }
 export interface ZeroTrustDlpCustomProfileEntries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#entry_id ZeroTrustDlpCustomProfile#entry_id}
+  */
+  readonly entryId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#pattern ZeroTrustDlpCustomProfile#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#pattern ZeroTrustDlpCustomProfile#pattern}
   */
-  readonly pattern?: ZeroTrustDlpCustomProfileEntriesPattern;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#words ZeroTrustDlpCustomProfile#words}
-  */
-  readonly words?: string[];
+  readonly pattern: ZeroTrustDlpCustomProfileEntriesPattern;
 }
 
 export function zeroTrustDlpCustomProfileEntriesToTerraform(struct?: ZeroTrustDlpCustomProfileEntries | cdktf.IResolvable): any {
@@ -431,9 +434,9 @@ export function zeroTrustDlpCustomProfileEntriesToTerraform(struct?: ZeroTrustDl
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
+    entry_id: cdktf.stringToTerraform(struct!.entryId),
     name: cdktf.stringToTerraform(struct!.name),
     pattern: zeroTrustDlpCustomProfileEntriesPatternToTerraform(struct!.pattern),
-    words: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.words),
   }
 }
 
@@ -450,6 +453,12 @@ export function zeroTrustDlpCustomProfileEntriesToHclTerraform(struct?: ZeroTrus
       type: "simple",
       storageClassType: "boolean",
     },
+    entry_id: {
+      value: cdktf.stringToHclTerraform(struct!.entryId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     name: {
       value: cdktf.stringToHclTerraform(struct!.name),
       isBlock: false,
@@ -461,12 +470,6 @@ export function zeroTrustDlpCustomProfileEntriesToHclTerraform(struct?: ZeroTrus
       isBlock: true,
       type: "struct",
       storageClassType: "ZeroTrustDlpCustomProfileEntriesPattern",
-    },
-    words: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.words),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
     },
   };
 
@@ -498,6 +501,10 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
+    if (this._entryId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entryId = this._entryId;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -505,10 +512,6 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
     if (this._pattern?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.pattern = this._pattern?.internalValue;
-    }
-    if (this._words !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.words = this._words;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -518,9 +521,9 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
+      this._entryId = undefined;
       this._name = undefined;
       this._pattern.internalValue = undefined;
-      this._words = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -530,9 +533,9 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._enabled = value.enabled;
+      this._entryId = value.entryId;
       this._name = value.name;
       this._pattern.internalValue = value.pattern;
-      this._words = value.words;
     }
   }
 
@@ -549,6 +552,22 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
     return this._enabled;
   }
 
+  // entry_id - computed: false, optional: true, required: false
+  private _entryId?: string; 
+  public get entryId() {
+    return this.getStringAttribute('entry_id');
+  }
+  public set entryId(value: string) {
+    this._entryId = value;
+  }
+  public resetEntryId() {
+    this._entryId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entryIdInput() {
+    return this._entryId;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -562,7 +581,7 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
     return this._name;
   }
 
-  // pattern - computed: false, optional: true, required: false
+  // pattern - computed: false, optional: false, required: true
   private _pattern = new ZeroTrustDlpCustomProfileEntriesPatternOutputReference(this, "pattern");
   public get pattern() {
     return this._pattern;
@@ -570,28 +589,9 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
   public putPattern(value: ZeroTrustDlpCustomProfileEntriesPattern) {
     this._pattern.internalValue = value;
   }
-  public resetPattern() {
-    this._pattern.internalValue = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get patternInput() {
     return this._pattern.internalValue;
-  }
-
-  // words - computed: false, optional: true, required: false
-  private _words?: string[]; 
-  public get words() {
-    return this.getListAttribute('words');
-  }
-  public set words(value: string[]) {
-    this._words = value;
-  }
-  public resetWords() {
-    this._words = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get wordsInput() {
-    return this._words;
   }
 }
 
@@ -616,17 +616,17 @@ export class ZeroTrustDlpCustomProfileEntriesList extends cdktf.ComplexList {
 }
 export interface ZeroTrustDlpCustomProfileSharedEntries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#entry_id ZeroTrustDlpCustomProfile#entry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#entry_id ZeroTrustDlpCustomProfile#entry_id}
   */
   readonly entryId: string;
   /**
   * Available values: "custom", "predefined", "integration", "exact_data", "document_fingerprint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#entry_type ZeroTrustDlpCustomProfile#entry_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#entry_type ZeroTrustDlpCustomProfile#entry_type}
   */
   readonly entryType: string;
 }
@@ -791,7 +791,7 @@ export class ZeroTrustDlpCustomProfileSharedEntriesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}
 */
 export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
 
@@ -807,7 +807,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustDlpCustomProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDlpCustomProfile to import
-  * @param importFromId The id of the existing ZeroTrustDlpCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDlpCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDlpCustomProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -819,7 +819,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -830,7 +830,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dlp_custom_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.7.1',
+        providerVersion: '5.8.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -870,7 +870,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // ai_context_enabled - computed: false, optional: true, required: false
+  // ai_context_enabled - computed: true, optional: true, required: false
   private _aiContextEnabled?: boolean | cdktf.IResolvable; 
   public get aiContextEnabled() {
     return this.getBooleanAttribute('ai_context_enabled');
@@ -902,7 +902,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
     return this._allowedMatchCount;
   }
 
-  // confidence_threshold - computed: false, optional: true, required: false
+  // confidence_threshold - computed: true, optional: true, required: false
   private _confidenceThreshold?: string; 
   public get confidenceThreshold() {
     return this.getStringAttribute('confidence_threshold');
@@ -955,13 +955,16 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // entries - computed: false, optional: false, required: true
+  // entries - computed: false, optional: true, required: false
   private _entries = new ZeroTrustDlpCustomProfileEntriesList(this, "entries", false);
   public get entries() {
     return this._entries;
   }
   public putEntries(value: ZeroTrustDlpCustomProfileEntries[] | cdktf.IResolvable) {
     this._entries.internalValue = value;
+  }
+  public resetEntries() {
+    this._entries.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get entriesInput() {
@@ -986,7 +989,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // ocr_enabled - computed: false, optional: true, required: false
+  // ocr_enabled - computed: true, optional: true, required: false
   private _ocrEnabled?: boolean | cdktf.IResolvable; 
   public get ocrEnabled() {
     return this.getBooleanAttribute('ocr_enabled');

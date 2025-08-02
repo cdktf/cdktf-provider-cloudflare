@@ -4,7 +4,7 @@
 
 ### ApiShield <a name="ApiShield" id="@cdktf/provider-cloudflare.apiShield.ApiShield"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield cloudflare_api_shield}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/api_shield cloudflare_api_shield}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.apiShield.ApiShield.Initializer"></a>
 
@@ -480,7 +480,7 @@ The construct id used in the generated config for the ApiShield to import.
 
 The id of the existing ApiShield that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ public string Name { get; set; }
 
 The name of the characteristic field, i.e., the header or cookie name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield#name ApiShield#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/api_shield#name ApiShield#name}
 
 ---
 
@@ -809,7 +809,7 @@ public string Type { get; set; }
 
 The type of characteristic. Available values: "header", "cookie", "jwt".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield#type ApiShield#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/api_shield#type ApiShield#type}
 
 ---
 
@@ -844,7 +844,7 @@ new ApiShieldConfig {
 | <code><a href="#@cdktf/provider-cloudflare.apiShield.ApiShieldConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShield.ApiShieldConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.apiShield.ApiShieldConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
+| <code><a href="#@cdktf/provider-cloudflare.apiShield.ApiShieldConfig.property.authIdCharacteristics">AuthIdCharacteristics</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}. |
 | <code><a href="#@cdktf/provider-cloudflare.apiShield.ApiShieldConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
@@ -927,7 +927,7 @@ public object AuthIdCharacteristics { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}.
 
 ---
 
@@ -941,7 +941,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/api_shield#zone_id ApiShield#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/api_shield#zone_id ApiShield#zone_id}
 
 ---
 

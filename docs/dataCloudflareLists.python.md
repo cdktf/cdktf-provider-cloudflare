@@ -4,7 +4,7 @@
 
 ### DataCloudflareLists <a name="DataCloudflareLists" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/lists cloudflare_lists}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/lists cloudflare_lists}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer"></a>
 
@@ -37,7 +37,7 @@ dataCloudflareLists.DataCloudflareLists(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Defines an identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Defines an identifier.
+The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/lists#account_id DataCloudflareLists#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/lists#account_id DataCloudflareLists#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/lists#max_items DataCloudflareLists#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/lists#max_items DataCloudflareLists#max_items}
 
 ---
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataCloudflareLists to imp
 
 The id of the existing DataCloudflareLists that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/lists#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/lists#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,7 +743,7 @@ dataCloudflareLists.DataCloudflareListsConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsConfig.property.accountId">account_id</a></code> | <code>str</code> | Defines an identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -826,9 +826,9 @@ account_id: str
 
 - *Type:* str
 
-Defines an identifier.
+The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/lists#account_id DataCloudflareLists#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/lists#account_id DataCloudflareLists#account_id}
 
 ---
 
@@ -842,7 +842,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/lists#max_items DataCloudflareLists#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/lists#max_items DataCloudflareLists#max_items}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareSnippets <a name="DataCloudflareSnippets" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/snippets cloudflare_snippets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/snippets cloudflare_snippets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareSnippets to 
 
 The id of the existing DataCloudflareSnippets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,8 +625,8 @@ const dataCloudflareSnippetsConfig: dataCloudflareSnippets.DataCloudflareSnippet
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.snippetName">snippetName</a></code> | <code>string</code> | Snippet identifying name. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.snippetName">snippetName</a></code> | <code>string</code> | The identifying name of the snippet. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The unique ID of the zone. |
 
 ---
 
@@ -708,9 +708,9 @@ public readonly snippetName: string;
 
 - *Type:* string
 
-Snippet identifying name.
+The identifying name of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
 
 ---
 
@@ -722,9 +722,9 @@ public readonly zoneId: string;
 
 - *Type:* string
 
-Identifier.
+The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
 
 ---
 

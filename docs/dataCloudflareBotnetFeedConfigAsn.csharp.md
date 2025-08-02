@@ -4,7 +4,7 @@
 
 ### DataCloudflareBotnetFeedConfigAsn <a name="DataCloudflareBotnetFeedConfigAsn" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareBotnetFeedCo
 
 The id of the existing DataCloudflareBotnetFeedConfigAsn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/botnet_feed_config_asn#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/botnet_feed_config_asn#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
 
 ---
 
