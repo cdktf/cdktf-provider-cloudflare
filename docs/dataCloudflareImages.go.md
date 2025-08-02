@@ -4,7 +4,7 @@
 
 ### DataCloudflareImages <a name="DataCloudflareImages" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images cloudflare_images}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images cloudflare_images}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetCreator">ResetCreator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetMaxItems">ResetMaxItems</a></code> | *No description.* |
 
 ---
@@ -263,6 +264,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetCreator` <a name="ResetCreator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetCreator"></a>
+
+```go
+func ResetCreator()
+```
+
 ##### `ResetMaxItems` <a name="ResetMaxItems" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetMaxItems"></a>
 
 ```go
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataCloudflareImages to im
 
 The id of the existing DataCloudflareImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -402,8 +409,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.result">Result</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultList">DataCloudflareImagesResultList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creatorInput">CreatorInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.maxItemsInput">MaxItemsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creator">Creator</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.maxItems">MaxItems</a></code> | <code>*f64</code> | *No description.* |
 
 ---
@@ -550,6 +559,16 @@ func AccountIdInput() *string
 
 ---
 
+##### `CreatorInput`<sup>Optional</sup> <a name="CreatorInput" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creatorInput"></a>
+
+```go
+func CreatorInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MaxItemsInput`<sup>Optional</sup> <a name="MaxItemsInput" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.maxItemsInput"></a>
 
 ```go
@@ -564,6 +583,16 @@ func MaxItemsInput() *f64
 
 ```go
 func AccountId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Creator`<sup>Required</sup> <a name="Creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creator"></a>
+
+```go
+func Creator() *string
 ```
 
 - *Type:* *string
@@ -616,6 +645,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
+	Creator: *string,
 	MaxItems: *f64,
 }
 ```
@@ -632,6 +662,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.creator">Creator</a></code> | <code>*string</code> | Internal user ID set within the creator field. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -716,7 +747,23 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+
+---
+
+##### `Creator`<sup>Optional</sup> <a name="Creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.creator"></a>
+
+```go
+Creator *string
+```
+
+- *Type:* *string
+
+Internal user ID set within the creator field.
+
+Setting to empty string "" will return images where creator field is not set
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#creator DataCloudflareImages#creator}
 
 ---
 
@@ -730,7 +777,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#max_items DataCloudflareImages#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#max_items DataCloudflareImages#max_items}
 
 ---
 
@@ -1139,6 +1186,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.creator">Creator</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.filename">Filename</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.meta">Meta</a></code> | <code>*string</code> | *No description.* |
@@ -1167,6 +1215,16 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Creator`<sup>Required</sup> <a name="Creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.creator"></a>
+
+```go
+func Creator() *string
 ```
 
 - *Type:* *string

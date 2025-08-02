@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomPagesList <a name="DataCloudflareCustomPagesList" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages_list cloudflare_custom_pages_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages_list cloudflare_custom_pages_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesList.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareCustomPagesL
 
 The id of the existing DataCloudflareCustomPagesList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages_list#account_id DataCloudflareCustomPagesList#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages_list#account_id DataCloudflareCustomPagesList#account_id}
 
 ---
 
@@ -768,7 +768,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages_list#max_items DataCloudflareCustomPagesList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages_list#max_items DataCloudflareCustomPagesList#max_items}
 
 ---
 
@@ -782,7 +782,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages_list#zone_id DataCloudflareCustomPagesList#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages_list#zone_id DataCloudflareCustomPagesList#zone_id}
 
 ---
 
@@ -1178,6 +1178,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.previewTarget">PreviewTarget</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.requiredTokens">RequiredTokens</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.url">Url</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResult">DataCloudflareCustomPagesListResult</a></code> | *No description.* |
 
 ---
@@ -1200,6 +1208,86 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.createdOn"></a>
+
+```go
+func CreatedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ModifiedOn`<sup>Required</sup> <a name="ModifiedOn" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.modifiedOn"></a>
+
+```go
+func ModifiedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PreviewTarget`<sup>Required</sup> <a name="PreviewTarget" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.previewTarget"></a>
+
+```go
+func PreviewTarget() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RequiredTokens`<sup>Required</sup> <a name="RequiredTokens" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.requiredTokens"></a>
+
+```go
+func RequiredTokens() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.state"></a>
+
+```go
+func State() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-cloudflare.dataCloudflareCustomPagesList.DataCloudflareCustomPagesListResultOutputReference.property.url"></a>
+
+```go
+func Url() *string
 ```
 
 - *Type:* *string

@@ -202,6 +202,7 @@ The following submodules are available:
 - [dataCloudflarePagesProjects](./dataCloudflarePagesProjects.typescript.md)
 - [dataCloudflareQueue](./dataCloudflareQueue.typescript.md)
 - [dataCloudflareQueueConsumer](./dataCloudflareQueueConsumer.typescript.md)
+- [dataCloudflareQueueConsumers](./dataCloudflareQueueConsumers.typescript.md)
 - [dataCloudflareQueues](./dataCloudflareQueues.typescript.md)
 - [dataCloudflareR2Bucket](./dataCloudflareR2Bucket.typescript.md)
 - [dataCloudflareR2BucketCors](./dataCloudflareR2BucketCors.typescript.md)

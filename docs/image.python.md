@@ -4,7 +4,7 @@
 
 ### Image <a name="Image" id="@cdktf/provider-cloudflare.image.Image"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image cloudflare_image}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image cloudflare_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.image.Image.Initializer"></a>
 
@@ -23,6 +23,7 @@ image.Image(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
   id: str,
+  creator: str = None,
   file: str = None,
   metadata: str = None,
   require_signed_urls: typing.Union[bool, IResolvable] = None,
@@ -43,6 +44,7 @@ image.Image(
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.id">id</a></code> | <code>str</code> | An optional custom unique identifier for your image. |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.creator">creator</a></code> | <code>str</code> | Can set the creator field with an internal user ID. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.file">file</a></code> | <code>str</code> | An image binary data. Only needed when type is uploading a file. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.metadata">metadata</a></code> | <code>str</code> | User modifiable key-value store. Can use used for keeping references to another system of record for managing images. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.Initializer.parameter.requireSignedUrls">require_signed_urls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the image requires a signature token for the access. |
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#account_id Image#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#account_id Image#account_id}
 
 ---
 
@@ -126,10 +128,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An optional custom unique identifier for your image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#id Image#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#id Image#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-cloudflare.image.Image.Initializer.parameter.creator"></a>
+
+- *Type:* str
+
+Can set the creator field with an internal user ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#creator Image#creator}
 
 ---
 
@@ -139,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 An image binary data. Only needed when type is uploading a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#file Image#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#file Image#file}
 
 ---
 
@@ -149,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 User modifiable key-value store. Can use used for keeping references to another system of record for managing images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#metadata Image#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#metadata Image#metadata}
 
 ---
 
@@ -159,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates whether the image requires a signature token for the access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#require_signed_urls Image#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#require_signed_urls Image#require_signed_urls}
 
 ---
 
@@ -169,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A URL to fetch an image from origin. Only needed when type is uploading from a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#url Image#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#url Image#url}
 
 ---
 
@@ -200,6 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.resetCreator">reset_creator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.resetFile">reset_file</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.resetMetadata">reset_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.resetRequireSignedUrls">reset_require_signed_urls</a></code> | *No description.* |
@@ -532,6 +545,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_creator` <a name="reset_creator" id="@cdktf/provider-cloudflare.image.Image.resetCreator"></a>
+
+```python
+def reset_creator() -> None
+```
+
 ##### `reset_file` <a name="reset_file" id="@cdktf/provider-cloudflare.image.Image.resetFile"></a>
 
 ```python
@@ -670,7 +689,7 @@ The construct id used in the generated config for the Image to import.
 
 The id of the existing Image that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -705,12 +724,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.uploaded">uploaded</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.variants">variants</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.property.creatorInput">creator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.fileInput">file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.metadataInput">metadata_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.requireSignedUrlsInput">require_signed_urls_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.image.Image.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.file">file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.Image.property.metadata">metadata</a></code> | <code>str</code> | *No description.* |
@@ -911,6 +932,16 @@ account_id_input: str
 
 ---
 
+##### `creator_input`<sup>Optional</sup> <a name="creator_input" id="@cdktf/provider-cloudflare.image.Image.property.creatorInput"></a>
+
+```python
+creator_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `file_input`<sup>Optional</sup> <a name="file_input" id="@cdktf/provider-cloudflare.image.Image.property.fileInput"></a>
 
 ```python
@@ -965,6 +996,16 @@ url_input: str
 
 ```python
 account_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-cloudflare.image.Image.property.creator"></a>
+
+```python
+creator: str
 ```
 
 - *Type:* str
@@ -1058,6 +1099,7 @@ image.ImageConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
   id: str,
+  creator: str = None,
   file: str = None,
   metadata: str = None,
   require_signed_urls: typing.Union[bool, IResolvable] = None,
@@ -1078,6 +1120,7 @@ image.ImageConfig(
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.id">id</a></code> | <code>str</code> | An optional custom unique identifier for your image. |
+| <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.creator">creator</a></code> | <code>str</code> | Can set the creator field with an internal user ID. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.file">file</a></code> | <code>str</code> | An image binary data. Only needed when type is uploading a file. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.metadata">metadata</a></code> | <code>str</code> | User modifiable key-value store. Can use used for keeping references to another system of record for managing images. |
 | <code><a href="#@cdktf/provider-cloudflare.image.ImageConfig.property.requireSignedUrls">require_signed_urls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the image requires a signature token for the access. |
@@ -1165,7 +1208,7 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#account_id Image#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#account_id Image#account_id}
 
 ---
 
@@ -1179,10 +1222,24 @@ id: str
 
 An optional custom unique identifier for your image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#id Image#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#id Image#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-cloudflare.image.ImageConfig.property.creator"></a>
+
+```python
+creator: str
+```
+
+- *Type:* str
+
+Can set the creator field with an internal user ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#creator Image#creator}
 
 ---
 
@@ -1196,7 +1253,7 @@ file: str
 
 An image binary data. Only needed when type is uploading a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#file Image#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#file Image#file}
 
 ---
 
@@ -1210,7 +1267,7 @@ metadata: str
 
 User modifiable key-value store. Can use used for keeping references to another system of record for managing images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#metadata Image#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#metadata Image#metadata}
 
 ---
 
@@ -1224,7 +1281,7 @@ require_signed_urls: typing.Union[bool, IResolvable]
 
 Indicates whether the image requires a signature token for the access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#require_signed_urls Image#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#require_signed_urls Image#require_signed_urls}
 
 ---
 
@@ -1238,7 +1295,7 @@ url: str
 
 A URL to fetch an image from origin. Only needed when type is uploading from a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/image#url Image#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/image#url Image#url}
 
 ---
 

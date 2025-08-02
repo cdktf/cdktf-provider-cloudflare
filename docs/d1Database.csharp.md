@@ -4,7 +4,7 @@
 
 ### D1Database <a name="D1Database" id="@cdktf/provider-cloudflare.d1Database.D1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the D1Database to import.
 
 The id of the existing D1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -963,7 +963,7 @@ public string AccountId { get; set; }
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/d1_database#account_id D1Database#account_id}
 
 ---
 
@@ -977,7 +977,7 @@ public string Name { get; set; }
 
 D1 database name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#name D1Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/d1_database#name D1Database#name}
 
 ---
 
@@ -994,7 +994,7 @@ Specify the region to create the D1 primary, if available.
 If this option is omitted, the D1 will be created as close as possible to the current user.
 Available values: "wnam", "enam", "weur", "eeur", "apac", "oc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 
@@ -1008,7 +1008,7 @@ public D1DatabaseReadReplication ReadReplication { get; set; }
 
 Configuration for D1 read replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#read_replication D1Database#read_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/d1_database#read_replication D1Database#read_replication}
 
 ---
 
@@ -1045,7 +1045,7 @@ The read replication mode for the database.
 Use 'auto' to create replicas and allow D1 automatically place them around the world, or 'disabled' to not use any database replicas (it can take a few hours for all replicas to be deleted).
 Available values: "auto", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/d1_database#mode D1Database#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/d1_database#mode D1Database#mode}
 
 ---
 

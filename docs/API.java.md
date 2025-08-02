@@ -202,6 +202,7 @@ The following submodules are available:
 - [dataCloudflarePagesProjects](./dataCloudflarePagesProjects.java.md)
 - [dataCloudflareQueue](./dataCloudflareQueue.java.md)
 - [dataCloudflareQueueConsumer](./dataCloudflareQueueConsumer.java.md)
+- [dataCloudflareQueueConsumers](./dataCloudflareQueueConsumers.java.md)
 - [dataCloudflareQueues](./dataCloudflareQueues.java.md)
 - [dataCloudflareR2Bucket](./dataCloudflareR2Bucket.java.md)
 - [dataCloudflareR2BucketCors](./dataCloudflareR2BucketCors.java.md)

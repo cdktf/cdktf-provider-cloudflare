@@ -4,7 +4,7 @@
 
 ### DataCloudflareImages <a name="DataCloudflareImages" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images cloudflare_images}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images cloudflare_images}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer"></a>
 
@@ -22,6 +22,7 @@ dataCloudflareImages.DataCloudflareImages(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
+  creator: str = None,
   max_items: typing.Union[int, float] = None
 )
 ```
@@ -38,6 +39,7 @@ dataCloudflareImages.DataCloudflareImages(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer.parameter.creator">creator</a></code> | <code>str</code> | Internal user ID set within the creator field. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -108,7 +110,19 @@ Must be unique amongst siblings in the same scope
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+
+---
+
+##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.Initializer.parameter.creator"></a>
+
+- *Type:* str
+
+Internal user ID set within the creator field.
+
+Setting to empty string "" will return images where creator field is not set
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#creator DataCloudflareImages#creator}
 
 ---
 
@@ -118,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#max_items DataCloudflareImages#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#max_items DataCloudflareImages#max_items}
 
 ---
 
@@ -143,6 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetCreator">reset_creator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetMaxItems">reset_max_items</a></code> | *No description.* |
 
 ---
@@ -364,6 +379,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_creator` <a name="reset_creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetCreator"></a>
+
+```python
+def reset_creator() -> None
+```
+
 ##### `reset_max_items` <a name="reset_max_items" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.resetMaxItems"></a>
 
 ```python
@@ -484,7 +505,7 @@ The construct id used in the generated config for the DataCloudflareImages to im
 
 The id of the existing DataCloudflareImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,8 +535,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.result">result</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultList">DataCloudflareImagesResultList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creatorInput">creator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.maxItemsInput">max_items_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
@@ -662,6 +685,16 @@ account_id_input: str
 
 ---
 
+##### `creator_input`<sup>Optional</sup> <a name="creator_input" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creatorInput"></a>
+
+```python
+creator_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `max_items_input`<sup>Optional</sup> <a name="max_items_input" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.maxItemsInput"></a>
 
 ```python
@@ -676,6 +709,16 @@ max_items_input: typing.Union[int, float]
 
 ```python
 account_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages.property.creator"></a>
+
+```python
+creator: str
 ```
 
 - *Type:* str
@@ -728,6 +771,7 @@ dataCloudflareImages.DataCloudflareImagesConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
+  creator: str = None,
   max_items: typing.Union[int, float] = None
 )
 ```
@@ -744,6 +788,7 @@ dataCloudflareImages.DataCloudflareImagesConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.creator">creator</a></code> | <code>str</code> | Internal user ID set within the creator field. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -828,7 +873,23 @@ account_id: str
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#account_id DataCloudflareImages#account_id}
+
+---
+
+##### `creator`<sup>Optional</sup> <a name="creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig.property.creator"></a>
+
+```python
+creator: str
+```
+
+- *Type:* str
+
+Internal user ID set within the creator field.
+
+Setting to empty string "" will return images where creator field is not set
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#creator DataCloudflareImages#creator}
 
 ---
 
@@ -842,7 +903,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/images#max_items DataCloudflareImages#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/images#max_items DataCloudflareImages#max_items}
 
 ---
 
@@ -1284,6 +1345,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.creator">creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.filename">filename</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.meta">meta</a></code> | <code>str</code> | *No description.* |
@@ -1312,6 +1374,16 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `creator`<sup>Required</sup> <a name="creator" id="@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference.property.creator"></a>
+
+```python
+creator: str
 ```
 
 - *Type:* str
