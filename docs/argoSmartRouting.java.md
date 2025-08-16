@@ -4,7 +4,7 @@
 
 ### ArgoSmartRouting <a name="ArgoSmartRouting" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer"></a>
 
@@ -39,7 +39,7 @@ ArgoSmartRouting.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Enables Argo Smart Routing. Available values: "on", "off". |
+| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Specifies the enablement value of Argo Smart Routing. Available values: "on", "off". |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Specifies the zone associated with the API call. |
 
 ---
@@ -108,9 +108,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Enables Argo Smart Routing. Available values: "on", "off".
+Specifies the enablement value of Argo Smart Routing. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the zone associated with the API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
 
 ---
 
@@ -547,7 +547,7 @@ The construct id used in the generated config for the ArgoSmartRouting to import
 
 The id of the existing ArgoSmartRouting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -577,7 +577,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.editable">editable</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.modifiedOn">modifiedOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -727,10 +729,30 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `editable`<sup>Required</sup> <a name="editable" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.editable"></a>
+
+```java
+public IResolvable getEditable();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.id"></a>
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modifiedOn`<sup>Required</sup> <a name="modifiedOn" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.modifiedOn"></a>
+
+```java
+public java.lang.String getModifiedOn();
 ```
 
 - *Type:* java.lang.String
@@ -832,7 +854,7 @@ ArgoSmartRoutingConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.value">value</a></code> | <code>java.lang.String</code> | Enables Argo Smart Routing. Available values: "on", "off". |
+| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.value">value</a></code> | <code>java.lang.String</code> | Specifies the enablement value of Argo Smart Routing. Available values: "on", "off". |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Specifies the zone associated with the API call. |
 
 ---
@@ -915,9 +937,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Enables Argo Smart Routing. Available values: "on", "off".
+Specifies the enablement value of Argo Smart Routing. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
 
 ---
 
@@ -931,7 +953,7 @@ public java.lang.String getZoneId();
 
 Specifies the zone associated with the API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
 
 ---
 

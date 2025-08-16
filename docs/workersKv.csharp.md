@@ -4,7 +4,7 @@
 
 ### WorkersKv <a name="WorkersKv" id="@cdktf/provider-cloudflare.workersKv.WorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersKv.WorkersKv.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the WorkersKv to import.
 
 The id of the existing WorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,7 +828,7 @@ new WorkersKvConfig {
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.keyName">KeyName</a></code> | <code>string</code> | A key's name. |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.namespaceId">NamespaceId</a></code> | <code>string</code> | Namespace identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.value">Value</a></code> | <code>string</code> | A byte sequence to be stored, up to 25 MiB in length. |
-| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.metadata">Metadata</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv#metadata WorkersKv#metadata}. |
+| <code><a href="#@cdktf/provider-cloudflare.workersKv.WorkersKvConfig.property.metadata">Metadata</a></code> | <code>string</code> | Associates arbitrary JSON data with a key/value pair. |
 
 ---
 
@@ -912,7 +912,7 @@ public string AccountId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv#account_id WorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_kv#account_id WorkersKv#account_id}
 
 ---
 
@@ -928,7 +928,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv#key_name WorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_kv#key_name WorkersKv#key_name}
 
 ---
 
@@ -942,7 +942,7 @@ public string NamespaceId { get; set; }
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 
 ---
 
@@ -956,7 +956,7 @@ public string Value { get; set; }
 
 A byte sequence to be stored, up to 25 MiB in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv#value WorkersKv#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_kv#value WorkersKv#value}
 
 ---
 
@@ -968,7 +968,9 @@ public string Metadata { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_kv#metadata WorkersKv#metadata}.
+Associates arbitrary JSON data with a key/value pair.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_kv#metadata WorkersKv#metadata}
 
 ---
 

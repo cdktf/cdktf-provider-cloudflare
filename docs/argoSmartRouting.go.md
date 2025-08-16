@@ -4,7 +4,7 @@
 
 ### ArgoSmartRouting <a name="ArgoSmartRouting" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ArgoSmartRouting to import
 
 The id of the existing ArgoSmartRouting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -497,7 +497,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.editable">Editable</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.value">Value</a></code> | <code>*string</code> | *No description.* |
@@ -647,10 +649,30 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Editable`<sup>Required</sup> <a name="Editable" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.editable"></a>
+
+```go
+func Editable() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.id"></a>
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ModifiedOn`<sup>Required</sup> <a name="ModifiedOn" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.property.modifiedOn"></a>
+
+```go
+func ModifiedOn() *string
 ```
 
 - *Type:* *string
@@ -748,7 +770,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/argosmartro
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.value">Value</a></code> | <code>*string</code> | Enables Argo Smart Routing. Available values: "on", "off". |
+| <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.value">Value</a></code> | <code>*string</code> | Specifies the enablement value of Argo Smart Routing. Available values: "on", "off". |
 | <code><a href="#@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRoutingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Specifies the zone associated with the API call. |
 
 ---
@@ -831,9 +853,9 @@ Value *string
 
 - *Type:* *string
 
-Enables Argo Smart Routing. Available values: "on", "off".
+Specifies the enablement value of Argo Smart Routing. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
 
 ---
 
@@ -847,7 +869,7 @@ ZoneId *string
 
 Specifies the zone associated with the API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
 
 ---
 

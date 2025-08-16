@@ -4,7 +4,7 @@
 
 ### DnsRecord <a name="DnsRecord" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record cloudflare_dns_record}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record cloudflare_dns_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer"></a>
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the DnsRecord to import.
 
 The id of the existing DnsRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1190,7 +1190,7 @@ Name *string
 
 DNS record name (or @ for the zone apex) in Punycode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#name DnsRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#name DnsRecord#name}
 
 ---
 
@@ -1206,7 +1206,7 @@ Time To Live (TTL) of the DNS record in seconds.
 
 Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#ttl DnsRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#ttl DnsRecord#ttl}
 
 ---
 
@@ -1222,7 +1222,7 @@ Record type.
 
 Available values: "A", "AAAA", "CNAME", "MX", "NS", "OPENPGPKEY", "PTR", "TXT", "CAA", "CERT", "DNSKEY", "DS", "HTTPS", "LOC", "NAPTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "URI".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
@@ -1236,7 +1236,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#zone_id DnsRecord#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#zone_id DnsRecord#zone_id}
 
 ---
 
@@ -1250,7 +1250,7 @@ Comment *string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#comment DnsRecord#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#comment DnsRecord#comment}
 
 ---
 
@@ -1264,7 +1264,7 @@ Content *string
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#content DnsRecord#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#content DnsRecord#content}
 
 ---
 
@@ -1278,7 +1278,7 @@ Data DnsRecordData
 
 Components of a CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#data DnsRecord#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#data DnsRecord#data}
 
 ---
 
@@ -1292,7 +1292,7 @@ Priority *f64
 
 Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
@@ -1306,7 +1306,7 @@ Proxied interface{}
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#proxied DnsRecord#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#proxied DnsRecord#proxied}
 
 ---
 
@@ -1320,7 +1320,7 @@ Settings DnsRecordSettings
 
 Settings for the DNS record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#settings DnsRecord#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#settings DnsRecord#settings}
 
 ---
 
@@ -1334,7 +1334,7 @@ Tags *[]*string
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#tags DnsRecord#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#tags DnsRecord#tags}
 
 ---
 
@@ -1352,7 +1352,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 	Digest: *string,
 	DigestType: *f64,
 	Fingerprint: *string,
-	Flags: *f64,
+	Flags: *map[string]interface{},
 	KeyTag: *f64,
 	LatDegrees: *f64,
 	LatDirection: *string,
@@ -1394,8 +1394,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate">Certificate</a></code> | <code>*string</code> | Certificate. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digest">Digest</a></code> | <code>*string</code> | Digest. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType">DigestType</a></code> | <code>*f64</code> | Digest Type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint">Fingerprint</a></code> | <code>*string</code> | fingerprint. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.flags">Flags</a></code> | <code>*f64</code> | Flags for the CAA record. |
+| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint">Fingerprint</a></code> | <code>*string</code> | Fingerprint. |
+| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.flags">Flags</a></code> | <code>*map[string]interface{}</code> | Flags for the CAA record. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag">KeyTag</a></code> | <code>*f64</code> | Key Tag. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees">LatDegrees</a></code> | <code>*f64</code> | Degrees of latitude. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection">LatDirection</a></code> | <code>*string</code> | Latitude direction. Available values: "N", "S". |
@@ -1411,7 +1411,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz">PrecisionHorz</a></code> | <code>*f64</code> | Horizontal precision of location. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert">PrecisionVert</a></code> | <code>*f64</code> | Vertical precision of location. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.preference">Preference</a></code> | <code>*f64</code> | Preference. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.priority">Priority</a></code> | <code>*f64</code> | priority. |
+| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.priority">Priority</a></code> | <code>*f64</code> | Priority. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol">Protocol</a></code> | <code>*f64</code> | Protocol. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey">PublicKey</a></code> | <code>*string</code> | Public Key. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.regex">Regex</a></code> | <code>*string</code> | Regex. |
@@ -1420,7 +1420,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.service">Service</a></code> | <code>*string</code> | Service. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.size">Size</a></code> | <code>*f64</code> | Size of location in meters. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.tag">Tag</a></code> | <code>*string</code> | Name of the property controlled by this record (e.g.: issue, issuewild, iodef). |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.target">Target</a></code> | <code>*string</code> | target. |
+| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.target">Target</a></code> | <code>*string</code> | Target. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.type">Type</a></code> | <code>*f64</code> | Type. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.usage">Usage</a></code> | <code>*f64</code> | Usage. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.value">Value</a></code> | <code>*string</code> | Value of the record. This field's semantics depend on the chosen tag. |
@@ -1438,7 +1438,7 @@ Algorithm *f64
 
 Algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#algorithm DnsRecord#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#algorithm DnsRecord#algorithm}
 
 ---
 
@@ -1452,7 +1452,7 @@ Altitude *f64
 
 Altitude of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#altitude DnsRecord#altitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#altitude DnsRecord#altitude}
 
 ---
 
@@ -1466,7 +1466,7 @@ Certificate *string
 
 Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#certificate DnsRecord#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#certificate DnsRecord#certificate}
 
 ---
 
@@ -1480,7 +1480,7 @@ Digest *string
 
 Digest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#digest DnsRecord#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#digest DnsRecord#digest}
 
 ---
 
@@ -1494,7 +1494,7 @@ DigestType *f64
 
 Digest Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#digest_type DnsRecord#digest_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#digest_type DnsRecord#digest_type}
 
 ---
 
@@ -1506,23 +1506,23 @@ Fingerprint *string
 
 - *Type:* *string
 
-fingerprint.
+Fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
 
 ---
 
 ##### `Flags`<sup>Optional</sup> <a name="Flags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.flags"></a>
 
 ```go
-Flags *f64
+Flags *map[string]interface{}
 ```
 
-- *Type:* *f64
+- *Type:* *map[string]interface{}
 
 Flags for the CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#flags DnsRecord#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#flags DnsRecord#flags}
 
 ---
 
@@ -1536,7 +1536,7 @@ KeyTag *f64
 
 Key Tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#key_tag DnsRecord#key_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#key_tag DnsRecord#key_tag}
 
 ---
 
@@ -1550,7 +1550,7 @@ LatDegrees *f64
 
 Degrees of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
 
 ---
 
@@ -1564,7 +1564,7 @@ LatDirection *string
 
 Latitude direction. Available values: "N", "S".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
 
 ---
 
@@ -1578,7 +1578,7 @@ LatMinutes *f64
 
 Minutes of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
 
 ---
 
@@ -1592,7 +1592,7 @@ LatSeconds *f64
 
 Seconds of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
 
 ---
 
@@ -1606,7 +1606,7 @@ LongDegrees *f64
 
 Degrees of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
 
 ---
 
@@ -1620,7 +1620,7 @@ LongDirection *string
 
 Longitude direction. Available values: "E", "W".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#long_direction DnsRecord#long_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#long_direction DnsRecord#long_direction}
 
 ---
 
@@ -1634,7 +1634,7 @@ LongMinutes *f64
 
 Minutes of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
 
 ---
 
@@ -1648,7 +1648,7 @@ LongSeconds *f64
 
 Seconds of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
 
 ---
 
@@ -1662,7 +1662,7 @@ MatchingType *f64
 
 Matching Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#matching_type DnsRecord#matching_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#matching_type DnsRecord#matching_type}
 
 ---
 
@@ -1676,7 +1676,7 @@ Order *f64
 
 Order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#order DnsRecord#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#order DnsRecord#order}
 
 ---
 
@@ -1690,7 +1690,7 @@ Port *f64
 
 The port of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#port DnsRecord#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#port DnsRecord#port}
 
 ---
 
@@ -1704,7 +1704,7 @@ PrecisionHorz *f64
 
 Horizontal precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
 
 ---
 
@@ -1718,7 +1718,7 @@ PrecisionVert *f64
 
 Vertical precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
 
 ---
 
@@ -1732,7 +1732,7 @@ Preference *f64
 
 Preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#preference DnsRecord#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#preference DnsRecord#preference}
 
 ---
 
@@ -1744,9 +1744,9 @@ Priority *f64
 
 - *Type:* *f64
 
-priority.
+Priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
@@ -1760,7 +1760,7 @@ Protocol *f64
 
 Protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#protocol DnsRecord#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#protocol DnsRecord#protocol}
 
 ---
 
@@ -1774,7 +1774,7 @@ PublicKey *string
 
 Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#public_key DnsRecord#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#public_key DnsRecord#public_key}
 
 ---
 
@@ -1788,7 +1788,7 @@ Regex *string
 
 Regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#regex DnsRecord#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#regex DnsRecord#regex}
 
 ---
 
@@ -1802,7 +1802,7 @@ Replacement *string
 
 Replacement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#replacement DnsRecord#replacement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#replacement DnsRecord#replacement}
 
 ---
 
@@ -1816,7 +1816,7 @@ Selector *f64
 
 Selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#selector DnsRecord#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#selector DnsRecord#selector}
 
 ---
 
@@ -1830,7 +1830,7 @@ Service *string
 
 Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#service DnsRecord#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#service DnsRecord#service}
 
 ---
 
@@ -1844,7 +1844,7 @@ Size *f64
 
 Size of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#size DnsRecord#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#size DnsRecord#size}
 
 ---
 
@@ -1858,7 +1858,7 @@ Tag *string
 
 Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#tag DnsRecord#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#tag DnsRecord#tag}
 
 ---
 
@@ -1870,9 +1870,9 @@ Target *string
 
 - *Type:* *string
 
-target.
+Target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#target DnsRecord#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#target DnsRecord#target}
 
 ---
 
@@ -1886,7 +1886,7 @@ Type *f64
 
 Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
@@ -1900,7 +1900,7 @@ Usage *f64
 
 Usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#usage DnsRecord#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#usage DnsRecord#usage}
 
 ---
 
@@ -1914,7 +1914,7 @@ Value *string
 
 Value of the record. This field's semantics depend on the chosen tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#value DnsRecord#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#value DnsRecord#value}
 
 ---
 
@@ -1928,7 +1928,7 @@ Weight *f64
 
 The record weight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#weight DnsRecord#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#weight DnsRecord#weight}
 
 ---
 
@@ -1966,7 +1966,7 @@ FlattenCname interface{}
 
 If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
 
 ---
 
@@ -1982,7 +1982,7 @@ When enabled, only A records will be generated, and AAAA records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
 
 ---
 
@@ -1998,7 +1998,7 @@ When enabled, only AAAA records will be generated, and A records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
 
 ---
 
@@ -2472,7 +2472,7 @@ func ResetWeight()
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput">DigestInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput">DigestTypeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput">FingerprintInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput">FlagsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput">FlagsInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput">KeyTagInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput">LatDegreesInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput">LatDirectionInput</a></code> | <code>*string</code> | *No description.* |
@@ -2508,7 +2508,7 @@ func ResetWeight()
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest">Digest</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType">DigestType</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint">Fingerprint</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags">Flags</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags">Flags</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag">KeyTag</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees">LatDegrees</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection">LatDirection</a></code> | <code>*string</code> | *No description.* |
@@ -2629,10 +2629,10 @@ func FingerprintInput() *string
 ##### `FlagsInput`<sup>Optional</sup> <a name="FlagsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput"></a>
 
 ```go
-func FlagsInput() *f64
+func FlagsInput() *map[string]interface{}
 ```
 
-- *Type:* *f64
+- *Type:* *map[string]interface{}
 
 ---
 
@@ -2989,10 +2989,10 @@ func Fingerprint() *string
 ##### `Flags`<sup>Required</sup> <a name="Flags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags"></a>
 
 ```go
-func Flags() *f64
+func Flags() *map[string]interface{}
 ```
 
-- *Type:* *f64
+- *Type:* *map[string]interface{}
 
 ---
 
