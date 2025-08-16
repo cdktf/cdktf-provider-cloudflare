@@ -111,6 +111,7 @@ Object.defineProperty(exports, 'ruleset', { get: function () { return require('.
 Object.defineProperty(exports, 'schemaValidationOperationSettings', { get: function () { return require('./schema-validation-operation-settings'); } });
 Object.defineProperty(exports, 'schemaValidationSchemas', { get: function () { return require('./schema-validation-schemas'); } });
 Object.defineProperty(exports, 'schemaValidationSettings', { get: function () { return require('./schema-validation-settings'); } });
+Object.defineProperty(exports, 'snippet', { get: function () { return require('./snippet'); } });
 Object.defineProperty(exports, 'snippetRules', { get: function () { return require('./snippet-rules'); } });
 Object.defineProperty(exports, 'snippets', { get: function () { return require('./snippets'); } });
 Object.defineProperty(exports, 'spectrumApplication', { get: function () { return require('./spectrum-application'); } });
@@ -384,6 +385,8 @@ Object.defineProperty(exports, 'dataCloudflareSchemaValidationOperationSettingsL
 Object.defineProperty(exports, 'dataCloudflareSchemaValidationSchemas', { get: function () { return require('./data-cloudflare-schema-validation-schemas'); } });
 Object.defineProperty(exports, 'dataCloudflareSchemaValidationSchemasList', { get: function () { return require('./data-cloudflare-schema-validation-schemas-list'); } });
 Object.defineProperty(exports, 'dataCloudflareSchemaValidationSettings', { get: function () { return require('./data-cloudflare-schema-validation-settings'); } });
+Object.defineProperty(exports, 'dataCloudflareSnippet', { get: function () { return require('./data-cloudflare-snippet'); } });
+Object.defineProperty(exports, 'dataCloudflareSnippetList', { get: function () { return require('./data-cloudflare-snippet-list'); } });
 Object.defineProperty(exports, 'dataCloudflareSnippetRulesList', { get: function () { return require('./data-cloudflare-snippet-rules-list'); } });
 Object.defineProperty(exports, 'dataCloudflareSnippets', { get: function () { return require('./data-cloudflare-snippets'); } });
 Object.defineProperty(exports, 'dataCloudflareSnippetsList', { get: function () { return require('./data-cloudflare-snippets-list'); } });

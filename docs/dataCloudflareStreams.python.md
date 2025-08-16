@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreams <a name="DataCloudflareStreams" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams cloudflare_streams}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams cloudflare_streams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer"></a>
 
@@ -30,7 +30,8 @@ dataCloudflareStreams.DataCloudflareStreams(
   search: str = None,
   start: str = None,
   status: str = None,
-  type: str = None
+  type: str = None,
+  video_name: str = None
 )
 ```
 
@@ -51,10 +52,11 @@ dataCloudflareStreams.DataCloudflareStreams(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.end">end</a></code> | <code>str</code> | Lists videos created before the specified date. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.includeCounts">include_counts</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Includes the total number of videos associated with the submitted query parameters. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.search">search</a></code> | <code>str</code> | Searches over the `name` key in the `meta` field. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.search">search</a></code> | <code>str</code> | Provides a partial word match of the `name` key in the `meta` field. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.start">start</a></code> | <code>str</code> | Lists videos created after the specified date. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.status">status</a></code> | <code>str</code> | Specifies the processing status for all quality levels for a video. Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.type">type</a></code> | <code>str</code> | Specifies whether the video is `vod` or `live`. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.videoName">video_name</a></code> | <code>str</code> | Provides a fast, exact string match on the `name` key in the `meta` field. |
 
 ---
 
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Lists videos in ascending order of creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#asc DataCloudflareStreams#asc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#asc DataCloudflareStreams#asc}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#creator DataCloudflareStreams#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#creator DataCloudflareStreams#creator}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Lists videos created before the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#end DataCloudflareStreams#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#end DataCloudflareStreams#end}
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Includes the total number of videos associated with the submitted query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
 
 ---
 
@@ -174,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
 
 ---
 
@@ -182,11 +184,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Searches over the `name` key in the `meta` field.
+Provides a partial word match of the `name` key in the `meta` field.
 
-This field can be set with or after the upload request.
+Slow for medium to large video libraries. May be unavailable for very large libraries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#search DataCloudflareStreams#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#search DataCloudflareStreams#search}
 
 ---
 
@@ -196,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Lists videos created after the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#start DataCloudflareStreams#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#start DataCloudflareStreams#start}
 
 ---
 
@@ -206,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the processing status for all quality levels for a video. Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#status DataCloudflareStreams#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#status DataCloudflareStreams#status}
 
 ---
 
@@ -216,7 +218,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies whether the video is `vod` or `live`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#type DataCloudflareStreams#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#type DataCloudflareStreams#type}
+
+---
+
+##### `video_name`<sup>Optional</sup> <a name="video_name" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.videoName"></a>
+
+- *Type:* str
+
+Provides a fast, exact string match on the `name` key in the `meta` field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
 
 ---
 
@@ -250,6 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetStart">reset_start</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetStatus">reset_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetType">reset_type</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetVideoName">reset_video_name</a></code> | *No description.* |
 
 ---
 
@@ -524,6 +537,12 @@ def reset_status() -> None
 def reset_type() -> None
 ```
 
+##### `reset_video_name` <a name="reset_video_name" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetVideoName"></a>
+
+```python
+def reset_video_name() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -638,7 +657,7 @@ The construct id used in the generated config for the DataCloudflareStreams to i
 
 The id of the existing DataCloudflareStreams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -677,6 +696,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.videoNameInput">video_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.asc">asc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.creator">creator</a></code> | <code>str</code> | *No description.* |
@@ -687,6 +707,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.start">start</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.videoName">video_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -922,6 +943,16 @@ type_input: str
 
 ---
 
+##### `video_name_input`<sup>Optional</sup> <a name="video_name_input" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.videoNameInput"></a>
+
+```python
+video_name_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.accountId"></a>
 
 ```python
@@ -1022,6 +1053,16 @@ type: str
 
 ---
 
+##### `video_name`<sup>Required</sup> <a name="video_name" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.videoName"></a>
+
+```python
+video_name: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1066,7 +1107,8 @@ dataCloudflareStreams.DataCloudflareStreamsConfig(
   search: str = None,
   start: str = None,
   status: str = None,
-  type: str = None
+  type: str = None,
+  video_name: str = None
 )
 ```
 
@@ -1087,10 +1129,11 @@ dataCloudflareStreams.DataCloudflareStreamsConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.end">end</a></code> | <code>str</code> | Lists videos created before the specified date. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.includeCounts">include_counts</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Includes the total number of videos associated with the submitted query parameters. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.search">search</a></code> | <code>str</code> | Searches over the `name` key in the `meta` field. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.search">search</a></code> | <code>str</code> | Provides a partial word match of the `name` key in the `meta` field. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.start">start</a></code> | <code>str</code> | Lists videos created after the specified date. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.status">status</a></code> | <code>str</code> | Specifies the processing status for all quality levels for a video. Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress". |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.type">type</a></code> | <code>str</code> | Specifies whether the video is `vod` or `live`. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.videoName">video_name</a></code> | <code>str</code> | Provides a fast, exact string match on the `name` key in the `meta` field. |
 
 ---
 
@@ -1174,7 +1217,7 @@ account_id: str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
 
 ---
 
@@ -1188,7 +1231,7 @@ asc: typing.Union[bool, IResolvable]
 
 Lists videos in ascending order of creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#asc DataCloudflareStreams#asc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#asc DataCloudflareStreams#asc}
 
 ---
 
@@ -1202,7 +1245,7 @@ creator: str
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#creator DataCloudflareStreams#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#creator DataCloudflareStreams#creator}
 
 ---
 
@@ -1216,7 +1259,7 @@ end: str
 
 Lists videos created before the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#end DataCloudflareStreams#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#end DataCloudflareStreams#end}
 
 ---
 
@@ -1230,7 +1273,7 @@ include_counts: typing.Union[bool, IResolvable]
 
 Includes the total number of videos associated with the submitted query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
 
 ---
 
@@ -1244,7 +1287,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
 
 ---
 
@@ -1256,11 +1299,11 @@ search: str
 
 - *Type:* str
 
-Searches over the `name` key in the `meta` field.
+Provides a partial word match of the `name` key in the `meta` field.
 
-This field can be set with or after the upload request.
+Slow for medium to large video libraries. May be unavailable for very large libraries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#search DataCloudflareStreams#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#search DataCloudflareStreams#search}
 
 ---
 
@@ -1274,7 +1317,7 @@ start: str
 
 Lists videos created after the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#start DataCloudflareStreams#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#start DataCloudflareStreams#start}
 
 ---
 
@@ -1288,7 +1331,7 @@ status: str
 
 Specifies the processing status for all quality levels for a video. Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#status DataCloudflareStreams#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#status DataCloudflareStreams#status}
 
 ---
 
@@ -1302,7 +1345,21 @@ type: str
 
 Specifies whether the video is `vod` or `live`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/streams#type DataCloudflareStreams#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#type DataCloudflareStreams#type}
+
+---
+
+##### `video_name`<sup>Optional</sup> <a name="video_name" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.videoName"></a>
+
+```python
+video_name: str
+```
+
+- *Type:* str
+
+Provides a fast, exact string match on the `name` key in the `meta` field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
 
 ---
 

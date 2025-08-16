@@ -4,7 +4,7 @@
 
 ### Ruleset <a name="Ruleset" id="@cdktf/provider-cloudflare.ruleset.Ruleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset cloudflare_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset cloudflare_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer"></a>
 
@@ -48,10 +48,10 @@ Ruleset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | The kind of the ruleset. Available values: "managed", "custom", "root", "zone". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The human-readable name of the ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.phase">phase</a></code> | <code>java.lang.String</code> | The phase of the ruleset. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The unique ID of the account. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An informative description of the ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>></code> | The list of rules in the ruleset. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The unique ID of the zone. |
 
 ---
 
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 The kind of the ruleset. Available values: "managed", "custom", "root", "zone".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#kind Ruleset#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#kind Ruleset#kind}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The human-readable name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -143,7 +143,7 @@ The phase of the ruleset.
 
 Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#phase Ruleset#phase}
 
 ---
 
@@ -151,9 +151,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#account_id Ruleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#account_id Ruleset#account_id}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative description of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The list of rules in the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -181,9 +181,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
+The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#zone_id Ruleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#zone_id Ruleset#zone_id}
 
 ---
 
@@ -651,7 +651,7 @@ The construct id used in the generated config for the Ruleset to import.
 
 The id of the existing Ruleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.lastUpdated">lastUpdated</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesList">RulesetRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.kindInput">kindInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -851,6 +853,16 @@ public java.lang.String getId();
 
 ---
 
+##### `lastUpdated`<sup>Required</sup> <a name="lastUpdated" id="@cdktf/provider-cloudflare.ruleset.Ruleset.property.lastUpdated"></a>
+
+```java
+public java.lang.String getLastUpdated();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `rules`<sup>Required</sup> <a name="rules" id="@cdktf/provider-cloudflare.ruleset.Ruleset.property.rules"></a>
 
 ```java
@@ -858,6 +870,16 @@ public RulesetRulesList getRules();
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesList">RulesetRulesList</a>
+
+---
+
+##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-cloudflare.ruleset.Ruleset.property.version"></a>
+
+```java
+public java.lang.String getVersion();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1055,10 +1077,10 @@ RulesetConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | The kind of the ruleset. Available values: "managed", "custom", "root", "zone". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.name">name</a></code> | <code>java.lang.String</code> | The human-readable name of the ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.phase">phase</a></code> | <code>java.lang.String</code> | The phase of the ruleset. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The unique ID of the account. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.description">description</a></code> | <code>java.lang.String</code> | An informative description of the ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>></code> | The list of rules in the ruleset. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | The unique ID of the zone. |
 
 ---
 
@@ -1142,7 +1164,7 @@ public java.lang.String getKind();
 
 The kind of the ruleset. Available values: "managed", "custom", "root", "zone".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#kind Ruleset#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#kind Ruleset#kind}
 
 ---
 
@@ -1156,7 +1178,7 @@ public java.lang.String getName();
 
 The human-readable name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -1172,7 +1194,7 @@ The phase of the ruleset.
 
 Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#phase Ruleset#phase}
 
 ---
 
@@ -1184,9 +1206,9 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#account_id Ruleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#account_id Ruleset#account_id}
 
 ---
 
@@ -1200,7 +1222,7 @@ public java.lang.String getDescription();
 
 An informative description of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1214,7 +1236,7 @@ public java.lang.Object getRules();
 
 The list of rules in the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -1226,9 +1248,9 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
+The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#zone_id Ruleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#zone_id Ruleset#zone_id}
 
 ---
 
@@ -1240,14 +1262,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRules;
 
 RulesetRules.builder()
-//  .action(java.lang.String)
+    .action(java.lang.String)
+    .expression(java.lang.String)
 //  .actionParameters(RulesetRulesActionParameters)
-//  .categories(java.util.List<java.lang.String>)
 //  .description(java.lang.String)
 //  .enabled(java.lang.Boolean)
 //  .enabled(IResolvable)
 //  .exposedCredentialCheck(RulesetRulesExposedCredentialCheck)
-//  .expression(java.lang.String)
 //  .logging(RulesetRulesLogging)
 //  .ratelimit(RulesetRulesRatelimit)
 //  .ref(java.lang.String)
@@ -1259,19 +1280,18 @@ RulesetRules.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.action">action</a></code> | <code>java.lang.String</code> | The action to perform when the rule matches. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.expression">expression</a></code> | <code>java.lang.String</code> | The expression defining which traffic will match the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.actionParameters">actionParameters</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a></code> | The parameters configuring the rule's action. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.categories">categories</a></code> | <code>java.util.List<java.lang.String></code> | The categories of the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.description">description</a></code> | <code>java.lang.String</code> | An informative description of the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the rule should be executed. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.exposedCredentialCheck">exposedCredentialCheck</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a></code> | Configure checks for exposed credentials. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.expression">expression</a></code> | <code>java.lang.String</code> | The expression defining which traffic will match the rule. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.exposedCredentialCheck">exposedCredentialCheck</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a></code> | Configuration for exposed credential checking. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.logging">logging</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging">RulesetRulesLogging</a></code> | An object configuring the rule's logging behavior. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.ratelimit">ratelimit</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a></code> | An object configuring the rule's ratelimit behavior. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.ref">ref</a></code> | <code>java.lang.String</code> | The reference of the rule (the rule ID by default). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.ratelimit">ratelimit</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a></code> | An object configuring the rule's rate limit behavior. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.ref">ref</a></code> | <code>java.lang.String</code> | The reference of the rule (the rule's ID by default). |
 
 ---
 
-##### `action`<sup>Optional</sup> <a name="action" id="@cdktf/provider-cloudflare.ruleset.RulesetRules.property.action"></a>
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-cloudflare.ruleset.RulesetRules.property.action"></a>
 
 ```java
 public java.lang.String getAction();
@@ -1281,9 +1301,23 @@ public java.lang.String getAction();
 
 The action to perform when the rule matches.
 
-Available values: "block", "challenge", "compress_response", "execute", "js_challenge", "log", "managed_challenge", "redirect", "rewrite", "route", "score", "serve_error", "set_config", "skip", "set_cache_settings", "log_custom_field", "ddos_dynamic", "force_connection_close".
+Available values: "block", "challenge", "compress_response", "ddos_dynamic", "execute", "force_connection_close", "js_challenge", "log", "log_custom_field", "managed_challenge", "redirect", "rewrite", "route", "score", "serve_error", "set_cache_settings", "set_config", "skip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#action Ruleset#action}
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-cloudflare.ruleset.RulesetRules.property.expression"></a>
+
+```java
+public java.lang.String getExpression();
+```
+
+- *Type:* java.lang.String
+
+The expression defining which traffic will match the rule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -1297,21 +1331,7 @@ public RulesetRulesActionParameters getActionParameters();
 
 The parameters configuring the rule's action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
-
----
-
-##### `categories`<sup>Optional</sup> <a name="categories" id="@cdktf/provider-cloudflare.ruleset.RulesetRules.property.categories"></a>
-
-```java
-public java.util.List<java.lang.String> getCategories();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The categories of the rule.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#categories Ruleset#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
 
 ---
 
@@ -1325,7 +1345,7 @@ public java.lang.String getDescription();
 
 An informative description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1339,7 +1359,7 @@ public java.lang.Object getEnabled();
 
 Whether the rule should be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -1351,23 +1371,9 @@ public RulesetRulesExposedCredentialCheck getExposedCredentialCheck();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a>
 
-Configure checks for exposed credentials.
+Configuration for exposed credential checking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
-
----
-
-##### `expression`<sup>Optional</sup> <a name="expression" id="@cdktf/provider-cloudflare.ruleset.RulesetRules.property.expression"></a>
-
-```java
-public java.lang.String getExpression();
-```
-
-- *Type:* java.lang.String
-
-The expression defining which traffic will match the rule.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
 
 ---
 
@@ -1381,7 +1387,7 @@ public RulesetRulesLogging getLogging();
 
 An object configuring the rule's logging behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#logging Ruleset#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#logging Ruleset#logging}
 
 ---
 
@@ -1393,9 +1399,9 @@ public RulesetRulesRatelimit getRatelimit();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a>
 
-An object configuring the rule's ratelimit behavior.
+An object configuring the rule's rate limit behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
 
 ---
 
@@ -1407,9 +1413,9 @@ public java.lang.String getRef();
 
 - *Type:* java.lang.String
 
-The reference of the rule (the rule ID by default).
+The reference of the rule (the rule's ID by default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#ref Ruleset#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#ref Ruleset#ref}
 
 ---
 
@@ -1424,6 +1430,7 @@ RulesetRulesActionParameters.builder()
 //  .additionalCacheablePorts(java.util.List<java.lang.Number>)
 //  .algorithms(IResolvable)
 //  .algorithms(java.util.List<RulesetRulesActionParametersAlgorithms>)
+//  .assetName(java.lang.String)
 //  .automaticHttpsRewrites(java.lang.Boolean)
 //  .automaticHttpsRewrites(IResolvable)
 //  .autominify(RulesetRulesActionParametersAutominify)
@@ -1469,7 +1476,6 @@ RulesetRulesActionParameters.builder()
 //  .originErrorPagePassthru(java.lang.Boolean)
 //  .originErrorPagePassthru(IResolvable)
 //  .overrides(RulesetRulesActionParametersOverrides)
-//  .phase(java.lang.String)
 //  .phases(java.util.List<java.lang.String>)
 //  .polish(java.lang.String)
 //  .products(java.util.List<java.lang.String>)
@@ -1508,61 +1514,61 @@ RulesetRulesActionParameters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.additionalCacheablePorts">additionalCacheablePorts</a></code> | <code>java.util.List<java.lang.Number></code> | List of additional ports that caching can be enabled on. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.additionalCacheablePorts">additionalCacheablePorts</a></code> | <code>java.util.List<java.lang.Number></code> | A list of additional ports that caching should be enabled on. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.algorithms">algorithms</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>></code> | Custom order for compression algorithms. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.automaticHttpsRewrites">automaticHttpsRewrites</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Automatic HTTPS Rewrites. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.autominify">autominify</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a></code> | Select which file extensions to minify automatically. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.bic">bic</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Browser Integrity Check. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.browserTtl">browserTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a></code> | Specify how long client browsers should cache the response. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cache">cache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Mark whether the request’s response from origin is eligible for caching. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cacheKey">cacheKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a></code> | Define which components of the request are included or excluded from the cache key Cloudflare uses to store the response in cache. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cacheReserve">cacheReserve</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a></code> | Mark whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan). |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.content">content</a></code> | <code>java.lang.String</code> | Error response content. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.contentType">contentType</a></code> | <code>java.lang.String</code> | Content-type header to set with the response. Available values: "application/json", "text/xml", "text/plain", "text/html". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.assetName">assetName</a></code> | <code>java.lang.String</code> | The name of a custom asset to serve as the response. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.automaticHttpsRewrites">automaticHttpsRewrites</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Automatic HTTPS Rewrites. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.autominify">autominify</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a></code> | Which file extensions to minify automatically. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.bic">bic</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Browser Integrity Check (BIC). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.browserTtl">browserTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a></code> | How long client browsers should cache the response. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cache">cache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the request's response from the origin is eligible for caching. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cacheKey">cacheKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a></code> | Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cacheReserve">cacheReserve</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a></code> | Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.content">content</a></code> | <code>java.lang.String</code> | The response content. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.contentType">contentType</a></code> | <code>java.lang.String</code> | The content type header to set with the error response. Available values: "application/json", "text/html", "text/plain", "text/xml". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cookieFields">cookieFields</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>></code> | The cookie fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableApps">disableApps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn off all active Cloudflare Apps. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableRum">disableRum</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn off Real User Monitoring (RUM). |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableZaraz">disableZaraz</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn off Zaraz. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.edgeTtl">edgeTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a></code> | TTL (Time to Live) specifies the maximum time to cache a resource in the Cloudflare edge network. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.emailObfuscation">emailObfuscation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Email Obfuscation. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fonts">fonts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Cloudflare Fonts. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromList">fromList</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a></code> | Serve a redirect based on a bulk list lookup. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromValue">fromValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | Serve a redirect based on the request properties. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.Map<java.lang.String, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>></code> | Map of request headers to modify. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hostHeader">hostHeader</a></code> | <code>java.lang.String</code> | Rewrite the HTTP Host header. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hotlinkProtection">hotlinkProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off the Hotlink Protection. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableApps">disableApps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to disable Cloudflare Apps. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableRum">disableRum</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to disable Real User Monitoring (RUM). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableZaraz">disableZaraz</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to disable Zaraz. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.edgeTtl">edgeTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a></code> | How long the Cloudflare edge network should cache the response. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.emailObfuscation">emailObfuscation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Email Obfuscation. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fonts">fonts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Cloudflare Fonts. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromList">fromList</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a></code> | A redirect based on a bulk list lookup. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromValue">fromValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | A redirect based on the request properties. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.Map<java.lang.String, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>></code> | A map of headers to rewrite. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hostHeader">hostHeader</a></code> | <code>java.lang.String</code> | A value to rewrite the HTTP host header to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hotlinkProtection">hotlinkProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Hotlink Protection. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.id">id</a></code> | <code>java.lang.String</code> | The ID of the ruleset to execute. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.increment">increment</a></code> | <code>java.lang.Number</code> | Increment contains the delta to change the score and can be either positive or negative. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.increment">increment</a></code> | <code>java.lang.Number</code> | A delta to change the score by, which can be either positive or negative. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.matchedData">matchedData</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a></code> | The configuration to use for matched data logging. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mirage">mirage</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Mirage. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.opportunisticEncryption">opportunisticEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Opportunistic Encryption. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.origin">origin</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | Override the IP/TCP destination. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originCacheControl">originCacheControl</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When enabled, Cloudflare will aim to strictly adhere to RFC 7234. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originErrorPagePassthru">originErrorPagePassthru</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Generate Cloudflare error pages from issues sent from the origin server. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mirage">mirage</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Mirage. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.opportunisticEncryption">opportunisticEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Opportunistic Encryption. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.origin">origin</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | An origin to route to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originCacheControl">originCacheControl</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether Cloudflare will aim to strictly adhere to RFC 7234. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originErrorPagePassthru">originErrorPagePassthru</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to generate Cloudflare error pages for issues from the origin server. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.overrides">overrides</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | A set of overrides to apply to the target ruleset. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.phase">phase</a></code> | <code>java.lang.String</code> | A phase to skip the execution of. This property is only compatible with products. Available values: "current". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.phases">phases</a></code> | <code>java.util.List<java.lang.String></code> | A list of phases to skip the execution of. This option is incompatible with the rulesets option. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.polish">polish</a></code> | <code>java.lang.String</code> | Configure the Polish level. Available values: "off", "lossless", "lossy", "webp". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.products">products</a></code> | <code>java.util.List<java.lang.String></code> | A list of legacy security products to skip the execution of. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.phases">phases</a></code> | <code>java.util.List<java.lang.String></code> | A list of phases to skip the execution of. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.polish">polish</a></code> | <code>java.lang.String</code> | The Polish level to configure. Available values: "off", "lossless", "lossy", "webp". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.products">products</a></code> | <code>java.util.List<java.lang.String></code> | A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rawResponseFields">rawResponseFields</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>></code> | The raw response fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.readTimeout">readTimeout</a></code> | <code>java.lang.Number</code> | Define a timeout value between two successive read operations to your origin server. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.readTimeout">readTimeout</a></code> | <code>java.lang.Number</code> | A timeout value between two successive read operations to use for your origin server. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.requestFields">requestFields</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>></code> | The raw request fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.respectStrongEtags">respectStrongEtags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specify whether or not Cloudflare should respect strong ETag (entity tag) headers. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.respectStrongEtags">respectStrongEtags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether Cloudflare should respect strong ETag (entity tag) headers. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.response">response</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse">RulesetRulesActionParametersResponse</a></code> | The response to show when the block is applied. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.responseFields">responseFields</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>></code> | The transformed response fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rocketLoader">rocketLoader</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Rocket Loader. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rocketLoader">rocketLoader</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Rocket Loader. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.Map<java.lang.String, java.util.List<java.lang.String>></code> | A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execution of. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.ruleset">ruleset</a></code> | <code>java.lang.String</code> | A ruleset to skip the execution of. This option is incompatible with the rulesets option. Available values: "current". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rulesets">rulesets</a></code> | <code>java.util.List<java.lang.String></code> | A list of ruleset IDs to skip the execution of. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.securityLevel">securityLevel</a></code> | <code>java.lang.String</code> | Configure the Security Level. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serverSideExcludes">serverSideExcludes</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Server Side Excludes. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serveStale">serveStale</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a></code> | Define if Cloudflare should serve stale content while getting the latest content from the origin. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sni">sni</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a></code> | Override the Server Name Indication (SNI). |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.ssl">ssl</a></code> | <code>java.lang.String</code> | Configure the SSL level. Available values: "off", "flexible", "full", "strict", "origin_pull". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.securityLevel">securityLevel</a></code> | <code>java.lang.String</code> | The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serverSideExcludes">serverSideExcludes</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Server-Side Excludes. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serveStale">serveStale</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a></code> | When to serve stale content from cache. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sni">sni</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a></code> | A Server Name Indication (SNI) override. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.ssl">ssl</a></code> | <code>java.lang.String</code> | The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.statusCode">statusCode</a></code> | <code>java.lang.Number</code> | The status code to use for the error. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sxg">sxg</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Turn on or off Signed Exchanges (SXG). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sxg">sxg</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable Signed Exchanges (SXG). |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.transformedRequestFields">transformedRequestFields</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>></code> | The transformed request fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.uri">uri</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | URI to rewrite the request to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.uri">uri</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | A URI rewrite. |
 
 ---
 
@@ -1574,9 +1580,9 @@ public java.util.List<java.lang.Number> getAdditionalCacheablePorts();
 
 - *Type:* java.util.List<java.lang.Number>
 
-List of additional ports that caching can be enabled on.
+A list of additional ports that caching should be enabled on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
 
 ---
 
@@ -1590,7 +1596,21 @@ public java.lang.Object getAlgorithms();
 
 Custom order for compression algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#algorithms Ruleset#algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#algorithms Ruleset#algorithms}
+
+---
+
+##### `assetName`<sup>Optional</sup> <a name="assetName" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.assetName"></a>
+
+```java
+public java.lang.String getAssetName();
+```
+
+- *Type:* java.lang.String
+
+The name of a custom asset to serve as the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#asset_name Ruleset#asset_name}
 
 ---
 
@@ -1602,9 +1622,9 @@ public java.lang.Object getAutomaticHttpsRewrites();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Automatic HTTPS Rewrites.
+Whether to enable Automatic HTTPS Rewrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
 
 ---
 
@@ -1616,9 +1636,9 @@ public RulesetRulesActionParametersAutominify getAutominify();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a>
 
-Select which file extensions to minify automatically.
+Which file extensions to minify automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#autominify Ruleset#autominify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#autominify Ruleset#autominify}
 
 ---
 
@@ -1630,9 +1650,9 @@ public java.lang.Object getBic();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Browser Integrity Check.
+Whether to enable Browser Integrity Check (BIC).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#bic Ruleset#bic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#bic Ruleset#bic}
 
 ---
 
@@ -1644,11 +1664,11 @@ public RulesetRulesActionParametersBrowserTtl getBrowserTtl();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a>
 
-Specify how long client browsers should cache the response.
+How long client browsers should cache the response.
 
 Cloudflare cache purge will not purge content cached on client browsers, so high browser TTLs may lead to stale content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
 
 ---
 
@@ -1660,11 +1680,11 @@ public java.lang.Object getCache();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Mark whether the request’s response from origin is eligible for caching.
+Whether the request's response from the origin is eligible for caching.
 
-Caching itself will still depend on the cache-control header and your other caching configurations.
+Caching itself will still depend on the cache control header and your other caching configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cache Ruleset#cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cache Ruleset#cache}
 
 ---
 
@@ -1676,9 +1696,9 @@ public RulesetRulesActionParametersCacheKey getCacheKey();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a>
 
-Define which components of the request are included or excluded from the cache key Cloudflare uses to store the response in cache.
+Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cache_key Ruleset#cache_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cache_key Ruleset#cache_key}
 
 ---
 
@@ -1690,9 +1710,9 @@ public RulesetRulesActionParametersCacheReserve getCacheReserve();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a>
 
-Mark whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
+Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
 
 ---
 
@@ -1704,9 +1724,9 @@ public java.lang.String getContent();
 
 - *Type:* java.lang.String
 
-Error response content.
+The response content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -1718,9 +1738,9 @@ public java.lang.String getContentType();
 
 - *Type:* java.lang.String
 
-Content-type header to set with the response. Available values: "application/json", "text/xml", "text/plain", "text/html".
+The content type header to set with the error response. Available values: "application/json", "text/html", "text/plain", "text/xml".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -1734,7 +1754,7 @@ public java.lang.Object getCookieFields();
 
 The cookie fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
 
 ---
 
@@ -1746,9 +1766,9 @@ public java.lang.Object getDisableApps();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn off all active Cloudflare Apps.
+Whether to disable Cloudflare Apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
 
 ---
 
@@ -1760,9 +1780,9 @@ public java.lang.Object getDisableRum();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn off Real User Monitoring (RUM).
+Whether to disable Real User Monitoring (RUM).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
 
 ---
 
@@ -1774,9 +1794,9 @@ public java.lang.Object getDisableZaraz();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn off Zaraz.
+Whether to disable Zaraz.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
 
 ---
 
@@ -1788,9 +1808,9 @@ public RulesetRulesActionParametersEdgeTtl getEdgeTtl();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a>
 
-TTL (Time to Live) specifies the maximum time to cache a resource in the Cloudflare edge network.
+How long the Cloudflare edge network should cache the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
 
 ---
 
@@ -1802,9 +1822,9 @@ public java.lang.Object getEmailObfuscation();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Email Obfuscation.
+Whether to enable Email Obfuscation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
 
 ---
 
@@ -1816,9 +1836,9 @@ public java.lang.Object getFonts();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Cloudflare Fonts.
+Whether to enable Cloudflare Fonts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#fonts Ruleset#fonts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#fonts Ruleset#fonts}
 
 ---
 
@@ -1830,9 +1850,9 @@ public RulesetRulesActionParametersFromListStruct getFromList();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>
 
-Serve a redirect based on a bulk list lookup.
+A redirect based on a bulk list lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#from_list Ruleset#from_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#from_list Ruleset#from_list}
 
 ---
 
@@ -1844,9 +1864,9 @@ public RulesetRulesActionParametersFromValue getFromValue();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a>
 
-Serve a redirect based on the request properties.
+A redirect based on the request properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#from_value Ruleset#from_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#from_value Ruleset#from_value}
 
 ---
 
@@ -1858,9 +1878,9 @@ public java.lang.Object getHeaders();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.Map<java.lang.String, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>>
 
-Map of request headers to modify.
+A map of headers to rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#headers Ruleset#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#headers Ruleset#headers}
 
 ---
 
@@ -1872,9 +1892,9 @@ public java.lang.String getHostHeader();
 
 - *Type:* java.lang.String
 
-Rewrite the HTTP Host header.
+A value to rewrite the HTTP host header to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#host_header Ruleset#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#host_header Ruleset#host_header}
 
 ---
 
@@ -1886,9 +1906,9 @@ public java.lang.Object getHotlinkProtection();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off the Hotlink Protection.
+Whether to enable Hotlink Protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
 
 ---
 
@@ -1902,7 +1922,7 @@ public java.lang.String getId();
 
 The ID of the ruleset to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1917,9 +1937,9 @@ public java.lang.Number getIncrement();
 
 - *Type:* java.lang.Number
 
-Increment contains the delta to change the score and can be either positive or negative.
+A delta to change the score by, which can be either positive or negative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#increment Ruleset#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#increment Ruleset#increment}
 
 ---
 
@@ -1933,7 +1953,7 @@ public RulesetRulesActionParametersMatchedData getMatchedData();
 
 The configuration to use for matched data logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#matched_data Ruleset#matched_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#matched_data Ruleset#matched_data}
 
 ---
 
@@ -1945,9 +1965,9 @@ public java.lang.Object getMirage();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Mirage.
+Whether to enable Mirage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#mirage Ruleset#mirage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#mirage Ruleset#mirage}
 
 ---
 
@@ -1959,9 +1979,9 @@ public java.lang.Object getOpportunisticEncryption();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Opportunistic Encryption.
+Whether to enable Opportunistic Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
 
 ---
 
@@ -1973,9 +1993,9 @@ public RulesetRulesActionParametersOrigin getOrigin();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a>
 
-Override the IP/TCP destination.
+An origin to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#origin Ruleset#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#origin Ruleset#origin}
 
 ---
 
@@ -1987,9 +2007,9 @@ public java.lang.Object getOriginCacheControl();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-When enabled, Cloudflare will aim to strictly adhere to RFC 7234.
+Whether Cloudflare will aim to strictly adhere to RFC 7234.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
 
 ---
 
@@ -2001,11 +2021,9 @@ public java.lang.Object getOriginErrorPagePassthru();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Generate Cloudflare error pages from issues sent from the origin server.
+Whether to generate Cloudflare error pages for issues from the origin server.
 
-When on, error pages will trigger for issues from the origin.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
 
 ---
 
@@ -2019,21 +2037,7 @@ public RulesetRulesActionParametersOverrides getOverrides();
 
 A set of overrides to apply to the target ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#overrides Ruleset#overrides}
-
----
-
-##### `phase`<sup>Optional</sup> <a name="phase" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.phase"></a>
-
-```java
-public java.lang.String getPhase();
-```
-
-- *Type:* java.lang.String
-
-A phase to skip the execution of. This property is only compatible with products. Available values: "current".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#overrides Ruleset#overrides}
 
 ---
 
@@ -2045,9 +2049,12 @@ public java.util.List<java.lang.String> getPhases();
 
 - *Type:* java.util.List<java.lang.String>
 
-A list of phases to skip the execution of. This option is incompatible with the rulesets option.
+A list of phases to skip the execution of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#phases Ruleset#phases}
+This option is incompatible with the rulesets option.
+Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#phases Ruleset#phases}
 
 ---
 
@@ -2059,9 +2066,9 @@ public java.lang.String getPolish();
 
 - *Type:* java.lang.String
 
-Configure the Polish level. Available values: "off", "lossless", "lossy", "webp".
+The Polish level to configure. Available values: "off", "lossless", "lossy", "webp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#polish Ruleset#polish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#polish Ruleset#polish}
 
 ---
 
@@ -2073,9 +2080,9 @@ public java.util.List<java.lang.String> getProducts();
 
 - *Type:* java.util.List<java.lang.String>
 
-A list of legacy security products to skip the execution of.
+A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#products Ruleset#products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#products Ruleset#products}
 
 ---
 
@@ -2089,7 +2096,7 @@ public java.lang.Object getRawResponseFields();
 
 The raw response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
 
 ---
 
@@ -2101,11 +2108,11 @@ public java.lang.Number getReadTimeout();
 
 - *Type:* java.lang.Number
 
-Define a timeout value between two successive read operations to your origin server.
+A timeout value between two successive read operations to use for your origin server.
 
 Historically, the timeout value between two read options from Cloudflare to an origin server is 100 seconds. If you are attempting to reduce HTTP 524 errors because of timeouts from an origin server, try increasing this timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
 
 ---
 
@@ -2119,7 +2126,7 @@ public java.lang.Object getRequestFields();
 
 The raw request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#request_fields Ruleset#request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#request_fields Ruleset#request_fields}
 
 ---
 
@@ -2131,11 +2138,11 @@ public java.lang.Object getRespectStrongEtags();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Specify whether or not Cloudflare should respect strong ETag (entity tag) headers.
+Whether Cloudflare should respect strong ETag (entity tag) headers.
 
-When off, Cloudflare converts strong ETag headers to weak ETag headers.
+If false, Cloudflare converts strong ETag headers to weak ETag headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
 
 ---
 
@@ -2149,7 +2156,7 @@ public RulesetRulesActionParametersResponse getResponse();
 
 The response to show when the block is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#response Ruleset#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#response Ruleset#response}
 
 ---
 
@@ -2163,7 +2170,7 @@ public java.lang.Object getResponseFields();
 
 The transformed response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#response_fields Ruleset#response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#response_fields Ruleset#response_fields}
 
 ---
 
@@ -2175,9 +2182,9 @@ public java.lang.Object getRocketLoader();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Rocket Loader.
+Whether to enable Rocket Loader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
 
 ---
 
@@ -2193,7 +2200,7 @@ A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execu
 
 This option is incompatible with the ruleset option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -2207,7 +2214,7 @@ public java.lang.String getRuleset();
 
 A ruleset to skip the execution of. This option is incompatible with the rulesets option. Available values: "current".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#ruleset Ruleset#ruleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#ruleset Ruleset#ruleset}
 
 ---
 
@@ -2223,7 +2230,7 @@ A list of ruleset IDs to skip the execution of.
 
 This option is incompatible with the ruleset and phases options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#rulesets Ruleset#rulesets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#rulesets Ruleset#rulesets}
 
 ---
 
@@ -2235,9 +2242,9 @@ public java.lang.String getSecurityLevel();
 
 - *Type:* java.lang.String
 
-Configure the Security Level. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack".
+The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#security_level Ruleset#security_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#security_level Ruleset#security_level}
 
 ---
 
@@ -2249,9 +2256,9 @@ public java.lang.Object getServerSideExcludes();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Server Side Excludes.
+Whether to enable Server-Side Excludes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
 
 ---
 
@@ -2263,11 +2270,9 @@ public RulesetRulesActionParametersServeStale getServeStale();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a>
 
-Define if Cloudflare should serve stale content while getting the latest content from the origin.
+When to serve stale content from cache.
 
-If on, Cloudflare will not serve stale content while getting the latest content from the origin.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
 
 ---
 
@@ -2279,9 +2284,9 @@ public RulesetRulesActionParametersSni getSni();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a>
 
-Override the Server Name Indication (SNI).
+A Server Name Indication (SNI) override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#sni Ruleset#sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#sni Ruleset#sni}
 
 ---
 
@@ -2293,9 +2298,9 @@ public java.lang.String getSsl();
 
 - *Type:* java.lang.String
 
-Configure the SSL level. Available values: "off", "flexible", "full", "strict", "origin_pull".
+The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#ssl Ruleset#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#ssl Ruleset#ssl}
 
 ---
 
@@ -2309,7 +2314,7 @@ public java.lang.Number getStatusCode();
 
 The status code to use for the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -2321,9 +2326,9 @@ public java.lang.Object getSxg();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Turn on or off Signed Exchanges (SXG).
+Whether to enable Signed Exchanges (SXG).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#sxg Ruleset#sxg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#sxg Ruleset#sxg}
 
 ---
 
@@ -2337,7 +2342,7 @@ public java.lang.Object getTransformedRequestFields();
 
 The transformed request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
 
 ---
 
@@ -2349,9 +2354,9 @@ public RulesetRulesActionParametersUri getUri();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a>
 
-URI to rewrite the request to.
+A URI rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#uri Ruleset#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#uri Ruleset#uri}
 
 ---
 
@@ -2371,7 +2376,7 @@ RulesetRulesActionParametersAlgorithms.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms.property.name">name</a></code> | <code>java.lang.String</code> | Name of compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms.property.name">name</a></code> | <code>java.lang.String</code> | Name of the compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd". |
 
 ---
 
@@ -2383,9 +2388,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Name of compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
+Name of the compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -2410,9 +2415,9 @@ RulesetRulesActionParametersAutominify.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.css">css</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Minify CSS files. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.html">html</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Minify HTML files. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.js">js</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Minify JS files. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.css">css</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to minify CSS files. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.html">html</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to minify HTML files. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.js">js</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to minify JavaScript files. |
 
 ---
 
@@ -2424,9 +2429,9 @@ public java.lang.Object getCss();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Minify CSS files.
+Whether to minify CSS files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#css Ruleset#css}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#css Ruleset#css}
 
 ---
 
@@ -2438,9 +2443,9 @@ public java.lang.Object getHtml();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Minify HTML files.
+Whether to minify HTML files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#html Ruleset#html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#html Ruleset#html}
 
 ---
 
@@ -2452,9 +2457,9 @@ public java.lang.Object getJs();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Minify JS files.
+Whether to minify JavaScript files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#js Ruleset#js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#js Ruleset#js}
 
 ---
 
@@ -2475,8 +2480,8 @@ RulesetRulesActionParametersBrowserTtl.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl.property.mode">mode</a></code> | <code>java.lang.String</code> | Determines which browser ttl mode to use. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl.property.default">default</a></code> | <code>java.lang.Number</code> | The TTL (in seconds) if you choose override_origin mode. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl.property.mode">mode</a></code> | <code>java.lang.String</code> | The browser TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl.property.default">default</a></code> | <code>java.lang.Number</code> | The browser TTL (in seconds) if you choose the "override_origin" mode. |
 
 ---
 
@@ -2488,9 +2493,9 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-Determines which browser ttl mode to use. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass".
+The browser TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -2502,9 +2507,9 @@ public java.lang.Number getDefault();
 
 - *Type:* java.lang.Number
 
-The TTL (in seconds) if you choose override_origin mode.
+The browser TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -2530,10 +2535,10 @@ RulesetRulesActionParametersCacheKey.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheByDeviceType">cacheByDeviceType</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Separate cached content based on the visitor’s device type. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheDeceptionArmor">cacheDeceptionArmor</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Protect from web cache deception attacks while allowing static assets to be cached. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.customKey">customKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a></code> | Customize which components of the request are included or excluded from the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.ignoreQueryStringsOrder">ignoreQueryStringsOrder</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Treat requests with the same query parameters the same, regardless of the order those query parameters are in. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheByDeviceType">cacheByDeviceType</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to separate cached content based on the visitor's device type. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheDeceptionArmor">cacheDeceptionArmor</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to protect from web cache deception attacks, while allowing static assets to be cached. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.customKey">customKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a></code> | Which components of the request are included or excluded from the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.ignoreQueryStringsOrder">ignoreQueryStringsOrder</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in. |
 
 ---
 
@@ -2545,9 +2550,9 @@ public java.lang.Object getCacheByDeviceType();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Separate cached content based on the visitor’s device type.
+Whether to separate cached content based on the visitor's device type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
 
 ---
 
@@ -2559,9 +2564,9 @@ public java.lang.Object getCacheDeceptionArmor();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Protect from web cache deception attacks while allowing static assets to be cached.
+Whether to protect from web cache deception attacks, while allowing static assets to be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
 
 ---
 
@@ -2573,9 +2578,9 @@ public RulesetRulesActionParametersCacheKeyCustomKey getCustomKey();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a>
 
-Customize which components of the request are included or excluded from the cache key.
+Which components of the request are included or excluded from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#custom_key Ruleset#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#custom_key Ruleset#custom_key}
 
 ---
 
@@ -2587,11 +2592,9 @@ public java.lang.Object getIgnoreQueryStringsOrder();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Treat requests with the same query parameters the same, regardless of the order those query parameters are in.
+Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in.
 
-A value of true ignores the query strings' order.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
 
 ---
 
@@ -2615,11 +2618,11 @@ RulesetRulesActionParametersCacheKeyCustomKey.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.cookie">cookie</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie">RulesetRulesActionParametersCacheKeyCustomKeyCookie</a></code> | The cookies to include in building the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.header">header</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader">RulesetRulesActionParametersCacheKeyCustomKeyHeader</a></code> | The header names and values to include in building the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.host">host</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost">RulesetRulesActionParametersCacheKeyCustomKeyHost</a></code> | Whether to use the original host or the resolved host in the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.queryString">queryString</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString">RulesetRulesActionParametersCacheKeyCustomKeyQueryString</a></code> | Use the presence of parameters in the query string to build the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.user">user</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser">RulesetRulesActionParametersCacheKeyCustomKeyUser</a></code> | Characteristics of the request user agent used in building the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.cookie">cookie</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie">RulesetRulesActionParametersCacheKeyCustomKeyCookie</a></code> | Which cookies to include in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.header">header</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader">RulesetRulesActionParametersCacheKeyCustomKeyHeader</a></code> | Which headers to include in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.host">host</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost">RulesetRulesActionParametersCacheKeyCustomKeyHost</a></code> | How to use the host in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.queryString">queryString</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString">RulesetRulesActionParametersCacheKeyCustomKeyQueryString</a></code> | Which query string parameters to include in or exclude from the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey.property.user">user</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser">RulesetRulesActionParametersCacheKeyCustomKeyUser</a></code> | How to use characteristics of the request user agent in the cache key. |
 
 ---
 
@@ -2631,9 +2634,9 @@ public RulesetRulesActionParametersCacheKeyCustomKeyCookie getCookie();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie">RulesetRulesActionParametersCacheKeyCustomKeyCookie</a>
 
-The cookies to include in building the cache key.
+Which cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cookie Ruleset#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cookie Ruleset#cookie}
 
 ---
 
@@ -2645,9 +2648,9 @@ public RulesetRulesActionParametersCacheKeyCustomKeyHeader getHeader();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader">RulesetRulesActionParametersCacheKeyCustomKeyHeader</a>
 
-The header names and values to include in building the cache key.
+Which headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#header Ruleset#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#header Ruleset#header}
 
 ---
 
@@ -2659,9 +2662,9 @@ public RulesetRulesActionParametersCacheKeyCustomKeyHost getHost();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost">RulesetRulesActionParametersCacheKeyCustomKeyHost</a>
 
-Whether to use the original host or the resolved host in the cache key.
+How to use the host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -2673,9 +2676,9 @@ public RulesetRulesActionParametersCacheKeyCustomKeyQueryString getQueryString()
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString">RulesetRulesActionParametersCacheKeyCustomKeyQueryString</a>
 
-Use the presence of parameters in the query string to build the cache key.
+Which query string parameters to include in or exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#query_string Ruleset#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#query_string Ruleset#query_string}
 
 ---
 
@@ -2687,9 +2690,9 @@ public RulesetRulesActionParametersCacheKeyCustomKeyUser getUser();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser">RulesetRulesActionParametersCacheKeyCustomKeyUser</a>
 
-Characteristics of the request user agent used in building the cache key.
+How to use characteristics of the request user agent in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#user Ruleset#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#user Ruleset#user}
 
 ---
 
@@ -2710,8 +2713,8 @@ RulesetRulesActionParametersCacheKeyCustomKeyCookie.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie.property.checkPresence">checkPresence</a></code> | <code>java.util.List<java.lang.String></code> | Checks for the presence of these cookie names. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie.property.include">include</a></code> | <code>java.util.List<java.lang.String></code> | Include these cookies' names and their values. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie.property.checkPresence">checkPresence</a></code> | <code>java.util.List<java.lang.String></code> | A list of cookies to check for the presence of. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie.property.include">include</a></code> | <code>java.util.List<java.lang.String></code> | A list of cookies to include in the cache key. |
 
 ---
 
@@ -2723,11 +2726,11 @@ public java.util.List<java.lang.String> getCheckPresence();
 
 - *Type:* java.util.List<java.lang.String>
 
-Checks for the presence of these cookie names.
+A list of cookies to check for the presence of.
 
-The presence of these cookies is used in building the cache key.
+The presence of these cookies is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -2739,9 +2742,9 @@ public java.util.List<java.lang.String> getInclude();
 
 - *Type:* java.util.List<java.lang.String>
 
-Include these cookies' names and their values.
+A list of cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -2766,10 +2769,10 @@ RulesetRulesActionParametersCacheKeyCustomKeyHeader.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.checkPresence">checkPresence</a></code> | <code>java.util.List<java.lang.String></code> | Checks for the presence of these header names. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.contains">contains</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.Map<java.lang.String, java.util.List<java.lang.String>></code> | For each header name and list of values combination, check if the request header contains any of the values provided. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.excludeOrigin">excludeOrigin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to include the origin header. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.include">include</a></code> | <code>java.util.List<java.lang.String></code> | Include these headers' names and their values. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.checkPresence">checkPresence</a></code> | <code>java.util.List<java.lang.String></code> | A list of headers to check for the presence of. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.contains">contains</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.Map<java.lang.String, java.util.List<java.lang.String>></code> | A mapping of header names to a list of values. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.excludeOrigin">excludeOrigin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to exclude the origin header in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.include">include</a></code> | <code>java.util.List<java.lang.String></code> | A list of headers to include in the cache key. |
 
 ---
 
@@ -2781,11 +2784,11 @@ public java.util.List<java.lang.String> getCheckPresence();
 
 - *Type:* java.util.List<java.lang.String>
 
-Checks for the presence of these header names.
+A list of headers to check for the presence of.
 
-The presence of these headers is used in building the cache key.
+The presence of these headers is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -2797,11 +2800,11 @@ public java.lang.Object getContains();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.Map<java.lang.String, java.util.List<java.lang.String>>
 
-For each header name and list of values combination, check if the request header contains any of the values provided.
+A mapping of header names to a list of values.
 
-The presence of the request header and whether any of the values provided are contained in the request header value is used in building the cache key.
+If a header is present in the request and contains any of the values provided, its value is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#contains Ruleset#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#contains Ruleset#contains}
 
 ---
 
@@ -2813,11 +2816,9 @@ public java.lang.Object getExcludeOrigin();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether or not to include the origin header.
+Whether to exclude the origin header in the cache key.
 
-A value of true will exclude the origin header in the cache key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
 
 ---
 
@@ -2829,9 +2830,9 @@ public java.util.List<java.lang.String> getInclude();
 
 - *Type:* java.util.List<java.lang.String>
 
-Include these headers' names and their values.
+A list of headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -2852,7 +2853,7 @@ RulesetRulesActionParametersCacheKeyCustomKeyHost.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost.property.resolved">resolved</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use the resolved host in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost.property.resolved">resolved</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to use the resolved host in the cache key. |
 
 ---
 
@@ -2864,11 +2865,9 @@ public java.lang.Object getResolved();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Use the resolved host in the cache key.
+Whether to use the resolved host in the cache key.
 
-A value of true will use the resolved host, while a value or false will use the original host.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#resolved Ruleset#resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#resolved Ruleset#resolved}
 
 ---
 
@@ -2889,8 +2888,8 @@ RulesetRulesActionParametersCacheKeyCustomKeyQueryString.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString.property.exclude">exclude</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude</a></code> | A list of query string parameters NOT used to build the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString.property.include">include</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude</a></code> | A list of query string parameters used to build the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString.property.exclude">exclude</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude</a></code> | Which query string parameters to exclude from the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString.property.include">include</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude</a></code> | Which query string parameters to include in the cache key. |
 
 ---
 
@@ -2902,11 +2901,9 @@ public RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude getExclud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude</a>
 
-A list of query string parameters NOT used to build the cache key.
+Which query string parameters to exclude from the cache key.
 
-All parameters present in the request but missing in this list will be used to build the cache key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#exclude Ruleset#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#exclude Ruleset#exclude}
 
 ---
 
@@ -2918,9 +2915,9 @@ public RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude getInclud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude</a>
 
-A list of query string parameters used to build the cache key.
+Which query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -2942,8 +2939,8 @@ RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether to exclude all query string parameters from the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.list">list</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#list Ruleset#list}. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to exclude all query string parameters from the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.list">list</a></code> | <code>java.util.List<java.lang.String></code> | A list of query string parameters to exclude from the cache key. |
 
 ---
 
@@ -2955,9 +2952,9 @@ public java.lang.Object getAll();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Determines whether to exclude all query string parameters from the cache key.
+Whether to exclude all query string parameters from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -2969,7 +2966,9 @@ public java.util.List<java.lang.String> getList();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#list Ruleset#list}.
+A list of query string parameters to exclude from the cache key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -2991,8 +2990,8 @@ RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether to include all query string parameters in the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.list">list</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#list Ruleset#list}. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.all">all</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to include all query string parameters in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.list">list</a></code> | <code>java.util.List<java.lang.String></code> | A list of query string parameters to include in the cache key. |
 
 ---
 
@@ -3004,9 +3003,9 @@ public java.lang.Object getAll();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Determines whether to include all query string parameters in the cache key.
+Whether to include all query string parameters in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -3018,7 +3017,9 @@ public java.util.List<java.lang.String> getList();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#list Ruleset#list}.
+A list of query string parameters to include in the cache key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -3043,9 +3044,9 @@ RulesetRulesActionParametersCacheKeyCustomKeyUser.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.deviceType">deviceType</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use the user agent's device type in the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.geo">geo</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use the user agents's country in the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.lang">lang</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use the user agent's language in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.deviceType">deviceType</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to use the user agent's device type in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.geo">geo</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to use the user agents's country in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.lang">lang</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to use the user agent's language in the cache key. |
 
 ---
 
@@ -3057,9 +3058,9 @@ public java.lang.Object getDeviceType();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Use the user agent's device type in the cache key.
+Whether to use the user agent's device type in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#device_type Ruleset#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#device_type Ruleset#device_type}
 
 ---
 
@@ -3071,9 +3072,9 @@ public java.lang.Object getGeo();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Use the user agents's country in the cache key.
+Whether to use the user agents's country in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#geo Ruleset#geo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#geo Ruleset#geo}
 
 ---
 
@@ -3085,9 +3086,9 @@ public java.lang.Object getLang();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Use the user agent's language in the cache key.
+Whether to use the user agent's language in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#lang Ruleset#lang}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#lang Ruleset#lang}
 
 ---
 
@@ -3101,7 +3102,7 @@ import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParame
 RulesetRulesActionParametersCacheReserve.builder()
     .eligible(java.lang.Boolean)
     .eligible(IResolvable)
-    .minimumFileSize(java.lang.Number)
+//  .minimumFileSize(java.lang.Number)
     .build();
 ```
 
@@ -3109,8 +3110,8 @@ RulesetRulesActionParametersCacheReserve.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.eligible">eligible</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether cache reserve is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.minimumFileSize">minimumFileSize</a></code> | <code>java.lang.Number</code> | The minimum file size eligible for store in cache reserve. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.eligible">eligible</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether Cache Reserve is enabled. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.minimumFileSize">minimumFileSize</a></code> | <code>java.lang.Number</code> | The minimum file size eligible for storage in Cache Reserve. |
 
 ---
 
@@ -3122,15 +3123,15 @@ public java.lang.Object getEligible();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Determines whether cache reserve is enabled.
+Whether Cache Reserve is enabled.
 
-If this is true and a request meets eligibility criteria, Cloudflare will write the resource to cache reserve.
+If this is true and a request meets eligibility criteria, Cloudflare will write the resource to Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#eligible Ruleset#eligible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#eligible Ruleset#eligible}
 
 ---
 
-##### `minimumFileSize`<sup>Required</sup> <a name="minimumFileSize" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.minimumFileSize"></a>
+##### `minimumFileSize`<sup>Optional</sup> <a name="minimumFileSize" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.minimumFileSize"></a>
 
 ```java
 public java.lang.Number getMinimumFileSize();
@@ -3138,9 +3139,9 @@ public java.lang.Number getMinimumFileSize();
 
 - *Type:* java.lang.Number
 
-The minimum file size eligible for store in cache reserve.
+The minimum file size eligible for storage in Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
 
 ---
 
@@ -3160,7 +3161,7 @@ RulesetRulesActionParametersCookieFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the field. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the cookie. |
 
 ---
 
@@ -3172,9 +3173,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the field.
+The name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3197,9 +3198,9 @@ RulesetRulesActionParametersEdgeTtl.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.mode">mode</a></code> | <code>java.lang.String</code> | Edge TTL options. Available values: "respect_origin", "bypass_by_default", "override_origin". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.default">default</a></code> | <code>java.lang.Number</code> | The TTL (in seconds) if you choose override_origin mode. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.statusCodeTtl">statusCodeTtl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>></code> | List of single status codes, or status code ranges to apply the selected mode. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.mode">mode</a></code> | <code>java.lang.String</code> | The edge TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.default">default</a></code> | <code>java.lang.Number</code> | The edge TTL (in seconds) if you choose the "override_origin" mode. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.statusCodeTtl">statusCodeTtl</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>></code> | A list of TTLs to apply to specific status codes or status code ranges. |
 
 ---
 
@@ -3211,9 +3212,9 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-Edge TTL options. Available values: "respect_origin", "bypass_by_default", "override_origin".
+The edge TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -3225,9 +3226,9 @@ public java.lang.Number getDefault();
 
 - *Type:* java.lang.Number
 
-The TTL (in seconds) if you choose override_origin mode.
+The edge TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -3239,9 +3240,9 @@ public java.lang.Object getStatusCodeTtl();
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>>
 
-List of single status codes, or status code ranges to apply the selected mode.
+A list of TTLs to apply to specific status codes or status code ranges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
 
 ---
 
@@ -3263,9 +3264,9 @@ RulesetRulesActionParametersEdgeTtlStatusCodeTtl.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl.property.value">value</a></code> | <code>java.lang.Number</code> | Time to cache a response (in seconds). |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl.property.statusCode">statusCode</a></code> | <code>java.lang.Number</code> | Set the TTL for responses with this specific status code. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl.property.statusCodeRange">statusCodeRange</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange</a></code> | The range of status codes used to apply the selected mode. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl.property.value">value</a></code> | <code>java.lang.Number</code> | The time to cache the response for (in seconds). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl.property.statusCode">statusCode</a></code> | <code>java.lang.Number</code> | A single status code to apply the TTL to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl.property.statusCodeRange">statusCodeRange</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange</a></code> | A range of status codes to apply the TTL to. |
 
 ---
 
@@ -3277,11 +3278,11 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Time to cache a response (in seconds).
+The time to cache the response for (in seconds).
 
-A value of 0 is equivalent to setting the Cache-Control header with the value "no-cache". A value of -1 is equivalent to setting Cache-Control header with the value of "no-store".
+A value of 0 is equivalent to setting the cache control header with the value "no-cache". A value of -1 is equivalent to setting the cache control header with the value of "no-store".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3293,9 +3294,9 @@ public java.lang.Number getStatusCode();
 
 - *Type:* java.lang.Number
 
-Set the TTL for responses with this specific status code.
+A single status code to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3307,9 +3308,9 @@ public RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange getStatus
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange</a>
 
-The range of status codes used to apply the selected mode.
+A range of status codes to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
 
 ---
 
@@ -3330,8 +3331,8 @@ RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange.property.from">from</a></code> | <code>java.lang.Number</code> | Response status code lower bound. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange.property.to">to</a></code> | <code>java.lang.Number</code> | Response status code upper bound. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange.property.from">from</a></code> | <code>java.lang.Number</code> | The lower bound of the range. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange.property.to">to</a></code> | <code>java.lang.Number</code> | The upper bound of the range. |
 
 ---
 
@@ -3343,9 +3344,9 @@ public java.lang.Number getFrom();
 
 - *Type:* java.lang.Number
 
-Response status code lower bound.
+The lower bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#from Ruleset#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#from Ruleset#from}
 
 ---
 
@@ -3357,9 +3358,9 @@ public java.lang.Number getTo();
 
 - *Type:* java.lang.Number
 
-Response status code upper bound.
+The upper bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#to Ruleset#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#to Ruleset#to}
 
 ---
 
@@ -3371,8 +3372,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromListStruct;
 
 RulesetRulesActionParametersFromListStruct.builder()
-//  .key(java.lang.String)
-//  .name(java.lang.String)
+    .key(java.lang.String)
+    .name(java.lang.String)
     .build();
 ```
 
@@ -3380,12 +3381,12 @@ RulesetRulesActionParametersFromListStruct.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.key">key</a></code> | <code>java.lang.String</code> | Expression that evaluates to the list lookup key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.key">key</a></code> | <code>java.lang.String</code> | An expression that evaluates to the list lookup key. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.name">name</a></code> | <code>java.lang.String</code> | The name of the list to match against. |
 
 ---
 
-##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.key"></a>
 
 ```java
 public java.lang.String getKey();
@@ -3393,13 +3394,13 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Expression that evaluates to the list lookup key.
+An expression that evaluates to the list lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#key Ruleset#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#key Ruleset#key}
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct.property.name"></a>
 
 ```java
 public java.lang.String getName();
@@ -3409,7 +3410,7 @@ public java.lang.String getName();
 
 The name of the list to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3421,10 +3422,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersFromValue;
 
 RulesetRulesActionParametersFromValue.builder()
+    .targetUrl(RulesetRulesActionParametersFromValueTargetUrl)
 //  .preserveQueryString(java.lang.Boolean)
 //  .preserveQueryString(IResolvable)
 //  .statusCode(java.lang.Number)
-//  .targetUrl(RulesetRulesActionParametersFromValueTargetUrl)
     .build();
 ```
 
@@ -3432,9 +3433,23 @@ RulesetRulesActionParametersFromValue.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.preserveQueryString">preserveQueryString</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Keep the query string of the original request. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.statusCode">statusCode</a></code> | <code>java.lang.Number</code> | The status code to be used for the redirect. Available values: 301, 302, 303, 307, 308. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.targetUrl">targetUrl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | The URL to redirect the request to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.targetUrl">targetUrl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | A URL to redirect the request to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.preserveQueryString">preserveQueryString</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to keep the query string of the original request. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.statusCode">statusCode</a></code> | <code>java.lang.Number</code> | The status code to use for the redirect. |
+
+---
+
+##### `targetUrl`<sup>Required</sup> <a name="targetUrl" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.targetUrl"></a>
+
+```java
+public RulesetRulesActionParametersFromValueTargetUrl getTargetUrl();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a>
+
+A URL to redirect the request to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#target_url Ruleset#target_url}
 
 ---
 
@@ -3446,9 +3461,9 @@ public java.lang.Object getPreserveQueryString();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Keep the query string of the original request.
+Whether to keep the query string of the original request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
 
 ---
 
@@ -3460,23 +3475,9 @@ public java.lang.Number getStatusCode();
 
 - *Type:* java.lang.Number
 
-The status code to be used for the redirect. Available values: 301, 302, 303, 307, 308.
+The status code to use for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#status_code Ruleset#status_code}
-
----
-
-##### `targetUrl`<sup>Optional</sup> <a name="targetUrl" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.targetUrl"></a>
-
-```java
-public RulesetRulesActionParametersFromValueTargetUrl getTargetUrl();
-```
-
-- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a>
-
-The URL to redirect the request to.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#target_url Ruleset#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3497,8 +3498,8 @@ RulesetRulesActionParametersFromValueTargetUrl.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl.property.expression">expression</a></code> | <code>java.lang.String</code> | An expression to evaluate to get the URL to redirect the request to. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl.property.value">value</a></code> | <code>java.lang.String</code> | The URL to redirect the request to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl.property.expression">expression</a></code> | <code>java.lang.String</code> | An expression that evaluates to a URL to redirect the request to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl.property.value">value</a></code> | <code>java.lang.String</code> | A URL to redirect the request to. |
 
 ---
 
@@ -3510,9 +3511,9 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-An expression to evaluate to get the URL to redirect the request to.
+An expression that evaluates to a URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3524,9 +3525,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-The URL to redirect the request to.
+A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3548,9 +3549,9 @@ RulesetRulesActionParametersHeaders.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders.property.operation">operation</a></code> | <code>java.lang.String</code> | Available values: "remove", "add", "set". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders.property.expression">expression</a></code> | <code>java.lang.String</code> | Expression for the header value. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders.property.value">value</a></code> | <code>java.lang.String</code> | Static value for the header. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders.property.operation">operation</a></code> | <code>java.lang.String</code> | The operation to perform on the header. Available values: "add", "set", "remove". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders.property.expression">expression</a></code> | <code>java.lang.String</code> | An expression that evaluates to a value for the header. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders.property.value">value</a></code> | <code>java.lang.String</code> | A static value for the header. |
 
 ---
 
@@ -3562,9 +3563,9 @@ public java.lang.String getOperation();
 
 - *Type:* java.lang.String
 
-Available values: "remove", "add", "set".
+The operation to perform on the header. Available values: "add", "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3576,9 +3577,9 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Expression for the header value.
+An expression that evaluates to a value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3590,9 +3591,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Static value for the header.
+A static value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3626,7 +3627,7 @@ public java.lang.String getPublicKey();
 
 The public key to encrypt matched data logs with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#public_key Ruleset#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#public_key Ruleset#public_key}
 
 ---
 
@@ -3647,8 +3648,8 @@ RulesetRulesActionParametersOrigin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin.property.host">host</a></code> | <code>java.lang.String</code> | Override the resolved hostname. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin.property.port">port</a></code> | <code>java.lang.Number</code> | Override the destination port. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin.property.host">host</a></code> | <code>java.lang.String</code> | A resolved host to route to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin.property.port">port</a></code> | <code>java.lang.Number</code> | A destination port to route to. |
 
 ---
 
@@ -3660,9 +3661,9 @@ public java.lang.String getHost();
 
 - *Type:* java.lang.String
 
-Override the resolved hostname.
+A resolved host to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -3674,9 +3675,9 @@ public java.lang.Number getPort();
 
 - *Type:* java.lang.Number
 
-Override the destination port.
+A destination port to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#port Ruleset#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#port Ruleset#port}
 
 ---
 
@@ -3721,7 +3722,7 @@ public java.lang.String getAction();
 
 An action to override all rules with. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -3735,7 +3736,7 @@ public java.lang.Object getCategories();
 
 A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#categories Ruleset#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#categories Ruleset#categories}
 
 ---
 
@@ -3749,7 +3750,7 @@ public java.lang.Object getEnabled();
 
 Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -3763,7 +3764,7 @@ public java.lang.Object getRules();
 
 A list of rule-level overrides. This option has the highest precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -3780,7 +3781,7 @@ A sensitivity level to set for all rules.
 This option has lower precedence than rule and category overrides and is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -3807,7 +3808,7 @@ RulesetRulesActionParametersOverridesCategories.builder()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.category">category</a></code> | <code>java.lang.String</code> | The name of the category to override. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.action">action</a></code> | <code>java.lang.String</code> | The action to override rules in the category with. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable execution of rules in the category. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.sensitivityLevel">sensitivityLevel</a></code> | <code>java.lang.String</code> | The sensitivity level to use for rules in the category. Available values: "default", "medium", "low", "eoff". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.sensitivityLevel">sensitivityLevel</a></code> | <code>java.lang.String</code> | The sensitivity level to use for rules in the category. |
 
 ---
 
@@ -3821,7 +3822,7 @@ public java.lang.String getCategory();
 
 The name of the category to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#category Ruleset#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#category Ruleset#category}
 
 ---
 
@@ -3835,7 +3836,7 @@ public java.lang.String getAction();
 
 The action to override rules in the category with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -3849,7 +3850,7 @@ public java.lang.Object getEnabled();
 
 Whether to enable execution of rules in the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -3861,9 +3862,12 @@ public java.lang.String getSensitivityLevel();
 
 - *Type:* java.lang.String
 
-The sensitivity level to use for rules in the category. Available values: "default", "medium", "low", "eoff".
+The sensitivity level to use for rules in the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+This option is only applicable for DDoS phases.
+Available values: "default", "medium", "low", "eoff".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -3892,7 +3896,7 @@ RulesetRulesActionParametersOverridesRules.builder()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.action">action</a></code> | <code>java.lang.String</code> | The action to override the rule with. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to enable execution of the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.scoreThreshold">scoreThreshold</a></code> | <code>java.lang.Number</code> | The score threshold to use for the rule. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.sensitivityLevel">sensitivityLevel</a></code> | <code>java.lang.String</code> | The sensitivity level to use for the rule. Available values: "default", "medium", "low", "eoff". |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.sensitivityLevel">sensitivityLevel</a></code> | <code>java.lang.String</code> | The sensitivity level to use for the rule. |
 
 ---
 
@@ -3906,7 +3910,7 @@ public java.lang.String getId();
 
 The ID of the rule to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3923,7 +3927,7 @@ public java.lang.String getAction();
 
 The action to override the rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -3937,7 +3941,7 @@ public java.lang.Object getEnabled();
 
 Whether to enable execution of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -3951,7 +3955,7 @@ public java.lang.Number getScoreThreshold();
 
 The score threshold to use for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
 
 ---
 
@@ -3963,9 +3967,12 @@ public java.lang.String getSensitivityLevel();
 
 - *Type:* java.lang.String
 
-The sensitivity level to use for the rule. Available values: "default", "medium", "low", "eoff".
+The sensitivity level to use for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+This option is only applicable for DDoS phases.
+Available values: "default", "medium", "low", "eoff".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -3987,7 +3994,7 @@ RulesetRulesActionParametersRawResponseFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the field. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the response header. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields.property.preserveDuplicates">preserveDuplicates</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to log duplicate values of the same header. |
 
 ---
@@ -4000,9 +4007,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the field.
+The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4016,7 +4023,7 @@ public java.lang.Object getPreserveDuplicates();
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -4036,7 +4043,7 @@ RulesetRulesActionParametersRequestFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the field. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the header. |
 
 ---
 
@@ -4048,9 +4055,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the field.
+The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4088,7 +4095,7 @@ public java.lang.String getContent();
 
 The content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -4102,7 +4109,7 @@ public java.lang.String getContentType();
 
 The type of the content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -4116,7 +4123,7 @@ public java.lang.Number getStatusCode();
 
 The status code to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -4138,7 +4145,7 @@ RulesetRulesActionParametersResponseFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the field. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the response header. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields.property.preserveDuplicates">preserveDuplicates</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to log duplicate values of the same header. |
 
 ---
@@ -4151,9 +4158,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the field.
+The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4167,7 +4174,7 @@ public java.lang.Object getPreserveDuplicates();
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -4179,8 +4186,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesActionParametersServeStale;
 
 RulesetRulesActionParametersServeStale.builder()
-    .disableStaleWhileUpdating(java.lang.Boolean)
-    .disableStaleWhileUpdating(IResolvable)
+//  .disableStaleWhileUpdating(java.lang.Boolean)
+//  .disableStaleWhileUpdating(IResolvable)
     .build();
 ```
 
@@ -4188,11 +4195,11 @@ RulesetRulesActionParametersServeStale.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale.property.disableStaleWhileUpdating">disableStaleWhileUpdating</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines whether Cloudflare should serve stale content while updating. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale.property.disableStaleWhileUpdating">disableStaleWhileUpdating</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether Cloudflare should disable serving stale content while getting the latest content from the origin. |
 
 ---
 
-##### `disableStaleWhileUpdating`<sup>Required</sup> <a name="disableStaleWhileUpdating" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale.property.disableStaleWhileUpdating"></a>
+##### `disableStaleWhileUpdating`<sup>Optional</sup> <a name="disableStaleWhileUpdating" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale.property.disableStaleWhileUpdating"></a>
 
 ```java
 public java.lang.Object getDisableStaleWhileUpdating();
@@ -4200,11 +4207,9 @@ public java.lang.Object getDisableStaleWhileUpdating();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Defines whether Cloudflare should serve stale content while updating.
+Whether Cloudflare should disable serving stale content while getting the latest content from the origin.
 
-If true, Cloudflare will not serve stale content while getting the latest content from the origin.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
 
 ---
 
@@ -4224,7 +4229,7 @@ RulesetRulesActionParametersSni.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni.property.value">value</a></code> | <code>java.lang.String</code> | The SNI override. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni.property.value">value</a></code> | <code>java.lang.String</code> | A value to override the SNI to. |
 
 ---
 
@@ -4236,9 +4241,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-The SNI override.
+A value to override the SNI to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4258,7 +4263,7 @@ RulesetRulesActionParametersTransformedRequestFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the field. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields.property.name">name</a></code> | <code>java.lang.String</code> | The name of the header. |
 
 ---
 
@@ -4270,9 +4275,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The name of the field.
+The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4293,8 +4298,8 @@ RulesetRulesActionParametersUri.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri.property.path">path</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath">RulesetRulesActionParametersUriPath</a></code> | Path portion rewrite. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri.property.query">query</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery">RulesetRulesActionParametersUriQuery</a></code> | Query portion rewrite. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri.property.path">path</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath">RulesetRulesActionParametersUriPath</a></code> | A URI path rewrite. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri.property.query">query</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery">RulesetRulesActionParametersUriQuery</a></code> | A URI query rewrite. |
 
 ---
 
@@ -4306,9 +4311,9 @@ public RulesetRulesActionParametersUriPath getPath();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath">RulesetRulesActionParametersUriPath</a>
 
-Path portion rewrite.
+A URI path rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#path Ruleset#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#path Ruleset#path}
 
 ---
 
@@ -4320,9 +4325,9 @@ public RulesetRulesActionParametersUriQuery getQuery();
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery">RulesetRulesActionParametersUriQuery</a>
 
-Query portion rewrite.
+A URI query rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#query Ruleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#query Ruleset#query}
 
 ---
 
@@ -4343,8 +4348,8 @@ RulesetRulesActionParametersUriPath.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath.property.expression">expression</a></code> | <code>java.lang.String</code> | Expression to evaluate for the replacement value. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath.property.value">value</a></code> | <code>java.lang.String</code> | Predefined replacement value. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath.property.expression">expression</a></code> | <code>java.lang.String</code> | An expression that evaluates to a value to rewrite the URI path to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath.property.value">value</a></code> | <code>java.lang.String</code> | A value to rewrite the URI path to. |
 
 ---
 
@@ -4356,9 +4361,9 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Expression to evaluate for the replacement value.
+An expression that evaluates to a value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -4370,9 +4375,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Predefined replacement value.
+A value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4393,8 +4398,8 @@ RulesetRulesActionParametersUriQuery.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery.property.expression">expression</a></code> | <code>java.lang.String</code> | Expression to evaluate for the replacement value. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery.property.value">value</a></code> | <code>java.lang.String</code> | Predefined replacement value. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery.property.expression">expression</a></code> | <code>java.lang.String</code> | An expression that evaluates to a value to rewrite the URI query to. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery.property.value">value</a></code> | <code>java.lang.String</code> | A value to rewrite the URI query to. |
 
 ---
 
@@ -4406,9 +4411,9 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Expression to evaluate for the replacement value.
+An expression that evaluates to a value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -4420,9 +4425,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Predefined replacement value.
+A value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4443,8 +4448,8 @@ RulesetRulesExposedCredentialCheck.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck.property.passwordExpression">passwordExpression</a></code> | <code>java.lang.String</code> | Expression that selects the password used in the credentials check. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck.property.usernameExpression">usernameExpression</a></code> | <code>java.lang.String</code> | Expression that selects the user ID used in the credentials check. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck.property.passwordExpression">passwordExpression</a></code> | <code>java.lang.String</code> | An expression that selects the password used in the credentials check. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck.property.usernameExpression">usernameExpression</a></code> | <code>java.lang.String</code> | An expression that selects the user ID used in the credentials check. |
 
 ---
 
@@ -4456,9 +4461,9 @@ public java.lang.String getPasswordExpression();
 
 - *Type:* java.lang.String
 
-Expression that selects the password used in the credentials check.
+An expression that selects the password used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#password_expression Ruleset#password_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#password_expression Ruleset#password_expression}
 
 ---
 
@@ -4470,9 +4475,9 @@ public java.lang.String getUsernameExpression();
 
 - *Type:* java.lang.String
 
-Expression that selects the user ID used in the credentials check.
+An expression that selects the user ID used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#username_expression Ruleset#username_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#username_expression Ruleset#username_expression}
 
 ---
 
@@ -4484,8 +4489,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 import com.hashicorp.cdktf.providers.cloudflare.ruleset.RulesetRulesLogging;
 
 RulesetRulesLogging.builder()
-    .enabled(java.lang.Boolean)
-    .enabled(IResolvable)
+//  .enabled(java.lang.Boolean)
+//  .enabled(IResolvable)
     .build();
 ```
 
@@ -4497,7 +4502,7 @@ RulesetRulesLogging.builder()
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging.property.enabled"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging.property.enabled"></a>
 
 ```java
 public java.lang.Object getEnabled();
@@ -4507,7 +4512,7 @@ public java.lang.Object getEnabled();
 
 Whether to generate a log when the rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4535,14 +4540,14 @@ RulesetRulesRatelimit.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.characteristics">characteristics</a></code> | <code>java.util.List<java.lang.String></code> | Characteristics of the request on which the ratelimiter counter will be incremented. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.characteristics">characteristics</a></code> | <code>java.util.List<java.lang.String></code> | Characteristics of the request on which the rate limit counter will be incremented. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.period">period</a></code> | <code>java.lang.Number</code> | Period in seconds over which the counter is being incremented. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.countingExpression">countingExpression</a></code> | <code>java.lang.String</code> | Defines when the ratelimit counter should be incremented. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.countingExpression">countingExpression</a></code> | <code>java.lang.String</code> | An expression that defines when the rate limit counter should be incremented. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.mitigationTimeout">mitigationTimeout</a></code> | <code>java.lang.Number</code> | Period of time in seconds after which the action will be disabled following its first execution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.requestsPerPeriod">requestsPerPeriod</a></code> | <code>java.lang.Number</code> | The threshold of requests per period after which the action will be executed for the first time. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.requestsToOrigin">requestsToOrigin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Defines if ratelimit counting is only done when an origin is reached. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.requestsToOrigin">requestsToOrigin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether counting is only performed when an origin is reached. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.scorePerPeriod">scorePerPeriod</a></code> | <code>java.lang.Number</code> | The score threshold per period for which the action will be executed the first time. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.scoreResponseHeaderName">scoreResponseHeaderName</a></code> | <code>java.lang.String</code> | The response header name provided by the origin which should contain the score to increment ratelimit counter on. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.scoreResponseHeaderName">scoreResponseHeaderName</a></code> | <code>java.lang.String</code> | A response header name provided by the origin, which contains the score to increment rate limit counter with. |
 
 ---
 
@@ -4554,9 +4559,9 @@ public java.util.List<java.lang.String> getCharacteristics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Characteristics of the request on which the ratelimiter counter will be incremented.
+Characteristics of the request on which the rate limit counter will be incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#characteristics Ruleset#characteristics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#characteristics Ruleset#characteristics}
 
 ---
 
@@ -4570,7 +4575,7 @@ public java.lang.Number getPeriod();
 
 Period in seconds over which the counter is being incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#period Ruleset#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#period Ruleset#period}
 
 ---
 
@@ -4582,11 +4587,11 @@ public java.lang.String getCountingExpression();
 
 - *Type:* java.lang.String
 
-Defines when the ratelimit counter should be incremented.
+An expression that defines when the rate limit counter should be incremented.
 
-It is optional and defaults to the same as the rule's expression.
+It defaults to the same as the rule's expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
 
 ---
 
@@ -4600,7 +4605,7 @@ public java.lang.Number getMitigationTimeout();
 
 Period of time in seconds after which the action will be disabled following its first execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
 
 ---
 
@@ -4614,7 +4619,7 @@ public java.lang.Number getRequestsPerPeriod();
 
 The threshold of requests per period after which the action will be executed for the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
 
 ---
 
@@ -4626,9 +4631,9 @@ public java.lang.Object getRequestsToOrigin();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Defines if ratelimit counting is only done when an origin is reached.
+Whether counting is only performed when an origin is reached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
 
 ---
 
@@ -4642,7 +4647,7 @@ public java.lang.Number getScorePerPeriod();
 
 The score threshold per period for which the action will be executed the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
 
 ---
 
@@ -4654,9 +4659,9 @@ public java.lang.String getScoreResponseHeaderName();
 
 - *Type:* java.lang.String
 
-The response header name provided by the origin which should contain the score to increment ratelimit counter on.
+A response header name provided by the origin, which contains the score to increment rate limit counter with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
 
 ---
 
@@ -8874,6 +8879,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.resetMinimumFileSize">resetMinimumFileSize</a></code> | *No description.* |
 
 ---
 
@@ -9026,6 +9032,12 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetMinimumFileSize` <a name="resetMinimumFileSize" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.resetMinimumFileSize"></a>
+
+```java
+public void resetMinimumFileSize()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -10785,8 +10797,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetKey">resetKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetName">resetName</a></code> | *No description.* |
 
 ---
 
@@ -10940,18 +10950,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetKey` <a name="resetKey" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetKey"></a>
-
-```java
-public void resetKey()
-```
-
-##### `resetName` <a name="resetName" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.resetName"></a>
-
-```java
-public void resetName()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -11095,7 +11093,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.putTargetUrl">putTargetUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.resetPreserveQueryString">resetPreserveQueryString</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.resetStatusCode">resetStatusCode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.resetTargetUrl">resetTargetUrl</a></code> | *No description.* |
 
 ---
 
@@ -11273,12 +11270,6 @@ public void resetPreserveQueryString()
 public void resetStatusCode()
 ```
 
-##### `resetTargetUrl` <a name="resetTargetUrl" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.resetTargetUrl"></a>
-
-```java
-public void resetTargetUrl()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -11289,7 +11280,7 @@ public void resetTargetUrl()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.targetUrl">targetUrl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference">RulesetRulesActionParametersFromValueTargetUrlOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryStringInput">preserveQueryStringInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.statusCodeInput">statusCodeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.targetUrlInput">targetUrlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.targetUrlInput">targetUrlInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryString">preserveQueryString</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.statusCode">statusCode</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | *No description.* |
@@ -11353,10 +11344,10 @@ public java.lang.Number getStatusCodeInput();
 ##### `targetUrlInput`<sup>Optional</sup> <a name="targetUrlInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.targetUrlInput"></a>
 
 ```java
-public java.lang.Object getTargetUrlInput();
+public RulesetRulesActionParametersFromValueTargetUrl getTargetUrlInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a>
+- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a>
 
 ---
 
@@ -11619,7 +11610,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | *No description.* |
 
 ---
 
@@ -11690,10 +11681,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public RulesetRulesActionParametersFromValueTargetUrl getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a>
+- *Type:* <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a>
 
 ---
 
@@ -12834,6 +12825,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putUri">putUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAdditionalCacheablePorts">resetAdditionalCacheablePorts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAlgorithms">resetAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAssetName">resetAssetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAutomaticHttpsRewrites">resetAutomaticHttpsRewrites</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAutominify">resetAutominify</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetBic">resetBic</a></code> | *No description.* |
@@ -12864,7 +12856,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOriginCacheControl">resetOriginCacheControl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOriginErrorPagePassthru">resetOriginErrorPagePassthru</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOverrides">resetOverrides</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPhase">resetPhase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPhases">resetPhases</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPolish">resetPolish</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetProducts">resetProducts</a></code> | *No description.* |
@@ -13304,6 +13295,12 @@ public void resetAdditionalCacheablePorts()
 public void resetAlgorithms()
 ```
 
+##### `resetAssetName` <a name="resetAssetName" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAssetName"></a>
+
+```java
+public void resetAssetName()
+```
+
 ##### `resetAutomaticHttpsRewrites` <a name="resetAutomaticHttpsRewrites" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAutomaticHttpsRewrites"></a>
 
 ```java
@@ -13484,12 +13481,6 @@ public void resetOriginErrorPagePassthru()
 public void resetOverrides()
 ```
 
-##### `resetPhase` <a name="resetPhase" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPhase"></a>
-
-```java
-public void resetPhase()
-```
-
 ##### `resetPhases` <a name="resetPhases" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPhases"></a>
 
 ```java
@@ -13652,6 +13643,7 @@ public void resetUri()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uri">uri</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference">RulesetRulesActionParametersUriOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePortsInput">additionalCacheablePortsInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.algorithmsInput">algorithmsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetNameInput">assetNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewritesInput">automaticHttpsRewritesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.autominifyInput">autominifyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bicInput">bicInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -13682,7 +13674,6 @@ public void resetUri()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthruInput">originErrorPagePassthruInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originInput">originInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overridesInput">overridesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phaseInput">phaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phasesInput">phasesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.polishInput">polishInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.productsInput">productsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -13706,6 +13697,7 @@ public void resetUri()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.transformedRequestFieldsInput">transformedRequestFieldsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uriInput">uriInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePorts">additionalCacheablePorts</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetName">assetName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewrites">automaticHttpsRewrites</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bic">bic</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cache">cache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -13724,7 +13716,6 @@ public void resetUri()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryption">opportunisticEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControl">originCacheControl</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthru">originErrorPagePassthru</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phase">phase</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phases">phases</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.polish">polish</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.products">products</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -13994,6 +13985,16 @@ public java.lang.Object getAlgorithmsInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>>
+
+---
+
+##### `assetNameInput`<sup>Optional</sup> <a name="assetNameInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetNameInput"></a>
+
+```java
+public java.lang.String getAssetNameInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -14297,16 +14298,6 @@ public java.lang.Object getOverridesInput();
 
 ---
 
-##### `phaseInput`<sup>Optional</sup> <a name="phaseInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phaseInput"></a>
-
-```java
-public java.lang.String getPhaseInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `phasesInput`<sup>Optional</sup> <a name="phasesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phasesInput"></a>
 
 ```java
@@ -14537,6 +14528,16 @@ public java.util.List<java.lang.Number> getAdditionalCacheablePorts();
 
 ---
 
+##### `assetName`<sup>Required</sup> <a name="assetName" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetName"></a>
+
+```java
+public java.lang.String getAssetName();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `automaticHttpsRewrites`<sup>Required</sup> <a name="automaticHttpsRewrites" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewrites"></a>
 
 ```java
@@ -14714,16 +14715,6 @@ public java.lang.Object getOriginErrorPagePassthru();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `phase`<sup>Required</sup> <a name="phase" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phase"></a>
-
-```java
-public java.lang.String getPhase();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -18169,6 +18160,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.resetDisableStaleWhileUpdating">resetDisableStaleWhileUpdating</a></code> | *No description.* |
 
 ---
 
@@ -18321,6 +18313,12 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetDisableStaleWhileUpdating` <a name="resetDisableStaleWhileUpdating" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.resetDisableStaleWhileUpdating"></a>
+
+```java
+public void resetDisableStaleWhileUpdating()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -20560,6 +20558,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 
 ---
 
@@ -20713,6 +20712,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.resetEnabled"></a>
+
+```java
+public void resetEnabled()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -20853,13 +20858,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.putExposedCredentialCheck">putExposedCredentialCheck</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.putLogging">putLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.putRatelimit">putRatelimit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetAction">resetAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetActionParameters">resetActionParameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetCategories">resetCategories</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetExposedCredentialCheck">resetExposedCredentialCheck</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetExpression">resetExpression</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetLogging">resetLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetRatelimit">resetRatelimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetRef">resetRef</a></code> | *No description.* |
@@ -21064,22 +21066,10 @@ public void putRatelimit(RulesetRulesRatelimit value)
 
 ---
 
-##### `resetAction` <a name="resetAction" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetAction"></a>
-
-```java
-public void resetAction()
-```
-
 ##### `resetActionParameters` <a name="resetActionParameters" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetActionParameters"></a>
 
 ```java
 public void resetActionParameters()
-```
-
-##### `resetCategories` <a name="resetCategories" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetCategories"></a>
-
-```java
-public void resetCategories()
 ```
 
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetDescription"></a>
@@ -21098,12 +21088,6 @@ public void resetEnabled()
 
 ```java
 public void resetExposedCredentialCheck()
-```
-
-##### `resetExpression` <a name="resetExpression" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetExpression"></a>
-
-```java
-public void resetExpression()
 ```
 
 ##### `resetLogging` <a name="resetLogging" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.resetLogging"></a>
@@ -21138,7 +21122,6 @@ public void resetRef()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.ratelimit">ratelimit</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference">RulesetRulesRatelimitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.actionInput">actionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.actionParametersInput">actionParametersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.categoriesInput">categoriesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.exposedCredentialCheckInput">exposedCredentialCheckInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a></code> | *No description.* |
@@ -21147,7 +21130,6 @@ public void resetRef()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.ratelimitInput">ratelimitInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.refInput">refInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.action">action</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.categories">categories</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -21250,16 +21232,6 @@ public java.lang.Object getActionParametersInput();
 
 ---
 
-##### `categoriesInput`<sup>Optional</sup> <a name="categoriesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.categoriesInput"></a>
-
-```java
-public java.util.List<java.lang.String> getCategoriesInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.descriptionInput"></a>
 
 ```java
@@ -21337,16 +21309,6 @@ public java.lang.String getAction();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `categories`<sup>Required</sup> <a name="categories" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.categories"></a>
-
-```java
-public java.util.List<java.lang.String> getCategories();
-```
-
-- *Type:* java.util.List<java.lang.String>
 
 ---
 

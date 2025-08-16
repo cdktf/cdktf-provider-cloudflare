@@ -4,7 +4,7 @@
 
 ### UrlNormalizationSettings <a name="UrlNormalizationSettings" id="@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the UrlNormalizationSettings t
 
 The id of the existing UrlNormalizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/url_normalization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ const urlNormalizationSettingsConfig: urlNormalizationSettings.UrlNormalizationS
 | <code><a href="#@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.property.scope">scope</a></code> | <code>string</code> | The scope of the URL normalization. Available values: "incoming", "both". |
+| <code><a href="#@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.property.scope">scope</a></code> | <code>string</code> | The scope of the URL normalization. Available values: "incoming", "both", "none". |
 | <code><a href="#@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.property.type">type</a></code> | <code>string</code> | The type of URL normalization performed by Cloudflare. Available values: "cloudflare", "rfc3986". |
 | <code><a href="#@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The unique ID of the zone. |
 
@@ -844,9 +844,9 @@ public readonly scope: string;
 
 - *Type:* string
 
-The scope of the URL normalization. Available values: "incoming", "both".
+The scope of the URL normalization. Available values: "incoming", "both", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
 
 ---
 
@@ -860,7 +860,7 @@ public readonly type: string;
 
 The type of URL normalization performed by Cloudflare. Available values: "cloudflare", "rfc3986".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
 
 ---
 
@@ -874,7 +874,7 @@ public readonly zoneId: string;
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
 
 ---
 

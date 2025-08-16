@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareListConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Account ID for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#account_id DataCloudflareList#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list#account_id DataCloudflareList#account_id}
   */
   readonly accountId: string;
   /**
   * The unique ID of the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#list_id DataCloudflareList#list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list#list_id DataCloudflareList#list_id}
   */
-  readonly listId?: string;
+  readonly listId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list cloudflare_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list}
 */
 export class DataCloudflareList extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareList to import
-  * @param importFromId The id of the existing DataCloudflareList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list cloudflare_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.2',
+        providerVersion: '5.8.4',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -118,16 +118,13 @@ export class DataCloudflareList extends cdktf.TerraformDataSource {
     return this.getStringAttribute('kind');
   }
 
-  // list_id - computed: false, optional: true, required: false
+  // list_id - computed: false, optional: false, required: true
   private _listId?: string; 
   public get listId() {
     return this.getStringAttribute('list_id');
   }
   public set listId(value: string) {
     this._listId = value;
-  }
-  public resetListId() {
-    this._listId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get listIdInput() {

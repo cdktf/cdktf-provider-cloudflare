@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,59 @@ export interface MagicWanIpsecTunnelConfig extends cdktf.TerraformMetaArguments 
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#account_id MagicWanIpsecTunnel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#account_id MagicWanIpsecTunnel#account_id}
   */
   readonly accountId: string;
   /**
   * The IP address assigned to the Cloudflare side of the IPsec tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#cloudflare_endpoint MagicWanIpsecTunnel#cloudflare_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#cloudflare_endpoint MagicWanIpsecTunnel#cloudflare_endpoint}
   */
   readonly cloudflareEndpoint: string;
   /**
   * The IP address assigned to the customer side of the IPsec tunnel. Not required, but must be set for proactive traceroutes to work.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#customer_endpoint MagicWanIpsecTunnel#customer_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#customer_endpoint MagicWanIpsecTunnel#customer_endpoint}
   */
   readonly customerEndpoint?: string;
   /**
   * An optional description forthe IPsec tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#description MagicWanIpsecTunnel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#description MagicWanIpsecTunnel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#health_check MagicWanIpsecTunnel#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#health_check MagicWanIpsecTunnel#health_check}
   */
   readonly healthCheck?: MagicWanIpsecTunnelHealthCheck;
   /**
   * A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#interface_address MagicWanIpsecTunnel#interface_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#interface_address MagicWanIpsecTunnel#interface_address}
   */
   readonly interfaceAddress: string;
   /**
+  * A 127 bit IPV6 prefix from within the virtual_subnet6 prefix space with the address being the first IP of the subnet and not same as the address of virtual_subnet6. Eg if virtual_subnet6 is 2606:54c1:7:0:a9fe:12d2::/127 , interface_address6 could be 2606:54c1:7:0:a9fe:12d2:1:200/127
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#interface_address6 MagicWanIpsecTunnel#interface_address6}
+  */
+  readonly interfaceAddress6?: string;
+  /**
   * The name of the IPsec tunnel. The name cannot share a name with other tunnels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#name MagicWanIpsecTunnel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#name MagicWanIpsecTunnel#name}
   */
   readonly name: string;
   /**
   * A randomly generated or provided string for use in the IPsec tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#psk MagicWanIpsecTunnel#psk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#psk MagicWanIpsecTunnel#psk}
   */
   readonly psk?: string;
   /**
   * If `true`, then IPsec replay protection will be supported in the Cloudflare-to-customer direction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#replay_protection MagicWanIpsecTunnel#replay_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#replay_protection MagicWanIpsecTunnel#replay_protection}
   */
   readonly replayProtection?: boolean | cdktf.IResolvable;
 }
@@ -69,7 +75,7 @@ export interface MagicWanIpsecTunnelHealthCheckTarget {
   /**
   * The saved health check target. Setting the value to the empty string indicates that the calculated default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#saved MagicWanIpsecTunnel#saved}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#saved MagicWanIpsecTunnel#saved}
   */
   readonly saved?: string;
 }
@@ -171,33 +177,33 @@ export interface MagicWanIpsecTunnelHealthCheck {
   * The direction of the flow of the healthcheck. Either unidirectional, where the probe comes to you via the tunnel and the result comes back to Cloudflare via the open Internet, or bidirectional where both the probe and result come and go via the tunnel.
   * Available values: "unidirectional", "bidirectional".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#direction MagicWanIpsecTunnel#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#direction MagicWanIpsecTunnel#direction}
   */
   readonly direction?: string;
   /**
   * Determines whether to run healthchecks for a tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#enabled MagicWanIpsecTunnel#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#enabled MagicWanIpsecTunnel#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * How frequent the health check is run. The default value is `mid`.
   * Available values: "low", "mid", "high".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#rate MagicWanIpsecTunnel#rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#rate MagicWanIpsecTunnel#rate}
   */
   readonly rate?: string;
   /**
   * The destination address in a request type health check. After the healthcheck is decapsulated at the customer end of the tunnel, the ICMP echo will be forwarded to this address. This field defaults to `customer_gre_endpoint address`. This field is ignored for bidirectional healthchecks as the interface_address (not assigned to the Cloudflare side of the tunnel) is used as the target. Must be in object form if the x-magic-new-hc-target header is set to true and string form if x-magic-new-hc-target is absent or set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#target MagicWanIpsecTunnel#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#target MagicWanIpsecTunnel#target}
   */
   readonly target?: MagicWanIpsecTunnelHealthCheckTarget;
   /**
   * The type of healthcheck to run, reply or request. The default value is `reply`.
   * Available values: "reply", "request".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#type MagicWanIpsecTunnel#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#type MagicWanIpsecTunnel#type}
   */
   readonly type?: string;
 }
@@ -461,7 +467,7 @@ export class MagicWanIpsecTunnelPskMetadataOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}
 */
 export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
 
@@ -477,7 +483,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MagicWanIpsecTunnel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicWanIpsecTunnel to import
-  * @param importFromId The id of the existing MagicWanIpsecTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicWanIpsecTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicWanIpsecTunnel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -489,7 +495,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -500,7 +506,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_wan_ipsec_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.2',
+        providerVersion: '5.8.4',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -517,6 +523,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
     this._description = config.description;
     this._healthCheck.internalValue = config.healthCheck;
     this._interfaceAddress = config.interfaceAddress;
+    this._interfaceAddress6 = config.interfaceAddress6;
     this._name = config.name;
     this._psk = config.psk;
     this._replayProtection = config.replayProtection;
@@ -628,6 +635,22 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
     return this._interfaceAddress;
   }
 
+  // interface_address6 - computed: false, optional: true, required: false
+  private _interfaceAddress6?: string; 
+  public get interfaceAddress6() {
+    return this.getStringAttribute('interface_address6');
+  }
+  public set interfaceAddress6(value: string) {
+    this._interfaceAddress6 = value;
+  }
+  public resetInterfaceAddress6() {
+    this._interfaceAddress6 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceAddress6Input() {
+    return this._interfaceAddress6;
+  }
+
   // modified_on - computed: true, optional: false, required: false
   public get modifiedOn() {
     return this.getStringAttribute('modified_on');
@@ -696,6 +719,7 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       health_check: magicWanIpsecTunnelHealthCheckToTerraform(this._healthCheck.internalValue),
       interface_address: cdktf.stringToTerraform(this._interfaceAddress),
+      interface_address6: cdktf.stringToTerraform(this._interfaceAddress6),
       name: cdktf.stringToTerraform(this._name),
       psk: cdktf.stringToTerraform(this._psk),
       replay_protection: cdktf.booleanToTerraform(this._replayProtection),
@@ -736,6 +760,12 @@ export class MagicWanIpsecTunnel extends cdktf.TerraformResource {
       },
       interface_address: {
         value: cdktf.stringToHclTerraform(this._interfaceAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interface_address6: {
+        value: cdktf.stringToHclTerraform(this._interfaceAddress6),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

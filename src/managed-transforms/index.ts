@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ManagedTransformsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The list of Managed Request Transforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
   */
   readonly managedRequestHeaders: ManagedTransformsManagedRequestHeaders[] | cdktf.IResolvable;
   /**
   * The list of Managed Response Transforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
   */
   readonly managedResponseHeaders: ManagedTransformsManagedResponseHeaders[] | cdktf.IResolvable;
   /**
   * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
   */
   readonly zoneId: string;
 }
@@ -35,13 +35,13 @@ export interface ManagedTransformsManagedRequestHeaders {
   /**
   * Whether the Managed Transform is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The human-readable identifier of the Managed Transform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#id ManagedTransforms#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#id ManagedTransforms#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,11 +135,6 @@ export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktf
     }
   }
 
-  // conflicts_with - computed: true, optional: false, required: false
-  public get conflictsWith() {
-    return this.getListAttribute('conflicts_with');
-  }
-
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
@@ -151,11 +146,6 @@ export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
-  }
-
-  // has_conflict - computed: true, optional: false, required: false
-  public get hasConflict() {
-    return this.getBooleanAttribute('has_conflict');
   }
 
   // id - computed: false, optional: false, required: true
@@ -195,13 +185,13 @@ export interface ManagedTransformsManagedResponseHeaders {
   /**
   * Whether the Managed Transform is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The human-readable identifier of the Managed Transform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#id ManagedTransforms#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#id ManagedTransforms#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -295,11 +285,6 @@ export class ManagedTransformsManagedResponseHeadersOutputReference extends cdkt
     }
   }
 
-  // conflicts_with - computed: true, optional: false, required: false
-  public get conflictsWith() {
-    return this.getListAttribute('conflicts_with');
-  }
-
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
@@ -311,11 +296,6 @@ export class ManagedTransformsManagedResponseHeadersOutputReference extends cdkt
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
-  }
-
-  // has_conflict - computed: true, optional: false, required: false
-  public get hasConflict() {
-    return this.getBooleanAttribute('has_conflict');
   }
 
   // id - computed: false, optional: false, required: true
@@ -353,7 +333,7 @@ export class ManagedTransformsManagedResponseHeadersList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms cloudflare_managed_transforms}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms cloudflare_managed_transforms}
 */
 export class ManagedTransforms extends cdktf.TerraformResource {
 
@@ -369,7 +349,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedTransforms resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedTransforms to import
-  * @param importFromId The id of the existing ManagedTransforms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedTransforms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedTransforms to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -381,7 +361,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/managed_transforms cloudflare_managed_transforms} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/managed_transforms cloudflare_managed_transforms} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -392,7 +372,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_managed_transforms',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.2',
+        providerVersion: '5.8.4',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -418,7 +398,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   }
 
   // managed_request_headers - computed: false, optional: false, required: true
-  private _managedRequestHeaders = new ManagedTransformsManagedRequestHeadersList(this, "managed_request_headers", false);
+  private _managedRequestHeaders = new ManagedTransformsManagedRequestHeadersList(this, "managed_request_headers", true);
   public get managedRequestHeaders() {
     return this._managedRequestHeaders;
   }
@@ -431,7 +411,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   }
 
   // managed_response_headers - computed: false, optional: false, required: true
-  private _managedResponseHeaders = new ManagedTransformsManagedResponseHeadersList(this, "managed_response_headers", false);
+  private _managedResponseHeaders = new ManagedTransformsManagedResponseHeadersList(this, "managed_response_headers", true);
   public get managedResponseHeaders() {
     return this._managedResponseHeaders;
   }
@@ -473,13 +453,13 @@ export class ManagedTransforms extends cdktf.TerraformResource {
       managed_request_headers: {
         value: cdktf.listMapperHcl(managedTransformsManagedRequestHeadersToHclTerraform, false)(this._managedRequestHeaders.internalValue),
         isBlock: true,
-        type: "list",
+        type: "set",
         storageClassType: "ManagedTransformsManagedRequestHeadersList",
       },
       managed_response_headers: {
         value: cdktf.listMapperHcl(managedTransformsManagedResponseHeadersToHclTerraform, false)(this._managedResponseHeaders.internalValue),
         isBlock: true,
-        type: "list",
+        type: "set",
         storageClassType: "ManagedTransformsManagedResponseHeadersList",
       },
       zone_id: {
