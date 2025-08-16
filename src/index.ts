@@ -111,6 +111,7 @@ export * as ruleset from './ruleset';
 export * as schemaValidationOperationSettings from './schema-validation-operation-settings';
 export * as schemaValidationSchemas from './schema-validation-schemas';
 export * as schemaValidationSettings from './schema-validation-settings';
+export * as snippet from './snippet';
 export * as snippetRules from './snippet-rules';
 export * as snippets from './snippets';
 export * as spectrumApplication from './spectrum-application';
@@ -384,6 +385,8 @@ export * as dataCloudflareSchemaValidationOperationSettingsList from './data-clo
 export * as dataCloudflareSchemaValidationSchemas from './data-cloudflare-schema-validation-schemas';
 export * as dataCloudflareSchemaValidationSchemasList from './data-cloudflare-schema-validation-schemas-list';
 export * as dataCloudflareSchemaValidationSettings from './data-cloudflare-schema-validation-settings';
+export * as dataCloudflareSnippet from './data-cloudflare-snippet';
+export * as dataCloudflareSnippetList from './data-cloudflare-snippet-list';
 export * as dataCloudflareSnippetRulesList from './data-cloudflare-snippet-rules-list';
 export * as dataCloudflareSnippets from './data-cloudflare-snippets';
 export * as dataCloudflareSnippetsList from './data-cloudflare-snippets-list';

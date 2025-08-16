@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for cloudflare/cloudflare provider version 5.8.2
+# CDKTF prebuilt bindings for cloudflare/cloudflare provider version 5.8.4
 
-This repo builds and publishes the [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform cloudflare provider versio
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2)
+- [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
