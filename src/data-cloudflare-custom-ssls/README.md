@@ -1,3 +1,3 @@
 # `data_cloudflare_custom_ssls`
 
-Refer to the Terraform Registry for docs: [`data_cloudflare_custom_ssls`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/custom_ssls).
+Refer to the Terraform Registry for docs: [`data_cloudflare_custom_ssls`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/custom_ssls).

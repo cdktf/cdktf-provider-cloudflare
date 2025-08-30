@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_turn_app
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_turn_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface CallsTurnAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
   */
   readonly accountId: string;
   /**
   * A Cloudflare-generated unique identifier for a item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
   */
   readonly keyId?: string;
   /**
   * A short description of a TURN key, not shown to end users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_turn_app#name CallsTurnApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_turn_app cloudflare_calls_turn_app}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}
 */
 export class CallsTurnApp extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CallsTurnApp extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CallsTurnApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CallsTurnApp to import
-  * @param importFromId The id of the existing CallsTurnApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CallsTurnApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CallsTurnApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CallsTurnApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CallsTurnApp extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_calls_turn_app',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

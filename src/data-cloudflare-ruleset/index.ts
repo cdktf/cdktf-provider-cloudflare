@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareRulesetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+  * The unique ID of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
   */
   readonly accountId?: string;
   /**
   * The unique ID of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * The unique ID of the ruleset.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
   */
   readonly rulesetId?: string;
   /**
-  * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
+  * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1048,15 +1057,15 @@ export class DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutpu
     }
   }
 
+  // status_code - computed: true, optional: false, required: false
+  public get statusCode() {
+    return this.getNumberAttribute('status_code');
+  }
+
   // status_code_range - computed: true, optional: false, required: false
   private _statusCodeRange = new DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference(this, "status_code_range");
   public get statusCodeRange() {
     return this._statusCodeRange;
-  }
-
-  // status_code_value - computed: true, optional: false, required: false
-  public get statusCodeValue() {
-    return this.getNumberAttribute('status_code_value');
   }
 
   // value - computed: true, optional: false, required: false
@@ -2437,6 +2446,11 @@ export class DataCloudflareRulesetRulesActionParametersUriOutputReference extend
     }
   }
 
+  // origin - computed: true, optional: false, required: false
+  public get origin() {
+    return this.getBooleanAttribute('origin');
+  }
+
   // path - computed: true, optional: false, required: false
   private _path = new DataCloudflareRulesetRulesActionParametersUriPathOutputReference(this, "path");
   public get path() {
@@ -2507,6 +2521,11 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
   private _algorithms = new DataCloudflareRulesetRulesActionParametersAlgorithmsList(this, "algorithms", false);
   public get algorithms() {
     return this._algorithms;
+  }
+
+  // asset_name - computed: true, optional: false, required: false
+  public get assetName() {
+    return this.getStringAttribute('asset_name');
   }
 
   // automatic_https_rewrites - computed: true, optional: false, required: false
@@ -2669,11 +2688,6 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
   private _overrides = new DataCloudflareRulesetRulesActionParametersOverridesOutputReference(this, "overrides");
   public get overrides() {
     return this._overrides;
-  }
-
-  // phase - computed: true, optional: false, required: false
-  public get phase() {
-    return this.getStringAttribute('phase');
   }
 
   // phases - computed: true, optional: false, required: false
@@ -3128,7 +3142,7 @@ export class DataCloudflareRulesetRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset cloudflare_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset cloudflare_ruleset}
 */
 export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
 
@@ -3144,7 +3158,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareRuleset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRuleset to import
-  * @param importFromId The id of the existing DataCloudflareRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3156,7 +3170,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset cloudflare_ruleset} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset cloudflare_ruleset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3167,7 +3181,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -3179,6 +3193,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._rulesetId = config.rulesetId;
     this._zoneId = config.zoneId;
   }
@@ -3208,14 +3223,30 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
     return this.getStringAttribute('description');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kind - computed: true, optional: false, required: false
   public get kind() {
     return this.getStringAttribute('kind');
+  }
+
+  // last_updated - computed: true, optional: false, required: false
+  public get lastUpdated() {
+    return this.getStringAttribute('last_updated');
   }
 
   // name - computed: true, optional: false, required: false
@@ -3250,6 +3281,11 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
     return this._rulesetId;
   }
 
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+
   // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
@@ -3273,6 +3309,7 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       ruleset_id: cdktf.stringToTerraform(this._rulesetId),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
@@ -3282,6 +3319,12 @@ export class DataCloudflareRuleset extends cdktf.TerraformDataSource {
     const attrs = {
       account_id: {
         value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

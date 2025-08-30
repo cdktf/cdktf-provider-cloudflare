@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_policies
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_access_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareZeroTrustAccessPoliciesConfig extends cdktf.Terra
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_policies#account_id DataCloudflareZeroTrustAccessPolicies#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_access_policies#account_id DataCloudflareZeroTrustAccessPolicies#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_policies#max_items DataCloudflareZeroTrustAccessPolicies#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_access_policies#max_items DataCloudflareZeroTrustAccessPolicies#max_items}
   */
   readonly maxItems?: number;
 }
@@ -4832,7 +4832,7 @@ export class DataCloudflareZeroTrustAccessPoliciesResultOutputReference extends 
   }
 
   // approval_groups - computed: true, optional: false, required: false
-  private _approvalGroups = new DataCloudflareZeroTrustAccessPoliciesResultApprovalGroupsList(this, "approval_groups", false);
+  private _approvalGroups = new DataCloudflareZeroTrustAccessPoliciesResultApprovalGroupsList(this, "approval_groups", true);
   public get approvalGroups() {
     return this._approvalGroups;
   }
@@ -4853,7 +4853,7 @@ export class DataCloudflareZeroTrustAccessPoliciesResultOutputReference extends 
   }
 
   // exclude - computed: true, optional: false, required: false
-  private _exclude = new DataCloudflareZeroTrustAccessPoliciesResultExcludeList(this, "exclude", false);
+  private _exclude = new DataCloudflareZeroTrustAccessPoliciesResultExcludeList(this, "exclude", true);
   public get exclude() {
     return this._exclude;
   }
@@ -4864,7 +4864,7 @@ export class DataCloudflareZeroTrustAccessPoliciesResultOutputReference extends 
   }
 
   // include - computed: true, optional: false, required: false
-  private _include = new DataCloudflareZeroTrustAccessPoliciesResultIncludeList(this, "include", false);
+  private _include = new DataCloudflareZeroTrustAccessPoliciesResultIncludeList(this, "include", true);
   public get include() {
     return this._include;
   }
@@ -4890,7 +4890,7 @@ export class DataCloudflareZeroTrustAccessPoliciesResultOutputReference extends 
   }
 
   // require - computed: true, optional: false, required: false
-  private _require = new DataCloudflareZeroTrustAccessPoliciesResultRequireList(this, "require", false);
+  private _require = new DataCloudflareZeroTrustAccessPoliciesResultRequireList(this, "require", true);
   public get require() {
     return this._require;
   }
@@ -4931,7 +4931,7 @@ export class DataCloudflareZeroTrustAccessPoliciesResultList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}
 */
 export class DataCloudflareZeroTrustAccessPolicies extends cdktf.TerraformDataSource {
 
@@ -4947,7 +4947,7 @@ export class DataCloudflareZeroTrustAccessPolicies extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataCloudflareZeroTrustAccessPolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustAccessPolicies to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_access_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustAccessPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4959,7 +4959,7 @@ export class DataCloudflareZeroTrustAccessPolicies extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4970,7 +4970,7 @@ export class DataCloudflareZeroTrustAccessPolicies extends cdktf.TerraformDataSo
       terraformResourceType: 'cloudflare_zero_trust_access_policies',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

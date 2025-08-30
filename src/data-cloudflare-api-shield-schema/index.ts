@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_shield_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DataCloudflareApiShieldSchemaConfig extends cdktf.TerraformMeta
   /**
   * Omit the source-files of schemas and only retrieve their meta-data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema#omit_source DataCloudflareApiShieldSchema#omit_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_shield_schema#omit_source DataCloudflareApiShieldSchema#omit_source}
   */
   readonly omitSource?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema#schema_id DataCloudflareApiShieldSchema#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_shield_schema#schema_id DataCloudflareApiShieldSchema#schema_id}
   */
   readonly schemaId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema#zone_id DataCloudflareApiShieldSchema#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_shield_schema#zone_id DataCloudflareApiShieldSchema#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema cloudflare_api_shield_schema}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema}
 */
 export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
 
@@ -47,7 +47,7 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareApiShieldSchema resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiShieldSchema to import
-  * @param importFromId The id of the existing DataCloudflareApiShieldSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiShieldSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_shield_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiShieldSchema to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +59,7 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_api_shield_schema',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

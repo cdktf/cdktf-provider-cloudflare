@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,168 @@ export interface DataCloudflareMagicWanGreTunnelConfig extends cdktf.TerraformMe
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel#account_id DataCloudflareMagicWanGreTunnel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel#account_id DataCloudflareMagicWanGreTunnel#account_id}
   */
   readonly accountId: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel#gre_tunnel_id DataCloudflareMagicWanGreTunnel#gre_tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel#gre_tunnel_id DataCloudflareMagicWanGreTunnel#gre_tunnel_id}
   */
   readonly greTunnelId: string;
+}
+export interface DataCloudflareMagicWanGreTunnelGreTunnelBgp {
+}
+
+export function dataCloudflareMagicWanGreTunnelGreTunnelBgpToTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareMagicWanGreTunnelGreTunnelBgpToHclTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareMagicWanGreTunnelGreTunnelBgp | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareMagicWanGreTunnelGreTunnelBgp | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // customer_asn - computed: true, optional: false, required: false
+  public get customerAsn() {
+    return this.getNumberAttribute('customer_asn');
+  }
+
+  // extra_prefixes - computed: true, optional: false, required: false
+  public get extraPrefixes() {
+    return this.getListAttribute('extra_prefixes');
+  }
+
+  // md5_key - computed: true, optional: false, required: false
+  public get md5Key() {
+    return this.getStringAttribute('md5_key');
+  }
+}
+export interface DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus {
+}
+
+export function dataCloudflareMagicWanGreTunnelGreTunnelBgpStatusToTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareMagicWanGreTunnelGreTunnelBgpStatusToHclTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // bgp_state - computed: true, optional: false, required: false
+  public get bgpState() {
+    return this.getStringAttribute('bgp_state');
+  }
+
+  // cf_speaker_ip - computed: true, optional: false, required: false
+  public get cfSpeakerIp() {
+    return this.getStringAttribute('cf_speaker_ip');
+  }
+
+  // cf_speaker_port - computed: true, optional: false, required: false
+  public get cfSpeakerPort() {
+    return this.getNumberAttribute('cf_speaker_port');
+  }
+
+  // customer_speaker_ip - computed: true, optional: false, required: false
+  public get customerSpeakerIp() {
+    return this.getStringAttribute('customer_speaker_ip');
+  }
+
+  // customer_speaker_port - computed: true, optional: false, required: false
+  public get customerSpeakerPort() {
+    return this.getNumberAttribute('customer_speaker_port');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // tcp_established - computed: true, optional: false, required: false
+  public get tcpEstablished() {
+    return this.getBooleanAttribute('tcp_established');
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
+  }
 }
 export interface DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTarget {
 }
@@ -208,6 +361,18 @@ export class DataCloudflareMagicWanGreTunnelGreTunnelOutputReference extends cdk
     }
   }
 
+  // bgp - computed: true, optional: false, required: false
+  private _bgp = new DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference(this, "bgp");
+  public get bgp() {
+    return this._bgp;
+  }
+
+  // bgp_status - computed: true, optional: false, required: false
+  private _bgpStatus = new DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference(this, "bgp_status");
+  public get bgpStatus() {
+    return this._bgpStatus;
+  }
+
   // cloudflare_gre_endpoint - computed: true, optional: false, required: false
   public get cloudflareGreEndpoint() {
     return this.getStringAttribute('cloudflare_gre_endpoint');
@@ -271,7 +436,7 @@ export class DataCloudflareMagicWanGreTunnelGreTunnelOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}
 */
 export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
 
@@ -287,7 +452,7 @@ export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareMagicWanGreTunnel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicWanGreTunnel to import
-  * @param importFromId The id of the existing DataCloudflareMagicWanGreTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicWanGreTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicWanGreTunnel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -299,7 +464,7 @@ export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -310,7 +475,7 @@ export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_magic_wan_gre_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

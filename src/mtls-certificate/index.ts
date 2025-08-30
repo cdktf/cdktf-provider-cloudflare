@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface MtlsCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
   */
   readonly accountId: string;
   /**
   * Indicates whether the certificate is a CA or leaf certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
   */
   readonly ca: boolean | cdktf.IResolvable;
   /**
   * The uploaded root CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
   */
   readonly certificates: string;
   /**
   * Optional unique name for the certificate. Only used for human readability.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate#name MtlsCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
   */
   readonly name?: string;
   /**
   * The private key for the certificate. This field is only needed for specific use cases such as using a custom certificate with Zero Trust's block page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
   */
   readonly privateKey?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate cloudflare_mtls_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}
 */
 export class MtlsCertificate extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class MtlsCertificate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MtlsCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MtlsCertificate to import
-  * @param importFromId The id of the existing MtlsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MtlsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MtlsCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class MtlsCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class MtlsCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_mtls_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
