@@ -4,7 +4,7 @@
 
 ### DataCloudflareZoneCacheVariants <a name="DataCloudflareZoneCacheVariants" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZoneCacheVar
 
 The id of the existing DataCloudflareZoneCacheVariants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -396,7 +396,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.editable">Editable</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.value">Value</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference">DataCloudflareZoneCacheVariantsValueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
@@ -557,10 +557,10 @@ func ModifiedOn() *string
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariants.property.value"></a>
 
 ```go
-func Value() *string
+func Value() DataCloudflareZoneCacheVariantsValueOutputReference
 ```
 
-- *Type:* *string
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference">DataCloudflareZoneCacheVariantsValueOutputReference</a>
 
 ---
 
@@ -718,7 +718,391 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zone_cache_variants#zone_id DataCloudflareZoneCacheVariants#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zone_cache_variants#zone_id DataCloudflareZoneCacheVariants#zone_id}
+
+---
+
+### DataCloudflareZoneCacheVariantsValue <a name="DataCloudflareZoneCacheVariantsValue" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValue"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValue.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonecachevariants"
+
+&datacloudflarezonecachevariants.DataCloudflareZoneCacheVariantsValue {
+
+}
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataCloudflareZoneCacheVariantsValueOutputReference <a name="DataCloudflareZoneCacheVariantsValueOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonecachevariants"
+
+datacloudflarezonecachevariants.NewDataCloudflareZoneCacheVariantsValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneCacheVariantsValueOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.avif">Avif</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.bmp">Bmp</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.gif">Gif</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jp2">Jp2</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jpeg">Jpeg</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jpg">Jpg</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jpg2">Jpg2</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.png">Png</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.tif">Tif</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.tiff">Tiff</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.webp">Webp</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValue">DataCloudflareZoneCacheVariantsValue</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Avif`<sup>Required</sup> <a name="Avif" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.avif"></a>
+
+```go
+func Avif() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Bmp`<sup>Required</sup> <a name="Bmp" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.bmp"></a>
+
+```go
+func Bmp() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Gif`<sup>Required</sup> <a name="Gif" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.gif"></a>
+
+```go
+func Gif() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Jp2`<sup>Required</sup> <a name="Jp2" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jp2"></a>
+
+```go
+func Jp2() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Jpeg`<sup>Required</sup> <a name="Jpeg" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jpeg"></a>
+
+```go
+func Jpeg() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Jpg`<sup>Required</sup> <a name="Jpg" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jpg"></a>
+
+```go
+func Jpg() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Jpg2`<sup>Required</sup> <a name="Jpg2" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.jpg2"></a>
+
+```go
+func Jpg2() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Png`<sup>Required</sup> <a name="Png" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.png"></a>
+
+```go
+func Png() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Tif`<sup>Required</sup> <a name="Tif" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.tif"></a>
+
+```go
+func Tif() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Tiff`<sup>Required</sup> <a name="Tiff" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.tiff"></a>
+
+```go
+func Tiff() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Webp`<sup>Required</sup> <a name="Webp" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.webp"></a>
+
+```go
+func Webp() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValueOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareZoneCacheVariantsValue
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareZoneCacheVariants.DataCloudflareZoneCacheVariantsValue">DataCloudflareZoneCacheVariantsValue</a>
 
 ---
 

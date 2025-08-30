@@ -1,3 +1,3 @@
 # `data_cloudflare_account_role`
 
-Refer to the Terraform Registry for docs: [`data_cloudflare_account_role`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/account_role).
+Refer to the Terraform Registry for docs: [`data_cloudflare_account_role`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/account_role).

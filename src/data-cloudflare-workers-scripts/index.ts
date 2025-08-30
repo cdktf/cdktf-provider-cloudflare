@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_scripts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,101 @@ export interface DataCloudflareWorkersScriptsConfig extends cdktf.TerraformMetaA
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_scripts#account_id DataCloudflareWorkersScripts#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_scripts#max_items DataCloudflareWorkersScripts#max_items}
   */
   readonly maxItems?: number;
   /**
   * Filter scripts by tags. Format: comma-separated list of tag:allowed pairs where allowed is 'yes' or 'no'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_scripts#tags DataCloudflareWorkersScripts#tags}
   */
   readonly tags?: string;
+}
+export interface DataCloudflareWorkersScriptsResultNamedHandlers {
+}
+
+export function dataCloudflareWorkersScriptsResultNamedHandlersToTerraform(struct?: DataCloudflareWorkersScriptsResultNamedHandlers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareWorkersScriptsResultNamedHandlersToHclTerraform(struct?: DataCloudflareWorkersScriptsResultNamedHandlers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareWorkersScriptsResultNamedHandlersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareWorkersScriptsResultNamedHandlers | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareWorkersScriptsResultNamedHandlers | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // handlers - computed: true, optional: false, required: false
+  public get handlers() {
+    return this.getListAttribute('handlers');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataCloudflareWorkersScriptsResultNamedHandlersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareWorkersScriptsResultNamedHandlersOutputReference {
+    return new DataCloudflareWorkersScriptsResultNamedHandlersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataCloudflareWorkersScriptsResultPlacement {
 }
@@ -231,6 +311,16 @@ export class DataCloudflareWorkersScriptsResultOutputReference extends cdktf.Com
     }
   }
 
+  // compatibility_date - computed: true, optional: false, required: false
+  public get compatibilityDate() {
+    return this.getStringAttribute('compatibility_date');
+  }
+
+  // compatibility_flags - computed: true, optional: false, required: false
+  public get compatibilityFlags() {
+    return cdktf.Fn.tolist(this.getListAttribute('compatibility_flags'));
+  }
+
   // created_on - computed: true, optional: false, required: false
   public get createdOn() {
     return this.getStringAttribute('created_on');
@@ -239,6 +329,11 @@ export class DataCloudflareWorkersScriptsResultOutputReference extends cdktf.Com
   // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
+  }
+
+  // handlers - computed: true, optional: false, required: false
+  public get handlers() {
+    return this.getListAttribute('handlers');
   }
 
   // has_assets - computed: true, optional: false, required: false
@@ -256,14 +351,30 @@ export class DataCloudflareWorkersScriptsResultOutputReference extends cdktf.Com
     return this.getStringAttribute('id');
   }
 
+  // last_deployed_from - computed: true, optional: false, required: false
+  public get lastDeployedFrom() {
+    return this.getStringAttribute('last_deployed_from');
+  }
+
   // logpush - computed: true, optional: false, required: false
   public get logpush() {
     return this.getBooleanAttribute('logpush');
   }
 
+  // migration_tag - computed: true, optional: false, required: false
+  public get migrationTag() {
+    return this.getStringAttribute('migration_tag');
+  }
+
   // modified_on - computed: true, optional: false, required: false
   public get modifiedOn() {
     return this.getStringAttribute('modified_on');
+  }
+
+  // named_handlers - computed: true, optional: false, required: false
+  private _namedHandlers = new DataCloudflareWorkersScriptsResultNamedHandlersList(this, "named_handlers", false);
+  public get namedHandlers() {
+    return this._namedHandlers;
   }
 
   // placement - computed: true, optional: false, required: false
@@ -314,7 +425,7 @@ export class DataCloudflareWorkersScriptsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts cloudflare_workers_scripts}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_scripts cloudflare_workers_scripts}
 */
 export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
 
@@ -330,7 +441,7 @@ export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWorkersScripts resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWorkersScripts to import
-  * @param importFromId The id of the existing DataCloudflareWorkersScripts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWorkersScripts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_scripts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWorkersScripts to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -342,7 +453,7 @@ export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -353,7 +464,7 @@ export class DataCloudflareWorkersScripts extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_workers_scripts',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

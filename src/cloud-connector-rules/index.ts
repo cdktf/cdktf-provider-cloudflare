@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface CloudConnectorRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
   */
   readonly rules?: CloudConnectorRulesRules[] | cdktf.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -27,7 +27,7 @@ export interface CloudConnectorRulesRulesParameters {
   /**
   * Host to perform Cloud Connection to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
   */
   readonly host?: string;
 }
@@ -121,28 +121,28 @@ export class CloudConnectorRulesRulesParametersOutputReference extends cdktf.Com
 }
 export interface CloudConnectorRulesRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#description CloudConnectorRules#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#enabled CloudConnectorRules#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#expression CloudConnectorRules#expression}
   */
   readonly expression?: string;
   /**
   * Parameters of Cloud Connector Rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#parameters CloudConnectorRules#parameters}
   */
   readonly parameters?: CloudConnectorRulesRulesParameters;
   /**
   * Cloud Provider type
   * Available values: "aws_s3", "cloudflare_r2", "gcp_storage", "azure_storage".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#provider CloudConnectorRules#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#provider CloudConnectorRules#provider}
   */
   readonly provider?: string;
 }
@@ -379,7 +379,7 @@ export class CloudConnectorRulesRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}
 */
 export class CloudConnectorRules extends cdktf.TerraformResource {
 
@@ -395,7 +395,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudConnectorRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudConnectorRules to import
-  * @param importFromId The id of the existing CloudConnectorRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudConnectorRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudConnectorRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -407,7 +407,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -418,7 +418,7 @@ export class CloudConnectorRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_cloud_connector_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.8.4',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### TieredCache <a name="TieredCache" id="@cdktf/provider-cloudflare.tieredCache.TieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/tiered_cache cloudflare_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.tieredCache.TieredCache.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the TieredCache to import.
 
 The id of the existing TieredCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ new TieredCacheConfig {
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.value">Value</a></code> | <code>string</code> | Enable or disable the Smart Tiered Cache Available values: "on", "off". |
+| <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.value">Value</a></code> | <code>string</code> | Enable or disable the Smart Tiered Cache. Available values: "on", "off". |
 | <code><a href="#@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
@@ -853,9 +853,9 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Enable or disable the Smart Tiered Cache Available values: "on", "off".
+Enable or disable the Smart Tiered Cache. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/tiered_cache#value TieredCache#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/tiered_cache#value TieredCache#value}
 
 ---
 
@@ -869,7 +869,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
 
 ---
 

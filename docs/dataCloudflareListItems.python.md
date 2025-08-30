@@ -4,7 +4,7 @@
 
 ### DataCloudflareListItems <a name="DataCloudflareListItems" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items cloudflare_list_items}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items cloudflare_list_items}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer"></a>
 
@@ -24,6 +24,7 @@ dataCloudflareListItems.DataCloudflareListItems(
   account_id: str,
   list_id: str,
   max_items: typing.Union[int, float] = None,
+  per_page: typing.Union[int, float] = None,
   search: str = None
 )
 ```
@@ -42,6 +43,7 @@ dataCloudflareListItems.DataCloudflareListItems(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer.parameter.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer.parameter.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Amount of results to include in each paginated response. A non-negative 32 bit integer. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer.parameter.search">search</a></code> | <code>str</code> | A search query to filter returned items. |
 
 ---
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#account_id DataCloudflareListItems#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#account_id DataCloudflareListItems#account_id}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#list_id DataCloudflareListItems#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#list_id DataCloudflareListItems#list_id}
 
 ---
 
@@ -132,7 +134,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#max_items DataCloudflareListItems#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#max_items DataCloudflareListItems#max_items}
+
+---
+
+##### `per_page`<sup>Optional</sup> <a name="per_page" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.Initializer.parameter.perPage"></a>
+
+- *Type:* typing.Union[int, float]
+
+Amount of results to include in each paginated response. A non-negative 32 bit integer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#per_page DataCloudflareListItems#per_page}
 
 ---
 
@@ -144,7 +156,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#search DataCloudflareListItems#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#search DataCloudflareListItems#search}
 
 ---
 
@@ -170,6 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.resetMaxItems">reset_max_items</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.resetPerPage">reset_per_page</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.resetSearch">reset_search</a></code> | *No description.* |
 
 ---
@@ -397,6 +410,12 @@ def interpolation_for_attribute(
 def reset_max_items() -> None
 ```
 
+##### `reset_per_page` <a name="reset_per_page" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.resetPerPage"></a>
+
+```python
+def reset_per_page() -> None
+```
+
 ##### `reset_search` <a name="reset_search" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.resetSearch"></a>
 
 ```python
@@ -517,7 +536,7 @@ The construct id used in the generated config for the DataCloudflareListItems to
 
 The id of the existing DataCloudflareListItems that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -549,10 +568,12 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.listIdInput">list_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.maxItemsInput">max_items_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.perPageInput">per_page_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.searchInput">search_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.listId">list_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.search">search</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -719,6 +740,16 @@ max_items_input: typing.Union[int, float]
 
 ---
 
+##### `per_page_input`<sup>Optional</sup> <a name="per_page_input" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.perPageInput"></a>
+
+```python
+per_page_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `search_input`<sup>Optional</sup> <a name="search_input" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.searchInput"></a>
 
 ```python
@@ -753,6 +784,16 @@ list_id: str
 
 ```python
 max_items: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `per_page`<sup>Required</sup> <a name="per_page" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems.property.perPage"></a>
+
+```python
+per_page: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -807,6 +848,7 @@ dataCloudflareListItems.DataCloudflareListItemsConfig(
   account_id: str,
   list_id: str,
   max_items: typing.Union[int, float] = None,
+  per_page: typing.Union[int, float] = None,
   search: str = None
 )
 ```
@@ -825,6 +867,7 @@ dataCloudflareListItems.DataCloudflareListItemsConfig(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig.property.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Amount of results to include in each paginated response. A non-negative 32 bit integer. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig.property.search">search</a></code> | <code>str</code> | A search query to filter returned items. |
 
 ---
@@ -909,7 +952,7 @@ account_id: str
 
 The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#account_id DataCloudflareListItems#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#account_id DataCloudflareListItems#account_id}
 
 ---
 
@@ -923,7 +966,7 @@ list_id: str
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#list_id DataCloudflareListItems#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#list_id DataCloudflareListItems#list_id}
 
 ---
 
@@ -937,7 +980,21 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#max_items DataCloudflareListItems#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#max_items DataCloudflareListItems#max_items}
+
+---
+
+##### `per_page`<sup>Optional</sup> <a name="per_page" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig.property.perPage"></a>
+
+```python
+per_page: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Amount of results to include in each paginated response. A non-negative 32 bit integer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#per_page DataCloudflareListItems#per_page}
 
 ---
 
@@ -953,7 +1010,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items#search DataCloudflareListItems#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items#search DataCloudflareListItems#search}
 
 ---
 
