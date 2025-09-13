@@ -1,3 +1,3 @@
 # `cloudflare_filter`
 
-Refer to the Terraform Registry for docs: [`cloudflare_filter`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/filter).
+Refer to the Terraform Registry for docs: [`cloudflare_filter`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/filter).

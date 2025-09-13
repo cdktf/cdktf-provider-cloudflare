@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_firewall
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/dns_firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareDnsFirewallConfig extends cdktf.TerraformMetaArgu
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_firewall#account_id DataCloudflareDnsFirewall#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/dns_firewall#account_id DataCloudflareDnsFirewall#account_id}
   */
   readonly accountId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_firewall#dns_firewall_id DataCloudflareDnsFirewall#dns_firewall_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/dns_firewall#dns_firewall_id DataCloudflareDnsFirewall#dns_firewall_id}
   */
   readonly dnsFirewallId?: string;
 }
@@ -86,7 +86,7 @@ export class DataCloudflareDnsFirewallAttackMitigationOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}
 */
 export class DataCloudflareDnsFirewall extends cdktf.TerraformDataSource {
 
@@ -102,7 +102,7 @@ export class DataCloudflareDnsFirewall extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareDnsFirewall resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareDnsFirewall to import
-  * @param importFromId The id of the existing DataCloudflareDnsFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_firewall#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareDnsFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/dns_firewall#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareDnsFirewall to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -114,7 +114,7 @@ export class DataCloudflareDnsFirewall extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,7 @@ export class DataCloudflareDnsFirewall extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_dns_firewall',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
