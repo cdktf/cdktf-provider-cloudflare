@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomHostnameFallbackOrigin <a name="DataCloudflareCustomHostnameFallbackOrigin" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareCustomHostna
 
 The id of the existing DataCloudflareCustomHostnameFallbackOrigin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/custom_hostname_fallback_origin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/custom_hostname_fallback_origin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -720,7 +720,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/custom_hostname_fallback_origin#zone_id DataCloudflareCustomHostnameFallbackOrigin#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/custom_hostname_fallback_origin#zone_id DataCloudflareCustomHostnameFallbackOrigin#zone_id}
 
 ---
 
