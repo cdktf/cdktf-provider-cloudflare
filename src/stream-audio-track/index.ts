@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface StreamAudioTrackConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
   */
   readonly accountId: string;
   /**
   * The unique identifier for an additional audio track.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
   */
   readonly audioIdentifier?: string;
   /**
   * Denotes whether the audio track will be played by default in a player.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track#default StreamAudioTrack#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track#default StreamAudioTrack#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
   /**
   * A Cloudflare-generated unique identifier for a media item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
   */
   readonly identifier: string;
   /**
   * A string to uniquely identify the track amongst other audio track labels for the specified video.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track#label StreamAudioTrack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track#label StreamAudioTrack#label}
   */
   readonly label?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track cloudflare_stream_audio_track}
 */
 export class StreamAudioTrack extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class StreamAudioTrack extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StreamAudioTrack resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamAudioTrack to import
-  * @param importFromId The id of the existing StreamAudioTrack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamAudioTrack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamAudioTrack to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class StreamAudioTrack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class StreamAudioTrack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_stream_audio_track',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
