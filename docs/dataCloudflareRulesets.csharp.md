@@ -4,7 +4,7 @@
 
 ### DataCloudflareRulesets <a name="DataCloudflareRulesets" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/rulesets cloudflare_rulesets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/rulesets cloudflare_rulesets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataCloudflareRulesets to 
 
 The id of the existing DataCloudflareRulesets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/rulesets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ public string AccountId { get; set; }
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
 
 ---
 
@@ -779,7 +779,7 @@ public double MaxItems { get; set; }
 
 Maximum number of rulesets to fetch (defaults to 1000).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
 
 ---
 
@@ -793,7 +793,7 @@ public string ZoneId { get; set; }
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
 
 ---
 

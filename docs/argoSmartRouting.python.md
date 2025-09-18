@@ -4,7 +4,7 @@
 
 ### ArgoSmartRouting <a name="ArgoSmartRouting" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.argoSmartRouting.ArgoSmartRouting.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Specifies the enablement value of Argo Smart Routing. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies the zone associated with the API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the ArgoSmartRouting to import
 
 The id of the existing ArgoSmartRouting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/argo_smart_routing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,7 +979,7 @@ value: str
 
 Specifies the enablement value of Argo Smart Routing. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/argo_smart_routing#value ArgoSmartRouting#value}
 
 ---
 
@@ -993,7 +993,7 @@ zone_id: str
 
 Specifies the zone associated with the API call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/argo_smart_routing#zone_id ArgoSmartRouting#zone_id}
 
 ---
 

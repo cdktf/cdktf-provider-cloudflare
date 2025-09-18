@@ -4,7 +4,7 @@
 
 ### RegionalTieredCache <a name="RegionalTieredCache" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.regionalTieredCache.RegionalTieredCache.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RegionalTieredCache to imp
 
 The id of the existing RegionalTieredCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/regional_tiered_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/regional_tiered_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
 
 ---
 
@@ -876,7 +876,7 @@ Value *string
 
 Value of the Regional Tiered Cache zone setting. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
 
 ---
 
