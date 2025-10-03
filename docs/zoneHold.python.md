@@ -4,7 +4,7 @@
 
 ### ZoneHold <a name="ZoneHold" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold cloudflare_zone_hold}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold cloudflare_zone_hold}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneHold.ZoneHold.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -124,7 +124,7 @@ A past-dated `hold_after` value will have
 no effect on an existing, enabled hold. Providing an empty string will set its value
 to the current time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -138,7 +138,7 @@ For example, a zone hold on a zone with the hostname
 'example.com' and include_subdomains=true will block 'example.com',
 'staging.example.com', 'api.staging.example.com', etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the ZoneHold to import.
 
 The id of the existing ZoneHold that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,7 +1026,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 
 ---
 
@@ -1044,7 +1044,7 @@ A past-dated `hold_after` value will have
 no effect on an existing, enabled hold. Providing an empty string will set its value
 to the current time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 
 ---
 
@@ -1062,7 +1062,7 @@ For example, a zone hold on a zone with the hostname
 'example.com' and include_subdomains=true will block 'example.com',
 'staging.example.com', 'api.staging.example.com', etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 
 ---
 
