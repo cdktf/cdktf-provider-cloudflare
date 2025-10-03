@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DataCloudflareListItemsAConfig extends cdktf.TerraformMetaArgum
   /**
   * The Account ID for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
   */
   readonly accountId: string;
   /**
   * The unique ID of the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
   */
   readonly listId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
   */
   readonly maxItems?: number;
   /**
   * Amount of results to include in each paginated response. A non-negative 32 bit integer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
   */
   readonly perPage?: number;
   /**
   * A search query to filter returned items. Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
   */
   readonly search?: string;
 }
@@ -300,7 +300,7 @@ export class DataCloudflareListItemsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items cloudflare_list_items}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items cloudflare_list_items}
 */
 export class DataCloudflareListItemsA extends cdktf.TerraformDataSource {
 
@@ -316,7 +316,7 @@ export class DataCloudflareListItemsA extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareListItemsA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareListItemsA to import
-  * @param importFromId The id of the existing DataCloudflareListItemsA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareListItemsA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareListItemsA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -328,7 +328,7 @@ export class DataCloudflareListItemsA extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items cloudflare_list_items} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items cloudflare_list_items} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +339,7 @@ export class DataCloudflareListItemsA extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_list_items',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

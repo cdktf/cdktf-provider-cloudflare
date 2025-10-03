@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_dns
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/email_routing_dns
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface EmailRoutingDnsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Domain of your zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
   */
   readonly zoneId: string;
 }
@@ -722,7 +722,7 @@ export class EmailRoutingDnsResultInfoOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_dns cloudflare_email_routing_dns}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}
 */
 export class EmailRoutingDns extends cdktf.TerraformResource {
 
@@ -738,7 +738,7 @@ export class EmailRoutingDns extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EmailRoutingDns resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailRoutingDns to import
-  * @param importFromId The id of the existing EmailRoutingDns that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailRoutingDns that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailRoutingDns to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -750,7 +750,7 @@ export class EmailRoutingDns extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -761,7 +761,7 @@ export class EmailRoutingDns extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_routing_dns',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -812,13 +812,16 @@ export class EmailRoutingDns extends cdktf.TerraformResource {
     return this.getStringAttribute('modified');
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {

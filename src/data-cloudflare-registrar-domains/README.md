@@ -1,3 +1,3 @@
 # `data_cloudflare_registrar_domains`
 
-Refer to the Terraform Registry for docs: [`data_cloudflare_registrar_domains`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/registrar_domains).
+Refer to the Terraform Registry for docs: [`data_cloudflare_registrar_domains`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/registrar_domains).

@@ -1,3 +1,3 @@
 # `cloudflare_dns_zone_transfers_outgoing`
 
-Refer to the Terraform Registry for docs: [`cloudflare_dns_zone_transfers_outgoing`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_outgoing).
+Refer to the Terraform Registry for docs: [`cloudflare_dns_zone_transfers_outgoing`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_outgoing).

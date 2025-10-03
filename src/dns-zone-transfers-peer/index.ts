@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface DnsZoneTransfersPeerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer#account_id DnsZoneTransfersPeer#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer#account_id DnsZoneTransfersPeer#account_id}
   */
   readonly accountId: string;
   /**
   * IPv4/IPv6 address of primary or secondary nameserver, depending on what zone this peer is linked to. For primary zones this IP defines the IP of the secondary nameserver Cloudflare will NOTIFY upon zone changes. For secondary zones this IP defines the IP of the primary nameserver Cloudflare will send AXFR/IXFR requests to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer#ip DnsZoneTransfersPeer#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer#ip DnsZoneTransfersPeer#ip}
   */
   readonly ip?: string;
   /**
   * Enable IXFR transfer protocol, default is AXFR. Only applicable to secondary zones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer#ixfr_enable DnsZoneTransfersPeer#ixfr_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer#ixfr_enable DnsZoneTransfersPeer#ixfr_enable}
   */
   readonly ixfrEnable?: boolean | cdktf.IResolvable;
   /**
   * The name of the peer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer#name DnsZoneTransfersPeer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer#name DnsZoneTransfersPeer#name}
   */
   readonly name: string;
   /**
   * DNS port of primary or secondary nameserver, depending on what zone this peer is linked to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer#port DnsZoneTransfersPeer#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer#port DnsZoneTransfersPeer#port}
   */
   readonly port?: number;
   /**
   * TSIG authentication will be used for zone transfer if configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer#tsig_id DnsZoneTransfersPeer#tsig_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer#tsig_id DnsZoneTransfersPeer#tsig_id}
   */
   readonly tsigId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}
 */
 export class DnsZoneTransfersPeer extends cdktf.TerraformResource {
 
@@ -65,7 +65,7 @@ export class DnsZoneTransfersPeer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DnsZoneTransfersPeer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsZoneTransfersPeer to import
-  * @param importFromId The id of the existing DnsZoneTransfersPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsZoneTransfersPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsZoneTransfersPeer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -77,7 +77,7 @@ export class DnsZoneTransfersPeer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class DnsZoneTransfersPeer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dns_zone_transfers_peer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

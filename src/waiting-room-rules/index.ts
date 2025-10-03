@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface WaitingRoomRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#rules WaitingRoomRules#rules}
   */
   readonly rules: WaitingRoomRulesRules[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
   */
   readonly waitingRoomId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -32,25 +32,25 @@ export interface WaitingRoomRulesRules {
   * The action to take when the expression matches.
   * Available values: "bypass_waiting_room".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
   */
   readonly action: string;
   /**
   * The description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
   */
   readonly description?: string;
   /**
   * When set to true, the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Criteria defining when there is a match for the current rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
   */
   readonly expression: string;
 }
@@ -247,7 +247,7 @@ export class WaitingRoomRulesRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}
 */
 export class WaitingRoomRules extends cdktf.TerraformResource {
 
@@ -263,7 +263,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaitingRoomRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoomRules to import
-  * @param importFromId The id of the existing WaitingRoomRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoomRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoomRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -275,7 +275,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -286,7 +286,7 @@ export class WaitingRoomRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

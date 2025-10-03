@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,26 +16,26 @@ export interface DataCloudflareCustomSslsConfig extends cdktf.TerraformMetaArgum
   * Whether to match all search requirements or at least one (any).
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
   */
   readonly match?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
   */
   readonly maxItems?: number;
   /**
   * Status of the zone's custom SSL.
   * Available values: "active", "expired", "deleted", "pending", "initializing".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
   */
   readonly status?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
   */
   readonly zoneId: string;
 }
@@ -396,7 +396,7 @@ export class DataCloudflareCustomSslsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls cloudflare_custom_ssls}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}
 */
 export class DataCloudflareCustomSsls extends cdktf.TerraformDataSource {
 
@@ -412,7 +412,7 @@ export class DataCloudflareCustomSsls extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareCustomSsls resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCustomSsls to import
-  * @param importFromId The id of the existing DataCloudflareCustomSsls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCustomSsls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCustomSsls to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -424,7 +424,7 @@ export class DataCloudflareCustomSsls extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -435,7 +435,7 @@ export class DataCloudflareCustomSsls extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_custom_ssls',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

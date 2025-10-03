@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,80 +15,89 @@ export interface WorkerVersionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#account_id WorkerVersion#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
   */
   readonly accountId: string;
   /**
   * Metadata about the version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#annotations WorkerVersion#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
   */
   readonly annotations?: WorkerVersionAnnotations;
   /**
   * Configuration for assets within a Worker.
+  * 
+  * [`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and
+  * [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files should be
+  * included as modules named `_headers` and `_redirects` with content type `text/plain`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#assets WorkerVersion#assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#assets WorkerVersion#assets}
   */
   readonly assets?: WorkerVersionAssets;
   /**
   * List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#bindings WorkerVersion#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
   */
   readonly bindings?: WorkerVersionBindings[] | cdktf.IResolvable;
   /**
   * Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * Resource limits enforced at runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#limits WorkerVersion#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#limits WorkerVersion#limits}
   */
   readonly limits?: WorkerVersionLimits;
   /**
   * The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#main_module WorkerVersion#main_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
   */
   readonly mainModule?: string;
   /**
   * Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#migrations WorkerVersion#migrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
   */
   readonly migrations?: WorkerVersionMigrations;
   /**
   * Code, sourcemaps, and other content used at runtime.
+  * 
+  * This includes [`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and
+  * [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files used to configure 
+  * [Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be 
+  * included as modules named `_headers` and `_redirects` with content type `text/plain`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#modules WorkerVersion#modules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#modules WorkerVersion#modules}
   */
   readonly modules?: WorkerVersionModules[] | cdktf.IResolvable;
   /**
   * Placement settings for the version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#placement WorkerVersion#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#placement WorkerVersion#placement}
   */
   readonly placement?: WorkerVersionPlacement;
   /**
   * Usage model for the version.
   * Available values: "standard", "bundled", "unbound".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
   */
   readonly usageModel?: string;
   /**
-  * Identifier.
+  * Identifier for the Worker, which can be ID or name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
   */
   readonly workerId: string;
 }
@@ -96,13 +105,13 @@ export interface WorkerVersionAnnotations {
   /**
   * Human-readable message about the version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
   */
   readonly workersMessage?: string;
   /**
   * User-provided identifier for the version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
   */
   readonly workersTag?: string;
 }
@@ -233,20 +242,20 @@ export interface WorkerVersionAssetsConfig {
   * Determines the redirects and rewrites of requests for HTML content.
   * Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
   */
   readonly htmlHandling?: string;
   /**
   * Determines the response when a request does not match a static asset, and there is no Worker script.
   * Available values: "none", "404-page", "single-page-application".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
   */
   readonly notFoundHandling?: string;
   /**
   * Contains a list path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either '/' or '!/'. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
   */
   readonly runWorkerFirst?: string[];
 }
@@ -348,7 +357,7 @@ export class WorkerVersionAssetsConfigOutputReference extends cdktf.ComplexObjec
     }
   }
 
-  // html_handling - computed: false, optional: true, required: false
+  // html_handling - computed: true, optional: true, required: false
   private _htmlHandling?: string; 
   public get htmlHandling() {
     return this.getStringAttribute('html_handling');
@@ -364,7 +373,7 @@ export class WorkerVersionAssetsConfigOutputReference extends cdktf.ComplexObjec
     return this._htmlHandling;
   }
 
-  // not_found_handling - computed: false, optional: true, required: false
+  // not_found_handling - computed: true, optional: true, required: false
   private _notFoundHandling?: string; 
   public get notFoundHandling() {
     return this.getStringAttribute('not_found_handling');
@@ -380,7 +389,7 @@ export class WorkerVersionAssetsConfigOutputReference extends cdktf.ComplexObjec
     return this._notFoundHandling;
   }
 
-  // run_worker_first - computed: false, optional: true, required: false
+  // run_worker_first - computed: true, optional: true, required: false
   private _runWorkerFirst?: string[]; 
   public get runWorkerFirst() {
     return this.getListAttribute('run_worker_first');
@@ -400,13 +409,19 @@ export interface WorkerVersionAssets {
   /**
   * Configuration for assets within a Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#config WorkerVersion#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#config WorkerVersion#config}
   */
   readonly config?: WorkerVersionAssetsConfig;
   /**
+  * Path to the directory containing asset files to upload.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#directory WorkerVersion#directory}
+  */
+  readonly directory?: string;
+  /**
   * Token provided upon successful upload of all files from a registered manifest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#jwt WorkerVersion#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#jwt WorkerVersion#jwt}
   */
   readonly jwt?: string;
 }
@@ -418,6 +433,7 @@ export function workerVersionAssetsToTerraform(struct?: WorkerVersionAssets | cd
   }
   return {
     config: workerVersionAssetsConfigToTerraform(struct!.config),
+    directory: cdktf.stringToTerraform(struct!.directory),
     jwt: cdktf.stringToTerraform(struct!.jwt),
   }
 }
@@ -434,6 +450,12 @@ export function workerVersionAssetsToHclTerraform(struct?: WorkerVersionAssets |
       isBlock: true,
       type: "struct",
       storageClassType: "WorkerVersionAssetsConfig",
+    },
+    directory: {
+      value: cdktf.stringToHclTerraform(struct!.directory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     jwt: {
       value: cdktf.stringToHclTerraform(struct!.jwt),
@@ -469,6 +491,10 @@ export class WorkerVersionAssetsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.config = this._config?.internalValue;
     }
+    if (this._directory !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.directory = this._directory;
+    }
     if (this._jwt !== undefined) {
       hasAnyValues = true;
       internalValueResult.jwt = this._jwt;
@@ -481,6 +507,7 @@ export class WorkerVersionAssetsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._config.internalValue = undefined;
+      this._directory = undefined;
       this._jwt = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -491,11 +518,17 @@ export class WorkerVersionAssetsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._config.internalValue = value.config;
+      this._directory = value.directory;
       this._jwt = value.jwt;
     }
   }
 
-  // config - computed: false, optional: true, required: false
+  // asset_manifest_sha256 - computed: true, optional: false, required: false
+  public get assetManifestSha256() {
+    return this.getStringAttribute('asset_manifest_sha256');
+  }
+
+  // config - computed: true, optional: true, required: false
   private _config = new WorkerVersionAssetsConfigOutputReference(this, "config");
   public get config() {
     return this._config;
@@ -509,6 +542,22 @@ export class WorkerVersionAssetsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get configInput() {
     return this._config.internalValue;
+  }
+
+  // directory - computed: false, optional: true, required: false
+  private _directory?: string; 
+  public get directory() {
+    return this.getStringAttribute('directory');
+  }
+  public set directory(value: string) {
+    this._directory = value;
+  }
+  public resetDirectory() {
+    this._directory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryInput() {
+    return this._directory;
   }
 
   // jwt - computed: false, optional: true, required: false
@@ -531,13 +580,13 @@ export interface WorkerVersionBindingsOutboundWorker {
   /**
   * Environment of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#environment WorkerVersion#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#environment WorkerVersion#environment}
   */
   readonly environment?: string;
   /**
   * Name of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#service WorkerVersion#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#service WorkerVersion#service}
   */
   readonly service?: string;
 }
@@ -662,13 +711,13 @@ export interface WorkerVersionBindingsOutbound {
   /**
   * Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#params WorkerVersion#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#params WorkerVersion#params}
   */
   readonly params?: string[];
   /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#worker WorkerVersion#worker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#worker WorkerVersion#worker}
   */
   readonly worker?: WorkerVersionBindingsOutboundWorker;
 }
@@ -793,50 +842,68 @@ export interface WorkerVersionBindings {
   /**
   * Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
   */
   readonly algorithm?: string;
   /**
+  * List of allowed destination addresses.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#allowed_destination_addresses WorkerVersion#allowed_destination_addresses}
+  */
+  readonly allowedDestinationAddresses?: string[];
+  /**
+  * List of allowed sender addresses.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#allowed_sender_addresses WorkerVersion#allowed_sender_addresses}
+  */
+  readonly allowedSenderAddresses?: string[];
+  /**
   * R2 bucket to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * Identifier of the certificate to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * The exported class name of the Durable Object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#class_name WorkerVersion#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#class_name WorkerVersion#class_name}
   */
   readonly className?: string;
   /**
   * The name of the dataset to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#dataset WorkerVersion#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#dataset WorkerVersion#dataset}
   */
   readonly dataset?: string;
   /**
+  * Destination address for the email.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#destination_address WorkerVersion#destination_address}
+  */
+  readonly destinationAddress?: string;
+  /**
   * The environment of the script_name to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#environment WorkerVersion#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#environment WorkerVersion#environment}
   */
   readonly environment?: string;
   /**
   * Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
   * Available values: "raw", "pkcs8", "spki", "jwk".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#format WorkerVersion#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#format WorkerVersion#format}
   */
   readonly format?: string;
   /**
   * Identifier of the D1 database to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#id WorkerVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#id WorkerVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -845,110 +912,135 @@ export interface WorkerVersionBindings {
   /**
   * Name of the Vectorize index to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#index_name WorkerVersion#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#index_name WorkerVersion#index_name}
   */
   readonly indexName?: string;
   /**
   * JSON data to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#json WorkerVersion#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#json WorkerVersion#json}
   */
   readonly json?: string;
   /**
+  * The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket.
+  * Available values: "eu", "fedramp".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#jurisdiction WorkerVersion#jurisdiction}
+  */
+  readonly jurisdiction?: string;
+  /**
   * Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
   */
   readonly keyBase64?: string;
   /**
   * Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
   */
   readonly keyJwk?: string;
   /**
   * A JavaScript variable name for the binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#name WorkerVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#name WorkerVersion#name}
   */
   readonly name: string;
   /**
   * Namespace to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#namespace WorkerVersion#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#namespace WorkerVersion#namespace}
   */
   readonly namespace?: string;
   /**
   * Namespace identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
   */
   readonly namespaceId?: string;
   /**
+  * The old name of the inherited binding. If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#old_name WorkerVersion#old_name}
+  */
+  readonly oldName?: string;
+  /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#outbound WorkerVersion#outbound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#outbound WorkerVersion#outbound}
   */
   readonly outbound?: WorkerVersionBindingsOutbound;
   /**
+  * The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#part WorkerVersion#part}
+  */
+  readonly part?: string;
+  /**
   * Name of the Pipeline to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
   */
   readonly pipeline?: string;
   /**
   * Name of the Queue to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
   */
   readonly queueName?: string;
   /**
   * The script where the Durable Object is defined, if it is external to this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#script_name WorkerVersion#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#script_name WorkerVersion#script_name}
   */
   readonly scriptName?: string;
   /**
   * Name of the secret in the store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
   */
   readonly secretName?: string;
   /**
   * Name of Worker to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#service WorkerVersion#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#service WorkerVersion#service}
   */
   readonly service?: string;
   /**
   * ID of the store containing the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#store_id WorkerVersion#store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#store_id WorkerVersion#store_id}
   */
   readonly storeId?: string;
   /**
   * The text value to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#text WorkerVersion#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#text WorkerVersion#text}
   */
   readonly text?: string;
   /**
   * The kind of resource that the binding provides.
-  * Available values: "ai", "analytics_engine", "assets", "browser", "d1", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "r2_bucket", "secret_text", "service", "tail_consumer", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow".
+  * Available values: "ai", "analytics_engine", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "r2_bucket", "secret_text", "send_email", "service", "tail_consumer", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow", "wasm_module".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#type WorkerVersion#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#type WorkerVersion#type}
   */
   readonly type: string;
   /**
   * Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#usages WorkerVersion#usages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#usages WorkerVersion#usages}
   */
   readonly usages?: string[];
   /**
+  * Identifier for the version to inherit the binding from, which can be the version ID or the literal "latest" to inherit from the latest version. Defaults to inheriting the binding from the latest version.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#version_id WorkerVersion#version_id}
+  */
+  readonly versionId?: string;
+  /**
   * Name of the Workflow to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
   */
   readonly workflowName?: string;
 }
@@ -960,21 +1052,27 @@ export function workerVersionBindingsToTerraform(struct?: WorkerVersionBindings 
   }
   return {
     algorithm: cdktf.stringToTerraform(struct!.algorithm),
+    allowed_destination_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedDestinationAddresses),
+    allowed_sender_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedSenderAddresses),
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
     certificate_id: cdktf.stringToTerraform(struct!.certificateId),
     class_name: cdktf.stringToTerraform(struct!.className),
     dataset: cdktf.stringToTerraform(struct!.dataset),
+    destination_address: cdktf.stringToTerraform(struct!.destinationAddress),
     environment: cdktf.stringToTerraform(struct!.environment),
     format: cdktf.stringToTerraform(struct!.format),
     id: cdktf.stringToTerraform(struct!.id),
     index_name: cdktf.stringToTerraform(struct!.indexName),
     json: cdktf.stringToTerraform(struct!.json),
+    jurisdiction: cdktf.stringToTerraform(struct!.jurisdiction),
     key_base64: cdktf.stringToTerraform(struct!.keyBase64),
     key_jwk: cdktf.stringToTerraform(struct!.keyJwk),
     name: cdktf.stringToTerraform(struct!.name),
     namespace: cdktf.stringToTerraform(struct!.namespace),
     namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
+    old_name: cdktf.stringToTerraform(struct!.oldName),
     outbound: workerVersionBindingsOutboundToTerraform(struct!.outbound),
+    part: cdktf.stringToTerraform(struct!.part),
     pipeline: cdktf.stringToTerraform(struct!.pipeline),
     queue_name: cdktf.stringToTerraform(struct!.queueName),
     script_name: cdktf.stringToTerraform(struct!.scriptName),
@@ -984,6 +1082,7 @@ export function workerVersionBindingsToTerraform(struct?: WorkerVersionBindings 
     text: cdktf.stringToTerraform(struct!.text),
     type: cdktf.stringToTerraform(struct!.type),
     usages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.usages),
+    version_id: cdktf.stringToTerraform(struct!.versionId),
     workflow_name: cdktf.stringToTerraform(struct!.workflowName),
   }
 }
@@ -1000,6 +1099,18 @@ export function workerVersionBindingsToHclTerraform(struct?: WorkerVersionBindin
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    allowed_destination_addresses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedDestinationAddresses),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_sender_addresses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedSenderAddresses),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
     bucket_name: {
       value: cdktf.stringToHclTerraform(struct!.bucketName),
@@ -1021,6 +1132,12 @@ export function workerVersionBindingsToHclTerraform(struct?: WorkerVersionBindin
     },
     dataset: {
       value: cdktf.stringToHclTerraform(struct!.dataset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_address: {
+      value: cdktf.stringToHclTerraform(struct!.destinationAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1055,6 +1172,12 @@ export function workerVersionBindingsToHclTerraform(struct?: WorkerVersionBindin
       type: "simple",
       storageClassType: "string",
     },
+    jurisdiction: {
+      value: cdktf.stringToHclTerraform(struct!.jurisdiction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     key_base64: {
       value: cdktf.stringToHclTerraform(struct!.keyBase64),
       isBlock: false,
@@ -1085,11 +1208,23 @@ export function workerVersionBindingsToHclTerraform(struct?: WorkerVersionBindin
       type: "simple",
       storageClassType: "string",
     },
+    old_name: {
+      value: cdktf.stringToHclTerraform(struct!.oldName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     outbound: {
       value: workerVersionBindingsOutboundToHclTerraform(struct!.outbound),
       isBlock: true,
       type: "struct",
       storageClassType: "WorkerVersionBindingsOutbound",
+    },
+    part: {
+      value: cdktf.stringToHclTerraform(struct!.part),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     pipeline: {
       value: cdktf.stringToHclTerraform(struct!.pipeline),
@@ -1145,6 +1280,12 @@ export function workerVersionBindingsToHclTerraform(struct?: WorkerVersionBindin
       type: "set",
       storageClassType: "stringList",
     },
+    version_id: {
+      value: cdktf.stringToHclTerraform(struct!.versionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     workflow_name: {
       value: cdktf.stringToHclTerraform(struct!.workflowName),
       isBlock: false,
@@ -1181,6 +1322,14 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.algorithm = this._algorithm;
     }
+    if (this._allowedDestinationAddresses !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedDestinationAddresses = this._allowedDestinationAddresses;
+    }
+    if (this._allowedSenderAddresses !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedSenderAddresses = this._allowedSenderAddresses;
+    }
     if (this._bucketName !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketName = this._bucketName;
@@ -1196,6 +1345,10 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
     if (this._dataset !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataset = this._dataset;
+    }
+    if (this._destinationAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationAddress = this._destinationAddress;
     }
     if (this._environment !== undefined) {
       hasAnyValues = true;
@@ -1217,6 +1370,10 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.json = this._json;
     }
+    if (this._jurisdiction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jurisdiction = this._jurisdiction;
+    }
     if (this._keyBase64 !== undefined) {
       hasAnyValues = true;
       internalValueResult.keyBase64 = this._keyBase64;
@@ -1237,9 +1394,17 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.namespaceId = this._namespaceId;
     }
+    if (this._oldName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oldName = this._oldName;
+    }
     if (this._outbound?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.outbound = this._outbound?.internalValue;
+    }
+    if (this._part !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.part = this._part;
     }
     if (this._pipeline !== undefined) {
       hasAnyValues = true;
@@ -1277,6 +1442,10 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.usages = this._usages;
     }
+    if (this._versionId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.versionId = this._versionId;
+    }
     if (this._workflowName !== undefined) {
       hasAnyValues = true;
       internalValueResult.workflowName = this._workflowName;
@@ -1289,21 +1458,27 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._algorithm = undefined;
+      this._allowedDestinationAddresses = undefined;
+      this._allowedSenderAddresses = undefined;
       this._bucketName = undefined;
       this._certificateId = undefined;
       this._className = undefined;
       this._dataset = undefined;
+      this._destinationAddress = undefined;
       this._environment = undefined;
       this._format = undefined;
       this._id = undefined;
       this._indexName = undefined;
       this._json = undefined;
+      this._jurisdiction = undefined;
       this._keyBase64 = undefined;
       this._keyJwk = undefined;
       this._name = undefined;
       this._namespace = undefined;
       this._namespaceId = undefined;
+      this._oldName = undefined;
       this._outbound.internalValue = undefined;
+      this._part = undefined;
       this._pipeline = undefined;
       this._queueName = undefined;
       this._scriptName = undefined;
@@ -1313,6 +1488,7 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       this._text = undefined;
       this._type = undefined;
       this._usages = undefined;
+      this._versionId = undefined;
       this._workflowName = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -1323,21 +1499,27 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._algorithm = value.algorithm;
+      this._allowedDestinationAddresses = value.allowedDestinationAddresses;
+      this._allowedSenderAddresses = value.allowedSenderAddresses;
       this._bucketName = value.bucketName;
       this._certificateId = value.certificateId;
       this._className = value.className;
       this._dataset = value.dataset;
+      this._destinationAddress = value.destinationAddress;
       this._environment = value.environment;
       this._format = value.format;
       this._id = value.id;
       this._indexName = value.indexName;
       this._json = value.json;
+      this._jurisdiction = value.jurisdiction;
       this._keyBase64 = value.keyBase64;
       this._keyJwk = value.keyJwk;
       this._name = value.name;
       this._namespace = value.namespace;
       this._namespaceId = value.namespaceId;
+      this._oldName = value.oldName;
       this._outbound.internalValue = value.outbound;
+      this._part = value.part;
       this._pipeline = value.pipeline;
       this._queueName = value.queueName;
       this._scriptName = value.scriptName;
@@ -1347,6 +1529,7 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
       this._text = value.text;
       this._type = value.type;
       this._usages = value.usages;
+      this._versionId = value.versionId;
       this._workflowName = value.workflowName;
     }
   }
@@ -1365,6 +1548,38 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get algorithmInput() {
     return this._algorithm;
+  }
+
+  // allowed_destination_addresses - computed: false, optional: true, required: false
+  private _allowedDestinationAddresses?: string[]; 
+  public get allowedDestinationAddresses() {
+    return this.getListAttribute('allowed_destination_addresses');
+  }
+  public set allowedDestinationAddresses(value: string[]) {
+    this._allowedDestinationAddresses = value;
+  }
+  public resetAllowedDestinationAddresses() {
+    this._allowedDestinationAddresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedDestinationAddressesInput() {
+    return this._allowedDestinationAddresses;
+  }
+
+  // allowed_sender_addresses - computed: false, optional: true, required: false
+  private _allowedSenderAddresses?: string[]; 
+  public get allowedSenderAddresses() {
+    return this.getListAttribute('allowed_sender_addresses');
+  }
+  public set allowedSenderAddresses(value: string[]) {
+    this._allowedSenderAddresses = value;
+  }
+  public resetAllowedSenderAddresses() {
+    this._allowedSenderAddresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedSenderAddressesInput() {
+    return this._allowedSenderAddresses;
   }
 
   // bucket_name - computed: false, optional: true, required: false
@@ -1429,6 +1644,22 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get datasetInput() {
     return this._dataset;
+  }
+
+  // destination_address - computed: false, optional: true, required: false
+  private _destinationAddress?: string; 
+  public get destinationAddress() {
+    return this.getStringAttribute('destination_address');
+  }
+  public set destinationAddress(value: string) {
+    this._destinationAddress = value;
+  }
+  public resetDestinationAddress() {
+    this._destinationAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationAddressInput() {
+    return this._destinationAddress;
   }
 
   // environment - computed: false, optional: true, required: false
@@ -1511,6 +1742,22 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
     return this._json;
   }
 
+  // jurisdiction - computed: false, optional: true, required: false
+  private _jurisdiction?: string; 
+  public get jurisdiction() {
+    return this.getStringAttribute('jurisdiction');
+  }
+  public set jurisdiction(value: string) {
+    this._jurisdiction = value;
+  }
+  public resetJurisdiction() {
+    this._jurisdiction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jurisdictionInput() {
+    return this._jurisdiction;
+  }
+
   // key_base64 - computed: false, optional: true, required: false
   private _keyBase64?: string; 
   public get keyBase64() {
@@ -1588,6 +1835,22 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
     return this._namespaceId;
   }
 
+  // old_name - computed: false, optional: true, required: false
+  private _oldName?: string; 
+  public get oldName() {
+    return this.getStringAttribute('old_name');
+  }
+  public set oldName(value: string) {
+    this._oldName = value;
+  }
+  public resetOldName() {
+    this._oldName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oldNameInput() {
+    return this._oldName;
+  }
+
   // outbound - computed: false, optional: true, required: false
   private _outbound = new WorkerVersionBindingsOutboundOutputReference(this, "outbound");
   public get outbound() {
@@ -1602,6 +1865,22 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get outboundInput() {
     return this._outbound.internalValue;
+  }
+
+  // part - computed: false, optional: true, required: false
+  private _part?: string; 
+  public get part() {
+    return this.getStringAttribute('part');
+  }
+  public set part(value: string) {
+    this._part = value;
+  }
+  public resetPart() {
+    this._part = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partInput() {
+    return this._part;
   }
 
   // pipeline - computed: false, optional: true, required: false
@@ -1745,6 +2024,22 @@ export class WorkerVersionBindingsOutputReference extends cdktf.ComplexObject {
     return this._usages;
   }
 
+  // version_id - computed: false, optional: true, required: false
+  private _versionId?: string; 
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+  public set versionId(value: string) {
+    this._versionId = value;
+  }
+  public resetVersionId() {
+    this._versionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionIdInput() {
+    return this._versionId;
+  }
+
   // workflow_name - computed: false, optional: true, required: false
   private _workflowName?: string; 
   public get workflowName() {
@@ -1785,7 +2080,7 @@ export interface WorkerVersionLimits {
   /**
   * CPU time limit in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
   */
   readonly cpuMs: number;
 }
@@ -1876,11 +2171,11 @@ export class WorkerVersionLimitsOutputReference extends cdktf.ComplexObject {
 }
 export interface WorkerVersionMigrationsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}
   */
   readonly to?: string;
 }
@@ -2025,11 +2320,11 @@ export class WorkerVersionMigrationsRenamedClassesList extends cdktf.ComplexList
 }
 export interface WorkerVersionMigrationsStepsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}
   */
   readonly to?: string;
 }
@@ -2174,15 +2469,15 @@ export class WorkerVersionMigrationsStepsRenamedClassesList extends cdktf.Comple
 }
 export interface WorkerVersionMigrationsStepsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from_script WorkerVersion#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from_script WorkerVersion#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}
   */
   readonly to?: string;
 }
@@ -2358,31 +2653,31 @@ export interface WorkerVersionMigrationsSteps {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
   */
   readonly renamedClasses?: WorkerVersionMigrationsStepsRenamedClasses[] | cdktf.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
   */
   readonly transferredClasses?: WorkerVersionMigrationsStepsTransferredClasses[] | cdktf.IResolvable;
 }
@@ -2614,15 +2909,15 @@ export class WorkerVersionMigrationsStepsList extends cdktf.ComplexList {
 }
 export interface WorkerVersionMigrationsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from_script WorkerVersion#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from_script WorkerVersion#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}
   */
   readonly to?: string;
 }
@@ -2798,49 +3093,49 @@ export interface WorkerVersionMigrations {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * Tag to set as the latest migration tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
   */
   readonly newTag?: string;
   /**
   * Tag used to verify against the latest migration tag for this Worker. If they don't match, the upload is rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
   */
   readonly oldTag?: string;
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
   */
   readonly renamedClasses?: WorkerVersionMigrationsRenamedClasses[] | cdktf.IResolvable;
   /**
   * Migrations to apply in order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#steps WorkerVersion#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#steps WorkerVersion#steps}
   */
   readonly steps?: WorkerVersionMigrationsSteps[] | cdktf.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
   */
   readonly transferredClasses?: WorkerVersionMigrationsTransferredClasses[] | cdktf.IResolvable;
 }
@@ -3139,19 +3434,19 @@ export interface WorkerVersionModules {
   /**
   * The file path of the module content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#content_file WorkerVersion#content_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#content_file WorkerVersion#content_file}
   */
   readonly contentFile: string;
   /**
   * The content type of the module.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#content_type WorkerVersion#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#content_type WorkerVersion#content_type}
   */
   readonly contentType: string;
   /**
   * The name of the module.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#name WorkerVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#name WorkerVersion#name}
   */
   readonly name: string;
 }
@@ -3324,7 +3619,7 @@ export interface WorkerVersionPlacement {
   * Placement mode for the version.
   * Available values: "smart".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#mode WorkerVersion#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#mode WorkerVersion#mode}
   */
   readonly mode?: string;
 }
@@ -3418,7 +3713,7 @@ export class WorkerVersionPlacementOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version cloudflare_worker_version}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version cloudflare_worker_version}
 */
 export class WorkerVersion extends cdktf.TerraformResource {
 
@@ -3434,7 +3729,7 @@ export class WorkerVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkerVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkerVersion to import
-  * @param importFromId The id of the existing WorkerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkerVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3446,7 +3741,7 @@ export class WorkerVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version cloudflare_worker_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version cloudflare_worker_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3457,7 +3752,7 @@ export class WorkerVersion extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_worker_version',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

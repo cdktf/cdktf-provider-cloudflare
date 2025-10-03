@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +16,13 @@ export interface DataCloudflarePageShieldScriptsListConfig extends cdktf.Terrafo
   * The direction used to sort returned scripts.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#direction DataCloudflarePageShieldScriptsList#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#direction DataCloudflarePageShieldScriptsList#direction}
   */
   readonly direction?: string;
   /**
   * When true, excludes scripts seen in a `/cdn-cgi` path from the returned scripts. The default value is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#exclude_cdn_cgi DataCloudflarePageShieldScriptsList#exclude_cdn_cgi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#exclude_cdn_cgi DataCloudflarePageShieldScriptsList#exclude_cdn_cgi}
   */
   readonly excludeCdnCgi?: boolean | cdktf.IResolvable;
   /**
@@ -30,20 +30,20 @@ export interface DataCloudflarePageShieldScriptsListConfig extends cdktf.Terrafo
   * content matches and they share the same url host and zone hostname. In such case, we return the most
   * recent script for the URL host and zone hostname combination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#exclude_duplicates DataCloudflarePageShieldScriptsList#exclude_duplicates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#exclude_duplicates DataCloudflarePageShieldScriptsList#exclude_duplicates}
   */
   readonly excludeDuplicates?: boolean | cdktf.IResolvable;
   /**
   * Excludes scripts whose URL contains one of the URL-encoded URLs separated by commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#exclude_urls DataCloudflarePageShieldScriptsList#exclude_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#exclude_urls DataCloudflarePageShieldScriptsList#exclude_urls}
   */
   readonly excludeUrls?: string;
   /**
-  * Export the list of scripts as a file.
+  * Export the list of scripts as a file, limited to 50000 entries.
   * Available values: "csv".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#export DataCloudflarePageShieldScriptsList#export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#export DataCloudflarePageShieldScriptsList#export}
   */
   readonly export?: string;
   /**
@@ -52,20 +52,20 @@ export interface DataCloudflarePageShieldScriptsListConfig extends cdktf.Terrafo
   * Wildcards are supported at the start and end of each hostname to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#hosts DataCloudflarePageShieldScriptsList#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#hosts DataCloudflarePageShieldScriptsList#hosts}
   */
   readonly hosts?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#max_items DataCloudflarePageShieldScriptsList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#max_items DataCloudflarePageShieldScriptsList#max_items}
   */
   readonly maxItems?: number;
   /**
   * The field used to sort returned scripts.
   * Available values: "first_seen_at", "last_seen_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#order_by DataCloudflarePageShieldScriptsList#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#order_by DataCloudflarePageShieldScriptsList#order_by}
   */
   readonly orderBy?: string;
   /**
@@ -75,7 +75,7 @@ export interface DataCloudflarePageShieldScriptsListConfig extends cdktf.Terrafo
   * with the applied filters in a single page. This feature is best-effort and it may only work for zones with 
   * a low number of scripts
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#page DataCloudflarePageShieldScriptsList#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#page DataCloudflarePageShieldScriptsList#page}
   */
   readonly page?: string;
   /**
@@ -84,37 +84,37 @@ export interface DataCloudflarePageShieldScriptsListConfig extends cdktf.Terrafo
   * Wildcards are supported at the start and end of each page URL to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#page_url DataCloudflarePageShieldScriptsList#page_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#page_url DataCloudflarePageShieldScriptsList#page_url}
   */
   readonly pageUrl?: string;
   /**
   * The number of results per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#per_page DataCloudflarePageShieldScriptsList#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#per_page DataCloudflarePageShieldScriptsList#per_page}
   */
   readonly perPage?: number;
   /**
   * When true, malicious scripts appear first in the returned scripts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#prioritize_malicious DataCloudflarePageShieldScriptsList#prioritize_malicious}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#prioritize_malicious DataCloudflarePageShieldScriptsList#prioritize_malicious}
   */
   readonly prioritizeMalicious?: boolean | cdktf.IResolvable;
   /**
   * Filters the returned scripts using a comma-separated list of scripts statuses. Accepted values: `active`, `infrequent`, and `inactive`. The default value is `active`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#status DataCloudflarePageShieldScriptsList#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#status DataCloudflarePageShieldScriptsList#status}
   */
   readonly status?: string;
   /**
   * Includes scripts whose URL contain one or more URL-encoded URLs separated by commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#urls DataCloudflarePageShieldScriptsList#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#urls DataCloudflarePageShieldScriptsList#urls}
   */
   readonly urls?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#zone_id DataCloudflarePageShieldScriptsList#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#zone_id DataCloudflarePageShieldScriptsList#zone_id}
   */
   readonly zoneId: string;
 }
@@ -295,7 +295,7 @@ export class DataCloudflarePageShieldScriptsListResultList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list}
 */
 export class DataCloudflarePageShieldScriptsList extends cdktf.TerraformDataSource {
 
@@ -311,7 +311,7 @@ export class DataCloudflarePageShieldScriptsList extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataCloudflarePageShieldScriptsList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePageShieldScriptsList to import
-  * @param importFromId The id of the existing DataCloudflarePageShieldScriptsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePageShieldScriptsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePageShieldScriptsList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DataCloudflarePageShieldScriptsList extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DataCloudflarePageShieldScriptsList extends cdktf.TerraformDataSour
       terraformResourceType: 'cloudflare_page_shield_scripts_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

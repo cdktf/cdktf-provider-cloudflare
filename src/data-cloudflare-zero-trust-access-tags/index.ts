@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareZeroTrustAccessTagsConfig extends cdktf.Terraform
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags#account_id DataCloudflareZeroTrustAccessTags#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags#account_id DataCloudflareZeroTrustAccessTags#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags#max_items DataCloudflareZeroTrustAccessTags#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags#max_items DataCloudflareZeroTrustAccessTags#max_items}
   */
   readonly maxItems?: number;
 }
@@ -76,24 +76,9 @@ export class DataCloudflareZeroTrustAccessTagsResultOutputReference extends cdkt
     }
   }
 
-  // app_count - computed: true, optional: false, required: false
-  public get appCount() {
-    return this.getNumberAttribute('app_count');
-  }
-
-  // created_at - computed: true, optional: false, required: false
-  public get createdAt() {
-    return this.getStringAttribute('created_at');
-  }
-
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-
-  // updated_at - computed: true, optional: false, required: false
-  public get updatedAt() {
-    return this.getStringAttribute('updated_at');
   }
 }
 
@@ -117,7 +102,7 @@ export class DataCloudflareZeroTrustAccessTagsResultList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags cloudflare_zero_trust_access_tags}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags cloudflare_zero_trust_access_tags}
 */
 export class DataCloudflareZeroTrustAccessTags extends cdktf.TerraformDataSource {
 
@@ -133,7 +118,7 @@ export class DataCloudflareZeroTrustAccessTags extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataCloudflareZeroTrustAccessTags resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustAccessTags to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustAccessTags to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +130,7 @@ export class DataCloudflareZeroTrustAccessTags extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags cloudflare_zero_trust_access_tags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags cloudflare_zero_trust_access_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +141,7 @@ export class DataCloudflareZeroTrustAccessTags extends cdktf.TerraformDataSource
       terraformResourceType: 'cloudflare_zero_trust_access_tags',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
