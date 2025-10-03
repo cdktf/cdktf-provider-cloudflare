@@ -4,7 +4,7 @@
 
 ### ZeroTrustAccessServiceToken <a name="ZeroTrustAccessServiceToken" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.Initializer"></a>
 
@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetAccountId">ResetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetClientSecretVersion">ResetClientSecretVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetDuration">ResetDuration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetPreviousClientSecretExpiresAt">ResetPreviousClientSecretExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
@@ -373,10 +375,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetAccountId()
 ```
 
+##### `ResetClientSecretVersion` <a name="ResetClientSecretVersion" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetClientSecretVersion"></a>
+
+```go
+func ResetClientSecretVersion()
+```
+
 ##### `ResetDuration` <a name="ResetDuration" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetDuration"></a>
 
 ```go
 func ResetDuration()
+```
+
+##### `ResetPreviousClientSecretExpiresAt` <a name="ResetPreviousClientSecretExpiresAt" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetPreviousClientSecretExpiresAt"></a>
+
+```go
+func ResetPreviousClientSecretExpiresAt()
 ```
 
 ##### `ResetZoneId` <a name="ResetZoneId" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.resetZoneId"></a>
@@ -488,7 +502,7 @@ The construct id used in the generated config for the ZeroTrustAccessServiceToke
 
 The id of the existing ZeroTrustAccessServiceToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_access_service_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -523,12 +537,16 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.clientSecretVersionInput">ClientSecretVersionInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.durationInput">DurationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.previousClientSecretExpiresAtInput">PreviousClientSecretExpiresAtInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.clientSecretVersion">ClientSecretVersion</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.duration">Duration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.previousClientSecretExpiresAt">PreviousClientSecretExpiresAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -725,6 +743,16 @@ func AccountIdInput() *string
 
 ---
 
+##### `ClientSecretVersionInput`<sup>Optional</sup> <a name="ClientSecretVersionInput" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.clientSecretVersionInput"></a>
+
+```go
+func ClientSecretVersionInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `DurationInput`<sup>Optional</sup> <a name="DurationInput" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.durationInput"></a>
 
 ```go
@@ -739,6 +767,16 @@ func DurationInput() *string
 
 ```go
 func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PreviousClientSecretExpiresAtInput`<sup>Optional</sup> <a name="PreviousClientSecretExpiresAtInput" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.previousClientSecretExpiresAtInput"></a>
+
+```go
+func PreviousClientSecretExpiresAtInput() *string
 ```
 
 - *Type:* *string
@@ -765,6 +803,16 @@ func AccountId() *string
 
 ---
 
+##### `ClientSecretVersion`<sup>Required</sup> <a name="ClientSecretVersion" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.clientSecretVersion"></a>
+
+```go
+func ClientSecretVersion() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Duration`<sup>Required</sup> <a name="Duration" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.duration"></a>
 
 ```go
@@ -779,6 +827,16 @@ func Duration() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PreviousClientSecretExpiresAt`<sup>Required</sup> <a name="PreviousClientSecretExpiresAt" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceToken.property.previousClientSecretExpiresAt"></a>
+
+```go
+func PreviousClientSecretExpiresAt() *string
 ```
 
 - *Type:* *string
@@ -832,7 +890,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustac
 	Provisioners: *[]interface{},
 	Name: *string,
 	AccountId: *string,
+	ClientSecretVersion: *f64,
 	Duration: *string,
+	PreviousClientSecretExpiresAt: *string,
 	ZoneId: *string,
 }
 ```
@@ -850,7 +910,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustac
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.name">Name</a></code> | <code>*string</code> | The name of the service token. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.accountId">AccountId</a></code> | <code>*string</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.clientSecretVersion">ClientSecretVersion</a></code> | <code>*f64</code> | A version number identifying the current `client_secret` associated with the service token. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.duration">Duration</a></code> | <code>*string</code> | The duration for how long the service token will be valid. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.previousClientSecretExpiresAt">PreviousClientSecretExpiresAt</a></code> | <code>*string</code> | The expiration of the previous `client_secret`. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
 ---
@@ -935,7 +997,7 @@ Name *string
 
 The name of the service token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_access_service_token#name ZeroTrustAccessServiceToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token#name ZeroTrustAccessServiceToken#name}
 
 ---
 
@@ -949,7 +1011,23 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_access_service_token#account_id ZeroTrustAccessServiceToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token#account_id ZeroTrustAccessServiceToken#account_id}
+
+---
+
+##### `ClientSecretVersion`<sup>Optional</sup> <a name="ClientSecretVersion" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.clientSecretVersion"></a>
+
+```go
+ClientSecretVersion *f64
+```
+
+- *Type:* *f64
+
+A version number identifying the current `client_secret` associated with the service token.
+
+Incrementing it triggers a rotation; the previous secret will still be accepted until the time indicated by `previous_client_secret_expires_at`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token#client_secret_version ZeroTrustAccessServiceToken#client_secret_version}
 
 ---
 
@@ -965,7 +1043,23 @@ The duration for how long the service token will be valid.
 
 Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. The default is 1 year in hours (8760h).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_access_service_token#duration ZeroTrustAccessServiceToken#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token#duration ZeroTrustAccessServiceToken#duration}
+
+---
+
+##### `PreviousClientSecretExpiresAt`<sup>Optional</sup> <a name="PreviousClientSecretExpiresAt" id="@cdktf/provider-cloudflare.zeroTrustAccessServiceToken.ZeroTrustAccessServiceTokenConfig.property.previousClientSecretExpiresAt"></a>
+
+```go
+PreviousClientSecretExpiresAt *string
+```
+
+- *Type:* *string
+
+The expiration of the previous `client_secret`.
+
+This can be modified at any point after a rotation. For example, you may extend it further into the future if you need more time to update services with the new secret; or move it into the past to immediately invalidate the previous token in case of compromise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token#previous_client_secret_expires_at ZeroTrustAccessServiceToken#previous_client_secret_expires_at}
 
 ---
 
@@ -979,7 +1073,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_access_service_token#zone_id ZeroTrustAccessServiceToken#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_access_service_token#zone_id ZeroTrustAccessServiceToken#zone_id}
 
 ---
 

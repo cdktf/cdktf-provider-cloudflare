@@ -147,6 +147,7 @@ Object.defineProperty(exports, 'workersKvNamespace', { get: function () { return
 Object.defineProperty(exports, 'workersRoute', { get: function () { return require('./workers-route'); } });
 Object.defineProperty(exports, 'workersScript', { get: function () { return require('./workers-script'); } });
 Object.defineProperty(exports, 'workersScriptSubdomain', { get: function () { return require('./workers-script-subdomain'); } });
+Object.defineProperty(exports, 'workflow', { get: function () { return require('./workflow'); } });
 Object.defineProperty(exports, 'zeroTrustAccessApplication', { get: function () { return require('./zero-trust-access-application'); } });
 Object.defineProperty(exports, 'zeroTrustAccessCustomPage', { get: function () { return require('./zero-trust-access-custom-page'); } });
 Object.defineProperty(exports, 'zeroTrustAccessGroup', { get: function () { return require('./zero-trust-access-group'); } });
@@ -183,6 +184,7 @@ Object.defineProperty(exports, 'zeroTrustGatewayPolicy', { get: function () { re
 Object.defineProperty(exports, 'zeroTrustGatewayProxyEndpoint', { get: function () { return require('./zero-trust-gateway-proxy-endpoint'); } });
 Object.defineProperty(exports, 'zeroTrustGatewaySettings', { get: function () { return require('./zero-trust-gateway-settings'); } });
 Object.defineProperty(exports, 'zeroTrustList', { get: function () { return require('./zero-trust-list'); } });
+Object.defineProperty(exports, 'zeroTrustNetworkHostnameRoute', { get: function () { return require('./zero-trust-network-hostname-route'); } });
 Object.defineProperty(exports, 'zeroTrustOrganization', { get: function () { return require('./zero-trust-organization'); } });
 Object.defineProperty(exports, 'zeroTrustRiskBehavior', { get: function () { return require('./zero-trust-risk-behavior'); } });
 Object.defineProperty(exports, 'zeroTrustRiskScoringIntegration', { get: function () { return require('./zero-trust-risk-scoring-integration'); } });
@@ -440,6 +442,8 @@ Object.defineProperty(exports, 'dataCloudflareWorkersRoutes', { get: function ()
 Object.defineProperty(exports, 'dataCloudflareWorkersScript', { get: function () { return require('./data-cloudflare-workers-script'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersScriptSubdomain', { get: function () { return require('./data-cloudflare-workers-script-subdomain'); } });
 Object.defineProperty(exports, 'dataCloudflareWorkersScripts', { get: function () { return require('./data-cloudflare-workers-scripts'); } });
+Object.defineProperty(exports, 'dataCloudflareWorkflow', { get: function () { return require('./data-cloudflare-workflow'); } });
+Object.defineProperty(exports, 'dataCloudflareWorkflows', { get: function () { return require('./data-cloudflare-workflows'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessApplication', { get: function () { return require('./data-cloudflare-zero-trust-access-application'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessApplications', { get: function () { return require('./data-cloudflare-zero-trust-access-applications'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustAccessCustomPage', { get: function () { return require('./data-cloudflare-zero-trust-access-custom-page'); } });
@@ -502,6 +506,8 @@ Object.defineProperty(exports, 'dataCloudflareZeroTrustGatewayProxyEndpoint', { 
 Object.defineProperty(exports, 'dataCloudflareZeroTrustGatewaySettings', { get: function () { return require('./data-cloudflare-zero-trust-gateway-settings'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustList', { get: function () { return require('./data-cloudflare-zero-trust-list'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustLists', { get: function () { return require('./data-cloudflare-zero-trust-lists'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustNetworkHostnameRoute', { get: function () { return require('./data-cloudflare-zero-trust-network-hostname-route'); } });
+Object.defineProperty(exports, 'dataCloudflareZeroTrustNetworkHostnameRoutes', { get: function () { return require('./data-cloudflare-zero-trust-network-hostname-routes'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustOrganization', { get: function () { return require('./data-cloudflare-zero-trust-organization'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustRiskBehavior', { get: function () { return require('./data-cloudflare-zero-trust-risk-behavior'); } });
 Object.defineProperty(exports, 'dataCloudflareZeroTrustRiskScoringIntegration', { get: function () { return require('./data-cloudflare-zero-trust-risk-scoring-integration'); } });

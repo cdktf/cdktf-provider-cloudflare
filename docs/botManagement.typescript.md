@@ -4,7 +4,7 @@
 
 ### BotManagement <a name="BotManagement" id="@cdktf/provider-cloudflare.botManagement.BotManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management cloudflare_bot_management}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management cloudflare_bot_management}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.botManagement.BotManagement.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.resetAiBotsProtection">resetAiBotsProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.resetAutoUpdateModel">resetAutoUpdateModel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.resetBmCookieEnabled">resetBmCookieEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.resetCfRobotsVariant">resetCfRobotsVariant</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.resetCrawlerProtection">resetCrawlerProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.resetEnableJs">resetEnableJs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.resetFightMode">resetFightMode</a></code> | *No description.* |
@@ -395,6 +396,12 @@ public resetAutoUpdateModel(): void
 public resetBmCookieEnabled(): void
 ```
 
+##### `resetCfRobotsVariant` <a name="resetCfRobotsVariant" id="@cdktf/provider-cloudflare.botManagement.BotManagement.resetCfRobotsVariant"></a>
+
+```typescript
+public resetCfRobotsVariant(): void
+```
+
 ##### `resetCrawlerProtection` <a name="resetCrawlerProtection" id="@cdktf/provider-cloudflare.botManagement.BotManagement.resetCrawlerProtection"></a>
 
 ```typescript
@@ -558,7 +565,7 @@ The construct id used in the generated config for the BotManagement to import.
 
 The id of the existing BotManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -594,6 +601,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.aiBotsProtectionInput">aiBotsProtectionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.autoUpdateModelInput">autoUpdateModelInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.bmCookieEnabledInput">bmCookieEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.cfRobotsVariantInput">cfRobotsVariantInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.crawlerProtectionInput">crawlerProtectionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.enableJsInput">enableJsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.fightModeInput">fightModeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -608,6 +616,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.aiBotsProtection">aiBotsProtection</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.autoUpdateModel">autoUpdateModel</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.bmCookieEnabled">bmCookieEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.cfRobotsVariant">cfRobotsVariant</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.crawlerProtection">crawlerProtection</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.enableJs">enableJs</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagement.property.fightMode">fightMode</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -824,6 +833,16 @@ public readonly bmCookieEnabledInput: boolean | IResolvable;
 
 ---
 
+##### `cfRobotsVariantInput`<sup>Optional</sup> <a name="cfRobotsVariantInput" id="@cdktf/provider-cloudflare.botManagement.BotManagement.property.cfRobotsVariantInput"></a>
+
+```typescript
+public readonly cfRobotsVariantInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `crawlerProtectionInput`<sup>Optional</sup> <a name="crawlerProtectionInput" id="@cdktf/provider-cloudflare.botManagement.BotManagement.property.crawlerProtectionInput"></a>
 
 ```typescript
@@ -961,6 +980,16 @@ public readonly bmCookieEnabled: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `cfRobotsVariant`<sup>Required</sup> <a name="cfRobotsVariant" id="@cdktf/provider-cloudflare.botManagement.BotManagement.property.cfRobotsVariant"></a>
+
+```typescript
+public readonly cfRobotsVariant: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1119,6 +1148,7 @@ const botManagementConfig: botManagement.BotManagementConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.aiBotsProtection">aiBotsProtection</a></code> | <code>string</code> | Enable rule to block AI Scrapers and Crawlers. |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.autoUpdateModel">autoUpdateModel</a></code> | <code>boolean \| cdktf.IResolvable</code> | Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes). |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.bmCookieEnabled">bmCookieEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates that the bot management cookie can be placed on end user devices accessing the site. Defaults to true. |
+| <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.cfRobotsVariant">cfRobotsVariant</a></code> | <code>string</code> | Specifies the Robots Access Control License variant to use. Available values: "off", "policy_only". |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.crawlerProtection">crawlerProtection</a></code> | <code>string</code> | Enable rule to punish AI Scrapers and Crawlers via a link maze. Available values: "enabled", "disabled". |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.enableJs">enableJs</a></code> | <code>boolean \| cdktf.IResolvable</code> | Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/). |
 | <code><a href="#@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.fightMode">fightMode</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable Bot Fight Mode. |
@@ -1212,7 +1242,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#zone_id BotManagement#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
 
 ---
 
@@ -1229,7 +1259,7 @@ Enable rule to block AI Scrapers and Crawlers.
 Please note the value `only_on_ad_pages` is currently not available for Enterprise customers.
 Available values: "block", "disabled", "only_on_ad_pages".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
 
 ---
 
@@ -1243,7 +1273,7 @@ public readonly autoUpdateModel: boolean | IResolvable;
 
 Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
 
 ---
 
@@ -1257,7 +1287,21 @@ public readonly bmCookieEnabled: boolean | IResolvable;
 
 Indicates that the bot management cookie can be placed on end user devices accessing the site. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#bm_cookie_enabled BotManagement#bm_cookie_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#bm_cookie_enabled BotManagement#bm_cookie_enabled}
+
+---
+
+##### `cfRobotsVariant`<sup>Optional</sup> <a name="cfRobotsVariant" id="@cdktf/provider-cloudflare.botManagement.BotManagementConfig.property.cfRobotsVariant"></a>
+
+```typescript
+public readonly cfRobotsVariant: string;
+```
+
+- *Type:* string
+
+Specifies the Robots Access Control License variant to use. Available values: "off", "policy_only".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#cf_robots_variant BotManagement#cf_robots_variant}
 
 ---
 
@@ -1271,7 +1315,7 @@ public readonly crawlerProtection: string;
 
 Enable rule to punish AI Scrapers and Crawlers via a link maze. Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
 
 ---
 
@@ -1285,7 +1329,7 @@ public readonly enableJs: boolean | IResolvable;
 
 Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#enable_js BotManagement#enable_js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
 
 ---
 
@@ -1299,7 +1343,7 @@ public readonly fightMode: boolean | IResolvable;
 
 Whether to enable Bot Fight Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
 
 ---
 
@@ -1313,7 +1357,7 @@ public readonly isRobotsTxtManaged: boolean | IResolvable;
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#is_robots_txt_managed BotManagement#is_robots_txt_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#is_robots_txt_managed BotManagement#is_robots_txt_managed}
 
 ---
 
@@ -1327,7 +1371,7 @@ public readonly optimizeWordpress: boolean | IResolvable;
 
 Whether to optimize Super Bot Fight Mode protections for Wordpress.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
 
 ---
 
@@ -1341,7 +1385,7 @@ public readonly sbfmDefinitelyAutomated: string;
 
 Super Bot Fight Mode (SBFM) action to take on definitely automated requests. Available values: "allow", "block", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
 
 ---
 
@@ -1355,7 +1399,7 @@ public readonly sbfmLikelyAutomated: string;
 
 Super Bot Fight Mode (SBFM) action to take on likely automated requests. Available values: "allow", "block", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
 
 ---
 
@@ -1372,7 +1416,7 @@ Super Bot Fight Mode (SBFM) to enable static resource protection.
 Enable if static resources on your application need bot protection.
 Note: Static resource protection can also result in legitimate traffic being blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
 
 ---
 
@@ -1386,7 +1430,7 @@ public readonly sbfmVerifiedBots: string;
 
 Super Bot Fight Mode (SBFM) action to take on verified bots requests. Available values: "allow", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
 
 ---
 
@@ -1400,7 +1444,7 @@ public readonly suppressSessionScore: boolean | IResolvable;
 
 Whether to disable tracking the highest bot score for a session in the Bot Management cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
 
 ---
 

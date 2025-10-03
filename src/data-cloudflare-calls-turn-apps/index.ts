@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/calls_turn_apps
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/calls_turn_apps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareCallsTurnAppsConfig extends cdktf.TerraformMetaAr
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/calls_turn_apps#account_id DataCloudflareCallsTurnApps#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/calls_turn_apps#account_id DataCloudflareCallsTurnApps#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/calls_turn_apps#max_items DataCloudflareCallsTurnApps#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/calls_turn_apps#max_items DataCloudflareCallsTurnApps#max_items}
   */
   readonly maxItems?: number;
 }
@@ -117,7 +117,7 @@ export class DataCloudflareCallsTurnAppsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps}
 */
 export class DataCloudflareCallsTurnApps extends cdktf.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataCloudflareCallsTurnApps extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareCallsTurnApps resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCallsTurnApps to import
-  * @param importFromId The id of the existing DataCloudflareCallsTurnApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/calls_turn_apps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCallsTurnApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/calls_turn_apps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCallsTurnApps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataCloudflareCallsTurnApps extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataCloudflareCallsTurnApps extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_calls_turn_apps',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

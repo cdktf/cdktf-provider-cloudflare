@@ -4,7 +4,7 @@
 
 ### DataCloudflareListItemsA <a name="DataCloudflareListItemsA" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items cloudflare_list_items}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items cloudflare_list_items}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Amount of results to include in each paginated response. A non-negative 32 bit integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
 
 ---
 
@@ -158,7 +158,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
 
 ---
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the DataCloudflareListItemsA t
 
 The id of the existing DataCloudflareListItemsA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -922,7 +922,7 @@ public java.lang.String getAccountId();
 
 The Account ID for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
 
 ---
 
@@ -936,7 +936,7 @@ public java.lang.String getListId();
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
 
 ---
 
@@ -950,7 +950,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
 
 ---
 
@@ -964,7 +964,7 @@ public java.lang.Number getPerPage();
 
 Amount of results to include in each paginated response. A non-negative 32 bit integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
 
 ---
 
@@ -980,7 +980,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
 
 ---
 

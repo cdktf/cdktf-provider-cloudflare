@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessTag <a name="DataCloudflareZeroTrustAccessTag" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
 
 ---
 
@@ -450,7 +450,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -478,11 +478,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.appCount">appCount</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.tagNameInput">tagNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -612,26 +609,6 @@ public TerraformProvider getProvider();
 
 ---
 
-##### `appCount`<sup>Required</sup> <a name="appCount" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.appCount"></a>
-
-```java
-public java.lang.Number getAppCount();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.createdAt"></a>
-
-```java
-public java.lang.String getCreatedAt();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.id"></a>
 
 ```java
@@ -646,16 +623,6 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getName();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.property.updatedAt"></a>
-
-```java
-public java.lang.String getUpdatedAt();
 ```
 
 - *Type:* java.lang.String
@@ -842,7 +809,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
 
 ---
 
@@ -856,7 +823,7 @@ public java.lang.String getTagName();
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### WorkerVersion <a name="WorkerVersion" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version cloudflare_worker_version}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version cloudflare_worker_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer"></a>
 
@@ -53,7 +53,7 @@ WorkerVersion.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.workerId">workerId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.workerId">workerId</a></code> | <code>java.lang.String</code> | Identifier for the Worker, which can be ID or name. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAnnotations">WorkerVersionAnnotations</a></code> | Metadata about the version. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.assets">assets</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssets">WorkerVersionAssets</a></code> | Configuration for assets within a Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersion.Initializer.parameter.bindings">bindings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings">WorkerVersionBindings</a>></code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#account_id WorkerVersion#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
 
 ---
 
@@ -142,9 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Identifier.
+Identifier for the Worker, which can be ID or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Metadata about the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#annotations WorkerVersion#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
 
 ---
 
@@ -164,7 +164,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#assets WorkerVersion#assets}
+[`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and
+[`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files should be
+included as modules named `_headers` and `_redirects` with content type `text/plain`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#assets WorkerVersion#assets}
 
 ---
 
@@ -174,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#bindings WorkerVersion#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
 
 ---
 
@@ -186,7 +190,7 @@ Date indicating targeted support in the Workers runtime.
 
 Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
 
 ---
 
@@ -198,7 +202,7 @@ Flags that enable or disable certain features in the Workers runtime.
 
 Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
 
 ---
 
@@ -208,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Resource limits enforced at runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#limits WorkerVersion#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#limits WorkerVersion#limits}
 
 ---
 
@@ -218,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#main_module WorkerVersion#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
 
 ---
 
@@ -228,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#migrations WorkerVersion#migrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
 
 ---
 
@@ -238,7 +242,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Code, sourcemaps, and other content used at runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#modules WorkerVersion#modules}
+This includes [`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and
+[`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files used to configure
+[Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be
+included as modules named `_headers` and `_redirects` with content type `text/plain`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#modules WorkerVersion#modules}
 
 ---
 
@@ -248,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Placement settings for the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#placement WorkerVersion#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#placement WorkerVersion#placement}
 
 ---
 
@@ -258,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Usage model for the version. Available values: "standard", "bundled", "unbound".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
 
 ---
 
@@ -853,7 +862,7 @@ The construct id used in the generated config for the WorkerVersion to import.
 
 The id of the existing WorkerVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1410,7 +1419,7 @@ public java.lang.String getWorkersMessage();
 
 Human-readable message about the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
 
 ---
 
@@ -1424,7 +1433,7 @@ public java.lang.String getWorkersTag();
 
 User-provided identifier for the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
 
 ---
 
@@ -1437,6 +1446,7 @@ import com.hashicorp.cdktf.providers.cloudflare.worker_version.WorkerVersionAsse
 
 WorkerVersionAssets.builder()
 //  .config(WorkerVersionAssetsConfig)
+//  .directory(java.lang.String)
 //  .jwt(java.lang.String)
     .build();
 ```
@@ -1446,6 +1456,7 @@ WorkerVersionAssets.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssets.property.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsConfig">WorkerVersionAssetsConfig</a></code> | Configuration for assets within a Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssets.property.directory">directory</a></code> | <code>java.lang.String</code> | Path to the directory containing asset files to upload. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssets.property.jwt">jwt</a></code> | <code>java.lang.String</code> | Token provided upon successful upload of all files from a registered manifest. |
 
 ---
@@ -1460,7 +1471,21 @@ public WorkerVersionAssetsConfig getConfig();
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#config WorkerVersion#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#config WorkerVersion#config}
+
+---
+
+##### `directory`<sup>Optional</sup> <a name="directory" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssets.property.directory"></a>
+
+```java
+public java.lang.String getDirectory();
+```
+
+- *Type:* java.lang.String
+
+Path to the directory containing asset files to upload.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#directory WorkerVersion#directory}
 
 ---
 
@@ -1474,7 +1499,7 @@ public java.lang.String getJwt();
 
 Token provided upon successful upload of all files from a registered manifest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#jwt WorkerVersion#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#jwt WorkerVersion#jwt}
 
 ---
 
@@ -1512,7 +1537,7 @@ public java.lang.String getHtmlHandling();
 
 Determines the redirects and rewrites of requests for HTML content. Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
 
 ---
 
@@ -1528,7 +1553,7 @@ Determines the response when a request does not match a static asset, and there 
 
 Available values: "none", "404-page", "single-page-application".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
 
 ---
 
@@ -1544,7 +1569,7 @@ Contains a list path rules to control routing to either the Worker or assets.
 
 Glob (*) and negative (!) rules are supported. Rules must start with either '/' or '!/'. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
 
 ---
 
@@ -1559,20 +1584,26 @@ WorkerVersionBindings.builder()
     .name(java.lang.String)
     .type(java.lang.String)
 //  .algorithm(java.lang.String)
+//  .allowedDestinationAddresses(java.util.List<java.lang.String>)
+//  .allowedSenderAddresses(java.util.List<java.lang.String>)
 //  .bucketName(java.lang.String)
 //  .certificateId(java.lang.String)
 //  .className(java.lang.String)
 //  .dataset(java.lang.String)
+//  .destinationAddress(java.lang.String)
 //  .environment(java.lang.String)
 //  .format(java.lang.String)
 //  .id(java.lang.String)
 //  .indexName(java.lang.String)
 //  .json(java.lang.String)
+//  .jurisdiction(java.lang.String)
 //  .keyBase64(java.lang.String)
 //  .keyJwk(java.lang.String)
 //  .namespace(java.lang.String)
 //  .namespaceId(java.lang.String)
+//  .oldName(java.lang.String)
 //  .outbound(WorkerVersionBindingsOutbound)
+//  .part(java.lang.String)
 //  .pipeline(java.lang.String)
 //  .queueName(java.lang.String)
 //  .scriptName(java.lang.String)
@@ -1581,6 +1612,7 @@ WorkerVersionBindings.builder()
 //  .storeId(java.lang.String)
 //  .text(java.lang.String)
 //  .usages(java.util.List<java.lang.String>)
+//  .versionId(java.lang.String)
 //  .workflowName(java.lang.String)
     .build();
 ```
@@ -1592,20 +1624,26 @@ WorkerVersionBindings.builder()
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.name">name</a></code> | <code>java.lang.String</code> | A JavaScript variable name for the binding. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.type">type</a></code> | <code>java.lang.String</code> | The kind of resource that the binding provides. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.algorithm">algorithm</a></code> | <code>java.lang.String</code> | Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm). |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.allowedDestinationAddresses">allowedDestinationAddresses</a></code> | <code>java.util.List<java.lang.String></code> | List of allowed destination addresses. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.allowedSenderAddresses">allowedSenderAddresses</a></code> | <code>java.util.List<java.lang.String></code> | List of allowed sender addresses. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | R2 bucket to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.certificateId">certificateId</a></code> | <code>java.lang.String</code> | Identifier of the certificate to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.className">className</a></code> | <code>java.lang.String</code> | The exported class name of the Durable Object. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.dataset">dataset</a></code> | <code>java.lang.String</code> | The name of the dataset to bind to. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.destinationAddress">destinationAddress</a></code> | <code>java.lang.String</code> | Destination address for the email. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.environment">environment</a></code> | <code>java.lang.String</code> | The environment of the script_name to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.format">format</a></code> | <code>java.lang.String</code> | Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format). Available values: "raw", "pkcs8", "spki", "jwk". |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.id">id</a></code> | <code>java.lang.String</code> | Identifier of the D1 database to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.indexName">indexName</a></code> | <code>java.lang.String</code> | Name of the Vectorize index to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.json">json</a></code> | <code>java.lang.String</code> | JSON data to use. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp". |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.keyBase64">keyBase64</a></code> | <code>java.lang.String</code> | Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki". |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.keyJwk">keyJwk</a></code> | <code>java.lang.String</code> | Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk". |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Namespace to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Namespace identifier tag. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.oldName">oldName</a></code> | <code>java.lang.String</code> | The old name of the inherited binding. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.outbound">outbound</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutbound">WorkerVersionBindingsOutbound</a></code> | Outbound worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.part">part</a></code> | <code>java.lang.String</code> | The name of the file containing the data content. Only accepted for `service worker syntax` Workers. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.pipeline">pipeline</a></code> | <code>java.lang.String</code> | Name of the Pipeline to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.queueName">queueName</a></code> | <code>java.lang.String</code> | Name of the Queue to bind to. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.scriptName">scriptName</a></code> | <code>java.lang.String</code> | The script where the Durable Object is defined, if it is external to this Worker. |
@@ -1614,6 +1652,7 @@ WorkerVersionBindings.builder()
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.storeId">storeId</a></code> | <code>java.lang.String</code> | ID of the store containing the secret. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.text">text</a></code> | <code>java.lang.String</code> | The text value to use. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.usages">usages</a></code> | <code>java.util.List<java.lang.String></code> | Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages). |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.versionId">versionId</a></code> | <code>java.lang.String</code> | Identifier for the version to inherit the binding from, which can be the version ID or the literal "latest" to inherit from the latest version. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.workflowName">workflowName</a></code> | <code>java.lang.String</code> | Name of the Workflow to bind to. |
 
 ---
@@ -1628,7 +1667,7 @@ public java.lang.String getName();
 
 A JavaScript variable name for the binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -1642,9 +1681,9 @@ public java.lang.String getType();
 
 The kind of resource that the binding provides.
 
-Available values: "ai", "analytics_engine", "assets", "browser", "d1", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "r2_bucket", "secret_text", "service", "tail_consumer", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow".
+Available values: "ai", "analytics_engine", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "r2_bucket", "secret_text", "send_email", "service", "tail_consumer", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow", "wasm_module".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#type WorkerVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#type WorkerVersion#type}
 
 ---
 
@@ -1658,7 +1697,35 @@ public java.lang.String getAlgorithm();
 
 Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
+
+---
+
+##### `allowedDestinationAddresses`<sup>Optional</sup> <a name="allowedDestinationAddresses" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.allowedDestinationAddresses"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedDestinationAddresses();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of allowed destination addresses.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#allowed_destination_addresses WorkerVersion#allowed_destination_addresses}
+
+---
+
+##### `allowedSenderAddresses`<sup>Optional</sup> <a name="allowedSenderAddresses" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.allowedSenderAddresses"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedSenderAddresses();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of allowed sender addresses.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#allowed_sender_addresses WorkerVersion#allowed_sender_addresses}
 
 ---
 
@@ -1672,7 +1739,7 @@ public java.lang.String getBucketName();
 
 R2 bucket to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
 
 ---
 
@@ -1686,7 +1753,7 @@ public java.lang.String getCertificateId();
 
 Identifier of the certificate to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
 
 ---
 
@@ -1700,7 +1767,7 @@ public java.lang.String getClassName();
 
 The exported class name of the Durable Object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#class_name WorkerVersion#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#class_name WorkerVersion#class_name}
 
 ---
 
@@ -1714,7 +1781,21 @@ public java.lang.String getDataset();
 
 The name of the dataset to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#dataset WorkerVersion#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#dataset WorkerVersion#dataset}
+
+---
+
+##### `destinationAddress`<sup>Optional</sup> <a name="destinationAddress" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.destinationAddress"></a>
+
+```java
+public java.lang.String getDestinationAddress();
+```
+
+- *Type:* java.lang.String
+
+Destination address for the email.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#destination_address WorkerVersion#destination_address}
 
 ---
 
@@ -1728,7 +1809,7 @@ public java.lang.String getEnvironment();
 
 The environment of the script_name to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#environment WorkerVersion#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#environment WorkerVersion#environment}
 
 ---
 
@@ -1742,7 +1823,7 @@ public java.lang.String getFormat();
 
 Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format). Available values: "raw", "pkcs8", "spki", "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#format WorkerVersion#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#format WorkerVersion#format}
 
 ---
 
@@ -1756,7 +1837,7 @@ public java.lang.String getId();
 
 Identifier of the D1 database to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#id WorkerVersion#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#id WorkerVersion#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1773,7 +1854,7 @@ public java.lang.String getIndexName();
 
 Name of the Vectorize index to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#index_name WorkerVersion#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#index_name WorkerVersion#index_name}
 
 ---
 
@@ -1787,7 +1868,21 @@ public java.lang.String getJson();
 
 JSON data to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#json WorkerVersion#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#json WorkerVersion#json}
+
+---
+
+##### `jurisdiction`<sup>Optional</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.jurisdiction"></a>
+
+```java
+public java.lang.String getJurisdiction();
+```
+
+- *Type:* java.lang.String
+
+The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#jurisdiction WorkerVersion#jurisdiction}
 
 ---
 
@@ -1801,7 +1896,7 @@ public java.lang.String getKeyBase64();
 
 Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
 
 ---
 
@@ -1815,7 +1910,7 @@ public java.lang.String getKeyJwk();
 
 Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
 
 ---
 
@@ -1829,7 +1924,7 @@ public java.lang.String getNamespace();
 
 Namespace to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#namespace WorkerVersion#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#namespace WorkerVersion#namespace}
 
 ---
 
@@ -1843,7 +1938,23 @@ public java.lang.String getNamespaceId();
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
+
+---
+
+##### `oldName`<sup>Optional</sup> <a name="oldName" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.oldName"></a>
+
+```java
+public java.lang.String getOldName();
+```
+
+- *Type:* java.lang.String
+
+The old name of the inherited binding.
+
+If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#old_name WorkerVersion#old_name}
 
 ---
 
@@ -1857,7 +1968,21 @@ public WorkerVersionBindingsOutbound getOutbound();
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#outbound WorkerVersion#outbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#outbound WorkerVersion#outbound}
+
+---
+
+##### `part`<sup>Optional</sup> <a name="part" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.part"></a>
+
+```java
+public java.lang.String getPart();
+```
+
+- *Type:* java.lang.String
+
+The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#part WorkerVersion#part}
 
 ---
 
@@ -1871,7 +1996,7 @@ public java.lang.String getPipeline();
 
 Name of the Pipeline to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
 
 ---
 
@@ -1885,7 +2010,7 @@ public java.lang.String getQueueName();
 
 Name of the Queue to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
 
 ---
 
@@ -1899,7 +2024,7 @@ public java.lang.String getScriptName();
 
 The script where the Durable Object is defined, if it is external to this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#script_name WorkerVersion#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#script_name WorkerVersion#script_name}
 
 ---
 
@@ -1913,7 +2038,7 @@ public java.lang.String getSecretName();
 
 Name of the secret in the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
 
 ---
 
@@ -1927,7 +2052,7 @@ public java.lang.String getService();
 
 Name of Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#service WorkerVersion#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#service WorkerVersion#service}
 
 ---
 
@@ -1941,7 +2066,7 @@ public java.lang.String getStoreId();
 
 ID of the store containing the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#store_id WorkerVersion#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#store_id WorkerVersion#store_id}
 
 ---
 
@@ -1955,7 +2080,7 @@ public java.lang.String getText();
 
 The text value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#text WorkerVersion#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#text WorkerVersion#text}
 
 ---
 
@@ -1969,7 +2094,23 @@ public java.util.List<java.lang.String> getUsages();
 
 Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#usages WorkerVersion#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#usages WorkerVersion#usages}
+
+---
+
+##### `versionId`<sup>Optional</sup> <a name="versionId" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings.property.versionId"></a>
+
+```java
+public java.lang.String getVersionId();
+```
+
+- *Type:* java.lang.String
+
+Identifier for the version to inherit the binding from, which can be the version ID or the literal "latest" to inherit from the latest version.
+
+Defaults to inheriting the binding from the latest version.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#version_id WorkerVersion#version_id}
 
 ---
 
@@ -1983,7 +2124,7 @@ public java.lang.String getWorkflowName();
 
 Name of the Workflow to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
 
 ---
 
@@ -2019,7 +2160,7 @@ public java.util.List<java.lang.String> getParams();
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#params WorkerVersion#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#params WorkerVersion#params}
 
 ---
 
@@ -2033,7 +2174,7 @@ public WorkerVersionBindingsOutboundWorker getWorker();
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#worker WorkerVersion#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#worker WorkerVersion#worker}
 
 ---
 
@@ -2069,7 +2210,7 @@ public java.lang.String getEnvironment();
 
 Environment of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#environment WorkerVersion#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#environment WorkerVersion#environment}
 
 ---
 
@@ -2083,7 +2224,7 @@ public java.lang.String getService();
 
 Name of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#service WorkerVersion#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#service WorkerVersion#service}
 
 ---
 
@@ -2136,7 +2277,7 @@ WorkerVersionConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.workerId">workerId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.workerId">workerId</a></code> | <code>java.lang.String</code> | Identifier for the Worker, which can be ID or name. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAnnotations">WorkerVersionAnnotations</a></code> | Metadata about the version. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.assets">assets</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssets">WorkerVersionAssets</a></code> | Configuration for assets within a Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionConfig.property.bindings">bindings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings">WorkerVersionBindings</a>></code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
@@ -2231,7 +2372,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#account_id WorkerVersion#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
 
 ---
 
@@ -2243,9 +2384,9 @@ public java.lang.String getWorkerId();
 
 - *Type:* java.lang.String
 
-Identifier.
+Identifier for the Worker, which can be ID or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
 
 ---
 
@@ -2259,7 +2400,7 @@ public WorkerVersionAnnotations getAnnotations();
 
 Metadata about the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#annotations WorkerVersion#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
 
 ---
 
@@ -2273,7 +2414,11 @@ public WorkerVersionAssets getAssets();
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#assets WorkerVersion#assets}
+[`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and
+[`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files should be
+included as modules named `_headers` and `_redirects` with content type `text/plain`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#assets WorkerVersion#assets}
 
 ---
 
@@ -2287,7 +2432,7 @@ public java.lang.Object getBindings();
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#bindings WorkerVersion#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
 
 ---
 
@@ -2303,7 +2448,7 @@ Date indicating targeted support in the Workers runtime.
 
 Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
 
 ---
 
@@ -2319,7 +2464,7 @@ Flags that enable or disable certain features in the Workers runtime.
 
 Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
 
 ---
 
@@ -2333,7 +2478,7 @@ public WorkerVersionLimits getLimits();
 
 Resource limits enforced at runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#limits WorkerVersion#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#limits WorkerVersion#limits}
 
 ---
 
@@ -2347,7 +2492,7 @@ public java.lang.String getMainModule();
 
 The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#main_module WorkerVersion#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
 
 ---
 
@@ -2361,7 +2506,7 @@ public WorkerVersionMigrations getMigrations();
 
 Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#migrations WorkerVersion#migrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
 
 ---
 
@@ -2375,7 +2520,12 @@ public java.lang.Object getModules();
 
 Code, sourcemaps, and other content used at runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#modules WorkerVersion#modules}
+This includes [`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and
+[`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files used to configure
+[Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be
+included as modules named `_headers` and `_redirects` with content type `text/plain`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#modules WorkerVersion#modules}
 
 ---
 
@@ -2389,7 +2539,7 @@ public WorkerVersionPlacement getPlacement();
 
 Placement settings for the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#placement WorkerVersion#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#placement WorkerVersion#placement}
 
 ---
 
@@ -2403,7 +2553,7 @@ public java.lang.String getUsageModel();
 
 Usage model for the version. Available values: "standard", "bundled", "unbound".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
 
 ---
 
@@ -2437,7 +2587,7 @@ public java.lang.Number getCpuMs();
 
 CPU time limit in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
 
 ---
 
@@ -2488,7 +2638,7 @@ public java.util.List<java.lang.String> getDeletedClasses();
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
 
 ---
 
@@ -2502,7 +2652,7 @@ public java.util.List<java.lang.String> getNewClasses();
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
 
 ---
 
@@ -2516,7 +2666,7 @@ public java.util.List<java.lang.String> getNewSqliteClasses();
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
 
 ---
 
@@ -2530,7 +2680,7 @@ public java.lang.String getNewTag();
 
 Tag to set as the latest migration tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
 
 ---
 
@@ -2546,7 +2696,7 @@ Tag used to verify against the latest migration tag for this Worker.
 
 If they don't match, the upload is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
 
 ---
 
@@ -2560,7 +2710,7 @@ public java.lang.Object getRenamedClasses();
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
 
 ---
 
@@ -2574,7 +2724,7 @@ public java.lang.Object getSteps();
 
 Migrations to apply in order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#steps WorkerVersion#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#steps WorkerVersion#steps}
 
 ---
 
@@ -2588,7 +2738,7 @@ public java.lang.Object getTransferredClasses();
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
 
 ---
 
@@ -2609,8 +2759,8 @@ WorkerVersionMigrationsRenamedClasses.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2622,7 +2772,7 @@ public java.lang.String getFrom();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2634,7 +2784,7 @@ public java.lang.String getTo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2678,7 +2828,7 @@ public java.util.List<java.lang.String> getDeletedClasses();
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
 
 ---
 
@@ -2692,7 +2842,7 @@ public java.util.List<java.lang.String> getNewClasses();
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
 
 ---
 
@@ -2706,7 +2856,7 @@ public java.util.List<java.lang.String> getNewSqliteClasses();
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
 
 ---
 
@@ -2720,7 +2870,7 @@ public java.lang.Object getRenamedClasses();
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
 
 ---
 
@@ -2734,7 +2884,7 @@ public java.lang.Object getTransferredClasses();
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
 
 ---
 
@@ -2755,8 +2905,8 @@ WorkerVersionMigrationsStepsRenamedClasses.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2768,7 +2918,7 @@ public java.lang.String getFrom();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2780,7 +2930,7 @@ public java.lang.String getTo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2802,9 +2952,9 @@ WorkerVersionMigrationsStepsTransferredClasses.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.fromScript">fromScript</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.fromScript">fromScript</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2816,7 +2966,7 @@ public java.lang.String getFrom();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2828,7 +2978,7 @@ public java.lang.String getFromScript();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from_script WorkerVersion#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
 
 ---
 
@@ -2840,7 +2990,7 @@ public java.lang.String getTo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2862,9 +3012,9 @@ WorkerVersionMigrationsTransferredClasses.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.fromScript">fromScript</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
-| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.from">from</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.fromScript">fromScript</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.to">to</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2876,7 +3026,7 @@ public java.lang.String getFrom();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2888,7 +3038,7 @@ public java.lang.String getFromScript();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#from_script WorkerVersion#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
 
 ---
 
@@ -2900,7 +3050,7 @@ public java.lang.String getTo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2938,7 +3088,7 @@ public java.lang.String getContentFile();
 
 The file path of the module content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#content_file WorkerVersion#content_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#content_file WorkerVersion#content_file}
 
 ---
 
@@ -2952,7 +3102,7 @@ public java.lang.String getContentType();
 
 The content type of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#content_type WorkerVersion#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#content_type WorkerVersion#content_type}
 
 ---
 
@@ -2966,7 +3116,7 @@ public java.lang.String getName();
 
 The name of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -3000,7 +3150,7 @@ public java.lang.String getMode();
 
 Placement mode for the version. Available values: "smart".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/worker_version#mode WorkerVersion#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker_version#mode WorkerVersion#mode}
 
 ---
 
@@ -3712,6 +3862,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.putConfig">putConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.resetConfig">resetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.resetDirectory">resetDirectory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.resetJwt">resetJwt</a></code> | *No description.* |
 
 ---
@@ -3884,6 +4035,12 @@ public void putConfig(WorkerVersionAssetsConfig value)
 public void resetConfig()
 ```
 
+##### `resetDirectory` <a name="resetDirectory" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.resetDirectory"></a>
+
+```java
+public void resetDirectory()
+```
+
 ##### `resetJwt` <a name="resetJwt" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.resetJwt"></a>
 
 ```java
@@ -3897,9 +4054,12 @@ public void resetJwt()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.assetManifestSha256">assetManifestSha256</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsConfigOutputReference">WorkerVersionAssetsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.configInput">configInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsConfig">WorkerVersionAssetsConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.directoryInput">directoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.jwtInput">jwtInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.directory">directory</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.jwt">jwt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssets">WorkerVersionAssets</a></code> | *No description.* |
 
@@ -3929,6 +4089,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `assetManifestSha256`<sup>Required</sup> <a name="assetManifestSha256" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.assetManifestSha256"></a>
+
+```java
+public java.lang.String getAssetManifestSha256();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.config"></a>
 
 ```java
@@ -3949,10 +4119,30 @@ public java.lang.Object getConfigInput();
 
 ---
 
+##### `directoryInput`<sup>Optional</sup> <a name="directoryInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.directoryInput"></a>
+
+```java
+public java.lang.String getDirectoryInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `jwtInput`<sup>Optional</sup> <a name="jwtInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.jwtInput"></a>
 
 ```java
 public java.lang.String getJwtInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directory`<sup>Required</sup> <a name="directory" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference.property.directory"></a>
+
+```java
+public java.lang.String getDirectory();
 ```
 
 - *Type:* java.lang.String
@@ -4837,20 +5027,26 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.putOutbound">putOutbound</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAlgorithm">resetAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAllowedDestinationAddresses">resetAllowedDestinationAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAllowedSenderAddresses">resetAllowedSenderAddresses</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetBucketName">resetBucketName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetCertificateId">resetCertificateId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetClassName">resetClassName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDataset">resetDataset</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDestinationAddress">resetDestinationAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetEnvironment">resetEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetFormat">resetFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetIndexName">resetIndexName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetJson">resetJson</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetJurisdiction">resetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetKeyBase64">resetKeyBase64</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetKeyJwk">resetKeyJwk</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetNamespaceId">resetNamespaceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetOldName">resetOldName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetOutbound">resetOutbound</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetPart">resetPart</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetPipeline">resetPipeline</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetQueueName">resetQueueName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetScriptName">resetScriptName</a></code> | *No description.* |
@@ -4859,6 +5055,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetStoreId">resetStoreId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetText">resetText</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetUsages">resetUsages</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetVersionId">resetVersionId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetWorkflowName">resetWorkflowName</a></code> | *No description.* |
 
 ---
@@ -5031,6 +5228,18 @@ public void putOutbound(WorkerVersionBindingsOutbound value)
 public void resetAlgorithm()
 ```
 
+##### `resetAllowedDestinationAddresses` <a name="resetAllowedDestinationAddresses" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAllowedDestinationAddresses"></a>
+
+```java
+public void resetAllowedDestinationAddresses()
+```
+
+##### `resetAllowedSenderAddresses` <a name="resetAllowedSenderAddresses" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAllowedSenderAddresses"></a>
+
+```java
+public void resetAllowedSenderAddresses()
+```
+
 ##### `resetBucketName` <a name="resetBucketName" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetBucketName"></a>
 
 ```java
@@ -5053,6 +5262,12 @@ public void resetClassName()
 
 ```java
 public void resetDataset()
+```
+
+##### `resetDestinationAddress` <a name="resetDestinationAddress" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDestinationAddress"></a>
+
+```java
+public void resetDestinationAddress()
 ```
 
 ##### `resetEnvironment` <a name="resetEnvironment" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetEnvironment"></a>
@@ -5085,6 +5300,12 @@ public void resetIndexName()
 public void resetJson()
 ```
 
+##### `resetJurisdiction` <a name="resetJurisdiction" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetJurisdiction"></a>
+
+```java
+public void resetJurisdiction()
+```
+
 ##### `resetKeyBase64` <a name="resetKeyBase64" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetKeyBase64"></a>
 
 ```java
@@ -5109,10 +5330,22 @@ public void resetNamespace()
 public void resetNamespaceId()
 ```
 
+##### `resetOldName` <a name="resetOldName" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetOldName"></a>
+
+```java
+public void resetOldName()
+```
+
 ##### `resetOutbound` <a name="resetOutbound" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetOutbound"></a>
 
 ```java
 public void resetOutbound()
+```
+
+##### `resetPart` <a name="resetPart" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetPart"></a>
+
+```java
+public void resetPart()
 ```
 
 ##### `resetPipeline` <a name="resetPipeline" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetPipeline"></a>
@@ -5163,6 +5396,12 @@ public void resetText()
 public void resetUsages()
 ```
 
+##### `resetVersionId` <a name="resetVersionId" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetVersionId"></a>
+
+```java
+public void resetVersionId()
+```
+
 ##### `resetWorkflowName` <a name="resetWorkflowName" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetWorkflowName"></a>
 
 ```java
@@ -5178,21 +5417,27 @@ public void resetWorkflowName()
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.outbound">outbound</a></code> | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutboundOutputReference">WorkerVersionBindingsOutboundOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.algorithmInput">algorithmInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedDestinationAddressesInput">allowedDestinationAddressesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedSenderAddressesInput">allowedSenderAddressesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.bucketNameInput">bucketNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.certificateIdInput">certificateIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.classNameInput">classNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.datasetInput">datasetInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.destinationAddressInput">destinationAddressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.environmentInput">environmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.formatInput">formatInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.indexNameInput">indexNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jsonInput">jsonInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jurisdictionInput">jurisdictionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyBase64Input">keyBase64Input</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyJwkInput">keyJwkInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespaceIdInput">namespaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldNameInput">oldNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.outboundInput">outboundInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutbound">WorkerVersionBindingsOutbound</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.partInput">partInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.pipelineInput">pipelineInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.queueNameInput">queueNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.scriptNameInput">scriptNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -5202,22 +5447,29 @@ public void resetWorkflowName()
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.textInput">textInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.usagesInput">usagesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.versionIdInput">versionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.workflowNameInput">workflowNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.algorithm">algorithm</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedDestinationAddresses">allowedDestinationAddresses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedSenderAddresses">allowedSenderAddresses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.certificateId">certificateId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.className">className</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.dataset">dataset</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.destinationAddress">destinationAddress</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.environment">environment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.format">format</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.indexName">indexName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.json">json</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyBase64">keyBase64</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyJwk">keyJwk</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldName">oldName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.part">part</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.pipeline">pipeline</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.queueName">queueName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.scriptName">scriptName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -5227,6 +5479,7 @@ public void resetWorkflowName()
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.text">text</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.usages">usages</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.versionId">versionId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.workflowName">workflowName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindings">WorkerVersionBindings</a></code> | *No description.* |
 
@@ -5276,6 +5529,26 @@ public java.lang.String getAlgorithmInput();
 
 ---
 
+##### `allowedDestinationAddressesInput`<sup>Optional</sup> <a name="allowedDestinationAddressesInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedDestinationAddressesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedDestinationAddressesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `allowedSenderAddressesInput`<sup>Optional</sup> <a name="allowedSenderAddressesInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedSenderAddressesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedSenderAddressesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `bucketNameInput`<sup>Optional</sup> <a name="bucketNameInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.bucketNameInput"></a>
 
 ```java
@@ -5310,6 +5583,16 @@ public java.lang.String getClassNameInput();
 
 ```java
 public java.lang.String getDatasetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `destinationAddressInput`<sup>Optional</sup> <a name="destinationAddressInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.destinationAddressInput"></a>
+
+```java
+public java.lang.String getDestinationAddressInput();
 ```
 
 - *Type:* java.lang.String
@@ -5366,6 +5649,16 @@ public java.lang.String getJsonInput();
 
 ---
 
+##### `jurisdictionInput`<sup>Optional</sup> <a name="jurisdictionInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jurisdictionInput"></a>
+
+```java
+public java.lang.String getJurisdictionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `keyBase64Input`<sup>Optional</sup> <a name="keyBase64Input" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyBase64Input"></a>
 
 ```java
@@ -5416,6 +5709,16 @@ public java.lang.String getNamespaceInput();
 
 ---
 
+##### `oldNameInput`<sup>Optional</sup> <a name="oldNameInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldNameInput"></a>
+
+```java
+public java.lang.String getOldNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `outboundInput`<sup>Optional</sup> <a name="outboundInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.outboundInput"></a>
 
 ```java
@@ -5423,6 +5726,16 @@ public java.lang.Object getOutboundInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutbound">WorkerVersionBindingsOutbound</a>
+
+---
+
+##### `partInput`<sup>Optional</sup> <a name="partInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.partInput"></a>
+
+```java
+public java.lang.String getPartInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -5516,6 +5829,16 @@ public java.util.List<java.lang.String> getUsagesInput();
 
 ---
 
+##### `versionIdInput`<sup>Optional</sup> <a name="versionIdInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.versionIdInput"></a>
+
+```java
+public java.lang.String getVersionIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `workflowNameInput`<sup>Optional</sup> <a name="workflowNameInput" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.workflowNameInput"></a>
 
 ```java
@@ -5533,6 +5856,26 @@ public java.lang.String getAlgorithm();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `allowedDestinationAddresses`<sup>Required</sup> <a name="allowedDestinationAddresses" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedDestinationAddresses"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedDestinationAddresses();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `allowedSenderAddresses`<sup>Required</sup> <a name="allowedSenderAddresses" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedSenderAddresses"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedSenderAddresses();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -5570,6 +5913,16 @@ public java.lang.String getClassName();
 
 ```java
 public java.lang.String getDataset();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `destinationAddress`<sup>Required</sup> <a name="destinationAddress" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.destinationAddress"></a>
+
+```java
+public java.lang.String getDestinationAddress();
 ```
 
 - *Type:* java.lang.String
@@ -5626,6 +5979,16 @@ public java.lang.String getJson();
 
 ---
 
+##### `jurisdiction`<sup>Required</sup> <a name="jurisdiction" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jurisdiction"></a>
+
+```java
+public java.lang.String getJurisdiction();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `keyBase64`<sup>Required</sup> <a name="keyBase64" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyBase64"></a>
 
 ```java
@@ -5670,6 +6033,26 @@ public java.lang.String getNamespace();
 
 ```java
 public java.lang.String getNamespaceId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `oldName`<sup>Required</sup> <a name="oldName" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldName"></a>
+
+```java
+public java.lang.String getOldName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.part"></a>
+
+```java
+public java.lang.String getPart();
 ```
 
 - *Type:* java.lang.String
@@ -5763,6 +6146,16 @@ public java.util.List<java.lang.String> getUsages();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `versionId`<sup>Required</sup> <a name="versionId" id="@cdktf/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.versionId"></a>
+
+```java
+public java.lang.String getVersionId();
+```
+
+- *Type:* java.lang.String
 
 ---
 

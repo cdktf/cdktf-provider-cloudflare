@@ -4,7 +4,7 @@
 
 ### ZoneDnsSettings <a name="ZoneDnsSettings" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings.Initializer"></a>
 
@@ -569,7 +569,7 @@ The construct id used in the generated config for the ZoneDnsSettings to import.
 
 The id of the existing ZoneDnsSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#zone_id ZoneDnsSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#zone_id ZoneDnsSettings#zone_id}
 
 ---
 
@@ -1114,7 +1114,7 @@ Whether to flatten all CNAME records in the zone.
 
 Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#flatten_all_cnames ZoneDnsSettings#flatten_all_cnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#flatten_all_cnames ZoneDnsSettings#flatten_all_cnames}
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly foundationDns: boolean | IResolvable;
 
 Whether to enable Foundation DNS Advanced Nameservers on the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#foundation_dns ZoneDnsSettings#foundation_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#foundation_dns ZoneDnsSettings#foundation_dns}
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly internalDns: ZoneDnsSettingsInternalDns;
 
 Settings for this internal zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#internal_dns ZoneDnsSettings#internal_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#internal_dns ZoneDnsSettings#internal_dns}
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly multiProvider: boolean | IResolvable;
 
 Whether to enable multi-provider DNS, which causes Cloudflare to activate the zone even when non-Cloudflare NS records exist, and to respect NS records at the zone apex during outbound zone transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#multi_provider ZoneDnsSettings#multi_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#multi_provider ZoneDnsSettings#multi_provider}
 
 ---
 
@@ -1170,7 +1170,7 @@ public readonly nameservers: ZoneDnsSettingsNameservers;
 
 Settings determining the nameservers through which the zone should be available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#nameservers ZoneDnsSettings#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#nameservers ZoneDnsSettings#nameservers}
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly nsTtl: number;
 
 The time to live (TTL) of the zone's nameserver (NS) records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#ns_ttl ZoneDnsSettings#ns_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#ns_ttl ZoneDnsSettings#ns_ttl}
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly secondaryOverrides: boolean | IResolvable;
 
 Allows a Secondary DNS zone to use (proxied) override records and CNAME flattening at the zone apex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#secondary_overrides ZoneDnsSettings#secondary_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#secondary_overrides ZoneDnsSettings#secondary_overrides}
 
 ---
 
@@ -1212,7 +1212,7 @@ public readonly soa: ZoneDnsSettingsSoa;
 
 Components of the zone's SOA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#soa ZoneDnsSettings#soa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#soa ZoneDnsSettings#soa}
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly zoneMode: string;
 
 Whether the zone mode is a regular or CDN/DNS only zone. Available values: "standard", "cdn_only", "dns_only".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#zone_mode ZoneDnsSettings#zone_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#zone_mode ZoneDnsSettings#zone_mode}
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly referenceZoneId: string;
 
 The ID of the zone to fallback to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#reference_zone_id ZoneDnsSettings#reference_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#reference_zone_id ZoneDnsSettings#reference_zone_id}
 
 ---
 
@@ -1276,22 +1276,8 @@ const zoneDnsSettingsNameservers: zoneDnsSettings.ZoneDnsSettingsNameservers = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers.property.type">type</a></code> | <code>string</code> | Nameserver type Available values: "cloudflare.standard", "custom.account", "custom.tenant", "custom.zone". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers.property.nsSet">nsSet</a></code> | <code>number</code> | Configured nameserver set to be used for this zone. |
-
----
-
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers.property.type"></a>
-
-```typescript
-public readonly type: string;
-```
-
-- *Type:* string
-
-Nameserver type Available values: "cloudflare.standard", "custom.account", "custom.tenant", "custom.zone".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#type ZoneDnsSettings#type}
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers.property.type">type</a></code> | <code>string</code> | Nameserver type Available values: "cloudflare.standard", "custom.account", "custom.tenant", "custom.zone". |
 
 ---
 
@@ -1305,7 +1291,21 @@ public readonly nsSet: number;
 
 Configured nameserver set to be used for this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#ns_set ZoneDnsSettings#ns_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#ns_set ZoneDnsSettings#ns_set}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+Nameserver type Available values: "cloudflare.standard", "custom.account", "custom.tenant", "custom.zone".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#type ZoneDnsSettings#type}
 
 ---
 
@@ -1325,7 +1325,7 @@ const zoneDnsSettingsSoa: zoneDnsSettings.ZoneDnsSettingsSoa = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.expire">expire</a></code> | <code>number</code> | Time in seconds of being unable to query the primary server after which secondary servers should stop serving the zone. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.minTtl">minTtl</a></code> | <code>number</code> | The time to live (TTL) for negative caching of records within the zone. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.mname">mname</a></code> | <code>string</code> | The primary nameserver, which may be used for outbound zone transfers. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.mname">mname</a></code> | <code>string</code> | The primary nameserver, which may be used for outbound zone transfers. If null, a Cloudflare-assigned value will be used. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.refresh">refresh</a></code> | <code>number</code> | Time in seconds after which secondary servers should re-check the SOA record to see if the zone has been updated. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.retry">retry</a></code> | <code>number</code> | Time in seconds after which secondary servers should retry queries after the primary server was unresponsive. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.rname">rname</a></code> | <code>string</code> | The email address of the zone administrator, with the first label representing the local part of the email address. |
@@ -1333,7 +1333,7 @@ const zoneDnsSettingsSoa: zoneDnsSettings.ZoneDnsSettingsSoa = { ... }
 
 ---
 
-##### `expire`<sup>Required</sup> <a name="expire" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.expire"></a>
+##### `expire`<sup>Optional</sup> <a name="expire" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.expire"></a>
 
 ```typescript
 public readonly expire: number;
@@ -1343,11 +1343,11 @@ public readonly expire: number;
 
 Time in seconds of being unable to query the primary server after which secondary servers should stop serving the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#expire ZoneDnsSettings#expire}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#expire ZoneDnsSettings#expire}
 
 ---
 
-##### `minTtl`<sup>Required</sup> <a name="minTtl" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.minTtl"></a>
+##### `minTtl`<sup>Optional</sup> <a name="minTtl" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.minTtl"></a>
 
 ```typescript
 public readonly minTtl: number;
@@ -1357,11 +1357,11 @@ public readonly minTtl: number;
 
 The time to live (TTL) for negative caching of records within the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#min_ttl ZoneDnsSettings#min_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#min_ttl ZoneDnsSettings#min_ttl}
 
 ---
 
-##### `mname`<sup>Required</sup> <a name="mname" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.mname"></a>
+##### `mname`<sup>Optional</sup> <a name="mname" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.mname"></a>
 
 ```typescript
 public readonly mname: string;
@@ -1369,13 +1369,13 @@ public readonly mname: string;
 
 - *Type:* string
 
-The primary nameserver, which may be used for outbound zone transfers.
+The primary nameserver, which may be used for outbound zone transfers. If null, a Cloudflare-assigned value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#mname ZoneDnsSettings#mname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#mname ZoneDnsSettings#mname}
 
 ---
 
-##### `refresh`<sup>Required</sup> <a name="refresh" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.refresh"></a>
+##### `refresh`<sup>Optional</sup> <a name="refresh" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.refresh"></a>
 
 ```typescript
 public readonly refresh: number;
@@ -1385,11 +1385,11 @@ public readonly refresh: number;
 
 Time in seconds after which secondary servers should re-check the SOA record to see if the zone has been updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#refresh ZoneDnsSettings#refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#refresh ZoneDnsSettings#refresh}
 
 ---
 
-##### `retry`<sup>Required</sup> <a name="retry" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.retry"></a>
+##### `retry`<sup>Optional</sup> <a name="retry" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.retry"></a>
 
 ```typescript
 public readonly retry: number;
@@ -1399,11 +1399,11 @@ public readonly retry: number;
 
 Time in seconds after which secondary servers should retry queries after the primary server was unresponsive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#retry ZoneDnsSettings#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#retry ZoneDnsSettings#retry}
 
 ---
 
-##### `rname`<sup>Required</sup> <a name="rname" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.rname"></a>
+##### `rname`<sup>Optional</sup> <a name="rname" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.rname"></a>
 
 ```typescript
 public readonly rname: string;
@@ -1413,11 +1413,11 @@ public readonly rname: string;
 
 The email address of the zone administrator, with the first label representing the local part of the email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#rname ZoneDnsSettings#rname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#rname ZoneDnsSettings#rname}
 
 ---
 
-##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.ttl"></a>
+##### `ttl`<sup>Optional</sup> <a name="ttl" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa.property.ttl"></a>
 
 ```typescript
 public readonly ttl: number;
@@ -1427,7 +1427,7 @@ public readonly ttl: number;
 
 The time to live (TTL) of the SOA record itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zone_dns_settings#ttl ZoneDnsSettings#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zone_dns_settings#ttl ZoneDnsSettings#ttl}
 
 ---
 
@@ -1762,6 +1762,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference.resetNsSet">resetNsSet</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference.resetType">resetType</a></code> | *No description.* |
 
 ---
 
@@ -1921,6 +1922,12 @@ Returns a reversible string representation.
 public resetNsSet(): void
 ```
 
+##### `resetType` <a name="resetType" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference.resetType"></a>
+
+```typescript
+public resetType(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2061,6 +2068,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetExpire">resetExpire</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetMinTtl">resetMinTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetMname">resetMname</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetRefresh">resetRefresh</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetRetry">resetRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetRname">resetRname</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetTtl">resetTtl</a></code> | *No description.* |
 
 ---
 
@@ -2213,6 +2227,48 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetExpire` <a name="resetExpire" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetExpire"></a>
+
+```typescript
+public resetExpire(): void
+```
+
+##### `resetMinTtl` <a name="resetMinTtl" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetMinTtl"></a>
+
+```typescript
+public resetMinTtl(): void
+```
+
+##### `resetMname` <a name="resetMname" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetMname"></a>
+
+```typescript
+public resetMname(): void
+```
+
+##### `resetRefresh` <a name="resetRefresh" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetRefresh"></a>
+
+```typescript
+public resetRefresh(): void
+```
+
+##### `resetRetry` <a name="resetRetry" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetRetry"></a>
+
+```typescript
+public resetRetry(): void
+```
+
+##### `resetRname` <a name="resetRname" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetRname"></a>
+
+```typescript
+public resetRname(): void
+```
+
+##### `resetTtl` <a name="resetTtl" id="@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference.resetTtl"></a>
+
+```typescript
+public resetTtl(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

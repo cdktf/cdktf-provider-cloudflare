@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustGatewayLoggingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#account_id ZeroTrustGatewayLogging#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#account_id ZeroTrustGatewayLogging#account_id}
   */
   readonly accountId: string;
   /**
-  * Redact personally identifiable information from activity logging (PII fields are: source IP, user email, user ID, device ID, URL, referrer, user agent).
+  * Indicate whether to redact personally identifiable information from activity logging (PII fields include source IP, user email, user ID, device ID, URL, referrer, and user agent).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#redact_pii ZeroTrustGatewayLogging#redact_pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#redact_pii ZeroTrustGatewayLogging#redact_pii}
   */
   readonly redactPii?: boolean | cdktf.IResolvable;
   /**
-  * Logging settings by rule type.
+  * Configure logging settings for each rule type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#settings_by_rule_type ZeroTrustGatewayLogging#settings_by_rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#settings_by_rule_type ZeroTrustGatewayLogging#settings_by_rule_type}
   */
   readonly settingsByRuleType?: ZeroTrustGatewayLoggingSettingsByRuleType;
 }
 export interface ZeroTrustGatewayLoggingSettingsByRuleTypeDns {
   /**
-  * Log all requests to this service.
+  * Specify whether to log all requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
   */
   readonly logAll?: boolean | cdktf.IResolvable;
   /**
-  * Log only blocking requests to this service.
+  * Specify whether to log only blocking requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
   */
   readonly logBlocks?: boolean | cdktf.IResolvable;
 }
@@ -162,15 +162,15 @@ export class ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference extends
 }
 export interface ZeroTrustGatewayLoggingSettingsByRuleTypeHttp {
   /**
-  * Log all requests to this service.
+  * Specify whether to log all requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
   */
   readonly logAll?: boolean | cdktf.IResolvable;
   /**
-  * Log only blocking requests to this service.
+  * Specify whether to log only blocking requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
   */
   readonly logBlocks?: boolean | cdktf.IResolvable;
 }
@@ -293,15 +293,15 @@ export class ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference extend
 }
 export interface ZeroTrustGatewayLoggingSettingsByRuleTypeL4 {
   /**
-  * Log all requests to this service.
+  * Specify whether to log all requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
   */
   readonly logAll?: boolean | cdktf.IResolvable;
   /**
-  * Log only blocking requests to this service.
+  * Specify whether to log only blocking requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
   */
   readonly logBlocks?: boolean | cdktf.IResolvable;
 }
@@ -424,15 +424,21 @@ export class ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference extends 
 }
 export interface ZeroTrustGatewayLoggingSettingsByRuleType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#dns ZeroTrustGatewayLogging#dns}
+  * Configure logging settings for DNS firewall.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#dns ZeroTrustGatewayLogging#dns}
   */
   readonly dns?: ZeroTrustGatewayLoggingSettingsByRuleTypeDns;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#http ZeroTrustGatewayLogging#http}
+  * Configure logging settings for HTTP/HTTPS firewall.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#http ZeroTrustGatewayLogging#http}
   */
   readonly http?: ZeroTrustGatewayLoggingSettingsByRuleTypeHttp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#l4 ZeroTrustGatewayLogging#l4}
+  * Configure logging settings for Network firewall.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#l4 ZeroTrustGatewayLogging#l4}
   */
   readonly l4?: ZeroTrustGatewayLoggingSettingsByRuleTypeL4;
 }
@@ -584,7 +590,7 @@ export class ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}
 */
 export class ZeroTrustGatewayLogging extends cdktf.TerraformResource {
 
@@ -600,7 +606,7 @@ export class ZeroTrustGatewayLogging extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustGatewayLogging resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustGatewayLogging to import
-  * @param importFromId The id of the existing ZeroTrustGatewayLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustGatewayLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustGatewayLogging to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -612,7 +618,7 @@ export class ZeroTrustGatewayLogging extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -623,7 +629,7 @@ export class ZeroTrustGatewayLogging extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_gateway_logging',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

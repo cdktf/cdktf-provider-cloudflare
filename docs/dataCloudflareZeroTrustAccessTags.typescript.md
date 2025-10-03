@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessTags <a name="DataCloudflareZeroTrustAccessTags" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags cloudflare_zero_trust_access_tags}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags cloudflare_zero_trust_access_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTags.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,7 +706,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags#account_id DataCloudflareZeroTrustAccessTags#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags#account_id DataCloudflareZeroTrustAccessTags#account_id}
 
 ---
 
@@ -720,7 +720,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_tags#max_items DataCloudflareZeroTrustAccessTags#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_tags#max_items DataCloudflareZeroTrustAccessTags#max_items}
 
 ---
 
@@ -1114,10 +1114,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.appCount">appCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResult">DataCloudflareZeroTrustAccessTagsResult</a></code> | *No description.* |
 
 ---
@@ -1146,40 +1143,10 @@ public readonly fqn: string;
 
 ---
 
-##### `appCount`<sup>Required</sup> <a name="appCount" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.appCount"></a>
-
-```typescript
-public readonly appCount: number;
-```
-
-- *Type:* number
-
----
-
-##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.createdAt"></a>
-
-```typescript
-public readonly createdAt: string;
-```
-
-- *Type:* string
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
-```
-
-- *Type:* string
-
----
-
-##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTags.DataCloudflareZeroTrustAccessTagsResultOutputReference.property.updatedAt"></a>
-
-```typescript
-public readonly updatedAt: string;
 ```
 
 - *Type:* string

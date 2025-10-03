@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreamWatermarks <a name="DataCloudflareStreamWatermarks" id="@cdktf/provider-cloudflare.dataCloudflareStreamWatermarks.DataCloudflareStreamWatermarks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_watermarks cloudflare_stream_watermarks}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/stream_watermarks cloudflare_stream_watermarks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreamWatermarks.DataCloudflareStreamWatermarks.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_watermarks#account_id DataCloudflareStreamWatermarks#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/stream_watermarks#account_id DataCloudflareStreamWatermarks#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_watermarks#max_items DataCloudflareStreamWatermarks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/stream_watermarks#max_items DataCloudflareStreamWatermarks#max_items}
 
 ---
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataCloudflareStreamWaterm
 
 The id of the existing DataCloudflareStreamWatermarks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_watermarks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/stream_watermarks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,7 +828,7 @@ account_id: str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_watermarks#account_id DataCloudflareStreamWatermarks#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/stream_watermarks#account_id DataCloudflareStreamWatermarks#account_id}
 
 ---
 
@@ -842,7 +842,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_watermarks#max_items DataCloudflareStreamWatermarks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/stream_watermarks#max_items DataCloudflareStreamWatermarks#max_items}
 
 ---
 
