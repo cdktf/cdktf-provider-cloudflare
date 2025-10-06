@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_cloudflare import account_token
 accountToken.AccountToken(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   name: str,
-  policies: typing.Union[IResolvable, typing.List[AccountTokenPolicies]],
+  policies: IResolvable | typing.List[AccountTokenPolicies],
   condition: AccountTokenCondition = None,
   expires_on: str = None,
   not_before: str = None,
@@ -35,16 +35,16 @@ accountToken.AccountToken(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.name">name</a></code> | <code>str</code> | Token name. |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.policies">policies</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]</code> | List of access policies assigned to the token. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.policies">policies</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]</code> | List of access policies assigned to the token. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account_token#condition AccountToken#condition}. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.expiresOn">expires_on</a></code> | <code>str</code> | The expiration time on or after which the JWT MUST NOT be accepted for processing. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.notBefore">not_before</a></code> | <code>str</code> | The time before which the token MUST NOT be accepted for processing. |
@@ -72,13 +72,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `policies`<sup>Required</sup> <a name="policies" id="@cdktf/provider-cloudflare.accountToken.AccountToken.Initializer.parameter.policies"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]
 
 List of access policies assigned to the token.
 
@@ -438,7 +438,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-cloudflare.accountToken.AccountToken.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-cloudflare.accountToken.AccountToken.importFrom"></a>
@@ -501,7 +501,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -517,7 +517,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.accountToken.AccountToken.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -563,13 +563,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_policies(
-  value: typing.Union[IResolvable, typing.List[AccountTokenPolicies]]
+  value: IResolvable | typing.List[AccountTokenPolicies]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.accountToken.AccountToken.putPolicies.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]
 
 ---
 
@@ -734,13 +734,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference">AccountTokenConditionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.issuedOn">issued_on</a></code> | <code>str</code> | *No description.* |
@@ -749,11 +749,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.policies">policies</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList">AccountTokenPoliciesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.conditionInput">condition_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.conditionInput">condition_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.expiresOnInput">expires_on_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.notBeforeInput">not_before_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.policiesInput">policies_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.policiesInput">policies_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountToken.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
@@ -838,20 +838,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -898,10 +898,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -988,10 +988,10 @@ account_id_input: str
 ##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.conditionInput"></a>
 
 ```python
-condition_input: typing.Union[IResolvable, AccountTokenCondition]
+condition_input: IResolvable | AccountTokenCondition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>
 
 ---
 
@@ -1028,10 +1028,10 @@ not_before_input: str
 ##### `policies_input`<sup>Optional</sup> <a name="policies_input" id="@cdktf/provider-cloudflare.accountToken.AccountToken.property.policiesInput"></a>
 
 ```python
-policies_input: typing.Union[IResolvable, typing.List[AccountTokenPolicies]]
+policies_input: IResolvable | typing.List[AccountTokenPolicies]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]
 
 ---
 
@@ -1207,16 +1207,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import account_token
 
 accountToken.AccountTokenConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   name: str,
-  policies: typing.Union[IResolvable, typing.List[AccountTokenPolicies]],
+  policies: IResolvable | typing.List[AccountTokenPolicies],
   condition: AccountTokenCondition = None,
   expires_on: str = None,
   not_before: str = None,
@@ -1228,16 +1228,16 @@ accountToken.AccountTokenConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.name">name</a></code> | <code>str</code> | Token name. |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.policies">policies</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]</code> | List of access policies assigned to the token. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.policies">policies</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]</code> | List of access policies assigned to the token. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account_token#condition AccountToken#condition}. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.expiresOn">expires_on</a></code> | <code>str</code> | The expiration time on or after which the JWT MUST NOT be accepted for processing. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.notBefore">not_before</a></code> | <code>str</code> | The time before which the token MUST NOT be accepted for processing. |
@@ -1248,20 +1248,20 @@ accountToken.AccountTokenConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1308,10 +1308,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1346,10 +1346,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `policies`<sup>Required</sup> <a name="policies" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConfig.property.policies"></a>
 
 ```python
-policies: typing.Union[IResolvable, typing.List[AccountTokenPolicies]]
+policies: IResolvable | typing.List[AccountTokenPolicies]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]
 
 List of access policies assigned to the token.
 
@@ -1420,7 +1420,7 @@ from cdktf_cdktf_provider_cloudflare import account_token
 
 accountToken.AccountTokenPolicies(
   effect: str,
-  permission_groups: typing.Union[IResolvable, typing.List[AccountTokenPoliciesPermissionGroups]],
+  permission_groups: IResolvable | typing.List[AccountTokenPoliciesPermissionGroups],
   resources: typing.Mapping[str]
 )
 ```
@@ -1430,7 +1430,7 @@ accountToken.AccountTokenPolicies(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies.property.effect">effect</a></code> | <code>str</code> | Allow or deny operations against the resources. Available values: "allow", "deny". |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies.property.permissionGroups">permission_groups</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]]</code> | A set of permission groups that are specified to the policy. |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies.property.permissionGroups">permission_groups</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]</code> | A set of permission groups that are specified to the policy. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies.property.resources">resources</a></code> | <code>typing.Mapping[str]</code> | A list of resource names that the policy applies to. |
 
 ---
@@ -1452,10 +1452,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `permission_groups`<sup>Required</sup> <a name="permission_groups" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies.property.permissionGroups"></a>
 
 ```python
-permission_groups: typing.Union[IResolvable, typing.List[AccountTokenPoliciesPermissionGroups]]
+permission_groups: IResolvable | typing.List[AccountTokenPoliciesPermissionGroups]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]
 
 A set of permission groups that are specified to the policy.
 
@@ -1851,8 +1851,8 @@ def reset_request_ip() -> None
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.requestIp">request_ip</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference">AccountTokenConditionRequestIpOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.requestIpInput">request_ip_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.requestIpInput">request_ip_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | *No description.* |
 
 ---
 
@@ -1893,20 +1893,20 @@ request_ip: AccountTokenConditionRequestIpOutputReference
 ##### `request_ip_input`<sup>Optional</sup> <a name="request_ip_input" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.requestIpInput"></a>
 
 ```python
-request_ip_input: typing.Union[IResolvable, AccountTokenConditionRequestIp]
+request_ip_input: IResolvable | AccountTokenConditionRequestIp
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a>
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AccountTokenCondition]
+internal_value: IResolvable | AccountTokenCondition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>
 
 ---
 
@@ -2164,7 +2164,7 @@ def reset_not_in() -> None
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference.property.notInInput">not_in_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference.property.in">in</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference.property.notIn">not_in</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a></code> | *No description.* |
 
 ---
 
@@ -2235,10 +2235,10 @@ not_in: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AccountTokenConditionRequestIp]
+internal_value: IResolvable | AccountTokenConditionRequestIp
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp">AccountTokenConditionRequestIp</a>
 
 ---
 
@@ -2374,7 +2374,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]</code> | *No description.* |
 
 ---
 
@@ -2405,10 +2405,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AccountTokenPolicies]]
+internal_value: IResolvable | typing.List[AccountTokenPolicies]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]
 
 ---
 
@@ -2666,13 +2666,13 @@ Returns a reversible string representation.
 
 ```python
 def put_permission_groups(
-  value: typing.Union[IResolvable, typing.List[AccountTokenPoliciesPermissionGroups]]
+  value: IResolvable | typing.List[AccountTokenPoliciesPermissionGroups]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.putPermissionGroups.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]
 
 ---
 
@@ -2686,11 +2686,11 @@ def put_permission_groups(
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.permissionGroups">permission_groups</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList">AccountTokenPoliciesPermissionGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.effectInput">effect_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.permissionGroupsInput">permission_groups_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.permissionGroupsInput">permission_groups_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.resourcesInput">resources_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.effect">effect</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.resources">resources</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a></code> | *No description.* |
 
 ---
 
@@ -2751,10 +2751,10 @@ effect_input: str
 ##### `permission_groups_input`<sup>Optional</sup> <a name="permission_groups_input" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.permissionGroupsInput"></a>
 
 ```python
-permission_groups_input: typing.Union[IResolvable, typing.List[AccountTokenPoliciesPermissionGroups]]
+permission_groups_input: IResolvable | typing.List[AccountTokenPoliciesPermissionGroups]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]
 
 ---
 
@@ -2791,10 +2791,10 @@ resources: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AccountTokenPolicies]
+internal_value: IResolvable | AccountTokenPolicies
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies">AccountTokenPolicies</a>
 
 ---
 
@@ -2930,7 +2930,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]</code> | *No description.* |
 
 ---
 
@@ -2961,10 +2961,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AccountTokenPoliciesPermissionGroups]]
+internal_value: IResolvable | typing.List[AccountTokenPoliciesPermissionGroups]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]
 
 ---
 
@@ -3222,7 +3222,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a></code> | *No description.* |
 
 ---
 
@@ -3293,10 +3293,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AccountTokenPoliciesPermissionGroupsMeta]
+internal_value: IResolvable | AccountTokenPoliciesPermissionGroupsMeta
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a>
 
 ---
 
@@ -3592,9 +3592,9 @@ def reset_meta() -> None
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.meta">meta</a></code> | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMetaOutputReference">AccountTokenPoliciesPermissionGroupsMetaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.metaInput">meta_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.metaInput">meta_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a></code> | *No description.* |
 
 ---
 
@@ -3655,10 +3655,10 @@ id_input: str
 ##### `meta_input`<sup>Optional</sup> <a name="meta_input" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.metaInput"></a>
 
 ```python
-meta_input: typing.Union[IResolvable, AccountTokenPoliciesPermissionGroupsMeta]
+meta_input: IResolvable | AccountTokenPoliciesPermissionGroupsMeta
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsMeta">AccountTokenPoliciesPermissionGroupsMeta</a>
 
 ---
 
@@ -3675,10 +3675,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AccountTokenPoliciesPermissionGroups]
+internal_value: IResolvable | AccountTokenPoliciesPermissionGroups
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups">AccountTokenPoliciesPermissionGroups</a>
 
 ---
 

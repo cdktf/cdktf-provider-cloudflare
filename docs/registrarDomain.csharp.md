@@ -276,7 +276,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.importFrom"></a>
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -345,7 +345,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -511,23 +511,23 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.autoRenewInput">AutoRenewInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.autoRenewInput">AutoRenewInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.domainNameInput">DomainNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.lockedInput">LockedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.privacyInput">PrivacyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.lockedInput">LockedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.privacyInput">PrivacyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.autoRenew">AutoRenew</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.autoRenew">AutoRenew</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.domainName">DomainName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.locked">Locked</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.privacy">Privacy</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.locked">Locked</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.privacy">Privacy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -606,20 +606,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -666,10 +666,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -686,10 +686,10 @@ public string AccountIdInput { get; }
 ##### `AutoRenewInput`<sup>Optional</sup> <a name="AutoRenewInput" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.autoRenewInput"></a>
 
 ```csharp
-public object AutoRenewInput { get; }
+public bool|IResolvable AutoRenewInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -706,20 +706,20 @@ public string DomainNameInput { get; }
 ##### `LockedInput`<sup>Optional</sup> <a name="LockedInput" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.lockedInput"></a>
 
 ```csharp
-public object LockedInput { get; }
+public bool|IResolvable LockedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PrivacyInput`<sup>Optional</sup> <a name="PrivacyInput" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.privacyInput"></a>
 
 ```csharp
-public object PrivacyInput { get; }
+public bool|IResolvable PrivacyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -736,10 +736,10 @@ public string AccountId { get; }
 ##### `AutoRenew`<sup>Required</sup> <a name="AutoRenew" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.autoRenew"></a>
 
 ```csharp
-public object AutoRenew { get; }
+public bool|IResolvable AutoRenew { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -756,20 +756,20 @@ public string DomainName { get; }
 ##### `Locked`<sup>Required</sup> <a name="Locked" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.locked"></a>
 
 ```csharp
-public object Locked { get; }
+public bool|IResolvable Locked { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Privacy`<sup>Required</sup> <a name="Privacy" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.property.privacy"></a>
 
 ```csharp
-public object Privacy { get; }
+public bool|IResolvable Privacy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -801,18 +801,18 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RegistrarDomainConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AccountId,
     string DomainName,
-    object AutoRenew = null,
-    object Locked = null,
-    object Privacy = null
+    bool|IResolvable AutoRenew = null,
+    bool|IResolvable Locked = null,
+    bool|IResolvable Privacy = null
 };
 ```
 
@@ -820,38 +820,38 @@ new RegistrarDomainConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.domainName">DomainName</a></code> | <code>string</code> | Domain name. |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.autoRenew">AutoRenew</a></code> | <code>object</code> | Auto-renew controls whether subscription is automatically renewed upon domain expiration. |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.locked">Locked</a></code> | <code>object</code> | Shows whether a registrar lock is in place for a domain. |
-| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.privacy">Privacy</a></code> | <code>object</code> | Privacy option controls redacting WHOIS information. |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.autoRenew">AutoRenew</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Auto-renew controls whether subscription is automatically renewed upon domain expiration. |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.locked">Locked</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Shows whether a registrar lock is in place for a domain. |
+| <code><a href="#@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.privacy">Privacy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Privacy option controls redacting WHOIS information. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -898,10 +898,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -936,10 +936,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `AutoRenew`<sup>Optional</sup> <a name="AutoRenew" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.autoRenew"></a>
 
 ```csharp
-public object AutoRenew { get; set; }
+public bool|IResolvable AutoRenew { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Auto-renew controls whether subscription is automatically renewed upon domain expiration.
 
@@ -950,10 +950,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Locked`<sup>Optional</sup> <a name="Locked" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.locked"></a>
 
 ```csharp
-public object Locked { get; set; }
+public bool|IResolvable Locked { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Shows whether a registrar lock is in place for a domain.
 
@@ -964,10 +964,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Privacy`<sup>Optional</sup> <a name="Privacy" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.privacy"></a>
 
 ```csharp
-public object Privacy { get; set; }
+public bool|IResolvable Privacy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Privacy option controls redacting WHOIS information.
 

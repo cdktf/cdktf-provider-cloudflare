@@ -280,7 +280,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.importFrom"></a>
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -557,13 +557,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfig">BuildConfig</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference">PagesProjectBuildConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.canonicalDeployment">CanonicalDeployment</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentOutputReference">PagesProjectCanonicalDeploymentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.createdOn">CreatedOn</a></code> | <code>string</code> | *No description.* |
@@ -574,11 +574,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.source">Source</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference">PagesProjectSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.subdomain">Subdomain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfigInput">BuildConfigInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigsInput">DeploymentConfigsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfigInput">BuildConfigInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigsInput">DeploymentConfigsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.productionBranchInput">ProductionBranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.sourceInput">SourceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.sourceInput">SourceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.productionBranch">ProductionBranch</a></code> | <code>string</code> | *No description.* |
@@ -660,20 +660,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -720,10 +720,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -830,20 +830,20 @@ public string AccountIdInput { get; }
 ##### `BuildConfigInput`<sup>Optional</sup> <a name="BuildConfigInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfigInput"></a>
 
 ```csharp
-public object BuildConfigInput { get; }
+public IResolvable|PagesProjectBuildConfig BuildConfigInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>
 
 ---
 
 ##### `DeploymentConfigsInput`<sup>Optional</sup> <a name="DeploymentConfigsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigsInput"></a>
 
 ```csharp
-public object DeploymentConfigsInput { get; }
+public IResolvable|PagesProjectDeploymentConfigs DeploymentConfigsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>
 
 ---
 
@@ -870,10 +870,10 @@ public string ProductionBranchInput { get; }
 ##### `SourceInput`<sup>Optional</sup> <a name="SourceInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.sourceInput"></a>
 
 ```csharp
-public object SourceInput { get; }
+public IResolvable|PagesProjectSource SourceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>
 
 ---
 
@@ -935,7 +935,7 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new PagesProjectBuildConfig {
-    object BuildCaching = null,
+    bool|IResolvable BuildCaching = null,
     string BuildCommand = null,
     string DestinationDir = null,
     string RootDir = null,
@@ -948,7 +948,7 @@ new PagesProjectBuildConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCaching">BuildCaching</a></code> | <code>object</code> | Enable build caching for the project. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCaching">BuildCaching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable build caching for the project. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCommand">BuildCommand</a></code> | <code>string</code> | Command used to build project. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.destinationDir">DestinationDir</a></code> | <code>string</code> | Output directory of the build. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.rootDir">RootDir</a></code> | <code>string</code> | Directory to run the command. |
@@ -960,10 +960,10 @@ new PagesProjectBuildConfig {
 ##### `BuildCaching`<sup>Optional</sup> <a name="BuildCaching" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCaching"></a>
 
 ```csharp
-public object BuildCaching { get; set; }
+public bool|IResolvable BuildCaching { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable build caching for the project.
 
@@ -1166,13 +1166,13 @@ new PagesProjectCanonicalDeploymentStages {
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new PagesProjectConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AccountId,
     string Name,
     PagesProjectBuildConfig BuildConfig = null,
@@ -1186,13 +1186,13 @@ new PagesProjectConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.name">Name</a></code> | <code>string</code> | Name of the project. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.buildConfig">BuildConfig</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | Configs for the project build process. |
@@ -1205,20 +1205,20 @@ new PagesProjectConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1265,10 +1265,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1412,22 +1412,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new PagesProjectDeploymentConfigsPreview {
-    object AiBindings = null,
-    object AnalyticsEngineDatasets = null,
-    object Browsers = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAiBindings> AiBindings = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets> AnalyticsEngineDatasets = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewBrowsers> Browsers = null,
     string CompatibilityDate = null,
     string[] CompatibilityFlags = null,
-    object D1Databases = null,
-    object DurableObjectNamespaces = null,
-    object EnvVars = null,
-    object HyperdriveBindings = null,
-    object KvNamespaces = null,
-    object MtlsCertificates = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewD1Databases> D1Databases = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces> DurableObjectNamespaces = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewEnvVars> EnvVars = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewHyperdriveBindings> HyperdriveBindings = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewKvNamespaces> KvNamespaces = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewMtlsCertificates> MtlsCertificates = null,
     PagesProjectDeploymentConfigsPreviewPlacement Placement = null,
-    object QueueProducers = null,
-    object R2Buckets = null,
-    object Services = null,
-    object VectorizeBindings = null
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewQueueProducers> QueueProducers = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewR2Buckets> R2Buckets = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewServices> Services = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewVectorizeBindings> VectorizeBindings = null
 };
 ```
 
@@ -1435,32 +1435,32 @@ new PagesProjectDeploymentConfigsPreview {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.aiBindings">AiBindings</a></code> | <code>object</code> | Constellation bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.analyticsEngineDatasets">AnalyticsEngineDatasets</a></code> | <code>object</code> | Analytics Engine bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.browsers">Browsers</a></code> | <code>object</code> | Browser bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.aiBindings">AiBindings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>></code> | Constellation bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.analyticsEngineDatasets">AnalyticsEngineDatasets</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>></code> | Analytics Engine bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.browsers">Browsers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>></code> | Browser bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.compatibilityDate">CompatibilityDate</a></code> | <code>string</code> | Compatibility date used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.compatibilityFlags">CompatibilityFlags</a></code> | <code>string[]</code> | Compatibility flags used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.d1Databases">D1Databases</a></code> | <code>object</code> | D1 databases used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.durableObjectNamespaces">DurableObjectNamespaces</a></code> | <code>object</code> | Durable Object namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.envVars">EnvVars</a></code> | <code>object</code> | Environment variables used for builds and Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.hyperdriveBindings">HyperdriveBindings</a></code> | <code>object</code> | Hyperdrive bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.kvNamespaces">KvNamespaces</a></code> | <code>object</code> | KV namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.mtlsCertificates">MtlsCertificates</a></code> | <code>object</code> | mTLS bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.d1Databases">D1Databases</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>></code> | D1 databases used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.durableObjectNamespaces">DurableObjectNamespaces</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>></code> | Durable Object namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.envVars">EnvVars</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>></code> | Environment variables used for builds and Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.hyperdriveBindings">HyperdriveBindings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>></code> | Hyperdrive bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.kvNamespaces">KvNamespaces</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>></code> | KV namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.mtlsCertificates">MtlsCertificates</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>></code> | mTLS bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.placement">Placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | Placement setting used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.queueProducers">QueueProducers</a></code> | <code>object</code> | Queue Producer bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.r2Buckets">R2Buckets</a></code> | <code>object</code> | R2 buckets used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.services">Services</a></code> | <code>object</code> | Services used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.vectorizeBindings">VectorizeBindings</a></code> | <code>object</code> | Vectorize bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.queueProducers">QueueProducers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>></code> | Queue Producer bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.r2Buckets">R2Buckets</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>></code> | R2 buckets used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.services">Services</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>></code> | Services used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.vectorizeBindings">VectorizeBindings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>></code> | Vectorize bindings used for Pages Functions. |
 
 ---
 
 ##### `AiBindings`<sup>Optional</sup> <a name="AiBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.aiBindings"></a>
 
 ```csharp
-public object AiBindings { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAiBindings> AiBindings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>>
 
 Constellation bindings used for Pages Functions.
 
@@ -1471,10 +1471,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `AnalyticsEngineDatasets`<sup>Optional</sup> <a name="AnalyticsEngineDatasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.analyticsEngineDatasets"></a>
 
 ```csharp
-public object AnalyticsEngineDatasets { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets> AnalyticsEngineDatasets { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>>
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -1485,10 +1485,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Browsers`<sup>Optional</sup> <a name="Browsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.browsers"></a>
 
 ```csharp
-public object Browsers { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewBrowsers> Browsers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>>
 
 Browser bindings used for Pages Functions.
 
@@ -1527,10 +1527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `D1Databases`<sup>Optional</sup> <a name="D1Databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.d1Databases"></a>
 
 ```csharp
-public object D1Databases { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewD1Databases> D1Databases { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>>
 
 D1 databases used for Pages Functions.
 
@@ -1541,10 +1541,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `DurableObjectNamespaces`<sup>Optional</sup> <a name="DurableObjectNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.durableObjectNamespaces"></a>
 
 ```csharp
-public object DurableObjectNamespaces { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces> DurableObjectNamespaces { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>>
 
 Durable Object namespaces used for Pages Functions.
 
@@ -1555,10 +1555,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `EnvVars`<sup>Optional</sup> <a name="EnvVars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.envVars"></a>
 
 ```csharp
-public object EnvVars { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewEnvVars> EnvVars { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>>
 
 Environment variables used for builds and Pages Functions.
 
@@ -1569,10 +1569,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `HyperdriveBindings`<sup>Optional</sup> <a name="HyperdriveBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.hyperdriveBindings"></a>
 
 ```csharp
-public object HyperdriveBindings { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewHyperdriveBindings> HyperdriveBindings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>>
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -1583,10 +1583,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `KvNamespaces`<sup>Optional</sup> <a name="KvNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.kvNamespaces"></a>
 
 ```csharp
-public object KvNamespaces { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewKvNamespaces> KvNamespaces { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>>
 
 KV namespaces used for Pages Functions.
 
@@ -1597,10 +1597,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `MtlsCertificates`<sup>Optional</sup> <a name="MtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.mtlsCertificates"></a>
 
 ```csharp
-public object MtlsCertificates { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewMtlsCertificates> MtlsCertificates { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>>
 
 mTLS bindings used for Pages Functions.
 
@@ -1625,10 +1625,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `QueueProducers`<sup>Optional</sup> <a name="QueueProducers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.queueProducers"></a>
 
 ```csharp
-public object QueueProducers { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewQueueProducers> QueueProducers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>>
 
 Queue Producer bindings used for Pages Functions.
 
@@ -1639,10 +1639,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `R2Buckets`<sup>Optional</sup> <a name="R2Buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.r2Buckets"></a>
 
 ```csharp
-public object R2Buckets { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewR2Buckets> R2Buckets { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>>
 
 R2 buckets used for Pages Functions.
 
@@ -1653,10 +1653,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Services`<sup>Optional</sup> <a name="Services" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.services"></a>
 
 ```csharp
-public object Services { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewServices> Services { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>>
 
 Services used for Pages Functions.
 
@@ -1667,10 +1667,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `VectorizeBindings`<sup>Optional</sup> <a name="VectorizeBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.vectorizeBindings"></a>
 
 ```csharp
-public object VectorizeBindings { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewVectorizeBindings> VectorizeBindings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>>
 
 Vectorize bindings used for Pages Functions.
 
@@ -2203,22 +2203,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new PagesProjectDeploymentConfigsProduction {
-    object AiBindings = null,
-    object AnalyticsEngineDatasets = null,
-    object Browsers = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAiBindings> AiBindings = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets> AnalyticsEngineDatasets = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionBrowsers> Browsers = null,
     string CompatibilityDate = null,
     string[] CompatibilityFlags = null,
-    object D1Databases = null,
-    object DurableObjectNamespaces = null,
-    object EnvVars = null,
-    object HyperdriveBindings = null,
-    object KvNamespaces = null,
-    object MtlsCertificates = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionD1Databases> D1Databases = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionDurableObjectNamespaces> DurableObjectNamespaces = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionEnvVars> EnvVars = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionHyperdriveBindings> HyperdriveBindings = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionKvNamespaces> KvNamespaces = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionMtlsCertificates> MtlsCertificates = null,
     PagesProjectDeploymentConfigsProductionPlacement Placement = null,
-    object QueueProducers = null,
-    object R2Buckets = null,
-    object Services = null,
-    object VectorizeBindings = null
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionQueueProducers> QueueProducers = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionR2Buckets> R2Buckets = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionServices> Services = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionVectorizeBindings> VectorizeBindings = null
 };
 ```
 
@@ -2226,32 +2226,32 @@ new PagesProjectDeploymentConfigsProduction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.aiBindings">AiBindings</a></code> | <code>object</code> | Constellation bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.analyticsEngineDatasets">AnalyticsEngineDatasets</a></code> | <code>object</code> | Analytics Engine bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.browsers">Browsers</a></code> | <code>object</code> | Browser bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.aiBindings">AiBindings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>></code> | Constellation bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.analyticsEngineDatasets">AnalyticsEngineDatasets</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>></code> | Analytics Engine bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.browsers">Browsers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>></code> | Browser bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.compatibilityDate">CompatibilityDate</a></code> | <code>string</code> | Compatibility date used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.compatibilityFlags">CompatibilityFlags</a></code> | <code>string[]</code> | Compatibility flags used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.d1Databases">D1Databases</a></code> | <code>object</code> | D1 databases used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.durableObjectNamespaces">DurableObjectNamespaces</a></code> | <code>object</code> | Durable Object namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.envVars">EnvVars</a></code> | <code>object</code> | Environment variables used for builds and Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.hyperdriveBindings">HyperdriveBindings</a></code> | <code>object</code> | Hyperdrive bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.kvNamespaces">KvNamespaces</a></code> | <code>object</code> | KV namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.mtlsCertificates">MtlsCertificates</a></code> | <code>object</code> | mTLS bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.d1Databases">D1Databases</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>></code> | D1 databases used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.durableObjectNamespaces">DurableObjectNamespaces</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>></code> | Durable Object namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.envVars">EnvVars</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>></code> | Environment variables used for builds and Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.hyperdriveBindings">HyperdriveBindings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>></code> | Hyperdrive bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.kvNamespaces">KvNamespaces</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>></code> | KV namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.mtlsCertificates">MtlsCertificates</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>></code> | mTLS bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.placement">Placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | Placement setting used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.queueProducers">QueueProducers</a></code> | <code>object</code> | Queue Producer bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.r2Buckets">R2Buckets</a></code> | <code>object</code> | R2 buckets used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.services">Services</a></code> | <code>object</code> | Services used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.vectorizeBindings">VectorizeBindings</a></code> | <code>object</code> | Vectorize bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.queueProducers">QueueProducers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>></code> | Queue Producer bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.r2Buckets">R2Buckets</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>></code> | R2 buckets used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.services">Services</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>></code> | Services used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.vectorizeBindings">VectorizeBindings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>></code> | Vectorize bindings used for Pages Functions. |
 
 ---
 
 ##### `AiBindings`<sup>Optional</sup> <a name="AiBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.aiBindings"></a>
 
 ```csharp
-public object AiBindings { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAiBindings> AiBindings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>>
 
 Constellation bindings used for Pages Functions.
 
@@ -2262,10 +2262,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `AnalyticsEngineDatasets`<sup>Optional</sup> <a name="AnalyticsEngineDatasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.analyticsEngineDatasets"></a>
 
 ```csharp
-public object AnalyticsEngineDatasets { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets> AnalyticsEngineDatasets { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>>
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -2276,10 +2276,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Browsers`<sup>Optional</sup> <a name="Browsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.browsers"></a>
 
 ```csharp
-public object Browsers { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionBrowsers> Browsers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>>
 
 Browser bindings used for Pages Functions.
 
@@ -2318,10 +2318,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `D1Databases`<sup>Optional</sup> <a name="D1Databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.d1Databases"></a>
 
 ```csharp
-public object D1Databases { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionD1Databases> D1Databases { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>>
 
 D1 databases used for Pages Functions.
 
@@ -2332,10 +2332,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `DurableObjectNamespaces`<sup>Optional</sup> <a name="DurableObjectNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.durableObjectNamespaces"></a>
 
 ```csharp
-public object DurableObjectNamespaces { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionDurableObjectNamespaces> DurableObjectNamespaces { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>>
 
 Durable Object namespaces used for Pages Functions.
 
@@ -2346,10 +2346,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `EnvVars`<sup>Optional</sup> <a name="EnvVars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.envVars"></a>
 
 ```csharp
-public object EnvVars { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionEnvVars> EnvVars { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>>
 
 Environment variables used for builds and Pages Functions.
 
@@ -2360,10 +2360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `HyperdriveBindings`<sup>Optional</sup> <a name="HyperdriveBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.hyperdriveBindings"></a>
 
 ```csharp
-public object HyperdriveBindings { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionHyperdriveBindings> HyperdriveBindings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>>
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -2374,10 +2374,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `KvNamespaces`<sup>Optional</sup> <a name="KvNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.kvNamespaces"></a>
 
 ```csharp
-public object KvNamespaces { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionKvNamespaces> KvNamespaces { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>>
 
 KV namespaces used for Pages Functions.
 
@@ -2388,10 +2388,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `MtlsCertificates`<sup>Optional</sup> <a name="MtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.mtlsCertificates"></a>
 
 ```csharp
-public object MtlsCertificates { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionMtlsCertificates> MtlsCertificates { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>>
 
 mTLS bindings used for Pages Functions.
 
@@ -2416,10 +2416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `QueueProducers`<sup>Optional</sup> <a name="QueueProducers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.queueProducers"></a>
 
 ```csharp
-public object QueueProducers { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionQueueProducers> QueueProducers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>>
 
 Queue Producer bindings used for Pages Functions.
 
@@ -2430,10 +2430,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `R2Buckets`<sup>Optional</sup> <a name="R2Buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.r2Buckets"></a>
 
 ```csharp
-public object R2Buckets { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionR2Buckets> R2Buckets { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>>
 
 R2 buckets used for Pages Functions.
 
@@ -2444,10 +2444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Services`<sup>Optional</sup> <a name="Services" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.services"></a>
 
 ```csharp
-public object Services { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionServices> Services { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>>
 
 Services used for Pages Functions.
 
@@ -2458,10 +2458,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `VectorizeBindings`<sup>Optional</sup> <a name="VectorizeBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.vectorizeBindings"></a>
 
 ```csharp
-public object VectorizeBindings { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionVectorizeBindings> VectorizeBindings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>>
 
 Vectorize bindings used for Pages Functions.
 
@@ -3157,16 +3157,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new PagesProjectSourceConfig {
-    object DeploymentsEnabled = null,
+    bool|IResolvable DeploymentsEnabled = null,
     string Owner = null,
     string[] PathExcludes = null,
     string[] PathIncludes = null,
-    object PrCommentsEnabled = null,
+    bool|IResolvable PrCommentsEnabled = null,
     string[] PreviewBranchExcludes = null,
     string[] PreviewBranchIncludes = null,
     string PreviewDeploymentSetting = null,
     string ProductionBranch = null,
-    object ProductionDeploymentsEnabled = null,
+    bool|IResolvable ProductionDeploymentsEnabled = null,
     string RepoName = null
 };
 ```
@@ -3175,16 +3175,16 @@ new PagesProjectSourceConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled">DeploymentsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled">DeploymentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#owner PagesProject#owner}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathExcludes">PathExcludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathIncludes">PathIncludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_includes PagesProject#path_includes}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled">PrCommentsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled">PrCommentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchExcludes">PreviewBranchExcludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchIncludes">PreviewBranchIncludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewDeploymentSetting">PreviewDeploymentSetting</a></code> | <code>string</code> | Available values: "all", "none", "custom". |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionBranch">ProductionBranch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_branch PagesProject#production_branch}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled">ProductionDeploymentsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled">ProductionDeploymentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.repoName">RepoName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#repo_name PagesProject#repo_name}. |
 
 ---
@@ -3192,10 +3192,10 @@ new PagesProjectSourceConfig {
 ##### `DeploymentsEnabled`<sup>Optional</sup> <a name="DeploymentsEnabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled"></a>
 
 ```csharp
-public object DeploymentsEnabled { get; set; }
+public bool|IResolvable DeploymentsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}.
 
@@ -3240,10 +3240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `PrCommentsEnabled`<sup>Optional</sup> <a name="PrCommentsEnabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled"></a>
 
 ```csharp
-public object PrCommentsEnabled { get; set; }
+public bool|IResolvable PrCommentsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}.
 
@@ -3302,10 +3302,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `ProductionDeploymentsEnabled`<sup>Optional</sup> <a name="ProductionDeploymentsEnabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled"></a>
 
 ```csharp
-public object ProductionDeploymentsEnabled { get; set; }
+public bool|IResolvable ProductionDeploymentsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}.
 
@@ -3577,19 +3577,19 @@ private void ResetWebAnalyticsToken()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCachingInput">BuildCachingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCachingInput">BuildCachingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCommandInput">BuildCommandInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.destinationDirInput">DestinationDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.rootDirInput">RootDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsTagInput">WebAnalyticsTagInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsTokenInput">WebAnalyticsTokenInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCaching">BuildCaching</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCaching">BuildCaching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCommand">BuildCommand</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.destinationDir">DestinationDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.rootDir">RootDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsTag">WebAnalyticsTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsToken">WebAnalyticsToken</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | *No description.* |
 
 ---
 
@@ -3620,10 +3620,10 @@ public string Fqn { get; }
 ##### `BuildCachingInput`<sup>Optional</sup> <a name="BuildCachingInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCachingInput"></a>
 
 ```csharp
-public object BuildCachingInput { get; }
+public bool|IResolvable BuildCachingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3680,10 +3680,10 @@ public string WebAnalyticsTokenInput { get; }
 ##### `BuildCaching`<sup>Required</sup> <a name="BuildCaching" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCaching"></a>
 
 ```csharp
-public object BuildCaching { get; }
+public bool|IResolvable BuildCaching { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3740,10 +3740,10 @@ public string WebAnalyticsToken { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectBuildConfig InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>
 
 ---
 
@@ -7103,9 +7103,9 @@ private void ResetProduction()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.preview">Preview</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference">PagesProjectDeploymentConfigsPreviewOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.production">Production</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference">PagesProjectDeploymentConfigsProductionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.previewInput">PreviewInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.productionInput">ProductionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.previewInput">PreviewInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.productionInput">ProductionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | *No description.* |
 
 ---
 
@@ -7156,30 +7156,30 @@ public PagesProjectDeploymentConfigsProductionOutputReference Production { get; 
 ##### `PreviewInput`<sup>Optional</sup> <a name="PreviewInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.previewInput"></a>
 
 ```csharp
-public object PreviewInput { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreview PreviewInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>
 
 ---
 
 ##### `ProductionInput`<sup>Optional</sup> <a name="ProductionInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.productionInput"></a>
 
 ```csharp
-public object ProductionInput { get; }
+public IResolvable|PagesProjectDeploymentConfigsProduction ProductionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>
 
 ---
 
@@ -7292,7 +7292,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>></code> | *No description.* |
 
 ---
 
@@ -7323,10 +7323,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAiBindings> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>>
 
 ---
 
@@ -7559,7 +7559,7 @@ private void ResetProjectId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a></code> | *No description.* |
 
 ---
 
@@ -7610,10 +7610,10 @@ public string ProjectId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewAiBindings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>
 
 ---
 
@@ -7726,7 +7726,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>></code> | *No description.* |
 
 ---
 
@@ -7757,10 +7757,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>>
 
 ---
 
@@ -7993,7 +7993,7 @@ private void ResetDataset()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.datasetInput">DatasetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.dataset">Dataset</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a></code> | *No description.* |
 
 ---
 
@@ -8044,10 +8044,10 @@ public string Dataset { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>
 
 ---
 
@@ -8160,7 +8160,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>></code> | *No description.* |
 
 ---
 
@@ -8191,10 +8191,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewBrowsers> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>>
 
 ---
 
@@ -8418,7 +8418,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a></code> | *No description.* |
 
 ---
 
@@ -8449,10 +8449,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewBrowsers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>
 
 ---
 
@@ -8565,7 +8565,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>></code> | *No description.* |
 
 ---
 
@@ -8596,10 +8596,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewD1Databases> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>>
 
 ---
 
@@ -8832,7 +8832,7 @@ private void ResetId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a></code> | *No description.* |
 
 ---
 
@@ -8883,10 +8883,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewD1Databases InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>
 
 ---
 
@@ -8999,7 +8999,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>></code> | *No description.* |
 
 ---
 
@@ -9030,10 +9030,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>>
 
 ---
 
@@ -9266,7 +9266,7 @@ private void ResetNamespaceId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.namespaceId">NamespaceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -9317,10 +9317,10 @@ public string NamespaceId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>
 
 ---
 
@@ -9433,7 +9433,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>></code> | *No description.* |
 
 ---
 
@@ -9464,10 +9464,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewEnvVars> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>>
 
 ---
 
@@ -9695,7 +9695,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a></code> | *No description.* |
 
 ---
 
@@ -9766,10 +9766,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewEnvVars InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>
 
 ---
 
@@ -9882,7 +9882,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>></code> | *No description.* |
 
 ---
 
@@ -9913,10 +9913,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewHyperdriveBindings> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>>
 
 ---
 
@@ -10149,7 +10149,7 @@ private void ResetId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a></code> | *No description.* |
 
 ---
 
@@ -10200,10 +10200,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewHyperdriveBindings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>
 
 ---
 
@@ -10316,7 +10316,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>></code> | *No description.* |
 
 ---
 
@@ -10347,10 +10347,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewKvNamespaces> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>>
 
 ---
 
@@ -10583,7 +10583,7 @@ private void ResetNamespaceId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.namespaceId">NamespaceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -10634,10 +10634,10 @@ public string NamespaceId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewKvNamespaces InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>
 
 ---
 
@@ -10750,7 +10750,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>></code> | *No description.* |
 
 ---
 
@@ -10781,10 +10781,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewMtlsCertificates> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>>
 
 ---
 
@@ -11017,7 +11017,7 @@ private void ResetCertificateId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.certificateIdInput">CertificateIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.certificateId">CertificateId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a></code> | *No description.* |
 
 ---
 
@@ -11068,10 +11068,10 @@ public string CertificateId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewMtlsCertificates InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>
 
 ---
 
@@ -11312,108 +11312,108 @@ Returns a reversible string representation.
 ##### `PutAiBindings` <a name="PutAiBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putAiBindings"></a>
 
 ```csharp
-private void PutAiBindings(object Value)
+private void PutAiBindings(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAiBindings> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putAiBindings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>>
 
 ---
 
 ##### `PutAnalyticsEngineDatasets` <a name="PutAnalyticsEngineDatasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putAnalyticsEngineDatasets"></a>
 
 ```csharp
-private void PutAnalyticsEngineDatasets(object Value)
+private void PutAnalyticsEngineDatasets(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putAnalyticsEngineDatasets.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>>
 
 ---
 
 ##### `PutBrowsers` <a name="PutBrowsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putBrowsers"></a>
 
 ```csharp
-private void PutBrowsers(object Value)
+private void PutBrowsers(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewBrowsers> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putBrowsers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>>
 
 ---
 
 ##### `PutD1Databases` <a name="PutD1Databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putD1Databases"></a>
 
 ```csharp
-private void PutD1Databases(object Value)
+private void PutD1Databases(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewD1Databases> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putD1Databases.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>>
 
 ---
 
 ##### `PutDurableObjectNamespaces` <a name="PutDurableObjectNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putDurableObjectNamespaces"></a>
 
 ```csharp
-private void PutDurableObjectNamespaces(object Value)
+private void PutDurableObjectNamespaces(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putDurableObjectNamespaces.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>>
 
 ---
 
 ##### `PutEnvVars` <a name="PutEnvVars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putEnvVars"></a>
 
 ```csharp
-private void PutEnvVars(object Value)
+private void PutEnvVars(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewEnvVars> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putEnvVars.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>>
 
 ---
 
 ##### `PutHyperdriveBindings` <a name="PutHyperdriveBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putHyperdriveBindings"></a>
 
 ```csharp
-private void PutHyperdriveBindings(object Value)
+private void PutHyperdriveBindings(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewHyperdriveBindings> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putHyperdriveBindings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>>
 
 ---
 
 ##### `PutKvNamespaces` <a name="PutKvNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putKvNamespaces"></a>
 
 ```csharp
-private void PutKvNamespaces(object Value)
+private void PutKvNamespaces(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewKvNamespaces> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putKvNamespaces.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>>
 
 ---
 
 ##### `PutMtlsCertificates` <a name="PutMtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putMtlsCertificates"></a>
 
 ```csharp
-private void PutMtlsCertificates(object Value)
+private void PutMtlsCertificates(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewMtlsCertificates> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putMtlsCertificates.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>>
 
 ---
 
@@ -11432,48 +11432,48 @@ private void PutPlacement(PagesProjectDeploymentConfigsPreviewPlacement Value)
 ##### `PutQueueProducers` <a name="PutQueueProducers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putQueueProducers"></a>
 
 ```csharp
-private void PutQueueProducers(object Value)
+private void PutQueueProducers(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewQueueProducers> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putQueueProducers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>>
 
 ---
 
 ##### `PutR2Buckets` <a name="PutR2Buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putR2Buckets"></a>
 
 ```csharp
-private void PutR2Buckets(object Value)
+private void PutR2Buckets(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewR2Buckets> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putR2Buckets.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>>
 
 ---
 
 ##### `PutServices` <a name="PutServices" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putServices"></a>
 
 ```csharp
-private void PutServices(object Value)
+private void PutServices(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewServices> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putServices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>>
 
 ---
 
 ##### `PutVectorizeBindings` <a name="PutVectorizeBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putVectorizeBindings"></a>
 
 ```csharp
-private void PutVectorizeBindings(object Value)
+private void PutVectorizeBindings(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewVectorizeBindings> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putVectorizeBindings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>>
 
 ---
 
@@ -11594,25 +11594,25 @@ private void ResetVectorizeBindings()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2Buckets">R2Buckets</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap">PagesProjectDeploymentConfigsPreviewR2BucketsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.services">Services</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap">PagesProjectDeploymentConfigsPreviewServicesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindings">VectorizeBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap">PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindingsInput">AiBindingsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput">AnalyticsEngineDatasetsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.browsersInput">BrowsersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindingsInput">AiBindingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput">AnalyticsEngineDatasetsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.browsersInput">BrowsersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityDateInput">CompatibilityDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityFlagsInput">CompatibilityFlagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.d1DatabasesInput">D1DatabasesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespacesInput">DurableObjectNamespacesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVarsInput">EnvVarsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput">HyperdriveBindingsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespacesInput">KvNamespacesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificatesInput">MtlsCertificatesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placementInput">PlacementInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducersInput">QueueProducersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2BucketsInput">R2BucketsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.servicesInput">ServicesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput">VectorizeBindingsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.d1DatabasesInput">D1DatabasesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespacesInput">DurableObjectNamespacesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVarsInput">EnvVarsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput">HyperdriveBindingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespacesInput">KvNamespacesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificatesInput">MtlsCertificatesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placementInput">PlacementInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducersInput">QueueProducersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2BucketsInput">R2BucketsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.servicesInput">ServicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput">VectorizeBindingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityDate">CompatibilityDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityFlags">CompatibilityFlags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a></code> | *No description.* |
 
 ---
 
@@ -11783,30 +11783,30 @@ public PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap VectorizeBinding
 ##### `AiBindingsInput`<sup>Optional</sup> <a name="AiBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindingsInput"></a>
 
 ```csharp
-public object AiBindingsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAiBindings> AiBindingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>>
 
 ---
 
 ##### `AnalyticsEngineDatasetsInput`<sup>Optional</sup> <a name="AnalyticsEngineDatasetsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput"></a>
 
 ```csharp
-public object AnalyticsEngineDatasetsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets> AnalyticsEngineDatasetsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>>
 
 ---
 
 ##### `BrowsersInput`<sup>Optional</sup> <a name="BrowsersInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.browsersInput"></a>
 
 ```csharp
-public object BrowsersInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewBrowsers> BrowsersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>>
 
 ---
 
@@ -11833,110 +11833,110 @@ public string[] CompatibilityFlagsInput { get; }
 ##### `D1DatabasesInput`<sup>Optional</sup> <a name="D1DatabasesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.d1DatabasesInput"></a>
 
 ```csharp
-public object D1DatabasesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewD1Databases> D1DatabasesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>>
 
 ---
 
 ##### `DurableObjectNamespacesInput`<sup>Optional</sup> <a name="DurableObjectNamespacesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespacesInput"></a>
 
 ```csharp
-public object DurableObjectNamespacesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces> DurableObjectNamespacesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>>
 
 ---
 
 ##### `EnvVarsInput`<sup>Optional</sup> <a name="EnvVarsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVarsInput"></a>
 
 ```csharp
-public object EnvVarsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewEnvVars> EnvVarsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>>
 
 ---
 
 ##### `HyperdriveBindingsInput`<sup>Optional</sup> <a name="HyperdriveBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput"></a>
 
 ```csharp
-public object HyperdriveBindingsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewHyperdriveBindings> HyperdriveBindingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>>
 
 ---
 
 ##### `KvNamespacesInput`<sup>Optional</sup> <a name="KvNamespacesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespacesInput"></a>
 
 ```csharp
-public object KvNamespacesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewKvNamespaces> KvNamespacesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>>
 
 ---
 
 ##### `MtlsCertificatesInput`<sup>Optional</sup> <a name="MtlsCertificatesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificatesInput"></a>
 
 ```csharp
-public object MtlsCertificatesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewMtlsCertificates> MtlsCertificatesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>>
 
 ---
 
 ##### `PlacementInput`<sup>Optional</sup> <a name="PlacementInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placementInput"></a>
 
 ```csharp
-public object PlacementInput { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewPlacement PlacementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>
 
 ---
 
 ##### `QueueProducersInput`<sup>Optional</sup> <a name="QueueProducersInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducersInput"></a>
 
 ```csharp
-public object QueueProducersInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewQueueProducers> QueueProducersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>>
 
 ---
 
 ##### `R2BucketsInput`<sup>Optional</sup> <a name="R2BucketsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2BucketsInput"></a>
 
 ```csharp
-public object R2BucketsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewR2Buckets> R2BucketsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>>
 
 ---
 
 ##### `ServicesInput`<sup>Optional</sup> <a name="ServicesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.servicesInput"></a>
 
 ```csharp
-public object ServicesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewServices> ServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>>
 
 ---
 
 ##### `VectorizeBindingsInput`<sup>Optional</sup> <a name="VectorizeBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput"></a>
 
 ```csharp
-public object VectorizeBindingsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewVectorizeBindings> VectorizeBindingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>>
 
 ---
 
@@ -11963,10 +11963,10 @@ public string[] CompatibilityFlags { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreview InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>
 
 ---
 
@@ -12190,7 +12190,7 @@ private void ResetMode()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | *No description.* |
 
 ---
 
@@ -12241,10 +12241,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewPlacement InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>
 
 ---
 
@@ -12357,7 +12357,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>></code> | *No description.* |
 
 ---
 
@@ -12388,10 +12388,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewQueueProducers> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>>
 
 ---
 
@@ -12624,7 +12624,7 @@ private void ResetName()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a></code> | *No description.* |
 
 ---
 
@@ -12675,10 +12675,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewQueueProducers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>
 
 ---
 
@@ -12791,7 +12791,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>></code> | *No description.* |
 
 ---
 
@@ -12822,10 +12822,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewR2Buckets> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>>
 
 ---
 
@@ -13067,7 +13067,7 @@ private void ResetName()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.jurisdiction">Jurisdiction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a></code> | *No description.* |
 
 ---
 
@@ -13138,10 +13138,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewR2Buckets InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>
 
 ---
 
@@ -13254,7 +13254,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>></code> | *No description.* |
 
 ---
 
@@ -13285,10 +13285,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewServices> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>>
 
 ---
 
@@ -13539,7 +13539,7 @@ private void ResetService()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.entrypoint">Entrypoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.environment">Environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a></code> | *No description.* |
 
 ---
 
@@ -13630,10 +13630,10 @@ public string Service { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewServices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>
 
 ---
 
@@ -13746,7 +13746,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>></code> | *No description.* |
 
 ---
 
@@ -13777,10 +13777,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsPreviewVectorizeBindings> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>>
 
 ---
 
@@ -14013,7 +14013,7 @@ private void ResetIndexName()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.indexNameInput">IndexNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.indexName">IndexName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a></code> | *No description.* |
 
 ---
 
@@ -14064,10 +14064,10 @@ public string IndexName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsPreviewVectorizeBindings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>
 
 ---
 
@@ -14180,7 +14180,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>></code> | *No description.* |
 
 ---
 
@@ -14211,10 +14211,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAiBindings> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>>
 
 ---
 
@@ -14447,7 +14447,7 @@ private void ResetProjectId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a></code> | *No description.* |
 
 ---
 
@@ -14498,10 +14498,10 @@ public string ProjectId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionAiBindings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>
 
 ---
 
@@ -14614,7 +14614,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>></code> | *No description.* |
 
 ---
 
@@ -14645,10 +14645,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>>
 
 ---
 
@@ -14881,7 +14881,7 @@ private void ResetDataset()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.datasetInput">DatasetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.dataset">Dataset</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a></code> | *No description.* |
 
 ---
 
@@ -14932,10 +14932,10 @@ public string Dataset { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>
 
 ---
 
@@ -15048,7 +15048,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>></code> | *No description.* |
 
 ---
 
@@ -15079,10 +15079,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionBrowsers> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>>
 
 ---
 
@@ -15306,7 +15306,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a></code> | *No description.* |
 
 ---
 
@@ -15337,10 +15337,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionBrowsers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>
 
 ---
 
@@ -15453,7 +15453,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>></code> | *No description.* |
 
 ---
 
@@ -15484,10 +15484,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionD1Databases> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>>
 
 ---
 
@@ -15720,7 +15720,7 @@ private void ResetId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a></code> | *No description.* |
 
 ---
 
@@ -15771,10 +15771,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionD1Databases InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>
 
 ---
 
@@ -15887,7 +15887,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>></code> | *No description.* |
 
 ---
 
@@ -15918,10 +15918,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionDurableObjectNamespaces> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>>
 
 ---
 
@@ -16154,7 +16154,7 @@ private void ResetNamespaceId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.namespaceId">NamespaceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -16205,10 +16205,10 @@ public string NamespaceId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionDurableObjectNamespaces InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>
 
 ---
 
@@ -16321,7 +16321,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>></code> | *No description.* |
 
 ---
 
@@ -16352,10 +16352,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionEnvVars> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>>
 
 ---
 
@@ -16583,7 +16583,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a></code> | *No description.* |
 
 ---
 
@@ -16654,10 +16654,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionEnvVars InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>
 
 ---
 
@@ -16770,7 +16770,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>></code> | *No description.* |
 
 ---
 
@@ -16801,10 +16801,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionHyperdriveBindings> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>>
 
 ---
 
@@ -17037,7 +17037,7 @@ private void ResetId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a></code> | *No description.* |
 
 ---
 
@@ -17088,10 +17088,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionHyperdriveBindings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>
 
 ---
 
@@ -17204,7 +17204,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>></code> | *No description.* |
 
 ---
 
@@ -17235,10 +17235,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionKvNamespaces> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>>
 
 ---
 
@@ -17471,7 +17471,7 @@ private void ResetNamespaceId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.namespaceId">NamespaceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -17522,10 +17522,10 @@ public string NamespaceId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionKvNamespaces InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>
 
 ---
 
@@ -17638,7 +17638,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>></code> | *No description.* |
 
 ---
 
@@ -17669,10 +17669,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionMtlsCertificates> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>>
 
 ---
 
@@ -17905,7 +17905,7 @@ private void ResetCertificateId()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.certificateIdInput">CertificateIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.certificateId">CertificateId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a></code> | *No description.* |
 
 ---
 
@@ -17956,10 +17956,10 @@ public string CertificateId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionMtlsCertificates InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>
 
 ---
 
@@ -18200,108 +18200,108 @@ Returns a reversible string representation.
 ##### `PutAiBindings` <a name="PutAiBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putAiBindings"></a>
 
 ```csharp
-private void PutAiBindings(object Value)
+private void PutAiBindings(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAiBindings> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putAiBindings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>>
 
 ---
 
 ##### `PutAnalyticsEngineDatasets` <a name="PutAnalyticsEngineDatasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putAnalyticsEngineDatasets"></a>
 
 ```csharp
-private void PutAnalyticsEngineDatasets(object Value)
+private void PutAnalyticsEngineDatasets(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putAnalyticsEngineDatasets.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>>
 
 ---
 
 ##### `PutBrowsers` <a name="PutBrowsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putBrowsers"></a>
 
 ```csharp
-private void PutBrowsers(object Value)
+private void PutBrowsers(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionBrowsers> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putBrowsers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>>
 
 ---
 
 ##### `PutD1Databases` <a name="PutD1Databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putD1Databases"></a>
 
 ```csharp
-private void PutD1Databases(object Value)
+private void PutD1Databases(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionD1Databases> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putD1Databases.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>>
 
 ---
 
 ##### `PutDurableObjectNamespaces` <a name="PutDurableObjectNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putDurableObjectNamespaces"></a>
 
 ```csharp
-private void PutDurableObjectNamespaces(object Value)
+private void PutDurableObjectNamespaces(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionDurableObjectNamespaces> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putDurableObjectNamespaces.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>>
 
 ---
 
 ##### `PutEnvVars` <a name="PutEnvVars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putEnvVars"></a>
 
 ```csharp
-private void PutEnvVars(object Value)
+private void PutEnvVars(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionEnvVars> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putEnvVars.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>>
 
 ---
 
 ##### `PutHyperdriveBindings` <a name="PutHyperdriveBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putHyperdriveBindings"></a>
 
 ```csharp
-private void PutHyperdriveBindings(object Value)
+private void PutHyperdriveBindings(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionHyperdriveBindings> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putHyperdriveBindings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>>
 
 ---
 
 ##### `PutKvNamespaces` <a name="PutKvNamespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putKvNamespaces"></a>
 
 ```csharp
-private void PutKvNamespaces(object Value)
+private void PutKvNamespaces(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionKvNamespaces> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putKvNamespaces.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>>
 
 ---
 
 ##### `PutMtlsCertificates` <a name="PutMtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putMtlsCertificates"></a>
 
 ```csharp
-private void PutMtlsCertificates(object Value)
+private void PutMtlsCertificates(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionMtlsCertificates> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putMtlsCertificates.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>>
 
 ---
 
@@ -18320,48 +18320,48 @@ private void PutPlacement(PagesProjectDeploymentConfigsProductionPlacement Value
 ##### `PutQueueProducers` <a name="PutQueueProducers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putQueueProducers"></a>
 
 ```csharp
-private void PutQueueProducers(object Value)
+private void PutQueueProducers(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionQueueProducers> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putQueueProducers.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>>
 
 ---
 
 ##### `PutR2Buckets` <a name="PutR2Buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putR2Buckets"></a>
 
 ```csharp
-private void PutR2Buckets(object Value)
+private void PutR2Buckets(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionR2Buckets> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putR2Buckets.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>>
 
 ---
 
 ##### `PutServices` <a name="PutServices" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putServices"></a>
 
 ```csharp
-private void PutServices(object Value)
+private void PutServices(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionServices> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putServices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>>
 
 ---
 
 ##### `PutVectorizeBindings` <a name="PutVectorizeBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putVectorizeBindings"></a>
 
 ```csharp
-private void PutVectorizeBindings(object Value)
+private void PutVectorizeBindings(IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionVectorizeBindings> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putVectorizeBindings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>>
 
 ---
 
@@ -18482,25 +18482,25 @@ private void ResetVectorizeBindings()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2Buckets">R2Buckets</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap">PagesProjectDeploymentConfigsProductionR2BucketsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.services">Services</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap">PagesProjectDeploymentConfigsProductionServicesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindings">VectorizeBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap">PagesProjectDeploymentConfigsProductionVectorizeBindingsMap</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.aiBindingsInput">AiBindingsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput">AnalyticsEngineDatasetsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.browsersInput">BrowsersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.aiBindingsInput">AiBindingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput">AnalyticsEngineDatasetsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.browsersInput">BrowsersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityDateInput">CompatibilityDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityFlagsInput">CompatibilityFlagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.d1DatabasesInput">D1DatabasesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespacesInput">DurableObjectNamespacesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVarsInput">EnvVarsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput">HyperdriveBindingsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespacesInput">KvNamespacesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificatesInput">MtlsCertificatesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placementInput">PlacementInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducersInput">QueueProducersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2BucketsInput">R2BucketsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.servicesInput">ServicesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput">VectorizeBindingsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.d1DatabasesInput">D1DatabasesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespacesInput">DurableObjectNamespacesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVarsInput">EnvVarsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput">HyperdriveBindingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespacesInput">KvNamespacesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificatesInput">MtlsCertificatesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placementInput">PlacementInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducersInput">QueueProducersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2BucketsInput">R2BucketsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.servicesInput">ServicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput">VectorizeBindingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityDate">CompatibilityDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityFlags">CompatibilityFlags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a></code> | *No description.* |
 
 ---
 
@@ -18671,30 +18671,30 @@ public PagesProjectDeploymentConfigsProductionVectorizeBindingsMap VectorizeBind
 ##### `AiBindingsInput`<sup>Optional</sup> <a name="AiBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.aiBindingsInput"></a>
 
 ```csharp
-public object AiBindingsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAiBindings> AiBindingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>>
 
 ---
 
 ##### `AnalyticsEngineDatasetsInput`<sup>Optional</sup> <a name="AnalyticsEngineDatasetsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput"></a>
 
 ```csharp
-public object AnalyticsEngineDatasetsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets> AnalyticsEngineDatasetsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>>
 
 ---
 
 ##### `BrowsersInput`<sup>Optional</sup> <a name="BrowsersInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.browsersInput"></a>
 
 ```csharp
-public object BrowsersInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionBrowsers> BrowsersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>>
 
 ---
 
@@ -18721,110 +18721,110 @@ public string[] CompatibilityFlagsInput { get; }
 ##### `D1DatabasesInput`<sup>Optional</sup> <a name="D1DatabasesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.d1DatabasesInput"></a>
 
 ```csharp
-public object D1DatabasesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionD1Databases> D1DatabasesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>>
 
 ---
 
 ##### `DurableObjectNamespacesInput`<sup>Optional</sup> <a name="DurableObjectNamespacesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespacesInput"></a>
 
 ```csharp
-public object DurableObjectNamespacesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionDurableObjectNamespaces> DurableObjectNamespacesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>>
 
 ---
 
 ##### `EnvVarsInput`<sup>Optional</sup> <a name="EnvVarsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVarsInput"></a>
 
 ```csharp
-public object EnvVarsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionEnvVars> EnvVarsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>>
 
 ---
 
 ##### `HyperdriveBindingsInput`<sup>Optional</sup> <a name="HyperdriveBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput"></a>
 
 ```csharp
-public object HyperdriveBindingsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionHyperdriveBindings> HyperdriveBindingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>>
 
 ---
 
 ##### `KvNamespacesInput`<sup>Optional</sup> <a name="KvNamespacesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespacesInput"></a>
 
 ```csharp
-public object KvNamespacesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionKvNamespaces> KvNamespacesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>>
 
 ---
 
 ##### `MtlsCertificatesInput`<sup>Optional</sup> <a name="MtlsCertificatesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificatesInput"></a>
 
 ```csharp
-public object MtlsCertificatesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionMtlsCertificates> MtlsCertificatesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>>
 
 ---
 
 ##### `PlacementInput`<sup>Optional</sup> <a name="PlacementInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placementInput"></a>
 
 ```csharp
-public object PlacementInput { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionPlacement PlacementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>
 
 ---
 
 ##### `QueueProducersInput`<sup>Optional</sup> <a name="QueueProducersInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducersInput"></a>
 
 ```csharp
-public object QueueProducersInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionQueueProducers> QueueProducersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>>
 
 ---
 
 ##### `R2BucketsInput`<sup>Optional</sup> <a name="R2BucketsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2BucketsInput"></a>
 
 ```csharp
-public object R2BucketsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionR2Buckets> R2BucketsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>>
 
 ---
 
 ##### `ServicesInput`<sup>Optional</sup> <a name="ServicesInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.servicesInput"></a>
 
 ```csharp
-public object ServicesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionServices> ServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>>
 
 ---
 
 ##### `VectorizeBindingsInput`<sup>Optional</sup> <a name="VectorizeBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput"></a>
 
 ```csharp
-public object VectorizeBindingsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionVectorizeBindings> VectorizeBindingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>>
 
 ---
 
@@ -18851,10 +18851,10 @@ public string[] CompatibilityFlags { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProduction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>
 
 ---
 
@@ -19078,7 +19078,7 @@ private void ResetMode()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | *No description.* |
 
 ---
 
@@ -19129,10 +19129,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionPlacement InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>
 
 ---
 
@@ -19245,7 +19245,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>></code> | *No description.* |
 
 ---
 
@@ -19276,10 +19276,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionQueueProducers> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>>
 
 ---
 
@@ -19512,7 +19512,7 @@ private void ResetName()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a></code> | *No description.* |
 
 ---
 
@@ -19563,10 +19563,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionQueueProducers InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>
 
 ---
 
@@ -19679,7 +19679,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>></code> | *No description.* |
 
 ---
 
@@ -19710,10 +19710,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionR2Buckets> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>>
 
 ---
 
@@ -19955,7 +19955,7 @@ private void ResetName()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.jurisdiction">Jurisdiction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a></code> | *No description.* |
 
 ---
 
@@ -20026,10 +20026,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionR2Buckets InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>
 
 ---
 
@@ -20142,7 +20142,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>></code> | *No description.* |
 
 ---
 
@@ -20173,10 +20173,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionServices> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>>
 
 ---
 
@@ -20427,7 +20427,7 @@ private void ResetService()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.entrypoint">Entrypoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.environment">Environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a></code> | *No description.* |
 
 ---
 
@@ -20518,10 +20518,10 @@ public string Service { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionServices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>
 
 ---
 
@@ -20634,7 +20634,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>></code> | *No description.* |
 
 ---
 
@@ -20665,10 +20665,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, PagesProjectDeploymentConfigsProductionVectorizeBindings> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>>
 
 ---
 
@@ -20901,7 +20901,7 @@ private void ResetIndexName()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.indexNameInput">IndexNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.indexName">IndexName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a></code> | *No description.* |
 
 ---
 
@@ -20952,10 +20952,10 @@ public string IndexName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectDeploymentConfigsProductionVectorizeBindings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>
 
 ---
 
@@ -24350,29 +24350,29 @@ private void ResetRepoName()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabledInput">DeploymentsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabledInput">DeploymentsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathExcludesInput">PathExcludesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathIncludesInput">PathIncludesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabledInput">PrCommentsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabledInput">PrCommentsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchExcludesInput">PreviewBranchExcludesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchIncludesInput">PreviewBranchIncludesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewDeploymentSettingInput">PreviewDeploymentSettingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionBranchInput">ProductionBranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabledInput">ProductionDeploymentsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabledInput">ProductionDeploymentsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.repoNameInput">RepoNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabled">DeploymentsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabled">DeploymentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathExcludes">PathExcludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathIncludes">PathIncludes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabled">PrCommentsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabled">PrCommentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchExcludes">PreviewBranchExcludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchIncludes">PreviewBranchIncludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewDeploymentSetting">PreviewDeploymentSetting</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionBranch">ProductionBranch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabled">ProductionDeploymentsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabled">ProductionDeploymentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.repoName">RepoName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a></code> | *No description.* |
 
 ---
 
@@ -24403,10 +24403,10 @@ public string Fqn { get; }
 ##### `DeploymentsEnabledInput`<sup>Optional</sup> <a name="DeploymentsEnabledInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabledInput"></a>
 
 ```csharp
-public object DeploymentsEnabledInput { get; }
+public bool|IResolvable DeploymentsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24443,10 +24443,10 @@ public string[] PathIncludesInput { get; }
 ##### `PrCommentsEnabledInput`<sup>Optional</sup> <a name="PrCommentsEnabledInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabledInput"></a>
 
 ```csharp
-public object PrCommentsEnabledInput { get; }
+public bool|IResolvable PrCommentsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24493,10 +24493,10 @@ public string ProductionBranchInput { get; }
 ##### `ProductionDeploymentsEnabledInput`<sup>Optional</sup> <a name="ProductionDeploymentsEnabledInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabledInput"></a>
 
 ```csharp
-public object ProductionDeploymentsEnabledInput { get; }
+public bool|IResolvable ProductionDeploymentsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24513,10 +24513,10 @@ public string RepoNameInput { get; }
 ##### `DeploymentsEnabled`<sup>Required</sup> <a name="DeploymentsEnabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabled"></a>
 
 ```csharp
-public object DeploymentsEnabled { get; }
+public bool|IResolvable DeploymentsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24553,10 +24553,10 @@ public string[] PathIncludes { get; }
 ##### `PrCommentsEnabled`<sup>Required</sup> <a name="PrCommentsEnabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabled"></a>
 
 ```csharp
-public object PrCommentsEnabled { get; }
+public bool|IResolvable PrCommentsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24603,10 +24603,10 @@ public string ProductionBranch { get; }
 ##### `ProductionDeploymentsEnabled`<sup>Required</sup> <a name="ProductionDeploymentsEnabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabled"></a>
 
 ```csharp
-public object ProductionDeploymentsEnabled { get; }
+public bool|IResolvable ProductionDeploymentsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24623,10 +24623,10 @@ public string RepoName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectSourceConfig InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>
 
 ---
 
@@ -24869,10 +24869,10 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.config">Config</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference">PagesProjectSourceConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.configInput">ConfigInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.configInput">ConfigInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | *No description.* |
 
 ---
 
@@ -24913,10 +24913,10 @@ public PagesProjectSourceConfigOutputReference Config { get; }
 ##### `ConfigInput`<sup>Optional</sup> <a name="ConfigInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.configInput"></a>
 
 ```csharp
-public object ConfigInput { get; }
+public IResolvable|PagesProjectSourceConfig ConfigInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>
 
 ---
 
@@ -24943,10 +24943,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PagesProjectSource InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>
 
 ---
 

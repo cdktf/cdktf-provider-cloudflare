@@ -14,28 +14,28 @@ from cdktf_cdktf_provider_cloudflare import load_balancer
 loadBalancer.LoadBalancer(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   default_pools: typing.List[str],
   fallback_pool: str,
   name: str,
   zone_id: str,
   adaptive_routing: LoadBalancerAdaptiveRouting = None,
-  country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  country_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   description: str = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   location_strategy: LoadBalancerLocationStrategy = None,
   networks: typing.List[str] = None,
-  pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
-  proxied: typing.Union[bool, IResolvable] = None,
+  pop_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
+  proxied: bool | IResolvable = None,
   random_steering: LoadBalancerRandomSteering = None,
-  region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
-  rules: typing.Union[IResolvable, typing.List[LoadBalancerRules]] = None,
+  region_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
+  rules: IResolvable | typing.List[LoadBalancerRules] = None,
   session_affinity: str = None,
   session_affinity_attributes: LoadBalancerSessionAffinityAttributes = None,
   session_affinity_ttl: typing.Union[int, float] = None,
@@ -48,28 +48,28 @@ loadBalancer.LoadBalancer(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.defaultPools">default_pools</a></code> | <code>typing.List[str]</code> | A list of pool IDs ordered by their failover priority. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.fallbackPool">fallback_pool</a></code> | <code>str</code> | The pool ID to use when all other pools are detected as unhealthy. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.name">name</a></code> | <code>str</code> | The DNS hostname to associate with your Load Balancer. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.adaptiveRouting">adaptive_routing</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a></code> | Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.countryPools">country_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.countryPools">country_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.description">description</a></code> | <code>str</code> | Object description. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to enable (the default) this load balancer. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable (the default) this load balancer. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a></code> | Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.networks">networks</a></code> | <code>typing.List[str]</code> | List of networks where Load Balancer or Pool is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.popPools">pop_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.proxied">proxied</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the hostname should be gray clouded (false) or orange clouded (true). |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.popPools">pop_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.proxied">proxied</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the hostname should be gray clouded (false) or orange clouded (true). |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.randomSteering">random_steering</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a></code> | Configures pool weights. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.regionPools">region_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]</code> | BETA Field Not General Access: A list of rules for this load balancer to execute. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.regionPools">region_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.rules">rules</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]</code> | BETA Field Not General Access: A list of rules for this load balancer to execute. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.sessionAffinity">session_affinity</a></code> | <code>str</code> | Specifies the type of session affinity the load balancer should use unless specified as `"none"`. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.sessionAffinityAttributes">session_affinity_attributes</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a></code> | Configures attributes for session affinity. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.sessionAffinityTtl">session_affinity_ttl</a></code> | <code>typing.Union[int, float]</code> | Time, in seconds, until a client's session expires after being created. |
@@ -98,13 +98,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `country_pools`<sup>Optional</sup> <a name="country_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.countryPools"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country.
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to enable (the default) this load balancer.
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `pop_pools`<sup>Optional</sup> <a name="pop_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.popPools"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter).
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `proxied`<sup>Optional</sup> <a name="proxied" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.proxied"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the hostname should be gray clouded (false) or orange clouded (true).
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `region_pools`<sup>Optional</sup> <a name="region_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.regionPools"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region.
 
@@ -294,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.Initializer.parameter.rules"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]
 
 BETA Field Not General Access: A list of rules for this load balancer to execute.
 
@@ -642,7 +642,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.importFrom"></a>
@@ -705,7 +705,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -721,7 +721,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -749,13 +749,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_adaptive_routing(
-  failover_across_pools: typing.Union[bool, IResolvable] = None
+  failover_across_pools: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `failover_across_pools`<sup>Optional</sup> <a name="failover_across_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.putAdaptiveRouting.parameter.failoverAcrossPools"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering.
 
@@ -837,13 +837,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_rules(
-  value: typing.Union[IResolvable, typing.List[LoadBalancerRules]]
+  value: IResolvable | typing.List[LoadBalancerRules]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.putRules.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]
 
 ---
 
@@ -853,7 +853,7 @@ def put_rules(
 def put_session_affinity_attributes(
   drain_duration: typing.Union[int, float] = None,
   headers: typing.List[str] = None,
-  require_all_headers: typing.Union[bool, IResolvable] = None,
+  require_all_headers: bool | IResolvable = None,
   samesite: str = None,
   secure: str = None,
   zero_downtime_failover: str = None
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `require_all_headers`<sup>Optional</sup> <a name="require_all_headers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.putSessionAffinityAttributes.parameter.requireAllHeaders"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used.
 
@@ -1168,13 +1168,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.adaptiveRouting">adaptive_routing</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference">LoadBalancerAdaptiveRoutingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1184,36 +1184,36 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList">LoadBalancerRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityAttributes">session_affinity_attributes</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference">LoadBalancerSessionAffinityAttributesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.zoneName">zone_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.adaptiveRoutingInput">adaptive_routing_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.countryPoolsInput">country_pools_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.adaptiveRoutingInput">adaptive_routing_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.countryPoolsInput">country_pools_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.defaultPoolsInput">default_pools_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.fallbackPoolInput">fallback_pool_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.locationStrategyInput">location_strategy_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.locationStrategyInput">location_strategy_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.networksInput">networks_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.popPoolsInput">pop_pools_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.proxiedInput">proxied_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.randomSteeringInput">random_steering_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.regionPoolsInput">region_pools_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.rulesInput">rules_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityAttributesInput">session_affinity_attributes_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.popPoolsInput">pop_pools_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.proxiedInput">proxied_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.randomSteeringInput">random_steering_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.regionPoolsInput">region_pools_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.rulesInput">rules_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityAttributesInput">session_affinity_attributes_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityInput">session_affinity_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityTtlInput">session_affinity_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.steeringPolicyInput">steering_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.countryPools">country_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.countryPools">country_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.defaultPools">default_pools</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.networks">networks</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.popPools">pop_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.proxied">proxied</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.regionPools">region_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.popPools">pop_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.proxied">proxied</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.regionPools">region_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinity">session_affinity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityTtl">session_affinity_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.steeringPolicy">steering_policy</a></code> | <code>str</code> | *No description.* |
@@ -1297,20 +1297,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1357,10 +1357,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1457,20 +1457,20 @@ zone_name: str
 ##### `adaptive_routing_input`<sup>Optional</sup> <a name="adaptive_routing_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.adaptiveRoutingInput"></a>
 
 ```python
-adaptive_routing_input: typing.Union[IResolvable, LoadBalancerAdaptiveRouting]
+adaptive_routing_input: IResolvable | LoadBalancerAdaptiveRouting
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a>
 
 ---
 
 ##### `country_pools_input`<sup>Optional</sup> <a name="country_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.countryPoolsInput"></a>
 
 ```python
-country_pools_input: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+country_pools_input: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
@@ -1497,10 +1497,10 @@ description_input: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1517,10 +1517,10 @@ fallback_pool_input: str
 ##### `location_strategy_input`<sup>Optional</sup> <a name="location_strategy_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.locationStrategyInput"></a>
 
 ```python
-location_strategy_input: typing.Union[IResolvable, LoadBalancerLocationStrategy]
+location_strategy_input: IResolvable | LoadBalancerLocationStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a>
 
 ---
 
@@ -1547,60 +1547,60 @@ networks_input: typing.List[str]
 ##### `pop_pools_input`<sup>Optional</sup> <a name="pop_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.popPoolsInput"></a>
 
 ```python
-pop_pools_input: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+pop_pools_input: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
 ##### `proxied_input`<sup>Optional</sup> <a name="proxied_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.proxiedInput"></a>
 
 ```python
-proxied_input: typing.Union[bool, IResolvable]
+proxied_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `random_steering_input`<sup>Optional</sup> <a name="random_steering_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.randomSteeringInput"></a>
 
 ```python
-random_steering_input: typing.Union[IResolvable, LoadBalancerRandomSteering]
+random_steering_input: IResolvable | LoadBalancerRandomSteering
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a>
 
 ---
 
 ##### `region_pools_input`<sup>Optional</sup> <a name="region_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.regionPoolsInput"></a>
 
 ```python
-region_pools_input: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+region_pools_input: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
 ##### `rules_input`<sup>Optional</sup> <a name="rules_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.rulesInput"></a>
 
 ```python
-rules_input: typing.Union[IResolvable, typing.List[LoadBalancerRules]]
+rules_input: IResolvable | typing.List[LoadBalancerRules]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]
 
 ---
 
 ##### `session_affinity_attributes_input`<sup>Optional</sup> <a name="session_affinity_attributes_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.sessionAffinityAttributesInput"></a>
 
 ```python
-session_affinity_attributes_input: typing.Union[IResolvable, LoadBalancerSessionAffinityAttributes]
+session_affinity_attributes_input: IResolvable | LoadBalancerSessionAffinityAttributes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a>
 
 ---
 
@@ -1657,10 +1657,10 @@ zone_id_input: str
 ##### `country_pools`<sup>Required</sup> <a name="country_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.countryPools"></a>
 
 ```python
-country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+country_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
@@ -1687,10 +1687,10 @@ description: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1727,30 +1727,30 @@ networks: typing.List[str]
 ##### `pop_pools`<sup>Required</sup> <a name="pop_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.popPools"></a>
 
 ```python
-pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+pop_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
 ##### `proxied`<sup>Required</sup> <a name="proxied" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.proxied"></a>
 
 ```python
-proxied: typing.Union[bool, IResolvable]
+proxied: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `region_pools`<sup>Required</sup> <a name="region_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancer.property.regionPools"></a>
 
 ```python
-region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+region_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
@@ -1832,7 +1832,7 @@ tfResourceType: str
 from cdktf_cdktf_provider_cloudflare import load_balancer
 
 loadBalancer.LoadBalancerAdaptiveRouting(
-  failover_across_pools: typing.Union[bool, IResolvable] = None
+  failover_across_pools: bool | IResolvable = None
 )
 ```
 
@@ -1840,17 +1840,17 @@ loadBalancer.LoadBalancerAdaptiveRouting(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting.property.failoverAcrossPools">failover_across_pools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting.property.failoverAcrossPools">failover_across_pools</a></code> | <code>bool \| cdktf.IResolvable</code> | Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. |
 
 ---
 
 ##### `failover_across_pools`<sup>Optional</sup> <a name="failover_across_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting.property.failoverAcrossPools"></a>
 
 ```python
-failover_across_pools: typing.Union[bool, IResolvable]
+failover_across_pools: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering.
 
@@ -1868,28 +1868,28 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import load_balancer
 
 loadBalancer.LoadBalancerConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   default_pools: typing.List[str],
   fallback_pool: str,
   name: str,
   zone_id: str,
   adaptive_routing: LoadBalancerAdaptiveRouting = None,
-  country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  country_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   description: str = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   location_strategy: LoadBalancerLocationStrategy = None,
   networks: typing.List[str] = None,
-  pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
-  proxied: typing.Union[bool, IResolvable] = None,
+  pop_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
+  proxied: bool | IResolvable = None,
   random_steering: LoadBalancerRandomSteering = None,
-  region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
-  rules: typing.Union[IResolvable, typing.List[LoadBalancerRules]] = None,
+  region_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
+  rules: IResolvable | typing.List[LoadBalancerRules] = None,
   session_affinity: str = None,
   session_affinity_attributes: LoadBalancerSessionAffinityAttributes = None,
   session_affinity_ttl: typing.Union[int, float] = None,
@@ -1902,28 +1902,28 @@ loadBalancer.LoadBalancerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.defaultPools">default_pools</a></code> | <code>typing.List[str]</code> | A list of pool IDs ordered by their failover priority. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | The pool ID to use when all other pools are detected as unhealthy. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.name">name</a></code> | <code>str</code> | The DNS hostname to associate with your Load Balancer. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.adaptiveRouting">adaptive_routing</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a></code> | Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.countryPools">country_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.countryPools">country_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.description">description</a></code> | <code>str</code> | Object description. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to enable (the default) this load balancer. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable (the default) this load balancer. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a></code> | Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.networks">networks</a></code> | <code>typing.List[str]</code> | List of networks where Load Balancer or Pool is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.popPools">pop_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.proxied">proxied</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the hostname should be gray clouded (false) or orange clouded (true). |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.popPools">pop_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.proxied">proxied</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the hostname should be gray clouded (false) or orange clouded (true). |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.randomSteering">random_steering</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a></code> | Configures pool weights. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.regionPools">region_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]</code> | BETA Field Not General Access: A list of rules for this load balancer to execute. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.regionPools">region_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.rules">rules</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]</code> | BETA Field Not General Access: A list of rules for this load balancer to execute. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.sessionAffinity">session_affinity</a></code> | <code>str</code> | Specifies the type of session affinity the load balancer should use unless specified as `"none"`. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.sessionAffinityAttributes">session_affinity_attributes</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a></code> | Configures attributes for session affinity. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.sessionAffinityTtl">session_affinity_ttl</a></code> | <code>typing.Union[int, float]</code> | Time, in seconds, until a client's session expires after being created. |
@@ -1935,20 +1935,20 @@ loadBalancer.LoadBalancerConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1995,10 +1995,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2079,10 +2079,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `country_pools`<sup>Optional</sup> <a name="country_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.countryPools"></a>
 
 ```python
-country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+country_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country.
 
@@ -2109,10 +2109,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to enable (the default) this load balancer.
 
@@ -2151,10 +2151,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `pop_pools`<sup>Optional</sup> <a name="pop_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.popPools"></a>
 
 ```python
-pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+pop_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter).
 
@@ -2167,10 +2167,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `proxied`<sup>Optional</sup> <a name="proxied" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.proxied"></a>
 
 ```python
-proxied: typing.Union[bool, IResolvable]
+proxied: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the hostname should be gray clouded (false) or orange clouded (true).
 
@@ -2199,10 +2199,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `region_pools`<sup>Optional</sup> <a name="region_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.regionPools"></a>
 
 ```python
-region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+region_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region.
 
@@ -2215,10 +2215,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerConfig.property.rules"></a>
 
 ```python
-rules: typing.Union[IResolvable, typing.List[LoadBalancerRules]]
+rules: IResolvable | typing.List[LoadBalancerRules]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]
 
 BETA Field Not General Access: A list of rules for this load balancer to execute.
 
@@ -2432,12 +2432,12 @@ from cdktf_cdktf_provider_cloudflare import load_balancer
 
 loadBalancer.LoadBalancerRules(
   condition: str = None,
-  disabled: typing.Union[bool, IResolvable] = None,
+  disabled: bool | IResolvable = None,
   fixed_response: LoadBalancerRulesFixedResponse = None,
   name: str = None,
   overrides: LoadBalancerRulesOverrides = None,
   priority: typing.Union[int, float] = None,
-  terminates: typing.Union[bool, IResolvable] = None
+  terminates: bool | IResolvable = None
 )
 ```
 
@@ -2446,12 +2446,12 @@ loadBalancer.LoadBalancerRules(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.condition">condition</a></code> | <code>str</code> | The condition expressions to evaluate. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable this specific rule. It will no longer be evaluated by this load balancer. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable this specific rule. It will no longer be evaluated by this load balancer. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.fixedResponse">fixed_response</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a></code> | A collection of fields used to directly respond to the eyeball instead of routing to a pool. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.name">name</a></code> | <code>str</code> | Name of this rule. Only used for human readability. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.overrides">overrides</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a></code> | A collection of overrides to apply to the load balancer when this rule's condition is true. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The order in which rules should be executed in relation to each other. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.terminates">terminates</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If this rule's condition is true, this causes rule evaluation to stop after processing this rule. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.terminates">terminates</a></code> | <code>bool \| cdktf.IResolvable</code> | If this rule's condition is true, this causes rule evaluation to stop after processing this rule. |
 
 ---
 
@@ -2474,10 +2474,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable this specific rule. It will no longer be evaluated by this load balancer.
 
@@ -2550,10 +2550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `terminates`<sup>Optional</sup> <a name="terminates" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules.property.terminates"></a>
 
 ```python
-terminates: typing.Union[bool, IResolvable]
+terminates: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If this rule's condition is true, this causes rule evaluation to stop after processing this rule.
 
@@ -2652,13 +2652,13 @@ from cdktf_cdktf_provider_cloudflare import load_balancer
 
 loadBalancer.LoadBalancerRulesOverrides(
   adaptive_routing: LoadBalancerRulesOverridesAdaptiveRouting = None,
-  country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  country_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   default_pools: typing.List[str] = None,
   fallback_pool: str = None,
   location_strategy: LoadBalancerRulesOverridesLocationStrategy = None,
-  pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  pop_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   random_steering: LoadBalancerRulesOverridesRandomSteering = None,
-  region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  region_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   session_affinity: str = None,
   session_affinity_attributes: LoadBalancerRulesOverridesSessionAffinityAttributes = None,
   session_affinity_ttl: typing.Union[int, float] = None,
@@ -2672,13 +2672,13 @@ loadBalancer.LoadBalancerRulesOverrides(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.adaptiveRouting">adaptive_routing</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a></code> | Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.countryPools">country_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.countryPools">country_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.defaultPools">default_pools</a></code> | <code>typing.List[str]</code> | A list of pool IDs ordered by their failover priority. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | The pool ID to use when all other pools are detected as unhealthy. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a></code> | Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.popPools">pop_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.popPools">pop_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.randomSteering">random_steering</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a></code> | Configures pool weights. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.regionPools">region_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.regionPools">region_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.sessionAffinity">session_affinity</a></code> | <code>str</code> | Specifies the type of session affinity the load balancer should use unless specified as `"none"`. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.sessionAffinityAttributes">session_affinity_attributes</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a></code> | Configures attributes for session affinity. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.sessionAffinityTtl">session_affinity_ttl</a></code> | <code>typing.Union[int, float]</code> | Time, in seconds, until a client's session expires after being created. |
@@ -2706,10 +2706,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `country_pools`<sup>Optional</sup> <a name="country_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.countryPools"></a>
 
 ```python
-country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+country_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country.
 
@@ -2766,10 +2766,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `pop_pools`<sup>Optional</sup> <a name="pop_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.popPools"></a>
 
 ```python
-pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+pop_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter).
 
@@ -2800,10 +2800,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `region_pools`<sup>Optional</sup> <a name="region_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides.property.regionPools"></a>
 
 ```python
-region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+region_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region.
 
@@ -2908,7 +2908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import load_balancer
 
 loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting(
-  failover_across_pools: typing.Union[bool, IResolvable] = None
+  failover_across_pools: bool | IResolvable = None
 )
 ```
 
@@ -2916,17 +2916,17 @@ loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting.property.failoverAcrossPools">failover_across_pools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting.property.failoverAcrossPools">failover_across_pools</a></code> | <code>bool \| cdktf.IResolvable</code> | Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. |
 
 ---
 
 ##### `failover_across_pools`<sup>Optional</sup> <a name="failover_across_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting.property.failoverAcrossPools"></a>
 
 ```python
-failover_across_pools: typing.Union[bool, IResolvable]
+failover_across_pools: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering.
 
@@ -3056,7 +3056,7 @@ from cdktf_cdktf_provider_cloudflare import load_balancer
 loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes(
   drain_duration: typing.Union[int, float] = None,
   headers: typing.List[str] = None,
-  require_all_headers: typing.Union[bool, IResolvable] = None,
+  require_all_headers: bool | IResolvable = None,
   samesite: str = None,
   secure: str = None,
   zero_downtime_failover: str = None
@@ -3069,7 +3069,7 @@ loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.drainDuration">drain_duration</a></code> | <code>typing.Union[int, float]</code> | Configures the drain duration in seconds. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.headers">headers</a></code> | <code>typing.List[str]</code> | Configures the names of HTTP headers to base session affinity on when header `session_affinity` is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.requireAllHeaders">require_all_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.requireAllHeaders">require_all_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.samesite">samesite</a></code> | <code>str</code> | Configures the SameSite attribute on session affinity cookie. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.secure">secure</a></code> | <code>str</code> | Configures the Secure attribute on session affinity cookie. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.zeroDowntimeFailover">zero_downtime_failover</a></code> | <code>str</code> | Configures the zero-downtime failover between origins within a pool when session affinity is enabled. |
@@ -3111,10 +3111,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `require_all_headers`<sup>Optional</sup> <a name="require_all_headers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes.property.requireAllHeaders"></a>
 
 ```python
-require_all_headers: typing.Union[bool, IResolvable]
+require_all_headers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used.
 
@@ -3185,7 +3185,7 @@ from cdktf_cdktf_provider_cloudflare import load_balancer
 loadBalancer.LoadBalancerSessionAffinityAttributes(
   drain_duration: typing.Union[int, float] = None,
   headers: typing.List[str] = None,
-  require_all_headers: typing.Union[bool, IResolvable] = None,
+  require_all_headers: bool | IResolvable = None,
   samesite: str = None,
   secure: str = None,
   zero_downtime_failover: str = None
@@ -3198,7 +3198,7 @@ loadBalancer.LoadBalancerSessionAffinityAttributes(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.drainDuration">drain_duration</a></code> | <code>typing.Union[int, float]</code> | Configures the drain duration in seconds. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.headers">headers</a></code> | <code>typing.List[str]</code> | Configures the names of HTTP headers to base session affinity on when header `session_affinity` is enabled. |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.requireAllHeaders">require_all_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used. |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.requireAllHeaders">require_all_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.samesite">samesite</a></code> | <code>str</code> | Configures the SameSite attribute on session affinity cookie. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.secure">secure</a></code> | <code>str</code> | Configures the Secure attribute on session affinity cookie. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.zeroDowntimeFailover">zero_downtime_failover</a></code> | <code>str</code> | Configures the zero-downtime failover between origins within a pool when session affinity is enabled. |
@@ -3240,10 +3240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `require_all_headers`<sup>Optional</sup> <a name="require_all_headers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes.property.requireAllHeaders"></a>
 
 ```python
-require_all_headers: typing.Union[bool, IResolvable]
+require_all_headers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used.
 
@@ -3548,9 +3548,9 @@ def reset_failover_across_pools() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.failoverAcrossPoolsInput">failover_across_pools_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.failoverAcrossPools">failover_across_pools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.failoverAcrossPoolsInput">failover_across_pools_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.failoverAcrossPools">failover_across_pools</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a></code> | *No description.* |
 
 ---
 
@@ -3581,30 +3581,30 @@ fqn: str
 ##### `failover_across_pools_input`<sup>Optional</sup> <a name="failover_across_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.failoverAcrossPoolsInput"></a>
 
 ```python
-failover_across_pools_input: typing.Union[bool, IResolvable]
+failover_across_pools_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `failover_across_pools`<sup>Required</sup> <a name="failover_across_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.failoverAcrossPools"></a>
 
 ```python
-failover_across_pools: typing.Union[bool, IResolvable]
+failover_across_pools: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerAdaptiveRouting]
+internal_value: IResolvable | LoadBalancerAdaptiveRouting
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRouting">LoadBalancerAdaptiveRouting</a>
 
 ---
 
@@ -3862,7 +3862,7 @@ def reset_prefer_ecs() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.property.preferEcsInput">prefer_ecs_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.property.preferEcs">prefer_ecs</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a></code> | *No description.* |
 
 ---
 
@@ -3933,10 +3933,10 @@ prefer_ecs: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerLocationStrategy]
+internal_value: IResolvable | LoadBalancerLocationStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategy">LoadBalancerLocationStrategy</a>
 
 ---
 
@@ -4194,7 +4194,7 @@ def reset_pool_weights() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.property.poolWeightsInput">pool_weights_input</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.property.defaultWeight">default_weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.property.poolWeights">pool_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a></code> | *No description.* |
 
 ---
 
@@ -4265,10 +4265,10 @@ pool_weights: typing.Mapping[typing.Union[int, float]]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRandomSteering]
+internal_value: IResolvable | LoadBalancerRandomSteering
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteering">LoadBalancerRandomSteering</a>
 
 ---
 
@@ -4544,7 +4544,7 @@ def reset_status_code() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.property.messageBody">message_body</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a></code> | *No description.* |
 
 ---
 
@@ -4655,10 +4655,10 @@ status_code: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRulesFixedResponse]
+internal_value: IResolvable | LoadBalancerRulesFixedResponse
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a>
 
 ---
 
@@ -4794,7 +4794,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]</code> | *No description.* |
 
 ---
 
@@ -4825,10 +4825,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[LoadBalancerRules]]
+internal_value: IResolvable | typing.List[LoadBalancerRules]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]
 
 ---
 
@@ -5146,13 +5146,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ```python
 def put_overrides(
   adaptive_routing: LoadBalancerRulesOverridesAdaptiveRouting = None,
-  country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  country_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   default_pools: typing.List[str] = None,
   fallback_pool: str = None,
   location_strategy: LoadBalancerRulesOverridesLocationStrategy = None,
-  pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  pop_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   random_steering: LoadBalancerRulesOverridesRandomSteering = None,
-  region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]] = None,
+  region_pools: IResolvable | typing.Mapping[typing.List[str]] = None,
   session_affinity: str = None,
   session_affinity_attributes: LoadBalancerRulesOverridesSessionAffinityAttributes = None,
   session_affinity_ttl: typing.Union[int, float] = None,
@@ -5175,7 +5175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `country_pools`<sup>Optional</sup> <a name="country_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.putOverrides.parameter.countryPools"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country.
 
@@ -5219,7 +5219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `pop_pools`<sup>Optional</sup> <a name="pop_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.putOverrides.parameter.popPools"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter).
 
@@ -5245,7 +5245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `region_pools`<sup>Optional</sup> <a name="region_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.putOverrides.parameter.regionPools"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region.
 
@@ -5374,18 +5374,18 @@ def reset_terminates() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.fixedResponse">fixed_response</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference">LoadBalancerRulesFixedResponseOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.overrides">overrides</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference">LoadBalancerRulesOverridesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.conditionInput">condition_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.fixedResponseInput">fixed_response_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.fixedResponseInput">fixed_response_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.overridesInput">overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.overridesInput">overrides_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.terminatesInput">terminates_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.terminatesInput">terminates_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.condition">condition</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.terminates">terminates</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.terminates">terminates</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a></code> | *No description.* |
 
 ---
 
@@ -5446,20 +5446,20 @@ condition_input: str
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `fixed_response_input`<sup>Optional</sup> <a name="fixed_response_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.fixedResponseInput"></a>
 
 ```python
-fixed_response_input: typing.Union[IResolvable, LoadBalancerRulesFixedResponse]
+fixed_response_input: IResolvable | LoadBalancerRulesFixedResponse
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponse">LoadBalancerRulesFixedResponse</a>
 
 ---
 
@@ -5476,10 +5476,10 @@ name_input: str
 ##### `overrides_input`<sup>Optional</sup> <a name="overrides_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.overridesInput"></a>
 
 ```python
-overrides_input: typing.Union[IResolvable, LoadBalancerRulesOverrides]
+overrides_input: IResolvable | LoadBalancerRulesOverrides
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a>
 
 ---
 
@@ -5496,10 +5496,10 @@ priority_input: typing.Union[int, float]
 ##### `terminates_input`<sup>Optional</sup> <a name="terminates_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.terminatesInput"></a>
 
 ```python
-terminates_input: typing.Union[bool, IResolvable]
+terminates_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5516,10 +5516,10 @@ condition: str
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5546,20 +5546,20 @@ priority: typing.Union[int, float]
 ##### `terminates`<sup>Required</sup> <a name="terminates" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.terminates"></a>
 
 ```python
-terminates: typing.Union[bool, IResolvable]
+terminates: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRules]
+internal_value: IResolvable | LoadBalancerRules
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRules">LoadBalancerRules</a>
 
 ---
 
@@ -5806,9 +5806,9 @@ def reset_failover_across_pools() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.failoverAcrossPoolsInput">failover_across_pools_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.failoverAcrossPools">failover_across_pools</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.failoverAcrossPoolsInput">failover_across_pools_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.failoverAcrossPools">failover_across_pools</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a></code> | *No description.* |
 
 ---
 
@@ -5839,30 +5839,30 @@ fqn: str
 ##### `failover_across_pools_input`<sup>Optional</sup> <a name="failover_across_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.failoverAcrossPoolsInput"></a>
 
 ```python
-failover_across_pools_input: typing.Union[bool, IResolvable]
+failover_across_pools_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `failover_across_pools`<sup>Required</sup> <a name="failover_across_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.failoverAcrossPools"></a>
 
 ```python
-failover_across_pools: typing.Union[bool, IResolvable]
+failover_across_pools: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRulesOverridesAdaptiveRouting]
+internal_value: IResolvable | LoadBalancerRulesOverridesAdaptiveRouting
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a>
 
 ---
 
@@ -6120,7 +6120,7 @@ def reset_prefer_ecs() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.property.preferEcsInput">prefer_ecs_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.property.preferEcs">prefer_ecs</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a></code> | *No description.* |
 
 ---
 
@@ -6191,10 +6191,10 @@ prefer_ecs: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRulesOverridesLocationStrategy]
+internal_value: IResolvable | LoadBalancerRulesOverridesLocationStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a>
 
 ---
 
@@ -6448,13 +6448,13 @@ Returns a reversible string representation.
 
 ```python
 def put_adaptive_routing(
-  failover_across_pools: typing.Union[bool, IResolvable] = None
+  failover_across_pools: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `failover_across_pools`<sup>Optional</sup> <a name="failover_across_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.putAdaptiveRouting.parameter.failoverAcrossPools"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering.
 
@@ -6538,7 +6538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 def put_session_affinity_attributes(
   drain_duration: typing.Union[int, float] = None,
   headers: typing.List[str] = None,
-  require_all_headers: typing.Union[bool, IResolvable] = None,
+  require_all_headers: bool | IResolvable = None,
   samesite: str = None,
   secure: str = None,
   zero_downtime_failover: str = None
@@ -6571,7 +6571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `require_all_headers`<sup>Optional</sup> <a name="require_all_headers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.putSessionAffinityAttributes.parameter.requireAllHeaders"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used.
 
@@ -6709,29 +6709,29 @@ def reset_ttl() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.locationStrategy">location_strategy</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyOutputReference">LoadBalancerRulesOverridesLocationStrategyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.randomSteering">random_steering</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference">LoadBalancerRulesOverridesRandomSteeringOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinityAttributes">session_affinity_attributes</a></code> | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference">LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.adaptiveRoutingInput">adaptive_routing_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.countryPoolsInput">country_pools_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.adaptiveRoutingInput">adaptive_routing_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.countryPoolsInput">country_pools_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.defaultPoolsInput">default_pools_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.fallbackPoolInput">fallback_pool_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.locationStrategyInput">location_strategy_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.popPoolsInput">pop_pools_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.randomSteeringInput">random_steering_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.regionPoolsInput">region_pools_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinityAttributesInput">session_affinity_attributes_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.locationStrategyInput">location_strategy_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.popPoolsInput">pop_pools_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.randomSteeringInput">random_steering_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.regionPoolsInput">region_pools_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinityAttributesInput">session_affinity_attributes_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinityInput">session_affinity_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinityTtlInput">session_affinity_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.steeringPolicyInput">steering_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.countryPools">country_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.countryPools">country_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.defaultPools">default_pools</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.fallbackPool">fallback_pool</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.popPools">pop_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.regionPools">region_pools</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.popPools">pop_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.regionPools">region_pools</a></code> | <code>cdktf.IResolvable \| typing.Mapping[typing.List[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinity">session_affinity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinityTtl">session_affinity_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.steeringPolicy">steering_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a></code> | *No description.* |
 
 ---
 
@@ -6802,20 +6802,20 @@ session_affinity_attributes: LoadBalancerRulesOverridesSessionAffinityAttributes
 ##### `adaptive_routing_input`<sup>Optional</sup> <a name="adaptive_routing_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.adaptiveRoutingInput"></a>
 
 ```python
-adaptive_routing_input: typing.Union[IResolvable, LoadBalancerRulesOverridesAdaptiveRouting]
+adaptive_routing_input: IResolvable | LoadBalancerRulesOverridesAdaptiveRouting
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRouting">LoadBalancerRulesOverridesAdaptiveRouting</a>
 
 ---
 
 ##### `country_pools_input`<sup>Optional</sup> <a name="country_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.countryPoolsInput"></a>
 
 ```python
-country_pools_input: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+country_pools_input: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
@@ -6842,50 +6842,50 @@ fallback_pool_input: str
 ##### `location_strategy_input`<sup>Optional</sup> <a name="location_strategy_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.locationStrategyInput"></a>
 
 ```python
-location_strategy_input: typing.Union[IResolvable, LoadBalancerRulesOverridesLocationStrategy]
+location_strategy_input: IResolvable | LoadBalancerRulesOverridesLocationStrategy
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategy">LoadBalancerRulesOverridesLocationStrategy</a>
 
 ---
 
 ##### `pop_pools_input`<sup>Optional</sup> <a name="pop_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.popPoolsInput"></a>
 
 ```python
-pop_pools_input: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+pop_pools_input: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
 ##### `random_steering_input`<sup>Optional</sup> <a name="random_steering_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.randomSteeringInput"></a>
 
 ```python
-random_steering_input: typing.Union[IResolvable, LoadBalancerRulesOverridesRandomSteering]
+random_steering_input: IResolvable | LoadBalancerRulesOverridesRandomSteering
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>
 
 ---
 
 ##### `region_pools_input`<sup>Optional</sup> <a name="region_pools_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.regionPoolsInput"></a>
 
 ```python
-region_pools_input: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+region_pools_input: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
 ##### `session_affinity_attributes_input`<sup>Optional</sup> <a name="session_affinity_attributes_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.sessionAffinityAttributesInput"></a>
 
 ```python
-session_affinity_attributes_input: typing.Union[IResolvable, LoadBalancerRulesOverridesSessionAffinityAttributes]
+session_affinity_attributes_input: IResolvable | LoadBalancerRulesOverridesSessionAffinityAttributes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a>
 
 ---
 
@@ -6932,10 +6932,10 @@ ttl_input: typing.Union[int, float]
 ##### `country_pools`<sup>Required</sup> <a name="country_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.countryPools"></a>
 
 ```python
-country_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+country_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
@@ -6962,20 +6962,20 @@ fallback_pool: str
 ##### `pop_pools`<sup>Required</sup> <a name="pop_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.popPools"></a>
 
 ```python
-pop_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+pop_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
 ##### `region_pools`<sup>Required</sup> <a name="region_pools" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.regionPools"></a>
 
 ```python
-region_pools: typing.Union[IResolvable, typing.Mapping[typing.List[str]]]
+region_pools: IResolvable | typing.Mapping[typing.List[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[typing.List[str]]]
+- *Type:* cdktf.IResolvable | typing.Mapping[typing.List[str]]
 
 ---
 
@@ -7022,10 +7022,10 @@ ttl: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRulesOverrides]
+internal_value: IResolvable | LoadBalancerRulesOverrides
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverrides">LoadBalancerRulesOverrides</a>
 
 ---
 
@@ -7283,7 +7283,7 @@ def reset_pool_weights() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.property.poolWeightsInput">pool_weights_input</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.property.defaultWeight">default_weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.property.poolWeights">pool_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a></code> | *No description.* |
 
 ---
 
@@ -7354,10 +7354,10 @@ pool_weights: typing.Mapping[typing.Union[int, float]]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRulesOverridesRandomSteering]
+internal_value: IResolvable | LoadBalancerRulesOverridesRandomSteering
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteering">LoadBalancerRulesOverridesRandomSteering</a>
 
 ---
 
@@ -7641,17 +7641,17 @@ def reset_zero_downtime_failover() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.drainDurationInput">drain_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.headersInput">headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.requireAllHeadersInput">require_all_headers_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.requireAllHeadersInput">require_all_headers_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.samesiteInput">samesite_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.secureInput">secure_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.zeroDowntimeFailoverInput">zero_downtime_failover_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.drainDuration">drain_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.headers">headers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.requireAllHeaders">require_all_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.requireAllHeaders">require_all_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.samesite">samesite</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.secure">secure</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.zeroDowntimeFailover">zero_downtime_failover</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a></code> | *No description.* |
 
 ---
 
@@ -7702,10 +7702,10 @@ headers_input: typing.List[str]
 ##### `require_all_headers_input`<sup>Optional</sup> <a name="require_all_headers_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.requireAllHeadersInput"></a>
 
 ```python
-require_all_headers_input: typing.Union[bool, IResolvable]
+require_all_headers_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7762,10 +7762,10 @@ headers: typing.List[str]
 ##### `require_all_headers`<sup>Required</sup> <a name="require_all_headers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.requireAllHeaders"></a>
 
 ```python
-require_all_headers: typing.Union[bool, IResolvable]
+require_all_headers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7802,10 +7802,10 @@ zero_downtime_failover: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerRulesOverridesSessionAffinityAttributes]
+internal_value: IResolvable | LoadBalancerRulesOverridesSessionAffinityAttributes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes">LoadBalancerRulesOverridesSessionAffinityAttributes</a>
 
 ---
 
@@ -8089,17 +8089,17 @@ def reset_zero_downtime_failover() -> None
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.drainDurationInput">drain_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.headersInput">headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.requireAllHeadersInput">require_all_headers_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.requireAllHeadersInput">require_all_headers_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.samesiteInput">samesite_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.secureInput">secure_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.zeroDowntimeFailoverInput">zero_downtime_failover_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.drainDuration">drain_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.headers">headers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.requireAllHeaders">require_all_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.requireAllHeaders">require_all_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.samesite">samesite</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.secure">secure</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.zeroDowntimeFailover">zero_downtime_failover</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a></code> | *No description.* |
 
 ---
 
@@ -8150,10 +8150,10 @@ headers_input: typing.List[str]
 ##### `require_all_headers_input`<sup>Optional</sup> <a name="require_all_headers_input" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.requireAllHeadersInput"></a>
 
 ```python
-require_all_headers_input: typing.Union[bool, IResolvable]
+require_all_headers_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8210,10 +8210,10 @@ headers: typing.List[str]
 ##### `require_all_headers`<sup>Required</sup> <a name="require_all_headers" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.requireAllHeaders"></a>
 
 ```python
-require_all_headers: typing.Union[bool, IResolvable]
+require_all_headers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8250,10 +8250,10 @@ zero_downtime_failover: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, LoadBalancerSessionAffinityAttributes]
+internal_value: IResolvable | LoadBalancerSessionAffinityAttributes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes">LoadBalancerSessionAffinityAttributes</a>
 
 ---
 

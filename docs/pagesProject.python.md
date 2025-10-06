@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_cloudflare import pages_project
 pagesProject.PagesProject(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   name: str,
   build_config: PagesProjectBuildConfig = None,
@@ -34,13 +34,13 @@ pagesProject.PagesProject(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the project. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.buildConfig">build_config</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | Configs for the project build process. |
@@ -70,13 +70,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -427,7 +427,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.importFrom"></a>
@@ -490,7 +490,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -506,7 +506,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -534,7 +534,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_build_config(
-  build_caching: typing.Union[bool, IResolvable] = None,
+  build_caching: bool | IResolvable = None,
   build_command: str = None,
   destination_dir: str = None,
   root_dir: str = None,
@@ -545,7 +545,7 @@ def put_build_config(
 
 ###### `build_caching`<sup>Optional</sup> <a name="build_caching" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.putBuildConfig.parameter.buildCaching"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable build caching for the project.
 
@@ -818,13 +818,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfig">build_config</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference">PagesProjectBuildConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.canonicalDeployment">canonical_deployment</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentOutputReference">PagesProjectCanonicalDeploymentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
@@ -835,11 +835,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.source">source</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference">PagesProjectSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.subdomain">subdomain</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfigInput">build_config_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigsInput">deployment_configs_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfigInput">build_config_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigsInput">deployment_configs_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.productionBranchInput">production_branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.sourceInput">source_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.sourceInput">source_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.productionBranch">production_branch</a></code> | <code>str</code> | *No description.* |
@@ -921,20 +921,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -981,10 +981,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1091,20 +1091,20 @@ account_id_input: str
 ##### `build_config_input`<sup>Optional</sup> <a name="build_config_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfigInput"></a>
 
 ```python
-build_config_input: typing.Union[IResolvable, PagesProjectBuildConfig]
+build_config_input: IResolvable | PagesProjectBuildConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>
 
 ---
 
 ##### `deployment_configs_input`<sup>Optional</sup> <a name="deployment_configs_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigsInput"></a>
 
 ```python
-deployment_configs_input: typing.Union[IResolvable, PagesProjectDeploymentConfigs]
+deployment_configs_input: IResolvable | PagesProjectDeploymentConfigs
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>
 
 ---
 
@@ -1131,10 +1131,10 @@ production_branch_input: str
 ##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.sourceInput"></a>
 
 ```python
-source_input: typing.Union[IResolvable, PagesProjectSource]
+source_input: IResolvable | PagesProjectSource
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>
 
 ---
 
@@ -1196,7 +1196,7 @@ tfResourceType: str
 from cdktf_cdktf_provider_cloudflare import pages_project
 
 pagesProject.PagesProjectBuildConfig(
-  build_caching: typing.Union[bool, IResolvable] = None,
+  build_caching: bool | IResolvable = None,
   build_command: str = None,
   destination_dir: str = None,
   root_dir: str = None,
@@ -1209,7 +1209,7 @@ pagesProject.PagesProjectBuildConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCaching">build_caching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable build caching for the project. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCaching">build_caching</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable build caching for the project. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCommand">build_command</a></code> | <code>str</code> | Command used to build project. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.destinationDir">destination_dir</a></code> | <code>str</code> | Output directory of the build. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.rootDir">root_dir</a></code> | <code>str</code> | Directory to run the command. |
@@ -1221,10 +1221,10 @@ pagesProject.PagesProjectBuildConfig(
 ##### `build_caching`<sup>Optional</sup> <a name="build_caching" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig.property.buildCaching"></a>
 
 ```python
-build_caching: typing.Union[bool, IResolvable]
+build_caching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable build caching for the project.
 
@@ -1409,13 +1409,13 @@ pagesProject.PagesProjectCanonicalDeploymentStages()
 from cdktf_cdktf_provider_cloudflare import pages_project
 
 pagesProject.PagesProjectConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   name: str,
   build_config: PagesProjectBuildConfig = None,
@@ -1429,13 +1429,13 @@ pagesProject.PagesProjectConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.name">name</a></code> | <code>str</code> | Name of the project. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.buildConfig">build_config</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | Configs for the project build process. |
@@ -1448,20 +1448,20 @@ pagesProject.PagesProjectConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1508,10 +1508,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1655,22 +1655,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import pages_project
 
 pagesProject.PagesProjectDeploymentConfigsPreview(
-  ai_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]] = None,
-  analytics_engine_datasets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]] = None,
-  browsers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]] = None,
+  ai_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings] = None,
+  analytics_engine_datasets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets] = None,
+  browsers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers] = None,
   compatibility_date: str = None,
   compatibility_flags: typing.List[str] = None,
-  d1_databases: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]] = None,
-  durable_object_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]] = None,
-  env_vars: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]] = None,
-  hyperdrive_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]] = None,
-  kv_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]] = None,
-  mtls_certificates: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]] = None,
+  d1_databases: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases] = None,
+  durable_object_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces] = None,
+  env_vars: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars] = None,
+  hyperdrive_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings] = None,
+  kv_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces] = None,
+  mtls_certificates: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates] = None,
   placement: PagesProjectDeploymentConfigsPreviewPlacement = None,
-  queue_producers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]] = None,
-  r2_buckets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]] = None,
-  services: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]] = None,
-  vectorize_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]] = None
+  queue_producers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers] = None,
+  r2_buckets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets] = None,
+  services: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewServices] = None,
+  vectorize_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings] = None
 )
 ```
 
@@ -1678,32 +1678,32 @@ pagesProject.PagesProjectDeploymentConfigsPreview(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.aiBindings">ai_bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]</code> | Constellation bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.analyticsEngineDatasets">analytics_engine_datasets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]</code> | Analytics Engine bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.browsers">browsers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]</code> | Browser bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.aiBindings">ai_bindings</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]</code> | Constellation bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.analyticsEngineDatasets">analytics_engine_datasets</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]</code> | Analytics Engine bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.browsers">browsers</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]</code> | Browser bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.compatibilityDate">compatibility_date</a></code> | <code>str</code> | Compatibility date used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | Compatibility flags used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.d1Databases">d1_databases</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]</code> | D1 databases used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.durableObjectNamespaces">durable_object_namespaces</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]</code> | Durable Object namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.envVars">env_vars</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]</code> | Environment variables used for builds and Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.hyperdriveBindings">hyperdrive_bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]</code> | Hyperdrive bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.kvNamespaces">kv_namespaces</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]</code> | KV namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.mtlsCertificates">mtls_certificates</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]</code> | mTLS bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.d1Databases">d1_databases</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]</code> | D1 databases used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.durableObjectNamespaces">durable_object_namespaces</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]</code> | Durable Object namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.envVars">env_vars</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]</code> | Environment variables used for builds and Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.hyperdriveBindings">hyperdrive_bindings</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]</code> | Hyperdrive bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.kvNamespaces">kv_namespaces</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]</code> | KV namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.mtlsCertificates">mtls_certificates</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]</code> | mTLS bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | Placement setting used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.queueProducers">queue_producers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]</code> | Queue Producer bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.r2Buckets">r2_buckets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]</code> | R2 buckets used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.services">services</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]</code> | Services used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.vectorizeBindings">vectorize_bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]</code> | Vectorize bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.queueProducers">queue_producers</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]</code> | Queue Producer bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.r2Buckets">r2_buckets</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]</code> | R2 buckets used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.services">services</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]</code> | Services used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.vectorizeBindings">vectorize_bindings</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]</code> | Vectorize bindings used for Pages Functions. |
 
 ---
 
 ##### `ai_bindings`<sup>Optional</sup> <a name="ai_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.aiBindings"></a>
 
 ```python
-ai_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]]
+ai_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]
 
 Constellation bindings used for Pages Functions.
 
@@ -1714,10 +1714,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `analytics_engine_datasets`<sup>Optional</sup> <a name="analytics_engine_datasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.analyticsEngineDatasets"></a>
 
 ```python
-analytics_engine_datasets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]]
+analytics_engine_datasets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -1728,10 +1728,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `browsers`<sup>Optional</sup> <a name="browsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.browsers"></a>
 
 ```python
-browsers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]]
+browsers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]
 
 Browser bindings used for Pages Functions.
 
@@ -1770,10 +1770,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `d1_databases`<sup>Optional</sup> <a name="d1_databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.d1Databases"></a>
 
 ```python
-d1_databases: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]]
+d1_databases: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]
 
 D1 databases used for Pages Functions.
 
@@ -1784,10 +1784,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `durable_object_namespaces`<sup>Optional</sup> <a name="durable_object_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.durableObjectNamespaces"></a>
 
 ```python
-durable_object_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]]
+durable_object_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]
 
 Durable Object namespaces used for Pages Functions.
 
@@ -1798,10 +1798,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `env_vars`<sup>Optional</sup> <a name="env_vars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.envVars"></a>
 
 ```python
-env_vars: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]]
+env_vars: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]
 
 Environment variables used for builds and Pages Functions.
 
@@ -1812,10 +1812,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `hyperdrive_bindings`<sup>Optional</sup> <a name="hyperdrive_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.hyperdriveBindings"></a>
 
 ```python
-hyperdrive_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]]
+hyperdrive_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -1826,10 +1826,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `kv_namespaces`<sup>Optional</sup> <a name="kv_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.kvNamespaces"></a>
 
 ```python
-kv_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]]
+kv_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]
 
 KV namespaces used for Pages Functions.
 
@@ -1840,10 +1840,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `mtls_certificates`<sup>Optional</sup> <a name="mtls_certificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.mtlsCertificates"></a>
 
 ```python
-mtls_certificates: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]]
+mtls_certificates: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]
 
 mTLS bindings used for Pages Functions.
 
@@ -1868,10 +1868,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `queue_producers`<sup>Optional</sup> <a name="queue_producers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.queueProducers"></a>
 
 ```python
-queue_producers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]]
+queue_producers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]
 
 Queue Producer bindings used for Pages Functions.
 
@@ -1882,10 +1882,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `r2_buckets`<sup>Optional</sup> <a name="r2_buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.r2Buckets"></a>
 
 ```python
-r2_buckets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]]
+r2_buckets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]
 
 R2 buckets used for Pages Functions.
 
@@ -1896,10 +1896,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `services`<sup>Optional</sup> <a name="services" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.services"></a>
 
 ```python
-services: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]]
+services: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]
 
 Services used for Pages Functions.
 
@@ -1910,10 +1910,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `vectorize_bindings`<sup>Optional</sup> <a name="vectorize_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.vectorizeBindings"></a>
 
 ```python
-vectorize_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]]
+vectorize_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]
 
 Vectorize bindings used for Pages Functions.
 
@@ -2444,22 +2444,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import pages_project
 
 pagesProject.PagesProjectDeploymentConfigsProduction(
-  ai_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]] = None,
-  analytics_engine_datasets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]] = None,
-  browsers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]] = None,
+  ai_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings] = None,
+  analytics_engine_datasets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets] = None,
+  browsers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers] = None,
   compatibility_date: str = None,
   compatibility_flags: typing.List[str] = None,
-  d1_databases: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]] = None,
-  durable_object_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]] = None,
-  env_vars: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]] = None,
-  hyperdrive_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]] = None,
-  kv_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]] = None,
-  mtls_certificates: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]] = None,
+  d1_databases: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases] = None,
+  durable_object_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces] = None,
+  env_vars: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars] = None,
+  hyperdrive_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings] = None,
+  kv_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces] = None,
+  mtls_certificates: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates] = None,
   placement: PagesProjectDeploymentConfigsProductionPlacement = None,
-  queue_producers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]] = None,
-  r2_buckets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]] = None,
-  services: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionServices]] = None,
-  vectorize_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]] = None
+  queue_producers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers] = None,
+  r2_buckets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets] = None,
+  services: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionServices] = None,
+  vectorize_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings] = None
 )
 ```
 
@@ -2467,32 +2467,32 @@ pagesProject.PagesProjectDeploymentConfigsProduction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.aiBindings">ai_bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]</code> | Constellation bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.analyticsEngineDatasets">analytics_engine_datasets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]</code> | Analytics Engine bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.browsers">browsers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]</code> | Browser bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.aiBindings">ai_bindings</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]</code> | Constellation bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.analyticsEngineDatasets">analytics_engine_datasets</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]</code> | Analytics Engine bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.browsers">browsers</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]</code> | Browser bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.compatibilityDate">compatibility_date</a></code> | <code>str</code> | Compatibility date used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | Compatibility flags used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.d1Databases">d1_databases</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]</code> | D1 databases used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.durableObjectNamespaces">durable_object_namespaces</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]</code> | Durable Object namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.envVars">env_vars</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]</code> | Environment variables used for builds and Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.hyperdriveBindings">hyperdrive_bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]</code> | Hyperdrive bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.kvNamespaces">kv_namespaces</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]</code> | KV namespaces used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.mtlsCertificates">mtls_certificates</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]</code> | mTLS bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.d1Databases">d1_databases</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]</code> | D1 databases used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.durableObjectNamespaces">durable_object_namespaces</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]</code> | Durable Object namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.envVars">env_vars</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]</code> | Environment variables used for builds and Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.hyperdriveBindings">hyperdrive_bindings</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]</code> | Hyperdrive bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.kvNamespaces">kv_namespaces</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]</code> | KV namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.mtlsCertificates">mtls_certificates</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]</code> | mTLS bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | Placement setting used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.queueProducers">queue_producers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]</code> | Queue Producer bindings used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.r2Buckets">r2_buckets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]</code> | R2 buckets used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.services">services</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]</code> | Services used for Pages Functions. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.vectorizeBindings">vectorize_bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]</code> | Vectorize bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.queueProducers">queue_producers</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]</code> | Queue Producer bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.r2Buckets">r2_buckets</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]</code> | R2 buckets used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.services">services</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]</code> | Services used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.vectorizeBindings">vectorize_bindings</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]</code> | Vectorize bindings used for Pages Functions. |
 
 ---
 
 ##### `ai_bindings`<sup>Optional</sup> <a name="ai_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.aiBindings"></a>
 
 ```python
-ai_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]]
+ai_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]
 
 Constellation bindings used for Pages Functions.
 
@@ -2503,10 +2503,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `analytics_engine_datasets`<sup>Optional</sup> <a name="analytics_engine_datasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.analyticsEngineDatasets"></a>
 
 ```python
-analytics_engine_datasets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]]
+analytics_engine_datasets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -2517,10 +2517,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `browsers`<sup>Optional</sup> <a name="browsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.browsers"></a>
 
 ```python
-browsers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]]
+browsers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]
 
 Browser bindings used for Pages Functions.
 
@@ -2559,10 +2559,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `d1_databases`<sup>Optional</sup> <a name="d1_databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.d1Databases"></a>
 
 ```python
-d1_databases: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]]
+d1_databases: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]
 
 D1 databases used for Pages Functions.
 
@@ -2573,10 +2573,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `durable_object_namespaces`<sup>Optional</sup> <a name="durable_object_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.durableObjectNamespaces"></a>
 
 ```python
-durable_object_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]]
+durable_object_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]
 
 Durable Object namespaces used for Pages Functions.
 
@@ -2587,10 +2587,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `env_vars`<sup>Optional</sup> <a name="env_vars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.envVars"></a>
 
 ```python
-env_vars: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]]
+env_vars: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]
 
 Environment variables used for builds and Pages Functions.
 
@@ -2601,10 +2601,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `hyperdrive_bindings`<sup>Optional</sup> <a name="hyperdrive_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.hyperdriveBindings"></a>
 
 ```python
-hyperdrive_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]]
+hyperdrive_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -2615,10 +2615,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `kv_namespaces`<sup>Optional</sup> <a name="kv_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.kvNamespaces"></a>
 
 ```python
-kv_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]]
+kv_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]
 
 KV namespaces used for Pages Functions.
 
@@ -2629,10 +2629,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `mtls_certificates`<sup>Optional</sup> <a name="mtls_certificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.mtlsCertificates"></a>
 
 ```python
-mtls_certificates: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]]
+mtls_certificates: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]
 
 mTLS bindings used for Pages Functions.
 
@@ -2657,10 +2657,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `queue_producers`<sup>Optional</sup> <a name="queue_producers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.queueProducers"></a>
 
 ```python
-queue_producers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]]
+queue_producers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]
 
 Queue Producer bindings used for Pages Functions.
 
@@ -2671,10 +2671,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `r2_buckets`<sup>Optional</sup> <a name="r2_buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.r2Buckets"></a>
 
 ```python
-r2_buckets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]]
+r2_buckets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]
 
 R2 buckets used for Pages Functions.
 
@@ -2685,10 +2685,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `services`<sup>Optional</sup> <a name="services" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.services"></a>
 
 ```python
-services: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionServices]]
+services: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]
 
 Services used for Pages Functions.
 
@@ -2699,10 +2699,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `vectorize_bindings`<sup>Optional</sup> <a name="vectorize_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.vectorizeBindings"></a>
 
 ```python
-vectorize_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]]
+vectorize_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]
 
 Vectorize bindings used for Pages Functions.
 
@@ -3378,16 +3378,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import pages_project
 
 pagesProject.PagesProjectSourceConfig(
-  deployments_enabled: typing.Union[bool, IResolvable] = None,
+  deployments_enabled: bool | IResolvable = None,
   owner: str = None,
   path_excludes: typing.List[str] = None,
   path_includes: typing.List[str] = None,
-  pr_comments_enabled: typing.Union[bool, IResolvable] = None,
+  pr_comments_enabled: bool | IResolvable = None,
   preview_branch_excludes: typing.List[str] = None,
   preview_branch_includes: typing.List[str] = None,
   preview_deployment_setting: str = None,
   production_branch: str = None,
-  production_deployments_enabled: typing.Union[bool, IResolvable] = None,
+  production_deployments_enabled: bool | IResolvable = None,
   repo_name: str = None
 )
 ```
@@ -3396,16 +3396,16 @@ pagesProject.PagesProjectSourceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled">deployments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled">deployments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#owner PagesProject#owner}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathExcludes">path_excludes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathIncludes">path_includes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_includes PagesProject#path_includes}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled">pr_comments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled">pr_comments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchExcludes">preview_branch_excludes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchIncludes">preview_branch_includes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewDeploymentSetting">preview_deployment_setting</a></code> | <code>str</code> | Available values: "all", "none", "custom". |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionBranch">production_branch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_branch PagesProject#production_branch}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled">production_deployments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled">production_deployments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.repoName">repo_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#repo_name PagesProject#repo_name}. |
 
 ---
@@ -3413,10 +3413,10 @@ pagesProject.PagesProjectSourceConfig(
 ##### `deployments_enabled`<sup>Optional</sup> <a name="deployments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled"></a>
 
 ```python
-deployments_enabled: typing.Union[bool, IResolvable]
+deployments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}.
 
@@ -3461,10 +3461,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `pr_comments_enabled`<sup>Optional</sup> <a name="pr_comments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled"></a>
 
 ```python
-pr_comments_enabled: typing.Union[bool, IResolvable]
+pr_comments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}.
 
@@ -3523,10 +3523,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `production_deployments_enabled`<sup>Optional</sup> <a name="production_deployments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled"></a>
 
 ```python
-production_deployments_enabled: typing.Union[bool, IResolvable]
+production_deployments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}.
 
@@ -3823,19 +3823,19 @@ def reset_web_analytics_token() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCachingInput">build_caching_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCachingInput">build_caching_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCommandInput">build_command_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.destinationDirInput">destination_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.rootDirInput">root_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsTagInput">web_analytics_tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsTokenInput">web_analytics_token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCaching">build_caching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCaching">build_caching</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCommand">build_command</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.destinationDir">destination_dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.rootDir">root_dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsTag">web_analytics_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.webAnalyticsToken">web_analytics_token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | *No description.* |
 
 ---
 
@@ -3866,10 +3866,10 @@ fqn: str
 ##### `build_caching_input`<sup>Optional</sup> <a name="build_caching_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCachingInput"></a>
 
 ```python
-build_caching_input: typing.Union[bool, IResolvable]
+build_caching_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3926,10 +3926,10 @@ web_analytics_token_input: str
 ##### `build_caching`<sup>Required</sup> <a name="build_caching" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.buildCaching"></a>
 
 ```python
-build_caching: typing.Union[bool, IResolvable]
+build_caching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3986,10 +3986,10 @@ web_analytics_token: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectBuildConfig]
+internal_value: IResolvable | PagesProjectBuildConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a>
 
 ---
 
@@ -7580,28 +7580,28 @@ Returns a reversible string representation.
 
 ```python
 def put_preview(
-  ai_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]] = None,
-  analytics_engine_datasets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]] = None,
-  browsers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]] = None,
+  ai_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings] = None,
+  analytics_engine_datasets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets] = None,
+  browsers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers] = None,
   compatibility_date: str = None,
   compatibility_flags: typing.List[str] = None,
-  d1_databases: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]] = None,
-  durable_object_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]] = None,
-  env_vars: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]] = None,
-  hyperdrive_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]] = None,
-  kv_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]] = None,
-  mtls_certificates: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]] = None,
+  d1_databases: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases] = None,
+  durable_object_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces] = None,
+  env_vars: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars] = None,
+  hyperdrive_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings] = None,
+  kv_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces] = None,
+  mtls_certificates: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates] = None,
   placement: PagesProjectDeploymentConfigsPreviewPlacement = None,
-  queue_producers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]] = None,
-  r2_buckets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]] = None,
-  services: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]] = None,
-  vectorize_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]] = None
+  queue_producers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers] = None,
+  r2_buckets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets] = None,
+  services: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewServices] = None,
+  vectorize_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings] = None
 ) -> None
 ```
 
 ###### `ai_bindings`<sup>Optional</sup> <a name="ai_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.aiBindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]
 
 Constellation bindings used for Pages Functions.
 
@@ -7611,7 +7611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `analytics_engine_datasets`<sup>Optional</sup> <a name="analytics_engine_datasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.analyticsEngineDatasets"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -7621,7 +7621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `browsers`<sup>Optional</sup> <a name="browsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.browsers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]
 
 Browser bindings used for Pages Functions.
 
@@ -7651,7 +7651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `d1_databases`<sup>Optional</sup> <a name="d1_databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.d1Databases"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]
 
 D1 databases used for Pages Functions.
 
@@ -7661,7 +7661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `durable_object_namespaces`<sup>Optional</sup> <a name="durable_object_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.durableObjectNamespaces"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]
 
 Durable Object namespaces used for Pages Functions.
 
@@ -7671,7 +7671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `env_vars`<sup>Optional</sup> <a name="env_vars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.envVars"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]
 
 Environment variables used for builds and Pages Functions.
 
@@ -7681,7 +7681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `hyperdrive_bindings`<sup>Optional</sup> <a name="hyperdrive_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.hyperdriveBindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -7691,7 +7691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `kv_namespaces`<sup>Optional</sup> <a name="kv_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.kvNamespaces"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]
 
 KV namespaces used for Pages Functions.
 
@@ -7701,7 +7701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `mtls_certificates`<sup>Optional</sup> <a name="mtls_certificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.mtlsCertificates"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]
 
 mTLS bindings used for Pages Functions.
 
@@ -7721,7 +7721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `queue_producers`<sup>Optional</sup> <a name="queue_producers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.queueProducers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]
 
 Queue Producer bindings used for Pages Functions.
 
@@ -7731,7 +7731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `r2_buckets`<sup>Optional</sup> <a name="r2_buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.r2Buckets"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]
 
 R2 buckets used for Pages Functions.
 
@@ -7741,7 +7741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `services`<sup>Optional</sup> <a name="services" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.services"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]
 
 Services used for Pages Functions.
 
@@ -7751,7 +7751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `vectorize_bindings`<sup>Optional</sup> <a name="vectorize_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putPreview.parameter.vectorizeBindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]
 
 Vectorize bindings used for Pages Functions.
 
@@ -7763,28 +7763,28 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_production(
-  ai_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]] = None,
-  analytics_engine_datasets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]] = None,
-  browsers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]] = None,
+  ai_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings] = None,
+  analytics_engine_datasets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets] = None,
+  browsers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers] = None,
   compatibility_date: str = None,
   compatibility_flags: typing.List[str] = None,
-  d1_databases: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]] = None,
-  durable_object_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]] = None,
-  env_vars: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]] = None,
-  hyperdrive_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]] = None,
-  kv_namespaces: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]] = None,
-  mtls_certificates: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]] = None,
+  d1_databases: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases] = None,
+  durable_object_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces] = None,
+  env_vars: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars] = None,
+  hyperdrive_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings] = None,
+  kv_namespaces: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces] = None,
+  mtls_certificates: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates] = None,
   placement: PagesProjectDeploymentConfigsProductionPlacement = None,
-  queue_producers: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]] = None,
-  r2_buckets: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]] = None,
-  services: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionServices]] = None,
-  vectorize_bindings: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]] = None
+  queue_producers: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers] = None,
+  r2_buckets: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets] = None,
+  services: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionServices] = None,
+  vectorize_bindings: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings] = None
 ) -> None
 ```
 
 ###### `ai_bindings`<sup>Optional</sup> <a name="ai_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.aiBindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]
 
 Constellation bindings used for Pages Functions.
 
@@ -7794,7 +7794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `analytics_engine_datasets`<sup>Optional</sup> <a name="analytics_engine_datasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.analyticsEngineDatasets"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]
 
 Analytics Engine bindings used for Pages Functions.
 
@@ -7804,7 +7804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `browsers`<sup>Optional</sup> <a name="browsers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.browsers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]
 
 Browser bindings used for Pages Functions.
 
@@ -7834,7 +7834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `d1_databases`<sup>Optional</sup> <a name="d1_databases" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.d1Databases"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]
 
 D1 databases used for Pages Functions.
 
@@ -7844,7 +7844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `durable_object_namespaces`<sup>Optional</sup> <a name="durable_object_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.durableObjectNamespaces"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]
 
 Durable Object namespaces used for Pages Functions.
 
@@ -7854,7 +7854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `env_vars`<sup>Optional</sup> <a name="env_vars" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.envVars"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]
 
 Environment variables used for builds and Pages Functions.
 
@@ -7864,7 +7864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `hyperdrive_bindings`<sup>Optional</sup> <a name="hyperdrive_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.hyperdriveBindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]
 
 Hyperdrive bindings used for Pages Functions.
 
@@ -7874,7 +7874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `kv_namespaces`<sup>Optional</sup> <a name="kv_namespaces" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.kvNamespaces"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]
 
 KV namespaces used for Pages Functions.
 
@@ -7884,7 +7884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `mtls_certificates`<sup>Optional</sup> <a name="mtls_certificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.mtlsCertificates"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]
 
 mTLS bindings used for Pages Functions.
 
@@ -7904,7 +7904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `queue_producers`<sup>Optional</sup> <a name="queue_producers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.queueProducers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]
 
 Queue Producer bindings used for Pages Functions.
 
@@ -7914,7 +7914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `r2_buckets`<sup>Optional</sup> <a name="r2_buckets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.r2Buckets"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]
 
 R2 buckets used for Pages Functions.
 
@@ -7924,7 +7924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `services`<sup>Optional</sup> <a name="services" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.services"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]
 
 Services used for Pages Functions.
 
@@ -7934,7 +7934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `vectorize_bindings`<sup>Optional</sup> <a name="vectorize_bindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.putProduction.parameter.vectorizeBindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]
 
 Vectorize bindings used for Pages Functions.
 
@@ -7963,9 +7963,9 @@ def reset_production() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.preview">preview</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference">PagesProjectDeploymentConfigsPreviewOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.production">production</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference">PagesProjectDeploymentConfigsProductionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.previewInput">preview_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.productionInput">production_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.previewInput">preview_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.productionInput">production_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | *No description.* |
 
 ---
 
@@ -8016,30 +8016,30 @@ production: PagesProjectDeploymentConfigsProductionOutputReference
 ##### `preview_input`<sup>Optional</sup> <a name="preview_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.previewInput"></a>
 
 ```python
-preview_input: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreview]
+preview_input: IResolvable | PagesProjectDeploymentConfigsPreview
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>
 
 ---
 
 ##### `production_input`<sup>Optional</sup> <a name="production_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.productionInput"></a>
 
 ```python
-production_input: typing.Union[IResolvable, PagesProjectDeploymentConfigsProduction]
+production_input: IResolvable | PagesProjectDeploymentConfigsProduction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigs]
+internal_value: IResolvable | PagesProjectDeploymentConfigs
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a>
 
 ---
 
@@ -8161,7 +8161,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -8192,10 +8192,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]
 
 ---
 
@@ -8454,7 +8454,7 @@ def reset_project_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a></code> | *No description.* |
 
 ---
 
@@ -8505,10 +8505,10 @@ project_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewAiBindings]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewAiBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>
 
 ---
 
@@ -8630,7 +8630,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]</code> | *No description.* |
 
 ---
 
@@ -8661,10 +8661,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]
 
 ---
 
@@ -8923,7 +8923,7 @@ def reset_dataset() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.datasetInput">dataset_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.dataset">dataset</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a></code> | *No description.* |
 
 ---
 
@@ -8974,10 +8974,10 @@ dataset: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>
 
 ---
 
@@ -9099,7 +9099,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]</code> | *No description.* |
 
 ---
 
@@ -9130,10 +9130,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]
 
 ---
 
@@ -9383,7 +9383,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a></code> | *No description.* |
 
 ---
 
@@ -9414,10 +9414,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewBrowsers]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewBrowsers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>
 
 ---
 
@@ -9539,7 +9539,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]</code> | *No description.* |
 
 ---
 
@@ -9570,10 +9570,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]
 
 ---
 
@@ -9832,7 +9832,7 @@ def reset_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a></code> | *No description.* |
 
 ---
 
@@ -9883,10 +9883,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewD1Databases]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewD1Databases
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>
 
 ---
 
@@ -10008,7 +10008,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]</code> | *No description.* |
 
 ---
 
@@ -10039,10 +10039,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]
 
 ---
 
@@ -10301,7 +10301,7 @@ def reset_namespace_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.namespaceIdInput">namespace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -10352,10 +10352,10 @@ namespace_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>
 
 ---
 
@@ -10477,7 +10477,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]</code> | *No description.* |
 
 ---
 
@@ -10508,10 +10508,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]
 
 ---
 
@@ -10765,7 +10765,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a></code> | *No description.* |
 
 ---
 
@@ -10836,10 +10836,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewEnvVars]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewEnvVars
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>
 
 ---
 
@@ -10961,7 +10961,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -10992,10 +10992,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]
 
 ---
 
@@ -11254,7 +11254,7 @@ def reset_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a></code> | *No description.* |
 
 ---
 
@@ -11305,10 +11305,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewHyperdriveBindings]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewHyperdriveBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>
 
 ---
 
@@ -11430,7 +11430,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]</code> | *No description.* |
 
 ---
 
@@ -11461,10 +11461,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]
 
 ---
 
@@ -11723,7 +11723,7 @@ def reset_namespace_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.namespaceIdInput">namespace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -11774,10 +11774,10 @@ namespace_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewKvNamespaces]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewKvNamespaces
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>
 
 ---
 
@@ -11899,7 +11899,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]</code> | *No description.* |
 
 ---
 
@@ -11930,10 +11930,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]
 
 ---
 
@@ -12192,7 +12192,7 @@ def reset_certificate_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.certificateIdInput">certificate_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.certificateId">certificate_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a></code> | *No description.* |
 
 ---
 
@@ -12243,10 +12243,10 @@ certificate_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewMtlsCertificates]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewMtlsCertificates
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>
 
 ---
 
@@ -12513,13 +12513,13 @@ Returns a reversible string representation.
 
 ```python
 def put_ai_bindings(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putAiBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]
 
 ---
 
@@ -12527,13 +12527,13 @@ def put_ai_bindings(
 
 ```python
 def put_analytics_engine_datasets(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putAnalyticsEngineDatasets.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]
 
 ---
 
@@ -12541,13 +12541,13 @@ def put_analytics_engine_datasets(
 
 ```python
 def put_browsers(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putBrowsers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]
 
 ---
 
@@ -12555,13 +12555,13 @@ def put_browsers(
 
 ```python
 def put_d1_databases(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putD1Databases.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]
 
 ---
 
@@ -12569,13 +12569,13 @@ def put_d1_databases(
 
 ```python
 def put_durable_object_namespaces(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putDurableObjectNamespaces.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]
 
 ---
 
@@ -12583,13 +12583,13 @@ def put_durable_object_namespaces(
 
 ```python
 def put_env_vars(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putEnvVars.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]
 
 ---
 
@@ -12597,13 +12597,13 @@ def put_env_vars(
 
 ```python
 def put_hyperdrive_bindings(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putHyperdriveBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]
 
 ---
 
@@ -12611,13 +12611,13 @@ def put_hyperdrive_bindings(
 
 ```python
 def put_kv_namespaces(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putKvNamespaces.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]
 
 ---
 
@@ -12625,13 +12625,13 @@ def put_kv_namespaces(
 
 ```python
 def put_mtls_certificates(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putMtlsCertificates.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]
 
 ---
 
@@ -12657,13 +12657,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_queue_producers(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putQueueProducers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]
 
 ---
 
@@ -12671,13 +12671,13 @@ def put_queue_producers(
 
 ```python
 def put_r2_buckets(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putR2Buckets.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]
 
 ---
 
@@ -12685,13 +12685,13 @@ def put_r2_buckets(
 
 ```python
 def put_services(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putServices.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]
 
 ---
 
@@ -12699,13 +12699,13 @@ def put_services(
 
 ```python
 def put_vectorize_bindings(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putVectorizeBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]
 
 ---
 
@@ -12826,25 +12826,25 @@ def reset_vectorize_bindings() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2Buckets">r2_buckets</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap">PagesProjectDeploymentConfigsPreviewR2BucketsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.services">services</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap">PagesProjectDeploymentConfigsPreviewServicesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindings">vectorize_bindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap">PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindingsInput">ai_bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput">analytics_engine_datasets_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.browsersInput">browsers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindingsInput">ai_bindings_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput">analytics_engine_datasets_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.browsersInput">browsers_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityDateInput">compatibility_date_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityFlagsInput">compatibility_flags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.d1DatabasesInput">d1_databases_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespacesInput">durable_object_namespaces_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVarsInput">env_vars_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput">hyperdrive_bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespacesInput">kv_namespaces_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificatesInput">mtls_certificates_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placementInput">placement_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducersInput">queue_producers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2BucketsInput">r2_buckets_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.servicesInput">services_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput">vectorize_bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.d1DatabasesInput">d1_databases_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespacesInput">durable_object_namespaces_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVarsInput">env_vars_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput">hyperdrive_bindings_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespacesInput">kv_namespaces_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificatesInput">mtls_certificates_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placementInput">placement_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducersInput">queue_producers_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2BucketsInput">r2_buckets_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.servicesInput">services_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput">vectorize_bindings_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityDate">compatibility_date</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a></code> | *No description.* |
 
 ---
 
@@ -13015,30 +13015,30 @@ vectorize_bindings: PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap
 ##### `ai_bindings_input`<sup>Optional</sup> <a name="ai_bindings_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindingsInput"></a>
 
 ```python
-ai_bindings_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]]
+ai_bindings_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAiBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>]
 
 ---
 
 ##### `analytics_engine_datasets_input`<sup>Optional</sup> <a name="analytics_engine_datasets_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput"></a>
 
 ```python
-analytics_engine_datasets_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]]
+analytics_engine_datasets_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>]
 
 ---
 
 ##### `browsers_input`<sup>Optional</sup> <a name="browsers_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.browsersInput"></a>
 
 ```python
-browsers_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]]
+browsers_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewBrowsers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>]
 
 ---
 
@@ -13065,110 +13065,110 @@ compatibility_flags_input: typing.List[str]
 ##### `d1_databases_input`<sup>Optional</sup> <a name="d1_databases_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.d1DatabasesInput"></a>
 
 ```python
-d1_databases_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]]
+d1_databases_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewD1Databases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>]
 
 ---
 
 ##### `durable_object_namespaces_input`<sup>Optional</sup> <a name="durable_object_namespaces_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespacesInput"></a>
 
 ```python
-durable_object_namespaces_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]]
+durable_object_namespaces_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>]
 
 ---
 
 ##### `env_vars_input`<sup>Optional</sup> <a name="env_vars_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVarsInput"></a>
 
 ```python
-env_vars_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]]
+env_vars_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewEnvVars]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>]
 
 ---
 
 ##### `hyperdrive_bindings_input`<sup>Optional</sup> <a name="hyperdrive_bindings_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput"></a>
 
 ```python
-hyperdrive_bindings_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]]
+hyperdrive_bindings_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewHyperdriveBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>]
 
 ---
 
 ##### `kv_namespaces_input`<sup>Optional</sup> <a name="kv_namespaces_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespacesInput"></a>
 
 ```python
-kv_namespaces_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]]
+kv_namespaces_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewKvNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>]
 
 ---
 
 ##### `mtls_certificates_input`<sup>Optional</sup> <a name="mtls_certificates_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificatesInput"></a>
 
 ```python
-mtls_certificates_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]]
+mtls_certificates_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewMtlsCertificates]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>]
 
 ---
 
 ##### `placement_input`<sup>Optional</sup> <a name="placement_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placementInput"></a>
 
 ```python
-placement_input: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewPlacement]
+placement_input: IResolvable | PagesProjectDeploymentConfigsPreviewPlacement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>
 
 ---
 
 ##### `queue_producers_input`<sup>Optional</sup> <a name="queue_producers_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducersInput"></a>
 
 ```python
-queue_producers_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]]
+queue_producers_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]
 
 ---
 
 ##### `r2_buckets_input`<sup>Optional</sup> <a name="r2_buckets_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2BucketsInput"></a>
 
 ```python
-r2_buckets_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]]
+r2_buckets_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]
 
 ---
 
 ##### `services_input`<sup>Optional</sup> <a name="services_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.servicesInput"></a>
 
 ```python
-services_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]]
+services_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]
 
 ---
 
 ##### `vectorize_bindings_input`<sup>Optional</sup> <a name="vectorize_bindings_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput"></a>
 
 ```python
-vectorize_bindings_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]]
+vectorize_bindings_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]
 
 ---
 
@@ -13195,10 +13195,10 @@ compatibility_flags: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreview]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreview
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a>
 
 ---
 
@@ -13447,7 +13447,7 @@ def reset_mode() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | *No description.* |
 
 ---
 
@@ -13498,10 +13498,10 @@ mode: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewPlacement]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewPlacement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a>
 
 ---
 
@@ -13623,7 +13623,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]</code> | *No description.* |
 
 ---
 
@@ -13654,10 +13654,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewQueueProducers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]
 
 ---
 
@@ -13916,7 +13916,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a></code> | *No description.* |
 
 ---
 
@@ -13967,10 +13967,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewQueueProducers]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewQueueProducers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>
 
 ---
 
@@ -14092,7 +14092,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]</code> | *No description.* |
 
 ---
 
@@ -14123,10 +14123,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewR2Buckets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]
 
 ---
 
@@ -14394,7 +14394,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.jurisdiction">jurisdiction</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a></code> | *No description.* |
 
 ---
 
@@ -14465,10 +14465,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewR2Buckets]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewR2Buckets
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>
 
 ---
 
@@ -14590,7 +14590,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]</code> | *No description.* |
 
 ---
 
@@ -14621,10 +14621,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]
 
 ---
 
@@ -14901,7 +14901,7 @@ def reset_service() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.entrypoint">entrypoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a></code> | *No description.* |
 
 ---
 
@@ -14992,10 +14992,10 @@ service: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewServices]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewServices
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>
 
 ---
 
@@ -15117,7 +15117,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -15148,10 +15148,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsPreviewVectorizeBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]
 
 ---
 
@@ -15410,7 +15410,7 @@ def reset_index_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.indexNameInput">index_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.indexName">index_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a></code> | *No description.* |
 
 ---
 
@@ -15461,10 +15461,10 @@ index_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsPreviewVectorizeBindings]
+internal_value: IResolvable | PagesProjectDeploymentConfigsPreviewVectorizeBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>
 
 ---
 
@@ -15586,7 +15586,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -15617,10 +15617,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]
 
 ---
 
@@ -15879,7 +15879,7 @@ def reset_project_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a></code> | *No description.* |
 
 ---
 
@@ -15930,10 +15930,10 @@ project_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionAiBindings]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionAiBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>
 
 ---
 
@@ -16055,7 +16055,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]</code> | *No description.* |
 
 ---
 
@@ -16086,10 +16086,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]
 
 ---
 
@@ -16348,7 +16348,7 @@ def reset_dataset() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.datasetInput">dataset_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.dataset">dataset</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a></code> | *No description.* |
 
 ---
 
@@ -16399,10 +16399,10 @@ dataset: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>
 
 ---
 
@@ -16524,7 +16524,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]</code> | *No description.* |
 
 ---
 
@@ -16555,10 +16555,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]
 
 ---
 
@@ -16808,7 +16808,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a></code> | *No description.* |
 
 ---
 
@@ -16839,10 +16839,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionBrowsers]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionBrowsers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>
 
 ---
 
@@ -16964,7 +16964,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]</code> | *No description.* |
 
 ---
 
@@ -16995,10 +16995,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]
 
 ---
 
@@ -17257,7 +17257,7 @@ def reset_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a></code> | *No description.* |
 
 ---
 
@@ -17308,10 +17308,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionD1Databases]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionD1Databases
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>
 
 ---
 
@@ -17433,7 +17433,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]</code> | *No description.* |
 
 ---
 
@@ -17464,10 +17464,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]
 
 ---
 
@@ -17726,7 +17726,7 @@ def reset_namespace_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.namespaceIdInput">namespace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -17777,10 +17777,10 @@ namespace_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionDurableObjectNamespaces
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>
 
 ---
 
@@ -17902,7 +17902,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]</code> | *No description.* |
 
 ---
 
@@ -17933,10 +17933,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]
 
 ---
 
@@ -18190,7 +18190,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a></code> | *No description.* |
 
 ---
 
@@ -18261,10 +18261,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionEnvVars]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionEnvVars
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>
 
 ---
 
@@ -18386,7 +18386,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -18417,10 +18417,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]
 
 ---
 
@@ -18679,7 +18679,7 @@ def reset_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a></code> | *No description.* |
 
 ---
 
@@ -18730,10 +18730,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionHyperdriveBindings]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionHyperdriveBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>
 
 ---
 
@@ -18855,7 +18855,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]</code> | *No description.* |
 
 ---
 
@@ -18886,10 +18886,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]
 
 ---
 
@@ -19148,7 +19148,7 @@ def reset_namespace_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.namespaceIdInput">namespace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a></code> | *No description.* |
 
 ---
 
@@ -19199,10 +19199,10 @@ namespace_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionKvNamespaces]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionKvNamespaces
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>
 
 ---
 
@@ -19324,7 +19324,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]</code> | *No description.* |
 
 ---
 
@@ -19355,10 +19355,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]
 
 ---
 
@@ -19617,7 +19617,7 @@ def reset_certificate_id() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.certificateIdInput">certificate_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.certificateId">certificate_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a></code> | *No description.* |
 
 ---
 
@@ -19668,10 +19668,10 @@ certificate_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionMtlsCertificates]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionMtlsCertificates
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>
 
 ---
 
@@ -19938,13 +19938,13 @@ Returns a reversible string representation.
 
 ```python
 def put_ai_bindings(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putAiBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]
 
 ---
 
@@ -19952,13 +19952,13 @@ def put_ai_bindings(
 
 ```python
 def put_analytics_engine_datasets(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putAnalyticsEngineDatasets.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]
 
 ---
 
@@ -19966,13 +19966,13 @@ def put_analytics_engine_datasets(
 
 ```python
 def put_browsers(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putBrowsers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]
 
 ---
 
@@ -19980,13 +19980,13 @@ def put_browsers(
 
 ```python
 def put_d1_databases(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putD1Databases.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]
 
 ---
 
@@ -19994,13 +19994,13 @@ def put_d1_databases(
 
 ```python
 def put_durable_object_namespaces(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putDurableObjectNamespaces.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]
 
 ---
 
@@ -20008,13 +20008,13 @@ def put_durable_object_namespaces(
 
 ```python
 def put_env_vars(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putEnvVars.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]
 
 ---
 
@@ -20022,13 +20022,13 @@ def put_env_vars(
 
 ```python
 def put_hyperdrive_bindings(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putHyperdriveBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]
 
 ---
 
@@ -20036,13 +20036,13 @@ def put_hyperdrive_bindings(
 
 ```python
 def put_kv_namespaces(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putKvNamespaces.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]
 
 ---
 
@@ -20050,13 +20050,13 @@ def put_kv_namespaces(
 
 ```python
 def put_mtls_certificates(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putMtlsCertificates.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]
 
 ---
 
@@ -20082,13 +20082,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_queue_producers(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putQueueProducers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]
 
 ---
 
@@ -20096,13 +20096,13 @@ def put_queue_producers(
 
 ```python
 def put_r2_buckets(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putR2Buckets.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]
 
 ---
 
@@ -20110,13 +20110,13 @@ def put_r2_buckets(
 
 ```python
 def put_services(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionServices]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionServices]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putServices.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]
 
 ---
 
@@ -20124,13 +20124,13 @@ def put_services(
 
 ```python
 def put_vectorize_bindings(
-  value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]]
+  value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putVectorizeBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]
 
 ---
 
@@ -20251,25 +20251,25 @@ def reset_vectorize_bindings() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2Buckets">r2_buckets</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap">PagesProjectDeploymentConfigsProductionR2BucketsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.services">services</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap">PagesProjectDeploymentConfigsProductionServicesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindings">vectorize_bindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap">PagesProjectDeploymentConfigsProductionVectorizeBindingsMap</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.aiBindingsInput">ai_bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput">analytics_engine_datasets_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.browsersInput">browsers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.aiBindingsInput">ai_bindings_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput">analytics_engine_datasets_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.browsersInput">browsers_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityDateInput">compatibility_date_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityFlagsInput">compatibility_flags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.d1DatabasesInput">d1_databases_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespacesInput">durable_object_namespaces_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVarsInput">env_vars_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput">hyperdrive_bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespacesInput">kv_namespaces_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificatesInput">mtls_certificates_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placementInput">placement_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducersInput">queue_producers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2BucketsInput">r2_buckets_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.servicesInput">services_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput">vectorize_bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.d1DatabasesInput">d1_databases_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespacesInput">durable_object_namespaces_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVarsInput">env_vars_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput">hyperdrive_bindings_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespacesInput">kv_namespaces_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificatesInput">mtls_certificates_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placementInput">placement_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducersInput">queue_producers_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2BucketsInput">r2_buckets_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.servicesInput">services_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput">vectorize_bindings_input</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityDate">compatibility_date</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a></code> | *No description.* |
 
 ---
 
@@ -20440,30 +20440,30 @@ vectorize_bindings: PagesProjectDeploymentConfigsProductionVectorizeBindingsMap
 ##### `ai_bindings_input`<sup>Optional</sup> <a name="ai_bindings_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.aiBindingsInput"></a>
 
 ```python
-ai_bindings_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]]
+ai_bindings_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAiBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>]
 
 ---
 
 ##### `analytics_engine_datasets_input`<sup>Optional</sup> <a name="analytics_engine_datasets_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput"></a>
 
 ```python
-analytics_engine_datasets_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]]
+analytics_engine_datasets_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>]
 
 ---
 
 ##### `browsers_input`<sup>Optional</sup> <a name="browsers_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.browsersInput"></a>
 
 ```python
-browsers_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]]
+browsers_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionBrowsers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>]
 
 ---
 
@@ -20490,110 +20490,110 @@ compatibility_flags_input: typing.List[str]
 ##### `d1_databases_input`<sup>Optional</sup> <a name="d1_databases_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.d1DatabasesInput"></a>
 
 ```python
-d1_databases_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]]
+d1_databases_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionD1Databases]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>]
 
 ---
 
 ##### `durable_object_namespaces_input`<sup>Optional</sup> <a name="durable_object_namespaces_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespacesInput"></a>
 
 ```python
-durable_object_namespaces_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]]
+durable_object_namespaces_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionDurableObjectNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>]
 
 ---
 
 ##### `env_vars_input`<sup>Optional</sup> <a name="env_vars_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVarsInput"></a>
 
 ```python
-env_vars_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]]
+env_vars_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionEnvVars]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>]
 
 ---
 
 ##### `hyperdrive_bindings_input`<sup>Optional</sup> <a name="hyperdrive_bindings_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput"></a>
 
 ```python
-hyperdrive_bindings_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]]
+hyperdrive_bindings_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionHyperdriveBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>]
 
 ---
 
 ##### `kv_namespaces_input`<sup>Optional</sup> <a name="kv_namespaces_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespacesInput"></a>
 
 ```python
-kv_namespaces_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]]
+kv_namespaces_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionKvNamespaces]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>]
 
 ---
 
 ##### `mtls_certificates_input`<sup>Optional</sup> <a name="mtls_certificates_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificatesInput"></a>
 
 ```python
-mtls_certificates_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]]
+mtls_certificates_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionMtlsCertificates]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>]
 
 ---
 
 ##### `placement_input`<sup>Optional</sup> <a name="placement_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placementInput"></a>
 
 ```python
-placement_input: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionPlacement]
+placement_input: IResolvable | PagesProjectDeploymentConfigsProductionPlacement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>
 
 ---
 
 ##### `queue_producers_input`<sup>Optional</sup> <a name="queue_producers_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducersInput"></a>
 
 ```python
-queue_producers_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]]
+queue_producers_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]
 
 ---
 
 ##### `r2_buckets_input`<sup>Optional</sup> <a name="r2_buckets_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2BucketsInput"></a>
 
 ```python
-r2_buckets_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]]
+r2_buckets_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]
 
 ---
 
 ##### `services_input`<sup>Optional</sup> <a name="services_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.servicesInput"></a>
 
 ```python
-services_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionServices]]
+services_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]
 
 ---
 
 ##### `vectorize_bindings_input`<sup>Optional</sup> <a name="vectorize_bindings_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput"></a>
 
 ```python
-vectorize_bindings_input: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]]
+vectorize_bindings_input: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]
 
 ---
 
@@ -20620,10 +20620,10 @@ compatibility_flags: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProduction]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProduction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a>
 
 ---
 
@@ -20872,7 +20872,7 @@ def reset_mode() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | *No description.* |
 
 ---
 
@@ -20923,10 +20923,10 @@ mode: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionPlacement]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionPlacement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a>
 
 ---
 
@@ -21048,7 +21048,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]</code> | *No description.* |
 
 ---
 
@@ -21079,10 +21079,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionQueueProducers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]
 
 ---
 
@@ -21341,7 +21341,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a></code> | *No description.* |
 
 ---
 
@@ -21392,10 +21392,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionQueueProducers]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionQueueProducers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>
 
 ---
 
@@ -21517,7 +21517,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]</code> | *No description.* |
 
 ---
 
@@ -21548,10 +21548,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionR2Buckets]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]
 
 ---
 
@@ -21819,7 +21819,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.jurisdiction">jurisdiction</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a></code> | *No description.* |
 
 ---
 
@@ -21890,10 +21890,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2BucketsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionR2Buckets]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionR2Buckets
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>
 
 ---
 
@@ -22015,7 +22015,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]</code> | *No description.* |
 
 ---
 
@@ -22046,10 +22046,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionServices]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]
 
 ---
 
@@ -22326,7 +22326,7 @@ def reset_service() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.entrypoint">entrypoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a></code> | *No description.* |
 
 ---
 
@@ -22417,10 +22417,10 @@ service: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionServices]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionServices
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>
 
 ---
 
@@ -22542,7 +22542,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -22573,10 +22573,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]]
+internal_value: IResolvable | typing.Mapping[PagesProjectDeploymentConfigsProductionVectorizeBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.Mapping[<a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]
 
 ---
 
@@ -22835,7 +22835,7 @@ def reset_index_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.indexNameInput">index_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.indexName">index_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a></code> | *No description.* |
 
 ---
 
@@ -22886,10 +22886,10 @@ index_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectDeploymentConfigsProductionVectorizeBindings]
+internal_value: IResolvable | PagesProjectDeploymentConfigsProductionVectorizeBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>
 
 ---
 
@@ -26556,29 +26556,29 @@ def reset_repo_name() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabledInput">deployments_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabledInput">deployments_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathExcludesInput">path_excludes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathIncludesInput">path_includes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabledInput">pr_comments_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabledInput">pr_comments_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchExcludesInput">preview_branch_excludes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchIncludesInput">preview_branch_includes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewDeploymentSettingInput">preview_deployment_setting_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionBranchInput">production_branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabledInput">production_deployments_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabledInput">production_deployments_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.repoNameInput">repo_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabled">deployments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabled">deployments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathExcludes">path_excludes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.pathIncludes">path_includes</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabled">pr_comments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabled">pr_comments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchExcludes">preview_branch_excludes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewBranchIncludes">preview_branch_includes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.previewDeploymentSetting">preview_deployment_setting</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionBranch">production_branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabled">production_deployments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabled">production_deployments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.repoName">repo_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a></code> | *No description.* |
 
 ---
 
@@ -26609,10 +26609,10 @@ fqn: str
 ##### `deployments_enabled_input`<sup>Optional</sup> <a name="deployments_enabled_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabledInput"></a>
 
 ```python
-deployments_enabled_input: typing.Union[bool, IResolvable]
+deployments_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26649,10 +26649,10 @@ path_includes_input: typing.List[str]
 ##### `pr_comments_enabled_input`<sup>Optional</sup> <a name="pr_comments_enabled_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabledInput"></a>
 
 ```python
-pr_comments_enabled_input: typing.Union[bool, IResolvable]
+pr_comments_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26699,10 +26699,10 @@ production_branch_input: str
 ##### `production_deployments_enabled_input`<sup>Optional</sup> <a name="production_deployments_enabled_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabledInput"></a>
 
 ```python
-production_deployments_enabled_input: typing.Union[bool, IResolvable]
+production_deployments_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26719,10 +26719,10 @@ repo_name_input: str
 ##### `deployments_enabled`<sup>Required</sup> <a name="deployments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.deploymentsEnabled"></a>
 
 ```python
-deployments_enabled: typing.Union[bool, IResolvable]
+deployments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26759,10 +26759,10 @@ path_includes: typing.List[str]
 ##### `pr_comments_enabled`<sup>Required</sup> <a name="pr_comments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.prCommentsEnabled"></a>
 
 ```python
-pr_comments_enabled: typing.Union[bool, IResolvable]
+pr_comments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26809,10 +26809,10 @@ production_branch: str
 ##### `production_deployments_enabled`<sup>Required</sup> <a name="production_deployments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabled"></a>
 
 ```python
-production_deployments_enabled: typing.Union[bool, IResolvable]
+production_deployments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26829,10 +26829,10 @@ repo_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectSourceConfig]
+internal_value: IResolvable | PagesProjectSourceConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>
 
 ---
 
@@ -27072,23 +27072,23 @@ Returns a reversible string representation.
 
 ```python
 def put_config(
-  deployments_enabled: typing.Union[bool, IResolvable] = None,
+  deployments_enabled: bool | IResolvable = None,
   owner: str = None,
   path_excludes: typing.List[str] = None,
   path_includes: typing.List[str] = None,
-  pr_comments_enabled: typing.Union[bool, IResolvable] = None,
+  pr_comments_enabled: bool | IResolvable = None,
   preview_branch_excludes: typing.List[str] = None,
   preview_branch_includes: typing.List[str] = None,
   preview_deployment_setting: str = None,
   production_branch: str = None,
-  production_deployments_enabled: typing.Union[bool, IResolvable] = None,
+  production_deployments_enabled: bool | IResolvable = None,
   repo_name: str = None
 ) -> None
 ```
 
 ###### `deployments_enabled`<sup>Optional</sup> <a name="deployments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.putConfig.parameter.deploymentsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}.
 
@@ -27120,7 +27120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `pr_comments_enabled`<sup>Optional</sup> <a name="pr_comments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.putConfig.parameter.prCommentsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}.
 
@@ -27162,7 +27162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `production_deployments_enabled`<sup>Optional</sup> <a name="production_deployments_enabled" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.putConfig.parameter.productionDeploymentsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}.
 
@@ -27196,10 +27196,10 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference">PagesProjectSourceConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.configInput">config_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.configInput">config_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | *No description.* |
 
 ---
 
@@ -27240,10 +27240,10 @@ config: PagesProjectSourceConfigOutputReference
 ##### `config_input`<sup>Optional</sup> <a name="config_input" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.configInput"></a>
 
 ```python
-config_input: typing.Union[IResolvable, PagesProjectSourceConfig]
+config_input: IResolvable | PagesProjectSourceConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>
 
 ---
 
@@ -27270,10 +27270,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PagesProjectSource]
+internal_value: IResolvable | PagesProjectSource
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>
 
 ---
 

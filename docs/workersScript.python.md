@@ -14,17 +14,17 @@ from cdktf_cdktf_provider_cloudflare import workers_script
 workersScript.WorkersScript(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   script_name: str,
   assets: WorkersScriptAssets = None,
-  bindings: typing.Union[IResolvable, typing.List[WorkersScriptBindings]] = None,
+  bindings: IResolvable | typing.List[WorkersScriptBindings] = None,
   body_part: str = None,
   compatibility_date: str = None,
   compatibility_flags: typing.List[str] = None,
@@ -32,15 +32,15 @@ workersScript.WorkersScript(
   content_file: str = None,
   content_sha256: str = None,
   content_type: str = None,
-  keep_assets: typing.Union[bool, IResolvable] = None,
+  keep_assets: bool | IResolvable = None,
   keep_bindings: typing.List[str] = None,
   limits: WorkersScriptLimits = None,
-  logpush: typing.Union[bool, IResolvable] = None,
+  logpush: bool | IResolvable = None,
   main_module: str = None,
   migrations: WorkersScriptMigrations = None,
   observability: WorkersScriptObservability = None,
   placement: WorkersScriptPlacement = None,
-  tail_consumers: typing.Union[IResolvable, typing.List[WorkersScriptTailConsumers]] = None,
+  tail_consumers: IResolvable | typing.List[WorkersScriptTailConsumers] = None,
   usage_model: str = None
 )
 ```
@@ -49,17 +49,17 @@ workersScript.WorkersScript(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.assets">assets</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a></code> | Configuration for assets within a Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.bindings">bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]</code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.bindings">bindings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.bodyPart">body_part</a></code> | <code>str</code> | Name of the uploaded file that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.compatibilityDate">compatibility_date</a></code> | <code>str</code> | Date indicating targeted support in the Workers runtime. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | Flags that enable or disable certain features in the Workers runtime. |
@@ -67,15 +67,15 @@ workersScript.WorkersScript(
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.contentFile">content_file</a></code> | <code>str</code> | Path to a file containing the Module or Service Worker contents of the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.contentSha256">content_sha256</a></code> | <code>str</code> | SHA-256 hash of the Worker contents. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.contentType">content_type</a></code> | <code>str</code> | Content-Type of the Worker. Required if uploading a non-JavaScript Worker (e.g. "text/x-python"). |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.keepAssets">keep_assets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.keepAssets">keep_assets</a></code> | <code>bool \| cdktf.IResolvable</code> | Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.keepBindings">keep_bindings</a></code> | <code>typing.List[str]</code> | List of binding types to keep from previous_upload. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a></code> | Limits to apply for this Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.logpush">logpush</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether Logpush is turned on for the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.logpush">logpush</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Logpush is turned on for the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.mainModule">main_module</a></code> | <code>str</code> | Name of the uploaded file that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.migrations">migrations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a></code> | Migrations to apply for Durable Objects associated with this Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.observability">observability</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a></code> | Observability settings for the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a></code> | Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.tailConsumers">tail_consumers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]</code> | List of Workers that will consume logs from the attached Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.tailConsumers">tail_consumers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]</code> | List of Workers that will consume logs from the attached Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.usageModel">usage_model</a></code> | <code>str</code> | Usage model for the Worker invocations. Available values: "standard", "bundled", "unbound". |
 
 ---
@@ -100,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `bindings`<sup>Optional</sup> <a name="bindings" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.bindings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `keep_assets`<sup>Optional</sup> <a name="keep_assets" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.keepAssets"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token.
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `logpush`<sup>Optional</sup> <a name="logpush" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.logpush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether Logpush is turned on for the Worker.
 
@@ -340,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `tail_consumers`<sup>Optional</sup> <a name="tail_consumers" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.tailConsumers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]
 
 List of Workers that will consume logs from the attached Worker.
 
@@ -636,7 +636,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.importFrom"></a>
@@ -699,7 +699,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -715,7 +715,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -783,13 +783,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_bindings(
-  value: typing.Union[IResolvable, typing.List[WorkersScriptBindings]]
+  value: IResolvable | typing.List[WorkersScriptBindings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.putBindings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]
 
 ---
 
@@ -820,9 +820,9 @@ def put_migrations(
   new_sqlite_classes: typing.List[str] = None,
   new_tag: str = None,
   old_tag: str = None,
-  renamed_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsRenamedClasses]] = None,
-  steps: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsSteps]] = None,
-  transferred_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsTransferredClasses]] = None
+  renamed_classes: IResolvable | typing.List[WorkersScriptMigrationsRenamedClasses] = None,
+  steps: IResolvable | typing.List[WorkersScriptMigrationsSteps] = None,
+  transferred_classes: IResolvable | typing.List[WorkersScriptMigrationsTransferredClasses] = None
 ) -> None
 ```
 
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `renamed_classes`<sup>Optional</sup> <a name="renamed_classes" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.putMigrations.parameter.renamedClasses"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `steps`<sup>Optional</sup> <a name="steps" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.putMigrations.parameter.steps"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]
 
 Migrations to apply in order.
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `transferred_classes`<sup>Optional</sup> <a name="transferred_classes" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.putMigrations.parameter.transferredClasses"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_observability(
-  enabled: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
   head_sampling_rate: typing.Union[int, float] = None,
   logs: WorkersScriptObservabilityLogs = None
 ) -> None
@@ -920,7 +920,7 @@ def put_observability(
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.putObservability.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether observability is enabled for the Worker.
 
@@ -970,13 +970,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def put_tail_consumers(
-  value: typing.Union[IResolvable, typing.List[WorkersScriptTailConsumers]]
+  value: IResolvable | typing.List[WorkersScriptTailConsumers]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.putTailConsumers.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]
 
 ---
 
@@ -1231,13 +1231,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.assets">assets</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference">WorkersScriptAssetsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.bindings">bindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList">WorkersScriptBindingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
@@ -1257,8 +1257,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.startupTimeMs">startup_time_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.tailConsumers">tail_consumers</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersList">WorkersScriptTailConsumersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.assetsInput">assets_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.bindingsInput">bindings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.assetsInput">assets_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.bindingsInput">bindings_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.bodyPartInput">body_part_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.compatibilityDateInput">compatibility_date_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.compatibilityFlagsInput">compatibility_flags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1266,16 +1266,16 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.contentSha256Input">content_sha256_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.contentTypeInput">content_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepAssetsInput">keep_assets_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepAssetsInput">keep_assets_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepBindingsInput">keep_bindings_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.limitsInput">limits_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.logpushInput">logpush_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.limitsInput">limits_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.logpushInput">logpush_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.mainModuleInput">main_module_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.migrationsInput">migrations_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.observabilityInput">observability_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.placementInput">placement_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.migrationsInput">migrations_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.observabilityInput">observability_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.placementInput">placement_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.scriptNameInput">script_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.tailConsumersInput">tail_consumers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.tailConsumersInput">tail_consumers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.usageModelInput">usage_model_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.bodyPart">body_part</a></code> | <code>str</code> | *No description.* |
@@ -1285,9 +1285,9 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.contentFile">content_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.contentSha256">content_sha256</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepAssets">keep_assets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepAssets">keep_assets</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepBindings">keep_bindings</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.logpush">logpush</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.logpush">logpush</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.mainModule">main_module</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.scriptName">script_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScript.property.usageModel">usage_model</a></code> | <code>str</code> | *No description.* |
@@ -1369,20 +1369,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1429,10 +1429,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1629,20 +1629,20 @@ account_id_input: str
 ##### `assets_input`<sup>Optional</sup> <a name="assets_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.assetsInput"></a>
 
 ```python
-assets_input: typing.Union[IResolvable, WorkersScriptAssets]
+assets_input: IResolvable | WorkersScriptAssets
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a>
 
 ---
 
 ##### `bindings_input`<sup>Optional</sup> <a name="bindings_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.bindingsInput"></a>
 
 ```python
-bindings_input: typing.Union[IResolvable, typing.List[WorkersScriptBindings]]
+bindings_input: IResolvable | typing.List[WorkersScriptBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]
 
 ---
 
@@ -1719,10 +1719,10 @@ content_type_input: str
 ##### `keep_assets_input`<sup>Optional</sup> <a name="keep_assets_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepAssetsInput"></a>
 
 ```python
-keep_assets_input: typing.Union[bool, IResolvable]
+keep_assets_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1739,20 +1739,20 @@ keep_bindings_input: typing.List[str]
 ##### `limits_input`<sup>Optional</sup> <a name="limits_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.limitsInput"></a>
 
 ```python
-limits_input: typing.Union[IResolvable, WorkersScriptLimits]
+limits_input: IResolvable | WorkersScriptLimits
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a>
 
 ---
 
 ##### `logpush_input`<sup>Optional</sup> <a name="logpush_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.logpushInput"></a>
 
 ```python
-logpush_input: typing.Union[bool, IResolvable]
+logpush_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1769,30 +1769,30 @@ main_module_input: str
 ##### `migrations_input`<sup>Optional</sup> <a name="migrations_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.migrationsInput"></a>
 
 ```python
-migrations_input: typing.Union[IResolvable, WorkersScriptMigrations]
+migrations_input: IResolvable | WorkersScriptMigrations
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a>
 
 ---
 
 ##### `observability_input`<sup>Optional</sup> <a name="observability_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.observabilityInput"></a>
 
 ```python
-observability_input: typing.Union[IResolvable, WorkersScriptObservability]
+observability_input: IResolvable | WorkersScriptObservability
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a>
 
 ---
 
 ##### `placement_input`<sup>Optional</sup> <a name="placement_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.placementInput"></a>
 
 ```python
-placement_input: typing.Union[IResolvable, WorkersScriptPlacement]
+placement_input: IResolvable | WorkersScriptPlacement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a>
 
 ---
 
@@ -1809,10 +1809,10 @@ script_name_input: str
 ##### `tail_consumers_input`<sup>Optional</sup> <a name="tail_consumers_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.tailConsumersInput"></a>
 
 ```python
-tail_consumers_input: typing.Union[IResolvable, typing.List[WorkersScriptTailConsumers]]
+tail_consumers_input: IResolvable | typing.List[WorkersScriptTailConsumers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]
 
 ---
 
@@ -1909,10 +1909,10 @@ content_type: str
 ##### `keep_assets`<sup>Required</sup> <a name="keep_assets" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.keepAssets"></a>
 
 ```python
-keep_assets: typing.Union[bool, IResolvable]
+keep_assets: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1929,10 +1929,10 @@ keep_bindings: typing.List[str]
 ##### `logpush`<sup>Required</sup> <a name="logpush" id="@cdktf/provider-cloudflare.workersScript.WorkersScript.property.logpush"></a>
 
 ```python
-logpush: typing.Union[bool, IResolvable]
+logpush: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2064,8 +2064,8 @@ workersScript.WorkersScriptAssetsConfig(
   html_handling: str = None,
   not_found_handling: str = None,
   redirects: str = None,
-  run_worker_first: typing.Union[bool, IResolvable] = None,
-  serve_directly: typing.Union[bool, IResolvable] = None
+  run_worker_first: bool | IResolvable = None,
+  serve_directly: bool | IResolvable = None
 )
 ```
 
@@ -2077,8 +2077,8 @@ workersScript.WorkersScriptAssetsConfig(
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.htmlHandling">html_handling</a></code> | <code>str</code> | Determines the redirects and rewrites of requests for HTML content. Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none". |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.notFoundHandling">not_found_handling</a></code> | <code>str</code> | Determines the response when a request does not match a static asset, and there is no Worker script. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.redirects">redirects</a></code> | <code>str</code> | The contents of a _redirects file (used to apply redirects or proxy paths ahead of asset serving). |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.runWorkerFirst">run_worker_first</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, requests will always invoke the Worker script. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.serveDirectly">serve_directly</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true and the incoming request matches an asset, that will be served instead of invoking the Worker script. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.runWorkerFirst">run_worker_first</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, requests will always invoke the Worker script. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.serveDirectly">serve_directly</a></code> | <code>bool \| cdktf.IResolvable</code> | When true and the incoming request matches an asset, that will be served instead of invoking the Worker script. |
 
 ---
 
@@ -2143,10 +2143,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `run_worker_first`<sup>Optional</sup> <a name="run_worker_first" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.runWorkerFirst"></a>
 
 ```python
-run_worker_first: typing.Union[bool, IResolvable]
+run_worker_first: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, requests will always invoke the Worker script.
 
@@ -2159,10 +2159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `serve_directly`<sup>Optional</sup> <a name="serve_directly" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig.property.serveDirectly"></a>
 
 ```python
-serve_directly: typing.Union[bool, IResolvable]
+serve_directly: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true and the incoming request matches an asset, that will be served instead of invoking the Worker script.
 
@@ -2835,17 +2835,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import workers_script
 
 workersScript.WorkersScriptConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   script_name: str,
   assets: WorkersScriptAssets = None,
-  bindings: typing.Union[IResolvable, typing.List[WorkersScriptBindings]] = None,
+  bindings: IResolvable | typing.List[WorkersScriptBindings] = None,
   body_part: str = None,
   compatibility_date: str = None,
   compatibility_flags: typing.List[str] = None,
@@ -2853,15 +2853,15 @@ workersScript.WorkersScriptConfig(
   content_file: str = None,
   content_sha256: str = None,
   content_type: str = None,
-  keep_assets: typing.Union[bool, IResolvable] = None,
+  keep_assets: bool | IResolvable = None,
   keep_bindings: typing.List[str] = None,
   limits: WorkersScriptLimits = None,
-  logpush: typing.Union[bool, IResolvable] = None,
+  logpush: bool | IResolvable = None,
   main_module: str = None,
   migrations: WorkersScriptMigrations = None,
   observability: WorkersScriptObservability = None,
   placement: WorkersScriptPlacement = None,
-  tail_consumers: typing.Union[IResolvable, typing.List[WorkersScriptTailConsumers]] = None,
+  tail_consumers: IResolvable | typing.List[WorkersScriptTailConsumers] = None,
   usage_model: str = None
 )
 ```
@@ -2870,17 +2870,17 @@ workersScript.WorkersScriptConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.assets">assets</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a></code> | Configuration for assets within a Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.bindings">bindings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]</code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.bindings">bindings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.bodyPart">body_part</a></code> | <code>str</code> | Name of the uploaded file that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.compatibilityDate">compatibility_date</a></code> | <code>str</code> | Date indicating targeted support in the Workers runtime. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.compatibilityFlags">compatibility_flags</a></code> | <code>typing.List[str]</code> | Flags that enable or disable certain features in the Workers runtime. |
@@ -2888,15 +2888,15 @@ workersScript.WorkersScriptConfig(
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.contentFile">content_file</a></code> | <code>str</code> | Path to a file containing the Module or Service Worker contents of the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.contentSha256">content_sha256</a></code> | <code>str</code> | SHA-256 hash of the Worker contents. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.contentType">content_type</a></code> | <code>str</code> | Content-Type of the Worker. Required if uploading a non-JavaScript Worker (e.g. "text/x-python"). |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.keepAssets">keep_assets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.keepAssets">keep_assets</a></code> | <code>bool \| cdktf.IResolvable</code> | Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.keepBindings">keep_bindings</a></code> | <code>typing.List[str]</code> | List of binding types to keep from previous_upload. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a></code> | Limits to apply for this Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.logpush">logpush</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether Logpush is turned on for the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.logpush">logpush</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Logpush is turned on for the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.mainModule">main_module</a></code> | <code>str</code> | Name of the uploaded file that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.migrations">migrations</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a></code> | Migrations to apply for Durable Objects associated with this Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.observability">observability</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a></code> | Observability settings for the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a></code> | Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.tailConsumers">tail_consumers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]</code> | List of Workers that will consume logs from the attached Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.tailConsumers">tail_consumers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]</code> | List of Workers that will consume logs from the attached Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.usageModel">usage_model</a></code> | <code>str</code> | Usage model for the Worker invocations. Available values: "standard", "bundled", "unbound". |
 
 ---
@@ -2904,20 +2904,20 @@ workersScript.WorkersScriptConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2964,10 +2964,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -3016,10 +3016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `bindings`<sup>Optional</sup> <a name="bindings" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.bindings"></a>
 
 ```python
-bindings: typing.Union[IResolvable, typing.List[WorkersScriptBindings]]
+bindings: IResolvable | typing.List[WorkersScriptBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -3136,10 +3136,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `keep_assets`<sup>Optional</sup> <a name="keep_assets" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.keepAssets"></a>
 
 ```python
-keep_assets: typing.Union[bool, IResolvable]
+keep_assets: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token.
 
@@ -3178,10 +3178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `logpush`<sup>Optional</sup> <a name="logpush" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.logpush"></a>
 
 ```python
-logpush: typing.Union[bool, IResolvable]
+logpush: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether Logpush is turned on for the Worker.
 
@@ -3248,10 +3248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `tail_consumers`<sup>Optional</sup> <a name="tail_consumers" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptConfig.property.tailConsumers"></a>
 
 ```python
-tail_consumers: typing.Union[IResolvable, typing.List[WorkersScriptTailConsumers]]
+tail_consumers: IResolvable | typing.List[WorkersScriptTailConsumers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]
 
 List of Workers that will consume logs from the attached Worker.
 
@@ -3320,9 +3320,9 @@ workersScript.WorkersScriptMigrations(
   new_sqlite_classes: typing.List[str] = None,
   new_tag: str = None,
   old_tag: str = None,
-  renamed_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsRenamedClasses]] = None,
-  steps: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsSteps]] = None,
-  transferred_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsTransferredClasses]] = None
+  renamed_classes: IResolvable | typing.List[WorkersScriptMigrationsRenamedClasses] = None,
+  steps: IResolvable | typing.List[WorkersScriptMigrationsSteps] = None,
+  transferred_classes: IResolvable | typing.List[WorkersScriptMigrationsTransferredClasses] = None
 )
 ```
 
@@ -3335,9 +3335,9 @@ workersScript.WorkersScriptMigrations(
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.newSqliteClasses">new_sqlite_classes</a></code> | <code>typing.List[str]</code> | A list of classes to create Durable Object namespaces with SQLite from. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.newTag">new_tag</a></code> | <code>str</code> | Tag to set as the latest migration tag. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.oldTag">old_tag</a></code> | <code>str</code> | Tag used to verify against the latest migration tag for this Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.renamedClasses">renamed_classes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]</code> | A list of classes with Durable Object namespaces that were renamed. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.steps">steps</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]</code> | Migrations to apply in order. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.transferredClasses">transferred_classes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]</code> | A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.renamedClasses">renamed_classes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]</code> | A list of classes with Durable Object namespaces that were renamed. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.steps">steps</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]</code> | Migrations to apply in order. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.transferredClasses">transferred_classes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]</code> | A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker. |
 
 ---
 
@@ -3416,10 +3416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `renamed_classes`<sup>Optional</sup> <a name="renamed_classes" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.renamedClasses"></a>
 
 ```python
-renamed_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsRenamedClasses]]
+renamed_classes: IResolvable | typing.List[WorkersScriptMigrationsRenamedClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -3430,10 +3430,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `steps`<sup>Optional</sup> <a name="steps" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.steps"></a>
 
 ```python
-steps: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsSteps]]
+steps: IResolvable | typing.List[WorkersScriptMigrationsSteps]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]
 
 Migrations to apply in order.
 
@@ -3444,10 +3444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `transferred_classes`<sup>Optional</sup> <a name="transferred_classes" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations.property.transferredClasses"></a>
 
 ```python
-transferred_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsTransferredClasses]]
+transferred_classes: IResolvable | typing.List[WorkersScriptMigrationsTransferredClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -3512,8 +3512,8 @@ workersScript.WorkersScriptMigrationsSteps(
   deleted_classes: typing.List[str] = None,
   new_classes: typing.List[str] = None,
   new_sqlite_classes: typing.List[str] = None,
-  renamed_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsRenamedClasses]] = None,
-  transferred_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsTransferredClasses]] = None
+  renamed_classes: IResolvable | typing.List[WorkersScriptMigrationsStepsRenamedClasses] = None,
+  transferred_classes: IResolvable | typing.List[WorkersScriptMigrationsStepsTransferredClasses] = None
 )
 ```
 
@@ -3524,8 +3524,8 @@ workersScript.WorkersScriptMigrationsSteps(
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.deletedClasses">deleted_classes</a></code> | <code>typing.List[str]</code> | A list of classes to delete Durable Object namespaces from. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.newClasses">new_classes</a></code> | <code>typing.List[str]</code> | A list of classes to create Durable Object namespaces from. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.newSqliteClasses">new_sqlite_classes</a></code> | <code>typing.List[str]</code> | A list of classes to create Durable Object namespaces with SQLite from. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.renamedClasses">renamed_classes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]]</code> | A list of classes with Durable Object namespaces that were renamed. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.transferredClasses">transferred_classes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]]</code> | A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.renamedClasses">renamed_classes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]</code> | A list of classes with Durable Object namespaces that were renamed. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.transferredClasses">transferred_classes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]</code> | A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker. |
 
 ---
 
@@ -3574,10 +3574,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `renamed_classes`<sup>Optional</sup> <a name="renamed_classes" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.renamedClasses"></a>
 
 ```python
-renamed_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsRenamedClasses]]
+renamed_classes: IResolvable | typing.List[WorkersScriptMigrationsStepsRenamedClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -3588,10 +3588,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `transferred_classes`<sup>Optional</sup> <a name="transferred_classes" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps.property.transferredClasses"></a>
 
 ```python
-transferred_classes: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsTransferredClasses]]
+transferred_classes: IResolvable | typing.List[WorkersScriptMigrationsStepsTransferredClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -3784,7 +3784,7 @@ workersScript.WorkersScriptNamedHandlers()
 from cdktf_cdktf_provider_cloudflare import workers_script
 
 workersScript.WorkersScriptObservability(
-  enabled: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
   head_sampling_rate: typing.Union[int, float] = None,
   logs: WorkersScriptObservabilityLogs = None
 )
@@ -3794,7 +3794,7 @@ workersScript.WorkersScriptObservability(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether observability is enabled for the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether observability is enabled for the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability.property.logs">logs</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a></code> | Log settings for the Worker. |
 
@@ -3803,10 +3803,10 @@ workersScript.WorkersScriptObservability(
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether observability is enabled for the Worker.
 
@@ -3850,11 +3850,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import workers_script
 
 workersScript.WorkersScriptObservabilityLogs(
-  enabled: typing.Union[bool, IResolvable],
-  invocation_logs: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
+  invocation_logs: bool | IResolvable,
   destinations: typing.List[str] = None,
   head_sampling_rate: typing.Union[int, float] = None,
-  persist: typing.Union[bool, IResolvable] = None
+  persist: bool | IResolvable = None
 )
 ```
 
@@ -3862,21 +3862,21 @@ workersScript.WorkersScriptObservabilityLogs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether logs are enabled for the Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.invocationLogs">invocation_logs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether logs are enabled for the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.invocationLogs">invocation_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | A list of destinations where logs will be exported to. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1. |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.persist">persist</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether log persistence is enabled for the Worker. |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.persist">persist</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether log persistence is enabled for the Worker. |
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether logs are enabled for the Worker.
 
@@ -3887,10 +3887,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `invocation_logs`<sup>Required</sup> <a name="invocation_logs" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.invocationLogs"></a>
 
 ```python
-invocation_logs: typing.Union[bool, IResolvable]
+invocation_logs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
@@ -3929,10 +3929,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `persist`<sup>Optional</sup> <a name="persist" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs.property.persist"></a>
 
 ```python
-persist: typing.Union[bool, IResolvable]
+persist: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether log persistence is enabled for the Worker.
 
@@ -4323,15 +4323,15 @@ def reset_serve_directly() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.htmlHandlingInput">html_handling_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.notFoundHandlingInput">not_found_handling_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.redirectsInput">redirects_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.runWorkerFirstInput">run_worker_first_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.serveDirectlyInput">serve_directly_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.runWorkerFirstInput">run_worker_first_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.serveDirectlyInput">serve_directly_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.headers">headers</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.htmlHandling">html_handling</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.notFoundHandling">not_found_handling</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.redirects">redirects</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.runWorkerFirst">run_worker_first</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.serveDirectly">serve_directly</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.runWorkerFirst">run_worker_first</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.serveDirectly">serve_directly</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a></code> | *No description.* |
 
 ---
 
@@ -4402,20 +4402,20 @@ redirects_input: str
 ##### `run_worker_first_input`<sup>Optional</sup> <a name="run_worker_first_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.runWorkerFirstInput"></a>
 
 ```python
-run_worker_first_input: typing.Union[bool, IResolvable]
+run_worker_first_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `serve_directly_input`<sup>Optional</sup> <a name="serve_directly_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.serveDirectlyInput"></a>
 
 ```python
-serve_directly_input: typing.Union[bool, IResolvable]
+serve_directly_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4462,30 +4462,30 @@ redirects: str
 ##### `run_worker_first`<sup>Required</sup> <a name="run_worker_first" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.runWorkerFirst"></a>
 
 ```python
-run_worker_first: typing.Union[bool, IResolvable]
+run_worker_first: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `serve_directly`<sup>Required</sup> <a name="serve_directly" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.serveDirectly"></a>
 
 ```python
-serve_directly: typing.Union[bool, IResolvable]
+serve_directly: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptAssetsConfig]
+internal_value: IResolvable | WorkersScriptAssetsConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a>
 
 ---
 
@@ -4730,8 +4730,8 @@ def put_config(
   html_handling: str = None,
   not_found_handling: str = None,
   redirects: str = None,
-  run_worker_first: typing.Union[bool, IResolvable] = None,
-  serve_directly: typing.Union[bool, IResolvable] = None
+  run_worker_first: bool | IResolvable = None,
+  serve_directly: bool | IResolvable = None
 ) -> None
 ```
 
@@ -4779,7 +4779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `run_worker_first`<sup>Optional</sup> <a name="run_worker_first" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.putConfig.parameter.runWorkerFirst"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, requests will always invoke the Worker script.
 
@@ -4791,7 +4791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `serve_directly`<sup>Optional</sup> <a name="serve_directly" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.putConfig.parameter.serveDirectly"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true and the incoming request matches an asset, that will be served instead of invoking the Worker script.
 
@@ -4828,12 +4828,12 @@ def reset_jwt() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.assetManifestSha256">asset_manifest_sha256</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference">WorkersScriptAssetsConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.configInput">config_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.configInput">config_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.directoryInput">directory_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.jwtInput">jwt_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.directory">directory</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.jwt">jwt</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a></code> | *No description.* |
 
 ---
 
@@ -4884,10 +4884,10 @@ config: WorkersScriptAssetsConfigOutputReference
 ##### `config_input`<sup>Optional</sup> <a name="config_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.configInput"></a>
 
 ```python
-config_input: typing.Union[IResolvable, WorkersScriptAssetsConfig]
+config_input: IResolvable | WorkersScriptAssetsConfig
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsConfig">WorkersScriptAssetsConfig</a>
 
 ---
 
@@ -4934,10 +4934,10 @@ jwt: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptAssets]
+internal_value: IResolvable | WorkersScriptAssets
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a>
 
 ---
 
@@ -5073,7 +5073,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | *No description.* |
 
 ---
 
@@ -5104,10 +5104,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkersScriptBindings]]
+internal_value: IResolvable | typing.List[WorkersScriptBindings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]
 
 ---
 
@@ -5393,9 +5393,9 @@ def reset_worker() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.worker">worker</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference">WorkersScriptBindingsOutboundWorkerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.paramsInput">params_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.workerInput">worker_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.workerInput">worker_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.params">params</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a></code> | *No description.* |
 
 ---
 
@@ -5446,10 +5446,10 @@ params_input: typing.List[str]
 ##### `worker_input`<sup>Optional</sup> <a name="worker_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.workerInput"></a>
 
 ```python
-worker_input: typing.Union[IResolvable, WorkersScriptBindingsOutboundWorker]
+worker_input: IResolvable | WorkersScriptBindingsOutboundWorker
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a>
 
 ---
 
@@ -5466,10 +5466,10 @@ params: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptBindingsOutbound]
+internal_value: IResolvable | WorkersScriptBindingsOutbound
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a>
 
 ---
 
@@ -5727,7 +5727,7 @@ def reset_service() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a></code> | *No description.* |
 
 ---
 
@@ -5798,10 +5798,10 @@ service: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorkerOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptBindingsOutboundWorker]
+internal_value: IResolvable | WorkersScriptBindingsOutboundWorker
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutboundWorker">WorkersScriptBindingsOutboundWorker</a>
 
 ---
 
@@ -6329,7 +6329,7 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.namespaceIdInput">namespace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.oldNameInput">old_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.outboundInput">outbound_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.outboundInput">outbound_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.partInput">part_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.pipelineInput">pipeline_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.queueNameInput">queue_name_input</a></code> | <code>str</code> | *No description.* |
@@ -6374,7 +6374,7 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.usages">usages</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.versionId">version_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.workflowName">workflow_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a></code> | *No description.* |
 
 ---
 
@@ -6615,10 +6615,10 @@ old_name_input: str
 ##### `outbound_input`<sup>Optional</sup> <a name="outbound_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.outboundInput"></a>
 
 ```python
-outbound_input: typing.Union[IResolvable, WorkersScriptBindingsOutbound]
+outbound_input: IResolvable | WorkersScriptBindingsOutbound
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a>
 
 ---
 
@@ -7065,10 +7065,10 @@ workflow_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptBindings]
+internal_value: IResolvable | WorkersScriptBindings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>
 
 ---
 
@@ -7317,7 +7317,7 @@ def reset_cpu_ms() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.cpuMsInput">cpu_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.cpuMs">cpu_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a></code> | *No description.* |
 
 ---
 
@@ -7368,10 +7368,10 @@ cpu_ms: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptLimits]
+internal_value: IResolvable | WorkersScriptLimits
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a>
 
 ---
 
@@ -7619,13 +7619,13 @@ Returns a reversible string representation.
 
 ```python
 def put_renamed_classes(
-  value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsRenamedClasses]]
+  value: IResolvable | typing.List[WorkersScriptMigrationsRenamedClasses]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.putRenamedClasses.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]
 
 ---
 
@@ -7633,13 +7633,13 @@ def put_renamed_classes(
 
 ```python
 def put_steps(
-  value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsSteps]]
+  value: IResolvable | typing.List[WorkersScriptMigrationsSteps]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.putSteps.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]
 
 ---
 
@@ -7647,13 +7647,13 @@ def put_steps(
 
 ```python
 def put_transferred_classes(
-  value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsTransferredClasses]]
+  value: IResolvable | typing.List[WorkersScriptMigrationsTransferredClasses]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.putTransferredClasses.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]
 
 ---
 
@@ -7720,15 +7720,15 @@ def reset_transferred_classes() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.newSqliteClassesInput">new_sqlite_classes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.newTagInput">new_tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.oldTagInput">old_tag_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.renamedClassesInput">renamed_classes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.stepsInput">steps_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.transferredClassesInput">transferred_classes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.renamedClassesInput">renamed_classes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.stepsInput">steps_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.transferredClassesInput">transferred_classes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.deletedClasses">deleted_classes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.newClasses">new_classes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.newSqliteClasses">new_sqlite_classes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.newTag">new_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.oldTag">old_tag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a></code> | *No description.* |
 
 ---
 
@@ -7839,30 +7839,30 @@ old_tag_input: str
 ##### `renamed_classes_input`<sup>Optional</sup> <a name="renamed_classes_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.renamedClassesInput"></a>
 
 ```python
-renamed_classes_input: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsRenamedClasses]]
+renamed_classes_input: IResolvable | typing.List[WorkersScriptMigrationsRenamedClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]
 
 ---
 
 ##### `steps_input`<sup>Optional</sup> <a name="steps_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.stepsInput"></a>
 
 ```python
-steps_input: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsSteps]]
+steps_input: IResolvable | typing.List[WorkersScriptMigrationsSteps]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]
 
 ---
 
 ##### `transferred_classes_input`<sup>Optional</sup> <a name="transferred_classes_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.transferredClassesInput"></a>
 
 ```python
-transferred_classes_input: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsTransferredClasses]]
+transferred_classes_input: IResolvable | typing.List[WorkersScriptMigrationsTransferredClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]
 
 ---
 
@@ -7919,10 +7919,10 @@ old_tag: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptMigrations]
+internal_value: IResolvable | WorkersScriptMigrations
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrations">WorkersScriptMigrations</a>
 
 ---
 
@@ -8058,7 +8058,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]</code> | *No description.* |
 
 ---
 
@@ -8089,10 +8089,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsRenamedClasses]]
+internal_value: IResolvable | typing.List[WorkersScriptMigrationsRenamedClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]
 
 ---
 
@@ -8370,7 +8370,7 @@ def reset_to() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesOutputReference.property.toInput">to_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesOutputReference.property.from">from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesOutputReference.property.to">to</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a></code> | *No description.* |
 
 ---
 
@@ -8441,10 +8441,10 @@ to: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClassesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptMigrationsRenamedClasses]
+internal_value: IResolvable | WorkersScriptMigrationsRenamedClasses
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses">WorkersScriptMigrationsRenamedClasses</a>
 
 ---
 
@@ -8580,7 +8580,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]</code> | *No description.* |
 
 ---
 
@@ -8611,10 +8611,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsSteps]]
+internal_value: IResolvable | typing.List[WorkersScriptMigrationsSteps]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]
 
 ---
 
@@ -8878,13 +8878,13 @@ Returns a reversible string representation.
 
 ```python
 def put_renamed_classes(
-  value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsRenamedClasses]]
+  value: IResolvable | typing.List[WorkersScriptMigrationsStepsRenamedClasses]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.putRenamedClasses.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]
 
 ---
 
@@ -8892,13 +8892,13 @@ def put_renamed_classes(
 
 ```python
 def put_transferred_classes(
-  value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsTransferredClasses]]
+  value: IResolvable | typing.List[WorkersScriptMigrationsStepsTransferredClasses]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.putTransferredClasses.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]
 
 ---
 
@@ -8944,12 +8944,12 @@ def reset_transferred_classes() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.deletedClassesInput">deleted_classes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.newClassesInput">new_classes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.newSqliteClassesInput">new_sqlite_classes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.renamedClassesInput">renamed_classes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.transferredClassesInput">transferred_classes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.renamedClassesInput">renamed_classes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.transferredClassesInput">transferred_classes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.deletedClasses">deleted_classes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.newClasses">new_classes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.newSqliteClasses">new_sqlite_classes</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a></code> | *No description.* |
 
 ---
 
@@ -9030,20 +9030,20 @@ new_sqlite_classes_input: typing.List[str]
 ##### `renamed_classes_input`<sup>Optional</sup> <a name="renamed_classes_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.renamedClassesInput"></a>
 
 ```python
-renamed_classes_input: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsRenamedClasses]]
+renamed_classes_input: IResolvable | typing.List[WorkersScriptMigrationsStepsRenamedClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]
 
 ---
 
 ##### `transferred_classes_input`<sup>Optional</sup> <a name="transferred_classes_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.transferredClassesInput"></a>
 
 ```python
-transferred_classes_input: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsTransferredClasses]]
+transferred_classes_input: IResolvable | typing.List[WorkersScriptMigrationsStepsTransferredClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]
 
 ---
 
@@ -9080,10 +9080,10 @@ new_sqlite_classes: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptMigrationsSteps]
+internal_value: IResolvable | WorkersScriptMigrationsSteps
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsSteps">WorkersScriptMigrationsSteps</a>
 
 ---
 
@@ -9219,7 +9219,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]</code> | *No description.* |
 
 ---
 
@@ -9250,10 +9250,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsRenamedClasses]]
+internal_value: IResolvable | typing.List[WorkersScriptMigrationsStepsRenamedClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]
 
 ---
 
@@ -9531,7 +9531,7 @@ def reset_to() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesOutputReference.property.toInput">to_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesOutputReference.property.from">from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesOutputReference.property.to">to</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a></code> | *No description.* |
 
 ---
 
@@ -9602,10 +9602,10 @@ to: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClassesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptMigrationsStepsRenamedClasses]
+internal_value: IResolvable | WorkersScriptMigrationsStepsRenamedClasses
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses">WorkersScriptMigrationsStepsRenamedClasses</a>
 
 ---
 
@@ -9741,7 +9741,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]</code> | *No description.* |
 
 ---
 
@@ -9772,10 +9772,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsStepsTransferredClasses]]
+internal_value: IResolvable | typing.List[WorkersScriptMigrationsStepsTransferredClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]
 
 ---
 
@@ -10062,7 +10062,7 @@ def reset_to() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesOutputReference.property.from">from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesOutputReference.property.fromScript">from_script</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesOutputReference.property.to">to</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a></code> | *No description.* |
 
 ---
 
@@ -10153,10 +10153,10 @@ to: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClassesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptMigrationsStepsTransferredClasses]
+internal_value: IResolvable | WorkersScriptMigrationsStepsTransferredClasses
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses">WorkersScriptMigrationsStepsTransferredClasses</a>
 
 ---
 
@@ -10292,7 +10292,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]</code> | *No description.* |
 
 ---
 
@@ -10323,10 +10323,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkersScriptMigrationsTransferredClasses]]
+internal_value: IResolvable | typing.List[WorkersScriptMigrationsTransferredClasses]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]
 
 ---
 
@@ -10613,7 +10613,7 @@ def reset_to() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesOutputReference.property.from">from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesOutputReference.property.fromScript">from_script</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesOutputReference.property.to">to</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a></code> | *No description.* |
 
 ---
 
@@ -10704,10 +10704,10 @@ to: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClassesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptMigrationsTransferredClasses]
+internal_value: IResolvable | WorkersScriptMigrationsTransferredClasses
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses">WorkersScriptMigrationsTransferredClasses</a>
 
 ---
 
@@ -11444,16 +11444,16 @@ def reset_persist() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.destinationsInput">destinations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.headSamplingRateInput">head_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.invocationLogsInput">invocation_logs_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.persistInput">persist_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.invocationLogsInput">invocation_logs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.persistInput">persist_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.invocationLogs">invocation_logs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.persist">persist</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.invocationLogs">invocation_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.persist">persist</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a></code> | *No description.* |
 
 ---
 
@@ -11494,10 +11494,10 @@ destinations_input: typing.List[str]
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11514,20 +11514,20 @@ head_sampling_rate_input: typing.Union[int, float]
 ##### `invocation_logs_input`<sup>Optional</sup> <a name="invocation_logs_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.invocationLogsInput"></a>
 
 ```python
-invocation_logs_input: typing.Union[bool, IResolvable]
+invocation_logs_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `persist_input`<sup>Optional</sup> <a name="persist_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.persistInput"></a>
 
 ```python
-persist_input: typing.Union[bool, IResolvable]
+persist_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11544,10 +11544,10 @@ destinations: typing.List[str]
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11564,30 +11564,30 @@ head_sampling_rate: typing.Union[int, float]
 ##### `invocation_logs`<sup>Required</sup> <a name="invocation_logs" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.invocationLogs"></a>
 
 ```python
-invocation_logs: typing.Union[bool, IResolvable]
+invocation_logs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `persist`<sup>Required</sup> <a name="persist" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.persist"></a>
 
 ```python
-persist: typing.Union[bool, IResolvable]
+persist: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptObservabilityLogs]
+internal_value: IResolvable | WorkersScriptObservabilityLogs
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a>
 
 ---
 
@@ -11827,17 +11827,17 @@ Returns a reversible string representation.
 
 ```python
 def put_logs(
-  enabled: typing.Union[bool, IResolvable],
-  invocation_logs: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
+  invocation_logs: bool | IResolvable,
   destinations: typing.List[str] = None,
   head_sampling_rate: typing.Union[int, float] = None,
-  persist: typing.Union[bool, IResolvable] = None
+  persist: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putLogs.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether logs are enabled for the Worker.
 
@@ -11847,7 +11847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `invocation_logs`<sup>Required</sup> <a name="invocation_logs" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putLogs.parameter.invocationLogs"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
@@ -11877,7 +11877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ###### `persist`<sup>Optional</sup> <a name="persist" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putLogs.parameter.persist"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether log persistence is enabled for the Worker.
 
@@ -11905,12 +11905,12 @@ def reset_logs() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.logs">logs</a></code> | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference">WorkersScriptObservabilityLogsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.headSamplingRateInput">head_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.logsInput">logs_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.logsInput">logs_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a></code> | *No description.* |
 
 ---
 
@@ -11951,10 +11951,10 @@ logs: WorkersScriptObservabilityLogsOutputReference
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11971,20 +11971,20 @@ head_sampling_rate_input: typing.Union[int, float]
 ##### `logs_input`<sup>Optional</sup> <a name="logs_input" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.logsInput"></a>
 
 ```python
-logs_input: typing.Union[IResolvable, WorkersScriptObservabilityLogs]
+logs_input: IResolvable | WorkersScriptObservabilityLogs
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a>
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12001,10 +12001,10 @@ head_sampling_rate: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptObservability]
+internal_value: IResolvable | WorkersScriptObservability
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a>
 
 ---
 
@@ -12255,7 +12255,7 @@ def reset_mode() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a></code> | *No description.* |
 
 ---
 
@@ -12326,10 +12326,10 @@ mode: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptPlacement]
+internal_value: IResolvable | WorkersScriptPlacement
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacement">WorkersScriptPlacement</a>
 
 ---
 
@@ -12465,7 +12465,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]</code> | *No description.* |
 
 ---
 
@@ -12496,10 +12496,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkersScriptTailConsumers]]
+internal_value: IResolvable | typing.List[WorkersScriptTailConsumers]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]
 
 ---
 
@@ -12779,7 +12779,7 @@ def reset_namespace() -> None
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersOutputReference.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a></code> | *No description.* |
 
 ---
 
@@ -12870,10 +12870,10 @@ service: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkersScriptTailConsumers]
+internal_value: IResolvable | WorkersScriptTailConsumers
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>
 
 ---
 

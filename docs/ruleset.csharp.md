@@ -278,7 +278,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-cloudflare.ruleset.Ruleset.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-cloudflare.ruleset.Ruleset.importFrom"></a>
@@ -332,7 +332,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-cloudflare.ruleset.Ruleset.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-cloudflare.ruleset.Ruleset.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -372,12 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutRules` <a name="PutRules" id="@cdktf/provider-cloudflare.ruleset.Ruleset.putRules"></a>
 
 ```csharp
-private void PutRules(object Value)
+private void PutRules(IResolvable|RulesetRules[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.Ruleset.putRules.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>[]
 
 ---
 
@@ -531,13 +531,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.lastUpdated">LastUpdated</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.rules">Rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesList">RulesetRulesList</a></code> | *No description.* |
@@ -547,7 +547,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.kindInput">KindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.phaseInput">PhaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.rulesInput">RulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.rulesInput">RulesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.Ruleset.property.description">Description</a></code> | <code>string</code> | *No description.* |
@@ -633,20 +633,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.ruleset.Ruleset.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.ruleset.Ruleset.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -693,10 +693,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.ruleset.Ruleset.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -793,10 +793,10 @@ public string PhaseInput { get; }
 ##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktf/provider-cloudflare.ruleset.Ruleset.property.rulesInput"></a>
 
 ```csharp
-public object RulesInput { get; }
+public IResolvable|RulesetRules[] RulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>[]
 
 ---
 
@@ -898,19 +898,19 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Kind,
     string Name,
     string Phase,
     string AccountId = null,
     string Description = null,
-    object Rules = null,
+    IResolvable|RulesetRules[] Rules = null,
     string ZoneId = null
 };
 ```
@@ -919,19 +919,19 @@ new RulesetConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.kind">Kind</a></code> | <code>string</code> | The kind of the ruleset. Available values: "managed", "custom", "root", "zone". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.name">Name</a></code> | <code>string</code> | The human-readable name of the ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.phase">Phase</a></code> | <code>string</code> | The phase of the ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.accountId">AccountId</a></code> | <code>string</code> | The unique ID of the account. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.description">Description</a></code> | <code>string</code> | An informative description of the ruleset. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.rules">Rules</a></code> | <code>object</code> | The list of rules in the ruleset. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.rules">Rules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>[]</code> | The list of rules in the ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | The unique ID of the zone. |
 
 ---
@@ -939,20 +939,20 @@ new RulesetConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -999,10 +999,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1081,10 +1081,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Rules`<sup>Optional</sup> <a name="Rules" id="@cdktf/provider-cloudflare.ruleset.RulesetConfig.property.rules"></a>
 
 ```csharp
-public object Rules { get; set; }
+public IResolvable|RulesetRules[] Rules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>[]
 
 The list of rules in the ruleset.
 
@@ -1118,7 +1118,7 @@ new RulesetRules {
     string Expression,
     RulesetRulesActionParameters ActionParameters = null,
     string Description = null,
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     RulesetRulesExposedCredentialCheck ExposedCredentialCheck = null,
     RulesetRulesLogging Logging = null,
     RulesetRulesRatelimit Ratelimit = null,
@@ -1134,7 +1134,7 @@ new RulesetRules {
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.expression">Expression</a></code> | <code>string</code> | The expression defining which traffic will match the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.actionParameters">ActionParameters</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a></code> | The parameters configuring the rule's action. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.description">Description</a></code> | <code>string</code> | An informative description of the rule. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.enabled">Enabled</a></code> | <code>object</code> | Whether the rule should be executed. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the rule should be executed. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.exposedCredentialCheck">ExposedCredentialCheck</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a></code> | Configuration for exposed credential checking. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.logging">Logging</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging">RulesetRulesLogging</a></code> | An object configuring the rule's logging behavior. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules.property.ratelimit">Ratelimit</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a></code> | An object configuring the rule's rate limit behavior. |
@@ -1203,10 +1203,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRules.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the rule should be executed.
 
@@ -1279,59 +1279,59 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParameters {
     double[] AdditionalCacheablePorts = null,
-    object Algorithms = null,
+    IResolvable|RulesetRulesActionParametersAlgorithms[] Algorithms = null,
     string AssetName = null,
-    object AutomaticHttpsRewrites = null,
+    bool|IResolvable AutomaticHttpsRewrites = null,
     RulesetRulesActionParametersAutominify Autominify = null,
-    object Bic = null,
+    bool|IResolvable Bic = null,
     RulesetRulesActionParametersBrowserTtl BrowserTtl = null,
-    object Cache = null,
+    bool|IResolvable Cache = null,
     RulesetRulesActionParametersCacheKey CacheKey = null,
     RulesetRulesActionParametersCacheReserve CacheReserve = null,
     string Content = null,
     string ContentType = null,
-    object CookieFields = null,
-    object DisableApps = null,
-    object DisableRum = null,
-    object DisableZaraz = null,
+    IResolvable|RulesetRulesActionParametersCookieFields[] CookieFields = null,
+    bool|IResolvable DisableApps = null,
+    bool|IResolvable DisableRum = null,
+    bool|IResolvable DisableZaraz = null,
     RulesetRulesActionParametersEdgeTtl EdgeTtl = null,
-    object EmailObfuscation = null,
-    object Fonts = null,
+    bool|IResolvable EmailObfuscation = null,
+    bool|IResolvable Fonts = null,
     RulesetRulesActionParametersFromListStruct FromList = null,
     RulesetRulesActionParametersFromValue FromValue = null,
-    object Headers = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, RulesetRulesActionParametersHeaders> Headers = null,
     string HostHeader = null,
-    object HotlinkProtection = null,
+    bool|IResolvable HotlinkProtection = null,
     string Id = null,
     double Increment = null,
     RulesetRulesActionParametersMatchedData MatchedData = null,
-    object Mirage = null,
-    object OpportunisticEncryption = null,
+    bool|IResolvable Mirage = null,
+    bool|IResolvable OpportunisticEncryption = null,
     RulesetRulesActionParametersOrigin Origin = null,
-    object OriginCacheControl = null,
-    object OriginErrorPagePassthru = null,
+    bool|IResolvable OriginCacheControl = null,
+    bool|IResolvable OriginErrorPagePassthru = null,
     RulesetRulesActionParametersOverrides Overrides = null,
     string[] Phases = null,
     string Polish = null,
     string[] Products = null,
-    object RawResponseFields = null,
+    IResolvable|RulesetRulesActionParametersRawResponseFields[] RawResponseFields = null,
     double ReadTimeout = null,
-    object RequestFields = null,
-    object RespectStrongEtags = null,
+    IResolvable|RulesetRulesActionParametersRequestFields[] RequestFields = null,
+    bool|IResolvable RespectStrongEtags = null,
     RulesetRulesActionParametersResponse Response = null,
-    object ResponseFields = null,
-    object RocketLoader = null,
-    object Rules = null,
+    IResolvable|RulesetRulesActionParametersResponseFields[] ResponseFields = null,
+    bool|IResolvable RocketLoader = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, string[]> Rules = null,
     string Ruleset = null,
     string[] Rulesets = null,
     string SecurityLevel = null,
-    object ServerSideExcludes = null,
+    bool|IResolvable ServerSideExcludes = null,
     RulesetRulesActionParametersServeStale ServeStale = null,
     RulesetRulesActionParametersSni Sni = null,
     string Ssl = null,
     double StatusCode = null,
-    object Sxg = null,
-    object TransformedRequestFields = null,
+    bool|IResolvable Sxg = null,
+    IResolvable|RulesetRulesActionParametersTransformedRequestFields[] TransformedRequestFields = null,
     RulesetRulesActionParametersUri Uri = null
 };
 ```
@@ -1341,59 +1341,59 @@ new RulesetRulesActionParameters {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.additionalCacheablePorts">AdditionalCacheablePorts</a></code> | <code>double[]</code> | A list of additional ports that caching should be enabled on. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.algorithms">Algorithms</a></code> | <code>object</code> | Custom order for compression algorithms. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.algorithms">Algorithms</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>[]</code> | Custom order for compression algorithms. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.assetName">AssetName</a></code> | <code>string</code> | The name of a custom asset to serve as the response. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.automaticHttpsRewrites">AutomaticHttpsRewrites</a></code> | <code>object</code> | Whether to enable Automatic HTTPS Rewrites. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.automaticHttpsRewrites">AutomaticHttpsRewrites</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Automatic HTTPS Rewrites. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.autominify">Autominify</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a></code> | Which file extensions to minify automatically. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.bic">Bic</a></code> | <code>object</code> | Whether to enable Browser Integrity Check (BIC). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.bic">Bic</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Browser Integrity Check (BIC). |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.browserTtl">BrowserTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a></code> | How long client browsers should cache the response. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cache">Cache</a></code> | <code>object</code> | Whether the request's response from the origin is eligible for caching. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cache">Cache</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the request's response from the origin is eligible for caching. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cacheKey">CacheKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a></code> | Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cacheReserve">CacheReserve</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a></code> | Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan). |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.content">Content</a></code> | <code>string</code> | The response content. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.contentType">ContentType</a></code> | <code>string</code> | The content type header to set with the error response. Available values: "application/json", "text/html", "text/plain", "text/xml". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cookieFields">CookieFields</a></code> | <code>object</code> | The cookie fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableApps">DisableApps</a></code> | <code>object</code> | Whether to disable Cloudflare Apps. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableRum">DisableRum</a></code> | <code>object</code> | Whether to disable Real User Monitoring (RUM). |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableZaraz">DisableZaraz</a></code> | <code>object</code> | Whether to disable Zaraz. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cookieFields">CookieFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>[]</code> | The cookie fields to log. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableApps">DisableApps</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to disable Cloudflare Apps. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableRum">DisableRum</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to disable Real User Monitoring (RUM). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableZaraz">DisableZaraz</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to disable Zaraz. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.edgeTtl">EdgeTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a></code> | How long the Cloudflare edge network should cache the response. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.emailObfuscation">EmailObfuscation</a></code> | <code>object</code> | Whether to enable Email Obfuscation. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fonts">Fonts</a></code> | <code>object</code> | Whether to enable Cloudflare Fonts. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.emailObfuscation">EmailObfuscation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Email Obfuscation. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fonts">Fonts</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Cloudflare Fonts. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromList">FromList</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a></code> | A redirect based on a bulk list lookup. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromValue">FromValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | A redirect based on the request properties. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.headers">Headers</a></code> | <code>object</code> | A map of headers to rewrite. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.headers">Headers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>></code> | A map of headers to rewrite. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hostHeader">HostHeader</a></code> | <code>string</code> | A value to rewrite the HTTP host header to. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hotlinkProtection">HotlinkProtection</a></code> | <code>object</code> | Whether to enable Hotlink Protection. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hotlinkProtection">HotlinkProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Hotlink Protection. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.id">Id</a></code> | <code>string</code> | The ID of the ruleset to execute. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.increment">Increment</a></code> | <code>double</code> | A delta to change the score by, which can be either positive or negative. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.matchedData">MatchedData</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a></code> | The configuration to use for matched data logging. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mirage">Mirage</a></code> | <code>object</code> | Whether to enable Mirage. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.opportunisticEncryption">OpportunisticEncryption</a></code> | <code>object</code> | Whether to enable Opportunistic Encryption. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mirage">Mirage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Mirage. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.opportunisticEncryption">OpportunisticEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Opportunistic Encryption. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.origin">Origin</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | An origin to route to. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originCacheControl">OriginCacheControl</a></code> | <code>object</code> | Whether Cloudflare will aim to strictly adhere to RFC 7234. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originErrorPagePassthru">OriginErrorPagePassthru</a></code> | <code>object</code> | Whether to generate Cloudflare error pages for issues from the origin server. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originCacheControl">OriginCacheControl</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether Cloudflare will aim to strictly adhere to RFC 7234. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originErrorPagePassthru">OriginErrorPagePassthru</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to generate Cloudflare error pages for issues from the origin server. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.overrides">Overrides</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | A set of overrides to apply to the target ruleset. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.phases">Phases</a></code> | <code>string[]</code> | A list of phases to skip the execution of. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.polish">Polish</a></code> | <code>string</code> | The Polish level to configure. Available values: "off", "lossless", "lossy", "webp". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.products">Products</a></code> | <code>string[]</code> | A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rawResponseFields">RawResponseFields</a></code> | <code>object</code> | The raw response fields to log. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rawResponseFields">RawResponseFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>[]</code> | The raw response fields to log. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.readTimeout">ReadTimeout</a></code> | <code>double</code> | A timeout value between two successive read operations to use for your origin server. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.requestFields">RequestFields</a></code> | <code>object</code> | The raw request fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.respectStrongEtags">RespectStrongEtags</a></code> | <code>object</code> | Whether Cloudflare should respect strong ETag (entity tag) headers. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.requestFields">RequestFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>[]</code> | The raw request fields to log. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.respectStrongEtags">RespectStrongEtags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether Cloudflare should respect strong ETag (entity tag) headers. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.response">Response</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse">RulesetRulesActionParametersResponse</a></code> | The response to show when the block is applied. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.responseFields">ResponseFields</a></code> | <code>object</code> | The transformed response fields to log. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rocketLoader">RocketLoader</a></code> | <code>object</code> | Whether to enable Rocket Loader. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rules">Rules</a></code> | <code>object</code> | A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execution of. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.responseFields">ResponseFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>[]</code> | The transformed response fields to log. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rocketLoader">RocketLoader</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Rocket Loader. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rules">Rules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execution of. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.ruleset">Ruleset</a></code> | <code>string</code> | A ruleset to skip the execution of. This option is incompatible with the rulesets option. Available values: "current". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rulesets">Rulesets</a></code> | <code>string[]</code> | A list of ruleset IDs to skip the execution of. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.securityLevel">SecurityLevel</a></code> | <code>string</code> | The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack". |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serverSideExcludes">ServerSideExcludes</a></code> | <code>object</code> | Whether to enable Server-Side Excludes. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serverSideExcludes">ServerSideExcludes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Server-Side Excludes. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serveStale">ServeStale</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a></code> | When to serve stale content from cache. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sni">Sni</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a></code> | A Server Name Indication (SNI) override. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.ssl">Ssl</a></code> | <code>string</code> | The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.statusCode">StatusCode</a></code> | <code>double</code> | The status code to use for the error. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sxg">Sxg</a></code> | <code>object</code> | Whether to enable Signed Exchanges (SXG). |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.transformedRequestFields">TransformedRequestFields</a></code> | <code>object</code> | The transformed request fields to log. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sxg">Sxg</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable Signed Exchanges (SXG). |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.transformedRequestFields">TransformedRequestFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>[]</code> | The transformed request fields to log. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.uri">Uri</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | A URI rewrite. |
 
 ---
@@ -1415,10 +1415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Algorithms`<sup>Optional</sup> <a name="Algorithms" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.algorithms"></a>
 
 ```csharp
-public object Algorithms { get; set; }
+public IResolvable|RulesetRulesActionParametersAlgorithms[] Algorithms { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>[]
 
 Custom order for compression algorithms.
 
@@ -1443,10 +1443,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `AutomaticHttpsRewrites`<sup>Optional</sup> <a name="AutomaticHttpsRewrites" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.automaticHttpsRewrites"></a>
 
 ```csharp
-public object AutomaticHttpsRewrites { get; set; }
+public bool|IResolvable AutomaticHttpsRewrites { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Automatic HTTPS Rewrites.
 
@@ -1471,10 +1471,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Bic`<sup>Optional</sup> <a name="Bic" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.bic"></a>
 
 ```csharp
-public object Bic { get; set; }
+public bool|IResolvable Bic { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Browser Integrity Check (BIC).
 
@@ -1501,10 +1501,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Cache`<sup>Optional</sup> <a name="Cache" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cache"></a>
 
 ```csharp
-public object Cache { get; set; }
+public bool|IResolvable Cache { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the request's response from the origin is eligible for caching.
 
@@ -1573,10 +1573,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `CookieFields`<sup>Optional</sup> <a name="CookieFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.cookieFields"></a>
 
 ```csharp
-public object CookieFields { get; set; }
+public IResolvable|RulesetRulesActionParametersCookieFields[] CookieFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>[]
 
 The cookie fields to log.
 
@@ -1587,10 +1587,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `DisableApps`<sup>Optional</sup> <a name="DisableApps" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableApps"></a>
 
 ```csharp
-public object DisableApps { get; set; }
+public bool|IResolvable DisableApps { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to disable Cloudflare Apps.
 
@@ -1601,10 +1601,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `DisableRum`<sup>Optional</sup> <a name="DisableRum" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableRum"></a>
 
 ```csharp
-public object DisableRum { get; set; }
+public bool|IResolvable DisableRum { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to disable Real User Monitoring (RUM).
 
@@ -1615,10 +1615,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `DisableZaraz`<sup>Optional</sup> <a name="DisableZaraz" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableZaraz"></a>
 
 ```csharp
-public object DisableZaraz { get; set; }
+public bool|IResolvable DisableZaraz { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to disable Zaraz.
 
@@ -1643,10 +1643,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `EmailObfuscation`<sup>Optional</sup> <a name="EmailObfuscation" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.emailObfuscation"></a>
 
 ```csharp
-public object EmailObfuscation { get; set; }
+public bool|IResolvable EmailObfuscation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Email Obfuscation.
 
@@ -1657,10 +1657,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Fonts`<sup>Optional</sup> <a name="Fonts" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fonts"></a>
 
 ```csharp
-public object Fonts { get; set; }
+public bool|IResolvable Fonts { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Cloudflare Fonts.
 
@@ -1699,10 +1699,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Headers`<sup>Optional</sup> <a name="Headers" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.headers"></a>
 
 ```csharp
-public object Headers { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, RulesetRulesActionParametersHeaders> Headers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>>
 
 A map of headers to rewrite.
 
@@ -1727,10 +1727,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `HotlinkProtection`<sup>Optional</sup> <a name="HotlinkProtection" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hotlinkProtection"></a>
 
 ```csharp
-public object HotlinkProtection { get; set; }
+public bool|IResolvable HotlinkProtection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Hotlink Protection.
 
@@ -1786,10 +1786,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Mirage`<sup>Optional</sup> <a name="Mirage" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mirage"></a>
 
 ```csharp
-public object Mirage { get; set; }
+public bool|IResolvable Mirage { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Mirage.
 
@@ -1800,10 +1800,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `OpportunisticEncryption`<sup>Optional</sup> <a name="OpportunisticEncryption" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.opportunisticEncryption"></a>
 
 ```csharp
-public object OpportunisticEncryption { get; set; }
+public bool|IResolvable OpportunisticEncryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Opportunistic Encryption.
 
@@ -1828,10 +1828,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `OriginCacheControl`<sup>Optional</sup> <a name="OriginCacheControl" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originCacheControl"></a>
 
 ```csharp
-public object OriginCacheControl { get; set; }
+public bool|IResolvable OriginCacheControl { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether Cloudflare will aim to strictly adhere to RFC 7234.
 
@@ -1842,10 +1842,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `OriginErrorPagePassthru`<sup>Optional</sup> <a name="OriginErrorPagePassthru" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originErrorPagePassthru"></a>
 
 ```csharp
-public object OriginErrorPagePassthru { get; set; }
+public bool|IResolvable OriginErrorPagePassthru { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to generate Cloudflare error pages for issues from the origin server.
 
@@ -1915,10 +1915,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `RawResponseFields`<sup>Optional</sup> <a name="RawResponseFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rawResponseFields"></a>
 
 ```csharp
-public object RawResponseFields { get; set; }
+public IResolvable|RulesetRulesActionParametersRawResponseFields[] RawResponseFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>[]
 
 The raw response fields to log.
 
@@ -1945,10 +1945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `RequestFields`<sup>Optional</sup> <a name="RequestFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.requestFields"></a>
 
 ```csharp
-public object RequestFields { get; set; }
+public IResolvable|RulesetRulesActionParametersRequestFields[] RequestFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>[]
 
 The raw request fields to log.
 
@@ -1959,10 +1959,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `RespectStrongEtags`<sup>Optional</sup> <a name="RespectStrongEtags" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.respectStrongEtags"></a>
 
 ```csharp
-public object RespectStrongEtags { get; set; }
+public bool|IResolvable RespectStrongEtags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether Cloudflare should respect strong ETag (entity tag) headers.
 
@@ -1989,10 +1989,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `ResponseFields`<sup>Optional</sup> <a name="ResponseFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.responseFields"></a>
 
 ```csharp
-public object ResponseFields { get; set; }
+public IResolvable|RulesetRulesActionParametersResponseFields[] ResponseFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>[]
 
 The transformed response fields to log.
 
@@ -2003,10 +2003,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `RocketLoader`<sup>Optional</sup> <a name="RocketLoader" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rocketLoader"></a>
 
 ```csharp
-public object RocketLoader { get; set; }
+public bool|IResolvable RocketLoader { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Rocket Loader.
 
@@ -2017,10 +2017,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Rules`<sup>Optional</sup> <a name="Rules" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rules"></a>
 
 ```csharp
-public object Rules { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string[]> Rules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string[]>
 
 A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execution of.
 
@@ -2077,10 +2077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `ServerSideExcludes`<sup>Optional</sup> <a name="ServerSideExcludes" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serverSideExcludes"></a>
 
 ```csharp
-public object ServerSideExcludes { get; set; }
+public bool|IResolvable ServerSideExcludes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Server-Side Excludes.
 
@@ -2147,10 +2147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Sxg`<sup>Optional</sup> <a name="Sxg" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sxg"></a>
 
 ```csharp
-public object Sxg { get; set; }
+public bool|IResolvable Sxg { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable Signed Exchanges (SXG).
 
@@ -2161,10 +2161,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `TransformedRequestFields`<sup>Optional</sup> <a name="TransformedRequestFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.transformedRequestFields"></a>
 
 ```csharp
-public object TransformedRequestFields { get; set; }
+public IResolvable|RulesetRulesActionParametersTransformedRequestFields[] TransformedRequestFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>[]
 
 The transformed request fields to log.
 
@@ -2228,9 +2228,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersAutominify {
-    object Css = null,
-    object Html = null,
-    object Js = null
+    bool|IResolvable Css = null,
+    bool|IResolvable Html = null,
+    bool|IResolvable Js = null
 };
 ```
 
@@ -2238,19 +2238,19 @@ new RulesetRulesActionParametersAutominify {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.css">Css</a></code> | <code>object</code> | Whether to minify CSS files. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.html">Html</a></code> | <code>object</code> | Whether to minify HTML files. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.js">Js</a></code> | <code>object</code> | Whether to minify JavaScript files. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.css">Css</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to minify CSS files. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.html">Html</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to minify HTML files. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.js">Js</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to minify JavaScript files. |
 
 ---
 
 ##### `Css`<sup>Optional</sup> <a name="Css" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.css"></a>
 
 ```csharp
-public object Css { get; set; }
+public bool|IResolvable Css { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to minify CSS files.
 
@@ -2261,10 +2261,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Html`<sup>Optional</sup> <a name="Html" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.html"></a>
 
 ```csharp
-public object Html { get; set; }
+public bool|IResolvable Html { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to minify HTML files.
 
@@ -2275,10 +2275,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Js`<sup>Optional</sup> <a name="Js" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify.property.js"></a>
 
 ```csharp
-public object Js { get; set; }
+public bool|IResolvable Js { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to minify JavaScript files.
 
@@ -2344,10 +2344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersCacheKey {
-    object CacheByDeviceType = null,
-    object CacheDeceptionArmor = null,
+    bool|IResolvable CacheByDeviceType = null,
+    bool|IResolvable CacheDeceptionArmor = null,
     RulesetRulesActionParametersCacheKeyCustomKey CustomKey = null,
-    object IgnoreQueryStringsOrder = null
+    bool|IResolvable IgnoreQueryStringsOrder = null
 };
 ```
 
@@ -2355,20 +2355,20 @@ new RulesetRulesActionParametersCacheKey {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheByDeviceType">CacheByDeviceType</a></code> | <code>object</code> | Whether to separate cached content based on the visitor's device type. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheDeceptionArmor">CacheDeceptionArmor</a></code> | <code>object</code> | Whether to protect from web cache deception attacks, while allowing static assets to be cached. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheByDeviceType">CacheByDeviceType</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to separate cached content based on the visitor's device type. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheDeceptionArmor">CacheDeceptionArmor</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to protect from web cache deception attacks, while allowing static assets to be cached. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.customKey">CustomKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a></code> | Which components of the request are included or excluded from the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.ignoreQueryStringsOrder">IgnoreQueryStringsOrder</a></code> | <code>object</code> | Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.ignoreQueryStringsOrder">IgnoreQueryStringsOrder</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in. |
 
 ---
 
 ##### `CacheByDeviceType`<sup>Optional</sup> <a name="CacheByDeviceType" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheByDeviceType"></a>
 
 ```csharp
-public object CacheByDeviceType { get; set; }
+public bool|IResolvable CacheByDeviceType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to separate cached content based on the visitor's device type.
 
@@ -2379,10 +2379,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `CacheDeceptionArmor`<sup>Optional</sup> <a name="CacheDeceptionArmor" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.cacheDeceptionArmor"></a>
 
 ```csharp
-public object CacheDeceptionArmor { get; set; }
+public bool|IResolvable CacheDeceptionArmor { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to protect from web cache deception attacks, while allowing static assets to be cached.
 
@@ -2407,10 +2407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `IgnoreQueryStringsOrder`<sup>Optional</sup> <a name="IgnoreQueryStringsOrder" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey.property.ignoreQueryStringsOrder"></a>
 
 ```csharp
-public object IgnoreQueryStringsOrder { get; set; }
+public bool|IResolvable IgnoreQueryStringsOrder { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in.
 
@@ -2577,8 +2577,8 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersCacheKeyCustomKeyHeader {
     string[] CheckPresence = null,
-    object Contains = null,
-    object ExcludeOrigin = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, string[]> Contains = null,
+    bool|IResolvable ExcludeOrigin = null,
     string[] Include = null
 };
 ```
@@ -2588,8 +2588,8 @@ new RulesetRulesActionParametersCacheKeyCustomKeyHeader {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.checkPresence">CheckPresence</a></code> | <code>string[]</code> | A list of headers to check for the presence of. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.contains">Contains</a></code> | <code>object</code> | A mapping of header names to a list of values. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.excludeOrigin">ExcludeOrigin</a></code> | <code>object</code> | Whether to exclude the origin header in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.contains">Contains</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | A mapping of header names to a list of values. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.excludeOrigin">ExcludeOrigin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to exclude the origin header in the cache key. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.include">Include</a></code> | <code>string[]</code> | A list of headers to include in the cache key. |
 
 ---
@@ -2613,10 +2613,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Contains`<sup>Optional</sup> <a name="Contains" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.contains"></a>
 
 ```csharp
-public object Contains { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string[]> Contains { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string[]>
 
 A mapping of header names to a list of values.
 
@@ -2629,10 +2629,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `ExcludeOrigin`<sup>Optional</sup> <a name="ExcludeOrigin" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader.property.excludeOrigin"></a>
 
 ```csharp
-public object ExcludeOrigin { get; set; }
+public bool|IResolvable ExcludeOrigin { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to exclude the origin header in the cache key.
 
@@ -2662,7 +2662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersCacheKeyCustomKeyHost {
-    object Resolved = null
+    bool|IResolvable Resolved = null
 };
 ```
 
@@ -2670,17 +2670,17 @@ new RulesetRulesActionParametersCacheKeyCustomKeyHost {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost.property.resolved">Resolved</a></code> | <code>object</code> | Whether to use the resolved host in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost.property.resolved">Resolved</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use the resolved host in the cache key. |
 
 ---
 
 ##### `Resolved`<sup>Optional</sup> <a name="Resolved" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost.property.resolved"></a>
 
 ```csharp
-public object Resolved { get; set; }
+public bool|IResolvable Resolved { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use the resolved host in the cache key.
 
@@ -2746,7 +2746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude {
-    object All = null,
+    bool|IResolvable All = null,
     string[] List = null
 };
 ```
@@ -2755,7 +2755,7 @@ new RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.all">All</a></code> | <code>object</code> | Whether to exclude all query string parameters from the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to exclude all query string parameters from the cache key. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.list">List</a></code> | <code>string[]</code> | A list of query string parameters to exclude from the cache key. |
 
 ---
@@ -2763,10 +2763,10 @@ new RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude {
 ##### `All`<sup>Optional</sup> <a name="All" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude.property.all"></a>
 
 ```csharp
-public object All { get; set; }
+public bool|IResolvable All { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to exclude all query string parameters from the cache key.
 
@@ -2796,7 +2796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude {
-    object All = null,
+    bool|IResolvable All = null,
     string[] List = null
 };
 ```
@@ -2805,7 +2805,7 @@ new RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.all">All</a></code> | <code>object</code> | Whether to include all query string parameters in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to include all query string parameters in the cache key. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.list">List</a></code> | <code>string[]</code> | A list of query string parameters to include in the cache key. |
 
 ---
@@ -2813,10 +2813,10 @@ new RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude {
 ##### `All`<sup>Optional</sup> <a name="All" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude.property.all"></a>
 
 ```csharp
-public object All { get; set; }
+public bool|IResolvable All { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to include all query string parameters in the cache key.
 
@@ -2846,9 +2846,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersCacheKeyCustomKeyUser {
-    object DeviceType = null,
-    object Geo = null,
-    object Lang = null
+    bool|IResolvable DeviceType = null,
+    bool|IResolvable Geo = null,
+    bool|IResolvable Lang = null
 };
 ```
 
@@ -2856,19 +2856,19 @@ new RulesetRulesActionParametersCacheKeyCustomKeyUser {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.deviceType">DeviceType</a></code> | <code>object</code> | Whether to use the user agent's device type in the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.geo">Geo</a></code> | <code>object</code> | Whether to use the user agents's country in the cache key. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.lang">Lang</a></code> | <code>object</code> | Whether to use the user agent's language in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.deviceType">DeviceType</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use the user agent's device type in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.geo">Geo</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use the user agents's country in the cache key. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.lang">Lang</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use the user agent's language in the cache key. |
 
 ---
 
 ##### `DeviceType`<sup>Optional</sup> <a name="DeviceType" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.deviceType"></a>
 
 ```csharp
-public object DeviceType { get; set; }
+public bool|IResolvable DeviceType { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use the user agent's device type in the cache key.
 
@@ -2879,10 +2879,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Geo`<sup>Optional</sup> <a name="Geo" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.geo"></a>
 
 ```csharp
-public object Geo { get; set; }
+public bool|IResolvable Geo { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use the user agents's country in the cache key.
 
@@ -2893,10 +2893,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Lang`<sup>Optional</sup> <a name="Lang" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser.property.lang"></a>
 
 ```csharp
-public object Lang { get; set; }
+public bool|IResolvable Lang { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use the user agent's language in the cache key.
 
@@ -2912,7 +2912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersCacheReserve {
-    object Eligible,
+    bool|IResolvable Eligible,
     double MinimumFileSize = null
 };
 ```
@@ -2921,7 +2921,7 @@ new RulesetRulesActionParametersCacheReserve {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.eligible">Eligible</a></code> | <code>object</code> | Whether Cache Reserve is enabled. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.eligible">Eligible</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether Cache Reserve is enabled. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.minimumFileSize">MinimumFileSize</a></code> | <code>double</code> | The minimum file size eligible for storage in Cache Reserve. |
 
 ---
@@ -2929,10 +2929,10 @@ new RulesetRulesActionParametersCacheReserve {
 ##### `Eligible`<sup>Required</sup> <a name="Eligible" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve.property.eligible"></a>
 
 ```csharp
-public object Eligible { get; set; }
+public bool|IResolvable Eligible { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether Cache Reserve is enabled.
 
@@ -3000,7 +3000,7 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 new RulesetRulesActionParametersEdgeTtl {
     string Mode,
     double Default = null,
-    object StatusCodeTtl = null
+    IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtl[] StatusCodeTtl = null
 };
 ```
 
@@ -3010,7 +3010,7 @@ new RulesetRulesActionParametersEdgeTtl {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.mode">Mode</a></code> | <code>string</code> | The edge TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin". |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.default">Default</a></code> | <code>double</code> | The edge TTL (in seconds) if you choose the "override_origin" mode. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.statusCodeTtl">StatusCodeTtl</a></code> | <code>object</code> | A list of TTLs to apply to specific status codes or status code ranges. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.statusCodeTtl">StatusCodeTtl</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>[]</code> | A list of TTLs to apply to specific status codes or status code ranges. |
 
 ---
 
@@ -3045,10 +3045,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `StatusCodeTtl`<sup>Optional</sup> <a name="StatusCodeTtl" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl.property.statusCodeTtl"></a>
 
 ```csharp
-public object StatusCodeTtl { get; set; }
+public IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtl[] StatusCodeTtl { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>[]
 
 A list of TTLs to apply to specific status codes or status code ranges.
 
@@ -3233,7 +3233,7 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersFromValue {
     RulesetRulesActionParametersFromValueTargetUrl TargetUrl,
-    object PreserveQueryString = null,
+    bool|IResolvable PreserveQueryString = null,
     double StatusCode = null
 };
 ```
@@ -3243,7 +3243,7 @@ new RulesetRulesActionParametersFromValue {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.targetUrl">TargetUrl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | A URL to redirect the request to. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.preserveQueryString">PreserveQueryString</a></code> | <code>object</code> | Whether to keep the query string of the original request. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.preserveQueryString">PreserveQueryString</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to keep the query string of the original request. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.statusCode">StatusCode</a></code> | <code>double</code> | The status code to use for the redirect. |
 
 ---
@@ -3265,10 +3265,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `PreserveQueryString`<sup>Optional</sup> <a name="PreserveQueryString" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue.property.preserveQueryString"></a>
 
 ```csharp
-public object PreserveQueryString { get; set; }
+public bool|IResolvable PreserveQueryString { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to keep the query string of the original request.
 
@@ -3499,9 +3499,9 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersOverrides {
     string Action = null,
-    object Categories = null,
-    object Enabled = null,
-    object Rules = null,
+    IResolvable|RulesetRulesActionParametersOverridesCategories[] Categories = null,
+    bool|IResolvable Enabled = null,
+    IResolvable|RulesetRulesActionParametersOverridesRules[] Rules = null,
     string SensitivityLevel = null
 };
 ```
@@ -3511,9 +3511,9 @@ new RulesetRulesActionParametersOverrides {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.action">Action</a></code> | <code>string</code> | An action to override all rules with. This option has lower precedence than rule and category overrides. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.categories">Categories</a></code> | <code>object</code> | A list of category-level overrides. This option has the second-highest precedence after rule-level overrides. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.enabled">Enabled</a></code> | <code>object</code> | Whether to enable execution of all rules. This option has lower precedence than rule and category overrides. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.rules">Rules</a></code> | <code>object</code> | A list of rule-level overrides. This option has the highest precedence. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.categories">Categories</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>[]</code> | A list of category-level overrides. This option has the second-highest precedence after rule-level overrides. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable execution of all rules. This option has lower precedence than rule and category overrides. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.rules">Rules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>[]</code> | A list of rule-level overrides. This option has the highest precedence. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.sensitivityLevel">SensitivityLevel</a></code> | <code>string</code> | A sensitivity level to set for all rules. |
 
 ---
@@ -3535,10 +3535,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Categories`<sup>Optional</sup> <a name="Categories" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.categories"></a>
 
 ```csharp
-public object Categories { get; set; }
+public IResolvable|RulesetRulesActionParametersOverridesCategories[] Categories { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>[]
 
 A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
 
@@ -3549,10 +3549,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
 
@@ -3563,10 +3563,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Rules`<sup>Optional</sup> <a name="Rules" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides.property.rules"></a>
 
 ```csharp
-public object Rules { get; set; }
+public IResolvable|RulesetRulesActionParametersOverridesRules[] Rules { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>[]
 
 A list of rule-level overrides. This option has the highest precedence.
 
@@ -3601,7 +3601,7 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 new RulesetRulesActionParametersOverridesCategories {
     string Category,
     string Action = null,
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     string SensitivityLevel = null
 };
 ```
@@ -3612,7 +3612,7 @@ new RulesetRulesActionParametersOverridesCategories {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.category">Category</a></code> | <code>string</code> | The name of the category to override. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.action">Action</a></code> | <code>string</code> | The action to override rules in the category with. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.enabled">Enabled</a></code> | <code>object</code> | Whether to enable execution of rules in the category. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable execution of rules in the category. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.sensitivityLevel">SensitivityLevel</a></code> | <code>string</code> | The sensitivity level to use for rules in the category. |
 
 ---
@@ -3648,10 +3648,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable execution of rules in the category.
 
@@ -3686,7 +3686,7 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 new RulesetRulesActionParametersOverridesRules {
     string Id,
     string Action = null,
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     double ScoreThreshold = null,
     string SensitivityLevel = null
 };
@@ -3698,7 +3698,7 @@ new RulesetRulesActionParametersOverridesRules {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.id">Id</a></code> | <code>string</code> | The ID of the rule to override. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.action">Action</a></code> | <code>string</code> | The action to override the rule with. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.enabled">Enabled</a></code> | <code>object</code> | Whether to enable execution of the rule. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to enable execution of the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.scoreThreshold">ScoreThreshold</a></code> | <code>double</code> | The score threshold to use for the rule. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.sensitivityLevel">SensitivityLevel</a></code> | <code>string</code> | The sensitivity level to use for the rule. |
 
@@ -3738,10 +3738,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to enable execution of the rule.
 
@@ -3789,7 +3789,7 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersRawResponseFields {
     string Name,
-    object PreserveDuplicates = null
+    bool|IResolvable PreserveDuplicates = null
 };
 ```
 
@@ -3798,7 +3798,7 @@ new RulesetRulesActionParametersRawResponseFields {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields.property.name">Name</a></code> | <code>string</code> | The name of the response header. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>object</code> | Whether to log duplicate values of the same header. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to log duplicate values of the same header. |
 
 ---
 
@@ -3819,10 +3819,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `PreserveDuplicates`<sup>Optional</sup> <a name="PreserveDuplicates" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields.property.preserveDuplicates"></a>
 
 ```csharp
-public object PreserveDuplicates { get; set; }
+public bool|IResolvable PreserveDuplicates { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to log duplicate values of the same header.
 
@@ -3939,7 +3939,7 @@ using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersResponseFields {
     string Name,
-    object PreserveDuplicates = null
+    bool|IResolvable PreserveDuplicates = null
 };
 ```
 
@@ -3948,7 +3948,7 @@ new RulesetRulesActionParametersResponseFields {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields.property.name">Name</a></code> | <code>string</code> | The name of the response header. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>object</code> | Whether to log duplicate values of the same header. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to log duplicate values of the same header. |
 
 ---
 
@@ -3969,10 +3969,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `PreserveDuplicates`<sup>Optional</sup> <a name="PreserveDuplicates" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields.property.preserveDuplicates"></a>
 
 ```csharp
-public object PreserveDuplicates { get; set; }
+public bool|IResolvable PreserveDuplicates { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to log duplicate values of the same header.
 
@@ -3988,7 +3988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesActionParametersServeStale {
-    object DisableStaleWhileUpdating = null
+    bool|IResolvable DisableStaleWhileUpdating = null
 };
 ```
 
@@ -3996,17 +3996,17 @@ new RulesetRulesActionParametersServeStale {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale.property.disableStaleWhileUpdating">DisableStaleWhileUpdating</a></code> | <code>object</code> | Whether Cloudflare should disable serving stale content while getting the latest content from the origin. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale.property.disableStaleWhileUpdating">DisableStaleWhileUpdating</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether Cloudflare should disable serving stale content while getting the latest content from the origin. |
 
 ---
 
 ##### `DisableStaleWhileUpdating`<sup>Optional</sup> <a name="DisableStaleWhileUpdating" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale.property.disableStaleWhileUpdating"></a>
 
 ```csharp
-public object DisableStaleWhileUpdating { get; set; }
+public bool|IResolvable DisableStaleWhileUpdating { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether Cloudflare should disable serving stale content while getting the latest content from the origin.
 
@@ -4290,7 +4290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 using HashiCorp.Cdktf.Providers.Cloudflare;
 
 new RulesetRulesLogging {
-    object Enabled = null
+    bool|IResolvable Enabled = null
 };
 ```
 
@@ -4298,17 +4298,17 @@ new RulesetRulesLogging {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging.property.enabled">Enabled</a></code> | <code>object</code> | Whether to generate a log when the rule matches. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to generate a log when the rule matches. |
 
 ---
 
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to generate a log when the rule matches.
 
@@ -4329,7 +4329,7 @@ new RulesetRulesRatelimit {
     string CountingExpression = null,
     double MitigationTimeout = null,
     double RequestsPerPeriod = null,
-    object RequestsToOrigin = null,
+    bool|IResolvable RequestsToOrigin = null,
     double ScorePerPeriod = null,
     string ScoreResponseHeaderName = null
 };
@@ -4344,7 +4344,7 @@ new RulesetRulesRatelimit {
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.countingExpression">CountingExpression</a></code> | <code>string</code> | An expression that defines when the rate limit counter should be incremented. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.mitigationTimeout">MitigationTimeout</a></code> | <code>double</code> | Period of time in seconds after which the action will be disabled following its first execution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.requestsPerPeriod">RequestsPerPeriod</a></code> | <code>double</code> | The threshold of requests per period after which the action will be executed for the first time. |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.requestsToOrigin">RequestsToOrigin</a></code> | <code>object</code> | Whether counting is only performed when an origin is reached. |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.requestsToOrigin">RequestsToOrigin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether counting is only performed when an origin is reached. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.scorePerPeriod">ScorePerPeriod</a></code> | <code>double</code> | The score threshold per period for which the action will be executed the first time. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.scoreResponseHeaderName">ScoreResponseHeaderName</a></code> | <code>string</code> | A response header name provided by the origin, which contains the score to increment rate limit counter with. |
 
@@ -4425,10 +4425,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `RequestsToOrigin`<sup>Optional</sup> <a name="RequestsToOrigin" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit.property.requestsToOrigin"></a>
 
 ```csharp
-public object RequestsToOrigin { get; set; }
+public bool|IResolvable RequestsToOrigin { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether counting is only performed when an origin is reached.
 
@@ -4587,7 +4587,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>[]</code> | *No description.* |
 
 ---
 
@@ -4618,10 +4618,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersAlgorithms[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>[]
 
 ---
 
@@ -4863,7 +4863,7 @@ private void ResetName()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a></code> | *No description.* |
 
 ---
 
@@ -4914,10 +4914,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersAlgorithms InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>
 
 ---
 
@@ -5153,13 +5153,13 @@ private void ResetJs()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.cssInput">CssInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.htmlInput">HtmlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.jsInput">JsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.css">Css</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.html">Html</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.js">Js</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.cssInput">CssInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.htmlInput">HtmlInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.jsInput">JsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.css">Css</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.html">Html</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.js">Js</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a></code> | *No description.* |
 
 ---
 
@@ -5190,70 +5190,70 @@ public string Fqn { get; }
 ##### `CssInput`<sup>Optional</sup> <a name="CssInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.cssInput"></a>
 
 ```csharp
-public object CssInput { get; }
+public bool|IResolvable CssInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HtmlInput`<sup>Optional</sup> <a name="HtmlInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.htmlInput"></a>
 
 ```csharp
-public object HtmlInput { get; }
+public bool|IResolvable HtmlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `JsInput`<sup>Optional</sup> <a name="JsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.jsInput"></a>
 
 ```csharp
-public object JsInput { get; }
+public bool|IResolvable JsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Css`<sup>Required</sup> <a name="Css" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.css"></a>
 
 ```csharp
-public object Css { get; }
+public bool|IResolvable Css { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Html`<sup>Required</sup> <a name="Html" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.html"></a>
 
 ```csharp
-public object Html { get; }
+public bool|IResolvable Html { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Js`<sup>Required</sup> <a name="Js" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.js"></a>
 
 ```csharp
-public object Js { get; }
+public bool|IResolvable Js { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersAutominify InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a>
 
 ---
 
@@ -5479,7 +5479,7 @@ private void ResetDefault()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference.property.default">Default</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a></code> | *No description.* |
 
 ---
 
@@ -5550,10 +5550,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersBrowserTtl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a>
 
 ---
 
@@ -5786,7 +5786,7 @@ private void ResetInclude()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference.property.includeInput">IncludeInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference.property.checkPresence">CheckPresence</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference.property.include">Include</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie">RulesetRulesActionParametersCacheKeyCustomKeyCookie</a></code> | *No description.* |
 
 ---
 
@@ -5857,10 +5857,10 @@ public string[] Include { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyCookie InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie">RulesetRulesActionParametersCacheKeyCustomKeyCookie</a>
 
 ---
 
@@ -6104,14 +6104,14 @@ private void ResetInclude()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.checkPresenceInput">CheckPresenceInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.containsInput">ContainsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.excludeOriginInput">ExcludeOriginInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.containsInput">ContainsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.excludeOriginInput">ExcludeOriginInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.includeInput">IncludeInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.checkPresence">CheckPresence</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.contains">Contains</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.excludeOrigin">ExcludeOrigin</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.contains">Contains</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.excludeOrigin">ExcludeOrigin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.include">Include</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader">RulesetRulesActionParametersCacheKeyCustomKeyHeader</a></code> | *No description.* |
 
 ---
 
@@ -6152,20 +6152,20 @@ public string[] CheckPresenceInput { get; }
 ##### `ContainsInput`<sup>Optional</sup> <a name="ContainsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.containsInput"></a>
 
 ```csharp
-public object ContainsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string[]> ContainsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string[]>
 
 ---
 
 ##### `ExcludeOriginInput`<sup>Optional</sup> <a name="ExcludeOriginInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.excludeOriginInput"></a>
 
 ```csharp
-public object ExcludeOriginInput { get; }
+public bool|IResolvable ExcludeOriginInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6192,20 +6192,20 @@ public string[] CheckPresence { get; }
 ##### `Contains`<sup>Required</sup> <a name="Contains" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.contains"></a>
 
 ```csharp
-public object Contains { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string[]> Contains { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string[]>
 
 ---
 
 ##### `ExcludeOrigin`<sup>Required</sup> <a name="ExcludeOrigin" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.excludeOrigin"></a>
 
 ```csharp
-public object ExcludeOrigin { get; }
+public bool|IResolvable ExcludeOrigin { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6222,10 +6222,10 @@ public string[] Include { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyHeader InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader">RulesetRulesActionParametersCacheKeyCustomKeyHeader</a>
 
 ---
 
@@ -6447,9 +6447,9 @@ private void ResetResolved()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.resolvedInput">ResolvedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.resolved">Resolved</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.resolvedInput">ResolvedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.resolved">Resolved</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost">RulesetRulesActionParametersCacheKeyCustomKeyHost</a></code> | *No description.* |
 
 ---
 
@@ -6480,30 +6480,30 @@ public string Fqn { get; }
 ##### `ResolvedInput`<sup>Optional</sup> <a name="ResolvedInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.resolvedInput"></a>
 
 ```csharp
-public object ResolvedInput { get; }
+public bool|IResolvable ResolvedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Resolved`<sup>Required</sup> <a name="Resolved" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.resolved"></a>
 
 ```csharp
-public object Resolved { get; }
+public bool|IResolvable Resolved { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyHost InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost">RulesetRulesActionParametersCacheKeyCustomKeyHost</a>
 
 ---
 
@@ -6823,12 +6823,12 @@ private void ResetUser()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.host">Host</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference">RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.queryString">QueryString</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.user">User</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference">RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.cookieInput">CookieInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.headerInput">HeaderInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.hostInput">HostInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.queryStringInput">QueryStringInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.userInput">UserInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.cookieInput">CookieInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie">RulesetRulesActionParametersCacheKeyCustomKeyCookie</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.headerInput">HeaderInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader">RulesetRulesActionParametersCacheKeyCustomKeyHeader</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.hostInput">HostInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost">RulesetRulesActionParametersCacheKeyCustomKeyHost</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.queryStringInput">QueryStringInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString">RulesetRulesActionParametersCacheKeyCustomKeyQueryString</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.userInput">UserInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser">RulesetRulesActionParametersCacheKeyCustomKeyUser</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a></code> | *No description.* |
 
 ---
 
@@ -6909,60 +6909,60 @@ public RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference User { g
 ##### `CookieInput`<sup>Optional</sup> <a name="CookieInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.cookieInput"></a>
 
 ```csharp
-public object CookieInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyCookie CookieInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie">RulesetRulesActionParametersCacheKeyCustomKeyCookie</a>
 
 ---
 
 ##### `HeaderInput`<sup>Optional</sup> <a name="HeaderInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.headerInput"></a>
 
 ```csharp
-public object HeaderInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyHeader HeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader">RulesetRulesActionParametersCacheKeyCustomKeyHeader</a>
 
 ---
 
 ##### `HostInput`<sup>Optional</sup> <a name="HostInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.hostInput"></a>
 
 ```csharp
-public object HostInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyHost HostInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost">RulesetRulesActionParametersCacheKeyCustomKeyHost</a>
 
 ---
 
 ##### `QueryStringInput`<sup>Optional</sup> <a name="QueryStringInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.queryStringInput"></a>
 
 ```csharp
-public object QueryStringInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyQueryString QueryStringInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString">RulesetRulesActionParametersCacheKeyCustomKeyQueryString</a>
 
 ---
 
 ##### `UserInput`<sup>Optional</sup> <a name="UserInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.userInput"></a>
 
 ```csharp
-public object UserInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyUser UserInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser">RulesetRulesActionParametersCacheKeyCustomKeyUser</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a>
 
 ---
 
@@ -7191,11 +7191,11 @@ private void ResetList()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.allInput">AllInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.allInput">AllInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.listInput">ListInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.all">All</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.list">List</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude</a></code> | *No description.* |
 
 ---
 
@@ -7226,10 +7226,10 @@ public string Fqn { get; }
 ##### `AllInput`<sup>Optional</sup> <a name="AllInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.allInput"></a>
 
 ```csharp
-public object AllInput { get; }
+public bool|IResolvable AllInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7246,10 +7246,10 @@ public string[] ListInput { get; }
 ##### `All`<sup>Required</sup> <a name="All" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.all"></a>
 
 ```csharp
-public object All { get; }
+public bool|IResolvable All { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7266,10 +7266,10 @@ public string[] List { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude</a>
 
 ---
 
@@ -7498,11 +7498,11 @@ private void ResetList()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.allInput">AllInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.allInput">AllInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.listInput">ListInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.all">All</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.all">All</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.list">List</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude</a></code> | *No description.* |
 
 ---
 
@@ -7533,10 +7533,10 @@ public string Fqn { get; }
 ##### `AllInput`<sup>Optional</sup> <a name="AllInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.allInput"></a>
 
 ```csharp
-public object AllInput { get; }
+public bool|IResolvable AllInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7553,10 +7553,10 @@ public string[] ListInput { get; }
 ##### `All`<sup>Required</sup> <a name="All" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.all"></a>
 
 ```csharp
-public object All { get; }
+public bool|IResolvable All { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7573,10 +7573,10 @@ public string[] List { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude</a>
 
 ---
 
@@ -7833,9 +7833,9 @@ private void ResetInclude()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.exclude">Exclude</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.include">Include</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.excludeInput">ExcludeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.includeInput">IncludeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.excludeInput">ExcludeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.includeInput">IncludeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString">RulesetRulesActionParametersCacheKeyCustomKeyQueryString</a></code> | *No description.* |
 
 ---
 
@@ -7886,30 +7886,30 @@ public RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputRefe
 ##### `ExcludeInput`<sup>Optional</sup> <a name="ExcludeInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.excludeInput"></a>
 
 ```csharp
-public object ExcludeInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude ExcludeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude</a>
 
 ---
 
 ##### `IncludeInput`<sup>Optional</sup> <a name="IncludeInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.includeInput"></a>
 
 ```csharp
-public object IncludeInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude IncludeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude">RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyQueryString InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString">RulesetRulesActionParametersCacheKeyCustomKeyQueryString</a>
 
 ---
 
@@ -8145,13 +8145,13 @@ private void ResetLang()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.deviceTypeInput">DeviceTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.geoInput">GeoInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.langInput">LangInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.deviceType">DeviceType</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.geo">Geo</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.lang">Lang</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.deviceTypeInput">DeviceTypeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.geoInput">GeoInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.langInput">LangInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.deviceType">DeviceType</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.geo">Geo</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.lang">Lang</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser">RulesetRulesActionParametersCacheKeyCustomKeyUser</a></code> | *No description.* |
 
 ---
 
@@ -8182,70 +8182,70 @@ public string Fqn { get; }
 ##### `DeviceTypeInput`<sup>Optional</sup> <a name="DeviceTypeInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.deviceTypeInput"></a>
 
 ```csharp
-public object DeviceTypeInput { get; }
+public bool|IResolvable DeviceTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GeoInput`<sup>Optional</sup> <a name="GeoInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.geoInput"></a>
 
 ```csharp
-public object GeoInput { get; }
+public bool|IResolvable GeoInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `LangInput`<sup>Optional</sup> <a name="LangInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.langInput"></a>
 
 ```csharp
-public object LangInput { get; }
+public bool|IResolvable LangInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeviceType`<sup>Required</sup> <a name="DeviceType" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.deviceType"></a>
 
 ```csharp
-public object DeviceType { get; }
+public bool|IResolvable DeviceType { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Geo`<sup>Required</sup> <a name="Geo" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.geo"></a>
 
 ```csharp
-public object Geo { get; }
+public bool|IResolvable Geo { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Lang`<sup>Required</sup> <a name="Lang" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.lang"></a>
 
 ```csharp
-public object Lang { get; }
+public bool|IResolvable Lang { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKeyUser InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser">RulesetRulesActionParametersCacheKeyCustomKeyUser</a>
 
 ---
 
@@ -8502,14 +8502,14 @@ private void ResetIgnoreQueryStringsOrder()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.customKey">CustomKey</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference">RulesetRulesActionParametersCacheKeyCustomKeyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheByDeviceTypeInput">CacheByDeviceTypeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheDeceptionArmorInput">CacheDeceptionArmorInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.customKeyInput">CustomKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.ignoreQueryStringsOrderInput">IgnoreQueryStringsOrderInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheByDeviceType">CacheByDeviceType</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheDeceptionArmor">CacheDeceptionArmor</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.ignoreQueryStringsOrder">IgnoreQueryStringsOrder</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheByDeviceTypeInput">CacheByDeviceTypeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheDeceptionArmorInput">CacheDeceptionArmorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.customKeyInput">CustomKeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.ignoreQueryStringsOrderInput">IgnoreQueryStringsOrderInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheByDeviceType">CacheByDeviceType</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheDeceptionArmor">CacheDeceptionArmor</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.ignoreQueryStringsOrder">IgnoreQueryStringsOrder</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a></code> | *No description.* |
 
 ---
 
@@ -8550,80 +8550,80 @@ public RulesetRulesActionParametersCacheKeyCustomKeyOutputReference CustomKey { 
 ##### `CacheByDeviceTypeInput`<sup>Optional</sup> <a name="CacheByDeviceTypeInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheByDeviceTypeInput"></a>
 
 ```csharp
-public object CacheByDeviceTypeInput { get; }
+public bool|IResolvable CacheByDeviceTypeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CacheDeceptionArmorInput`<sup>Optional</sup> <a name="CacheDeceptionArmorInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheDeceptionArmorInput"></a>
 
 ```csharp
-public object CacheDeceptionArmorInput { get; }
+public bool|IResolvable CacheDeceptionArmorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CustomKeyInput`<sup>Optional</sup> <a name="CustomKeyInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.customKeyInput"></a>
 
 ```csharp
-public object CustomKeyInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKeyCustomKey CustomKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey">RulesetRulesActionParametersCacheKeyCustomKey</a>
 
 ---
 
 ##### `IgnoreQueryStringsOrderInput`<sup>Optional</sup> <a name="IgnoreQueryStringsOrderInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.ignoreQueryStringsOrderInput"></a>
 
 ```csharp
-public object IgnoreQueryStringsOrderInput { get; }
+public bool|IResolvable IgnoreQueryStringsOrderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CacheByDeviceType`<sup>Required</sup> <a name="CacheByDeviceType" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheByDeviceType"></a>
 
 ```csharp
-public object CacheByDeviceType { get; }
+public bool|IResolvable CacheByDeviceType { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CacheDeceptionArmor`<sup>Required</sup> <a name="CacheDeceptionArmor" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.cacheDeceptionArmor"></a>
 
 ```csharp
-public object CacheDeceptionArmor { get; }
+public bool|IResolvable CacheDeceptionArmor { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IgnoreQueryStringsOrder`<sup>Required</sup> <a name="IgnoreQueryStringsOrder" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.ignoreQueryStringsOrder"></a>
 
 ```csharp
-public object IgnoreQueryStringsOrder { get; }
+public bool|IResolvable IgnoreQueryStringsOrder { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a>
 
 ---
 
@@ -8845,11 +8845,11 @@ private void ResetMinimumFileSize()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.eligibleInput">EligibleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.eligibleInput">EligibleInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.minimumFileSizeInput">MinimumFileSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.eligible">Eligible</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.eligible">Eligible</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.minimumFileSize">MinimumFileSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a></code> | *No description.* |
 
 ---
 
@@ -8880,10 +8880,10 @@ public string Fqn { get; }
 ##### `EligibleInput`<sup>Optional</sup> <a name="EligibleInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.eligibleInput"></a>
 
 ```csharp
-public object EligibleInput { get; }
+public bool|IResolvable EligibleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8900,10 +8900,10 @@ public double MinimumFileSizeInput { get; }
 ##### `Eligible`<sup>Required</sup> <a name="Eligible" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.eligible"></a>
 
 ```csharp
-public object Eligible { get; }
+public bool|IResolvable Eligible { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8920,10 +8920,10 @@ public double MinimumFileSize { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserveOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCacheReserve InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a>
 
 ---
 
@@ -9049,7 +9049,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -9080,10 +9080,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCookieFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>[]
 
 ---
 
@@ -9318,7 +9318,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a></code> | *No description.* |
 
 ---
 
@@ -9369,10 +9369,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersCookieFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>
 
 ---
 
@@ -9586,12 +9586,12 @@ Returns a reversible string representation.
 ##### `PutStatusCodeTtl` <a name="PutStatusCodeTtl" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.putStatusCodeTtl"></a>
 
 ```csharp
-private void PutStatusCodeTtl(object Value)
+private void PutStatusCodeTtl(IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtl[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.putStatusCodeTtl.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>[]
 
 ---
 
@@ -9617,10 +9617,10 @@ private void ResetStatusCodeTtl()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.statusCodeTtl">StatusCodeTtl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList">RulesetRulesActionParametersEdgeTtlStatusCodeTtlList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.defaultInput">DefaultInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.statusCodeTtlInput">StatusCodeTtlInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.statusCodeTtlInput">StatusCodeTtlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.default">Default</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a></code> | *No description.* |
 
 ---
 
@@ -9681,10 +9681,10 @@ public string ModeInput { get; }
 ##### `StatusCodeTtlInput`<sup>Optional</sup> <a name="StatusCodeTtlInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.statusCodeTtlInput"></a>
 
 ```csharp
-public object StatusCodeTtlInput { get; }
+public IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtl[] StatusCodeTtlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>[]
 
 ---
 
@@ -9711,10 +9711,10 @@ public string Mode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersEdgeTtl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a>
 
 ---
 
@@ -9840,7 +9840,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>[]</code> | *No description.* |
 
 ---
 
@@ -9871,10 +9871,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtl[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>[]
 
 ---
 
@@ -10136,11 +10136,11 @@ private void ResetStatusCodeRange()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.statusCodeRange">StatusCodeRange</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.statusCodeInput">StatusCodeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.statusCodeRangeInput">StatusCodeRangeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.statusCodeRangeInput">StatusCodeRangeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.statusCode">StatusCode</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a></code> | *No description.* |
 
 ---
 
@@ -10191,10 +10191,10 @@ public double StatusCodeInput { get; }
 ##### `StatusCodeRangeInput`<sup>Optional</sup> <a name="StatusCodeRangeInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.statusCodeRangeInput"></a>
 
 ```csharp
-public object StatusCodeRangeInput { get; }
+public IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange StatusCodeRangeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange</a>
 
 ---
 
@@ -10231,10 +10231,10 @@ public double Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtl InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl">RulesetRulesActionParametersEdgeTtlStatusCodeTtl</a>
 
 ---
 
@@ -10467,7 +10467,7 @@ private void ResetTo()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference.property.toInput">ToInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference.property.from">From</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference.property.to">To</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange</a></code> | *No description.* |
 
 ---
 
@@ -10538,10 +10538,10 @@ public double To { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange">RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange</a>
 
 ---
 
@@ -10760,7 +10760,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a></code> | *No description.* |
 
 ---
 
@@ -10831,10 +10831,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersFromListStruct InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>
 
 ---
 
@@ -11077,12 +11077,12 @@ private void ResetStatusCode()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.targetUrl">TargetUrl</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference">RulesetRulesActionParametersFromValueTargetUrlOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryStringInput">PreserveQueryStringInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryStringInput">PreserveQueryStringInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.statusCodeInput">StatusCodeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.targetUrlInput">TargetUrlInput</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl">RulesetRulesActionParametersFromValueTargetUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryString">PreserveQueryString</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryString">PreserveQueryString</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.statusCode">StatusCode</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | *No description.* |
 
 ---
 
@@ -11123,10 +11123,10 @@ public RulesetRulesActionParametersFromValueTargetUrlOutputReference TargetUrl {
 ##### `PreserveQueryStringInput`<sup>Optional</sup> <a name="PreserveQueryStringInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryStringInput"></a>
 
 ```csharp
-public object PreserveQueryStringInput { get; }
+public bool|IResolvable PreserveQueryStringInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11153,10 +11153,10 @@ public RulesetRulesActionParametersFromValueTargetUrl TargetUrlInput { get; }
 ##### `PreserveQueryString`<sup>Required</sup> <a name="PreserveQueryString" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.preserveQueryString"></a>
 
 ```csharp
-public object PreserveQueryString { get; }
+public bool|IResolvable PreserveQueryString { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11173,10 +11173,10 @@ public double StatusCode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersFromValue InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a>
 
 ---
 
@@ -11596,7 +11596,7 @@ the key of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>></code> | *No description.* |
 
 ---
 
@@ -11627,10 +11627,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, RulesetRulesActionParametersHeaders> InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>>
 
 ---
 
@@ -11874,7 +11874,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference.property.operation">Operation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a></code> | *No description.* |
 
 ---
 
@@ -11965,10 +11965,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersHeaders InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>
 
 ---
 
@@ -12185,7 +12185,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference.property.publicKeyInput">PublicKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference.property.publicKey">PublicKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a></code> | *No description.* |
 
 ---
 
@@ -12236,10 +12236,10 @@ public string PublicKey { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersMatchedData InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a>
 
 ---
 
@@ -12472,7 +12472,7 @@ private void ResetPort()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference.property.portInput">PortInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference.property.host">Host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference.property.port">Port</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | *No description.* |
 
 ---
 
@@ -12543,10 +12543,10 @@ public double Port { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersOrigin InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a>
 
 ---
 
@@ -12833,12 +12833,12 @@ Returns a reversible string representation.
 ##### `PutAlgorithms` <a name="PutAlgorithms" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putAlgorithms"></a>
 
 ```csharp
-private void PutAlgorithms(object Value)
+private void PutAlgorithms(IResolvable|RulesetRulesActionParametersAlgorithms[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putAlgorithms.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>[]
 
 ---
 
@@ -12893,12 +12893,12 @@ private void PutCacheReserve(RulesetRulesActionParametersCacheReserve Value)
 ##### `PutCookieFields` <a name="PutCookieFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putCookieFields"></a>
 
 ```csharp
-private void PutCookieFields(object Value)
+private void PutCookieFields(IResolvable|RulesetRulesActionParametersCookieFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putCookieFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>[]
 
 ---
 
@@ -12941,12 +12941,12 @@ private void PutFromValue(RulesetRulesActionParametersFromValue Value)
 ##### `PutHeaders` <a name="PutHeaders" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putHeaders"></a>
 
 ```csharp
-private void PutHeaders(object Value)
+private void PutHeaders(IResolvable|System.Collections.Generic.IDictionary<string, RulesetRulesActionParametersHeaders> Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>>
 
 ---
 
@@ -12989,24 +12989,24 @@ private void PutOverrides(RulesetRulesActionParametersOverrides Value)
 ##### `PutRawResponseFields` <a name="PutRawResponseFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putRawResponseFields"></a>
 
 ```csharp
-private void PutRawResponseFields(object Value)
+private void PutRawResponseFields(IResolvable|RulesetRulesActionParametersRawResponseFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putRawResponseFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>[]
 
 ---
 
 ##### `PutRequestFields` <a name="PutRequestFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putRequestFields"></a>
 
 ```csharp
-private void PutRequestFields(object Value)
+private void PutRequestFields(IResolvable|RulesetRulesActionParametersRequestFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putRequestFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>[]
 
 ---
 
@@ -13025,12 +13025,12 @@ private void PutResponse(RulesetRulesActionParametersResponse Value)
 ##### `PutResponseFields` <a name="PutResponseFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putResponseFields"></a>
 
 ```csharp
-private void PutResponseFields(object Value)
+private void PutResponseFields(IResolvable|RulesetRulesActionParametersResponseFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putResponseFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>[]
 
 ---
 
@@ -13061,12 +13061,12 @@ private void PutSni(RulesetRulesActionParametersSni Value)
 ##### `PutTransformedRequestFields` <a name="PutTransformedRequestFields" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putTransformedRequestFields"></a>
 
 ```csharp
-private void PutTransformedRequestFields(object Value)
+private void PutTransformedRequestFields(IResolvable|RulesetRulesActionParametersTransformedRequestFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putTransformedRequestFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>[]
 
 ---
 
@@ -13441,95 +13441,95 @@ private void ResetUri()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.transformedRequestFields">TransformedRequestFields</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsList">RulesetRulesActionParametersTransformedRequestFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uri">Uri</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference">RulesetRulesActionParametersUriOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePortsInput">AdditionalCacheablePortsInput</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.algorithmsInput">AlgorithmsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.algorithmsInput">AlgorithmsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetNameInput">AssetNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewritesInput">AutomaticHttpsRewritesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.autominifyInput">AutominifyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bicInput">BicInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.browserTtlInput">BrowserTtlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheInput">CacheInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheKeyInput">CacheKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheReserveInput">CacheReserveInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewritesInput">AutomaticHttpsRewritesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.autominifyInput">AutominifyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bicInput">BicInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.browserTtlInput">BrowserTtlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheInput">CacheInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheKeyInput">CacheKeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheReserveInput">CacheReserveInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.contentInput">ContentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.contentTypeInput">ContentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cookieFieldsInput">CookieFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableAppsInput">DisableAppsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableRumInput">DisableRumInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZarazInput">DisableZarazInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.edgeTtlInput">EdgeTtlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscationInput">EmailObfuscationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fontsInput">FontsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromListInput">FromListInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromValueInput">FromValueInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.headersInput">HeadersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cookieFieldsInput">CookieFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableAppsInput">DisableAppsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableRumInput">DisableRumInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZarazInput">DisableZarazInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.edgeTtlInput">EdgeTtlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscationInput">EmailObfuscationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fontsInput">FontsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromListInput">FromListInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromValueInput">FromValueInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.headersInput">HeadersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hostHeaderInput">HostHeaderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtectionInput">HotlinkProtectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtectionInput">HotlinkProtectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.incrementInput">IncrementInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.matchedDataInput">MatchedDataInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirageInput">MirageInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryptionInput">OpportunisticEncryptionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControlInput">OriginCacheControlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthruInput">OriginErrorPagePassthruInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originInput">OriginInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overridesInput">OverridesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.matchedDataInput">MatchedDataInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirageInput">MirageInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryptionInput">OpportunisticEncryptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControlInput">OriginCacheControlInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthruInput">OriginErrorPagePassthruInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originInput">OriginInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overridesInput">OverridesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phasesInput">PhasesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.polishInput">PolishInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.productsInput">ProductsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rawResponseFieldsInput">RawResponseFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rawResponseFieldsInput">RawResponseFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.readTimeoutInput">ReadTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.requestFieldsInput">RequestFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.respectStrongEtagsInput">RespectStrongEtagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.responseFieldsInput">ResponseFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.responseInput">ResponseInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rocketLoaderInput">RocketLoaderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.requestFieldsInput">RequestFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.respectStrongEtagsInput">RespectStrongEtagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.responseFieldsInput">ResponseFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.responseInput">ResponseInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse">RulesetRulesActionParametersResponse</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rocketLoaderInput">RocketLoaderInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rulesetInput">RulesetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rulesetsInput">RulesetsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rulesInput">RulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rulesInput">RulesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.securityLevelInput">SecurityLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludesInput">ServerSideExcludesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serveStaleInput">ServeStaleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sniInput">SniInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludesInput">ServerSideExcludesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serveStaleInput">ServeStaleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sniInput">SniInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sslInput">SslInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.statusCodeInput">StatusCodeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxgInput">SxgInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.transformedRequestFieldsInput">TransformedRequestFieldsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uriInput">UriInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxgInput">SxgInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.transformedRequestFieldsInput">TransformedRequestFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uriInput">UriInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePorts">AdditionalCacheablePorts</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetName">AssetName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewrites">AutomaticHttpsRewrites</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bic">Bic</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cache">Cache</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewrites">AutomaticHttpsRewrites</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bic">Bic</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cache">Cache</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableApps">DisableApps</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableRum">DisableRum</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZaraz">DisableZaraz</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscation">EmailObfuscation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fonts">Fonts</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableApps">DisableApps</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableRum">DisableRum</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZaraz">DisableZaraz</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscation">EmailObfuscation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fonts">Fonts</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hostHeader">HostHeader</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtection">HotlinkProtection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtection">HotlinkProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.increment">Increment</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirage">Mirage</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryption">OpportunisticEncryption</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControl">OriginCacheControl</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthru">OriginErrorPagePassthru</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirage">Mirage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryption">OpportunisticEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControl">OriginCacheControl</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthru">OriginErrorPagePassthru</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phases">Phases</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.polish">Polish</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.products">Products</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.readTimeout">ReadTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.respectStrongEtags">RespectStrongEtags</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rocketLoader">RocketLoader</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rules">Rules</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.respectStrongEtags">RespectStrongEtags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rocketLoader">RocketLoader</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rules">Rules</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.ruleset">Ruleset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rulesets">Rulesets</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.securityLevel">SecurityLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludes">ServerSideExcludes</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludes">ServerSideExcludes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.ssl">Ssl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.statusCode">StatusCode</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxg">Sxg</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxg">Sxg</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a></code> | *No description.* |
 
 ---
 
@@ -13780,10 +13780,10 @@ public double[] AdditionalCacheablePortsInput { get; }
 ##### `AlgorithmsInput`<sup>Optional</sup> <a name="AlgorithmsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.algorithmsInput"></a>
 
 ```csharp
-public object AlgorithmsInput { get; }
+public IResolvable|RulesetRulesActionParametersAlgorithms[] AlgorithmsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms">RulesetRulesActionParametersAlgorithms</a>[]
 
 ---
 
@@ -13800,70 +13800,70 @@ public string AssetNameInput { get; }
 ##### `AutomaticHttpsRewritesInput`<sup>Optional</sup> <a name="AutomaticHttpsRewritesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewritesInput"></a>
 
 ```csharp
-public object AutomaticHttpsRewritesInput { get; }
+public bool|IResolvable AutomaticHttpsRewritesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutominifyInput`<sup>Optional</sup> <a name="AutominifyInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.autominifyInput"></a>
 
 ```csharp
-public object AutominifyInput { get; }
+public IResolvable|RulesetRulesActionParametersAutominify AutominifyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify">RulesetRulesActionParametersAutominify</a>
 
 ---
 
 ##### `BicInput`<sup>Optional</sup> <a name="BicInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bicInput"></a>
 
 ```csharp
-public object BicInput { get; }
+public bool|IResolvable BicInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BrowserTtlInput`<sup>Optional</sup> <a name="BrowserTtlInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.browserTtlInput"></a>
 
 ```csharp
-public object BrowserTtlInput { get; }
+public IResolvable|RulesetRulesActionParametersBrowserTtl BrowserTtlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl">RulesetRulesActionParametersBrowserTtl</a>
 
 ---
 
 ##### `CacheInput`<sup>Optional</sup> <a name="CacheInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheInput"></a>
 
 ```csharp
-public object CacheInput { get; }
+public bool|IResolvable CacheInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CacheKeyInput`<sup>Optional</sup> <a name="CacheKeyInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheKeyInput"></a>
 
 ```csharp
-public object CacheKeyInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheKey CacheKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey">RulesetRulesActionParametersCacheKey</a>
 
 ---
 
 ##### `CacheReserveInput`<sup>Optional</sup> <a name="CacheReserveInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cacheReserveInput"></a>
 
 ```csharp
-public object CacheReserveInput { get; }
+public IResolvable|RulesetRulesActionParametersCacheReserve CacheReserveInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheReserve">RulesetRulesActionParametersCacheReserve</a>
 
 ---
 
@@ -13890,100 +13890,100 @@ public string ContentTypeInput { get; }
 ##### `CookieFieldsInput`<sup>Optional</sup> <a name="CookieFieldsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cookieFieldsInput"></a>
 
 ```csharp
-public object CookieFieldsInput { get; }
+public IResolvable|RulesetRulesActionParametersCookieFields[] CookieFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCookieFields">RulesetRulesActionParametersCookieFields</a>[]
 
 ---
 
 ##### `DisableAppsInput`<sup>Optional</sup> <a name="DisableAppsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableAppsInput"></a>
 
 ```csharp
-public object DisableAppsInput { get; }
+public bool|IResolvable DisableAppsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableRumInput`<sup>Optional</sup> <a name="DisableRumInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableRumInput"></a>
 
 ```csharp
-public object DisableRumInput { get; }
+public bool|IResolvable DisableRumInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableZarazInput`<sup>Optional</sup> <a name="DisableZarazInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZarazInput"></a>
 
 ```csharp
-public object DisableZarazInput { get; }
+public bool|IResolvable DisableZarazInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EdgeTtlInput`<sup>Optional</sup> <a name="EdgeTtlInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.edgeTtlInput"></a>
 
 ```csharp
-public object EdgeTtlInput { get; }
+public IResolvable|RulesetRulesActionParametersEdgeTtl EdgeTtlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a>
 
 ---
 
 ##### `EmailObfuscationInput`<sup>Optional</sup> <a name="EmailObfuscationInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscationInput"></a>
 
 ```csharp
-public object EmailObfuscationInput { get; }
+public bool|IResolvable EmailObfuscationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FontsInput`<sup>Optional</sup> <a name="FontsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fontsInput"></a>
 
 ```csharp
-public object FontsInput { get; }
+public bool|IResolvable FontsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FromListInput`<sup>Optional</sup> <a name="FromListInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromListInput"></a>
 
 ```csharp
-public object FromListInput { get; }
+public IResolvable|RulesetRulesActionParametersFromListStruct FromListInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a>
 
 ---
 
 ##### `FromValueInput`<sup>Optional</sup> <a name="FromValueInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromValueInput"></a>
 
 ```csharp
-public object FromValueInput { get; }
+public IResolvable|RulesetRulesActionParametersFromValue FromValueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a>
 
 ---
 
 ##### `HeadersInput`<sup>Optional</sup> <a name="HeadersInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.headersInput"></a>
 
 ```csharp
-public object HeadersInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, RulesetRulesActionParametersHeaders> HeadersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, <a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders">RulesetRulesActionParametersHeaders</a>>
 
 ---
 
@@ -14000,10 +14000,10 @@ public string HostHeaderInput { get; }
 ##### `HotlinkProtectionInput`<sup>Optional</sup> <a name="HotlinkProtectionInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtectionInput"></a>
 
 ```csharp
-public object HotlinkProtectionInput { get; }
+public bool|IResolvable HotlinkProtectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14030,70 +14030,70 @@ public double IncrementInput { get; }
 ##### `MatchedDataInput`<sup>Optional</sup> <a name="MatchedDataInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.matchedDataInput"></a>
 
 ```csharp
-public object MatchedDataInput { get; }
+public IResolvable|RulesetRulesActionParametersMatchedData MatchedDataInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a>
 
 ---
 
 ##### `MirageInput`<sup>Optional</sup> <a name="MirageInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirageInput"></a>
 
 ```csharp
-public object MirageInput { get; }
+public bool|IResolvable MirageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OpportunisticEncryptionInput`<sup>Optional</sup> <a name="OpportunisticEncryptionInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryptionInput"></a>
 
 ```csharp
-public object OpportunisticEncryptionInput { get; }
+public bool|IResolvable OpportunisticEncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OriginCacheControlInput`<sup>Optional</sup> <a name="OriginCacheControlInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControlInput"></a>
 
 ```csharp
-public object OriginCacheControlInput { get; }
+public bool|IResolvable OriginCacheControlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OriginErrorPagePassthruInput`<sup>Optional</sup> <a name="OriginErrorPagePassthruInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthruInput"></a>
 
 ```csharp
-public object OriginErrorPagePassthruInput { get; }
+public bool|IResolvable OriginErrorPagePassthruInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OriginInput`<sup>Optional</sup> <a name="OriginInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originInput"></a>
 
 ```csharp
-public object OriginInput { get; }
+public IResolvable|RulesetRulesActionParametersOrigin OriginInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a>
 
 ---
 
 ##### `OverridesInput`<sup>Optional</sup> <a name="OverridesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overridesInput"></a>
 
 ```csharp
-public object OverridesInput { get; }
+public IResolvable|RulesetRulesActionParametersOverrides OverridesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a>
 
 ---
 
@@ -14130,10 +14130,10 @@ public string[] ProductsInput { get; }
 ##### `RawResponseFieldsInput`<sup>Optional</sup> <a name="RawResponseFieldsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rawResponseFieldsInput"></a>
 
 ```csharp
-public object RawResponseFieldsInput { get; }
+public IResolvable|RulesetRulesActionParametersRawResponseFields[] RawResponseFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>[]
 
 ---
 
@@ -14150,50 +14150,50 @@ public double ReadTimeoutInput { get; }
 ##### `RequestFieldsInput`<sup>Optional</sup> <a name="RequestFieldsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.requestFieldsInput"></a>
 
 ```csharp
-public object RequestFieldsInput { get; }
+public IResolvable|RulesetRulesActionParametersRequestFields[] RequestFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>[]
 
 ---
 
 ##### `RespectStrongEtagsInput`<sup>Optional</sup> <a name="RespectStrongEtagsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.respectStrongEtagsInput"></a>
 
 ```csharp
-public object RespectStrongEtagsInput { get; }
+public bool|IResolvable RespectStrongEtagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ResponseFieldsInput`<sup>Optional</sup> <a name="ResponseFieldsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.responseFieldsInput"></a>
 
 ```csharp
-public object ResponseFieldsInput { get; }
+public IResolvable|RulesetRulesActionParametersResponseFields[] ResponseFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>[]
 
 ---
 
 ##### `ResponseInput`<sup>Optional</sup> <a name="ResponseInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.responseInput"></a>
 
 ```csharp
-public object ResponseInput { get; }
+public IResolvable|RulesetRulesActionParametersResponse ResponseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse">RulesetRulesActionParametersResponse</a>
 
 ---
 
 ##### `RocketLoaderInput`<sup>Optional</sup> <a name="RocketLoaderInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rocketLoaderInput"></a>
 
 ```csharp
-public object RocketLoaderInput { get; }
+public bool|IResolvable RocketLoaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14220,10 +14220,10 @@ public string[] RulesetsInput { get; }
 ##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rulesInput"></a>
 
 ```csharp
-public object RulesInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string[]> RulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string[]>
 
 ---
 
@@ -14240,30 +14240,30 @@ public string SecurityLevelInput { get; }
 ##### `ServerSideExcludesInput`<sup>Optional</sup> <a name="ServerSideExcludesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludesInput"></a>
 
 ```csharp
-public object ServerSideExcludesInput { get; }
+public bool|IResolvable ServerSideExcludesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ServeStaleInput`<sup>Optional</sup> <a name="ServeStaleInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serveStaleInput"></a>
 
 ```csharp
-public object ServeStaleInput { get; }
+public IResolvable|RulesetRulesActionParametersServeStale ServeStaleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a>
 
 ---
 
 ##### `SniInput`<sup>Optional</sup> <a name="SniInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sniInput"></a>
 
 ```csharp
-public object SniInput { get; }
+public IResolvable|RulesetRulesActionParametersSni SniInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a>
 
 ---
 
@@ -14290,30 +14290,30 @@ public double StatusCodeInput { get; }
 ##### `SxgInput`<sup>Optional</sup> <a name="SxgInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxgInput"></a>
 
 ```csharp
-public object SxgInput { get; }
+public bool|IResolvable SxgInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `TransformedRequestFieldsInput`<sup>Optional</sup> <a name="TransformedRequestFieldsInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.transformedRequestFieldsInput"></a>
 
 ```csharp
-public object TransformedRequestFieldsInput { get; }
+public IResolvable|RulesetRulesActionParametersTransformedRequestFields[] TransformedRequestFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>[]
 
 ---
 
 ##### `UriInput`<sup>Optional</sup> <a name="UriInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uriInput"></a>
 
 ```csharp
-public object UriInput { get; }
+public IResolvable|RulesetRulesActionParametersUri UriInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a>
 
 ---
 
@@ -14340,30 +14340,30 @@ public string AssetName { get; }
 ##### `AutomaticHttpsRewrites`<sup>Required</sup> <a name="AutomaticHttpsRewrites" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewrites"></a>
 
 ```csharp
-public object AutomaticHttpsRewrites { get; }
+public bool|IResolvable AutomaticHttpsRewrites { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Bic`<sup>Required</sup> <a name="Bic" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.bic"></a>
 
 ```csharp
-public object Bic { get; }
+public bool|IResolvable Bic { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Cache`<sup>Required</sup> <a name="Cache" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.cache"></a>
 
 ```csharp
-public object Cache { get; }
+public bool|IResolvable Cache { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14390,50 +14390,50 @@ public string ContentType { get; }
 ##### `DisableApps`<sup>Required</sup> <a name="DisableApps" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableApps"></a>
 
 ```csharp
-public object DisableApps { get; }
+public bool|IResolvable DisableApps { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableRum`<sup>Required</sup> <a name="DisableRum" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableRum"></a>
 
 ```csharp
-public object DisableRum { get; }
+public bool|IResolvable DisableRum { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableZaraz`<sup>Required</sup> <a name="DisableZaraz" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZaraz"></a>
 
 ```csharp
-public object DisableZaraz { get; }
+public bool|IResolvable DisableZaraz { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EmailObfuscation`<sup>Required</sup> <a name="EmailObfuscation" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscation"></a>
 
 ```csharp
-public object EmailObfuscation { get; }
+public bool|IResolvable EmailObfuscation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Fonts`<sup>Required</sup> <a name="Fonts" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fonts"></a>
 
 ```csharp
-public object Fonts { get; }
+public bool|IResolvable Fonts { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14450,10 +14450,10 @@ public string HostHeader { get; }
 ##### `HotlinkProtection`<sup>Required</sup> <a name="HotlinkProtection" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtection"></a>
 
 ```csharp
-public object HotlinkProtection { get; }
+public bool|IResolvable HotlinkProtection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14480,40 +14480,40 @@ public double Increment { get; }
 ##### `Mirage`<sup>Required</sup> <a name="Mirage" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirage"></a>
 
 ```csharp
-public object Mirage { get; }
+public bool|IResolvable Mirage { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OpportunisticEncryption`<sup>Required</sup> <a name="OpportunisticEncryption" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryption"></a>
 
 ```csharp
-public object OpportunisticEncryption { get; }
+public bool|IResolvable OpportunisticEncryption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OriginCacheControl`<sup>Required</sup> <a name="OriginCacheControl" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControl"></a>
 
 ```csharp
-public object OriginCacheControl { get; }
+public bool|IResolvable OriginCacheControl { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OriginErrorPagePassthru`<sup>Required</sup> <a name="OriginErrorPagePassthru" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthru"></a>
 
 ```csharp
-public object OriginErrorPagePassthru { get; }
+public bool|IResolvable OriginErrorPagePassthru { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14560,30 +14560,30 @@ public double ReadTimeout { get; }
 ##### `RespectStrongEtags`<sup>Required</sup> <a name="RespectStrongEtags" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.respectStrongEtags"></a>
 
 ```csharp
-public object RespectStrongEtags { get; }
+public bool|IResolvable RespectStrongEtags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RocketLoader`<sup>Required</sup> <a name="RocketLoader" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rocketLoader"></a>
 
 ```csharp
-public object RocketLoader { get; }
+public bool|IResolvable RocketLoader { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Rules`<sup>Required</sup> <a name="Rules" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rules"></a>
 
 ```csharp
-public object Rules { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string[]> Rules { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string[]>
 
 ---
 
@@ -14620,10 +14620,10 @@ public string SecurityLevel { get; }
 ##### `ServerSideExcludes`<sup>Required</sup> <a name="ServerSideExcludes" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludes"></a>
 
 ```csharp
-public object ServerSideExcludes { get; }
+public bool|IResolvable ServerSideExcludes { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14650,20 +14650,20 @@ public double StatusCode { get; }
 ##### `Sxg`<sup>Required</sup> <a name="Sxg" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxg"></a>
 
 ```csharp
-public object Sxg { get; }
+public bool|IResolvable Sxg { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParameters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a>
 
 ---
 
@@ -14789,7 +14789,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>[]</code> | *No description.* |
 
 ---
 
@@ -14820,10 +14820,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersOverridesCategories[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>[]
 
 ---
 
@@ -15079,13 +15079,13 @@ private void ResetSensitivityLevel()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.actionInput">ActionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.categoryInput">CategoryInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.sensitivityLevelInput">SensitivityLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.action">Action</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.category">Category</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.sensitivityLevel">SensitivityLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a></code> | *No description.* |
 
 ---
 
@@ -15136,10 +15136,10 @@ public string CategoryInput { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15176,10 +15176,10 @@ public string Category { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15196,10 +15196,10 @@ public string SensitivityLevel { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersOverridesCategories InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>
 
 ---
 
@@ -15417,24 +15417,24 @@ Returns a reversible string representation.
 ##### `PutCategories` <a name="PutCategories" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.putCategories"></a>
 
 ```csharp
-private void PutCategories(object Value)
+private void PutCategories(IResolvable|RulesetRulesActionParametersOverridesCategories[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.putCategories.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>[]
 
 ---
 
 ##### `PutRules` <a name="PutRules" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.putRules"></a>
 
 ```csharp
-private void PutRules(object Value)
+private void PutRules(IResolvable|RulesetRulesActionParametersOverridesRules[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.putRules.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>[]
 
 ---
 
@@ -15478,14 +15478,14 @@ private void ResetSensitivityLevel()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.categories">Categories</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList">RulesetRulesActionParametersOverridesCategoriesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.rules">Rules</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList">RulesetRulesActionParametersOverridesRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.actionInput">ActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.categoriesInput">CategoriesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.rulesInput">RulesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.categoriesInput">CategoriesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.rulesInput">RulesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.sensitivityLevelInput">SensitivityLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.action">Action</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.sensitivityLevel">SensitivityLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | *No description.* |
 
 ---
 
@@ -15546,30 +15546,30 @@ public string ActionInput { get; }
 ##### `CategoriesInput`<sup>Optional</sup> <a name="CategoriesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.categoriesInput"></a>
 
 ```csharp
-public object CategoriesInput { get; }
+public IResolvable|RulesetRulesActionParametersOverridesCategories[] CategoriesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories">RulesetRulesActionParametersOverridesCategories</a>[]
 
 ---
 
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.rulesInput"></a>
 
 ```csharp
-public object RulesInput { get; }
+public IResolvable|RulesetRulesActionParametersOverridesRules[] RulesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>[]
 
 ---
 
@@ -15596,10 +15596,10 @@ public string Action { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15616,10 +15616,10 @@ public string SensitivityLevel { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersOverrides InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a>
 
 ---
 
@@ -15745,7 +15745,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -15776,10 +15776,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersOverridesRules[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>[]
 
 ---
 
@@ -16041,16 +16041,16 @@ private void ResetSensitivityLevel()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.actionInput">ActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.scoreThresholdInput">ScoreThresholdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.sensitivityLevelInput">SensitivityLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.action">Action</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.scoreThreshold">ScoreThreshold</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.sensitivityLevel">SensitivityLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a></code> | *No description.* |
 
 ---
 
@@ -16091,10 +16091,10 @@ public string ActionInput { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16141,10 +16141,10 @@ public string Action { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16181,10 +16181,10 @@ public string SensitivityLevel { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersOverridesRules InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>
 
 ---
 
@@ -16310,7 +16310,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -16341,10 +16341,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersRawResponseFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>[]
 
 ---
 
@@ -16585,10 +16585,10 @@ private void ResetPreserveDuplicates()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.preserveDuplicatesInput">PreserveDuplicatesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.preserveDuplicatesInput">PreserveDuplicatesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a></code> | *No description.* |
 
 ---
 
@@ -16629,10 +16629,10 @@ public string NameInput { get; }
 ##### `PreserveDuplicatesInput`<sup>Optional</sup> <a name="PreserveDuplicatesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.preserveDuplicatesInput"></a>
 
 ```csharp
-public object PreserveDuplicatesInput { get; }
+public bool|IResolvable PreserveDuplicatesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16649,20 +16649,20 @@ public string Name { get; }
 ##### `PreserveDuplicates`<sup>Required</sup> <a name="PreserveDuplicates" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.preserveDuplicates"></a>
 
 ```csharp
-public object PreserveDuplicates { get; }
+public bool|IResolvable PreserveDuplicates { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersRawResponseFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>
 
 ---
 
@@ -16788,7 +16788,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -16819,10 +16819,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersRequestFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>[]
 
 ---
 
@@ -17057,7 +17057,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a></code> | *No description.* |
 
 ---
 
@@ -17108,10 +17108,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersRequestFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFields">RulesetRulesActionParametersRequestFields</a>
 
 ---
 
@@ -17237,7 +17237,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -17268,10 +17268,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersResponseFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>[]
 
 ---
 
@@ -17512,10 +17512,10 @@ private void ResetPreserveDuplicates()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.preserveDuplicatesInput">PreserveDuplicatesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.preserveDuplicatesInput">PreserveDuplicatesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.preserveDuplicates">PreserveDuplicates</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a></code> | *No description.* |
 
 ---
 
@@ -17556,10 +17556,10 @@ public string NameInput { get; }
 ##### `PreserveDuplicatesInput`<sup>Optional</sup> <a name="PreserveDuplicatesInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.preserveDuplicatesInput"></a>
 
 ```csharp
-public object PreserveDuplicatesInput { get; }
+public bool|IResolvable PreserveDuplicatesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17576,20 +17576,20 @@ public string Name { get; }
 ##### `PreserveDuplicates`<sup>Required</sup> <a name="PreserveDuplicates" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.preserveDuplicates"></a>
 
 ```csharp
-public object PreserveDuplicates { get; }
+public bool|IResolvable PreserveDuplicates { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersResponseFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFields">RulesetRulesActionParametersResponseFields</a>
 
 ---
 
@@ -17810,7 +17810,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference.property.statusCode">StatusCode</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse">RulesetRulesActionParametersResponse</a></code> | *No description.* |
 
 ---
 
@@ -17901,10 +17901,10 @@ public double StatusCode { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersResponse InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse">RulesetRulesActionParametersResponse</a>
 
 ---
 
@@ -18126,9 +18126,9 @@ private void ResetDisableStaleWhileUpdating()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.disableStaleWhileUpdatingInput">DisableStaleWhileUpdatingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.disableStaleWhileUpdating">DisableStaleWhileUpdating</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.disableStaleWhileUpdatingInput">DisableStaleWhileUpdatingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.disableStaleWhileUpdating">DisableStaleWhileUpdating</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a></code> | *No description.* |
 
 ---
 
@@ -18159,30 +18159,30 @@ public string Fqn { get; }
 ##### `DisableStaleWhileUpdatingInput`<sup>Optional</sup> <a name="DisableStaleWhileUpdatingInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.disableStaleWhileUpdatingInput"></a>
 
 ```csharp
-public object DisableStaleWhileUpdatingInput { get; }
+public bool|IResolvable DisableStaleWhileUpdatingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableStaleWhileUpdating`<sup>Required</sup> <a name="DisableStaleWhileUpdating" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.disableStaleWhileUpdating"></a>
 
 ```csharp
-public object DisableStaleWhileUpdating { get; }
+public bool|IResolvable DisableStaleWhileUpdating { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersServeStale InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a>
 
 ---
 
@@ -18399,7 +18399,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a></code> | *No description.* |
 
 ---
 
@@ -18450,10 +18450,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersSni InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a>
 
 ---
 
@@ -18579,7 +18579,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -18610,10 +18610,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersTransformedRequestFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>[]
 
 ---
 
@@ -18848,7 +18848,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a></code> | *No description.* |
 
 ---
 
@@ -18899,10 +18899,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersTransformedRequestFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>
 
 ---
 
@@ -19159,9 +19159,9 @@ private void ResetQuery()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.path">Path</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference">RulesetRulesActionParametersUriPathOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.query">Query</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference">RulesetRulesActionParametersUriQueryOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.pathInput">PathInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.queryInput">QueryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.pathInput">PathInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath">RulesetRulesActionParametersUriPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.queryInput">QueryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery">RulesetRulesActionParametersUriQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | *No description.* |
 
 ---
 
@@ -19212,30 +19212,30 @@ public RulesetRulesActionParametersUriQueryOutputReference Query { get; }
 ##### `PathInput`<sup>Optional</sup> <a name="PathInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.pathInput"></a>
 
 ```csharp
-public object PathInput { get; }
+public IResolvable|RulesetRulesActionParametersUriPath PathInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath">RulesetRulesActionParametersUriPath</a>
 
 ---
 
 ##### `QueryInput`<sup>Optional</sup> <a name="QueryInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.queryInput"></a>
 
 ```csharp
-public object QueryInput { get; }
+public IResolvable|RulesetRulesActionParametersUriQuery QueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery">RulesetRulesActionParametersUriQuery</a>
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersUri InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a>
 
 ---
 
@@ -19468,7 +19468,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath">RulesetRulesActionParametersUriPath</a></code> | *No description.* |
 
 ---
 
@@ -19539,10 +19539,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersUriPath InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath">RulesetRulesActionParametersUriPath</a>
 
 ---
 
@@ -19775,7 +19775,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery">RulesetRulesActionParametersUriQuery</a></code> | *No description.* |
 
 ---
 
@@ -19846,10 +19846,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesActionParametersUriQuery InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery">RulesetRulesActionParametersUriQuery</a>
 
 ---
 
@@ -20068,7 +20068,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference.property.usernameExpressionInput">UsernameExpressionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference.property.passwordExpression">PasswordExpression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference.property.usernameExpression">UsernameExpression</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a></code> | *No description.* |
 
 ---
 
@@ -20139,10 +20139,10 @@ public string UsernameExpression { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesExposedCredentialCheck InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a>
 
 ---
 
@@ -20268,7 +20268,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -20299,10 +20299,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRules[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>[]
 
 ---
 
@@ -20524,9 +20524,9 @@ private void ResetEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging">RulesetRulesLogging</a></code> | *No description.* |
 
 ---
 
@@ -20557,30 +20557,30 @@ public string Fqn { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesLogging InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging">RulesetRulesLogging</a>
 
 ---
 
@@ -20920,20 +20920,20 @@ private void ResetRef()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.logging">Logging</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference">RulesetRulesLoggingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.ratelimit">Ratelimit</a></code> | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference">RulesetRulesRatelimitOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.actionInput">ActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.actionParametersInput">ActionParametersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.actionParametersInput">ActionParametersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.exposedCredentialCheckInput">ExposedCredentialCheckInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.exposedCredentialCheckInput">ExposedCredentialCheckInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.expressionInput">ExpressionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.loggingInput">LoggingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.ratelimitInput">RatelimitInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.loggingInput">LoggingInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging">RulesetRulesLogging</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.ratelimitInput">RatelimitInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.refInput">RefInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.action">Action</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.ref">Ref</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a></code> | *No description.* |
 
 ---
 
@@ -21024,10 +21024,10 @@ public string ActionInput { get; }
 ##### `ActionParametersInput`<sup>Optional</sup> <a name="ActionParametersInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.actionParametersInput"></a>
 
 ```csharp
-public object ActionParametersInput { get; }
+public IResolvable|RulesetRulesActionParameters ActionParametersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a>
 
 ---
 
@@ -21044,20 +21044,20 @@ public string DescriptionInput { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ExposedCredentialCheckInput`<sup>Optional</sup> <a name="ExposedCredentialCheckInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.exposedCredentialCheckInput"></a>
 
 ```csharp
-public object ExposedCredentialCheckInput { get; }
+public IResolvable|RulesetRulesExposedCredentialCheck ExposedCredentialCheckInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck">RulesetRulesExposedCredentialCheck</a>
 
 ---
 
@@ -21074,20 +21074,20 @@ public string ExpressionInput { get; }
 ##### `LoggingInput`<sup>Optional</sup> <a name="LoggingInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.loggingInput"></a>
 
 ```csharp
-public object LoggingInput { get; }
+public IResolvable|RulesetRulesLogging LoggingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging">RulesetRulesLogging</a>
 
 ---
 
 ##### `RatelimitInput`<sup>Optional</sup> <a name="RatelimitInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.ratelimitInput"></a>
 
 ```csharp
-public object RatelimitInput { get; }
+public IResolvable|RulesetRulesRatelimit RatelimitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a>
 
 ---
 
@@ -21124,10 +21124,10 @@ public string Description { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21154,10 +21154,10 @@ public string Ref { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRules InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRules">RulesetRules</a>
 
 ---
 
@@ -21419,7 +21419,7 @@ private void ResetScoreResponseHeaderName()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.mitigationTimeoutInput">MitigationTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.periodInput">PeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsPerPeriodInput">RequestsPerPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsToOriginInput">RequestsToOriginInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsToOriginInput">RequestsToOriginInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.scorePerPeriodInput">ScorePerPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.scoreResponseHeaderNameInput">ScoreResponseHeaderNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.characteristics">Characteristics</a></code> | <code>string[]</code> | *No description.* |
@@ -21427,10 +21427,10 @@ private void ResetScoreResponseHeaderName()
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.mitigationTimeout">MitigationTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.period">Period</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsPerPeriod">RequestsPerPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsToOrigin">RequestsToOrigin</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsToOrigin">RequestsToOrigin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.scorePerPeriod">ScorePerPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.scoreResponseHeaderName">ScoreResponseHeaderName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a></code> | *No description.* |
 
 ---
 
@@ -21511,10 +21511,10 @@ public double RequestsPerPeriodInput { get; }
 ##### `RequestsToOriginInput`<sup>Optional</sup> <a name="RequestsToOriginInput" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsToOriginInput"></a>
 
 ```csharp
-public object RequestsToOriginInput { get; }
+public bool|IResolvable RequestsToOriginInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21591,10 +21591,10 @@ public double RequestsPerPeriod { get; }
 ##### `RequestsToOrigin`<sup>Required</sup> <a name="RequestsToOrigin" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.requestsToOrigin"></a>
 
 ```csharp
-public object RequestsToOrigin { get; }
+public bool|IResolvable RequestsToOrigin { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21621,10 +21621,10 @@ public string ScoreResponseHeaderName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRulesRatelimit InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit">RulesetRulesRatelimit</a>
 
 ---
 

@@ -14,20 +14,20 @@ from cdktf_cdktf_provider_cloudflare import stream
 stream.Stream(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   allowed_origins: typing.List[str] = None,
   creator: str = None,
   identifier: str = None,
   max_duration_seconds: typing.Union[int, float] = None,
   meta: str = None,
-  require_signed_urls: typing.Union[bool, IResolvable] = None,
+  require_signed_urls: bool | IResolvable = None,
   scheduled_deletion: str = None,
   thumbnail_timestamp_pct: typing.Union[int, float] = None,
   upload_expiry: str = None
@@ -38,20 +38,20 @@ stream.Stream(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | Lists the origins allowed to display the video. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.creator">creator</a></code> | <code>str</code> | A user-defined identifier for the media creator. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The maximum duration in seconds for a video upload. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing videos. |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.requireSignedUrls">require_signed_urls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the video can be a accessed using the UID. |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.requireSignedUrls">require_signed_urls</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the video can be a accessed using the UID. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.scheduledDeletion">scheduled_deletion</a></code> | <code>str</code> | Indicates the date and time at which the video will be deleted. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.thumbnailTimestampPct">thumbnail_timestamp_pct</a></code> | <code>typing.Union[int, float]</code> | The timestamp for a thumbnail image calculated as a percentage value of the video's duration. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.uploadExpiry">upload_expiry</a></code> | <code>str</code> | The date and time when the video upload URL is no longer valid for direct user uploads. |
@@ -78,13 +78,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ##### `require_signed_urls`<sup>Optional</sup> <a name="require_signed_urls" id="@cdktf/provider-cloudflare.stream.Stream.Initializer.parameter.requireSignedUrls"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the video can be a accessed using the UID.
 
@@ -489,7 +489,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-cloudflare.stream.Stream.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-cloudflare.stream.Stream.importFrom"></a>
@@ -552,7 +552,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -568,7 +568,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.stream.Stream.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -783,13 +783,13 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.created">created</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.input">input</a></code> | <code><a href="#@cdktf/provider-cloudflare.stream.StreamInputOutputReference">StreamInputOutputReference</a></code> | *No description.* |
@@ -811,7 +811,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.maxDurationSecondsInput">max_duration_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.metaInput">meta_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.requireSignedUrlsInput">require_signed_urls_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.requireSignedUrlsInput">require_signed_urls_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.scheduledDeletionInput">scheduled_deletion_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.thumbnailTimestampPctInput">thumbnail_timestamp_pct_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.uploadExpiryInput">upload_expiry_input</a></code> | <code>str</code> | *No description.* |
@@ -821,7 +821,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.meta">meta</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.requireSignedUrls">require_signed_urls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.requireSignedUrls">require_signed_urls</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.scheduledDeletion">scheduled_deletion</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.thumbnailTimestampPct">thumbnail_timestamp_pct</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.Stream.property.uploadExpiry">upload_expiry</a></code> | <code>str</code> | *No description.* |
@@ -903,20 +903,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.stream.Stream.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.stream.Stream.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -963,10 +963,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.stream.Stream.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1183,10 +1183,10 @@ meta_input: str
 ##### `require_signed_urls_input`<sup>Optional</sup> <a name="require_signed_urls_input" id="@cdktf/provider-cloudflare.stream.Stream.property.requireSignedUrlsInput"></a>
 
 ```python
-require_signed_urls_input: typing.Union[bool, IResolvable]
+require_signed_urls_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1283,10 +1283,10 @@ meta: str
 ##### `require_signed_urls`<sup>Required</sup> <a name="require_signed_urls" id="@cdktf/provider-cloudflare.stream.Stream.property.requireSignedUrls"></a>
 
 ```python
-require_signed_urls: typing.Union[bool, IResolvable]
+require_signed_urls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1348,20 +1348,20 @@ tfResourceType: str
 from cdktf_cdktf_provider_cloudflare import stream
 
 stream.StreamConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   allowed_origins: typing.List[str] = None,
   creator: str = None,
   identifier: str = None,
   max_duration_seconds: typing.Union[int, float] = None,
   meta: str = None,
-  require_signed_urls: typing.Union[bool, IResolvable] = None,
+  require_signed_urls: bool | IResolvable = None,
   scheduled_deletion: str = None,
   thumbnail_timestamp_pct: typing.Union[int, float] = None,
   upload_expiry: str = None
@@ -1372,20 +1372,20 @@ stream.StreamConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | Lists the origins allowed to display the video. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.creator">creator</a></code> | <code>str</code> | A user-defined identifier for the media creator. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The maximum duration in seconds for a video upload. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing videos. |
-| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.requireSignedUrls">require_signed_urls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the video can be a accessed using the UID. |
+| <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.requireSignedUrls">require_signed_urls</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the video can be a accessed using the UID. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.scheduledDeletion">scheduled_deletion</a></code> | <code>str</code> | Indicates the date and time at which the video will be deleted. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.thumbnailTimestampPct">thumbnail_timestamp_pct</a></code> | <code>typing.Union[int, float]</code> | The timestamp for a thumbnail image calculated as a percentage value of the video's duration. |
 | <code><a href="#@cdktf/provider-cloudflare.stream.StreamConfig.property.uploadExpiry">upload_expiry</a></code> | <code>str</code> | The date and time when the video upload URL is no longer valid for direct user uploads. |
@@ -1395,20 +1395,20 @@ stream.StreamConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.stream.StreamConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.stream.StreamConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1455,10 +1455,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.stream.StreamConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1553,10 +1553,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ##### `require_signed_urls`<sup>Optional</sup> <a name="require_signed_urls" id="@cdktf/provider-cloudflare.stream.StreamConfig.property.requireSignedUrls"></a>
 
 ```python
-require_signed_urls: typing.Union[bool, IResolvable]
+require_signed_urls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the video can be a accessed using the UID.
 
