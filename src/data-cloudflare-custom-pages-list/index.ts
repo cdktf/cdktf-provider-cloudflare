@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_pages_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/custom_pages_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareCustomPagesListConfig extends cdktf.TerraformMeta
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_pages_list#account_id DataCloudflareCustomPagesList#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/custom_pages_list#account_id DataCloudflareCustomPagesList#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_pages_list#max_items DataCloudflareCustomPagesList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/custom_pages_list#max_items DataCloudflareCustomPagesList#max_items}
   */
   readonly maxItems?: number;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_pages_list#zone_id DataCloudflareCustomPagesList#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/custom_pages_list#zone_id DataCloudflareCustomPagesList#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -143,7 +143,7 @@ export class DataCloudflareCustomPagesListResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_pages_list cloudflare_custom_pages_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/custom_pages_list cloudflare_custom_pages_list}
 */
 export class DataCloudflareCustomPagesList extends cdktf.TerraformDataSource {
 
@@ -159,7 +159,7 @@ export class DataCloudflareCustomPagesList extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareCustomPagesList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCustomPagesList to import
-  * @param importFromId The id of the existing DataCloudflareCustomPagesList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_pages_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCustomPagesList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/custom_pages_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCustomPagesList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -171,7 +171,7 @@ export class DataCloudflareCustomPagesList extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/custom_pages_list cloudflare_custom_pages_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/custom_pages_list cloudflare_custom_pages_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -182,7 +182,7 @@ export class DataCloudflareCustomPagesList extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_custom_pages_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

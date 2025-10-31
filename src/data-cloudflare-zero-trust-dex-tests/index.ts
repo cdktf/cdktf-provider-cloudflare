@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_dex_tests
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dex_tests
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareZeroTrustDexTestsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_dex_tests#account_id DataCloudflareZeroTrustDexTests#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dex_tests#account_id DataCloudflareZeroTrustDexTests#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_dex_tests#max_items DataCloudflareZeroTrustDexTests#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dex_tests#max_items DataCloudflareZeroTrustDexTests#max_items}
   */
   readonly maxItems?: number;
 }
@@ -90,7 +90,7 @@ export class DataCloudflareZeroTrustDexTestsResultDataOutputReference extends cd
 export interface DataCloudflareZeroTrustDexTestsResultTargetPolicies {
 }
 
-export function dataCloudflareZeroTrustDexTestsResultTargetPoliciesToTerraform(struct?: DataCloudflareZeroTrustDexTestsResultTargetPolicies): any {
+export function dataCloudflareZeroTrustDexTestsResultTargetPoliciesToTerraform(struct?: DataCloudflareZeroTrustDexTestsResultTargetPolicies | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -100,7 +100,7 @@ export function dataCloudflareZeroTrustDexTestsResultTargetPoliciesToTerraform(s
 }
 
 
-export function dataCloudflareZeroTrustDexTestsResultTargetPoliciesToHclTerraform(struct?: DataCloudflareZeroTrustDexTestsResultTargetPolicies): any {
+export function dataCloudflareZeroTrustDexTestsResultTargetPoliciesToHclTerraform(struct?: DataCloudflareZeroTrustDexTestsResultTargetPolicies | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -112,6 +112,7 @@ export function dataCloudflareZeroTrustDexTestsResultTargetPoliciesToHclTerrafor
 
 export class DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,18 +124,27 @@ export class DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCloudflareZeroTrustDexTestsResultTargetPolicies | undefined {
+  public get internalValue(): DataCloudflareZeroTrustDexTestsResultTargetPolicies | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareZeroTrustDexTestsResultTargetPolicies | undefined) {
+  public set internalValue(value: DataCloudflareZeroTrustDexTestsResultTargetPolicies | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
     }
   }
 
@@ -155,6 +165,7 @@ export class DataCloudflareZeroTrustDexTestsResultTargetPoliciesOutputReference 
 }
 
 export class DataCloudflareZeroTrustDexTestsResultTargetPoliciesList extends cdktf.ComplexList {
+  public internalValue? : DataCloudflareZeroTrustDexTestsResultTargetPolicies[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -173,6 +184,12 @@ export class DataCloudflareZeroTrustDexTestsResultTargetPoliciesList extends cdk
   }
 }
 export interface DataCloudflareZeroTrustDexTestsResult {
+  /**
+  * DEX rules targeted by this test
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dex_tests#target_policies DataCloudflareZeroTrustDexTests#target_policies}
+  */
+  readonly targetPolicies?: DataCloudflareZeroTrustDexTestsResultTargetPolicies[] | cdktf.IResolvable;
 }
 
 export function dataCloudflareZeroTrustDexTestsResultToTerraform(struct?: DataCloudflareZeroTrustDexTestsResult): any {
@@ -181,6 +198,7 @@ export function dataCloudflareZeroTrustDexTestsResultToTerraform(struct?: DataCl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    target_policies: cdktf.listMapper(dataCloudflareZeroTrustDexTestsResultTargetPoliciesToTerraform, false)(struct!.targetPolicies),
   }
 }
 
@@ -191,8 +209,16 @@ export function dataCloudflareZeroTrustDexTestsResultToHclTerraform(struct?: Dat
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    target_policies: {
+      value: cdktf.listMapperHcl(dataCloudflareZeroTrustDexTestsResultTargetPoliciesToHclTerraform, false)(struct!.targetPolicies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataCloudflareZeroTrustDexTestsResultTargetPoliciesList",
+    },
   };
-  return attrs;
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataCloudflareZeroTrustDexTestsResultOutputReference extends cdktf.ComplexObject {
@@ -211,15 +237,21 @@ export class DataCloudflareZeroTrustDexTestsResultOutputReference extends cdktf.
   public get internalValue(): DataCloudflareZeroTrustDexTestsResult | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._targetPolicies?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetPolicies = this._targetPolicies?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DataCloudflareZeroTrustDexTestsResult | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._targetPolicies.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._targetPolicies.internalValue = value.targetPolicies;
     }
   }
 
@@ -249,10 +281,20 @@ export class DataCloudflareZeroTrustDexTestsResultOutputReference extends cdktf.
     return this.getStringAttribute('name');
   }
 
-  // target_policies - computed: true, optional: false, required: false
+  // target_policies - computed: true, optional: true, required: false
   private _targetPolicies = new DataCloudflareZeroTrustDexTestsResultTargetPoliciesList(this, "target_policies", false);
   public get targetPolicies() {
     return this._targetPolicies;
+  }
+  public putTargetPolicies(value: DataCloudflareZeroTrustDexTestsResultTargetPolicies[] | cdktf.IResolvable) {
+    this._targetPolicies.internalValue = value;
+  }
+  public resetTargetPolicies() {
+    this._targetPolicies.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetPoliciesInput() {
+    return this._targetPolicies.internalValue;
   }
 
   // targeted - computed: true, optional: false, required: false
@@ -267,6 +309,7 @@ export class DataCloudflareZeroTrustDexTestsResultOutputReference extends cdktf.
 }
 
 export class DataCloudflareZeroTrustDexTestsResultList extends cdktf.ComplexList {
+  public internalValue? : DataCloudflareZeroTrustDexTestsResult[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -286,7 +329,7 @@ export class DataCloudflareZeroTrustDexTestsResultList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}
 */
 export class DataCloudflareZeroTrustDexTests extends cdktf.TerraformDataSource {
 
@@ -302,7 +345,7 @@ export class DataCloudflareZeroTrustDexTests extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareZeroTrustDexTests resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDexTests to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDexTests that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_dex_tests#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDexTests that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dex_tests#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDexTests to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -314,7 +357,7 @@ export class DataCloudflareZeroTrustDexTests extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -325,7 +368,7 @@ export class DataCloudflareZeroTrustDexTests extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zero_trust_dex_tests',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

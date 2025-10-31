@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,68 +15,68 @@ export interface DataCloudflareStreamsConfig extends cdktf.TerraformMetaArgument
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
   */
   readonly accountId: string;
   /**
   * Lists videos in ascending order of creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#asc DataCloudflareStreams#asc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#asc DataCloudflareStreams#asc}
   */
   readonly asc?: boolean | cdktf.IResolvable;
   /**
   * A user-defined identifier for the media creator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#creator DataCloudflareStreams#creator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#creator DataCloudflareStreams#creator}
   */
   readonly creator?: string;
   /**
   * Lists videos created before the specified date.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#end DataCloudflareStreams#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#end DataCloudflareStreams#end}
   */
   readonly end?: string;
   /**
   * Includes the total number of videos associated with the submitted query parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
   */
   readonly includeCounts?: boolean | cdktf.IResolvable;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
   */
   readonly maxItems?: number;
   /**
   * Provides a partial word match of the `name` key in the `meta` field. Slow for medium to large video libraries. May be unavailable for very large libraries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#search DataCloudflareStreams#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#search DataCloudflareStreams#search}
   */
   readonly search?: string;
   /**
   * Lists videos created after the specified date.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#start DataCloudflareStreams#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#start DataCloudflareStreams#start}
   */
   readonly start?: string;
   /**
   * Specifies the processing status for all quality levels for a video.
   * Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#status DataCloudflareStreams#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#status DataCloudflareStreams#status}
   */
   readonly status?: string;
   /**
   * Specifies whether the video is `vod` or `live`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#type DataCloudflareStreams#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#type DataCloudflareStreams#type}
   */
   readonly type?: string;
   /**
   * Provides a fast, exact string match on the `name` key in the `meta` field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
   */
   readonly videoName?: string;
 }
@@ -562,7 +562,7 @@ export class DataCloudflareStreamsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams cloudflare_streams}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams cloudflare_streams}
 */
 export class DataCloudflareStreams extends cdktf.TerraformDataSource {
 
@@ -578,7 +578,7 @@ export class DataCloudflareStreams extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareStreams resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareStreams to import
-  * @param importFromId The id of the existing DataCloudflareStreams that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareStreams that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareStreams to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -590,7 +590,7 @@ export class DataCloudflareStreams extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams cloudflare_streams} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams cloudflare_streams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -601,7 +601,7 @@ export class DataCloudflareStreams extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_streams',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
