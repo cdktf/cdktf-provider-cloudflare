@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiShield <a name="DataCloudflareApiShield" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield cloudflare_api_shield}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield cloudflare_api_shield}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.resetProperties">resetProperties</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetProperties` <a name="resetProperties" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.resetProperties"></a>
-
-```typescript
-public resetProperties(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareApiShield to
 
 The id of the existing DataCloudflareApiShield that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -401,9 +394,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.authIdCharacteristics">authIdCharacteristics</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldAuthIdCharacteristicsList">DataCloudflareApiShieldAuthIdCharacteristicsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.propertiesInput">propertiesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.properties">properties</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -540,16 +531,6 @@ public readonly authIdCharacteristics: DataCloudflareApiShieldAuthIdCharacterist
 
 ---
 
-##### `propertiesInput`<sup>Optional</sup> <a name="propertiesInput" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.propertiesInput"></a>
-
-```typescript
-public readonly propertiesInput: string[];
-```
-
-- *Type:* string[]
-
----
-
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.zoneIdInput"></a>
 
 ```typescript
@@ -557,16 +538,6 @@ public readonly zoneIdInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `properties`<sup>Required</sup> <a name="properties" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.properties"></a>
-
-```typescript
-public readonly properties: string[];
-```
-
-- *Type:* string[]
 
 ---
 
@@ -633,7 +604,6 @@ const dataCloudflareApiShieldConfig: dataCloudflareApiShield.DataCloudflareApiSh
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.properties">properties</a></code> | <code>string[]</code> | Requests information about certain properties. |
 
 ---
 
@@ -717,21 +687,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
-
----
-
-##### `properties`<sup>Optional</sup> <a name="properties" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.properties"></a>
-
-```typescript
-public readonly properties: string[];
-```
-
-- *Type:* string[]
-
-Requests information about certain properties.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield#properties DataCloudflareApiShield#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### MtlsCertificate <a name="MtlsCertificate" id="@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates whether the certificate is a CA or leaf certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The uploaded root CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Optional unique name for the certificate. Only used for human readability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
 
 ---
 
@@ -154,7 +154,7 @@ The private key for the certificate.
 
 This field is only needed for specific use cases such as using a custom certificate with Zero Trust's block page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
 
 ---
 
@@ -595,7 +595,7 @@ The construct id used in the generated config for the MtlsCertificate to import.
 
 The id of the existing MtlsCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1099,7 +1099,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
 
 ---
 
@@ -1113,7 +1113,7 @@ public java.lang.Boolean|IResolvable getCa();
 
 Indicates whether the certificate is a CA or leaf certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
 
 ---
 
@@ -1127,7 +1127,7 @@ public java.lang.String getCertificates();
 
 The uploaded root CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getName();
 
 Optional unique name for the certificate. Only used for human readability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
 
 ---
 
@@ -1157,7 +1157,7 @@ The private key for the certificate.
 
 This field is only needed for specific use cases such as using a custom certificate with Zero Trust's block page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
 
 ---
 
