@@ -4,7 +4,7 @@
 
 ### R2CustomDomain <a name="R2CustomDomain" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the custom domain to be added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable public bucket access at the custom domain. If undefined, the domain will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Zone ID of the custom domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
 
 ---
 
@@ -191,7 +191,7 @@ Minimum TLS Version the custom domain will accept for incoming connections.
 If not set, defaults to 1.0.
 Available values: "1.0", "1.1", "1.2", "1.3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
 
 ---
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the R2CustomDomain to import.
 
 The id of the existing R2CustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.lang.String getAccountId();
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
 
 ---
 
@@ -1174,7 +1174,7 @@ public java.lang.String getBucketName();
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
 
 ---
 
@@ -1188,7 +1188,7 @@ public java.lang.String getDomain();
 
 Name of the custom domain to be added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
 
 ---
 
@@ -1202,7 +1202,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether to enable public bucket access at the custom domain. If undefined, the domain will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
 
 ---
 
@@ -1216,7 +1216,7 @@ public java.lang.String getZoneId();
 
 Zone ID of the custom domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
 
 ---
 
@@ -1230,7 +1230,7 @@ public java.util.List<java.lang.String> getCiphers();
 
 An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
 
 ---
 
@@ -1244,7 +1244,7 @@ public java.lang.String getJurisdiction();
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
 
 ---
 
@@ -1261,7 +1261,7 @@ Minimum TLS Version the custom domain will accept for incoming connections.
 If not set, defaults to 1.0.
 Available values: "1.0", "1.1", "1.2", "1.3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
 
 ---
 

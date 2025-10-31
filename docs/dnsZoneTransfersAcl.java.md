@@ -4,7 +4,7 @@
 
 ### DnsZoneTransfersAcl <a name="DnsZoneTransfersAcl" id="@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer"></a>
 
@@ -36,7 +36,7 @@ DnsZoneTransfersAcl.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer.parameter.ipRange">ipRange</a></code> | <code>java.lang.String</code> | Allowed IPv4/IPv6 address range of primary or secondary nameservers. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the acl. |
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Allowed IPv4/IPv6 address range of primary or secondary nameservers.
 
 This will be applied for the entire account. The IP range is used to allow additional NOTIFY IPs for secondary zones and IPs Cloudflare allows AXFR/IXFR requests from for primary zones. CIDRs are limited to a maximum of /24 for IPv4 and /64 for IPv6 respectively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#ip_range DnsZoneTransfersAcl#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#ip_range DnsZoneTransfersAcl#ip_range}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the acl.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#name DnsZoneTransfersAcl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#name DnsZoneTransfersAcl#name}
 
 ---
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the DnsZoneTransfersAcl to imp
 
 The id of the existing DnsZoneTransfersAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ DnsZoneTransfersAclConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAclConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAclConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAclConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAclConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAclConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAclConfig.property.ipRange">ipRange</a></code> | <code>java.lang.String</code> | Allowed IPv4/IPv6 address range of primary or secondary nameservers. |
 | <code><a href="#@cdktf/provider-cloudflare.dnsZoneTransfersAcl.DnsZoneTransfersAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the acl. |
 
@@ -943,7 +943,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#account_id DnsZoneTransfersAcl#account_id}.
 
 ---
 
@@ -959,7 +959,7 @@ Allowed IPv4/IPv6 address range of primary or secondary nameservers.
 
 This will be applied for the entire account. The IP range is used to allow additional NOTIFY IPs for secondary zones and IPs Cloudflare allows AXFR/IXFR requests from for primary zones. CIDRs are limited to a maximum of /24 for IPv4 and /64 for IPv6 respectively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#ip_range DnsZoneTransfersAcl#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#ip_range DnsZoneTransfersAcl#ip_range}
 
 ---
 
@@ -973,7 +973,7 @@ public java.lang.String getName();
 
 The name of the acl.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/dns_zone_transfers_acl#name DnsZoneTransfersAcl#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl#name DnsZoneTransfersAcl#name}
 
 ---
 

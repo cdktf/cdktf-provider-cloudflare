@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface WorkersCustomDomainConfig extends cdktf.TerraformMetaArguments 
   /**
   * Identifer of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Worker environment associated with the zone and hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
   */
   readonly environment: string;
   /**
   * Hostname of the Worker Domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
   */
   readonly hostname: string;
   /**
   * Worker service associated with the zone and hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
   */
   readonly service: string;
   /**
   * Identifier of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}
 */
 export class WorkersCustomDomain extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class WorkersCustomDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkersCustomDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersCustomDomain to import
-  * @param importFromId The id of the existing WorkersCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersCustomDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class WorkersCustomDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class WorkersCustomDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_custom_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DataCloudflareSnippetsList <a name="DataCloudflareSnippetsList" id="@cdktf/provider-cloudflare.dataCloudflareSnippetsList.DataCloudflareSnippetsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/snippets_list cloudflare_snippets_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/snippets_list cloudflare_snippets_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSnippetsList.DataCloudflareSnippetsList.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/snippets_list#zone_id DataCloudflareSnippetsList#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/snippets_list#zone_id DataCloudflareSnippetsList#zone_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/snippets_list#max_items DataCloudflareSnippetsList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/snippets_list#max_items DataCloudflareSnippetsList#max_items}
 
 ---
 
@@ -446,7 +446,7 @@ The construct id used in the generated config for the DataCloudflareSnippetsList
 
 The id of the existing DataCloudflareSnippetsList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/snippets_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/snippets_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -790,7 +790,7 @@ public java.lang.String getZoneId();
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/snippets_list#zone_id DataCloudflareSnippetsList#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/snippets_list#zone_id DataCloudflareSnippetsList#zone_id}
 
 ---
 
@@ -804,7 +804,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/snippets_list#max_items DataCloudflareSnippetsList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/snippets_list#max_items DataCloudflareSnippetsList#max_items}
 
 ---
 

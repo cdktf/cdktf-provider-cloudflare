@@ -4,7 +4,7 @@
 
 ### DataCloudflareRegistrarDomain <a name="DataCloudflareRegistrarDomain" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/registrar_domain cloudflare_registrar_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/registrar_domain cloudflare_registrar_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
 
 ---
 
@@ -439,7 +439,7 @@ The construct id used in the generated config for the DataCloudflareRegistrarDom
 
 The id of the existing DataCloudflareRegistrarDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/registrar_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/registrar_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -772,7 +772,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
 
 ---
 
@@ -786,7 +786,7 @@ public java.lang.String getDomainName();
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
 
 ---
 

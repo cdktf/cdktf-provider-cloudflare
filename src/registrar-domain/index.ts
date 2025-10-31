@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface RegistrarDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Auto-renew controls whether subscription is automatically renewed upon domain expiration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
   */
   readonly autoRenew?: boolean | cdktf.IResolvable;
   /**
   * Domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
   */
   readonly domainName: string;
   /**
   * Shows whether a registrar lock is in place for a domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
   */
   readonly locked?: boolean | cdktf.IResolvable;
   /**
   * Privacy option controls redacting WHOIS information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
   */
   readonly privacy?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain cloudflare_registrar_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain cloudflare_registrar_domain}
 */
 export class RegistrarDomain extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class RegistrarDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RegistrarDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegistrarDomain to import
-  * @param importFromId The id of the existing RegistrarDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegistrarDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegistrarDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class RegistrarDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class RegistrarDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_registrar_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

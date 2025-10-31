@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflarePagesProjectConfig extends cdktf.TerraformMetaArg
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
   */
   readonly projectName: string;
 }
@@ -1427,6 +1427,60 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap e
     return new DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference(this.terraformResource, this.terraformAttribute, key);
   }
 }
+export interface DataCloudflarePagesProjectDeploymentConfigsPreviewLimits {
+}
+
+export function dataCloudflarePagesProjectDeploymentConfigsPreviewLimitsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflarePagesProjectDeploymentConfigsPreviewLimitsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflarePagesProjectDeploymentConfigsPreviewLimits | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflarePagesProjectDeploymentConfigsPreviewLimits | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cpu_ms - computed: true, optional: false, required: false
+  public get cpuMs() {
+    return this.getNumberAttribute('cpu_ms');
+  }
+}
 export interface DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificates {
 }
 
@@ -1916,6 +1970,11 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference e
     return this._aiBindings;
   }
 
+  // always_use_latest_compatibility_date - computed: true, optional: false, required: false
+  public get alwaysUseLatestCompatibilityDate() {
+    return this.getBooleanAttribute('always_use_latest_compatibility_date');
+  }
+
   // analytics_engine_datasets - computed: true, optional: false, required: false
   private _analyticsEngineDatasets = new DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap(this, "analytics_engine_datasets");
   public get analyticsEngineDatasets() {
@@ -1926,6 +1985,11 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference e
   private _browsers = new DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap(this, "browsers");
   public get browsers() {
     return this._browsers;
+  }
+
+  // build_image_major_version - computed: true, optional: false, required: false
+  public get buildImageMajorVersion() {
+    return this.getNumberAttribute('build_image_major_version');
   }
 
   // compatibility_date - computed: true, optional: false, required: false
@@ -1956,6 +2020,11 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference e
     return this._envVars;
   }
 
+  // fail_open - computed: true, optional: false, required: false
+  public get failOpen() {
+    return this.getBooleanAttribute('fail_open');
+  }
+
   // hyperdrive_bindings - computed: true, optional: false, required: false
   private _hyperdriveBindings = new DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap(this, "hyperdrive_bindings");
   public get hyperdriveBindings() {
@@ -1966,6 +2035,12 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference e
   private _kvNamespaces = new DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap(this, "kv_namespaces");
   public get kvNamespaces() {
     return this._kvNamespaces;
+  }
+
+  // limits - computed: true, optional: false, required: false
+  private _limits = new DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference(this, "limits");
+  public get limits() {
+    return this._limits;
   }
 
   // mtls_certificates - computed: true, optional: false, required: false
@@ -1998,10 +2073,20 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference e
     return this._services;
   }
 
+  // usage_model - computed: true, optional: false, required: false
+  public get usageModel() {
+    return this.getStringAttribute('usage_model');
+  }
+
   // vectorize_bindings - computed: true, optional: false, required: false
   private _vectorizeBindings = new DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap(this, "vectorize_bindings");
   public get vectorizeBindings() {
     return this._vectorizeBindings;
+  }
+
+  // wrangler_config_hash - computed: true, optional: false, required: false
+  public get wranglerConfigHash() {
+    return this.getStringAttribute('wrangler_config_hash');
   }
 }
 export interface DataCloudflarePagesProjectDeploymentConfigsProductionAiBindings {
@@ -2588,6 +2673,60 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMa
     return new DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesOutputReference(this.terraformResource, this.terraformAttribute, key);
   }
 }
+export interface DataCloudflarePagesProjectDeploymentConfigsProductionLimits {
+}
+
+export function dataCloudflarePagesProjectDeploymentConfigsProductionLimitsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflarePagesProjectDeploymentConfigsProductionLimitsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflarePagesProjectDeploymentConfigsProductionLimits | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflarePagesProjectDeploymentConfigsProductionLimits | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cpu_ms - computed: true, optional: false, required: false
+  public get cpuMs() {
+    return this.getNumberAttribute('cpu_ms');
+  }
+}
 export interface DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificates {
 }
 
@@ -3077,6 +3216,11 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionOutputReferenc
     return this._aiBindings;
   }
 
+  // always_use_latest_compatibility_date - computed: true, optional: false, required: false
+  public get alwaysUseLatestCompatibilityDate() {
+    return this.getBooleanAttribute('always_use_latest_compatibility_date');
+  }
+
   // analytics_engine_datasets - computed: true, optional: false, required: false
   private _analyticsEngineDatasets = new DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap(this, "analytics_engine_datasets");
   public get analyticsEngineDatasets() {
@@ -3087,6 +3231,11 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionOutputReferenc
   private _browsers = new DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap(this, "browsers");
   public get browsers() {
     return this._browsers;
+  }
+
+  // build_image_major_version - computed: true, optional: false, required: false
+  public get buildImageMajorVersion() {
+    return this.getNumberAttribute('build_image_major_version');
   }
 
   // compatibility_date - computed: true, optional: false, required: false
@@ -3117,6 +3266,11 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionOutputReferenc
     return this._envVars;
   }
 
+  // fail_open - computed: true, optional: false, required: false
+  public get failOpen() {
+    return this.getBooleanAttribute('fail_open');
+  }
+
   // hyperdrive_bindings - computed: true, optional: false, required: false
   private _hyperdriveBindings = new DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsMap(this, "hyperdrive_bindings");
   public get hyperdriveBindings() {
@@ -3127,6 +3281,12 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionOutputReferenc
   private _kvNamespaces = new DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap(this, "kv_namespaces");
   public get kvNamespaces() {
     return this._kvNamespaces;
+  }
+
+  // limits - computed: true, optional: false, required: false
+  private _limits = new DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference(this, "limits");
+  public get limits() {
+    return this._limits;
   }
 
   // mtls_certificates - computed: true, optional: false, required: false
@@ -3159,10 +3319,20 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionOutputReferenc
     return this._services;
   }
 
+  // usage_model - computed: true, optional: false, required: false
+  public get usageModel() {
+    return this.getStringAttribute('usage_model');
+  }
+
   // vectorize_bindings - computed: true, optional: false, required: false
   private _vectorizeBindings = new DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap(this, "vectorize_bindings");
   public get vectorizeBindings() {
     return this._vectorizeBindings;
+  }
+
+  // wrangler_config_hash - computed: true, optional: false, required: false
+  public get wranglerConfigHash() {
+    return this.getStringAttribute('wrangler_config_hash');
   }
 }
 export interface DataCloudflarePagesProjectDeploymentConfigs {
@@ -4131,7 +4301,7 @@ export class DataCloudflarePagesProjectSourceOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project cloudflare_pages_project}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project cloudflare_pages_project}
 */
 export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
 
@@ -4147,7 +4317,7 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflarePagesProject resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePagesProject to import
-  * @param importFromId The id of the existing DataCloudflarePagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePagesProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4159,7 +4329,7 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4170,7 +4340,7 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -4230,6 +4400,16 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
     return this.getListAttribute('domains');
   }
 
+  // framework - computed: true, optional: false, required: false
+  public get framework() {
+    return this.getStringAttribute('framework');
+  }
+
+  // framework_version - computed: true, optional: false, required: false
+  public get frameworkVersion() {
+    return this.getStringAttribute('framework_version');
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -4246,9 +4426,19 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
     return this.getStringAttribute('name');
   }
 
+  // preview_script_name - computed: true, optional: false, required: false
+  public get previewScriptName() {
+    return this.getStringAttribute('preview_script_name');
+  }
+
   // production_branch - computed: true, optional: false, required: false
   public get productionBranch() {
     return this.getStringAttribute('production_branch');
+  }
+
+  // production_script_name - computed: true, optional: false, required: false
+  public get productionScriptName() {
+    return this.getStringAttribute('production_script_name');
   }
 
   // project_name - computed: false, optional: false, required: true
@@ -4273,6 +4463,11 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
   // subdomain - computed: true, optional: false, required: false
   public get subdomain() {
     return this.getStringAttribute('subdomain');
+  }
+
+  // uses_functions - computed: true, optional: false, required: false
+  public get usesFunctions() {
+    return this.getBooleanAttribute('uses_functions');
   }
 
   // =========

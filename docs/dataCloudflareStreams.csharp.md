@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreams <a name="DataCloudflareStreams" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams cloudflare_streams}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams cloudflare_streams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DataCloudflareStreams to i
 
 The id of the existing DataCloudflareStreams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,7 +995,7 @@ public string AccountId { get; set; }
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
 
 ---
 
@@ -1009,7 +1009,7 @@ public bool|IResolvable Asc { get; set; }
 
 Lists videos in ascending order of creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#asc DataCloudflareStreams#asc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#asc DataCloudflareStreams#asc}
 
 ---
 
@@ -1023,7 +1023,7 @@ public string Creator { get; set; }
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#creator DataCloudflareStreams#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#creator DataCloudflareStreams#creator}
 
 ---
 
@@ -1037,7 +1037,7 @@ public string End { get; set; }
 
 Lists videos created before the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#end DataCloudflareStreams#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#end DataCloudflareStreams#end}
 
 ---
 
@@ -1051,7 +1051,7 @@ public bool|IResolvable IncludeCounts { get; set; }
 
 Includes the total number of videos associated with the submitted query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
 
 ---
 
@@ -1065,7 +1065,7 @@ public double MaxItems { get; set; }
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
 
 ---
 
@@ -1081,7 +1081,7 @@ Provides a partial word match of the `name` key in the `meta` field.
 
 Slow for medium to large video libraries. May be unavailable for very large libraries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#search DataCloudflareStreams#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#search DataCloudflareStreams#search}
 
 ---
 
@@ -1095,7 +1095,7 @@ public string Start { get; set; }
 
 Lists videos created after the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#start DataCloudflareStreams#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#start DataCloudflareStreams#start}
 
 ---
 
@@ -1109,7 +1109,7 @@ public string Status { get; set; }
 
 Specifies the processing status for all quality levels for a video. Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#status DataCloudflareStreams#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#status DataCloudflareStreams#status}
 
 ---
 
@@ -1123,7 +1123,7 @@ public string Type { get; set; }
 
 Specifies whether the video is `vod` or `live`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#type DataCloudflareStreams#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#type DataCloudflareStreams#type}
 
 ---
 
@@ -1137,7 +1137,7 @@ public string VideoName { get; set; }
 
 Provides a fast, exact string match on the `name` key in the `meta` field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
 
 ---
 

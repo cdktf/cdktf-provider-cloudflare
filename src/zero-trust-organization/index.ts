@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,75 +15,75 @@ export interface ZeroTrustOrganizationConfig extends cdktf.TerraformMetaArgument
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
   */
   readonly accountId?: string;
   /**
   * When set to true, users can authenticate via WARP for any application in your organization. Application settings will take precedence over this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
   */
   readonly allowAuthenticateViaWarp?: boolean | cdktf.IResolvable;
   /**
   * The unique subdomain assigned to your Zero Trust organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
   */
   readonly authDomain?: string;
   /**
   * When set to `true`, users skip the identity provider selection step during login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
   */
   readonly autoRedirectToIdentity?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}
   */
   readonly customPages?: ZeroTrustOrganizationCustomPages;
   /**
   * Lock all settings as Read-Only in the Dashboard, regardless of user permission. Updates may only be made via the API or Terraform for this account when enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
   */
   readonly isUiReadOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}
   */
   readonly loginDesign?: ZeroTrustOrganizationLoginDesign;
   /**
   * The name of your Zero Trust organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
   */
   readonly name?: string;
   /**
   * The amount of time that tokens issued for applications will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
   */
   readonly sessionDuration?: string;
   /**
   * A description of the reason why the UI read only field is being toggled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
   */
   readonly uiReadOnlyToggleReason?: string;
   /**
   * The amount of time a user seat is inactive before it expires. When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count.  Minimum value for this setting is 1 month (730h). Must be in the format `300ms` or `2h45m`. Valid time units are: `ns`, `us` (or `µs`), `ms`, `s`, `m`, `h`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
   */
   readonly userSeatExpirationInactiveTime?: string;
   /**
   * The amount of time that tokens issued for applications will be valid. Must be in the format `30m` or `2h45m`. Valid time units are: m, h.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
   */
   readonly warpAuthSessionDuration?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -91,13 +91,13 @@ export interface ZeroTrustOrganizationCustomPages {
   /**
   * The uid of the custom page to use when a user is denied access after failing a non-identity rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
   */
   readonly forbidden?: string;
   /**
   * The uid of the custom page to use when a user is denied access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
   */
   readonly identityDenied?: string;
 }
@@ -222,31 +222,31 @@ export interface ZeroTrustOrganizationLoginDesign {
   /**
   * The background color on your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * The text at the bottom of your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
   */
   readonly footerText?: string;
   /**
   * The text at the top of your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
   */
   readonly headerText?: string;
   /**
   * The URL of the logo on your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
   */
   readonly logoPath?: string;
   /**
   * The text color on your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
   */
   readonly textColor?: string;
 }
@@ -456,7 +456,7 @@ export class ZeroTrustOrganizationLoginDesignOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}
 */
 export class ZeroTrustOrganization extends cdktf.TerraformResource {
 
@@ -472,7 +472,7 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustOrganization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustOrganization to import
-  * @param importFromId The id of the existing ZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -484,7 +484,7 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -495,7 +495,7 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

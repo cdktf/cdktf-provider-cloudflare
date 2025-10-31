@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiShieldSchemaValidationSettings <a name="DataCloudflareApiShieldSchemaValidationSettings" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemaValidationSettings.DataCloudflareApiShieldSchemaValidationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShieldSchemaValidationSettings.DataCloudflareApiShieldSchemaValidationSettings.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield_schema_validation_settings#zone_id DataCloudflareApiShieldSchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield_schema_validation_settings#zone_id DataCloudflareApiShieldSchemaValidationSettings#zone_id}
 
 ---
 
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataCloudflareApiShieldSch
 
 The id of the existing DataCloudflareApiShieldSchemaValidationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield_schema_validation_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield_schema_validation_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,7 +758,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield_schema_validation_settings#zone_id DataCloudflareApiShieldSchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield_schema_validation_settings#zone_id DataCloudflareApiShieldSchemaValidationSettings#zone_id}
 
 ---
 

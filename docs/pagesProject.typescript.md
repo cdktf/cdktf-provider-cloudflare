@@ -4,7 +4,7 @@
 
 ### PagesProject <a name="PagesProject" id="@cdktf/provider-cloudflare.pagesProject.PagesProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project cloudflare_pages_project}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project cloudflare_pages_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.Initializer"></a>
 
@@ -78,7 +78,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.putSource">putSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.resetBuildConfig">resetBuildConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.resetDeploymentConfigs">resetDeploymentConfigs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.resetProductionBranch">resetProductionBranch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.resetSource">resetSource</a></code> | *No description.* |
 
 ---
@@ -419,12 +418,6 @@ public resetBuildConfig(): void
 public resetDeploymentConfigs(): void
 ```
 
-##### `resetProductionBranch` <a name="resetProductionBranch" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.resetProductionBranch"></a>
-
-```typescript
-public resetProductionBranch(): void
-```
-
 ##### `resetSource` <a name="resetSource" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.resetSource"></a>
 
 ```typescript
@@ -534,7 +527,7 @@ The construct id used in the generated config for the PagesProject to import.
 
 The id of the existing PagesProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -569,10 +562,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigs">deploymentConfigs</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference">PagesProjectDeploymentConfigsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.domains">domains</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.framework">framework</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.frameworkVersion">frameworkVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.latestDeployment">latestDeployment</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectLatestDeploymentOutputReference">PagesProjectLatestDeploymentOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.previewScriptName">previewScriptName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.productionScriptName">productionScriptName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.source">source</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceOutputReference">PagesProjectSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.subdomain">subdomain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.usesFunctions">usesFunctions</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.buildConfigInput">buildConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProject.property.deploymentConfigsInput">deploymentConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | *No description.* |
@@ -777,6 +775,26 @@ public readonly domains: string[];
 
 ---
 
+##### `framework`<sup>Required</sup> <a name="framework" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.framework"></a>
+
+```typescript
+public readonly framework: string;
+```
+
+- *Type:* string
+
+---
+
+##### `frameworkVersion`<sup>Required</sup> <a name="frameworkVersion" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.frameworkVersion"></a>
+
+```typescript
+public readonly frameworkVersion: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.id"></a>
 
 ```typescript
@@ -797,6 +815,26 @@ public readonly latestDeployment: PagesProjectLatestDeploymentOutputReference;
 
 ---
 
+##### `previewScriptName`<sup>Required</sup> <a name="previewScriptName" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.previewScriptName"></a>
+
+```typescript
+public readonly previewScriptName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `productionScriptName`<sup>Required</sup> <a name="productionScriptName" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.productionScriptName"></a>
+
+```typescript
+public readonly productionScriptName: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.source"></a>
 
 ```typescript
@@ -814,6 +852,16 @@ public readonly subdomain: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `usesFunctions`<sup>Required</sup> <a name="usesFunctions" id="@cdktf/provider-cloudflare.pagesProject.PagesProject.property.usesFunctions"></a>
+
+```typescript
+public readonly usesFunctions: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -960,7 +1008,7 @@ public readonly buildCaching: boolean | IResolvable;
 
 Enable build caching for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#build_caching PagesProject#build_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#build_caching PagesProject#build_caching}
 
 ---
 
@@ -974,7 +1022,7 @@ public readonly buildCommand: string;
 
 Command used to build project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#build_command PagesProject#build_command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#build_command PagesProject#build_command}
 
 ---
 
@@ -988,7 +1036,7 @@ public readonly destinationDir: string;
 
 Output directory of the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
 
 ---
 
@@ -1002,7 +1050,7 @@ public readonly rootDir: string;
 
 Directory to run the command.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
 
 ---
 
@@ -1016,7 +1064,7 @@ public readonly webAnalyticsTag: string;
 
 The classifying tag for analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
 
 ---
 
@@ -1030,7 +1078,7 @@ public readonly webAnalyticsToken: string;
 
 The auth token for analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
 
 ---
 
@@ -1156,10 +1204,10 @@ const pagesProjectConfig: pagesProject.PagesProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.name">name</a></code> | <code>string</code> | Name of the project. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.productionBranch">productionBranch</a></code> | <code>string</code> | Production branch of the project. Used to identify production deployments. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.buildConfig">buildConfig</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfig">PagesProjectBuildConfig</a></code> | Configs for the project build process. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.deploymentConfigs">deploymentConfigs</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigs">PagesProjectDeploymentConfigs</a></code> | Configs for deployments in a project. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.productionBranch">productionBranch</a></code> | <code>string</code> | Production branch of the project. Used to identify production deployments. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.source">source</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#source PagesProject#source}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.source">source</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#source PagesProject#source}. |
 
 ---
 
@@ -1243,7 +1291,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#account_id PagesProject#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#account_id PagesProject#account_id}
 
 ---
 
@@ -1257,7 +1305,21 @@ public readonly name: string;
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#name PagesProject#name}
+
+---
+
+##### `productionBranch`<sup>Required</sup> <a name="productionBranch" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.productionBranch"></a>
+
+```typescript
+public readonly productionBranch: string;
+```
+
+- *Type:* string
+
+Production branch of the project. Used to identify production deployments.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
 
 ---
 
@@ -1271,7 +1333,7 @@ public readonly buildConfig: PagesProjectBuildConfig;
 
 Configs for the project build process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#build_config PagesProject#build_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#build_config PagesProject#build_config}
 
 ---
 
@@ -1285,21 +1347,7 @@ public readonly deploymentConfigs: PagesProjectDeploymentConfigs;
 
 Configs for deployments in a project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
-
----
-
-##### `productionBranch`<sup>Optional</sup> <a name="productionBranch" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectConfig.property.productionBranch"></a>
-
-```typescript
-public readonly productionBranch: string;
-```
-
-- *Type:* string
-
-Production branch of the project. Used to identify production deployments.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
 
 ---
 
@@ -1311,7 +1359,7 @@ public readonly source: PagesProjectSource;
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource">PagesProjectSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#source PagesProject#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#source PagesProject#source}.
 
 ---
 
@@ -1344,7 +1392,7 @@ public readonly preview: PagesProjectDeploymentConfigsPreview;
 
 Configs for preview deploys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview PagesProject#preview}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#preview PagesProject#preview}
 
 ---
 
@@ -1358,7 +1406,7 @@ public readonly production: PagesProjectDeploymentConfigsProduction;
 
 Configs for production deploys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production PagesProject#production}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#production PagesProject#production}
 
 ---
 
@@ -1377,21 +1425,27 @@ const pagesProjectDeploymentConfigsPreview: pagesProject.PagesProjectDeploymentC
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.aiBindings">aiBindings</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>}</code> | Constellation bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.alwaysUseLatestCompatibilityDate">alwaysUseLatestCompatibilityDate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to always use the latest compatibility date for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.analyticsEngineDatasets">analyticsEngineDatasets</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>}</code> | Analytics Engine bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.browsers">browsers</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>}</code> | Browser bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.buildImageMajorVersion">buildImageMajorVersion</a></code> | <code>number</code> | The major version of the build image to use for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.compatibilityDate">compatibilityDate</a></code> | <code>string</code> | Compatibility date used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.compatibilityFlags">compatibilityFlags</a></code> | <code>string[]</code> | Compatibility flags used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.d1Databases">d1Databases</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>}</code> | D1 databases used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.durableObjectNamespaces">durableObjectNamespaces</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>}</code> | Durable Object namespaces used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.envVars">envVars</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>}</code> | Environment variables used for builds and Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to fail open when the deployment config cannot be applied. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.hyperdriveBindings">hyperdriveBindings</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>}</code> | Hyperdrive bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.kvNamespaces">kvNamespaces</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>}</code> | KV namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits">PagesProjectDeploymentConfigsPreviewLimits</a></code> | Limits for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.mtlsCertificates">mtlsCertificates</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>}</code> | mTLS bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | Placement setting used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.queueProducers">queueProducers</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>}</code> | Queue Producer bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.r2Buckets">r2Buckets</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>}</code> | R2 buckets used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.services">services</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>}</code> | Services used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.usageModel">usageModel</a></code> | <code>string</code> | The usage model for Pages Functions. Available values: "standard", "bundled", "unbound". |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.vectorizeBindings">vectorizeBindings</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>}</code> | Vectorize bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.wranglerConfigHash">wranglerConfigHash</a></code> | <code>string</code> | Hash of the Wrangler configuration used for the deployment. |
 
 ---
 
@@ -1405,7 +1459,21 @@ public readonly aiBindings: IResolvable | {[ key: string ]: PagesProjectDeployme
 
 Constellation bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+
+---
+
+##### `alwaysUseLatestCompatibilityDate`<sup>Optional</sup> <a name="alwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.alwaysUseLatestCompatibilityDate"></a>
+
+```typescript
+public readonly alwaysUseLatestCompatibilityDate: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether to always use the latest compatibility date for Pages Functions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
 
 ---
 
@@ -1419,7 +1487,7 @@ public readonly analyticsEngineDatasets: IResolvable | {[ key: string ]: PagesPr
 
 Analytics Engine bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
 
 ---
 
@@ -1433,7 +1501,21 @@ public readonly browsers: IResolvable | {[ key: string ]: PagesProjectDeployment
 
 Browser bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#browsers PagesProject#browsers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#browsers PagesProject#browsers}
+
+---
+
+##### `buildImageMajorVersion`<sup>Optional</sup> <a name="buildImageMajorVersion" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.buildImageMajorVersion"></a>
+
+```typescript
+public readonly buildImageMajorVersion: number;
+```
+
+- *Type:* number
+
+The major version of the build image to use for Pages Functions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#build_image_major_version PagesProject#build_image_major_version}
 
 ---
 
@@ -1447,7 +1529,7 @@ public readonly compatibilityDate: string;
 
 Compatibility date used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
 
 ---
 
@@ -1461,7 +1543,7 @@ public readonly compatibilityFlags: string[];
 
 Compatibility flags used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
 
 ---
 
@@ -1475,7 +1557,7 @@ public readonly d1Databases: IResolvable | {[ key: string ]: PagesProjectDeploym
 
 D1 databases used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
 
 ---
 
@@ -1489,7 +1571,7 @@ public readonly durableObjectNamespaces: IResolvable | {[ key: string ]: PagesPr
 
 Durable Object namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
 
 ---
 
@@ -1503,7 +1585,21 @@ public readonly envVars: IResolvable | {[ key: string ]: PagesProjectDeploymentC
 
 Environment variables used for builds and Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+
+---
+
+##### `failOpen`<sup>Optional</sup> <a name="failOpen" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.failOpen"></a>
+
+```typescript
+public readonly failOpen: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether to fail open when the deployment config cannot be applied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
 
 ---
 
@@ -1517,7 +1613,7 @@ public readonly hyperdriveBindings: IResolvable | {[ key: string ]: PagesProject
 
 Hyperdrive bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
 
 ---
 
@@ -1531,7 +1627,21 @@ public readonly kvNamespaces: IResolvable | {[ key: string ]: PagesProjectDeploy
 
 KV namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+
+---
+
+##### `limits`<sup>Optional</sup> <a name="limits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.limits"></a>
+
+```typescript
+public readonly limits: PagesProjectDeploymentConfigsPreviewLimits;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits">PagesProjectDeploymentConfigsPreviewLimits</a>
+
+Limits for Pages Functions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#limits PagesProject#limits}
 
 ---
 
@@ -1545,7 +1655,7 @@ public readonly mtlsCertificates: IResolvable | {[ key: string ]: PagesProjectDe
 
 mTLS bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
 
 ---
 
@@ -1559,7 +1669,7 @@ public readonly placement: PagesProjectDeploymentConfigsPreviewPlacement;
 
 Placement setting used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#placement PagesProject#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#placement PagesProject#placement}
 
 ---
 
@@ -1573,7 +1683,7 @@ public readonly queueProducers: IResolvable | {[ key: string ]: PagesProjectDepl
 
 Queue Producer bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
 
 ---
 
@@ -1587,7 +1697,7 @@ public readonly r2Buckets: IResolvable | {[ key: string ]: PagesProjectDeploymen
 
 R2 buckets used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
 
 ---
 
@@ -1601,7 +1711,21 @@ public readonly services: IResolvable | {[ key: string ]: PagesProjectDeployment
 
 Services used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#services PagesProject#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#services PagesProject#services}
+
+---
+
+##### `usageModel`<sup>Optional</sup> <a name="usageModel" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.usageModel"></a>
+
+```typescript
+public readonly usageModel: string;
+```
+
+- *Type:* string
+
+The usage model for Pages Functions. Available values: "standard", "bundled", "unbound".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
 
 ---
 
@@ -1615,7 +1739,21 @@ public readonly vectorizeBindings: IResolvable | {[ key: string ]: PagesProjectD
 
 Vectorize bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+
+---
+
+##### `wranglerConfigHash`<sup>Optional</sup> <a name="wranglerConfigHash" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview.property.wranglerConfigHash"></a>
+
+```typescript
+public readonly wranglerConfigHash: string;
+```
+
+- *Type:* string
+
+Hash of the Wrangler configuration used for the deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#wrangler_config_hash PagesProject#wrangler_config_hash}
 
 ---
 
@@ -1633,7 +1771,7 @@ const pagesProjectDeploymentConfigsPreviewAiBindings: pagesProject.PagesProjectD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#project_id PagesProject#project_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#project_id PagesProject#project_id}. |
 
 ---
 
@@ -1645,7 +1783,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#project_id PagesProject#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#project_id PagesProject#project_id}.
 
 ---
 
@@ -1677,7 +1815,7 @@ public readonly dataset: string;
 
 Name of the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#dataset PagesProject#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#dataset PagesProject#dataset}
 
 ---
 
@@ -1720,7 +1858,7 @@ public readonly id: string;
 
 UUID of the D1 database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#id PagesProject#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#id PagesProject#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1755,7 +1893,7 @@ public readonly namespaceId: string;
 
 ID of the Durable Object namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
 
 ---
 
@@ -1788,7 +1926,7 @@ public readonly type: string;
 
 Available values: "plain_text", "secret_text".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#type PagesProject#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#type PagesProject#type}
 
 ---
 
@@ -1802,7 +1940,7 @@ public readonly value: string;
 
 Environment variable value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#value PagesProject#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#value PagesProject#value}
 
 ---
 
@@ -1820,7 +1958,7 @@ const pagesProjectDeploymentConfigsPreviewHyperdriveBindings: pagesProject.Pages
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#id PagesProject#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#id PagesProject#id}. |
 
 ---
 
@@ -1832,7 +1970,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#id PagesProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#id PagesProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1867,7 +2005,39 @@ public readonly namespaceId: string;
 
 ID of the KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+
+---
+
+### PagesProjectDeploymentConfigsPreviewLimits <a name="PagesProjectDeploymentConfigsPreviewLimits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits.Initializer"></a>
+
+```typescript
+import { pagesProject } from '@cdktf/provider-cloudflare'
+
+const pagesProjectDeploymentConfigsPreviewLimits: pagesProject.PagesProjectDeploymentConfigsPreviewLimits = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits.property.cpuMs">cpuMs</a></code> | <code>number</code> | CPU time limit in milliseconds. |
+
+---
+
+##### `cpuMs`<sup>Optional</sup> <a name="cpuMs" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits.property.cpuMs"></a>
+
+```typescript
+public readonly cpuMs: number;
+```
+
+- *Type:* number
+
+CPU time limit in milliseconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#cpu_ms PagesProject#cpu_ms}
 
 ---
 
@@ -1885,7 +2055,7 @@ const pagesProjectDeploymentConfigsPreviewMtlsCertificates: pagesProject.PagesPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates.property.certificateId">certificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates.property.certificateId">certificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}. |
 
 ---
 
@@ -1897,7 +2067,7 @@ public readonly certificateId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}.
 
 ---
 
@@ -1929,7 +2099,7 @@ public readonly mode: string;
 
 Placement mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#mode PagesProject#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#mode PagesProject#mode}
 
 ---
 
@@ -1961,7 +2131,7 @@ public readonly name: string;
 
 Name of the Queue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -1994,7 +2164,7 @@ public readonly jurisdiction: string;
 
 Jurisdiction of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
 
 ---
 
@@ -2008,7 +2178,7 @@ public readonly name: string;
 
 Name of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -2042,7 +2212,7 @@ public readonly entrypoint: string;
 
 The entrypoint to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
 
 ---
 
@@ -2056,7 +2226,7 @@ public readonly environment: string;
 
 The Service environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#environment PagesProject#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#environment PagesProject#environment}
 
 ---
 
@@ -2070,7 +2240,7 @@ public readonly service: string;
 
 The Service name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#service PagesProject#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#service PagesProject#service}
 
 ---
 
@@ -2088,7 +2258,7 @@ const pagesProjectDeploymentConfigsPreviewVectorizeBindings: pagesProject.PagesP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings.property.indexName">indexName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#index_name PagesProject#index_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings.property.indexName">indexName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#index_name PagesProject#index_name}. |
 
 ---
 
@@ -2100,7 +2270,7 @@ public readonly indexName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#index_name PagesProject#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#index_name PagesProject#index_name}.
 
 ---
 
@@ -2119,21 +2289,27 @@ const pagesProjectDeploymentConfigsProduction: pagesProject.PagesProjectDeployme
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.aiBindings">aiBindings</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>}</code> | Constellation bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.alwaysUseLatestCompatibilityDate">alwaysUseLatestCompatibilityDate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to always use the latest compatibility date for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.analyticsEngineDatasets">analyticsEngineDatasets</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>}</code> | Analytics Engine bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.browsers">browsers</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>}</code> | Browser bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.buildImageMajorVersion">buildImageMajorVersion</a></code> | <code>number</code> | The major version of the build image to use for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.compatibilityDate">compatibilityDate</a></code> | <code>string</code> | Compatibility date used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.compatibilityFlags">compatibilityFlags</a></code> | <code>string[]</code> | Compatibility flags used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.d1Databases">d1Databases</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>}</code> | D1 databases used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.durableObjectNamespaces">durableObjectNamespaces</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>}</code> | Durable Object namespaces used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.envVars">envVars</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>}</code> | Environment variables used for builds and Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to fail open when the deployment config cannot be applied. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.hyperdriveBindings">hyperdriveBindings</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>}</code> | Hyperdrive bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.kvNamespaces">kvNamespaces</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>}</code> | KV namespaces used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits">PagesProjectDeploymentConfigsProductionLimits</a></code> | Limits for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.mtlsCertificates">mtlsCertificates</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>}</code> | mTLS bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | Placement setting used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.queueProducers">queueProducers</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>}</code> | Queue Producer bindings used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.r2Buckets">r2Buckets</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>}</code> | R2 buckets used for Pages Functions. |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.services">services</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>}</code> | Services used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.usageModel">usageModel</a></code> | <code>string</code> | The usage model for Pages Functions. Available values: "standard", "bundled", "unbound". |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.vectorizeBindings">vectorizeBindings</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>}</code> | Vectorize bindings used for Pages Functions. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.wranglerConfigHash">wranglerConfigHash</a></code> | <code>string</code> | Hash of the Wrangler configuration used for the deployment. |
 
 ---
 
@@ -2147,7 +2323,21 @@ public readonly aiBindings: IResolvable | {[ key: string ]: PagesProjectDeployme
 
 Constellation bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+
+---
+
+##### `alwaysUseLatestCompatibilityDate`<sup>Optional</sup> <a name="alwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.alwaysUseLatestCompatibilityDate"></a>
+
+```typescript
+public readonly alwaysUseLatestCompatibilityDate: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether to always use the latest compatibility date for Pages Functions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
 
 ---
 
@@ -2161,7 +2351,7 @@ public readonly analyticsEngineDatasets: IResolvable | {[ key: string ]: PagesPr
 
 Analytics Engine bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
 
 ---
 
@@ -2175,7 +2365,21 @@ public readonly browsers: IResolvable | {[ key: string ]: PagesProjectDeployment
 
 Browser bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#browsers PagesProject#browsers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#browsers PagesProject#browsers}
+
+---
+
+##### `buildImageMajorVersion`<sup>Optional</sup> <a name="buildImageMajorVersion" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.buildImageMajorVersion"></a>
+
+```typescript
+public readonly buildImageMajorVersion: number;
+```
+
+- *Type:* number
+
+The major version of the build image to use for Pages Functions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#build_image_major_version PagesProject#build_image_major_version}
 
 ---
 
@@ -2189,7 +2393,7 @@ public readonly compatibilityDate: string;
 
 Compatibility date used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
 
 ---
 
@@ -2203,7 +2407,7 @@ public readonly compatibilityFlags: string[];
 
 Compatibility flags used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
 
 ---
 
@@ -2217,7 +2421,7 @@ public readonly d1Databases: IResolvable | {[ key: string ]: PagesProjectDeploym
 
 D1 databases used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
 
 ---
 
@@ -2231,7 +2435,7 @@ public readonly durableObjectNamespaces: IResolvable | {[ key: string ]: PagesPr
 
 Durable Object namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
 
 ---
 
@@ -2245,7 +2449,21 @@ public readonly envVars: IResolvable | {[ key: string ]: PagesProjectDeploymentC
 
 Environment variables used for builds and Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+
+---
+
+##### `failOpen`<sup>Optional</sup> <a name="failOpen" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.failOpen"></a>
+
+```typescript
+public readonly failOpen: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether to fail open when the deployment config cannot be applied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
 
 ---
 
@@ -2259,7 +2477,7 @@ public readonly hyperdriveBindings: IResolvable | {[ key: string ]: PagesProject
 
 Hyperdrive bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
 
 ---
 
@@ -2273,7 +2491,21 @@ public readonly kvNamespaces: IResolvable | {[ key: string ]: PagesProjectDeploy
 
 KV namespaces used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+
+---
+
+##### `limits`<sup>Optional</sup> <a name="limits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.limits"></a>
+
+```typescript
+public readonly limits: PagesProjectDeploymentConfigsProductionLimits;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits">PagesProjectDeploymentConfigsProductionLimits</a>
+
+Limits for Pages Functions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#limits PagesProject#limits}
 
 ---
 
@@ -2287,7 +2519,7 @@ public readonly mtlsCertificates: IResolvable | {[ key: string ]: PagesProjectDe
 
 mTLS bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
 
 ---
 
@@ -2301,7 +2533,7 @@ public readonly placement: PagesProjectDeploymentConfigsProductionPlacement;
 
 Placement setting used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#placement PagesProject#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#placement PagesProject#placement}
 
 ---
 
@@ -2315,7 +2547,7 @@ public readonly queueProducers: IResolvable | {[ key: string ]: PagesProjectDepl
 
 Queue Producer bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
 
 ---
 
@@ -2329,7 +2561,7 @@ public readonly r2Buckets: IResolvable | {[ key: string ]: PagesProjectDeploymen
 
 R2 buckets used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
 
 ---
 
@@ -2343,7 +2575,21 @@ public readonly services: IResolvable | {[ key: string ]: PagesProjectDeployment
 
 Services used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#services PagesProject#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#services PagesProject#services}
+
+---
+
+##### `usageModel`<sup>Optional</sup> <a name="usageModel" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.usageModel"></a>
+
+```typescript
+public readonly usageModel: string;
+```
+
+- *Type:* string
+
+The usage model for Pages Functions. Available values: "standard", "bundled", "unbound".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
 
 ---
 
@@ -2357,7 +2603,21 @@ public readonly vectorizeBindings: IResolvable | {[ key: string ]: PagesProjectD
 
 Vectorize bindings used for Pages Functions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+
+---
+
+##### `wranglerConfigHash`<sup>Optional</sup> <a name="wranglerConfigHash" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction.property.wranglerConfigHash"></a>
+
+```typescript
+public readonly wranglerConfigHash: string;
+```
+
+- *Type:* string
+
+Hash of the Wrangler configuration used for the deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#wrangler_config_hash PagesProject#wrangler_config_hash}
 
 ---
 
@@ -2375,7 +2635,7 @@ const pagesProjectDeploymentConfigsProductionAiBindings: pagesProject.PagesProje
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#project_id PagesProject#project_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#project_id PagesProject#project_id}. |
 
 ---
 
@@ -2387,7 +2647,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#project_id PagesProject#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#project_id PagesProject#project_id}.
 
 ---
 
@@ -2419,7 +2679,7 @@ public readonly dataset: string;
 
 Name of the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#dataset PagesProject#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#dataset PagesProject#dataset}
 
 ---
 
@@ -2462,7 +2722,7 @@ public readonly id: string;
 
 UUID of the D1 database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#id PagesProject#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#id PagesProject#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2497,7 +2757,7 @@ public readonly namespaceId: string;
 
 ID of the Durable Object namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
 
 ---
 
@@ -2530,7 +2790,7 @@ public readonly type: string;
 
 Available values: "plain_text", "secret_text".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#type PagesProject#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#type PagesProject#type}
 
 ---
 
@@ -2544,7 +2804,7 @@ public readonly value: string;
 
 Environment variable value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#value PagesProject#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#value PagesProject#value}
 
 ---
 
@@ -2562,7 +2822,7 @@ const pagesProjectDeploymentConfigsProductionHyperdriveBindings: pagesProject.Pa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#id PagesProject#id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#id PagesProject#id}. |
 
 ---
 
@@ -2574,7 +2834,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#id PagesProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#id PagesProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2609,7 +2869,39 @@ public readonly namespaceId: string;
 
 ID of the KV namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+
+---
+
+### PagesProjectDeploymentConfigsProductionLimits <a name="PagesProjectDeploymentConfigsProductionLimits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits.Initializer"></a>
+
+```typescript
+import { pagesProject } from '@cdktf/provider-cloudflare'
+
+const pagesProjectDeploymentConfigsProductionLimits: pagesProject.PagesProjectDeploymentConfigsProductionLimits = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits.property.cpuMs">cpuMs</a></code> | <code>number</code> | CPU time limit in milliseconds. |
+
+---
+
+##### `cpuMs`<sup>Optional</sup> <a name="cpuMs" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits.property.cpuMs"></a>
+
+```typescript
+public readonly cpuMs: number;
+```
+
+- *Type:* number
+
+CPU time limit in milliseconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#cpu_ms PagesProject#cpu_ms}
 
 ---
 
@@ -2627,7 +2919,7 @@ const pagesProjectDeploymentConfigsProductionMtlsCertificates: pagesProject.Page
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates.property.certificateId">certificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates.property.certificateId">certificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}. |
 
 ---
 
@@ -2639,7 +2931,7 @@ public readonly certificateId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}.
 
 ---
 
@@ -2671,7 +2963,7 @@ public readonly mode: string;
 
 Placement mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#mode PagesProject#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#mode PagesProject#mode}
 
 ---
 
@@ -2703,7 +2995,7 @@ public readonly name: string;
 
 Name of the Queue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -2736,7 +3028,7 @@ public readonly jurisdiction: string;
 
 Jurisdiction of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
 
 ---
 
@@ -2750,7 +3042,7 @@ public readonly name: string;
 
 Name of the R2 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#name PagesProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#name PagesProject#name}
 
 ---
 
@@ -2784,7 +3076,7 @@ public readonly entrypoint: string;
 
 The entrypoint to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
 
 ---
 
@@ -2798,7 +3090,7 @@ public readonly environment: string;
 
 The Service environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#environment PagesProject#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#environment PagesProject#environment}
 
 ---
 
@@ -2812,7 +3104,7 @@ public readonly service: string;
 
 The Service name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#service PagesProject#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#service PagesProject#service}
 
 ---
 
@@ -2830,7 +3122,7 @@ const pagesProjectDeploymentConfigsProductionVectorizeBindings: pagesProject.Pag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings.property.indexName">indexName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#index_name PagesProject#index_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings.property.indexName">indexName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#index_name PagesProject#index_name}. |
 
 ---
 
@@ -2842,7 +3134,7 @@ public readonly indexName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#index_name PagesProject#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#index_name PagesProject#index_name}.
 
 ---
 
@@ -2959,8 +3251,8 @@ const pagesProjectSource: pagesProject.PagesProjectSource = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource.property.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#config PagesProject#config}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#type PagesProject#type}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource.property.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#config PagesProject#config}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSource.property.type">type</a></code> | <code>string</code> | The source control management provider. Available values: "github", "gitlab". |
 
 ---
 
@@ -2972,7 +3264,7 @@ public readonly config: PagesProjectSourceConfig;
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig">PagesProjectSourceConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#config PagesProject#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#config PagesProject#config}.
 
 ---
 
@@ -2984,7 +3276,9 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#type PagesProject#type}.
+The source control management provider. Available values: "github", "gitlab".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#type PagesProject#type}
 
 ---
 
@@ -3002,17 +3296,17 @@ const pagesProjectSourceConfig: pagesProject.PagesProjectSourceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled">deploymentsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#owner PagesProject#owner}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathExcludes">pathExcludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathIncludes">pathIncludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_includes PagesProject#path_includes}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled">prCommentsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchExcludes">previewBranchExcludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchIncludes">previewBranchIncludes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewDeploymentSetting">previewDeploymentSetting</a></code> | <code>string</code> | Available values: "all", "none", "custom". |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionBranch">productionBranch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_branch PagesProject#production_branch}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled">productionDeploymentsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}. |
-| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.repoName">repoName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#repo_name PagesProject#repo_name}. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.deploymentsEnabled">deploymentsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable automatic deployments when pushing to the source repository. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.owner">owner</a></code> | <code>string</code> | The owner of the repository. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathExcludes">pathExcludes</a></code> | <code>string[]</code> | A list of paths that should be excluded from triggering a preview deployment. Wildcard syntax (`*`) is supported. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.pathIncludes">pathIncludes</a></code> | <code>string[]</code> | A list of paths that should be watched to trigger a preview deployment. Wildcard syntax (`*`) is supported. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.prCommentsEnabled">prCommentsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable PR comments. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchExcludes">previewBranchExcludes</a></code> | <code>string[]</code> | A list of branches that should not trigger a preview deployment. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewBranchIncludes">previewBranchIncludes</a></code> | <code>string[]</code> | A list of branches that should trigger a preview deployment. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.previewDeploymentSetting">previewDeploymentSetting</a></code> | <code>string</code> | Controls whether commits to preview branches trigger a preview deployment. Available values: "all", "none", "custom". |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionBranch">productionBranch</a></code> | <code>string</code> | The production branch of the repository. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.productionDeploymentsEnabled">productionDeploymentsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to trigger a production deployment on commits to the production branch. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfig.property.repoName">repoName</a></code> | <code>string</code> | The name of the repository. |
 
 ---
 
@@ -3024,7 +3318,11 @@ public readonly deploymentsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}.
+Whether to enable automatic deployments when pushing to the source repository.
+
+When disabled, no deployments (production or preview) will be triggered automatically.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
 
 ---
 
@@ -3036,7 +3334,9 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#owner PagesProject#owner}.
+The owner of the repository.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#owner PagesProject#owner}
 
 ---
 
@@ -3048,7 +3348,9 @@ public readonly pathExcludes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}.
+A list of paths that should be excluded from triggering a preview deployment. Wildcard syntax (`*`) is supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}
 
 ---
 
@@ -3060,7 +3362,9 @@ public readonly pathIncludes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#path_includes PagesProject#path_includes}.
+A list of paths that should be watched to trigger a preview deployment. Wildcard syntax (`*`) is supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#path_includes PagesProject#path_includes}
 
 ---
 
@@ -3072,7 +3376,9 @@ public readonly prCommentsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}.
+Whether to enable PR comments.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
 
 ---
 
@@ -3084,7 +3390,11 @@ public readonly previewBranchExcludes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}.
+A list of branches that should not trigger a preview deployment.
+
+Wildcard syntax (`*`) is supported. Must be used with `preview_deployment_setting` set to `custom`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
 
 ---
 
@@ -3096,7 +3406,11 @@ public readonly previewBranchIncludes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}.
+A list of branches that should trigger a preview deployment.
+
+Wildcard syntax (`*`) is supported. Must be used with `preview_deployment_setting` set to `custom`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
 
 ---
 
@@ -3108,9 +3422,9 @@ public readonly previewDeploymentSetting: string;
 
 - *Type:* string
 
-Available values: "all", "none", "custom".
+Controls whether commits to preview branches trigger a preview deployment. Available values: "all", "none", "custom".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
 
 ---
 
@@ -3122,7 +3436,9 @@ public readonly productionBranch: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_branch PagesProject#production_branch}.
+The production branch of the repository.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
 
 ---
 
@@ -3134,7 +3450,9 @@ public readonly productionDeploymentsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}.
+Whether to trigger a production deployment on commits to the production branch.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}
 
 ---
 
@@ -3146,7 +3464,9 @@ public readonly repoName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project#repo_name PagesProject#repo_name}.
+The name of the repository.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
 
 ---
 
@@ -10469,6 +10789,284 @@ public readonly internalValue: IResolvable | PagesProjectDeploymentConfigsPrevie
 ---
 
 
+### PagesProjectDeploymentConfigsPreviewLimitsOutputReference <a name="PagesProjectDeploymentConfigsPreviewLimitsOutputReference" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer"></a>
+
+```typescript
+import { pagesProject } from '@cdktf/provider-cloudflare'
+
+new pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.resetCpuMs">resetCpuMs</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCpuMs` <a name="resetCpuMs" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.resetCpuMs"></a>
+
+```typescript
+public resetCpuMs(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.cpuMsInput">cpuMsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.cpuMs">cpuMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits">PagesProjectDeploymentConfigsPreviewLimits</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cpuMsInput`<sup>Optional</sup> <a name="cpuMsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.cpuMsInput"></a>
+
+```typescript
+public readonly cpuMsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `cpuMs`<sup>Required</sup> <a name="cpuMs" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.cpuMs"></a>
+
+```typescript
+public readonly cpuMs: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PagesProjectDeploymentConfigsPreviewLimits;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits">PagesProjectDeploymentConfigsPreviewLimits</a>
+
+---
+
+
 ### PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap <a name="PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.Initializer"></a>
@@ -10961,6 +11559,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putEnvVars">putEnvVars</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putHyperdriveBindings">putHyperdriveBindings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putKvNamespaces">putKvNamespaces</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putLimits">putLimits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putMtlsCertificates">putMtlsCertificates</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putPlacement">putPlacement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putQueueProducers">putQueueProducers</a></code> | *No description.* |
@@ -10968,21 +11567,27 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putServices">putServices</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putVectorizeBindings">putVectorizeBindings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetAiBindings">resetAiBindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetAlwaysUseLatestCompatibilityDate">resetAlwaysUseLatestCompatibilityDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetAnalyticsEngineDatasets">resetAnalyticsEngineDatasets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetBrowsers">resetBrowsers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetBuildImageMajorVersion">resetBuildImageMajorVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetCompatibilityDate">resetCompatibilityDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetCompatibilityFlags">resetCompatibilityFlags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetD1Databases">resetD1Databases</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetDurableObjectNamespaces">resetDurableObjectNamespaces</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetEnvVars">resetEnvVars</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetFailOpen">resetFailOpen</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetHyperdriveBindings">resetHyperdriveBindings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetKvNamespaces">resetKvNamespaces</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetLimits">resetLimits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetMtlsCertificates">resetMtlsCertificates</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetPlacement">resetPlacement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetQueueProducers">resetQueueProducers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetR2Buckets">resetR2Buckets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetServices">resetServices</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetUsageModel">resetUsageModel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetVectorizeBindings">resetVectorizeBindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetWranglerConfigHash">resetWranglerConfigHash</a></code> | *No description.* |
 
 ---
 
@@ -11232,6 +11837,18 @@ public putKvNamespaces(value: IResolvable | {[ key: string ]: PagesProjectDeploy
 
 ---
 
+##### `putLimits` <a name="putLimits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putLimits"></a>
+
+```typescript
+public putLimits(value: PagesProjectDeploymentConfigsPreviewLimits): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putLimits.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits">PagesProjectDeploymentConfigsPreviewLimits</a>
+
+---
+
 ##### `putMtlsCertificates` <a name="putMtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.putMtlsCertificates"></a>
 
 ```typescript
@@ -11310,6 +11927,12 @@ public putVectorizeBindings(value: IResolvable | {[ key: string ]: PagesProjectD
 public resetAiBindings(): void
 ```
 
+##### `resetAlwaysUseLatestCompatibilityDate` <a name="resetAlwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetAlwaysUseLatestCompatibilityDate"></a>
+
+```typescript
+public resetAlwaysUseLatestCompatibilityDate(): void
+```
+
 ##### `resetAnalyticsEngineDatasets` <a name="resetAnalyticsEngineDatasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetAnalyticsEngineDatasets"></a>
 
 ```typescript
@@ -11320,6 +11943,12 @@ public resetAnalyticsEngineDatasets(): void
 
 ```typescript
 public resetBrowsers(): void
+```
+
+##### `resetBuildImageMajorVersion` <a name="resetBuildImageMajorVersion" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetBuildImageMajorVersion"></a>
+
+```typescript
+public resetBuildImageMajorVersion(): void
 ```
 
 ##### `resetCompatibilityDate` <a name="resetCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetCompatibilityDate"></a>
@@ -11352,6 +11981,12 @@ public resetDurableObjectNamespaces(): void
 public resetEnvVars(): void
 ```
 
+##### `resetFailOpen` <a name="resetFailOpen" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetFailOpen"></a>
+
+```typescript
+public resetFailOpen(): void
+```
+
 ##### `resetHyperdriveBindings` <a name="resetHyperdriveBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetHyperdriveBindings"></a>
 
 ```typescript
@@ -11362,6 +11997,12 @@ public resetHyperdriveBindings(): void
 
 ```typescript
 public resetKvNamespaces(): void
+```
+
+##### `resetLimits` <a name="resetLimits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetLimits"></a>
+
+```typescript
+public resetLimits(): void
 ```
 
 ##### `resetMtlsCertificates` <a name="resetMtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetMtlsCertificates"></a>
@@ -11394,10 +12035,22 @@ public resetR2Buckets(): void
 public resetServices(): void
 ```
 
+##### `resetUsageModel` <a name="resetUsageModel" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetUsageModel"></a>
+
+```typescript
+public resetUsageModel(): void
+```
+
 ##### `resetVectorizeBindings` <a name="resetVectorizeBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetVectorizeBindings"></a>
 
 ```typescript
 public resetVectorizeBindings(): void
+```
+
+##### `resetWranglerConfigHash` <a name="resetWranglerConfigHash" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.resetWranglerConfigHash"></a>
+
+```typescript
+public resetWranglerConfigHash(): void
 ```
 
 
@@ -11415,6 +12068,7 @@ public resetVectorizeBindings(): void
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVars">envVars</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVarsMap">PagesProjectDeploymentConfigsPreviewEnvVarsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindings">hyperdriveBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap">PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespaces">kvNamespaces</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespacesMap">PagesProjectDeploymentConfigsPreviewKvNamespacesMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference">PagesProjectDeploymentConfigsPreviewLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificates">mtlsCertificates</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap">PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacementOutputReference">PagesProjectDeploymentConfigsPreviewPlacementOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducers">queueProducers</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducersMap">PagesProjectDeploymentConfigsPreviewQueueProducersMap</a></code> | *No description.* |
@@ -11422,23 +12076,34 @@ public resetVectorizeBindings(): void
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.services">services</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServicesMap">PagesProjectDeploymentConfigsPreviewServicesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindings">vectorizeBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap">PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindingsInput">aiBindingsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAiBindings">PagesProjectDeploymentConfigsPreviewAiBindings</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.alwaysUseLatestCompatibilityDateInput">alwaysUseLatestCompatibilityDateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput">analyticsEngineDatasetsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets">PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.browsersInput">browsersInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.buildImageMajorVersionInput">buildImageMajorVersionInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityDateInput">compatibilityDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityFlagsInput">compatibilityFlagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.d1DatabasesInput">d1DatabasesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewD1Databases">PagesProjectDeploymentConfigsPreviewD1Databases</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespacesInput">durableObjectNamespacesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces">PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.envVarsInput">envVarsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewEnvVars">PagesProjectDeploymentConfigsPreviewEnvVars</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.failOpenInput">failOpenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput">hyperdriveBindingsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindings">PagesProjectDeploymentConfigsPreviewHyperdriveBindings</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespacesInput">kvNamespacesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.limitsInput">limitsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits">PagesProjectDeploymentConfigsPreviewLimits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificatesInput">mtlsCertificatesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewMtlsCertificates">PagesProjectDeploymentConfigsPreviewMtlsCertificates</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.placementInput">placementInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewPlacement">PagesProjectDeploymentConfigsPreviewPlacement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducersInput">queueProducersInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewQueueProducers">PagesProjectDeploymentConfigsPreviewQueueProducers</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.r2BucketsInput">r2BucketsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2Buckets">PagesProjectDeploymentConfigsPreviewR2Buckets</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.servicesInput">servicesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServices">PagesProjectDeploymentConfigsPreviewServices</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.usageModelInput">usageModelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput">vectorizeBindingsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.wranglerConfigHashInput">wranglerConfigHashInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.alwaysUseLatestCompatibilityDate">alwaysUseLatestCompatibilityDate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.buildImageMajorVersion">buildImageMajorVersion</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityDate">compatibilityDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityFlags">compatibilityFlags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.usageModel">usageModel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.wranglerConfigHash">wranglerConfigHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreview">PagesProjectDeploymentConfigsPreview</a></code> | *No description.* |
 
 ---
@@ -11547,6 +12212,16 @@ public readonly kvNamespaces: PagesProjectDeploymentConfigsPreviewKvNamespacesMa
 
 ---
 
+##### `limits`<sup>Required</sup> <a name="limits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.limits"></a>
+
+```typescript
+public readonly limits: PagesProjectDeploymentConfigsPreviewLimitsOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimitsOutputReference">PagesProjectDeploymentConfigsPreviewLimitsOutputReference</a>
+
+---
+
 ##### `mtlsCertificates`<sup>Required</sup> <a name="mtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificates"></a>
 
 ```typescript
@@ -11617,6 +12292,16 @@ public readonly aiBindingsInput: IResolvable | {[ key: string ]: PagesProjectDep
 
 ---
 
+##### `alwaysUseLatestCompatibilityDateInput`<sup>Optional</sup> <a name="alwaysUseLatestCompatibilityDateInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.alwaysUseLatestCompatibilityDateInput"></a>
+
+```typescript
+public readonly alwaysUseLatestCompatibilityDateInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `analyticsEngineDatasetsInput`<sup>Optional</sup> <a name="analyticsEngineDatasetsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasetsInput"></a>
 
 ```typescript
@@ -11634,6 +12319,16 @@ public readonly browsersInput: IResolvable | {[ key: string ]: PagesProjectDeplo
 ```
 
 - *Type:* cdktf.IResolvable | {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewBrowsers">PagesProjectDeploymentConfigsPreviewBrowsers</a>}
+
+---
+
+##### `buildImageMajorVersionInput`<sup>Optional</sup> <a name="buildImageMajorVersionInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.buildImageMajorVersionInput"></a>
+
+```typescript
+public readonly buildImageMajorVersionInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -11687,6 +12382,16 @@ public readonly envVarsInput: IResolvable | {[ key: string ]: PagesProjectDeploy
 
 ---
 
+##### `failOpenInput`<sup>Optional</sup> <a name="failOpenInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.failOpenInput"></a>
+
+```typescript
+public readonly failOpenInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `hyperdriveBindingsInput`<sup>Optional</sup> <a name="hyperdriveBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindingsInput"></a>
 
 ```typescript
@@ -11704,6 +12409,16 @@ public readonly kvNamespacesInput: IResolvable | {[ key: string ]: PagesProjectD
 ```
 
 - *Type:* cdktf.IResolvable | {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewKvNamespaces">PagesProjectDeploymentConfigsPreviewKvNamespaces</a>}
+
+---
+
+##### `limitsInput`<sup>Optional</sup> <a name="limitsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.limitsInput"></a>
+
+```typescript
+public readonly limitsInput: IResolvable | PagesProjectDeploymentConfigsPreviewLimits;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewLimits">PagesProjectDeploymentConfigsPreviewLimits</a>
 
 ---
 
@@ -11757,6 +12472,16 @@ public readonly servicesInput: IResolvable | {[ key: string ]: PagesProjectDeplo
 
 ---
 
+##### `usageModelInput`<sup>Optional</sup> <a name="usageModelInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.usageModelInput"></a>
+
+```typescript
+public readonly usageModelInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `vectorizeBindingsInput`<sup>Optional</sup> <a name="vectorizeBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindingsInput"></a>
 
 ```typescript
@@ -11764,6 +12489,36 @@ public readonly vectorizeBindingsInput: IResolvable | {[ key: string ]: PagesPro
 ```
 
 - *Type:* cdktf.IResolvable | {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewVectorizeBindings">PagesProjectDeploymentConfigsPreviewVectorizeBindings</a>}
+
+---
+
+##### `wranglerConfigHashInput`<sup>Optional</sup> <a name="wranglerConfigHashInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.wranglerConfigHashInput"></a>
+
+```typescript
+public readonly wranglerConfigHashInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysUseLatestCompatibilityDate`<sup>Required</sup> <a name="alwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.alwaysUseLatestCompatibilityDate"></a>
+
+```typescript
+public readonly alwaysUseLatestCompatibilityDate: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `buildImageMajorVersion`<sup>Required</sup> <a name="buildImageMajorVersion" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.buildImageMajorVersion"></a>
+
+```typescript
+public readonly buildImageMajorVersion: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -11784,6 +12539,36 @@ public readonly compatibilityFlags: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `failOpen`<sup>Required</sup> <a name="failOpen" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.failOpen"></a>
+
+```typescript
+public readonly failOpen: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `usageModel`<sup>Required</sup> <a name="usageModel" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.usageModel"></a>
+
+```typescript
+public readonly usageModel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `wranglerConfigHash`<sup>Required</sup> <a name="wranglerConfigHash" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference.property.wranglerConfigHash"></a>
+
+```typescript
+public readonly wranglerConfigHash: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -17357,6 +18142,284 @@ public readonly internalValue: IResolvable | PagesProjectDeploymentConfigsProduc
 ---
 
 
+### PagesProjectDeploymentConfigsProductionLimitsOutputReference <a name="PagesProjectDeploymentConfigsProductionLimitsOutputReference" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer"></a>
+
+```typescript
+import { pagesProject } from '@cdktf/provider-cloudflare'
+
+new pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.resetCpuMs">resetCpuMs</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCpuMs` <a name="resetCpuMs" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.resetCpuMs"></a>
+
+```typescript
+public resetCpuMs(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.cpuMsInput">cpuMsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.cpuMs">cpuMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits">PagesProjectDeploymentConfigsProductionLimits</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cpuMsInput`<sup>Optional</sup> <a name="cpuMsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.cpuMsInput"></a>
+
+```typescript
+public readonly cpuMsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `cpuMs`<sup>Required</sup> <a name="cpuMs" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.cpuMs"></a>
+
+```typescript
+public readonly cpuMs: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PagesProjectDeploymentConfigsProductionLimits;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits">PagesProjectDeploymentConfigsProductionLimits</a>
+
+---
+
+
 ### PagesProjectDeploymentConfigsProductionMtlsCertificatesMap <a name="PagesProjectDeploymentConfigsProductionMtlsCertificatesMap" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap.Initializer"></a>
@@ -17849,6 +18912,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putEnvVars">putEnvVars</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putHyperdriveBindings">putHyperdriveBindings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putKvNamespaces">putKvNamespaces</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putLimits">putLimits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putMtlsCertificates">putMtlsCertificates</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putPlacement">putPlacement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putQueueProducers">putQueueProducers</a></code> | *No description.* |
@@ -17856,21 +18920,27 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putServices">putServices</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putVectorizeBindings">putVectorizeBindings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetAiBindings">resetAiBindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetAlwaysUseLatestCompatibilityDate">resetAlwaysUseLatestCompatibilityDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetAnalyticsEngineDatasets">resetAnalyticsEngineDatasets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetBrowsers">resetBrowsers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetBuildImageMajorVersion">resetBuildImageMajorVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetCompatibilityDate">resetCompatibilityDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetCompatibilityFlags">resetCompatibilityFlags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetD1Databases">resetD1Databases</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetDurableObjectNamespaces">resetDurableObjectNamespaces</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetEnvVars">resetEnvVars</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetFailOpen">resetFailOpen</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetHyperdriveBindings">resetHyperdriveBindings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetKvNamespaces">resetKvNamespaces</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetLimits">resetLimits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetMtlsCertificates">resetMtlsCertificates</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetPlacement">resetPlacement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetQueueProducers">resetQueueProducers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetR2Buckets">resetR2Buckets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetServices">resetServices</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetUsageModel">resetUsageModel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetVectorizeBindings">resetVectorizeBindings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetWranglerConfigHash">resetWranglerConfigHash</a></code> | *No description.* |
 
 ---
 
@@ -18120,6 +19190,18 @@ public putKvNamespaces(value: IResolvable | {[ key: string ]: PagesProjectDeploy
 
 ---
 
+##### `putLimits` <a name="putLimits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putLimits"></a>
+
+```typescript
+public putLimits(value: PagesProjectDeploymentConfigsProductionLimits): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putLimits.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits">PagesProjectDeploymentConfigsProductionLimits</a>
+
+---
+
 ##### `putMtlsCertificates` <a name="putMtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.putMtlsCertificates"></a>
 
 ```typescript
@@ -18198,6 +19280,12 @@ public putVectorizeBindings(value: IResolvable | {[ key: string ]: PagesProjectD
 public resetAiBindings(): void
 ```
 
+##### `resetAlwaysUseLatestCompatibilityDate` <a name="resetAlwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetAlwaysUseLatestCompatibilityDate"></a>
+
+```typescript
+public resetAlwaysUseLatestCompatibilityDate(): void
+```
+
 ##### `resetAnalyticsEngineDatasets` <a name="resetAnalyticsEngineDatasets" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetAnalyticsEngineDatasets"></a>
 
 ```typescript
@@ -18208,6 +19296,12 @@ public resetAnalyticsEngineDatasets(): void
 
 ```typescript
 public resetBrowsers(): void
+```
+
+##### `resetBuildImageMajorVersion` <a name="resetBuildImageMajorVersion" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetBuildImageMajorVersion"></a>
+
+```typescript
+public resetBuildImageMajorVersion(): void
 ```
 
 ##### `resetCompatibilityDate` <a name="resetCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetCompatibilityDate"></a>
@@ -18240,6 +19334,12 @@ public resetDurableObjectNamespaces(): void
 public resetEnvVars(): void
 ```
 
+##### `resetFailOpen` <a name="resetFailOpen" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetFailOpen"></a>
+
+```typescript
+public resetFailOpen(): void
+```
+
 ##### `resetHyperdriveBindings` <a name="resetHyperdriveBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetHyperdriveBindings"></a>
 
 ```typescript
@@ -18250,6 +19350,12 @@ public resetHyperdriveBindings(): void
 
 ```typescript
 public resetKvNamespaces(): void
+```
+
+##### `resetLimits` <a name="resetLimits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetLimits"></a>
+
+```typescript
+public resetLimits(): void
 ```
 
 ##### `resetMtlsCertificates` <a name="resetMtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetMtlsCertificates"></a>
@@ -18282,10 +19388,22 @@ public resetR2Buckets(): void
 public resetServices(): void
 ```
 
+##### `resetUsageModel` <a name="resetUsageModel" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetUsageModel"></a>
+
+```typescript
+public resetUsageModel(): void
+```
+
 ##### `resetVectorizeBindings` <a name="resetVectorizeBindings" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetVectorizeBindings"></a>
 
 ```typescript
 public resetVectorizeBindings(): void
+```
+
+##### `resetWranglerConfigHash` <a name="resetWranglerConfigHash" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.resetWranglerConfigHash"></a>
+
+```typescript
+public resetWranglerConfigHash(): void
 ```
 
 
@@ -18303,6 +19421,7 @@ public resetVectorizeBindings(): void
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVars">envVars</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVarsMap">PagesProjectDeploymentConfigsProductionEnvVarsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindings">hyperdriveBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap">PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespaces">kvNamespaces</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespacesMap">PagesProjectDeploymentConfigsProductionKvNamespacesMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference">PagesProjectDeploymentConfigsProductionLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificates">mtlsCertificates</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificatesMap">PagesProjectDeploymentConfigsProductionMtlsCertificatesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacementOutputReference">PagesProjectDeploymentConfigsProductionPlacementOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducers">queueProducers</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducersMap">PagesProjectDeploymentConfigsProductionQueueProducersMap</a></code> | *No description.* |
@@ -18310,23 +19429,34 @@ public resetVectorizeBindings(): void
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.services">services</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServicesMap">PagesProjectDeploymentConfigsProductionServicesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindings">vectorizeBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindingsMap">PagesProjectDeploymentConfigsProductionVectorizeBindingsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.aiBindingsInput">aiBindingsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindings">PagesProjectDeploymentConfigsProductionAiBindings</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.alwaysUseLatestCompatibilityDateInput">alwaysUseLatestCompatibilityDateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput">analyticsEngineDatasetsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets">PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.browsersInput">browsersInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.buildImageMajorVersionInput">buildImageMajorVersionInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityDateInput">compatibilityDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityFlagsInput">compatibilityFlagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.d1DatabasesInput">d1DatabasesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionD1Databases">PagesProjectDeploymentConfigsProductionD1Databases</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespacesInput">durableObjectNamespacesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionDurableObjectNamespaces">PagesProjectDeploymentConfigsProductionDurableObjectNamespaces</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.envVarsInput">envVarsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionEnvVars">PagesProjectDeploymentConfigsProductionEnvVars</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.failOpenInput">failOpenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput">hyperdriveBindingsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionHyperdriveBindings">PagesProjectDeploymentConfigsProductionHyperdriveBindings</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespacesInput">kvNamespacesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.limitsInput">limitsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits">PagesProjectDeploymentConfigsProductionLimits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificatesInput">mtlsCertificatesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionMtlsCertificates">PagesProjectDeploymentConfigsProductionMtlsCertificates</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.placementInput">placementInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionPlacement">PagesProjectDeploymentConfigsProductionPlacement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.queueProducersInput">queueProducersInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionQueueProducers">PagesProjectDeploymentConfigsProductionQueueProducers</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.r2BucketsInput">r2BucketsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionR2Buckets">PagesProjectDeploymentConfigsProductionR2Buckets</a>}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.servicesInput">servicesInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServices">PagesProjectDeploymentConfigsProductionServices</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.usageModelInput">usageModelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput">vectorizeBindingsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.wranglerConfigHashInput">wranglerConfigHashInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.alwaysUseLatestCompatibilityDate">alwaysUseLatestCompatibilityDate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.buildImageMajorVersion">buildImageMajorVersion</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityDate">compatibilityDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityFlags">compatibilityFlags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.usageModel">usageModel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.wranglerConfigHash">wranglerConfigHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProduction">PagesProjectDeploymentConfigsProduction</a></code> | *No description.* |
 
 ---
@@ -18435,6 +19565,16 @@ public readonly kvNamespaces: PagesProjectDeploymentConfigsProductionKvNamespace
 
 ---
 
+##### `limits`<sup>Required</sup> <a name="limits" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.limits"></a>
+
+```typescript
+public readonly limits: PagesProjectDeploymentConfigsProductionLimitsOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimitsOutputReference">PagesProjectDeploymentConfigsProductionLimitsOutputReference</a>
+
+---
+
 ##### `mtlsCertificates`<sup>Required</sup> <a name="mtlsCertificates" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificates"></a>
 
 ```typescript
@@ -18505,6 +19645,16 @@ public readonly aiBindingsInput: IResolvable | {[ key: string ]: PagesProjectDep
 
 ---
 
+##### `alwaysUseLatestCompatibilityDateInput`<sup>Optional</sup> <a name="alwaysUseLatestCompatibilityDateInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.alwaysUseLatestCompatibilityDateInput"></a>
+
+```typescript
+public readonly alwaysUseLatestCompatibilityDateInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `analyticsEngineDatasetsInput`<sup>Optional</sup> <a name="analyticsEngineDatasetsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasetsInput"></a>
 
 ```typescript
@@ -18522,6 +19672,16 @@ public readonly browsersInput: IResolvable | {[ key: string ]: PagesProjectDeplo
 ```
 
 - *Type:* cdktf.IResolvable | {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsers">PagesProjectDeploymentConfigsProductionBrowsers</a>}
+
+---
+
+##### `buildImageMajorVersionInput`<sup>Optional</sup> <a name="buildImageMajorVersionInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.buildImageMajorVersionInput"></a>
+
+```typescript
+public readonly buildImageMajorVersionInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -18575,6 +19735,16 @@ public readonly envVarsInput: IResolvable | {[ key: string ]: PagesProjectDeploy
 
 ---
 
+##### `failOpenInput`<sup>Optional</sup> <a name="failOpenInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.failOpenInput"></a>
+
+```typescript
+public readonly failOpenInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `hyperdriveBindingsInput`<sup>Optional</sup> <a name="hyperdriveBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindingsInput"></a>
 
 ```typescript
@@ -18592,6 +19762,16 @@ public readonly kvNamespacesInput: IResolvable | {[ key: string ]: PagesProjectD
 ```
 
 - *Type:* cdktf.IResolvable | {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionKvNamespaces">PagesProjectDeploymentConfigsProductionKvNamespaces</a>}
+
+---
+
+##### `limitsInput`<sup>Optional</sup> <a name="limitsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.limitsInput"></a>
+
+```typescript
+public readonly limitsInput: IResolvable | PagesProjectDeploymentConfigsProductionLimits;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionLimits">PagesProjectDeploymentConfigsProductionLimits</a>
 
 ---
 
@@ -18645,6 +19825,16 @@ public readonly servicesInput: IResolvable | {[ key: string ]: PagesProjectDeplo
 
 ---
 
+##### `usageModelInput`<sup>Optional</sup> <a name="usageModelInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.usageModelInput"></a>
+
+```typescript
+public readonly usageModelInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `vectorizeBindingsInput`<sup>Optional</sup> <a name="vectorizeBindingsInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindingsInput"></a>
 
 ```typescript
@@ -18652,6 +19842,36 @@ public readonly vectorizeBindingsInput: IResolvable | {[ key: string ]: PagesPro
 ```
 
 - *Type:* cdktf.IResolvable | {[ key: string ]: <a href="#@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionVectorizeBindings">PagesProjectDeploymentConfigsProductionVectorizeBindings</a>}
+
+---
+
+##### `wranglerConfigHashInput`<sup>Optional</sup> <a name="wranglerConfigHashInput" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.wranglerConfigHashInput"></a>
+
+```typescript
+public readonly wranglerConfigHashInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysUseLatestCompatibilityDate`<sup>Required</sup> <a name="alwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.alwaysUseLatestCompatibilityDate"></a>
+
+```typescript
+public readonly alwaysUseLatestCompatibilityDate: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `buildImageMajorVersion`<sup>Required</sup> <a name="buildImageMajorVersion" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.buildImageMajorVersion"></a>
+
+```typescript
+public readonly buildImageMajorVersion: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -18672,6 +19892,36 @@ public readonly compatibilityFlags: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `failOpen`<sup>Required</sup> <a name="failOpen" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.failOpen"></a>
+
+```typescript
+public readonly failOpen: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `usageModel`<sup>Required</sup> <a name="usageModel" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.usageModel"></a>
+
+```typescript
+public readonly usageModel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `wranglerConfigHash`<sup>Required</sup> <a name="wranglerConfigHash" id="@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference.property.wranglerConfigHash"></a>
+
+```typescript
+public readonly wranglerConfigHash: string;
+```
+
+- *Type:* string
 
 ---
 

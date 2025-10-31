@@ -4,7 +4,7 @@
 
 ### DataCloudflarePagesProject <a name="DataCloudflarePagesProject" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project cloudflare_pages_project}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project cloudflare_pages_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
 
 ---
 
@@ -439,7 +439,7 @@ The construct id used in the generated config for the DataCloudflarePagesProject
 
 The id of the existing DataCloudflarePagesProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -472,12 +472,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.deploymentConfigs">deploymentConfigs</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsOutputReference">DataCloudflarePagesProjectDeploymentConfigsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.framework">framework</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.frameworkVersion">frameworkVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.latestDeployment">latestDeployment</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference">DataCloudflarePagesProjectLatestDeploymentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.previewScriptName">previewScriptName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.productionBranch">productionBranch</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.productionScriptName">productionScriptName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.source">source</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceOutputReference">DataCloudflarePagesProjectSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.subdomain">subdomain</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.usesFunctions">usesFunctions</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.projectNameInput">projectNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -657,6 +662,26 @@ public java.util.List<java.lang.String> getDomains();
 
 ---
 
+##### `framework`<sup>Required</sup> <a name="framework" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.framework"></a>
+
+```java
+public java.lang.String getFramework();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `frameworkVersion`<sup>Required</sup> <a name="frameworkVersion" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.frameworkVersion"></a>
+
+```java
+public java.lang.String getFrameworkVersion();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.id"></a>
 
 ```java
@@ -687,10 +712,30 @@ public java.lang.String getName();
 
 ---
 
+##### `previewScriptName`<sup>Required</sup> <a name="previewScriptName" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.previewScriptName"></a>
+
+```java
+public java.lang.String getPreviewScriptName();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `productionBranch`<sup>Required</sup> <a name="productionBranch" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.productionBranch"></a>
 
 ```java
 public java.lang.String getProductionBranch();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `productionScriptName`<sup>Required</sup> <a name="productionScriptName" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.productionScriptName"></a>
+
+```java
+public java.lang.String getProductionScriptName();
 ```
 
 - *Type:* java.lang.String
@@ -714,6 +759,16 @@ public java.lang.String getSubdomain();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `usesFunctions`<sup>Required</sup> <a name="usesFunctions" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.property.usesFunctions"></a>
+
+```java
+public IResolvable getUsesFunctions();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1013,7 +1068,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
 
 ---
 
@@ -1027,7 +1082,7 @@ public java.lang.String getProjectName();
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
 
 ---
 
@@ -1147,6 +1202,18 @@ DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindings.builder()
 import com.hashicorp.cdktf.providers.cloudflare.data_cloudflare_pages_project.DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces;
 
 DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces.builder()
+    .build();
+```
+
+
+### DataCloudflarePagesProjectDeploymentConfigsPreviewLimits <a name="DataCloudflarePagesProjectDeploymentConfigsPreviewLimits" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.data_cloudflare_pages_project.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits;
+
+DataCloudflarePagesProjectDeploymentConfigsPreviewLimits.builder()
     .build();
 ```
 
@@ -1327,6 +1394,18 @@ DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindings.builder(
 import com.hashicorp.cdktf.providers.cloudflare.data_cloudflare_pages_project.DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespaces;
 
 DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespaces.builder()
+    .build();
+```
+
+
+### DataCloudflarePagesProjectDeploymentConfigsProductionLimits <a name="DataCloudflarePagesProjectDeploymentConfigsProductionLimits" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimits"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimits.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.data_cloudflare_pages_project.DataCloudflarePagesProjectDeploymentConfigsProductionLimits;
+
+DataCloudflarePagesProjectDeploymentConfigsProductionLimits.builder()
     .build();
 ```
 
@@ -8466,6 +8545,266 @@ public DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces getInterna
 ---
 
 
+### DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference <a name="DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.data_cloudflare_pages_project.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference;
+
+new DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.cpuMs">cpuMs</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits">DataCloudflarePagesProjectDeploymentConfigsPreviewLimits</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `cpuMs`<sup>Required</sup> <a name="cpuMs" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.cpuMs"></a>
+
+```java
+public java.lang.Number getCpuMs();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.property.internalValue"></a>
+
+```java
+public DataCloudflarePagesProjectDeploymentConfigsPreviewLimits getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits">DataCloudflarePagesProjectDeploymentConfigsPreviewLimits</a>
+
+---
+
+
 ### DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap <a name="DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.Initializer"></a>
@@ -9082,21 +9421,27 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.aiBindings">aiBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsMap">DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.alwaysUseLatestCompatibilityDate">alwaysUseLatestCompatibilityDate</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasets">analyticsEngineDatasets</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap">DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.browsers">browsers</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap">DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.buildImageMajorVersion">buildImageMajorVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityDate">compatibilityDate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.compatibilityFlags">compatibilityFlags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.d1Databases">d1Databases</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesMap">DataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.durableObjectNamespaces">durableObjectNamespaces</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap">DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.envVars">envVars</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsMap">DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.failOpen">failOpen</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindings">hyperdriveBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap">DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.kvNamespaces">kvNamespaces</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap">DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference">DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.mtlsCertificates">mtlsCertificates</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap">DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewPlacementOutputReference">DataCloudflarePagesProjectDeploymentConfigsPreviewPlacementOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.queueProducers">queueProducers</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersMap">DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.r2Buckets">r2Buckets</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap">DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.services">services</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewServicesMap">DataCloudflarePagesProjectDeploymentConfigsPreviewServicesMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.usageModel">usageModel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindings">vectorizeBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap">DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.wranglerConfigHash">wranglerConfigHash</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreview">DataCloudflarePagesProjectDeploymentConfigsPreview</a></code> | *No description.* |
 
 ---
@@ -9135,6 +9480,16 @@ public DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsMap getAiBind
 
 ---
 
+##### `alwaysUseLatestCompatibilityDate`<sup>Required</sup> <a name="alwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.alwaysUseLatestCompatibilityDate"></a>
+
+```java
+public IResolvable getAlwaysUseLatestCompatibilityDate();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `analyticsEngineDatasets`<sup>Required</sup> <a name="analyticsEngineDatasets" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.analyticsEngineDatasets"></a>
 
 ```java
@@ -9152,6 +9507,16 @@ public DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap getBrowsers
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap">DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap</a>
+
+---
+
+##### `buildImageMajorVersion`<sup>Required</sup> <a name="buildImageMajorVersion" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.buildImageMajorVersion"></a>
+
+```java
+public java.lang.Number getBuildImageMajorVersion();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -9205,6 +9570,16 @@ public DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsMap getEnvVars()
 
 ---
 
+##### `failOpen`<sup>Required</sup> <a name="failOpen" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.failOpen"></a>
+
+```java
+public IResolvable getFailOpen();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `hyperdriveBindings`<sup>Required</sup> <a name="hyperdriveBindings" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.hyperdriveBindings"></a>
 
 ```java
@@ -9222,6 +9597,16 @@ public DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap getKvNa
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap">DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap</a>
+
+---
+
+##### `limits`<sup>Required</sup> <a name="limits" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.limits"></a>
+
+```java
+public DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference getLimits();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference">DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference</a>
 
 ---
 
@@ -9275,6 +9660,16 @@ public DataCloudflarePagesProjectDeploymentConfigsPreviewServicesMap getServices
 
 ---
 
+##### `usageModel`<sup>Required</sup> <a name="usageModel" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.usageModel"></a>
+
+```java
+public java.lang.String getUsageModel();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `vectorizeBindings`<sup>Required</sup> <a name="vectorizeBindings" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.vectorizeBindings"></a>
 
 ```java
@@ -9282,6 +9677,16 @@ public DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap ge
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap">DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap</a>
+
+---
+
+##### `wranglerConfigHash`<sup>Required</sup> <a name="wranglerConfigHash" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.property.wranglerConfigHash"></a>
+
+```java
+public java.lang.String getWranglerConfigHash();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -14449,6 +14854,266 @@ public DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespaces getInte
 ---
 
 
+### DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference <a name="DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.cloudflare.data_cloudflare_pages_project.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference;
+
+new DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.cpuMs">cpuMs</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimits">DataCloudflarePagesProjectDeploymentConfigsProductionLimits</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `cpuMs`<sup>Required</sup> <a name="cpuMs" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.cpuMs"></a>
+
+```java
+public java.lang.Number getCpuMs();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.property.internalValue"></a>
+
+```java
+public DataCloudflarePagesProjectDeploymentConfigsProductionLimits getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimits">DataCloudflarePagesProjectDeploymentConfigsProductionLimits</a>
+
+---
+
+
 ### DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap <a name="DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap.Initializer"></a>
@@ -15065,21 +15730,27 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.aiBindings">aiBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap">DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.alwaysUseLatestCompatibilityDate">alwaysUseLatestCompatibilityDate</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasets">analyticsEngineDatasets</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap">DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.browsers">browsers</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap">DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.buildImageMajorVersion">buildImageMajorVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityDate">compatibilityDate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.compatibilityFlags">compatibilityFlags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.d1Databases">d1Databases</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesMap">DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.durableObjectNamespaces">durableObjectNamespaces</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap">DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.envVars">envVars</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap">DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.failOpen">failOpen</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindings">hyperdriveBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsMap">DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.kvNamespaces">kvNamespaces</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap">DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.limits">limits</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference">DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.mtlsCertificates">mtlsCertificates</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap">DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.placement">placement</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionPlacementOutputReference">DataCloudflarePagesProjectDeploymentConfigsProductionPlacementOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.queueProducers">queueProducers</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersMap">DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.r2Buckets">r2Buckets</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsMap">DataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsMap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.services">services</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionServicesMap">DataCloudflarePagesProjectDeploymentConfigsProductionServicesMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.usageModel">usageModel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindings">vectorizeBindings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap">DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.wranglerConfigHash">wranglerConfigHash</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProduction">DataCloudflarePagesProjectDeploymentConfigsProduction</a></code> | *No description.* |
 
 ---
@@ -15118,6 +15789,16 @@ public DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap getAiB
 
 ---
 
+##### `alwaysUseLatestCompatibilityDate`<sup>Required</sup> <a name="alwaysUseLatestCompatibilityDate" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.alwaysUseLatestCompatibilityDate"></a>
+
+```java
+public IResolvable getAlwaysUseLatestCompatibilityDate();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `analyticsEngineDatasets`<sup>Required</sup> <a name="analyticsEngineDatasets" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.analyticsEngineDatasets"></a>
 
 ```java
@@ -15135,6 +15816,16 @@ public DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap getBrows
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap">DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap</a>
+
+---
+
+##### `buildImageMajorVersion`<sup>Required</sup> <a name="buildImageMajorVersion" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.buildImageMajorVersion"></a>
+
+```java
+public java.lang.Number getBuildImageMajorVersion();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -15188,6 +15879,16 @@ public DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap getEnvVar
 
 ---
 
+##### `failOpen`<sup>Required</sup> <a name="failOpen" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.failOpen"></a>
+
+```java
+public IResolvable getFailOpen();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `hyperdriveBindings`<sup>Required</sup> <a name="hyperdriveBindings" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.hyperdriveBindings"></a>
 
 ```java
@@ -15205,6 +15906,16 @@ public DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap getK
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap">DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap</a>
+
+---
+
+##### `limits`<sup>Required</sup> <a name="limits" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.limits"></a>
+
+```java
+public DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference getLimits();
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference">DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference</a>
 
 ---
 
@@ -15258,6 +15969,16 @@ public DataCloudflarePagesProjectDeploymentConfigsProductionServicesMap getServi
 
 ---
 
+##### `usageModel`<sup>Required</sup> <a name="usageModel" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.usageModel"></a>
+
+```java
+public java.lang.String getUsageModel();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `vectorizeBindings`<sup>Required</sup> <a name="vectorizeBindings" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.vectorizeBindings"></a>
 
 ```java
@@ -15265,6 +15986,16 @@ public DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap">DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap</a>
+
+---
+
+##### `wranglerConfigHash`<sup>Required</sup> <a name="wranglerConfigHash" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.property.wranglerConfigHash"></a>
+
+```java
+public java.lang.String getWranglerConfigHash();
+```
+
+- *Type:* java.lang.String
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface R2BucketLifecycleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}
   */
   readonly rules?: R2BucketLifecycleRules[] | cdktf.IResolvable;
 }
 export interface R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge: number;
   /**
   * Available values: "Age".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -162,7 +162,7 @@ export interface R2BucketLifecycleRulesAbortMultipartUploadsTransition {
   /**
   * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition?: R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition;
 }
@@ -258,7 +258,7 @@ export interface R2BucketLifecycleRulesConditions {
   /**
   * Transitions will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
   */
   readonly prefix: string;
 }
@@ -349,17 +349,17 @@ export class R2BucketLifecycleRulesConditionsOutputReference extends cdktf.Compl
 }
 export interface R2BucketLifecycleRulesDeleteObjectsTransitionCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge?: number;
   /**
   * Available values: "Age", "Date".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -510,7 +510,7 @@ export interface R2BucketLifecycleRulesDeleteObjectsTransition {
   /**
   * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition?: R2BucketLifecycleRulesDeleteObjectsTransitionCondition;
 }
@@ -604,17 +604,17 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference extend
 }
 export interface R2BucketLifecycleRulesStorageClassTransitionsCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge?: number;
   /**
   * Available values: "Age", "Date".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -765,13 +765,13 @@ export interface R2BucketLifecycleRulesStorageClassTransitions {
   /**
   * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition: R2BucketLifecycleRulesStorageClassTransitionsCondition;
   /**
   * Available values: "InfrequentAccess".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
   */
   readonly storageClass: string;
 }
@@ -912,31 +912,31 @@ export interface R2BucketLifecycleRules {
   /**
   * Transition to abort ongoing multipart uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
   */
   readonly abortMultipartUploadsTransition?: R2BucketLifecycleRulesAbortMultipartUploadsTransition;
   /**
   * Conditions that apply to all transitions of this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
   */
   readonly conditions: R2BucketLifecycleRulesConditions;
   /**
   * Transition to delete objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
   */
   readonly deleteObjectsTransition?: R2BucketLifecycleRulesDeleteObjectsTransition;
   /**
   * Whether or not this rule is in effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Unique identifier for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ export interface R2BucketLifecycleRules {
   /**
   * Transitions to change the storage class of objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
   */
   readonly storageClassTransitions?: R2BucketLifecycleRulesStorageClassTransitions[] | cdktf.IResolvable;
 }
@@ -1197,7 +1197,7 @@ export class R2BucketLifecycleRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
 */
 export class R2BucketLifecycle extends cdktf.TerraformResource {
 
@@ -1213,7 +1213,7 @@ export class R2BucketLifecycle extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a R2BucketLifecycle resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2BucketLifecycle to import
-  * @param importFromId The id of the existing R2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2BucketLifecycle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1225,7 +1225,7 @@ export class R2BucketLifecycle extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1236,7 +1236,7 @@ export class R2BucketLifecycle extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket_lifecycle',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

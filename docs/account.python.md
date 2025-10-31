@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktf/provider-cloudflare.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account cloudflare_account}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account cloudflare_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.account.Account.Initializer"></a>
 
@@ -22,6 +22,7 @@ account.Account(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  managed_by: AccountManagedBy = None,
   settings: AccountSettings = None,
   type: str = None,
   unit: AccountUnit = None
@@ -40,6 +41,7 @@ account.Account(
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.Initializer.parameter.name">name</a></code> | <code>str</code> | Account name. |
+| <code><a href="#@cdktf/provider-cloudflare.account.Account.Initializer.parameter.managedBy">managed_by</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.Initializer.parameter.type">type</a></code> | <code>str</code> | Available values: "standard", "enterprise". |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.Initializer.parameter.unit">unit</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | information related to the tenant unit, and optionally, an id of the unit to create the account on. |
@@ -112,7 +114,17 @@ Must be unique amongst siblings in the same scope
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#name Account#name}
+
+---
+
+##### `managed_by`<sup>Optional</sup> <a name="managed_by" id="@cdktf/provider-cloudflare.account.Account.Initializer.parameter.managedBy"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a>
+
+Parent container details.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -122,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -132,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -144,7 +156,7 @@ information related to the tenant unit, and optionally, an id of the unit to cre
 
 see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#unit Account#unit}
 
 ---
 
@@ -175,8 +187,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-cloudflare.account.Account.putManagedBy">put_managed_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.putSettings">put_settings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.putUnit">put_unit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.Account.resetManagedBy">reset_managed_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.resetSettings">reset_settings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.resetType">reset_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.resetUnit">reset_unit</a></code> | *No description.* |
@@ -508,6 +522,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_managed_by` <a name="put_managed_by" id="@cdktf/provider-cloudflare.account.Account.putManagedBy"></a>
+
+```python
+def put_managed_by() -> None
+```
+
 ##### `put_settings` <a name="put_settings" id="@cdktf/provider-cloudflare.account.Account.putSettings"></a>
 
 ```python
@@ -523,7 +543,7 @@ def put_settings(
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -533,7 +553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -551,12 +571,18 @@ def put_unit(
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
+
+##### `reset_managed_by` <a name="reset_managed_by" id="@cdktf/provider-cloudflare.account.Account.resetManagedBy"></a>
+
+```python
+def reset_managed_by() -> None
+```
 
 ##### `reset_settings` <a name="reset_settings" id="@cdktf/provider-cloudflare.account.Account.resetSettings"></a>
 
@@ -690,7 +716,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,8 +748,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.Account.property.managedBy">managed_by</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference">AccountManagedByOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettingsOutputReference">AccountSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.unit">unit</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountUnitOutputReference">AccountUnitOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.Account.property.managedByInput">managed_by_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.settingsInput">settings_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.Account.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
@@ -895,6 +923,16 @@ id: str
 
 ---
 
+##### `managed_by`<sup>Required</sup> <a name="managed_by" id="@cdktf/provider-cloudflare.account.Account.property.managedBy"></a>
+
+```python
+managed_by: AccountManagedByOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference">AccountManagedByOutputReference</a>
+
+---
+
 ##### `settings`<sup>Required</sup> <a name="settings" id="@cdktf/provider-cloudflare.account.Account.property.settings"></a>
 
 ```python
@@ -912,6 +950,16 @@ unit: AccountUnitOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.account.AccountUnitOutputReference">AccountUnitOutputReference</a>
+
+---
+
+##### `managed_by_input`<sup>Optional</sup> <a name="managed_by_input" id="@cdktf/provider-cloudflare.account.Account.property.managedByInput"></a>
+
+```python
+managed_by_input: IResolvable | AccountManagedBy
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a>
 
 ---
 
@@ -1011,6 +1059,7 @@ account.AccountConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  managed_by: AccountManagedBy = None,
   settings: AccountSettings = None,
   type: str = None,
   unit: AccountUnit = None
@@ -1029,6 +1078,7 @@ account.AccountConfig(
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.name">name</a></code> | <code>str</code> | Account name. |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.managedBy">managed_by</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | Parent container details. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountSettings">AccountSettings</a></code> | Account settings. |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.type">type</a></code> | <code>str</code> | Available values: "standard", "enterprise". |
 | <code><a href="#@cdktf/provider-cloudflare.account.AccountConfig.property.unit">unit</a></code> | <code><a href="#@cdktf/provider-cloudflare.account.AccountUnit">AccountUnit</a></code> | information related to the tenant unit, and optionally, an id of the unit to create the account on. |
@@ -1115,7 +1165,21 @@ name: str
 
 Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#name Account#name}
+
+---
+
+##### `managed_by`<sup>Optional</sup> <a name="managed_by" id="@cdktf/provider-cloudflare.account.AccountConfig.property.managedBy"></a>
+
+```python
+managed_by: AccountManagedBy
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a>
+
+Parent container details.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#managed_by Account#managed_by}
 
 ---
 
@@ -1129,7 +1193,7 @@ settings: AccountSettings
 
 Account settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#settings Account#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#settings Account#settings}
 
 ---
 
@@ -1143,7 +1207,7 @@ type: str
 
 Available values: "standard", "enterprise".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -1159,9 +1223,20 @@ information related to the tenant unit, and optionally, an id of the unit to cre
 
 see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#unit Account#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#unit Account#unit}
 
 ---
+
+### AccountManagedBy <a name="AccountManagedBy" id="@cdktf/provider-cloudflare.account.AccountManagedBy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.account.AccountManagedBy.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import account
+
+account.AccountManagedBy()
+```
+
 
 ### AccountSettings <a name="AccountSettings" id="@cdktf/provider-cloudflare.account.AccountSettings"></a>
 
@@ -1195,7 +1270,7 @@ abuse_contact_email: str
 
 Sets an abuse contact email to notify for abuse reports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#abuse_contact_email Account#abuse_contact_email}
 
 ---
 
@@ -1209,7 +1284,7 @@ enforce_twofactor: bool | IResolvable
 
 Indicates whether membership in this account requires that Two-Factor Authentication is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
 
 ---
 
@@ -1243,7 +1318,7 @@ id: str
 
 Tenant unit ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account#id Account#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account#id Account#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1251,6 +1326,302 @@ If you experience problems setting this value it might not be settable. Please t
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AccountManagedByOutputReference <a name="AccountManagedByOutputReference" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_cloudflare import account
+
+account.AccountManagedByOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgId">parent_org_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgName">parent_org_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `parent_org_id`<sup>Required</sup> <a name="parent_org_id" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgId"></a>
+
+```python
+parent_org_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `parent_org_name`<sup>Required</sup> <a name="parent_org_name" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.parentOrgName"></a>
+
+```python
+parent_org_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-cloudflare.account.AccountManagedByOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | AccountManagedBy
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.account.AccountManagedBy">AccountManagedBy</a>
+
+---
+
 
 ### AccountSettingsOutputReference <a name="AccountSettingsOutputReference" id="@cdktf/provider-cloudflare.account.AccountSettingsOutputReference"></a>
 

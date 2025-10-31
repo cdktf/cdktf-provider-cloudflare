@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/accounts
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/accounts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,21 +16,80 @@ export interface DataCloudflareAccountsConfig extends cdktf.TerraformMetaArgumen
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
   */
   readonly direction?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
   */
   readonly maxItems?: number;
   /**
   * Name of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
   */
   readonly name?: string;
+}
+export interface DataCloudflareAccountsResultManagedBy {
+}
+
+export function dataCloudflareAccountsResultManagedByToTerraform(struct?: DataCloudflareAccountsResultManagedBy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareAccountsResultManagedByToHclTerraform(struct?: DataCloudflareAccountsResultManagedBy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareAccountsResultManagedByOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareAccountsResultManagedBy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareAccountsResultManagedBy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // parent_org_id - computed: true, optional: false, required: false
+  public get parentOrgId() {
+    return this.getStringAttribute('parent_org_id');
+  }
+
+  // parent_org_name - computed: true, optional: false, required: false
+  public get parentOrgName() {
+    return this.getStringAttribute('parent_org_name');
+  }
 }
 export interface DataCloudflareAccountsResultSettings {
 }
@@ -152,6 +211,12 @@ export class DataCloudflareAccountsResultOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('id');
   }
 
+  // managed_by - computed: true, optional: false, required: false
+  private _managedBy = new DataCloudflareAccountsResultManagedByOutputReference(this, "managed_by");
+  public get managedBy() {
+    return this._managedBy;
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -189,7 +254,7 @@ export class DataCloudflareAccountsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/accounts cloudflare_accounts}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/accounts cloudflare_accounts}
 */
 export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
 
@@ -205,7 +270,7 @@ export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareAccounts resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccounts to import
-  * @param importFromId The id of the existing DataCloudflareAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccounts to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -217,7 +282,7 @@ export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/accounts cloudflare_accounts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/accounts cloudflare_accounts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -228,7 +293,7 @@ export class DataCloudflareAccounts extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_accounts',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
