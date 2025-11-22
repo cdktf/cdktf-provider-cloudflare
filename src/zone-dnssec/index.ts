@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,7 +20,7 @@ export interface ZoneDnssecConfig extends cdktf.TerraformMetaArguments {
   * 
   * See [Multi-signer DNSSEC](https://developers.cloudflare.com/dns/dnssec/multi-signer-dnssec/) for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
   */
   readonly dnssecMultiSigner?: boolean | cdktf.IResolvable;
   /**
@@ -31,7 +31,7 @@ export interface ZoneDnssecConfig extends cdktf.TerraformMetaArguments {
   * Note that this feature has some limitations.
   * See [Cloudflare as Secondary](https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/setup/#dnssec) for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
   */
   readonly dnssecPresigned?: boolean | cdktf.IResolvable;
   /**
@@ -43,26 +43,26 @@ export interface ZoneDnssecConfig extends cdktf.TerraformMetaArguments {
   * 
   * See [DNSSEC with NSEC3](https://developers.cloudflare.com/dns/dnssec/enable-nsec3/) for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec#dnssec_use_nsec3 ZoneDnssec#dnssec_use_nsec3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec#dnssec_use_nsec3 ZoneDnssec#dnssec_use_nsec3}
   */
   readonly dnssecUseNsec3?: boolean | cdktf.IResolvable;
   /**
   * Status of DNSSEC, based on user-desired state and presence of necessary records.
   * Available values: "active", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
   */
   readonly status?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}
 */
 export class ZoneDnssec extends cdktf.TerraformResource {
 
@@ -78,7 +78,7 @@ export class ZoneDnssec extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZoneDnssec resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneDnssec to import
-  * @param importFromId The id of the existing ZoneDnssec that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneDnssec that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneDnssec to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -90,7 +90,7 @@ export class ZoneDnssec extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,7 @@ export class ZoneDnssec extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_dnssec',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

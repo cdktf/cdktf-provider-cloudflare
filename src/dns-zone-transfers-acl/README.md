@@ -1,3 +1,3 @@
 # `cloudflare_dns_zone_transfers_acl`
 
-Refer to the Terraform Registry for docs: [`cloudflare_dns_zone_transfers_acl`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/dns_zone_transfers_acl).
+Refer to the Terraform Registry for docs: [`cloudflare_dns_zone_transfers_acl`](https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/dns_zone_transfers_acl).
