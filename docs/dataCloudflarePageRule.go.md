@@ -4,7 +4,7 @@
 
 ### DataCloudflarePageRule <a name="DataCloudflarePageRule" id="@cdktf/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_rule cloudflare_page_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_rule cloudflare_page_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflarePageRule to 
 
 The id of the existing DataCloudflarePageRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ PageruleId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_rule#pagerule_id DataCloudflarePageRule#pagerule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_rule#pagerule_id DataCloudflarePageRule#pagerule_id}
 
 ---
 
@@ -767,7 +767,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_rule#zone_id DataCloudflarePageRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_rule#zone_id DataCloudflarePageRule#zone_id}
 
 ---
 
