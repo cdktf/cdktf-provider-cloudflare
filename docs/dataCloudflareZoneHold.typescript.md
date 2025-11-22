@@ -4,7 +4,7 @@
 
 ### DataCloudflareZoneHold <a name="DataCloudflareZoneHold" id="@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZoneHold to 
 
 The id of the existing DataCloudflareZoneHold that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zone_hold#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zone_hold#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -395,6 +395,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.hold">hold</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.holdAfter">holdAfter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.includeSubdomains">includeSubdomains</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
@@ -537,6 +538,16 @@ public readonly hold: IResolvable;
 
 ```typescript
 public readonly holdAfter: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* string
@@ -698,7 +709,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zone_hold#zone_id DataCloudflareZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zone_hold#zone_id DataCloudflareZoneHold#zone_id}
 
 ---
 

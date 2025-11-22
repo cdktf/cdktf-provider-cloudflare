@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/keyless_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/keyless_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareKeylessCertificateConfig extends cdktf.TerraformM
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/keyless_certificate#keyless_certificate_id DataCloudflareKeylessCertificate#keyless_certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/keyless_certificate#keyless_certificate_id DataCloudflareKeylessCertificate#keyless_certificate_id}
   */
-  readonly keylessCertificateId?: string;
+  readonly keylessCertificateId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/keyless_certificate#zone_id DataCloudflareKeylessCertificate#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/keyless_certificate#zone_id DataCloudflareKeylessCertificate#zone_id}
   */
   readonly zoneId: string;
 }
@@ -86,7 +86,7 @@ export class DataCloudflareKeylessCertificateTunnelOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate}
 */
 export class DataCloudflareKeylessCertificate extends cdktf.TerraformDataSource {
 
@@ -102,7 +102,7 @@ export class DataCloudflareKeylessCertificate extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataCloudflareKeylessCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareKeylessCertificate to import
-  * @param importFromId The id of the existing DataCloudflareKeylessCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/keyless_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareKeylessCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/keyless_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareKeylessCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -114,7 +114,7 @@ export class DataCloudflareKeylessCertificate extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,7 @@ export class DataCloudflareKeylessCertificate extends cdktf.TerraformDataSource 
       terraformResourceType: 'cloudflare_keyless_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -164,16 +164,13 @@ export class DataCloudflareKeylessCertificate extends cdktf.TerraformDataSource 
     return this.getStringAttribute('id');
   }
 
-  // keyless_certificate_id - computed: false, optional: true, required: false
+  // keyless_certificate_id - computed: false, optional: false, required: true
   private _keylessCertificateId?: string; 
   public get keylessCertificateId() {
     return this.getStringAttribute('keyless_certificate_id');
   }
   public set keylessCertificateId(value: string) {
     this._keylessCertificateId = value;
-  }
-  public resetKeylessCertificateId() {
-    this._keylessCertificateId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get keylessCertificateIdInput() {

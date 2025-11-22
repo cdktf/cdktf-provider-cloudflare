@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#account_id ZeroTrustDlpDataset#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#account_id ZeroTrustDlpDataset#account_id}
   */
   readonly accountId: string;
   /**
@@ -21,17 +21,17 @@ export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments 
   * Determines if the words should be matched in a case-sensitive manner
   * Cannot be set to false if `secret` is true or undefined
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#case_sensitive ZeroTrustDlpDataset#case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#case_sensitive ZeroTrustDlpDataset#case_sensitive}
   */
   readonly caseSensitive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#dataset_id ZeroTrustDlpDataset#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#dataset_id ZeroTrustDlpDataset#dataset_id}
   */
   readonly datasetId?: string;
   /**
   * The description of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#description ZeroTrustDlpDataset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#description ZeroTrustDlpDataset#description}
   */
   readonly description?: string;
   /**
@@ -43,11 +43,11 @@ export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments 
   * Omitting this field provides the default value 0, which is interpreted
   * the same as 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#encoding_version ZeroTrustDlpDataset#encoding_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#encoding_version ZeroTrustDlpDataset#encoding_version}
   */
   readonly encodingVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#name ZeroTrustDlpDataset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#name ZeroTrustDlpDataset#name}
   */
   readonly name: string;
   /**
@@ -56,7 +56,7 @@ export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments 
   * If true, the response will include a secret to use with the EDM encoder.
   * If false, the response has no secret and the dataset is uploaded in plaintext.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#secret ZeroTrustDlpDataset#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#secret ZeroTrustDlpDataset#secret}
   */
   readonly secret?: boolean | cdktf.IResolvable;
 }
@@ -523,7 +523,7 @@ export class ZeroTrustDlpDatasetUploadsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}
 */
 export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
 
@@ -539,7 +539,7 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustDlpDataset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDlpDataset to import
-  * @param importFromId The id of the existing ZeroTrustDlpDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDlpDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDlpDataset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -551,7 +551,7 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -562,7 +562,7 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dlp_dataset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

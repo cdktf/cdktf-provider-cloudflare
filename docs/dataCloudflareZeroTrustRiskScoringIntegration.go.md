@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustRiskScoringIntegration <a name="DataCloudflareZeroTrustRiskScoringIntegration" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegration.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegration.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegration.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegration.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegration.resetIntegrationId">ResetIntegrationId</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetIntegrationId` <a name="ResetIntegrationId" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegration.resetIntegrationId"></a>
-
-```go
-func ResetIntegrationId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustRis
 
 The id of the existing DataCloudflareZeroTrustRiskScoringIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_risk_scoring_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_risk_scoring_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,8 +701,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_risk_scoring_integration#account_id DataCloudflareZeroTrustRiskScoringIntegration#account_id}. |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.integrationId">IntegrationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_risk_scoring_integration#integration_id DataCloudflareZeroTrustRiskScoringIntegration#integration_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_risk_scoring_integration#account_id DataCloudflareZeroTrustRiskScoringIntegration#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.integrationId">IntegrationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_risk_scoring_integration#integration_id DataCloudflareZeroTrustRiskScoringIntegration#integration_id}. |
 
 ---
 
@@ -791,11 +784,11 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_risk_scoring_integration#account_id DataCloudflareZeroTrustRiskScoringIntegration#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_risk_scoring_integration#account_id DataCloudflareZeroTrustRiskScoringIntegration#account_id}.
 
 ---
 
-##### `IntegrationId`<sup>Optional</sup> <a name="IntegrationId" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.integrationId"></a>
+##### `IntegrationId`<sup>Required</sup> <a name="IntegrationId" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegration.DataCloudflareZeroTrustRiskScoringIntegrationConfig.property.integrationId"></a>
 
 ```go
 IntegrationId *string
@@ -803,7 +796,7 @@ IntegrationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_risk_scoring_integration#integration_id DataCloudflareZeroTrustRiskScoringIntegration#integration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_risk_scoring_integration#integration_id DataCloudflareZeroTrustRiskScoringIntegration#integration_id}.
 
 ---
 

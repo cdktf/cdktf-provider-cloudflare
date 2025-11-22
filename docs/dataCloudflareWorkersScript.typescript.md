@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkersScript <a name="DataCloudflareWorkersScript" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/workers_script cloudflare_workers_script}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/workers_script cloudflare_workers_script}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.Initializer"></a>
 
@@ -67,6 +67,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.putFilter">putFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.resetFilter">resetFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.resetScriptName">resetScriptName</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +265,30 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `putFilter` <a name="putFilter" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.putFilter"></a>
+
+```typescript
+public putFilter(value: DataCloudflareWorkersScriptFilter): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.putFilter.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter">DataCloudflareWorkersScriptFilter</a>
+
+---
+
+##### `resetFilter` <a name="resetFilter" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.resetFilter"></a>
+
+```typescript
+public resetFilter(): void
+```
+
+##### `resetScriptName` <a name="resetScriptName" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.resetScriptName"></a>
+
+```typescript
+public resetScriptName(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -365,7 +392,7 @@ The construct id used in the generated config for the DataCloudflareWorkersScrip
 
 The id of the existing DataCloudflareWorkersScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/workers_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/workers_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,7 +420,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference">DataCloudflareWorkersScriptFilterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.filterInput">filterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter">DataCloudflareWorkersScriptFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.scriptNameInput">scriptNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.scriptName">scriptName</a></code> | <code>string</code> | *No description.* |
@@ -522,6 +552,26 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.filter"></a>
+
+```typescript
+public readonly filter: DataCloudflareWorkersScriptFilterOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference">DataCloudflareWorkersScriptFilterOutputReference</a>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.accountIdInput"></a>
 
 ```typescript
@@ -529,6 +579,16 @@ public readonly accountIdInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScript.property.filterInput"></a>
+
+```typescript
+public readonly filterInput: IResolvable | DataCloudflareWorkersScriptFilter;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter">DataCloudflareWorkersScriptFilter</a>
 
 ---
 
@@ -604,6 +664,7 @@ const dataCloudflareWorkersScriptConfig: dataCloudflareWorkersScript.DataCloudfl
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter">DataCloudflareWorkersScriptFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/workers_script#filter DataCloudflareWorkersScript#filter}. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Name of the script, used in URLs and route configuration. |
 
 ---
@@ -688,11 +749,23 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/workers_script#account_id DataCloudflareWorkersScript#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/workers_script#account_id DataCloudflareWorkersScript#account_id}
 
 ---
 
-##### `scriptName`<sup>Required</sup> <a name="scriptName" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.scriptName"></a>
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.filter"></a>
+
+```typescript
+public readonly filter: DataCloudflareWorkersScriptFilter;
+```
+
+- *Type:* <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter">DataCloudflareWorkersScriptFilter</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/workers_script#filter DataCloudflareWorkersScript#filter}.
+
+---
+
+##### `scriptName`<sup>Optional</sup> <a name="scriptName" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptConfig.property.scriptName"></a>
 
 ```typescript
 public readonly scriptName: string;
@@ -702,7 +775,318 @@ public readonly scriptName: string;
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/workers_script#script_name DataCloudflareWorkersScript#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/workers_script#script_name DataCloudflareWorkersScript#script_name}
+
+---
+
+### DataCloudflareWorkersScriptFilter <a name="DataCloudflareWorkersScriptFilter" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter.Initializer"></a>
+
+```typescript
+import { dataCloudflareWorkersScript } from '@cdktf/provider-cloudflare'
+
+const dataCloudflareWorkersScriptFilter: dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter.property.tags">tags</a></code> | <code>string</code> | Filter scripts by tags. Format: comma-separated list of tag:allowed pairs where allowed is 'yes' or 'no'. |
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter.property.tags"></a>
+
+```typescript
+public readonly tags: string;
+```
+
+- *Type:* string
+
+Filter scripts by tags. Format: comma-separated list of tag:allowed pairs where allowed is 'yes' or 'no'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/workers_script#tags DataCloudflareWorkersScript#tags}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataCloudflareWorkersScriptFilterOutputReference <a name="DataCloudflareWorkersScriptFilterOutputReference" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareWorkersScript } from '@cdktf/provider-cloudflare'
+
+new dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.resetTags">resetTags</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.tagsInput">tagsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.tags">tags</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter">DataCloudflareWorkersScriptFilter</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.tags"></a>
+
+```typescript
+public readonly tags: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilterOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataCloudflareWorkersScriptFilter;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.dataCloudflareWorkersScript.DataCloudflareWorkersScriptFilter">DataCloudflareWorkersScriptFilter</a>
 
 ---
 

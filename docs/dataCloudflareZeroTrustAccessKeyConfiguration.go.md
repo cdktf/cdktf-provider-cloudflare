@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessKeyConfiguration <a name="DataCloudflareZeroTrustAccessKeyConfiguration" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessKeyConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_key_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_key_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -394,6 +394,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.daysUntilNextRotation">DaysUntilNextRotation</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.keyRotationIntervalDays">KeyRotationIntervalDays</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.lastKeyRotationAt">LastKeyRotationAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -530,6 +531,16 @@ func DaysUntilNextRotation() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -707,7 +718,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_key_configuration#account_id DataCloudflareZeroTrustAccessKeyConfiguration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_key_configuration#account_id DataCloudflareZeroTrustAccessKeyConfiguration#account_id}
 
 ---
 

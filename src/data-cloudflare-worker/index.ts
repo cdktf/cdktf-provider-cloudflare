@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,15 @@ export interface DataCloudflareWorkerConfig extends cdktf.TerraformMetaArguments
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker#account_id DataCloudflareWorker#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker#account_id DataCloudflareWorker#account_id}
   */
   readonly accountId: string;
   /**
   * Identifier for the Worker, which can be ID or name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker#worker_id DataCloudflareWorker#worker_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker#worker_id DataCloudflareWorker#worker_id}
   */
-  readonly workerId?: string;
+  readonly workerId: string;
 }
 export interface DataCloudflareWorkerObservabilityLogs {
 }
@@ -809,7 +809,7 @@ export class DataCloudflareWorkerTailConsumersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker cloudflare_worker}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker cloudflare_worker}
 */
 export class DataCloudflareWorker extends cdktf.TerraformDataSource {
 
@@ -825,7 +825,7 @@ export class DataCloudflareWorker extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareWorker resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWorker to import
-  * @param importFromId The id of the existing DataCloudflareWorker that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWorker that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWorker to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -837,7 +837,7 @@ export class DataCloudflareWorker extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker cloudflare_worker} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker cloudflare_worker} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -848,7 +848,7 @@ export class DataCloudflareWorker extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_worker',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -934,16 +934,13 @@ export class DataCloudflareWorker extends cdktf.TerraformDataSource {
     return this.getStringAttribute('updated_on');
   }
 
-  // worker_id - computed: false, optional: true, required: false
+  // worker_id - computed: false, optional: false, required: true
   private _workerId?: string; 
   public get workerId() {
     return this.getStringAttribute('worker_id');
   }
   public set workerId(value: string) {
     this._workerId = value;
-  }
-  public resetWorkerId() {
-    this._workerId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workerIdInput() {

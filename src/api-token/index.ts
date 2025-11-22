@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#condition ApiToken#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#condition ApiToken#condition}
   */
   readonly condition?: ApiTokenCondition;
   /**
   * The expiration time on or after which the JWT MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#expires_on ApiToken#expires_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#expires_on ApiToken#expires_on}
   */
   readonly expiresOn?: string;
   /**
   * Token name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#name ApiToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#name ApiToken#name}
   */
   readonly name: string;
   /**
   * The time before which the token MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#not_before ApiToken#not_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#not_before ApiToken#not_before}
   */
   readonly notBefore?: string;
   /**
-  * List of access policies assigned to the token.
+  * Set of access policies assigned to the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#policies ApiToken#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#policies ApiToken#policies}
   */
   readonly policies: ApiTokenPolicies[] | cdktf.IResolvable;
   /**
   * Status of the token.
   * Available values: "active", "disabled", "expired".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#status ApiToken#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#status ApiToken#status}
   */
   readonly status?: string;
 }
@@ -52,13 +52,13 @@ export interface ApiTokenConditionRequestIp {
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#in ApiToken#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#in ApiToken#in}
   */
   readonly in?: string[];
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#not_in ApiToken#not_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#not_in ApiToken#not_in}
   */
   readonly notIn?: string[];
 }
@@ -183,7 +183,7 @@ export interface ApiTokenCondition {
   /**
   * Client IP restrictions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#request_ip ApiToken#request_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#request_ip ApiToken#request_ip}
   */
   readonly requestIp?: ApiTokenConditionRequestIp;
 }
@@ -275,149 +275,16 @@ export class ApiTokenConditionOutputReference extends cdktf.ComplexObject {
     return this._requestIp.internalValue;
   }
 }
-export interface ApiTokenPoliciesPermissionGroupsMeta {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#key ApiToken#key}
-  */
-  readonly key?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#value ApiToken#value}
-  */
-  readonly value?: string;
-}
-
-export function apiTokenPoliciesPermissionGroupsMetaToTerraform(struct?: ApiTokenPoliciesPermissionGroupsMeta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-
-export function apiTokenPoliciesPermissionGroupsMetaToHclTerraform(struct?: ApiTokenPoliciesPermissionGroupsMeta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ApiTokenPoliciesPermissionGroupsMetaOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): ApiTokenPoliciesPermissionGroupsMeta | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._key !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.key = this._key;
-    }
-    if (this._value !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.value = this._value;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ApiTokenPoliciesPermissionGroupsMeta | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._key = undefined;
-      this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._key = value.key;
-      this._value = value.value;
-    }
-  }
-
-  // key - computed: false, optional: true, required: false
-  private _key?: string; 
-  public get key() {
-    return this.getStringAttribute('key');
-  }
-  public set key(value: string) {
-    this._key = value;
-  }
-  public resetKey() {
-    this._key = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyInput() {
-    return this._key;
-  }
-
-  // value - computed: false, optional: true, required: false
-  private _value?: string; 
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-  public set value(value: string) {
-    this._value = value;
-  }
-  public resetValue() {
-    this._value = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value;
-  }
-}
 export interface ApiTokenPoliciesPermissionGroups {
   /**
   * Identifier of the permission group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#id ApiToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#id ApiToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
-  /**
-  * Attributes associated to the permission group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#meta ApiToken#meta}
-  */
-  readonly meta?: ApiTokenPoliciesPermissionGroupsMeta;
 }
 
 export function apiTokenPoliciesPermissionGroupsToTerraform(struct?: ApiTokenPoliciesPermissionGroups | cdktf.IResolvable): any {
@@ -427,7 +294,6 @@ export function apiTokenPoliciesPermissionGroupsToTerraform(struct?: ApiTokenPol
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
-    meta: apiTokenPoliciesPermissionGroupsMetaToTerraform(struct!.meta),
   }
 }
 
@@ -443,12 +309,6 @@ export function apiTokenPoliciesPermissionGroupsToHclTerraform(struct?: ApiToken
       isBlock: false,
       type: "simple",
       storageClassType: "string",
-    },
-    meta: {
-      value: apiTokenPoliciesPermissionGroupsMetaToHclTerraform(struct!.meta),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "ApiTokenPoliciesPermissionGroupsMeta",
     },
   };
 
@@ -480,10 +340,6 @@ export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
-    if (this._meta?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.meta = this._meta?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -492,7 +348,6 @@ export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.Compl
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
-      this._meta.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -502,7 +357,6 @@ export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.Compl
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._id = value.id;
-      this._meta.internalValue = value.meta;
     }
   }
 
@@ -517,27 +371,6 @@ export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // meta - computed: false, optional: true, required: false
-  private _meta = new ApiTokenPoliciesPermissionGroupsMetaOutputReference(this, "meta");
-  public get meta() {
-    return this._meta;
-  }
-  public putMeta(value: ApiTokenPoliciesPermissionGroupsMeta) {
-    this._meta.internalValue = value;
-  }
-  public resetMeta() {
-    this._meta.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metaInput() {
-    return this._meta.internalValue;
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
   }
 }
 
@@ -565,21 +398,21 @@ export interface ApiTokenPolicies {
   * Allow or deny operations against the resources.
   * Available values: "allow", "deny".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#effect ApiToken#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#effect ApiToken#effect}
   */
   readonly effect: string;
   /**
   * A set of permission groups that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
   */
   readonly permissionGroups: ApiTokenPoliciesPermissionGroups[] | cdktf.IResolvable;
   /**
-  * A list of resource names that the policy applies to.
+  * A json object representing the resources that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#resources ApiToken#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#resources ApiToken#resources}
   */
-  readonly resources: { [key: string]: string };
+  readonly resources: string;
 }
 
 export function apiTokenPoliciesToTerraform(struct?: ApiTokenPolicies | cdktf.IResolvable): any {
@@ -590,7 +423,7 @@ export function apiTokenPoliciesToTerraform(struct?: ApiTokenPolicies | cdktf.IR
   return {
     effect: cdktf.stringToTerraform(struct!.effect),
     permission_groups: cdktf.listMapper(apiTokenPoliciesPermissionGroupsToTerraform, false)(struct!.permissionGroups),
-    resources: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.resources),
+    resources: cdktf.stringToTerraform(struct!.resources),
   }
 }
 
@@ -614,10 +447,10 @@ export function apiTokenPoliciesToHclTerraform(struct?: ApiTokenPolicies | cdktf
       storageClassType: "ApiTokenPoliciesPermissionGroupsList",
     },
     resources: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.resources),
+      value: cdktf.stringToHclTerraform(struct!.resources),
       isBlock: false,
-      type: "map",
-      storageClassType: "stringMap",
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -694,11 +527,6 @@ export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
     return this._effect;
   }
 
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-
   // permission_groups - computed: false, optional: false, required: true
   private _permissionGroups = new ApiTokenPoliciesPermissionGroupsList(this, "permission_groups", true);
   public get permissionGroups() {
@@ -713,11 +541,11 @@ export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
   }
 
   // resources - computed: false, optional: false, required: true
-  private _resources?: { [key: string]: string }; 
+  private _resources?: string; 
   public get resources() {
-    return this.getStringMapAttribute('resources');
+    return this.getStringAttribute('resources');
   }
-  public set resources(value: { [key: string]: string }) {
+  public set resources(value: string) {
     this._resources = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -747,7 +575,7 @@ export class ApiTokenPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token cloudflare_api_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token cloudflare_api_token}
 */
 export class ApiToken extends cdktf.TerraformResource {
 
@@ -763,7 +591,7 @@ export class ApiToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiToken to import
-  * @param importFromId The id of the existing ApiToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -775,7 +603,7 @@ export class ApiToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/api_token cloudflare_api_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/api_token cloudflare_api_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -786,7 +614,7 @@ export class ApiToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -891,7 +719,7 @@ export class ApiToken extends cdktf.TerraformResource {
   }
 
   // policies - computed: false, optional: false, required: true
-  private _policies = new ApiTokenPoliciesList(this, "policies", false);
+  private _policies = new ApiTokenPoliciesList(this, "policies", true);
   public get policies() {
     return this._policies;
   }
@@ -968,7 +796,7 @@ export class ApiToken extends cdktf.TerraformResource {
       policies: {
         value: cdktf.listMapperHcl(apiTokenPoliciesToHclTerraform, false)(this._policies.internalValue),
         isBlock: true,
-        type: "list",
+        type: "set",
         storageClassType: "ApiTokenPoliciesList",
       },
       status: {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/byo_ip_prefix
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/byo_ip_prefix
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareByoIpPrefixConfig extends cdktf.TerraformMetaArgu
   /**
   * Identifier of a Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/byo_ip_prefix#account_id DataCloudflareByoIpPrefix#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/byo_ip_prefix#account_id DataCloudflareByoIpPrefix#account_id}
   */
   readonly accountId: string;
   /**
   * Identifier of an IP Prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/byo_ip_prefix#prefix_id DataCloudflareByoIpPrefix#prefix_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/byo_ip_prefix#prefix_id DataCloudflareByoIpPrefix#prefix_id}
   */
-  readonly prefixId?: string;
+  readonly prefixId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}
 */
 export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflareByoIpPrefix resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareByoIpPrefix to import
-  * @param importFromId The id of the existing DataCloudflareByoIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareByoIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareByoIpPrefix to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_byo_ip_prefix',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -128,6 +128,11 @@ export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
     return this.getStringAttribute('created_at');
   }
 
+  // delegate_loa_creation - computed: true, optional: false, required: false
+  public get delegateLoaCreation() {
+    return this.getBooleanAttribute('delegate_loa_creation');
+  }
+
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
@@ -136,6 +141,11 @@ export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // irr_validation_state - computed: true, optional: false, required: false
+  public get irrValidationState() {
+    return this.getStringAttribute('irr_validation_state');
   }
 
   // loa_document_id - computed: true, optional: false, required: false
@@ -158,7 +168,17 @@ export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('on_demand_locked');
   }
 
-  // prefix_id - computed: false, optional: true, required: false
+  // ownership_validation_state - computed: true, optional: false, required: false
+  public get ownershipValidationState() {
+    return this.getStringAttribute('ownership_validation_state');
+  }
+
+  // ownership_validation_token - computed: true, optional: false, required: false
+  public get ownershipValidationToken() {
+    return this.getStringAttribute('ownership_validation_token');
+  }
+
+  // prefix_id - computed: false, optional: false, required: true
   private _prefixId?: string; 
   public get prefixId() {
     return this.getStringAttribute('prefix_id');
@@ -166,12 +186,14 @@ export class DataCloudflareByoIpPrefix extends cdktf.TerraformDataSource {
   public set prefixId(value: string) {
     this._prefixId = value;
   }
-  public resetPrefixId() {
-    this._prefixId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get prefixIdInput() {
     return this._prefixId;
+  }
+
+  // rpki_validation_state - computed: true, optional: false, required: false
+  public get rpkiValidationState() {
+    return this.getStringAttribute('rpki_validation_state');
   }
 
   // =========

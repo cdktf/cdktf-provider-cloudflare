@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface WebAnalyticsSiteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
   */
   readonly accountId: string;
   /**
   * If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
   */
   readonly autoInstall?: boolean | cdktf.IResolvable;
   /**
   * Enables or disables RUM. This option can be used only when auto_install is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The hostname to use for gray-clouded sites.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
   */
   readonly host?: string;
   /**
   * If enabled, the JavaScript snippet will not be injected for visitors from the EU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
   */
   readonly lite?: boolean | cdktf.IResolvable;
   /**
   * The zone identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
   */
   readonly zoneTag?: string;
 }
@@ -225,7 +225,7 @@ export class WebAnalyticsSiteRulesetOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}
 */
 export class WebAnalyticsSite extends cdktf.TerraformResource {
 
@@ -241,7 +241,7 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WebAnalyticsSite resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebAnalyticsSite to import
-  * @param importFromId The id of the existing WebAnalyticsSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebAnalyticsSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebAnalyticsSite to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -253,7 +253,7 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -264,7 +264,7 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_web_analytics_site',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

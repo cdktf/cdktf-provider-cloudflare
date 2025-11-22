@@ -4,7 +4,7 @@
 
 ### ContentScanning <a name="ContentScanning" id="@cdktf/provider-cloudflare.contentScanning.ContentScanning"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/content_scanning cloudflare_content_scanning}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/content_scanning cloudflare_content_scanning}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.contentScanning.ContentScanning.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ContentScanning to import.
 
 The id of the existing ContentScanning that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ public string Value { get; set; }
 
 The status value for Content Scanning. Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/content_scanning#value ContentScanning#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/content_scanning#value ContentScanning#value}
 
 ---
 
@@ -847,7 +847,7 @@ public string ZoneId { get; set; }
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
 
 ---
 

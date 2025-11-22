@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface ZeroTrustGatewayProxyEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint#account_id ZeroTrustGatewayProxyEndpoint#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#account_id ZeroTrustGatewayProxyEndpoint#account_id}
   */
   readonly accountId: string;
   /**
   * Specify the list of CIDRs to restrict ingress connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint#ips ZeroTrustGatewayProxyEndpoint#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#ips ZeroTrustGatewayProxyEndpoint#ips}
   */
-  readonly ips: string[];
+  readonly ips?: string[];
+  /**
+  * The proxy endpoint kind
+  * Available values: "ip", "identity".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#kind ZeroTrustGatewayProxyEndpoint#kind}
+  */
+  readonly kind?: string;
   /**
   * Specify the name of the proxy endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint#name ZeroTrustGatewayProxyEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#name ZeroTrustGatewayProxyEndpoint#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}
 */
 export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
 
@@ -47,7 +54,7 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZeroTrustGatewayProxyEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustGatewayProxyEndpoint to import
-  * @param importFromId The id of the existing ZeroTrustGatewayProxyEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustGatewayProxyEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustGatewayProxyEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +66,7 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +77,7 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_gateway_proxy_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -83,6 +90,7 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._ips = config.ips;
+    this._kind = config.kind;
     this._name = config.name;
   }
 
@@ -113,7 +121,7 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // ips - computed: false, optional: false, required: true
+  // ips - computed: false, optional: true, required: false
   private _ips?: string[]; 
   public get ips() {
     return this.getListAttribute('ips');
@@ -121,9 +129,28 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
   public set ips(value: string[]) {
     this._ips = value;
   }
+  public resetIps() {
+    this._ips = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get ipsInput() {
     return this._ips;
+  }
+
+  // kind - computed: true, optional: true, required: false
+  private _kind?: string; 
+  public get kind() {
+    return this.getStringAttribute('kind');
+  }
+  public set kind(value: string) {
+    this._kind = value;
+  }
+  public resetKind() {
+    this._kind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kindInput() {
+    return this._kind;
   }
 
   // name - computed: false, optional: false, required: true
@@ -157,6 +184,7 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
+      kind: cdktf.stringToTerraform(this._kind),
       name: cdktf.stringToTerraform(this._name),
     };
   }
@@ -174,6 +202,12 @@ export class ZeroTrustGatewayProxyEndpoint extends cdktf.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),

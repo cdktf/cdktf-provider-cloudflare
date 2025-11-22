@@ -4,7 +4,7 @@
 
 ### QueueConsumer <a name="QueueConsumer" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer"></a>
 
@@ -23,7 +23,6 @@ queueConsumer.QueueConsumer(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   queue_id: str,
-  consumer_id: str = None,
   dead_letter_queue: str = None,
   script_name: str = None,
   settings: QueueConsumerSettings = None,
@@ -44,10 +43,9 @@ queueConsumer.QueueConsumer(
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | A Resource identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.queueId">queue_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.consumerId">consumer_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
+| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of a Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
+| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.type">type</a></code> | <code>str</code> | Available values: "worker", "http_pull". |
 
 ---
@@ -118,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
 
 ---
 
@@ -128,17 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
-
----
-
-##### `consumer_id`<sup>Optional</sup> <a name="consumer_id" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.Initializer.parameter.consumerId"></a>
-
-- *Type:* str
-
-A Resource identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#consumer_id QueueConsumer#consumer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
 
 ---
 
@@ -146,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
 
 ---
 
@@ -156,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
 
 ---
 
@@ -164,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
 
 ---
 
@@ -174,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "worker", "http_pull".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#type QueueConsumer#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#type QueueConsumer#type}
 
 ---
 
@@ -206,7 +194,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.putSettings">put_settings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.resetConsumerId">reset_consumer_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.resetDeadLetterQueue">reset_dead_letter_queue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.resetScriptName">reset_script_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.resetSettings">reset_settings</a></code> | *No description.* |
@@ -558,7 +545,7 @@ def put_settings(
 
 The maximum number of messages to include in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
 
 ---
 
@@ -570,7 +557,7 @@ Maximum number of concurrent consumers that may consume from this Queue.
 
 Set to `null` to automatically opt in to the platform's maximum (recommended).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
 
 ---
 
@@ -580,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
 
 ---
 
@@ -590,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of milliseconds to wait for a batch to fill up before attempting to deliver it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
 
 ---
 
@@ -600,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of seconds to delay before making the message available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
 
 ---
 
@@ -612,15 +599,9 @@ The number of milliseconds that a message is exclusively leased.
 
 After the timeout, the message becomes available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
 
 ---
-
-##### `reset_consumer_id` <a name="reset_consumer_id" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.resetConsumerId"></a>
-
-```python
-def reset_consumer_id() -> None
-```
 
 ##### `reset_dead_letter_queue` <a name="reset_dead_letter_queue" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.resetDeadLetterQueue"></a>
 
@@ -760,7 +741,7 @@ The construct id used in the generated config for the QueueConsumer to import.
 
 The id of the existing QueueConsumer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -790,18 +771,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.consumerId">consumer_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.script">script</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference">QueueConsumerSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.consumerIdInput">consumer_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.deadLetterQueueInput">dead_letter_queue_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.queueIdInput">queue_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.scriptNameInput">script_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.settingsInput">settings_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.consumerId">consumer_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.queueId">queue_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.scriptName">script_name</a></code> | <code>str</code> | *No description.* |
@@ -951,6 +931,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `consumer_id`<sup>Required</sup> <a name="consumer_id" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.consumerId"></a>
+
+```python
+consumer_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.createdOn"></a>
 
 ```python
@@ -985,16 +975,6 @@ settings: QueueConsumerSettingsOutputReference
 
 ```python
 account_id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `consumer_id_input`<sup>Optional</sup> <a name="consumer_id_input" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.consumerIdInput"></a>
-
-```python
-consumer_id_input: str
 ```
 
 - *Type:* str
@@ -1055,16 +1035,6 @@ type_input: str
 
 ```python
 account_id: str
-```
-
-- *Type:* str
-
----
-
-##### `consumer_id`<sup>Required</sup> <a name="consumer_id" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumer.property.consumerId"></a>
-
-```python
-consumer_id: str
 ```
 
 - *Type:* str
@@ -1148,7 +1118,6 @@ queueConsumer.QueueConsumerConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
   queue_id: str,
-  consumer_id: str = None,
   dead_letter_queue: str = None,
   script_name: str = None,
   settings: QueueConsumerSettings = None,
@@ -1169,10 +1138,9 @@ queueConsumer.QueueConsumerConfig(
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.accountId">account_id</a></code> | <code>str</code> | A Resource identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.queueId">queue_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.consumerId">consumer_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
+| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.deadLetterQueue">dead_letter_queue</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}. |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of a Worker. |
-| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
+| <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#settings QueueConsumer#settings}. |
 | <code><a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.type">type</a></code> | <code>str</code> | Available values: "worker", "http_pull". |
 
 ---
@@ -1257,7 +1225,7 @@ account_id: str
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
 
 ---
 
@@ -1271,21 +1239,7 @@ queue_id: str
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
-
----
-
-##### `consumer_id`<sup>Optional</sup> <a name="consumer_id" id="@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig.property.consumerId"></a>
-
-```python
-consumer_id: str
-```
-
-- *Type:* str
-
-A Resource identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#consumer_id QueueConsumer#consumer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
 
 ---
 
@@ -1297,7 +1251,7 @@ dead_letter_queue: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
 
 ---
 
@@ -1311,7 +1265,7 @@ script_name: str
 
 Name of a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
 
 ---
 
@@ -1323,7 +1277,7 @@ settings: QueueConsumerSettings
 
 - *Type:* <a href="#@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings">QueueConsumerSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
 
 ---
 
@@ -1337,7 +1291,7 @@ type: str
 
 Available values: "worker", "http_pull".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#type QueueConsumer#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#type QueueConsumer#type}
 
 ---
 
@@ -1381,7 +1335,7 @@ batch_size: typing.Union[int, float]
 
 The maximum number of messages to include in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
 
 ---
 
@@ -1397,7 +1351,7 @@ Maximum number of concurrent consumers that may consume from this Queue.
 
 Set to `null` to automatically opt in to the platform's maximum (recommended).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
 
 ---
 
@@ -1411,7 +1365,7 @@ max_retries: typing.Union[int, float]
 
 The maximum number of retries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
 
 ---
 
@@ -1425,7 +1379,7 @@ max_wait_time_ms: typing.Union[int, float]
 
 The number of milliseconds to wait for a batch to fill up before attempting to deliver it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
 
 ---
 
@@ -1439,7 +1393,7 @@ retry_delay: typing.Union[int, float]
 
 The number of seconds to delay before making the message available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
 
 ---
 
@@ -1455,7 +1409,7 @@ The number of milliseconds that a message is exclusively leased.
 
 After the timeout, the message becomes available for another attempt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
 
 ---
 

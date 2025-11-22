@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessTag <a name="DataCloudflareZeroTrustAccessTag" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.Initializer"></a>
 
@@ -22,7 +22,7 @@ dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
-  tag_name: str = None
+  tag_name: str
 )
 ```
 
@@ -108,17 +108,17 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
 
 ---
 
-##### `tag_name`<sup>Optional</sup> <a name="tag_name" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.Initializer.parameter.tagName"></a>
+##### `tag_name`<sup>Required</sup> <a name="tag_name" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.Initializer.parameter.tagName"></a>
 
 - *Type:* str
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
 
 ---
 
@@ -143,7 +143,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.resetTagName">reset_tag_name</a></code> | *No description.* |
 
 ---
 
@@ -364,12 +363,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_tag_name` <a name="reset_tag_name" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTag.resetTagName"></a>
-
-```python
-def reset_tag_name() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -484,7 +477,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -739,7 +732,7 @@ dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTagConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   account_id: str,
-  tag_name: str = None
+  tag_name: str
 )
 ```
 
@@ -839,11 +832,11 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_tag#account_id DataCloudflareZeroTrustAccessTag#account_id}
 
 ---
 
-##### `tag_name`<sup>Optional</sup> <a name="tag_name" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTagConfig.property.tagName"></a>
+##### `tag_name`<sup>Required</sup> <a name="tag_name" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessTag.DataCloudflareZeroTrustAccessTagConfig.property.tagName"></a>
 
 ```python
 tag_name: str
@@ -853,7 +846,7 @@ tag_name: str
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_tag#tag_name DataCloudflareZeroTrustAccessTag#tag_name}
 
 ---
 

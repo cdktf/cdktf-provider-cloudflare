@@ -4,7 +4,7 @@
 
 ### DataCloudflarePageShieldPolicy <a name="DataCloudflarePageShieldPolicy" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy.resetPolicyId">ResetPolicyId</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetPolicyId` <a name="ResetPolicyId" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy.resetPolicyId"></a>
-
-```csharp
-private void ResetPolicyId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataCloudflarePageShieldPo
 
 The id of the existing DataCloudflarePageShieldPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_shield_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -670,8 +663,8 @@ new DataCloudflarePageShieldPolicyConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    string ZoneId,
-    string PolicyId = null
+    string PolicyId,
+    string ZoneId
 };
 ```
 
@@ -686,8 +679,8 @@ new DataCloudflarePageShieldPolicyConfig {
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.policyId">PolicyId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -761,6 +754,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `PolicyId`<sup>Required</sup> <a name="PolicyId" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.policyId"></a>
+
+```csharp
+public string PolicyId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy#policy_id DataCloudflarePageShieldPolicy#policy_id}
+
+---
+
 ##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.zoneId"></a>
 
 ```csharp
@@ -771,21 +778,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_shield_policy#zone_id DataCloudflarePageShieldPolicy#zone_id}
-
----
-
-##### `PolicyId`<sup>Optional</sup> <a name="PolicyId" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig.property.policyId"></a>
-
-```csharp
-public string PolicyId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_shield_policy#policy_id DataCloudflarePageShieldPolicy#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy#zone_id DataCloudflarePageShieldPolicy#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiShield <a name="DataCloudflareApiShield" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield cloudflare_api_shield}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/api_shield cloudflare_api_shield}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer"></a>
 
@@ -20,6 +20,7 @@ DataCloudflareApiShield.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .zoneId(java.lang.String)
+//  .normalize(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -35,6 +36,7 @@ DataCloudflareApiShield.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer.parameter.normalize">normalize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Ensures that the configuration is written or retrieved in normalized fashion. |
 
 ---
 
@@ -104,7 +106,17 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
+
+---
+
+##### `normalize`<sup>Optional</sup> <a name="normalize" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer.parameter.normalize"></a>
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+Ensures that the configuration is written or retrieved in normalized fashion.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/api_shield#normalize DataCloudflareApiShield#normalize}
 
 ---
 
@@ -129,6 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.resetNormalize">resetNormalize</a></code> | *No description.* |
 
 ---
 
@@ -324,6 +337,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetNormalize` <a name="resetNormalize" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.resetNormalize"></a>
+
+```java
+public void resetNormalize()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -427,7 +446,7 @@ The construct id used in the generated config for the DataCloudflareApiShield to
 
 The id of the existing DataCloudflareApiShield that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/api_shield#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -456,7 +475,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.authIdCharacteristics">authIdCharacteristics</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldAuthIdCharacteristicsList">DataCloudflareApiShieldAuthIdCharacteristicsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.normalizeInput">normalizeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.normalize">normalize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -593,6 +615,26 @@ public DataCloudflareApiShieldAuthIdCharacteristicsList getAuthIdCharacteristics
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `normalizeInput`<sup>Optional</sup> <a name="normalizeInput" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.normalizeInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getNormalizeInput();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.zoneIdInput"></a>
 
 ```java
@@ -600,6 +642,16 @@ public java.lang.String getZoneIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `normalize`<sup>Required</sup> <a name="normalize" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.property.normalize"></a>
+
+```java
+public java.lang.Boolean|IResolvable getNormalize();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -661,6 +713,7 @@ DataCloudflareApiShieldConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .zoneId(java.lang.String)
+//  .normalize(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -676,6 +729,7 @@ DataCloudflareApiShieldConfig.builder()
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.normalize">normalize</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Ensures that the configuration is written or retrieved in normalized fashion. |
 
 ---
 
@@ -759,7 +813,21 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
+
+---
+
+##### `normalize`<sup>Optional</sup> <a name="normalize" id="@cdktf/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.normalize"></a>
+
+```java
+public java.lang.Boolean|IResolvable getNormalize();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+Ensures that the configuration is written or retrieved in normalized fashion.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/api_shield#normalize DataCloudflareApiShield#normalize}
 
 ---
 

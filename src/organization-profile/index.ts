@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationProfileAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}
   */
   readonly businessAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}
   */
   readonly businessEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}
   */
   readonly businessName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}
   */
   readonly businessPhone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}
   */
   readonly externalMetadata: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}
   */
   readonly organizationId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile cloudflare_organization_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile cloudflare_organization_profile}
 */
 export class OrganizationProfileA extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class OrganizationProfileA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationProfileA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationProfileA to import
-  * @param importFromId The id of the existing OrganizationProfileA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationProfileA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationProfileA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class OrganizationProfileA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/organization_profile cloudflare_organization_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/organization_profile cloudflare_organization_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class OrganizationProfileA extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_organization_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
