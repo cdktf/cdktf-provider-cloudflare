@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,38 @@ export interface Web3HostnameConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specify an optional description of the hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname#description Web3Hostname#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname#description Web3Hostname#description}
   */
   readonly description?: string;
   /**
   * Specify the DNSLink value used if the target is ipfs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
   */
   readonly dnslink?: string;
   /**
   * Specify the hostname that points to the target gateway via CNAME.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname#name Web3Hostname#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname#name Web3Hostname#name}
   */
   readonly name: string;
   /**
   * Specify the target gateway of the hostname.
   * Available values: "ethereum", "ipfs", "ipfs_universal_path".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname#target Web3Hostname#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname#target Web3Hostname#target}
   */
   readonly target: string;
   /**
   * Specify the identifier of the hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname cloudflare_web3_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname cloudflare_web3_hostname}
 */
 export class Web3Hostname extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class Web3Hostname extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Web3Hostname resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Web3Hostname to import
-  * @param importFromId The id of the existing Web3Hostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Web3Hostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Web3Hostname to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class Web3Hostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class Web3Hostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_web3_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

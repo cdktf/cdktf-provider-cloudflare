@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,33 +15,33 @@ export interface D1DatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database#account_id D1Database#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#account_id D1Database#account_id}
   */
   readonly accountId: string;
   /**
   * Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored.
   * Available values: "eu", "fedramp".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * D1 database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database#name D1Database#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#name D1Database#name}
   */
   readonly name: string;
   /**
   * Specify the region to create the D1 primary, if available. If this option is omitted, the D1 will be created as close as possible to the current user.
   * Available values: "wnam", "enam", "weur", "eeur", "apac", "oc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
   */
   readonly primaryLocationHint?: string;
   /**
   * Configuration for D1 read replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database#read_replication D1Database#read_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#read_replication D1Database#read_replication}
   */
   readonly readReplication?: D1DatabaseReadReplication;
 }
@@ -50,7 +50,7 @@ export interface D1DatabaseReadReplication {
   * The read replication mode for the database. Use 'auto' to create replicas and allow D1 automatically place them around the world, or 'disabled' to not use any database replicas (it can take a few hours for all replicas to be deleted).
   * Available values: "auto", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database#mode D1Database#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#mode D1Database#mode}
   */
   readonly mode: string;
 }
@@ -141,7 +141,7 @@ export class D1DatabaseReadReplicationOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database cloudflare_d1_database}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database cloudflare_d1_database}
 */
 export class D1Database extends cdktf.TerraformResource {
 
@@ -157,7 +157,7 @@ export class D1Database extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a D1Database resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the D1Database to import
-  * @param importFromId The id of the existing D1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing D1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the D1Database to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -169,7 +169,7 @@ export class D1Database extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database cloudflare_d1_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database cloudflare_d1_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +180,7 @@ export class D1Database extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_d1_database',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -27,19 +27,19 @@ export interface UniversalSslSettingConfig extends cdktf.TerraformMetaArguments 
   * 
   * If you do not have a valid custom or advanced certificate at Cloudflare's edge and are unsure if any of the above Cloudflare settings are enabled, or if any HTTP redirects exist at your origin, we advise leaving Universal SSL enabled for your domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}
 */
 export class UniversalSslSetting extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class UniversalSslSetting extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UniversalSslSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UniversalSslSetting to import
-  * @param importFromId The id of the existing UniversalSslSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UniversalSslSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UniversalSslSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class UniversalSslSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class UniversalSslSetting extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_universal_ssl_setting',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
