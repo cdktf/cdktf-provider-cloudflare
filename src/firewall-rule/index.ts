@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface FirewallRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The action to perform when the threshold of matched traffic within the configured period is exceeded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#action FirewallRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#action FirewallRule#action}
   */
   readonly action: FirewallRuleAction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#filter FirewallRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#filter FirewallRule#filter}
   */
   readonly filter: FirewallRuleFilter;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
   */
   readonly zoneId: string;
 }
@@ -33,13 +33,13 @@ export interface FirewallRuleActionResponse {
   /**
   * The response body to return. The value must conform to the configured content type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#body FirewallRule#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#body FirewallRule#body}
   */
   readonly body?: string;
   /**
   * The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
   */
   readonly contentType?: string;
 }
@@ -165,21 +165,21 @@ export interface FirewallRuleAction {
   * The action to perform.
   * Available values: "simulate", "ban", "challenge", "js_challenge", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#mode FirewallRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#mode FirewallRule#mode}
   */
   readonly mode?: string;
   /**
   * A custom content type and reponse to return when the threshold is exceeded. The custom response configured in this object will override the custom error for the zone. This object is optional.
   * Notes: If you omit this object, Cloudflare will use the default HTML error page. If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone challenge pages and you should not provide the "response" object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#response FirewallRule#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#response FirewallRule#response}
   */
   readonly response?: FirewallRuleActionResponse;
   /**
   * The time in seconds during which Cloudflare will perform the mitigation action. Must be an integer value greater than or equal to the period.
   * Notes: If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone's Challenge Passage time and you should not provide this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
   */
   readonly timeout?: number;
 }
@@ -333,25 +333,25 @@ export interface FirewallRuleFilter {
   /**
   * An informative summary of the filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#description FirewallRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#description FirewallRule#description}
   */
   readonly description?: string;
   /**
   * The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#expression FirewallRule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#expression FirewallRule#expression}
   */
   readonly expression?: string;
   /**
   * When true, indicates that the filter is currently paused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#paused FirewallRule#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#paused FirewallRule#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
   * A short reference tag. Allows you to select related filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#ref FirewallRule#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#ref FirewallRule#ref}
   */
   readonly ref?: string;
 }
@@ -537,7 +537,7 @@ export class FirewallRuleFilterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule cloudflare_firewall_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule cloudflare_firewall_rule}
 */
 export class FirewallRule extends cdktf.TerraformResource {
 
@@ -553,7 +553,7 @@ export class FirewallRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FirewallRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirewallRule to import
-  * @param importFromId The id of the existing FirewallRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FirewallRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirewallRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -565,7 +565,7 @@ export class FirewallRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -576,7 +576,7 @@ export class FirewallRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_firewall_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

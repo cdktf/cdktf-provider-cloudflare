@@ -4,7 +4,7 @@
 
 ### ZoneSubscription <a name="ZoneSubscription" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer"></a>
 
@@ -39,7 +39,7 @@ zoneSubscription.ZoneSubscription(
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Subscription identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer.parameter.frequency">frequency</a></code> | <code>str</code> | How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly". |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer.parameter.frequency">frequency</a></code> | <code>str</code> | How often the subscription is renewed automatically. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer.parameter.ratePlan">rate_plan</a></code> | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan">ZoneSubscriptionRatePlan</a></code> | The rate plan applied to the subscription. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Subscription identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
 
 ---
 
@@ -118,9 +118,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly".
+How often the subscription is renewed automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
+Available values: "weekly", "monthly", "quarterly", "yearly".
+Note: Some plans may not support frequency configuration and will return "not-applicable".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
 
 ---
 
@@ -130,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The rate plan applied to the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
 
 ---
 
@@ -496,66 +499,21 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_rate_plan(
-  currency: str = None,
-  externally_managed: bool | IResolvable = None,
   id: str = None,
-  is_contract: bool | IResolvable = None,
-  public_name: str = None,
-  scope: str = None,
-  sets: typing.List[str] = None
+  scope: str = None
 ) -> None
 ```
-
-###### `currency`<sup>Optional</sup> <a name="currency" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.putRatePlan.parameter.currency"></a>
-
-- *Type:* str
-
-The currency applied to the rate plan subscription.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#currency ZoneSubscription#currency}
-
----
-
-###### `externally_managed`<sup>Optional</sup> <a name="externally_managed" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.putRatePlan.parameter.externallyManaged"></a>
-
-- *Type:* bool | cdktf.IResolvable
-
-Whether this rate plan is managed externally from Cloudflare.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#externally_managed ZoneSubscription#externally_managed}
-
----
 
 ###### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.putRatePlan.parameter.id"></a>
 
 - *Type:* str
 
-The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise".
+The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise", "partners_ent".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#id ZoneSubscription#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#id ZoneSubscription#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-###### `is_contract`<sup>Optional</sup> <a name="is_contract" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.putRatePlan.parameter.isContract"></a>
-
-- *Type:* bool | cdktf.IResolvable
-
-Whether a rate plan is enterprise-based (or newly adopted term contract).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#is_contract ZoneSubscription#is_contract}
-
----
-
-###### `public_name`<sup>Optional</sup> <a name="public_name" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.putRatePlan.parameter.publicName"></a>
-
-- *Type:* str
-
-The full name of the rate plan.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#public_name ZoneSubscription#public_name}
 
 ---
 
@@ -565,17 +523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The scope that this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
-
----
-
-###### `sets`<sup>Optional</sup> <a name="sets" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscription.putRatePlan.parameter.sets"></a>
-
-- *Type:* typing.List[str]
-
-The list of sets this rate plan applies to.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#sets ZoneSubscription#sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
 
 ---
 
@@ -705,7 +653,7 @@ The construct id used in the generated config for the ZoneSubscription to import
 
 The id of the existing ZoneSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1065,7 +1013,7 @@ zoneSubscription.ZoneSubscriptionConfig(
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Subscription identifier tag. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.frequency">frequency</a></code> | <code>str</code> | How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly". |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.frequency">frequency</a></code> | <code>str</code> | How often the subscription is renewed automatically. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.property.ratePlan">rate_plan</a></code> | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan">ZoneSubscriptionRatePlan</a></code> | The rate plan applied to the subscription. |
 
 ---
@@ -1150,7 +1098,7 @@ zone_id: str
 
 Subscription identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
 
 ---
 
@@ -1162,9 +1110,12 @@ frequency: str
 
 - *Type:* str
 
-How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly".
+How often the subscription is renewed automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
+Available values: "weekly", "monthly", "quarterly", "yearly".
+Note: Some plans may not support frequency configuration and will return "not-applicable".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
 
 ---
 
@@ -1178,7 +1129,7 @@ rate_plan: ZoneSubscriptionRatePlan
 
 The rate plan applied to the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
 
 ---
 
@@ -1190,13 +1141,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktf_cdktf_provider_cloudflare import zone_subscription
 
 zoneSubscription.ZoneSubscriptionRatePlan(
-  currency: str = None,
-  externally_managed: bool | IResolvable = None,
   id: str = None,
-  is_contract: bool | IResolvable = None,
-  public_name: str = None,
-  scope: str = None,
-  sets: typing.List[str] = None
+  scope: str = None
 )
 ```
 
@@ -1204,41 +1150,8 @@ zoneSubscription.ZoneSubscriptionRatePlan(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.currency">currency</a></code> | <code>str</code> | The currency applied to the rate plan subscription. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.externallyManaged">externally_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this rate plan is managed externally from Cloudflare. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.id">id</a></code> | <code>str</code> | The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise". |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.isContract">is_contract</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether a rate plan is enterprise-based (or newly adopted term contract). |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.publicName">public_name</a></code> | <code>str</code> | The full name of the rate plan. |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.id">id</a></code> | <code>str</code> | The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise", "partners_ent". |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.scope">scope</a></code> | <code>str</code> | The scope that this rate plan applies to. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.sets">sets</a></code> | <code>typing.List[str]</code> | The list of sets this rate plan applies to. |
-
----
-
-##### `currency`<sup>Optional</sup> <a name="currency" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.currency"></a>
-
-```python
-currency: str
-```
-
-- *Type:* str
-
-The currency applied to the rate plan subscription.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#currency ZoneSubscription#currency}
-
----
-
-##### `externally_managed`<sup>Optional</sup> <a name="externally_managed" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.externallyManaged"></a>
-
-```python
-externally_managed: bool | IResolvable
-```
-
-- *Type:* bool | cdktf.IResolvable
-
-Whether this rate plan is managed externally from Cloudflare.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#externally_managed ZoneSubscription#externally_managed}
 
 ---
 
@@ -1250,40 +1163,12 @@ id: str
 
 - *Type:* str
 
-The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise".
+The ID of the rate plan. Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise", "partners_ent".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#id ZoneSubscription#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#id ZoneSubscription#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `is_contract`<sup>Optional</sup> <a name="is_contract" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.isContract"></a>
-
-```python
-is_contract: bool | IResolvable
-```
-
-- *Type:* bool | cdktf.IResolvable
-
-Whether a rate plan is enterprise-based (or newly adopted term contract).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#is_contract ZoneSubscription#is_contract}
-
----
-
-##### `public_name`<sup>Optional</sup> <a name="public_name" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.publicName"></a>
-
-```python
-public_name: str
-```
-
-- *Type:* str
-
-The full name of the rate plan.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#public_name ZoneSubscription#public_name}
 
 ---
 
@@ -1297,21 +1182,7 @@ scope: str
 
 The scope that this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
-
----
-
-##### `sets`<sup>Optional</sup> <a name="sets" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.property.sets"></a>
-
-```python
-sets: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The list of sets this rate plan applies to.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_subscription#sets ZoneSubscription#sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
 
 ---
 
@@ -1370,13 +1241,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetCurrency">reset_currency</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetExternallyManaged">reset_externally_managed</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetIsContract">reset_is_contract</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetPublicName">reset_public_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetScope">reset_scope</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetSets">reset_sets</a></code> | *No description.* |
 
 ---
 
@@ -1552,46 +1418,16 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_currency` <a name="reset_currency" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetCurrency"></a>
-
-```python
-def reset_currency() -> None
-```
-
-##### `reset_externally_managed` <a name="reset_externally_managed" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetExternallyManaged"></a>
-
-```python
-def reset_externally_managed() -> None
-```
-
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_is_contract` <a name="reset_is_contract" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetIsContract"></a>
-
-```python
-def reset_is_contract() -> None
-```
-
-##### `reset_public_name` <a name="reset_public_name" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetPublicName"></a>
-
-```python
-def reset_public_name() -> None
-```
-
 ##### `reset_scope` <a name="reset_scope" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetScope"></a>
 
 ```python
 def reset_scope() -> None
-```
-
-##### `reset_sets` <a name="reset_sets" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.resetSets"></a>
-
-```python
-def reset_sets() -> None
 ```
 
 
@@ -1601,20 +1437,15 @@ def reset_sets() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.currencyInput">currency_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.externallyManagedInput">externally_managed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.isContractInput">is_contract_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.publicNameInput">public_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.setsInput">sets_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.currency">currency</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.externallyManaged">externally_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.isContract">is_contract</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.externallyManaged">externally_managed</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.isContract">is_contract</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.publicName">public_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.sets">sets</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan">ZoneSubscriptionRatePlan</a></code> | *No description.* |
 
 ---
@@ -1643,23 +1474,53 @@ fqn: str
 
 ---
 
-##### `currency_input`<sup>Optional</sup> <a name="currency_input" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.currencyInput"></a>
+##### `currency`<sup>Required</sup> <a name="currency" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.currency"></a>
 
 ```python
-currency_input: str
+currency: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `externally_managed_input`<sup>Optional</sup> <a name="externally_managed_input" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.externallyManagedInput"></a>
+##### `externally_managed`<sup>Required</sup> <a name="externally_managed" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.externallyManaged"></a>
 
 ```python
-externally_managed_input: bool | IResolvable
+externally_managed: IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `is_contract`<sup>Required</sup> <a name="is_contract" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.isContract"></a>
+
+```python
+is_contract: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `public_name`<sup>Required</sup> <a name="public_name" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.publicName"></a>
+
+```python
+public_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `sets`<sup>Required</sup> <a name="sets" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.sets"></a>
+
+```python
+sets: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1667,26 +1528,6 @@ externally_managed_input: bool | IResolvable
 
 ```python
 id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `is_contract_input`<sup>Optional</sup> <a name="is_contract_input" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.isContractInput"></a>
-
-```python
-is_contract_input: bool | IResolvable
-```
-
-- *Type:* bool | cdktf.IResolvable
-
----
-
-##### `public_name_input`<sup>Optional</sup> <a name="public_name_input" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.publicNameInput"></a>
-
-```python
-public_name_input: str
 ```
 
 - *Type:* str
@@ -1703,60 +1544,10 @@ scope_input: str
 
 ---
 
-##### `sets_input`<sup>Optional</sup> <a name="sets_input" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.setsInput"></a>
-
-```python
-sets_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `currency`<sup>Required</sup> <a name="currency" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.currency"></a>
-
-```python
-currency: str
-```
-
-- *Type:* str
-
----
-
-##### `externally_managed`<sup>Required</sup> <a name="externally_managed" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.externallyManaged"></a>
-
-```python
-externally_managed: bool | IResolvable
-```
-
-- *Type:* bool | cdktf.IResolvable
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.id"></a>
 
 ```python
 id: str
-```
-
-- *Type:* str
-
----
-
-##### `is_contract`<sup>Required</sup> <a name="is_contract" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.isContract"></a>
-
-```python
-is_contract: bool | IResolvable
-```
-
-- *Type:* bool | cdktf.IResolvable
-
----
-
-##### `public_name`<sup>Required</sup> <a name="public_name" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.publicName"></a>
-
-```python
-public_name: str
 ```
 
 - *Type:* str
@@ -1770,16 +1561,6 @@ scope: str
 ```
 
 - *Type:* str
-
----
-
-##### `sets`<sup>Required</sup> <a name="sets" id="@cdktf/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.property.sets"></a>
-
-```python
-sets: typing.List[str]
-```
-
-- *Type:* typing.List[str]
 
 ---
 

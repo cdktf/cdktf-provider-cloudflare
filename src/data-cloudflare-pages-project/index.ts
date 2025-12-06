@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflarePagesProjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
   */
   readonly projectName: string;
 }
@@ -235,6 +235,11 @@ export class DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetad
   // branch - computed: true, optional: false, required: false
   public get branch() {
     return this.getStringAttribute('branch');
+  }
+
+  // commit_dirty - computed: true, optional: false, required: false
+  public get commitDirty() {
+    return this.getBooleanAttribute('commit_dirty');
   }
 
   // commit_hash - computed: true, optional: false, required: false
@@ -513,6 +518,11 @@ export class DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputRefe
     return this.getStringAttribute('owner');
   }
 
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
   // path_excludes - computed: true, optional: false, required: false
   public get pathExcludes() {
     return this.getListAttribute('path_excludes');
@@ -551,6 +561,11 @@ export class DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputRefe
   // production_deployments_enabled - computed: true, optional: false, required: false
   public get productionDeploymentsEnabled() {
     return this.getBooleanAttribute('production_deployments_enabled');
+  }
+
+  // repo_id - computed: true, optional: false, required: false
+  public get repoId() {
+    return this.getStringAttribute('repo_id');
   }
 
   // repo_name - computed: true, optional: false, required: false
@@ -841,6 +856,11 @@ export class DataCloudflarePagesProjectCanonicalDeploymentOutputReference extend
   // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
+  }
+
+  // uses_functions - computed: true, optional: false, required: false
+  public get usesFunctions() {
+    return this.getBooleanAttribute('uses_functions');
   }
 }
 export interface DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindings {
@@ -3529,6 +3549,11 @@ export class DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata
     return this.getStringAttribute('branch');
   }
 
+  // commit_dirty - computed: true, optional: false, required: false
+  public get commitDirty() {
+    return this.getBooleanAttribute('commit_dirty');
+  }
+
   // commit_hash - computed: true, optional: false, required: false
   public get commitHash() {
     return this.getStringAttribute('commit_hash');
@@ -3805,6 +3830,11 @@ export class DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReferen
     return this.getStringAttribute('owner');
   }
 
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
   // path_excludes - computed: true, optional: false, required: false
   public get pathExcludes() {
     return this.getListAttribute('path_excludes');
@@ -3843,6 +3873,11 @@ export class DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReferen
   // production_deployments_enabled - computed: true, optional: false, required: false
   public get productionDeploymentsEnabled() {
     return this.getBooleanAttribute('production_deployments_enabled');
+  }
+
+  // repo_id - computed: true, optional: false, required: false
+  public get repoId() {
+    return this.getStringAttribute('repo_id');
   }
 
   // repo_name - computed: true, optional: false, required: false
@@ -4134,6 +4169,11 @@ export class DataCloudflarePagesProjectLatestDeploymentOutputReference extends c
   public get url() {
     return this.getStringAttribute('url');
   }
+
+  // uses_functions - computed: true, optional: false, required: false
+  public get usesFunctions() {
+    return this.getBooleanAttribute('uses_functions');
+  }
 }
 export interface DataCloudflarePagesProjectSourceConfig {
 }
@@ -4194,6 +4234,11 @@ export class DataCloudflarePagesProjectSourceConfigOutputReference extends cdktf
     return this.getStringAttribute('owner');
   }
 
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
   // path_excludes - computed: true, optional: false, required: false
   public get pathExcludes() {
     return this.getListAttribute('path_excludes');
@@ -4232,6 +4277,11 @@ export class DataCloudflarePagesProjectSourceConfigOutputReference extends cdktf
   // production_deployments_enabled - computed: true, optional: false, required: false
   public get productionDeploymentsEnabled() {
     return this.getBooleanAttribute('production_deployments_enabled');
+  }
+
+  // repo_id - computed: true, optional: false, required: false
+  public get repoId() {
+    return this.getStringAttribute('repo_id');
   }
 
   // repo_name - computed: true, optional: false, required: false
@@ -4301,7 +4351,7 @@ export class DataCloudflarePagesProjectSourceOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project cloudflare_pages_project}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project cloudflare_pages_project}
 */
 export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
 
@@ -4317,7 +4367,7 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataCloudflarePagesProject resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePagesProject to import
-  * @param importFromId The id of the existing DataCloudflarePagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePagesProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4329,7 +4379,7 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4340,7 +4390,7 @@ export class DataCloudflarePagesProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

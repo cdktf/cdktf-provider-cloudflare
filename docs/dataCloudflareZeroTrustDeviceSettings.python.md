@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDeviceSettings <a name="DataCloudflareZeroTrustDeviceSettings" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer"></a>
 
@@ -36,7 +36,7 @@ dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings(
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
 
 ---
 
@@ -463,7 +463,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDev
 
 The id of the existing DataCloudflareZeroTrustDeviceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_device_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -492,6 +492,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.disableForTime">disable_for_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalEnabled">external_emergency_signal_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalFingerprint">external_emergency_signal_fingerprint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalInterval">external_emergency_signal_interval</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalUrl">external_emergency_signal_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.gatewayProxyEnabled">gateway_proxy_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.gatewayUdpProxyEnabled">gateway_udp_proxy_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.rootCertificateInstallationEnabled">root_certificate_installation_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -633,6 +637,46 @@ disable_for_time: typing.Union[int, float]
 
 ---
 
+##### `external_emergency_signal_enabled`<sup>Required</sup> <a name="external_emergency_signal_enabled" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalEnabled"></a>
+
+```python
+external_emergency_signal_enabled: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `external_emergency_signal_fingerprint`<sup>Required</sup> <a name="external_emergency_signal_fingerprint" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalFingerprint"></a>
+
+```python
+external_emergency_signal_fingerprint: str
+```
+
+- *Type:* str
+
+---
+
+##### `external_emergency_signal_interval`<sup>Required</sup> <a name="external_emergency_signal_interval" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalInterval"></a>
+
+```python
+external_emergency_signal_interval: str
+```
+
+- *Type:* str
+
+---
+
+##### `external_emergency_signal_url`<sup>Required</sup> <a name="external_emergency_signal_url" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.externalEmergencySignalUrl"></a>
+
+```python
+external_emergency_signal_url: str
+```
+
+- *Type:* str
+
+---
+
 ##### `gateway_proxy_enabled`<sup>Required</sup> <a name="gateway_proxy_enabled" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.property.gatewayProxyEnabled"></a>
 
 ```python
@@ -743,7 +787,7 @@ dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfi
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
 
 ---
 
@@ -825,7 +869,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
 
 ---
 

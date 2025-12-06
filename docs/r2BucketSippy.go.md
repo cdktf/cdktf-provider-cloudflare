@@ -4,7 +4,7 @@
 
 ### R2BucketSippy <a name="R2BucketSippy" id="@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the R2BucketSippy to import.
 
 The id of the existing R2BucketSippy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ AccountId *string
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#account_id R2BucketSippy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#account_id R2BucketSippy#account_id}
 
 ---
 
@@ -966,7 +966,7 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#bucket_name R2BucketSippy#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#bucket_name R2BucketSippy#bucket_name}
 
 ---
 
@@ -980,7 +980,7 @@ Destination R2BucketSippyDestination
 
 R2 bucket to copy objects to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#destination R2BucketSippy#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#destination R2BucketSippy#destination}
 
 ---
 
@@ -994,7 +994,7 @@ Jurisdiction *string
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#jurisdiction R2BucketSippy#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#jurisdiction R2BucketSippy#jurisdiction}
 
 ---
 
@@ -1008,7 +1008,7 @@ Source R2BucketSippySource
 
 AWS S3 bucket to copy objects from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#source R2BucketSippy#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#source R2BucketSippy#source}
 
 ---
 
@@ -1052,7 +1052,7 @@ token from the [R2 dashboard](https://dash.cloudflare.com/?to=/:account/r2/api-t
 Sippy will use this token when writing objects to R2, so it is
 best to scope this token to the bucket you're enabling Sippy for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#access_key_id R2BucketSippy#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#access_key_id R2BucketSippy#access_key_id}
 
 ---
 
@@ -1066,7 +1066,7 @@ CloudProvider *string
 
 Available values: "r2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#cloud_provider R2BucketSippy#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#cloud_provider R2BucketSippy#cloud_provider}
 
 ---
 
@@ -1086,7 +1086,7 @@ token from the [R2 dashboard](https://dash.cloudflare.com/?to=/:account/r2/api-t
 Sippy will use this token when writing objects to R2, so it is
 best to scope this token to the bucket you're enabling Sippy for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#secret_access_key R2BucketSippy#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#secret_access_key R2BucketSippy#secret_access_key}
 
 ---
 
@@ -1100,6 +1100,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketsip
 &r2bucketsippy.R2BucketSippySource {
 	AccessKeyId: *string,
 	Bucket: *string,
+	BucketUrl: *string,
 	ClientEmail: *string,
 	CloudProvider: *string,
 	PrivateKey: *string,
@@ -1114,8 +1115,9 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketsip
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Access Key ID of an IAM credential (ideally scoped to a single S3 bucket). |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.bucket">Bucket</a></code> | <code>*string</code> | Name of the AWS S3 bucket. |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.bucketUrl">BucketUrl</a></code> | <code>*string</code> | URL to the S3-compatible API of the bucket. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.clientEmail">ClientEmail</a></code> | <code>*string</code> | Client email of an IAM credential (ideally scoped to a single GCS bucket). |
-| <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.cloudProvider">CloudProvider</a></code> | <code>*string</code> | Available values: "aws", "gcs". |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.cloudProvider">CloudProvider</a></code> | <code>*string</code> | Available values: "aws", "gcs", "s3". |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Private Key of an IAM credential (ideally scoped to a single GCS bucket). |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.region">Region</a></code> | <code>*string</code> | Name of the AWS availability zone. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | Secret Access Key of an IAM credential (ideally scoped to a single S3 bucket). |
@@ -1132,7 +1134,7 @@ AccessKeyId *string
 
 Access Key ID of an IAM credential (ideally scoped to a single S3 bucket).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#access_key_id R2BucketSippy#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#access_key_id R2BucketSippy#access_key_id}
 
 ---
 
@@ -1146,7 +1148,21 @@ Bucket *string
 
 Name of the AWS S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#bucket R2BucketSippy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#bucket R2BucketSippy#bucket}
+
+---
+
+##### `BucketUrl`<sup>Optional</sup> <a name="BucketUrl" id="@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource.property.bucketUrl"></a>
+
+```go
+BucketUrl *string
+```
+
+- *Type:* *string
+
+URL to the S3-compatible API of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#bucket_url R2BucketSippy#bucket_url}
 
 ---
 
@@ -1160,7 +1176,7 @@ ClientEmail *string
 
 Client email of an IAM credential (ideally scoped to a single GCS bucket).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#client_email R2BucketSippy#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#client_email R2BucketSippy#client_email}
 
 ---
 
@@ -1172,9 +1188,9 @@ CloudProvider *string
 
 - *Type:* *string
 
-Available values: "aws", "gcs".
+Available values: "aws", "gcs", "s3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#cloud_provider R2BucketSippy#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#cloud_provider R2BucketSippy#cloud_provider}
 
 ---
 
@@ -1188,7 +1204,7 @@ PrivateKey *string
 
 Private Key of an IAM credential (ideally scoped to a single GCS bucket).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#private_key R2BucketSippy#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#private_key R2BucketSippy#private_key}
 
 ---
 
@@ -1202,7 +1218,7 @@ Region *string
 
 Name of the AWS availability zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#region R2BucketSippy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#region R2BucketSippy#region}
 
 ---
 
@@ -1216,7 +1232,7 @@ SecretAccessKey *string
 
 Secret Access Key of an IAM credential (ideally scoped to a single S3 bucket).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/r2_bucket_sippy#secret_access_key R2BucketSippy#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#secret_access_key R2BucketSippy#secret_access_key}
 
 ---
 
@@ -1610,6 +1626,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetAccessKeyId">ResetAccessKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetBucket">ResetBucket</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetBucketUrl">ResetBucketUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetClientEmail">ResetClientEmail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetCloudProvider">ResetCloudProvider</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetPrivateKey">ResetPrivateKey</a></code> | *No description.* |
@@ -1780,6 +1797,12 @@ func ResetAccessKeyId()
 func ResetBucket()
 ```
 
+##### `ResetBucketUrl` <a name="ResetBucketUrl" id="@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetBucketUrl"></a>
+
+```go
+func ResetBucketUrl()
+```
+
 ##### `ResetClientEmail` <a name="ResetClientEmail" id="@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.resetClientEmail"></a>
 
 ```go
@@ -1819,6 +1842,7 @@ func ResetSecretAccessKey()
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.accessKeyIdInput">AccessKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.bucketInput">BucketInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.bucketUrlInput">BucketUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.clientEmailInput">ClientEmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.cloudProviderInput">CloudProviderInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.privateKeyInput">PrivateKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -1826,6 +1850,7 @@ func ResetSecretAccessKey()
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.secretAccessKeyInput">SecretAccessKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.bucketUrl">BucketUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.clientEmail">ClientEmail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.cloudProvider">CloudProvider</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
@@ -1873,6 +1898,16 @@ func AccessKeyIdInput() *string
 
 ```go
 func BucketInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BucketUrlInput`<sup>Optional</sup> <a name="BucketUrlInput" id="@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.bucketUrlInput"></a>
+
+```go
+func BucketUrlInput() *string
 ```
 
 - *Type:* *string
@@ -1943,6 +1978,16 @@ func AccessKeyId() *string
 
 ```go
 func Bucket() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BucketUrl`<sup>Required</sup> <a name="BucketUrl" id="@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.property.bucketUrl"></a>
+
+```go
+func BucketUrl() *string
 ```
 
 - *Type:* *string

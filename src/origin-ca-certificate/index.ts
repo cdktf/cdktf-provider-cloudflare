@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,33 +15,33 @@ export interface OriginCaCertificateConfig extends cdktf.TerraformMetaArguments 
   /**
   * The Certificate Signing Request (CSR). Must be newline-encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
   */
-  readonly csr?: string;
+  readonly csr: string;
   /**
   * Array of hostnames or wildcard names (e.g., *.example.com) bound to the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
   */
-  readonly hostnames?: string[];
+  readonly hostnames: string[];
   /**
   * Signature type desired on certificate ("origin-rsa" (rsa), "origin-ecc" (ecdsa), or "keyless-certificate" (for Keyless SSL servers).
   * Available values: "origin-rsa", "origin-ecc", "keyless-certificate".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
   */
-  readonly requestType?: string;
+  readonly requestType: string;
   /**
   * The number of days for which the certificate should be valid.
   * Available values: 7, 30, 90, 365, 730, 1095, 5475.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
   */
   readonly requestedValidity?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}
 */
 export class OriginCaCertificate extends cdktf.TerraformResource {
 
@@ -57,7 +57,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OriginCaCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OriginCaCertificate to import
-  * @param importFromId The id of the existing OriginCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OriginCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OriginCaCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -69,18 +69,18 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options OriginCaCertificateConfig = {}
+  * @param options OriginCaCertificateConfig
   */
-  public constructor(scope: Construct, id: string, config: OriginCaCertificateConfig = {}) {
+  public constructor(scope: Construct, id: string, config: OriginCaCertificateConfig) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_origin_ca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -106,16 +106,13 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
     return this.getStringAttribute('certificate');
   }
 
-  // csr - computed: false, optional: true, required: false
+  // csr - computed: false, optional: false, required: true
   private _csr?: string; 
   public get csr() {
     return this.getStringAttribute('csr');
   }
   public set csr(value: string) {
     this._csr = value;
-  }
-  public resetCsr() {
-    this._csr = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get csrInput() {
@@ -127,16 +124,13 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
     return this.getStringAttribute('expires_on');
   }
 
-  // hostnames - computed: false, optional: true, required: false
+  // hostnames - computed: false, optional: false, required: true
   private _hostnames?: string[]; 
   public get hostnames() {
     return this.getListAttribute('hostnames');
   }
   public set hostnames(value: string[]) {
     this._hostnames = value;
-  }
-  public resetHostnames() {
-    this._hostnames = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hostnamesInput() {
@@ -148,16 +142,13 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // request_type - computed: false, optional: true, required: false
+  // request_type - computed: false, optional: false, required: true
   private _requestType?: string; 
   public get requestType() {
     return this.getStringAttribute('request_type');
   }
   public set requestType(value: string) {
     this._requestType = value;
-  }
-  public resetRequestType() {
-    this._requestType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestTypeInput() {

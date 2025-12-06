@@ -4,7 +4,7 @@
 
 ### DataCloudflarePagesProject <a name="DataCloudflarePagesProject" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project cloudflare_pages_project}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project cloudflare_pages_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataCloudflarePagesProject
 
 The id of the existing DataCloudflarePagesProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -974,7 +974,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
 
 ---
 
@@ -988,7 +988,7 @@ public readonly projectName: string;
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
 
 ---
 
@@ -2319,6 +2319,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.branch">branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.commitDirty">commitDirty</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.commitHash">commitHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.commitMessage">commitMessage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadata">DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadata</a></code> | *No description.* |
@@ -2356,6 +2357,16 @@ public readonly branch: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `commitDirty`<sup>Required</sup> <a name="commitDirty" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.property.commitDirty"></a>
+
+```typescript
+public readonly commitDirty: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -3596,6 +3607,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentOutputReference.property.source">source</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceOutputReference">DataCloudflarePagesProjectCanonicalDeploymentSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentOutputReference.property.stages">stages</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentStagesList">DataCloudflarePagesProjectCanonicalDeploymentStagesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentOutputReference.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentOutputReference.property.usesFunctions">usesFunctions</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeployment">DataCloudflarePagesProjectCanonicalDeployment</a></code> | *No description.* |
 
 ---
@@ -3781,6 +3793,16 @@ public readonly url: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `usesFunctions`<sup>Required</sup> <a name="usesFunctions" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentOutputReference.property.usesFunctions"></a>
+
+```typescript
+public readonly usesFunctions: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -4007,6 +4029,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.deploymentsEnabled">deploymentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.ownerId">ownerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.pathExcludes">pathExcludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.pathIncludes">pathIncludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.prCommentsEnabled">prCommentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -4015,6 +4038,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.previewDeploymentSetting">previewDeploymentSetting</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.productionBranch">productionBranch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.productionDeploymentsEnabled">productionDeploymentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.repoId">repoId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.repoName">repoName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfig">DataCloudflarePagesProjectCanonicalDeploymentSourceConfig</a></code> | *No description.* |
 
@@ -4058,6 +4082,16 @@ public readonly deploymentsEnabled: IResolvable;
 
 ```typescript
 public readonly owner: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ownerId`<sup>Required</sup> <a name="ownerId" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.ownerId"></a>
+
+```typescript
+public readonly ownerId: string;
 ```
 
 - *Type:* string
@@ -4141,6 +4175,16 @@ public readonly productionDeploymentsEnabled: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
+
+---
+
+##### `repoId`<sup>Required</sup> <a name="repoId" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.property.repoId"></a>
+
+```typescript
+public readonly repoId: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -18311,6 +18355,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.branch">branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.commitDirty">commitDirty</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.commitHash">commitHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.commitMessage">commitMessage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata">DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata</a></code> | *No description.* |
@@ -18348,6 +18393,16 @@ public readonly branch: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `commitDirty`<sup>Required</sup> <a name="commitDirty" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.property.commitDirty"></a>
+
+```typescript
+public readonly commitDirty: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -19588,6 +19643,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference.property.source">source</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceOutputReference">DataCloudflarePagesProjectLatestDeploymentSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference.property.stages">stages</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentStagesList">DataCloudflarePagesProjectLatestDeploymentStagesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference.property.usesFunctions">usesFunctions</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeployment">DataCloudflarePagesProjectLatestDeployment</a></code> | *No description.* |
 
 ---
@@ -19773,6 +19829,16 @@ public readonly url: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `usesFunctions`<sup>Required</sup> <a name="usesFunctions" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference.property.usesFunctions"></a>
+
+```typescript
+public readonly usesFunctions: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -19999,6 +20065,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.deploymentsEnabled">deploymentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.ownerId">ownerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.pathExcludes">pathExcludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.pathIncludes">pathIncludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.prCommentsEnabled">prCommentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -20007,6 +20074,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.previewDeploymentSetting">previewDeploymentSetting</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.productionBranch">productionBranch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.productionDeploymentsEnabled">productionDeploymentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.repoId">repoId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.repoName">repoName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfig">DataCloudflarePagesProjectLatestDeploymentSourceConfig</a></code> | *No description.* |
 
@@ -20050,6 +20118,16 @@ public readonly deploymentsEnabled: IResolvable;
 
 ```typescript
 public readonly owner: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ownerId`<sup>Required</sup> <a name="ownerId" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.ownerId"></a>
+
+```typescript
+public readonly ownerId: string;
 ```
 
 - *Type:* string
@@ -20133,6 +20211,16 @@ public readonly productionDeploymentsEnabled: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
+
+---
+
+##### `repoId`<sup>Required</sup> <a name="repoId" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.property.repoId"></a>
+
+```typescript
+public readonly repoId: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -21100,6 +21188,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.deploymentsEnabled">deploymentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.ownerId">ownerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.pathExcludes">pathExcludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.pathIncludes">pathIncludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.prCommentsEnabled">prCommentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -21108,6 +21197,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.previewDeploymentSetting">previewDeploymentSetting</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.productionBranch">productionBranch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.productionDeploymentsEnabled">productionDeploymentsEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.repoId">repoId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.repoName">repoName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfig">DataCloudflarePagesProjectSourceConfig</a></code> | *No description.* |
 
@@ -21151,6 +21241,16 @@ public readonly deploymentsEnabled: IResolvable;
 
 ```typescript
 public readonly owner: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ownerId`<sup>Required</sup> <a name="ownerId" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.ownerId"></a>
+
+```typescript
+public readonly ownerId: string;
 ```
 
 - *Type:* string
@@ -21234,6 +21334,16 @@ public readonly productionDeploymentsEnabled: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
+
+---
+
+##### `repoId`<sup>Required</sup> <a name="repoId" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.property.repoId"></a>
+
+```typescript
+public readonly repoId: string;
+```
+
+- *Type:* string
 
 ---
 

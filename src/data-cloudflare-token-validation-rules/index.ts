@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareTokenValidationRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#filter DataCloudflareTokenValidationRules#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#filter DataCloudflareTokenValidationRules#filter}
   */
   readonly filter?: DataCloudflareTokenValidationRulesFilter;
   /**
   * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#rule_id DataCloudflareTokenValidationRules#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#rule_id DataCloudflareTokenValidationRules#rule_id}
   */
   readonly ruleId?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#zone_id DataCloudflareTokenValidationRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#zone_id DataCloudflareTokenValidationRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -34,46 +34,40 @@ export interface DataCloudflareTokenValidationRulesFilter {
   * Action to take on requests that match operations included in `selector` and fail `expression`.
   * Available values: "log", "block".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#action DataCloudflareTokenValidationRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#action DataCloudflareTokenValidationRules#action}
   */
   readonly action?: string;
   /**
   * Toggle rule on or off.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#enabled DataCloudflareTokenValidationRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#enabled DataCloudflareTokenValidationRules#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Select rules with this host in `include`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#host DataCloudflareTokenValidationRules#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#host DataCloudflareTokenValidationRules#host}
   */
   readonly host?: string;
   /**
   * Select rules with this host in `include`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#hostname DataCloudflareTokenValidationRules#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#hostname DataCloudflareTokenValidationRules#hostname}
   */
   readonly hostname?: string;
   /**
   * Select rules with these IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#id DataCloudflareTokenValidationRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#id DataCloudflareTokenValidationRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Select rules with these IDs.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#rule_id DataCloudflareTokenValidationRules#rule_id}
-  */
-  readonly ruleId?: string;
-  /**
   * Select rules using any of these token configurations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#token_configuration DataCloudflareTokenValidationRules#token_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#token_configuration DataCloudflareTokenValidationRules#token_configuration}
   */
   readonly tokenConfiguration?: string[];
 }
@@ -89,7 +83,6 @@ export function dataCloudflareTokenValidationRulesFilterToTerraform(struct?: Dat
     host: cdktf.stringToTerraform(struct!.host),
     hostname: cdktf.stringToTerraform(struct!.hostname),
     id: cdktf.stringToTerraform(struct!.id),
-    rule_id: cdktf.stringToTerraform(struct!.ruleId),
     token_configuration: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tokenConfiguration),
   }
 }
@@ -127,12 +120,6 @@ export function dataCloudflareTokenValidationRulesFilterToHclTerraform(struct?: 
     },
     id: {
       value: cdktf.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -187,10 +174,6 @@ export class DataCloudflareTokenValidationRulesFilterOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
-    if (this._ruleId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ruleId = this._ruleId;
-    }
     if (this._tokenConfiguration !== undefined) {
       hasAnyValues = true;
       internalValueResult.tokenConfiguration = this._tokenConfiguration;
@@ -207,7 +190,6 @@ export class DataCloudflareTokenValidationRulesFilterOutputReference extends cdk
       this._host = undefined;
       this._hostname = undefined;
       this._id = undefined;
-      this._ruleId = undefined;
       this._tokenConfiguration = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -222,7 +204,6 @@ export class DataCloudflareTokenValidationRulesFilterOutputReference extends cdk
       this._host = value.host;
       this._hostname = value.hostname;
       this._id = value.id;
-      this._ruleId = value.ruleId;
       this._tokenConfiguration = value.tokenConfiguration;
     }
   }
@@ -305,22 +286,6 @@ export class DataCloudflareTokenValidationRulesFilterOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // rule_id - computed: false, optional: true, required: false
-  private _ruleId?: string; 
-  public get ruleId() {
-    return this.getStringAttribute('rule_id');
-  }
-  public set ruleId(value: string) {
-    this._ruleId = value;
-  }
-  public resetRuleId() {
-    this._ruleId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ruleIdInput() {
-    return this._ruleId;
   }
 
   // token_configuration - computed: false, optional: true, required: false
@@ -552,7 +517,7 @@ export class DataCloudflareTokenValidationRulesSelectorOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules cloudflare_token_validation_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules cloudflare_token_validation_rules}
 */
 export class DataCloudflareTokenValidationRules extends cdktf.TerraformDataSource {
 
@@ -568,7 +533,7 @@ export class DataCloudflareTokenValidationRules extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataCloudflareTokenValidationRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareTokenValidationRules to import
-  * @param importFromId The id of the existing DataCloudflareTokenValidationRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareTokenValidationRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareTokenValidationRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -580,7 +545,7 @@ export class DataCloudflareTokenValidationRules extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_rules cloudflare_token_validation_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_rules cloudflare_token_validation_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -591,7 +556,7 @@ export class DataCloudflareTokenValidationRules extends cdktf.TerraformDataSourc
       terraformResourceType: 'cloudflare_token_validation_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

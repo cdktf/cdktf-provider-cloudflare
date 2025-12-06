@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_hold
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,7 +19,7 @@ export interface ZoneHoldConfig extends cdktf.TerraformMetaArguments {
   * no effect on an existing, enabled hold. Providing an empty string will set its value
   * to the current time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
   */
   readonly holdAfter?: string;
   /**
@@ -28,19 +28,19 @@ export interface ZoneHoldConfig extends cdktf.TerraformMetaArguments {
   * 'example.com' and include_subdomains=true will block 'example.com',
   * 'staging.example.com', 'api.staging.example.com', etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
   */
   readonly includeSubdomains?: boolean | cdktf.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_hold cloudflare_zone_hold}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold cloudflare_zone_hold}
 */
 export class ZoneHold extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class ZoneHold extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ZoneHold resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneHold to import
-  * @param importFromId The id of the existing ZoneHold that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneHold that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneHold to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class ZoneHold extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zone_hold cloudflare_zone_hold} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold cloudflare_zone_hold} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class ZoneHold extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_hold',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

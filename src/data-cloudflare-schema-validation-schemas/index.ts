@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface DataCloudflareSchemaValidationSchemasConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas#filter DataCloudflareSchemaValidationSchemas#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas#filter DataCloudflareSchemaValidationSchemas#filter}
   */
   readonly filter?: DataCloudflareSchemaValidationSchemasFilter;
   /**
   * Omit the source-files of schemas and only retrieve their meta-data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas#omit_source DataCloudflareSchemaValidationSchemas#omit_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas#omit_source DataCloudflareSchemaValidationSchemas#omit_source}
   */
   readonly omitSource?: boolean | cdktf.IResolvable;
   /**
   * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas#schema_id DataCloudflareSchemaValidationSchemas#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas#schema_id DataCloudflareSchemaValidationSchemas#schema_id}
   */
   readonly schemaId?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas#zone_id DataCloudflareSchemaValidationSchemas#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas#zone_id DataCloudflareSchemaValidationSchemas#zone_id}
   */
   readonly zoneId: string;
 }
 export interface DataCloudflareSchemaValidationSchemasFilter {
   /**
-  * Omit the source-files of schemas and only retrieve their meta-data.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas#omit_source DataCloudflareSchemaValidationSchemas#omit_source}
-  */
-  readonly omitSource?: boolean | cdktf.IResolvable;
-  /**
   * Filter for enabled schemas
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas#validation_enabled DataCloudflareSchemaValidationSchemas#validation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas#validation_enabled DataCloudflareSchemaValidationSchemas#validation_enabled}
   */
   readonly validationEnabled?: boolean | cdktf.IResolvable;
 }
@@ -56,7 +50,6 @@ export function dataCloudflareSchemaValidationSchemasFilterToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    omit_source: cdktf.booleanToTerraform(struct!.omitSource),
     validation_enabled: cdktf.booleanToTerraform(struct!.validationEnabled),
   }
 }
@@ -68,12 +61,6 @@ export function dataCloudflareSchemaValidationSchemasFilterToHclTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    omit_source: {
-      value: cdktf.booleanToHclTerraform(struct!.omitSource),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     validation_enabled: {
       value: cdktf.booleanToHclTerraform(struct!.validationEnabled),
       isBlock: false,
@@ -104,10 +91,6 @@ export class DataCloudflareSchemaValidationSchemasFilterOutputReference extends 
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._omitSource !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.omitSource = this._omitSource;
-    }
     if (this._validationEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.validationEnabled = this._validationEnabled;
@@ -119,7 +102,6 @@ export class DataCloudflareSchemaValidationSchemasFilterOutputReference extends 
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._omitSource = undefined;
       this._validationEnabled = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -129,25 +111,8 @@ export class DataCloudflareSchemaValidationSchemasFilterOutputReference extends 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._omitSource = value.omitSource;
       this._validationEnabled = value.validationEnabled;
     }
-  }
-
-  // omit_source - computed: true, optional: true, required: false
-  private _omitSource?: boolean | cdktf.IResolvable; 
-  public get omitSource() {
-    return this.getBooleanAttribute('omit_source');
-  }
-  public set omitSource(value: boolean | cdktf.IResolvable) {
-    this._omitSource = value;
-  }
-  public resetOmitSource() {
-    this._omitSource = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get omitSourceInput() {
-    return this._omitSource;
   }
 
   // validation_enabled - computed: false, optional: true, required: false
@@ -168,7 +133,7 @@ export class DataCloudflareSchemaValidationSchemasFilterOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas cloudflare_schema_validation_schemas}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas cloudflare_schema_validation_schemas}
 */
 export class DataCloudflareSchemaValidationSchemas extends cdktf.TerraformDataSource {
 
@@ -184,7 +149,7 @@ export class DataCloudflareSchemaValidationSchemas extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataCloudflareSchemaValidationSchemas resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareSchemaValidationSchemas to import
-  * @param importFromId The id of the existing DataCloudflareSchemaValidationSchemas that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareSchemaValidationSchemas that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareSchemaValidationSchemas to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -196,7 +161,7 @@ export class DataCloudflareSchemaValidationSchemas extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_schemas cloudflare_schema_validation_schemas} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas cloudflare_schema_validation_schemas} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +172,7 @@ export class DataCloudflareSchemaValidationSchemas extends cdktf.TerraformDataSo
       terraformResourceType: 'cloudflare_schema_validation_schemas',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

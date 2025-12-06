@@ -4,7 +4,7 @@
 
 ### DataCloudflareQueueConsumersA <a name="DataCloudflareQueueConsumersA" id="@cdktf/provider-cloudflare.dataCloudflareQueueConsumers.DataCloudflareQueueConsumersA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareQueueConsumers.DataCloudflareQueueConsumersA.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataCloudflareQueueConsume
 
 The id of the existing DataCloudflareQueueConsumersA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/queue_consumers#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue_consumers#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ AccountId *string
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/queue_consumers#account_id DataCloudflareQueueConsumersA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue_consumers#account_id DataCloudflareQueueConsumersA#account_id}
 
 ---
 
@@ -754,7 +754,7 @@ QueueId *string
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/queue_consumers#queue_id DataCloudflareQueueConsumersA#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue_consumers#queue_id DataCloudflareQueueConsumersA#queue_id}
 
 ---
 
@@ -768,7 +768,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/queue_consumers#max_items DataCloudflareQueueConsumersA#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue_consumers#max_items DataCloudflareQueueConsumersA#max_items}
 
 ---
 
