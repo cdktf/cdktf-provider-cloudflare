@@ -4,7 +4,7 @@
 
 ### ZeroTrustDeviceSettings <a name="ZeroTrustDeviceSettings" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.Initializer"></a>
 
@@ -74,6 +74,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetDisableForTime">ResetDisableForTime</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalEnabled">ResetExternalEmergencySignalEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalFingerprint">ResetExternalEmergencySignalFingerprint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalInterval">ResetExternalEmergencySignalInterval</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalUrl">ResetExternalEmergencySignalUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetGatewayProxyEnabled">ResetGatewayProxyEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetGatewayUdpProxyEnabled">ResetGatewayUdpProxyEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetRootCertificateInstallationEnabled">ResetRootCertificateInstallationEnabled</a></code> | *No description.* |
@@ -375,6 +379,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetDisableForTime()
 ```
 
+##### `ResetExternalEmergencySignalEnabled` <a name="ResetExternalEmergencySignalEnabled" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalEnabled"></a>
+
+```csharp
+private void ResetExternalEmergencySignalEnabled()
+```
+
+##### `ResetExternalEmergencySignalFingerprint` <a name="ResetExternalEmergencySignalFingerprint" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalFingerprint"></a>
+
+```csharp
+private void ResetExternalEmergencySignalFingerprint()
+```
+
+##### `ResetExternalEmergencySignalInterval` <a name="ResetExternalEmergencySignalInterval" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalInterval"></a>
+
+```csharp
+private void ResetExternalEmergencySignalInterval()
+```
+
+##### `ResetExternalEmergencySignalUrl` <a name="ResetExternalEmergencySignalUrl" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetExternalEmergencySignalUrl"></a>
+
+```csharp
+private void ResetExternalEmergencySignalUrl()
+```
+
 ##### `ResetGatewayProxyEnabled` <a name="ResetGatewayProxyEnabled" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.resetGatewayProxyEnabled"></a>
 
 ```csharp
@@ -502,7 +530,7 @@ The construct id used in the generated config for the ZeroTrustDeviceSettings to
 
 The id of the existing ZeroTrustDeviceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -534,12 +562,20 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.accountIdInput">AccountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.disableForTimeInput">DisableForTimeInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalEnabledInput">ExternalEmergencySignalEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalFingerprintInput">ExternalEmergencySignalFingerprintInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalIntervalInput">ExternalEmergencySignalIntervalInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalUrlInput">ExternalEmergencySignalUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.gatewayProxyEnabledInput">GatewayProxyEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.gatewayUdpProxyEnabledInput">GatewayUdpProxyEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.rootCertificateInstallationEnabledInput">RootCertificateInstallationEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.useZtVirtualIpInput">UseZtVirtualIpInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.disableForTime">DisableForTime</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalEnabled">ExternalEmergencySignalEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalFingerprint">ExternalEmergencySignalFingerprint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalInterval">ExternalEmergencySignalInterval</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalUrl">ExternalEmergencySignalUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.gatewayProxyEnabled">GatewayProxyEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.gatewayUdpProxyEnabled">GatewayUdpProxyEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.rootCertificateInstallationEnabled">RootCertificateInstallationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -709,6 +745,46 @@ public double DisableForTimeInput { get; }
 
 ---
 
+##### `ExternalEmergencySignalEnabledInput`<sup>Optional</sup> <a name="ExternalEmergencySignalEnabledInput" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalEnabledInput"></a>
+
+```csharp
+public bool|IResolvable ExternalEmergencySignalEnabledInput { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `ExternalEmergencySignalFingerprintInput`<sup>Optional</sup> <a name="ExternalEmergencySignalFingerprintInput" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalFingerprintInput"></a>
+
+```csharp
+public string ExternalEmergencySignalFingerprintInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalEmergencySignalIntervalInput`<sup>Optional</sup> <a name="ExternalEmergencySignalIntervalInput" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalIntervalInput"></a>
+
+```csharp
+public string ExternalEmergencySignalIntervalInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalEmergencySignalUrlInput`<sup>Optional</sup> <a name="ExternalEmergencySignalUrlInput" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalUrlInput"></a>
+
+```csharp
+public string ExternalEmergencySignalUrlInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `GatewayProxyEnabledInput`<sup>Optional</sup> <a name="GatewayProxyEnabledInput" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.gatewayProxyEnabledInput"></a>
 
 ```csharp
@@ -766,6 +842,46 @@ public double DisableForTime { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `ExternalEmergencySignalEnabled`<sup>Required</sup> <a name="ExternalEmergencySignalEnabled" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalEnabled"></a>
+
+```csharp
+public bool|IResolvable ExternalEmergencySignalEnabled { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `ExternalEmergencySignalFingerprint`<sup>Required</sup> <a name="ExternalEmergencySignalFingerprint" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalFingerprint"></a>
+
+```csharp
+public string ExternalEmergencySignalFingerprint { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalEmergencySignalInterval`<sup>Required</sup> <a name="ExternalEmergencySignalInterval" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalInterval"></a>
+
+```csharp
+public string ExternalEmergencySignalInterval { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalEmergencySignalUrl`<sup>Required</sup> <a name="ExternalEmergencySignalUrl" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings.property.externalEmergencySignalUrl"></a>
+
+```csharp
+public string ExternalEmergencySignalUrl { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -846,6 +962,10 @@ new ZeroTrustDeviceSettingsConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AccountId,
     double DisableForTime = null,
+    bool|IResolvable ExternalEmergencySignalEnabled = null,
+    string ExternalEmergencySignalFingerprint = null,
+    string ExternalEmergencySignalInterval = null,
+    string ExternalEmergencySignalUrl = null,
     bool|IResolvable GatewayProxyEnabled = null,
     bool|IResolvable GatewayUdpProxyEnabled = null,
     bool|IResolvable RootCertificateInstallationEnabled = null,
@@ -864,8 +984,12 @@ new ZeroTrustDeviceSettingsConfig {
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#account_id ZeroTrustDeviceSettings#account_id}. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#account_id ZeroTrustDeviceSettings#account_id}. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.disableForTime">DisableForTime</a></code> | <code>double</code> | Sets the time limit, in seconds, that a user can use an override code to bypass WARP. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalEnabled">ExternalEmergencySignalEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls whether the external emergency disconnect feature is enabled. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalFingerprint">ExternalEmergencySignalFingerprint</a></code> | <code>string</code> | The SHA256 fingerprint (64 hexadecimal characters) of the HTTPS server certificate for the external_emergency_signal_url. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalInterval">ExternalEmergencySignalInterval</a></code> | <code>string</code> | The interval at which the WARP client fetches the emergency disconnect signal, formatted as a duration string (e.g., "5m", "2m30s", "1h"). Minimum 30 seconds. |
+| <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalUrl">ExternalEmergencySignalUrl</a></code> | <code>string</code> | The HTTPS URL from which to fetch the emergency disconnect signal. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.gatewayProxyEnabled">GatewayProxyEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable gateway proxy filtering on TCP. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.gatewayUdpProxyEnabled">GatewayUdpProxyEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable gateway proxy filtering on UDP. |
 | <code><a href="#@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.rootCertificateInstallationEnabled">RootCertificateInstallationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable installation of cloudflare managed root certificate. |
@@ -951,7 +1075,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#account_id ZeroTrustDeviceSettings#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#account_id ZeroTrustDeviceSettings#account_id}.
 
 ---
 
@@ -965,7 +1089,67 @@ public double DisableForTime { get; set; }
 
 Sets the time limit, in seconds, that a user can use an override code to bypass WARP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#disable_for_time ZeroTrustDeviceSettings#disable_for_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#disable_for_time ZeroTrustDeviceSettings#disable_for_time}
+
+---
+
+##### `ExternalEmergencySignalEnabled`<sup>Optional</sup> <a name="ExternalEmergencySignalEnabled" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalEnabled"></a>
+
+```csharp
+public bool|IResolvable ExternalEmergencySignalEnabled { get; set; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+Controls whether the external emergency disconnect feature is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#external_emergency_signal_enabled ZeroTrustDeviceSettings#external_emergency_signal_enabled}
+
+---
+
+##### `ExternalEmergencySignalFingerprint`<sup>Optional</sup> <a name="ExternalEmergencySignalFingerprint" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalFingerprint"></a>
+
+```csharp
+public string ExternalEmergencySignalFingerprint { get; set; }
+```
+
+- *Type:* string
+
+The SHA256 fingerprint (64 hexadecimal characters) of the HTTPS server certificate for the external_emergency_signal_url.
+
+If provided, the WARP client will use this value to verify the server's identity. The device will ignore any response if the server's certificate fingerprint does not exactly match this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#external_emergency_signal_fingerprint ZeroTrustDeviceSettings#external_emergency_signal_fingerprint}
+
+---
+
+##### `ExternalEmergencySignalInterval`<sup>Optional</sup> <a name="ExternalEmergencySignalInterval" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalInterval"></a>
+
+```csharp
+public string ExternalEmergencySignalInterval { get; set; }
+```
+
+- *Type:* string
+
+The interval at which the WARP client fetches the emergency disconnect signal, formatted as a duration string (e.g., "5m", "2m30s", "1h"). Minimum 30 seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#external_emergency_signal_interval ZeroTrustDeviceSettings#external_emergency_signal_interval}
+
+---
+
+##### `ExternalEmergencySignalUrl`<sup>Optional</sup> <a name="ExternalEmergencySignalUrl" id="@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig.property.externalEmergencySignalUrl"></a>
+
+```csharp
+public string ExternalEmergencySignalUrl { get; set; }
+```
+
+- *Type:* string
+
+The HTTPS URL from which to fetch the emergency disconnect signal.
+
+Must use HTTPS and have an IPv4 or IPv6 address as the host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#external_emergency_signal_url ZeroTrustDeviceSettings#external_emergency_signal_url}
 
 ---
 
@@ -979,7 +1163,7 @@ public bool|IResolvable GatewayProxyEnabled { get; set; }
 
 Enable gateway proxy filtering on TCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#gateway_proxy_enabled ZeroTrustDeviceSettings#gateway_proxy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#gateway_proxy_enabled ZeroTrustDeviceSettings#gateway_proxy_enabled}
 
 ---
 
@@ -993,7 +1177,7 @@ public bool|IResolvable GatewayUdpProxyEnabled { get; set; }
 
 Enable gateway proxy filtering on UDP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#gateway_udp_proxy_enabled ZeroTrustDeviceSettings#gateway_udp_proxy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#gateway_udp_proxy_enabled ZeroTrustDeviceSettings#gateway_udp_proxy_enabled}
 
 ---
 
@@ -1007,7 +1191,7 @@ public bool|IResolvable RootCertificateInstallationEnabled { get; set; }
 
 Enable installation of cloudflare managed root certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#root_certificate_installation_enabled ZeroTrustDeviceSettings#root_certificate_installation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#root_certificate_installation_enabled ZeroTrustDeviceSettings#root_certificate_installation_enabled}
 
 ---
 
@@ -1021,7 +1205,7 @@ public bool|IResolvable UseZtVirtualIp { get; set; }
 
 Enable using CGNAT virtual IPv4.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_device_settings#use_zt_virtual_ip ZeroTrustDeviceSettings#use_zt_virtual_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_settings#use_zt_virtual_ip ZeroTrustDeviceSettings#use_zt_virtual_ip}
 
 ---
 

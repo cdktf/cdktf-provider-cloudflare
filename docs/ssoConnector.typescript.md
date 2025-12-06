@@ -4,7 +4,7 @@
 
 ### SsoConnector <a name="SsoConnector" id="@cdktf/provider-cloudflare.ssoConnector.SsoConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector cloudflare_sso_connector}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.ssoConnector.SsoConnector.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the SsoConnector to import.
 
 The id of the existing SsoConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
 
 ---
 
@@ -960,7 +960,7 @@ public readonly emailDomain: string;
 
 Email domain of the new SSO connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
 
 ---
 
@@ -974,7 +974,7 @@ public readonly beginVerification: boolean | IResolvable;
 
 Begin the verification process after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
 
 ---
 
@@ -988,7 +988,7 @@ public readonly enabled: boolean | IResolvable;
 
 SSO Connector enabled state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly useFedrampLanguage: boolean | IResolvable;
 
 Controls the display of FedRAMP language to the user during SSO login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
 
 ---
 

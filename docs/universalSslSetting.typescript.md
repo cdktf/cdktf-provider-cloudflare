@@ -4,7 +4,7 @@
 
 ### UniversalSslSetting <a name="UniversalSslSetting" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the UniversalSslSetting to imp
 
 The id of the existing UniversalSslSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,7 +830,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
 
 ---
 
@@ -858,7 +858,7 @@ Similarly, any HTTP redirect to HTTPS at the origin while the Cloudflare proxy i
 
 If you do not have a valid custom or advanced certificate at Cloudflare's edge and are unsure if any of the above Cloudflare settings are enabled, or if any HTTP redirects exist at your origin, we advise leaving Universal SSL enabled for your domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
 
 ---
 

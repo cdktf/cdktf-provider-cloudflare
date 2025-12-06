@@ -4,7 +4,7 @@
 
 ### ArgoTieredCaching <a name="ArgoTieredCaching" id="@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Enables Tiered Caching. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the ArgoTieredCaching to impor
 
 The id of the existing ArgoTieredCaching that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,7 +979,7 @@ value: str
 
 Enables Tiered Caching. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
 
 ---
 
@@ -993,7 +993,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
 
 ---
 

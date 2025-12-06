@@ -4,7 +4,7 @@
 
 ### EmailRoutingAddress <a name="EmailRoutingAddress" id="@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the EmailRoutingAddress to imp
 
 The id of the existing EmailRoutingAddress that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_address#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1001,7 +1001,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
 
 ---
 
@@ -1015,7 +1015,7 @@ email: str
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
 
 ---
 
