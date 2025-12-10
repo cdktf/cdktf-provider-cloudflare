@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycle(scope Construct, id *string, config DataCloudflareR2BucketLifecycleConfig) DataCloudflareR2BucketLifecycle
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycle.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycle_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycle_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycle_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycle.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycle_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycle_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRules {
 
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransition {
 
@@ -758,7 +758,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition {
 
@@ -771,7 +771,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRulesConditions {
 
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransition {
 
@@ -797,7 +797,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionCondition {
 
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesStorageClassTransitions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRulesStorageClassTransitions {
 
@@ -823,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 &datacloudflarer2bucketlifecycle.DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCondition {
 
@@ -838,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference
 ```
@@ -1109,7 +1109,7 @@ func InternalValue() DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTr
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTr
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareR2BucketLifecycleRulesConditionsOutputReference
 ```
@@ -1629,7 +1629,7 @@ func InternalValue() DataCloudflareR2BucketLifecycleRulesConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference
 ```
@@ -1911,7 +1911,7 @@ func InternalValue() DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransition
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionOutputReference
 ```
@@ -2171,7 +2171,7 @@ func InternalValue() DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransition
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareR2BucketLifecycleRulesList
 ```
@@ -2320,7 +2320,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareR2BucketLifecycleRulesOutputReference
 ```
@@ -2653,7 +2653,7 @@ func InternalValue() DataCloudflareR2BucketLifecycleRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference
 ```
@@ -2935,7 +2935,7 @@ func InternalValue() DataCloudflareR2BucketLifecycleRulesStorageClassTransitions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesStorageClassTransitionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsList
 ```
@@ -3084,7 +3084,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarer2bucketlifecycle"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle"
 
 datacloudflarer2bucketlifecycle.NewDataCloudflareR2BucketLifecycleRulesStorageClassTransitionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/schemavalidationschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/schemavalidationschemas"
 
 schemavalidationschemas.NewSchemaValidationSchemas(scope Construct, id *string, config SchemaValidationSchemasConfig) SchemaValidationSchemas
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/schemavalidationschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/schemavalidationschemas"
 
 schemavalidationschemas.SchemaValidationSchemas_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/schemavalidationschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/schemavalidationschemas"
 
 schemavalidationschemas.SchemaValidationSchemas_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ schemavalidationschemas.SchemaValidationSchemas_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/schemavalidationschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/schemavalidationschemas"
 
 schemavalidationschemas.SchemaValidationSchemas_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ schemavalidationschemas.SchemaValidationSchemas_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/schemavalidationschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/schemavalidationschemas"
 
 schemavalidationschemas.SchemaValidationSchemas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/schemavalidationschemas"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/schemavalidationschemas"
 
 &schemavalidationschemas.SchemaValidationSchemasConfig {
 	Connection: interface{},

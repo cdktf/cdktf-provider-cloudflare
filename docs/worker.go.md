@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.Worker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorker(scope Construct, id *string, config WorkerConfig) Worker
 ```
@@ -452,7 +452,7 @@ func ResetTailConsumers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.worker.Worker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.Worker_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.worker.Worker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.Worker_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ worker.Worker_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.worker.Worker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.Worker_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ worker.Worker_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.worker.Worker.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.Worker_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerConfig {
 	Connection: interface{},
@@ -952,8 +952,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
 	AccountId: *string,
 	Name: *string,
 	Logpush: interface{},
-	Observability: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.worker.WorkerObservability,
-	Subdomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.worker.WorkerSubdomain,
+	Observability: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.worker.WorkerObservability,
+	Subdomain: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.worker.WorkerSubdomain,
 	Tags: *[]*string,
 	TailConsumers: interface{},
 }
@@ -1153,12 +1153,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerObservability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerObservability {
 	Enabled: interface{},
 	HeadSamplingRate: *f64,
-	Logs: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.worker.WorkerObservabilityLogs,
+	Logs: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.worker.WorkerObservabilityLogs,
 }
 ```
 
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerObservabilityLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerObservabilityLogs {
 	Enabled: interface{},
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerReferences {
 
@@ -1298,7 +1298,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutbounds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerReferencesDispatchNamespaceOutbounds {
 
@@ -1311,7 +1311,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerReferencesDomains {
 
@@ -1324,7 +1324,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDurableObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerReferencesDurableObjects {
 
@@ -1337,7 +1337,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerReferencesQueues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerReferencesQueues {
 
@@ -1350,7 +1350,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerReferencesWorkers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerReferencesWorkers {
 
@@ -1363,7 +1363,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerSubdomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerSubdomain {
 	Enabled: interface{},
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.worker.WorkerTailConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 &worker.WorkerTailConsumers {
 	Name: *string,
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerObservabilityLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerObservabilityLogsOutputReference
 ```
@@ -1785,7 +1785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerObservabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerObservabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerObservabilityOutputReference
 ```
@@ -2134,7 +2134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesDispatchNamespaceOutboundsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesDispatchNamespaceOutboundsList
 ```
@@ -2283,7 +2283,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesDispatchNamespaceOutboundsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesDispatchNamespaceOutboundsOutputReference
 ```
@@ -2594,7 +2594,7 @@ func InternalValue() WorkerReferencesDispatchNamespaceOutbounds
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesDomainsList
 ```
@@ -2743,7 +2743,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesDomainsOutputReference
 ```
@@ -3065,7 +3065,7 @@ func InternalValue() WorkerReferencesDomains
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDurableObjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesDurableObjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesDurableObjectsList
 ```
@@ -3214,7 +3214,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesDurableObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesDurableObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesDurableObjectsOutputReference
 ```
@@ -3525,7 +3525,7 @@ func InternalValue() WorkerReferencesDurableObjects
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerReferencesOutputReference
 ```
@@ -3829,7 +3829,7 @@ func InternalValue() WorkerReferences
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesQueuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesQueuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesQueuesList
 ```
@@ -3978,7 +3978,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesQueuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesQueuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesQueuesOutputReference
 ```
@@ -4278,7 +4278,7 @@ func InternalValue() WorkerReferencesQueues
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesWorkersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesWorkersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerReferencesWorkersList
 ```
@@ -4427,7 +4427,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerReferencesWorkersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerReferencesWorkersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerReferencesWorkersOutputReference
 ```
@@ -4716,7 +4716,7 @@ func InternalValue() WorkerReferencesWorkers
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerSubdomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerSubdomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkerSubdomainOutputReference
 ```
@@ -5023,7 +5023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerTailConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerTailConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerTailConsumersList
 ```
@@ -5183,7 +5183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.worker.WorkerTailConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/worker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker"
 
 worker.NewWorkerTailConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkerTailConsumersOutputReference
 ```

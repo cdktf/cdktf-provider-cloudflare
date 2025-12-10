@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareregionalhostname"
 
 datacloudflareregionalhostname.NewDataCloudflareRegionalHostname(scope Construct, id *string, config DataCloudflareRegionalHostnameConfig) DataCloudflareRegionalHostname
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareregionalhostname"
 
 datacloudflareregionalhostname.DataCloudflareRegionalHostname_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareregionalhostname"
 
 datacloudflareregionalhostname.DataCloudflareRegionalHostname_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareregionalhostname.DataCloudflareRegionalHostname_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareregionalhostname"
 
 datacloudflareregionalhostname.DataCloudflareRegionalHostname_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareregionalhostname.DataCloudflareRegionalHostname_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareregionalhostname"
 
 datacloudflareregionalhostname.DataCloudflareRegionalHostname_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostnameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareregionalhostname"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareregionalhostname"
 
 &datacloudflareregionalhostname.DataCloudflareRegionalHostnameConfig {
 	Connection: interface{},

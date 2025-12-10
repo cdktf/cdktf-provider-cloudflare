@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 datacloudflareimagevariant.NewDataCloudflareImageVariant(scope Construct, id *string, config DataCloudflareImageVariantConfig) DataCloudflareImageVariant
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 datacloudflareimagevariant.DataCloudflareImageVariant_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 datacloudflareimagevariant.DataCloudflareImageVariant_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareimagevariant.DataCloudflareImageVariant_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 datacloudflareimagevariant.DataCloudflareImageVariant_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareimagevariant.DataCloudflareImageVariant_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 datacloudflareimagevariant.DataCloudflareImageVariant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 &datacloudflareimagevariant.DataCloudflareImageVariantConfig {
 	Connection: interface{},
@@ -741,7 +741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 &datacloudflareimagevariant.DataCloudflareImageVariantVariant {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarei
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantVariantOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 &datacloudflareimagevariant.DataCloudflareImageVariantVariantOptions {
 
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarei
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantVariantOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 datacloudflareimagevariant.NewDataCloudflareImageVariantVariantOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareImageVariantVariantOptionsOutputReference
 ```
@@ -1062,7 +1062,7 @@ func InternalValue() DataCloudflareImageVariantVariantOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantVariantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareimagevariant"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimagevariant"
 
 datacloudflareimagevariant.NewDataCloudflareImageVariantVariantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareImageVariantVariantOutputReference
 ```

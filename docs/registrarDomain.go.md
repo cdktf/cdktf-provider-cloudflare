@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/registrardomain"
 
 registrardomain.NewRegistrarDomain(scope Construct, id *string, config RegistrarDomainConfig) RegistrarDomain
 ```
@@ -399,7 +399,7 @@ func ResetPrivacy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/registrardomain"
 
 registrardomain.RegistrarDomain_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/registrardomain"
 
 registrardomain.RegistrarDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ registrardomain.RegistrarDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/registrardomain"
 
 registrardomain.RegistrarDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ registrardomain.RegistrarDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/registrardomain"
 
 registrardomain.RegistrarDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.registrarDomain.RegistrarDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/registrardomain"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/registrardomain"
 
 &registrardomain.RegistrarDomainConfig {
 	Connection: interface{},

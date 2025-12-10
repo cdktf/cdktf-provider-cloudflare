@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooks.DataCloudflareNotificationPolicyWebhooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarenotificationpolicywebhooks"
 
 datacloudflarenotificationpolicywebhooks.NewDataCloudflareNotificationPolicyWebhooks(scope Construct, id *string, config DataCloudflareNotificationPolicyWebhooksConfig) DataCloudflareNotificationPolicyWebhooks
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooks.DataCloudflareNotificationPolicyWebhooks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarenotificationpolicywebhooks"
 
 datacloudflarenotificationpolicywebhooks.DataCloudflareNotificationPolicyWebhooks_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooks.DataCloudflareNotificationPolicyWebhooks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarenotificationpolicywebhooks"
 
 datacloudflarenotificationpolicywebhooks.DataCloudflareNotificationPolicyWebhooks_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarenotificationpolicywebhooks.DataCloudflareNotificationPolicyWebhook
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooks.DataCloudflareNotificationPolicyWebhooks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarenotificationpolicywebhooks"
 
 datacloudflarenotificationpolicywebhooks.DataCloudflareNotificationPolicyWebhooks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarenotificationpolicywebhooks.DataCloudflareNotificationPolicyWebhook
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooks.DataCloudflareNotificationPolicyWebhooks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarenotificationpolicywebhooks"
 
 datacloudflarenotificationpolicywebhooks.DataCloudflareNotificationPolicyWebhooks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooks.DataCloudflareNotificationPolicyWebhooksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarenotificationpolicywebhooks"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarenotificationpolicywebhooks"
 
 &datacloudflarenotificationpolicywebhooks.DataCloudflareNotificationPolicyWebhooksConfig {
 	Connection: interface{},

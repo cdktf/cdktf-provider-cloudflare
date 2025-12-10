@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.organization.Organization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.NewOrganization(scope Construct, id *string, config OrganizationConfig) Organization
 ```
@@ -418,7 +418,7 @@ func ResetProfile()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.organization.Organization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.Organization_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.organization.Organization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.Organization_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ organization.Organization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.organization.Organization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.Organization_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ organization.Organization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.organization.Organization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.Organization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.organization.OrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 &organization.OrganizationConfig {
 	Connection: interface{},
@@ -817,8 +817,8 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Parent: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.organization.OrganizationParent,
-	Profile: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.organization.OrganizationProfile,
+	Parent: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.organization.OrganizationParent,
+	Profile: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.organization.OrganizationProfile,
 }
 ```
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.organization.OrganizationMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 &organization.OrganizationMeta {
 
@@ -963,7 +963,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.organization.OrganizationMetaFlags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 &organization.OrganizationMetaFlags {
 
@@ -976,7 +976,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.organization.OrganizationParent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 &organization.OrganizationParent {
 	Id: *string,
@@ -1011,7 +1011,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.organization.OrganizationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 &organization.OrganizationProfile {
 	BusinessAddress: *string,
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.organization.OrganizationMetaFlagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.NewOrganizationMetaFlagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationMetaFlagsOutputReference
 ```
@@ -1405,7 +1405,7 @@ func InternalValue() OrganizationMetaFlags
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.organization.OrganizationMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.NewOrganizationMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationMetaOutputReference
 ```
@@ -1676,7 +1676,7 @@ func InternalValue() OrganizationMeta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.organization.OrganizationParentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.NewOrganizationParentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationParentOutputReference
 ```
@@ -1958,7 +1958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.organization.OrganizationProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/organization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization"
 
 organization.NewOrganizationProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationProfileOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.NewWaitingRoom(scope Construct, id *string, config WaitingRoomConfig) WaitingRoom
 ```
@@ -523,7 +523,7 @@ func ResetTurnstileMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.WaitingRoom_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.WaitingRoom_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ waitingroom.WaitingRoom_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.WaitingRoom_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ waitingroom.WaitingRoom_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoom.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.WaitingRoom_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1351,7 +1351,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 &waitingroom.WaitingRoomAdditionalRoutes {
 	Host: *string,
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 &waitingroom.WaitingRoomConfig {
 	Connection: interface{},
@@ -1421,7 +1421,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
 	TotalActiveUsers: *f64,
 	ZoneId: *string,
 	AdditionalRoutes: interface{},
-	CookieAttributes: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.waitingRoom.WaitingRoomCookieAttributes,
+	CookieAttributes: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.waitingRoom.WaitingRoomCookieAttributes,
 	CookieSuffix: *string,
 	CustomPageHtml: *string,
 	DefaultTemplateLanguage: *string,
@@ -2016,7 +2016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 &waitingroom.WaitingRoomCookieAttributes {
 	Samesite: *string,
@@ -2074,7 +2074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.NewWaitingRoomAdditionalRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WaitingRoomAdditionalRoutesList
 ```
@@ -2234,7 +2234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.NewWaitingRoomAdditionalRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WaitingRoomAdditionalRoutesOutputReference
 ```
@@ -2559,7 +2559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/waitingroom"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/waitingroom"
 
 waitingroom.NewWaitingRoomCookieAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WaitingRoomCookieAttributesOutputReference
 ```

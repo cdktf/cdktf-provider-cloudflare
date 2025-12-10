@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 datacloudflaremagicnetworkmonitoringconfiguration.NewDataCloudflareMagicNetworkMonitoringConfiguration(scope Construct, id *string, config DataCloudflareMagicNetworkMonitoringConfigurationConfig) DataCloudflareMagicNetworkMonitoringConfiguration
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMonitoringConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMonitoringConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMoni
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMonitoringConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMoni
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMonitoringConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 &datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMonitoringConfigurationConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfigurationWarpDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 &datacloudflaremagicnetworkmonitoringconfiguration.DataCloudflareMagicNetworkMonitoringConfigurationWarpDevices {
 
@@ -740,7 +740,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarem
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfigurationWarpDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 datacloudflaremagicnetworkmonitoringconfiguration.NewDataCloudflareMagicNetworkMonitoringConfigurationWarpDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareMagicNetworkMonitoringConfigurationWarpDevicesList
 ```
@@ -889,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareMagicNetworkMonitoringConfiguration.DataCloudflareMagicNetworkMonitoringConfigurationWarpDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaremagicnetworkmonitoringconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicnetworkmonitoringconfiguration"
 
 datacloudflaremagicnetworkmonitoringconfiguration.NewDataCloudflareMagicNetworkMonitoringConfigurationWarpDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareMagicNetworkMonitoringConfigurationWarpDevicesOutputReference
 ```

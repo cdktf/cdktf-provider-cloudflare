@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessaicontrolsmcpserver"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpserver"
 
 zerotrustaccessaicontrolsmcpserver.NewZeroTrustAccessAiControlsMcpServer(scope Construct, id *string, config ZeroTrustAccessAiControlsMcpServerConfig) ZeroTrustAccessAiControlsMcpServer
 ```
@@ -392,7 +392,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessaicontrolsmcpserver"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpserver"
 
 zerotrustaccessaicontrolsmcpserver.ZeroTrustAccessAiControlsMcpServer_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessaicontrolsmcpserver"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpserver"
 
 zerotrustaccessaicontrolsmcpserver.ZeroTrustAccessAiControlsMcpServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ zerotrustaccessaicontrolsmcpserver.ZeroTrustAccessAiControlsMcpServer_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessaicontrolsmcpserver"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpserver"
 
 zerotrustaccessaicontrolsmcpserver.ZeroTrustAccessAiControlsMcpServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ zerotrustaccessaicontrolsmcpserver.ZeroTrustAccessAiControlsMcpServer_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessaicontrolsmcpserver"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpserver"
 
 zerotrustaccessaicontrolsmcpserver.ZeroTrustAccessAiControlsMcpServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -934,7 +934,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustaccessaicontrolsmcpserver"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpserver"
 
 &zerotrustaccessaicontrolsmcpserver.ZeroTrustAccessAiControlsMcpServerConfig {
 	Connection: interface{},

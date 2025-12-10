@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProject(scope Construct, id *string, config DataCloudflarePagesProjectConfig) DataCloudflarePagesProject
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.DataCloudflarePagesProject_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.DataCloudflarePagesProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarepagesproject.DataCloudflarePagesProject_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.DataCloudflarePagesProject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarepagesproject.DataCloudflarePagesProject_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.DataCloudflarePagesProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectBuildConfig {
 
@@ -776,7 +776,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeployment {
 
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentBuildConfig {
 
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigger {
 
@@ -815,7 +815,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadata {
 
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentEnvVars.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentEnvVars {
 
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentLatestStage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentLatestStage {
 
@@ -854,7 +854,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentSource {
 
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfig {
 
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectCanonicalDeploymentStages {
 
@@ -893,7 +893,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectConfig {
 	Connection: interface{},
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigs {
 
@@ -1040,7 +1040,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreview.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreview {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindings {
 
@@ -1066,7 +1066,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets {
 
@@ -1079,7 +1079,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsers {
 
@@ -1092,7 +1092,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewD1Databases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewD1Databases {
 
@@ -1105,7 +1105,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespaces {
 
@@ -1118,7 +1118,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVars.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVars {
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindings {
 
@@ -1144,7 +1144,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces {
 
@@ -1157,7 +1157,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimits {
 
@@ -1170,7 +1170,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificates {
 
@@ -1183,7 +1183,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewPlacement {
 
@@ -1196,7 +1196,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducers {
 
@@ -1209,7 +1209,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewR2Buckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewR2Buckets {
 
@@ -1222,7 +1222,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewServices {
 
@@ -1235,7 +1235,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindings {
 
@@ -1248,7 +1248,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProduction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProduction {
 
@@ -1261,7 +1261,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAiBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionAiBindings {
 
@@ -1274,7 +1274,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets {
 
@@ -1287,7 +1287,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionBrowsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionBrowsers {
 
@@ -1300,7 +1300,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionD1Databases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionD1Databases {
 
@@ -1313,7 +1313,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespaces {
 
@@ -1326,7 +1326,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionEnvVars.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionEnvVars {
 
@@ -1339,7 +1339,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindings {
 
@@ -1352,7 +1352,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespaces {
 
@@ -1365,7 +1365,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionLimits {
 
@@ -1378,7 +1378,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificates {
 
@@ -1391,7 +1391,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionPlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionPlacement {
 
@@ -1404,7 +1404,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducers {
 
@@ -1417,7 +1417,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionR2Buckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionR2Buckets {
 
@@ -1430,7 +1430,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionServices {
 
@@ -1443,7 +1443,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindings {
 
@@ -1456,7 +1456,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeployment {
 
@@ -1469,7 +1469,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentBuildConfig {
 
@@ -1482,7 +1482,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentDeploymentTrigger {
 
@@ -1495,7 +1495,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata {
 
@@ -1508,7 +1508,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentEnvVars.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentEnvVars {
 
@@ -1521,7 +1521,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentLatestStage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentLatestStage {
 
@@ -1534,7 +1534,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentSource {
 
@@ -1547,7 +1547,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentSourceConfig {
 
@@ -1560,7 +1560,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectLatestDeploymentStages {
 
@@ -1573,7 +1573,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectSource {
 
@@ -1586,7 +1586,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 &datacloudflarepagesproject.DataCloudflarePagesProjectSourceConfig {
 
@@ -1601,7 +1601,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarep
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectBuildConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectBuildConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectBuildConfigOutputReference
 ```
@@ -1916,7 +1916,7 @@ func InternalValue() DataCloudflarePagesProjectBuildConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentBuildConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentBuildConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentBuildConfigOutputReference
 ```
@@ -2231,7 +2231,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentBuildConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference
 ```
@@ -2524,7 +2524,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference
 ```
@@ -2795,7 +2795,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentEnvVarsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentEnvVarsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentEnvVarsMap
 ```
@@ -2931,7 +2931,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentEnvVarsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentEnvVarsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectCanonicalDeploymentEnvVarsOutputReference
 ```
@@ -3211,7 +3211,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentEnvVars
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentLatestStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentLatestStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentLatestStageOutputReference
 ```
@@ -3504,7 +3504,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentLatestStage
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentOutputReference
 ```
@@ -3940,7 +3940,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeployment
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentSourceConfigOutputReference
 ```
@@ -4332,7 +4332,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentSourceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentSourceOutputReference
 ```
@@ -4603,7 +4603,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflarePagesProjectCanonicalDeploymentStagesList
 ```
@@ -4752,7 +4752,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectCanonicalDeploymentStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflarePagesProjectCanonicalDeploymentStagesOutputReference
 ```
@@ -5063,7 +5063,7 @@ func InternalValue() DataCloudflarePagesProjectCanonicalDeploymentStages
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsOutputReference
 ```
@@ -5334,7 +5334,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigs
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsMap
 ```
@@ -5470,7 +5470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsOutputReference
 ```
@@ -5739,7 +5739,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewAiBinding
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap
 ```
@@ -5875,7 +5875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference
 ```
@@ -6144,7 +6144,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewAnalytics
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap
 ```
@@ -6280,7 +6280,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersOutputReference
 ```
@@ -6538,7 +6538,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsers
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesMap
 ```
@@ -6674,7 +6674,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference
 ```
@@ -6943,7 +6943,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewD1Databas
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap
 ```
@@ -7079,7 +7079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference
 ```
@@ -7348,7 +7348,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewDurableOb
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsMap
 ```
@@ -7484,7 +7484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsOutputReference
 ```
@@ -7764,7 +7764,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVars
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap
 ```
@@ -7900,7 +7900,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference
 ```
@@ -8169,7 +8169,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriv
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap
 ```
@@ -8305,7 +8305,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference
 ```
@@ -8574,7 +8574,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespa
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewLimitsOutputReference
 ```
@@ -8834,7 +8834,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewLimits
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesMap
 ```
@@ -8970,7 +8970,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference
 ```
@@ -9239,7 +9239,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCerti
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewOutputReference
 ```
@@ -9730,7 +9730,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreview
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewPlacementOutputReference
 ```
@@ -9990,7 +9990,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewPlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersMap
 ```
@@ -10126,7 +10126,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersOutputReference
 ```
@@ -10395,7 +10395,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProd
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap
 ```
@@ -10531,7 +10531,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsOutputReference
 ```
@@ -10811,7 +10811,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewR2Buckets
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewServicesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewServicesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewServicesMap
 ```
@@ -10947,7 +10947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewServicesOutputReference
 ```
@@ -11238,7 +11238,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewServices
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsMap
 ```
@@ -11374,7 +11374,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference
 ```
@@ -11643,7 +11643,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsPreviewVectorize
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap
 ```
@@ -11779,7 +11779,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsOutputReference
 ```
@@ -12048,7 +12048,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionAiBind
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap
 ```
@@ -12184,7 +12184,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference
 ```
@@ -12453,7 +12453,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionAnalyt
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap
 ```
@@ -12589,7 +12589,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionBrowsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersOutputReference
 ```
@@ -12847,7 +12847,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionBrowse
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesMap
 ```
@@ -12983,7 +12983,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesOutputReference
 ```
@@ -13252,7 +13252,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionD1Data
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap
 ```
@@ -13388,7 +13388,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference
 ```
@@ -13657,7 +13657,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionDurabl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap
 ```
@@ -13793,7 +13793,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsOutputReference
 ```
@@ -14073,7 +14073,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionEnvVar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsMap
 ```
@@ -14209,7 +14209,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference
 ```
@@ -14478,7 +14478,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionHyperd
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap
 ```
@@ -14614,7 +14614,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesOutputReference
 ```
@@ -14883,7 +14883,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionKvName
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference
 ```
@@ -15143,7 +15143,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionLimits
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap
 ```
@@ -15279,7 +15279,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference
 ```
@@ -15548,7 +15548,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCe
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference
 ```
@@ -16039,7 +16039,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProduction
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionPlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionPlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionPlacementOutputReference
 ```
@@ -16299,7 +16299,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionPlacem
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersMap
 ```
@@ -16435,7 +16435,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersOutputReference
 ```
@@ -16704,7 +16704,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionQueueP
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsMap
 ```
@@ -16840,7 +16840,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsOutputReference
 ```
@@ -17120,7 +17120,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionR2Buck
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionServicesMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionServicesMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionServicesMap
 ```
@@ -17256,7 +17256,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionServicesOutputReference
 ```
@@ -17547,7 +17547,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionServic
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap
 ```
@@ -17683,7 +17683,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference
 ```
@@ -17952,7 +17952,7 @@ func InternalValue() DataCloudflarePagesProjectDeploymentConfigsProductionVector
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentBuildConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentBuildConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentBuildConfigOutputReference
 ```
@@ -18267,7 +18267,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentBuildConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference
 ```
@@ -18560,7 +18560,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentDeploymentTrigger
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentDeploymentTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerOutputReference
 ```
@@ -18831,7 +18831,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentDeploymentTrigger
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentEnvVarsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentEnvVarsMap(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentEnvVarsMap
 ```
@@ -18967,7 +18967,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentEnvVarsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentEnvVarsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) DataCloudflarePagesProjectLatestDeploymentEnvVarsOutputReference
 ```
@@ -19247,7 +19247,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentEnvVars
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentLatestStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentLatestStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentLatestStageOutputReference
 ```
@@ -19540,7 +19540,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentLatestStage
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentOutputReference
 ```
@@ -19976,7 +19976,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeployment
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentSourceConfigOutputReference
 ```
@@ -20368,7 +20368,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentSourceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentSourceOutputReference
 ```
@@ -20639,7 +20639,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflarePagesProjectLatestDeploymentStagesList
 ```
@@ -20788,7 +20788,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectLatestDeploymentStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflarePagesProjectLatestDeploymentStagesOutputReference
 ```
@@ -21099,7 +21099,7 @@ func InternalValue() DataCloudflarePagesProjectLatestDeploymentStages
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectSourceConfigOutputReference
 ```
@@ -21491,7 +21491,7 @@ func InternalValue() DataCloudflarePagesProjectSourceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepagesproject"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject"
 
 datacloudflarepagesproject.NewDataCloudflarePagesProjectSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectSourceOutputReference
 ```

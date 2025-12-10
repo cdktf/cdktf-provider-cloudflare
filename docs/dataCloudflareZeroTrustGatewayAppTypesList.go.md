@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 datacloudflarezerotrustgatewayapptypeslist.NewDataCloudflareZeroTrustGatewayAppTypesList(scope Construct, id *string, config DataCloudflareZeroTrustGatewayAppTypesListConfig) DataCloudflareZeroTrustGatewayAppTypesList
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppTypesList_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppTypesList_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppType
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppTypesList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppType
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppTypesList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 &datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppTypesListConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 &datacloudflarezerotrustgatewayapptypeslist.DataCloudflareZeroTrustGatewayAppTypesListResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarez
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 datacloudflarezerotrustgatewayapptypeslist.NewDataCloudflareZeroTrustGatewayAppTypesListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustGatewayAppTypesListResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustgatewayapptypeslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewayapptypeslist"
 
 datacloudflarezerotrustgatewayapptypeslist.NewDataCloudflareZeroTrustGatewayAppTypesListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustGatewayAppTypesListResultOutputReference
 ```

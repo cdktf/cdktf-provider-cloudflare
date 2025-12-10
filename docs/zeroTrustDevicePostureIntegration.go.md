@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 zerotrustdevicepostureintegration.NewZeroTrustDevicePostureIntegration(scope Construct, id *string, config ZeroTrustDevicePostureIntegrationConfig) ZeroTrustDevicePostureIntegration
 ```
@@ -391,7 +391,7 @@ func PutConfig(value ZeroTrustDevicePostureIntegrationConfigA)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegration_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegration_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 &zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegrationConfig {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevice
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigA,
+	Config: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigA,
 	Interval: *string,
 	Name: *string,
 	Type: *string,
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 &zerotrustdevicepostureintegration.ZeroTrustDevicePostureIntegrationConfigA {
 	AccessClientId: *string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdevicepostureintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration"
 
 zerotrustdevicepostureintegration.NewZeroTrustDevicePostureIntegrationConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureIntegrationConfigAOutputReference
 ```
