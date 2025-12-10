@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganizationProfile.DataCloudflareOrganizationProfileA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganizationprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganizationprofile"
 
 datacloudflareorganizationprofile.NewDataCloudflareOrganizationProfileA(scope Construct, id *string, config DataCloudflareOrganizationProfileAConfig) DataCloudflareOrganizationProfileA
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareOrganizationProfile.DataCloudflareOrganizationProfileA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganizationprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganizationprofile"
 
 datacloudflareorganizationprofile.DataCloudflareOrganizationProfileA_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareOrganizationProfile.DataCloudflareOrganizationProfileA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganizationprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganizationprofile"
 
 datacloudflareorganizationprofile.DataCloudflareOrganizationProfileA_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareorganizationprofile.DataCloudflareOrganizationProfileA_IsTerraform
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareOrganizationProfile.DataCloudflareOrganizationProfileA.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganizationprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganizationprofile"
 
 datacloudflareorganizationprofile.DataCloudflareOrganizationProfileA_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareorganizationprofile.DataCloudflareOrganizationProfileA_IsTerraform
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareOrganizationProfile.DataCloudflareOrganizationProfileA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganizationprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganizationprofile"
 
 datacloudflareorganizationprofile.DataCloudflareOrganizationProfileA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganizationProfile.DataCloudflareOrganizationProfileAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganizationprofile"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganizationprofile"
 
 &datacloudflareorganizationprofile.DataCloudflareOrganizationProfileAConfig {
 	Connection: interface{},

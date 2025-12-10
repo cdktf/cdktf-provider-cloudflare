@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityimpersonationregistry"
 
 emailsecurityimpersonationregistry.NewEmailSecurityImpersonationRegistry(scope Construct, id *string, config EmailSecurityImpersonationRegistryConfig) EmailSecurityImpersonationRegistry
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityimpersonationregistry"
 
 emailsecurityimpersonationregistry.EmailSecurityImpersonationRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityimpersonationregistry"
 
 emailsecurityimpersonationregistry.EmailSecurityImpersonationRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ emailsecurityimpersonationregistry.EmailSecurityImpersonationRegistry_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityimpersonationregistry"
 
 emailsecurityimpersonationregistry.EmailSecurityImpersonationRegistry_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ emailsecurityimpersonationregistry.EmailSecurityImpersonationRegistry_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityimpersonationregistry"
 
 emailsecurityimpersonationregistry.EmailSecurityImpersonationRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.emailSecurityImpersonationRegistry.EmailSecurityImpersonationRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecurityimpersonationregistry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/emailsecurityimpersonationregistry"
 
 &emailsecurityimpersonationregistry.EmailSecurityImpersonationRegistryConfig {
 	Connection: interface{},

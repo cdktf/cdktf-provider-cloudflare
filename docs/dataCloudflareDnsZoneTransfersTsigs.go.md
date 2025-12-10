@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 datacloudflarednszonetransferstsigs.NewDataCloudflareDnsZoneTransfersTsigs(scope Construct, id *string, config DataCloudflareDnsZoneTransfersTsigsConfig) DataCloudflareDnsZoneTransfersTsigs
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigs_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigs_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigs_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigs_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 &datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigsConfig {
 	Connection: interface{},
@@ -737,7 +737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 &datacloudflarednszonetransferstsigs.DataCloudflareDnsZoneTransfersTsigsResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 datacloudflarednszonetransferstsigs.NewDataCloudflareDnsZoneTransfersTsigsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareDnsZoneTransfersTsigsResultList
 ```
@@ -901,7 +901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednszonetransferstsigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednszonetransferstsigs"
 
 datacloudflarednszonetransferstsigs.NewDataCloudflareDnsZoneTransfersTsigsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareDnsZoneTransfersTsigsResultOutputReference
 ```

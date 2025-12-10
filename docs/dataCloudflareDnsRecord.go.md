@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecord(scope Construct, id *string, config DataCloudflareDnsRecordConfig) DataCloudflareDnsRecord
 ```
@@ -303,7 +303,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.DataCloudflareDnsRecord_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.DataCloudflareDnsRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflarednsrecord.DataCloudflareDnsRecord_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.DataCloudflareDnsRecord_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflarednsrecord.DataCloudflareDnsRecord_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.DataCloudflareDnsRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 	Provisioners: *[]interface{},
 	ZoneId: *string,
 	DnsRecordId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter,
 }
 ```
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordData {
 
@@ -984,18 +984,18 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordFilter {
-	Comment: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterComment,
-	Content: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterContent,
+	Comment: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterComment,
+	Content: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterContent,
 	Direction: *string,
 	Match: *string,
-	Name: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterName,
+	Name: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterName,
 	Order: *string,
 	Proxied: interface{},
 	Search: *string,
-	Tag: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag,
+	Tag: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag,
 	TagMatch: *string,
 	Type: *string,
 }
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordFilterComment {
 	Absent: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterContent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordFilterContent {
 	Contains: *string,
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordFilterName {
 	Contains: *string,
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordFilterTag {
 	Absent: *string,
@@ -1580,7 +1580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 &datacloudflarednsrecord.DataCloudflareDnsRecordSettings {
 
@@ -1595,7 +1595,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecordDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordDataOutputReference
 ```
@@ -2240,7 +2240,7 @@ func InternalValue() DataCloudflareDnsRecordData
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecordFilterCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordFilterCommentOutputReference
 ```
@@ -2663,7 +2663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecordFilterContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordFilterContentOutputReference
 ```
@@ -3028,7 +3028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecordFilterNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordFilterNameOutputReference
 ```
@@ -3393,7 +3393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecordFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordFilterOutputReference
 ```
@@ -4013,7 +4013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordFilterTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecordFilterTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordFilterTagOutputReference
 ```
@@ -4436,7 +4436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecord"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarednsrecord"
 
 datacloudflarednsrecord.NewDataCloudflareDnsRecordSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordSettingsOutputReference
 ```

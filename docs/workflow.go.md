@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workflow.Workflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 workflow.NewWorkflow(scope Construct, id *string, config WorkflowConfig) Workflow
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workflow.Workflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 workflow.Workflow_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workflow.Workflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workflow.Workflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workflow.Workflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 workflow.Workflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workflow.WorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 &workflow.WorkflowConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workflow.WorkflowInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 &workflow.WorkflowInstances {
 
@@ -1027,7 +1027,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workflow.WorkflowInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workflow"
 
 workflow.NewWorkflowInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowInstancesOutputReference
 ```

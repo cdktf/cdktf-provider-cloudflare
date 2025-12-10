@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 datacloudflareschemavalidationoperationsettingslist.NewDataCloudflareSchemaValidationOperationSettingsList(scope Construct, id *string, config DataCloudflareSchemaValidationOperationSettingsListConfig) DataCloudflareSchemaValidationOperationSettingsList
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidationOperationSettingsList_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidationOperationSettingsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidati
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidationOperationSettingsList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidati
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidationOperationSettingsList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 &datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidationOperationSettingsListConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 &datacloudflareschemavalidationoperationsettingslist.DataCloudflareSchemaValidationOperationSettingsListResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 datacloudflareschemavalidationoperationsettingslist.NewDataCloudflareSchemaValidationOperationSettingsListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareSchemaValidationOperationSettingsListResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettingsList.DataCloudflareSchemaValidationOperationSettingsListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettingslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettingslist"
 
 datacloudflareschemavalidationoperationsettingslist.NewDataCloudflareSchemaValidationOperationSettingsListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareSchemaValidationOperationSettingsListResultOutputReference
 ```

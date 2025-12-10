@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustRiskScoringIntegration.ZeroTrustRiskScoringIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskscoringintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskscoringintegration"
 
 zerotrustriskscoringintegration.NewZeroTrustRiskScoringIntegration(scope Construct, id *string, config ZeroTrustRiskScoringIntegrationConfig) ZeroTrustRiskScoringIntegration
 ```
@@ -392,7 +392,7 @@ func ResetReferenceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustRiskScoringIntegration.ZeroTrustRiskScoringIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskscoringintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskscoringintegration"
 
 zerotrustriskscoringintegration.ZeroTrustRiskScoringIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustRiskScoringIntegration.ZeroTrustRiskScoringIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskscoringintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskscoringintegration"
 
 zerotrustriskscoringintegration.ZeroTrustRiskScoringIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ zerotrustriskscoringintegration.ZeroTrustRiskScoringIntegration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustRiskScoringIntegration.ZeroTrustRiskScoringIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskscoringintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskscoringintegration"
 
 zerotrustriskscoringintegration.ZeroTrustRiskScoringIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ zerotrustriskscoringintegration.ZeroTrustRiskScoringIntegration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustRiskScoringIntegration.ZeroTrustRiskScoringIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskscoringintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskscoringintegration"
 
 zerotrustriskscoringintegration.ZeroTrustRiskScoringIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustRiskScoringIntegration.ZeroTrustRiskScoringIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskscoringintegration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustriskscoringintegration"
 
 &zerotrustriskscoringintegration.ZeroTrustRiskScoringIntegrationConfig {
 	Connection: interface{},

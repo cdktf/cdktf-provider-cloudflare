@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorker(scope Construct, id *string, config DataCloudflareWorkerConfig) DataCloudflareWorker
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.DataCloudflareWorker_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.DataCloudflareWorker_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareworker.DataCloudflareWorker_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorker.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.DataCloudflareWorker_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareworker.DataCloudflareWorker_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorker.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.DataCloudflareWorker_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerObservability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerObservability {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerObservabilityLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerObservabilityLogs {
 
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerReferences {
 
@@ -870,7 +870,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDispatchNamespaceOutbounds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerReferencesDispatchNamespaceOutbounds {
 
@@ -883,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerReferencesDomains {
 
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDurableObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerReferencesDurableObjects {
 
@@ -909,7 +909,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesQueues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerReferencesQueues {
 
@@ -922,7 +922,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesWorkers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerReferencesWorkers {
 
@@ -935,7 +935,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerSubdomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerSubdomain {
 
@@ -948,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerTailConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 &datacloudflareworker.DataCloudflareWorkerTailConsumers {
 
@@ -963,7 +963,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerObservabilityLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerObservabilityLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkerObservabilityLogsOutputReference
 ```
@@ -1245,7 +1245,7 @@ func InternalValue() DataCloudflareWorkerObservabilityLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerObservabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerObservabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkerObservabilityOutputReference
 ```
@@ -1527,7 +1527,7 @@ func InternalValue() DataCloudflareWorkerObservability
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDispatchNamespaceOutboundsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesDispatchNamespaceOutboundsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkerReferencesDispatchNamespaceOutboundsList
 ```
@@ -1676,7 +1676,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDispatchNamespaceOutboundsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesDispatchNamespaceOutboundsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkerReferencesDispatchNamespaceOutboundsOutputReference
 ```
@@ -1987,7 +1987,7 @@ func InternalValue() DataCloudflareWorkerReferencesDispatchNamespaceOutbounds
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkerReferencesDomainsList
 ```
@@ -2136,7 +2136,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkerReferencesDomainsOutputReference
 ```
@@ -2458,7 +2458,7 @@ func InternalValue() DataCloudflareWorkerReferencesDomains
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDurableObjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesDurableObjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkerReferencesDurableObjectsList
 ```
@@ -2607,7 +2607,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesDurableObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesDurableObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkerReferencesDurableObjectsOutputReference
 ```
@@ -2918,7 +2918,7 @@ func InternalValue() DataCloudflareWorkerReferencesDurableObjects
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkerReferencesOutputReference
 ```
@@ -3222,7 +3222,7 @@ func InternalValue() DataCloudflareWorkerReferences
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesQueuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesQueuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkerReferencesQueuesList
 ```
@@ -3371,7 +3371,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesQueuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesQueuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkerReferencesQueuesOutputReference
 ```
@@ -3671,7 +3671,7 @@ func InternalValue() DataCloudflareWorkerReferencesQueues
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesWorkersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesWorkersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkerReferencesWorkersList
 ```
@@ -3820,7 +3820,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerReferencesWorkersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerReferencesWorkersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkerReferencesWorkersOutputReference
 ```
@@ -4109,7 +4109,7 @@ func InternalValue() DataCloudflareWorkerReferencesWorkers
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerSubdomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerSubdomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkerSubdomainOutputReference
 ```
@@ -4380,7 +4380,7 @@ func InternalValue() DataCloudflareWorkerSubdomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerTailConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerTailConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWorkerTailConsumersList
 ```
@@ -4529,7 +4529,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorker.DataCloudflareWorkerTailConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworker"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworker"
 
 datacloudflareworker.NewDataCloudflareWorkerTailConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareWorkerTailConsumersOutputReference
 ```

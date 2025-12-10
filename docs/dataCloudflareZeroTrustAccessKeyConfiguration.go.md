@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccesskeyconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccesskeyconfiguration"
 
 datacloudflarezerotrustaccesskeyconfiguration.NewDataCloudflareZeroTrustAccessKeyConfiguration(scope Construct, id *string, config DataCloudflareZeroTrustAccessKeyConfigurationConfig) DataCloudflareZeroTrustAccessKeyConfiguration
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccesskeyconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccesskeyconfiguration"
 
 datacloudflarezerotrustaccesskeyconfiguration.DataCloudflareZeroTrustAccessKeyConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccesskeyconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccesskeyconfiguration"
 
 datacloudflarezerotrustaccesskeyconfiguration.DataCloudflareZeroTrustAccessKeyConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarezerotrustaccesskeyconfiguration.DataCloudflareZeroTrustAccessKeyCo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccesskeyconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccesskeyconfiguration"
 
 datacloudflarezerotrustaccesskeyconfiguration.DataCloudflareZeroTrustAccessKeyConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarezerotrustaccesskeyconfiguration.DataCloudflareZeroTrustAccessKeyCo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccesskeyconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccesskeyconfiguration"
 
 datacloudflarezerotrustaccesskeyconfiguration.DataCloudflareZeroTrustAccessKeyConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccesskeyconfiguration"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezerotrustaccesskeyconfiguration"
 
 &datacloudflarezerotrustaccesskeyconfiguration.DataCloudflareZeroTrustAccessKeyConfigurationConfig {
 	Connection: interface{},

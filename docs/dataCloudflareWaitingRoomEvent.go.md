@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomEvent.DataCloudflareWaitingRoomEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingroomevent"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingroomevent"
 
 datacloudflarewaitingroomevent.NewDataCloudflareWaitingRoomEvent(scope Construct, id *string, config DataCloudflareWaitingRoomEventConfig) DataCloudflareWaitingRoomEvent
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomEvent.DataCloudflareWaitingRoomEvent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingroomevent"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingroomevent"
 
 datacloudflarewaitingroomevent.DataCloudflareWaitingRoomEvent_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomEvent.DataCloudflareWaitingRoomEvent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingroomevent"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingroomevent"
 
 datacloudflarewaitingroomevent.DataCloudflareWaitingRoomEvent_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarewaitingroomevent.DataCloudflareWaitingRoomEvent_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomEvent.DataCloudflareWaitingRoomEvent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingroomevent"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingroomevent"
 
 datacloudflarewaitingroomevent.DataCloudflareWaitingRoomEvent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarewaitingroomevent.DataCloudflareWaitingRoomEvent_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomEvent.DataCloudflareWaitingRoomEvent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingroomevent"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingroomevent"
 
 datacloudflarewaitingroomevent.DataCloudflareWaitingRoomEvent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -807,7 +807,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWaitingRoomEvent.DataCloudflareWaitingRoomEventConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingroomevent"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarewaitingroomevent"
 
 &datacloudflarewaitingroomevent.DataCloudflareWaitingRoomEventConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 datacloudflareorigincacertificate.NewDataCloudflareOriginCaCertificate(scope Construct, id *string, config DataCloudflareOriginCaCertificateConfig) DataCloudflareOriginCaCertificate
 ```
@@ -303,7 +303,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 datacloudflareorigincacertificate.DataCloudflareOriginCaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 datacloudflareorigincacertificate.DataCloudflareOriginCaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareorigincacertificate.DataCloudflareOriginCaCertificate_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 datacloudflareorigincacertificate.DataCloudflareOriginCaCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareorigincacertificate.DataCloudflareOriginCaCertificate_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 datacloudflareorigincacertificate.DataCloudflareOriginCaCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 &datacloudflareorigincacertificate.DataCloudflareOriginCaCertificateConfig {
 	Connection: interface{},
@@ -702,7 +702,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	CertificateId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificateFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificateFilter,
 }
 ```
 
@@ -823,7 +823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificateFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 &datacloudflareorigincacertificate.DataCloudflareOriginCaCertificateFilter {
 	ZoneId: *string,
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOriginCaCertificate.DataCloudflareOriginCaCertificateFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorigincacertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorigincacertificate"
 
 datacloudflareorigincacertificate.NewDataCloudflareOriginCaCertificateFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOriginCaCertificateFilterOutputReference
 ```

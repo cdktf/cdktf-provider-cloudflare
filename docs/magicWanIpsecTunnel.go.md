@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.NewMagicWanIpsecTunnel(scope Construct, id *string, config MagicWanIpsecTunnelConfig) MagicWanIpsecTunnel
 ```
@@ -433,7 +433,7 @@ func ResetReplayProtection()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.MagicWanIpsecTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.MagicWanIpsecTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ magicwanipsectunnel.MagicWanIpsecTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.MagicWanIpsecTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ magicwanipsectunnel.MagicWanIpsecTunnel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.MagicWanIpsecTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 &magicwanipsectunnel.MagicWanIpsecTunnelConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanips
 	Name: *string,
 	CustomerEndpoint: *string,
 	Description: *string,
-	HealthCheck: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheck,
 	InterfaceAddress6: *string,
 	Psk: *string,
 	ReplayProtection: interface{},
@@ -1263,13 +1263,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 &magicwanipsectunnel.MagicWanIpsecTunnelHealthCheck {
 	Direction: *string,
 	Enabled: interface{},
 	Rate: *string,
-	Target: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckTarget,
+	Target: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckTarget,
 	Type: *string,
 }
 ```
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 &magicwanipsectunnel.MagicWanIpsecTunnelHealthCheckTarget {
 	Saved: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 &magicwanipsectunnel.MagicWanIpsecTunnelPskMetadata {
 
@@ -1417,7 +1417,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanips
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.NewMagicWanIpsecTunnelHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanIpsecTunnelHealthCheckOutputReference
 ```
@@ -1824,7 +1824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelHealthCheckTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.NewMagicWanIpsecTunnelHealthCheckTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanIpsecTunnelHealthCheckTargetOutputReference
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/magicwanipsectunnel"
 
 magicwanipsectunnel.NewMagicWanIpsecTunnelPskMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanIpsecTunnelPskMetadataOutputReference
 ```

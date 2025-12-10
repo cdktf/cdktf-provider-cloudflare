@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 datacloudflarepageshieldscriptslist.NewDataCloudflarePageShieldScriptsList(scope Construct, id *string, config DataCloudflarePageShieldScriptsListConfig) DataCloudflarePageShieldScriptsList
 ```
@@ -374,7 +374,7 @@ func ResetUrls()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsList_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsList_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsList_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -982,7 +982,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 &datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsListConfig {
 	Connection: interface{},
@@ -1340,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 &datacloudflarepageshieldscriptslist.DataCloudflarePageShieldScriptsListResult {
 
@@ -1355,7 +1355,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 datacloudflarepageshieldscriptslist.NewDataCloudflarePageShieldScriptsListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflarePageShieldScriptsListResultList
 ```
@@ -1504,7 +1504,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarepageshieldscriptslist"
 
 datacloudflarepageshieldscriptslist.NewDataCloudflarePageShieldScriptsListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflarePageShieldScriptsListResultOutputReference
 ```

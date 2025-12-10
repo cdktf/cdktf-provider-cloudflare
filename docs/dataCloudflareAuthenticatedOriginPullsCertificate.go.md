@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareauthenticatedoriginpullscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareauthenticatedoriginpullscertificate"
 
 datacloudflareauthenticatedoriginpullscertificate.NewDataCloudflareAuthenticatedOriginPullsCertificate(scope Construct, id *string, config DataCloudflareAuthenticatedOriginPullsCertificateConfig) DataCloudflareAuthenticatedOriginPullsCertificate
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareauthenticatedoriginpullscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareauthenticatedoriginpullscertificate"
 
 datacloudflareauthenticatedoriginpullscertificate.DataCloudflareAuthenticatedOriginPullsCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareauthenticatedoriginpullscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareauthenticatedoriginpullscertificate"
 
 datacloudflareauthenticatedoriginpullscertificate.DataCloudflareAuthenticatedOriginPullsCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareauthenticatedoriginpullscertificate.DataCloudflareAuthenticatedOri
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareauthenticatedoriginpullscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareauthenticatedoriginpullscertificate"
 
 datacloudflareauthenticatedoriginpullscertificate.DataCloudflareAuthenticatedOriginPullsCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareauthenticatedoriginpullscertificate.DataCloudflareAuthenticatedOri
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareauthenticatedoriginpullscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareauthenticatedoriginpullscertificate"
 
 datacloudflareauthenticatedoriginpullscertificate.DataCloudflareAuthenticatedOriginPullsCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareauthenticatedoriginpullscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareauthenticatedoriginpullscertificate"
 
 &datacloudflareauthenticatedoriginpullscertificate.DataCloudflareAuthenticatedOriginPullsCertificateConfig {
 	Connection: interface{},

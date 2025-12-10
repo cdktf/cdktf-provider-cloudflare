@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnszonetransferspeer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnszonetransferspeer"
 
 dnszonetransferspeer.NewDnsZoneTransfersPeer(scope Construct, id *string, config DnsZoneTransfersPeerConfig) DnsZoneTransfersPeer
 ```
@@ -406,7 +406,7 @@ func ResetTsigId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnszonetransferspeer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnszonetransferspeer"
 
 dnszonetransferspeer.DnsZoneTransfersPeer_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnszonetransferspeer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnszonetransferspeer"
 
 dnszonetransferspeer.DnsZoneTransfersPeer_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ dnszonetransferspeer.DnsZoneTransfersPeer_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnszonetransferspeer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnszonetransferspeer"
 
 dnszonetransferspeer.DnsZoneTransfersPeer_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ dnszonetransferspeer.DnsZoneTransfersPeer_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnszonetransferspeer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnszonetransferspeer"
 
 dnszonetransferspeer.DnsZoneTransfersPeer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnszonetransferspeer"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/dnszonetransferspeer"
 
 &dnszonetransferspeer.DnsZoneTransfersPeerConfig {
 	Connection: interface{},

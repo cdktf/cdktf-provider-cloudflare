@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.NewZeroTrustDlpCustomEntry(scope Construct, id *string, config ZeroTrustDlpCustomEntryConfig) ZeroTrustDlpCustomEntry
 ```
@@ -398,7 +398,7 @@ func ResetProfileId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.ZeroTrustDlpCustomEntry_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.ZeroTrustDlpCustomEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ zerotrustdlpcustomentry.ZeroTrustDlpCustomEntry_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.ZeroTrustDlpCustomEntry_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ zerotrustdlpcustomentry.ZeroTrustDlpCustomEntry_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.ZeroTrustDlpCustomEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 &zerotrustdlpcustomentry.ZeroTrustDlpCustomEntryConfidence {
 
@@ -920,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 &zerotrustdlpcustomentry.ZeroTrustDlpCustomEntryConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdl
 	AccountId: *string,
 	Enabled: interface{},
 	Name: *string,
-	Pattern: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPattern,
+	Pattern: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPattern,
 	ProfileId: *string,
 }
 ```
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 &zerotrustdlpcustomentry.ZeroTrustDlpCustomEntryPattern {
 	Regex: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 &zerotrustdlpcustomentry.ZeroTrustDlpCustomEntryProfiles {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 &zerotrustdlpcustomentry.ZeroTrustDlpCustomEntryVariant {
 
@@ -1168,7 +1168,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.NewZeroTrustDlpCustomEntryConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpCustomEntryConfidenceOutputReference
 ```
@@ -1439,7 +1439,7 @@ func InternalValue() ZeroTrustDlpCustomEntryConfidence
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.NewZeroTrustDlpCustomEntryPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpCustomEntryPatternOutputReference
 ```
@@ -1739,7 +1739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryProfilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.NewZeroTrustDlpCustomEntryProfilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDlpCustomEntryProfilesList
 ```
@@ -1888,7 +1888,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.NewZeroTrustDlpCustomEntryProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDlpCustomEntryProfilesOutputReference
 ```
@@ -2177,7 +2177,7 @@ func InternalValue() ZeroTrustDlpCustomEntryProfiles
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryVariantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/zerotrustdlpcustomentry"
 
 zerotrustdlpcustomentry.NewZeroTrustDlpCustomEntryVariantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpCustomEntryVariantOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 datacloudflareworkflow.NewDataCloudflareWorkflow(scope Construct, id *string, config DataCloudflareWorkflowConfig) DataCloudflareWorkflow
 ```
@@ -303,7 +303,7 @@ func ResetWorkflowName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 datacloudflareworkflow.DataCloudflareWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 datacloudflareworkflow.DataCloudflareWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareworkflow.DataCloudflareWorkflow_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 datacloudflareworkflow.DataCloudflareWorkflow_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareworkflow.DataCloudflareWorkflow_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 datacloudflareworkflow.DataCloudflareWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 &datacloudflareworkflow.DataCloudflareWorkflowConfig {
 	Connection: interface{},
@@ -735,7 +735,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareWorkflow.DataCloudflareWorkflowFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowFilter,
 	WorkflowName: *string,
 }
 ```
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 &datacloudflareworkflow.DataCloudflareWorkflowFilter {
 	Search: *string,
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 &datacloudflareworkflow.DataCloudflareWorkflowInstances {
 
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 datacloudflareworkflow.NewDataCloudflareWorkflowFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkflowFilterOutputReference
 ```
@@ -1195,7 +1195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareWorkflow.DataCloudflareWorkflowInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareworkflow"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareworkflow"
 
 datacloudflareworkflow.NewDataCloudflareWorkflowInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareWorkflowInstancesOutputReference
 ```

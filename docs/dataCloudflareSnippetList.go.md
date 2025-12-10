@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 datacloudflaresnippetlist.NewDataCloudflareSnippetList(scope Construct, id *string, config DataCloudflareSnippetListConfig) DataCloudflareSnippetList
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 datacloudflaresnippetlist.DataCloudflareSnippetList_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 datacloudflaresnippetlist.DataCloudflareSnippetList_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflaresnippetlist.DataCloudflareSnippetList_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 datacloudflaresnippetlist.DataCloudflareSnippetList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflaresnippetlist.DataCloudflareSnippetList_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 datacloudflaresnippetlist.DataCloudflareSnippetList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 &datacloudflaresnippetlist.DataCloudflareSnippetListConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 &datacloudflaresnippetlist.DataCloudflareSnippetListResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 datacloudflaresnippetlist.NewDataCloudflareSnippetListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareSnippetListResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaresnippetlist"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaresnippetlist"
 
 datacloudflaresnippetlist.NewDataCloudflareSnippetListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareSnippetListResultOutputReference
 ```

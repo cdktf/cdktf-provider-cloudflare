@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.NewWorkersDeployment(scope Construct, id *string, config WorkersDeploymentConfig) WorkersDeployment
 ```
@@ -411,7 +411,7 @@ func ResetAnnotations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.WorkersDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.WorkersDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ workersdeployment.WorkersDeployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.WorkersDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ workersdeployment.WorkersDeployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.WorkersDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 &workersdeployment.WorkersDeploymentAnnotations {
 	WorkersMessage: *string,
@@ -888,7 +888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 &workersdeployment.WorkersDeploymentConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdepl
 	ScriptName: *string,
 	Strategy: *string,
 	Versions: interface{},
-	Annotations: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.workersDeployment.WorkersDeploymentAnnotations,
+	Annotations: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.workersDeployment.WorkersDeploymentAnnotations,
 }
 ```
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 &workersdeployment.WorkersDeploymentVersions {
 	Percentage: *f64,
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.NewWorkersDeploymentAnnotationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkersDeploymentAnnotationsOutputReference
 ```
@@ -1403,7 +1403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.NewWorkersDeploymentVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkersDeploymentVersionsList
 ```
@@ -1563,7 +1563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersdeployment"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/workersdeployment"
 
 workersdeployment.NewWorkersDeploymentVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkersDeploymentVersionsOutputReference
 ```

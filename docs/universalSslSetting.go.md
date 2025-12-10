@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/universalsslsetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/universalsslsetting"
 
 universalsslsetting.NewUniversalSslSetting(scope Construct, id *string, config UniversalSslSettingConfig) UniversalSslSetting
 ```
@@ -385,7 +385,7 @@ func ResetEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/universalsslsetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/universalsslsetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ universalsslsetting.UniversalSslSetting_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/universalsslsetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ universalsslsetting.UniversalSslSetting_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/universalsslsetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/universalsslsetting"
 
 universalsslsetting.UniversalSslSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/universalsslsetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/universalsslsetting"
 
 &universalsslsetting.UniversalSslSettingConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 datacloudflareuseragentblockingrule.NewDataCloudflareUserAgentBlockingRule(scope Construct, id *string, config DataCloudflareUserAgentBlockingRuleConfig) DataCloudflareUserAgentBlockingRule
 ```
@@ -303,7 +303,7 @@ func ResetUaRuleId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRule_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRule_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRule_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 &datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRuleConfig {
 	Connection: interface{},
@@ -702,7 +702,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ZoneId: *string,
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleFilter,
 	UaRuleId: *string,
 }
 ```
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 &datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRuleConfiguration {
 
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 &datacloudflareuseragentblockingrule.DataCloudflareUserAgentBlockingRuleFilter {
 	Description: *string,
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 datacloudflareuseragentblockingrule.NewDataCloudflareUserAgentBlockingRuleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareUserAgentBlockingRuleConfigurationOutputReference
 ```
@@ -1191,7 +1191,7 @@ func InternalValue() DataCloudflareUserAgentBlockingRuleConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareUserAgentBlockingRule.DataCloudflareUserAgentBlockingRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareuseragentblockingrule"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareuseragentblockingrule"
 
 datacloudflareuseragentblockingrule.NewDataCloudflareUserAgentBlockingRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareUserAgentBlockingRuleFilterOutputReference
 ```

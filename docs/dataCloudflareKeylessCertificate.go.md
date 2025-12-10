@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 datacloudflarekeylesscertificate.NewDataCloudflareKeylessCertificate(scope Construct, id *string, config DataCloudflareKeylessCertificateConfig) DataCloudflareKeylessCertificate
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 datacloudflarekeylesscertificate.DataCloudflareKeylessCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 datacloudflarekeylesscertificate.DataCloudflareKeylessCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarekeylesscertificate.DataCloudflareKeylessCertificate_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 datacloudflarekeylesscertificate.DataCloudflareKeylessCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarekeylesscertificate.DataCloudflareKeylessCertificate_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 datacloudflarekeylesscertificate.DataCloudflareKeylessCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 &datacloudflarekeylesscertificate.DataCloudflareKeylessCertificateConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificateTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 &datacloudflarekeylesscertificate.DataCloudflareKeylessCertificateTunnel {
 
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareKeylessCertificate.DataCloudflareKeylessCertificateTunnelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarekeylesscertificate"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarekeylesscertificate"
 
 datacloudflarekeylesscertificate.NewDataCloudflareKeylessCertificateTunnelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareKeylessCertificateTunnelOutputReference
 ```

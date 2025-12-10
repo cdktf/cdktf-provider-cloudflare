@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRoles(scope Construct, id *string, config DataCloudflareAccountRolesConfig) DataCloudflareAccountRoles
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.DataCloudflareAccountRoles_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.DataCloudflareAccountRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareaccountroles.DataCloudflareAccountRoles_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.DataCloudflareAccountRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareaccountroles.DataCloudflareAccountRoles_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.DataCloudflareAccountRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissions {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsAnalytics {
 
@@ -778,7 +778,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsBilling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsBilling {
 
@@ -791,7 +791,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsCachePurge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsCachePurge {
 
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsDns {
 
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsDnsRecords {
 
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsLb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsLb {
 
@@ -843,7 +843,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsLogs {
 
@@ -856,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsOrganization {
 
@@ -869,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsSsl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsSsl {
 
@@ -882,7 +882,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsWaf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsWaf {
 
@@ -895,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsZones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsZones {
 
@@ -908,7 +908,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsZoneSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 &datacloudflareaccountroles.DataCloudflareAccountRolesResultPermissionsZoneSettings {
 
@@ -923,7 +923,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAccountRolesResultList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAccountRolesResultOutputReference
 ```
@@ -1383,7 +1383,7 @@ func InternalValue() DataCloudflareAccountRolesResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsAnalyticsOutputReference
 ```
@@ -1654,7 +1654,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsAnalytics
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsBillingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsBillingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsBillingOutputReference
 ```
@@ -1925,7 +1925,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsBilling
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsCachePurgeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsCachePurgeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsCachePurgeOutputReference
 ```
@@ -2196,7 +2196,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsCachePurge
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsDnsOutputReference
 ```
@@ -2467,7 +2467,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsDnsRecordsOutputReference
 ```
@@ -2738,7 +2738,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsDnsRecords
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsLbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsLbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsLbOutputReference
 ```
@@ -3009,7 +3009,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsLb
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsLogsOutputReference
 ```
@@ -3280,7 +3280,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsOrganizationOutputReference
 ```
@@ -3551,7 +3551,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsOrganization
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsOutputReference
 ```
@@ -3932,7 +3932,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissions
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsSslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsSslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsSslOutputReference
 ```
@@ -4203,7 +4203,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsSsl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsWafOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsWafOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsWafOutputReference
 ```
@@ -4474,7 +4474,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsWaf
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsZoneSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsZoneSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsZoneSettingsOutputReference
 ```
@@ -4745,7 +4745,7 @@ func InternalValue() DataCloudflareAccountRolesResultPermissionsZoneSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesResultPermissionsZonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountroles"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareaccountroles"
 
 datacloudflareaccountroles.NewDataCloudflareAccountRolesResultPermissionsZonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolesResultPermissionsZonesOutputReference
 ```

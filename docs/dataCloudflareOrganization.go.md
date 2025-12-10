@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganization(scope Construct, id *string, config DataCloudflareOrganizationConfig) DataCloudflareOrganization
 ```
@@ -303,7 +303,7 @@ func ResetOrganizationId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.DataCloudflareOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.DataCloudflareOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareorganization.DataCloudflareOrganization_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.DataCloudflareOrganization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareorganization.DataCloudflareOrganization_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.DataCloudflareOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationConfig {
 	Connection: interface{},
@@ -690,7 +690,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareOrganization.DataCloudflareOrganizationFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter,
 	OrganizationId: *string,
 }
 ```
@@ -810,15 +810,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationFilter {
-	Containing: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining,
+	Containing: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining,
 	Id: *[]*string,
-	Name: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareOrganization.DataCloudflareOrganizationFilterName,
+	Name: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName,
 	PageSize: *f64,
 	PageToken: *string,
-	Parent: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent,
+	Parent: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent,
 }
 ```
 
@@ -924,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContaining.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationFilterContaining {
 	Account: *string,
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationFilterName {
 	Contains: *string,
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationFilterParent {
 	Id: *string,
@@ -1101,7 +1101,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationMeta {
 
@@ -1114,7 +1114,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaFlags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationMetaFlags {
 
@@ -1127,7 +1127,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationParent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationParent {
 
@@ -1140,7 +1140,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 &datacloudflareorganization.DataCloudflareOrganizationProfile {
 
@@ -1155,7 +1155,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContainingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationFilterContainingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationFilterContainingOutputReference
 ```
@@ -1491,7 +1491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationFilterNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationFilterNameOutputReference
 ```
@@ -1827,7 +1827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationFilterOutputReference
 ```
@@ -2289,7 +2289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterParentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationFilterParentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationFilterParentOutputReference
 ```
@@ -2567,7 +2567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaFlagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationMetaFlagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationMetaFlagsOutputReference
 ```
@@ -2871,7 +2871,7 @@ func InternalValue() DataCloudflareOrganizationMetaFlags
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationMetaOutputReference
 ```
@@ -3142,7 +3142,7 @@ func InternalValue() DataCloudflareOrganizationMeta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationParentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationParentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationParentOutputReference
 ```
@@ -3413,7 +3413,7 @@ func InternalValue() DataCloudflareOrganizationParent
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareorganization"
 
 datacloudflareorganization.NewDataCloudflareOrganizationProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationProfileOutputReference
 ```

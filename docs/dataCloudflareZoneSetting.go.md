@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.NewDataCloudflareZoneSetting(scope Construct, id *string, config DataCloudflareZoneSettingConfig) DataCloudflareZoneSetting
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflarezonesetting.DataCloudflareZoneSetting_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 datacloudflarezonesetting.DataCloudflareZoneSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonesetting"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflarezonesetting"
 
 &datacloudflarezonesetting.DataCloudflareZoneSettingConfig {
 	Connection: interface{},

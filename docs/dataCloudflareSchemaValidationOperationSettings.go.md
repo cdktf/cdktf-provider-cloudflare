@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettings"
 
 datacloudflareschemavalidationoperationsettings.NewDataCloudflareSchemaValidationOperationSettings(scope Construct, id *string, config DataCloudflareSchemaValidationOperationSettingsConfig) DataCloudflareSchemaValidationOperationSettings
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettings"
 
 datacloudflareschemavalidationoperationsettings.DataCloudflareSchemaValidationOperationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettings"
 
 datacloudflareschemavalidationoperationsettings.DataCloudflareSchemaValidationOperationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datacloudflareschemavalidationoperationsettings.DataCloudflareSchemaValidationOp
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettings"
 
 datacloudflareschemavalidationoperationsettings.DataCloudflareSchemaValidationOperationSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datacloudflareschemavalidationoperationsettings.DataCloudflareSchemaValidationOp
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettings"
 
 datacloudflareschemavalidationoperationsettings.DataCloudflareSchemaValidationOperationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareSchemaValidationOperationSettings.DataCloudflareSchemaValidationOperationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareschemavalidationoperationsettings"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareschemavalidationoperationsettings"
 
 &datacloudflareschemavalidationoperationsettings.DataCloudflareSchemaValidationOperationSettingsConfig {
 	Connection: interface{},

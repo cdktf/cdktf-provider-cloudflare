@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 datacloudflareloadbalancermonitors.NewDataCloudflareLoadBalancerMonitors(scope Construct, id *string, config DataCloudflareLoadBalancerMonitorsConfig) DataCloudflareLoadBalancerMonitors
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitors.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitors_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitors_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitors_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitors.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitors_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitors_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 &datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitorsConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitorsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 &datacloudflareloadbalancermonitors.DataCloudflareLoadBalancerMonitorsResult {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitorsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 datacloudflareloadbalancermonitors.NewDataCloudflareLoadBalancerMonitorsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareLoadBalancerMonitorsResultList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareLoadBalancerMonitors.DataCloudflareLoadBalancerMonitorsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancermonitors"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareloadbalancermonitors"
 
 datacloudflareloadbalancermonitors.NewDataCloudflareLoadBalancerMonitorsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareLoadBalancerMonitorsResultOutputReference
 ```

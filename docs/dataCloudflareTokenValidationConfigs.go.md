@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.NewDataCloudflareTokenValidationConfigs(scope Construct, id *string, config DataCloudflareTokenValidationConfigsConfig) DataCloudflareTokenValidationConfigs
 ```
@@ -283,7 +283,7 @@ func ResetMaxItems()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigs_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigs_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigs_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigs_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 &datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigsConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 &datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigsResult {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResultCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 &datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigsResultCredentials {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResultCredentialsKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 &datacloudflaretokenvalidationconfigs.DataCloudflareTokenValidationConfigsResultCredentialsKeys {
 
@@ -780,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResultCredentialsKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.NewDataCloudflareTokenValidationConfigsResultCredentialsKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareTokenValidationConfigsResultCredentialsKeysList
 ```
@@ -929,7 +929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResultCredentialsKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.NewDataCloudflareTokenValidationConfigsResultCredentialsKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareTokenValidationConfigsResultCredentialsKeysOutputReference
 ```
@@ -1284,7 +1284,7 @@ func InternalValue() DataCloudflareTokenValidationConfigsResultCredentialsKeys
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResultCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.NewDataCloudflareTokenValidationConfigsResultCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareTokenValidationConfigsResultCredentialsOutputReference
 ```
@@ -1544,7 +1544,7 @@ func InternalValue() DataCloudflareTokenValidationConfigsResultCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.NewDataCloudflareTokenValidationConfigsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareTokenValidationConfigsResultList
 ```
@@ -1693,7 +1693,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareTokenValidationConfigs.DataCloudflareTokenValidationConfigsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationconfigs"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflaretokenvalidationconfigs"
 
 datacloudflaretokenvalidationconfigs.NewDataCloudflareTokenValidationConfigsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareTokenValidationConfigsResultOutputReference
 ```

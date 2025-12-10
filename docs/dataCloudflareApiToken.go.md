@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiToken(scope Construct, id *string, config DataCloudflareApiTokenConfig) DataCloudflareApiToken
 ```
@@ -303,7 +303,7 @@ func ResetTokenId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.DataCloudflareApiToken_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.DataCloudflareApiToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datacloudflareapitoken.DataCloudflareApiToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.DataCloudflareApiToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datacloudflareapitoken.DataCloudflareApiToken_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.DataCloudflareApiToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 &datacloudflareapitoken.DataCloudflareApiTokenCondition {
 
@@ -737,7 +737,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConditionRequestIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 &datacloudflareapitoken.DataCloudflareApiTokenConditionRequestIp {
 
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 &datacloudflareapitoken.DataCloudflareApiTokenConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dataCloudflareApiToken.DataCloudflareApiTokenFilter,
+	Filter: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter,
 	TokenId: *string,
 }
 ```
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 &datacloudflareapitoken.DataCloudflareApiTokenFilter {
 	Direction: *string,
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 &datacloudflareapitoken.DataCloudflareApiTokenPolicies {
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 &datacloudflareapitoken.DataCloudflareApiTokenPoliciesPermissionGroups {
 
@@ -942,7 +942,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 &datacloudflareapitoken.DataCloudflareApiTokenPoliciesPermissionGroupsMeta {
 
@@ -957,7 +957,7 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudfl
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiTokenConditionOutputReference
 ```
@@ -1217,7 +1217,7 @@ func InternalValue() DataCloudflareApiTokenCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenConditionRequestIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenConditionRequestIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiTokenConditionRequestIpOutputReference
 ```
@@ -1488,7 +1488,7 @@ func InternalValue() DataCloudflareApiTokenConditionRequestIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiTokenFilterOutputReference
 ```
@@ -1766,7 +1766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareApiTokenPoliciesList
 ```
@@ -1915,7 +1915,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareApiTokenPoliciesOutputReference
 ```
@@ -2226,7 +2226,7 @@ func InternalValue() DataCloudflareApiTokenPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenPoliciesPermissionGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareApiTokenPoliciesPermissionGroupsList
 ```
@@ -2375,7 +2375,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiTokenPoliciesPermissionGroupsMetaOutputReference
 ```
@@ -2646,7 +2646,7 @@ func InternalValue() DataCloudflareApiTokenPoliciesPermissionGroupsMeta
 #### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dataCloudflareApiToken.DataCloudflareApiTokenPoliciesPermissionGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapitoken"
+import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/datacloudflareapitoken"
 
 datacloudflareapitoken.NewDataCloudflareApiTokenPoliciesPermissionGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareApiTokenPoliciesPermissionGroupsOutputReference
 ```
